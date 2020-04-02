@@ -1,0 +1,16 @@
+<h2 class="example-h2">Tab group with asynchronously loading tab contents</h2>
+<ng-container *ngIf="(asyncTabs | async) === null">
+  Loading tabs...
+</ng-container>
+
+<mat-tab-group>
+  <mat-tab *ngFor="let tab of asyncTabs | async">
+    <ng-template mat-tab-label>{{tab.label}}</ng-template>
+    {{tab.content}}
+  </mat-tab>
+</mat-tab-group>
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

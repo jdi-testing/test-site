@@ -1,0 +1,12 @@
+<h2 class="example-h2">Select with multiple selection</h2>
+<mat-form-field>
+  <mat-label>Toppings</mat-label>
+  <mat-select [formControl]="toppings" multiple>
+    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

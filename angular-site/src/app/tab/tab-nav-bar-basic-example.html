@@ -1,0 +1,19 @@
+<h2 class="example-h2">Basic use of the tab nav bar</h2>
+<nav mat-tab-nav-bar [backgroundColor]="background">
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link"
+     [active]="activeLink == link"> {{link}} </a>
+  <a mat-tab-link disabled>Disabled Link</a>
+</nav>
+
+<button mat-raised-button class="example-action-button" (click)="toggleBackground()">
+  Toggle background
+</button>
+<button mat-raised-button class="example-action-button" (click)="addLink()">
+  Add link
+</button>
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

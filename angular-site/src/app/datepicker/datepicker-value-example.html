@@ -1,0 +1,25 @@
+<h2 class="example-h2">Datepicker selected value</h2>
+<mat-form-field>
+  <mat-label>Angular forms</mat-label>
+  <input matInput [matDatepicker]="picker1" [formControl]="date">
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Angular forms (w/ deserialization)</mat-label>
+  <input matInput [matDatepicker]="picker2"
+         [formControl]="serializedDate">
+  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+  <mat-datepicker #picker2></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Value binding</mat-label>
+  <input matInput [matDatepicker]="picker3" [value]="date.value">
+  <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+  <mat-datepicker #picker3></mat-datepicker>
+</mat-form-field>
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
