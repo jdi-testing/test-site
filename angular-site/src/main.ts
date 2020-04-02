@@ -100,6 +100,7 @@ import {TabGroupLazyLoadedExample} from './app/tab/tab-group-lazy-loaded-example
 import {TabGroupThemeExample} from './app/tab/tab-group-theme-example';
 import {TabGroupAsyncExample} from './app/tab/tab-group-async-example';
 import {TabNavBarBasicExample} from './app/tab/tab-nav-bar-basic-example';
+import {ButtonTypesExample} from './app/button/button-types-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -114,7 +115,7 @@ import {TabNavBarBasicExample} from './app/tab/tab-nav-bar-basic-example';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  
+
   entryComponents: [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
       SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
       AutocompleteOptgroupExample, AutocompleteAutoActiveFirstOptionExample, SelectOverviewExample, SelectValueBindingExample, SelectFormExample,
@@ -131,7 +132,8 @@ import {TabNavBarBasicExample} from './app/tab/tab-nav-bar-basic-example';
       GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
-      TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample],
+      TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
+      ButtonTypesExample],
 
   declarations: [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
       SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
@@ -149,7 +151,8 @@ import {TabNavBarBasicExample} from './app/tab/tab-nav-bar-basic-example';
       GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
-      TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample],
+      TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
+      ButtonTypesExample],
 
   bootstrap: [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
       SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
@@ -167,7 +170,8 @@ import {TabNavBarBasicExample} from './app/tab/tab-nav-bar-basic-example';
       GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
-      TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample],
+      TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
+      ButtonTypesExample],
 
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
