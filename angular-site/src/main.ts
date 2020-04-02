@@ -109,7 +109,9 @@ import {ChipsStackedExample} from './app/buttons-and-indicators/chips/chips-stac
 import {ChipsAutocompleteExample} from './app/buttons-and-indicators/chips/chips-autocomplete-example';
 import {ChipsInputExample} from './app/buttons-and-indicators/chips/chips-input-example';
 import {IconOverviewExample} from './app/buttons-and-indicators/icon/icon-overview-example';
-import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example';
+//import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example';
+import {ProgressSpinnerOverviewExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-overview-example';
+import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-configurable-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -133,7 +135,8 @@ let components: any[] =
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
-      ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample];
+      ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample];
 
 @NgModule({
   imports: [
