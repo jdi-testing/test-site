@@ -101,6 +101,8 @@ import {TabGroupThemeExample} from './app/tab/tab-group-theme-example';
 import {TabGroupAsyncExample} from './app/tab/tab-group-async-example';
 import {TabNavBarBasicExample} from './app/tab/tab-nav-bar-basic-example';
 import {ButtonTypesExample} from './app/button/button-types-example';
+import {ButtonToggleOverviewExample} from './app/button-toggle/button-toggle-overview-example';
+import {ButtonToggleExclusiveExample} from './app/button-toggle/button-toggle-exclusive-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -133,7 +135,7 @@ import {ButtonTypesExample} from './app/button/button-types-example';
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
-      ButtonTypesExample],
+      ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample],
 
   declarations: [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
       SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
@@ -152,7 +154,7 @@ import {ButtonTypesExample} from './app/button/button-types-example';
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
-      ButtonTypesExample],
+      ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample],
 
   bootstrap: [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
       SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
@@ -171,7 +173,7 @@ import {ButtonTypesExample} from './app/button/button-types-example';
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
-      ButtonTypesExample],
+      ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample],
 
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
