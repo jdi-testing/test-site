@@ -9,7 +9,7 @@
     <mat-autocomplete #auto="matAutocomplete">
       <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
         <img class="example-option-img" aria-hidden [src]="state.flag" height="25">
-        <span>{{state.name}}</span> 
+        <span>{{state.name}}</span>
         <small>Population: {{state.population}}</small>
       </mat-option>
     </mat-autocomplete>
@@ -23,8 +23,3 @@
     Disable Input?
   </mat-slide-toggle>
 </form>
-
-
-<!-- Copyright 2019 Google LLC. All Rights Reserved.
-      Use of this source code is governed by an MIT-style license that
-      can be found in the LICENSE file at http://angular.io/license -->
