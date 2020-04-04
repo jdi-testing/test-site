@@ -114,6 +114,7 @@ import {ProgressSpinnerOverviewExample} from './app/buttons-and-indicators/progr
 import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-configurable-example';
 import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progress-bar/progress-bar-configurable-example';
 import {RippleOverviewExample} from './app/buttons-and-indicators/ripples/ripple-overview-example';
+import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app/popups-and-modals/bottom-sheet/bottom-sheet-overview-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -138,7 +139,8 @@ let components: any[] =
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
-      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample];
+      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
+      BottomSheetOverviewExample, BottomSheetOverviewExampleSheet];
 
 @NgModule({
   imports: [
@@ -152,7 +154,27 @@ let components: any[] =
   ],
   entryComponents: components,
   declarations: components,
-  bootstrap: components,
+  bootstrap:  [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
+                   SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
+                   AutocompleteOptgroupExample, AutocompleteAutoActiveFirstOptionExample, SelectOverviewExample, SelectValueBindingExample, SelectFormExample,
+                   SelectHintErrorExample, SelectDisabledExample, SelectResetExample, SelectOptgroupExample, SelectMultipleExample, SelectCustomTriggerExample,
+                   SelectNoRippleExample, SelectPanelClassExample, InputOverviewExample, SelectErrorStateMatcherExample, InputErrorStateMatcherExample,
+                   TextFieldAutosizeTextareaExample, InputClearableExample, InputErrorsExample, InputFormExample, InputHintExample, InputPrefixSuffixExample,
+                   SliderOverviewExample, SliderFormattingExample, SliderConfigurableExample, DatepickerOverviewExample, DatepickerStartViewExample,
+                   DatepickerValueExample, DatepickerMinMaxExample, DatepickerFilterExample, DatepickerEventsExample, DatepickerDisabledExample,
+                   DatepickerTouchExample, DatepickerApiExample,
+                   FormFieldOverviewExample, FormFieldLabelExample, FormFieldAppearanceExample, FormFieldHintExample, FormFieldErrorExample,
+                   FormFieldPrefixSuffixExample, FormFieldThemingExample, FormFieldCustomControlExample, MyTelInput, MenuOverviewExample, MenuIconsExample,
+                   NestedMenuExample, ToolbarOverviewExample, ToolbarMultirowExample, SidenavOverviewExample, SidenavDrawerOverviewExample,
+                   SidenavAutosizeExample, CardOverviewExample, CardFancyExample, DividerOverviewExample, ExpansionOverviewExample, ExpansionStepsExample,
+                   GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
+                   TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
+                   TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
+                   TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
+                   ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
+                   ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+                   ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
+                   BottomSheetOverviewExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
@@ -161,8 +183,3 @@ export class AppModule {}
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
-
-
-/**  Copyright 2019 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */
