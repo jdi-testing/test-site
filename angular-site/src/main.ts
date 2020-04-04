@@ -115,6 +115,7 @@ import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/p
 import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progress-bar/progress-bar-configurable-example';
 import {RippleOverviewExample} from './app/buttons-and-indicators/ripples/ripple-overview-example';
 import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app/popups-and-modals/bottom-sheet/bottom-sheet-overview-example';
+import {DialogOverviewExample, DialogOverviewExampleDialog} from './app/popups-and-modals/dialog/dialog-overview-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -140,7 +141,7 @@ let components: any[] =
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
-      BottomSheetOverviewExample, BottomSheetOverviewExampleSheet];
+      BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog];
 
 @NgModule({
   imports: [
@@ -174,7 +175,7 @@ let components: any[] =
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
                    ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
-                   BottomSheetOverviewExample],
+                   BottomSheetOverviewExample, DialogOverviewExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
