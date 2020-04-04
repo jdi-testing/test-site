@@ -118,6 +118,11 @@ import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app
 import {DialogOverviewExample, DialogOverviewExampleDialog} from './app/popups-and-modals/dialog/dialog-overview-example';
 import {SnackBarOverviewExample} from './app/popups-and-modals/snackbar/snack-bar-overview-example';
 import {SnackBarComponentExample, PizzaPartyComponent} from './app/popups-and-modals/snackbar/snack-bar-component-example';
+import {TooltipCustomClassExample} from './app/popups-and-modals/tooltip/tooltip-custom-class-example';
+import {TooltipDelayExample} from './app/popups-and-modals/tooltip/tooltip-delay-example';
+import {TooltipMessageExample} from './app/popups-and-modals/tooltip/tooltip-message-example';
+import {TooltipManualExample} from './app/popups-and-modals/tooltip/tooltip-manual-example';
+import {TooltipAutoHideExample} from './app/popups-and-modals/tooltip/tooltip-auto-hide-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -144,7 +149,8 @@ let components: any[] =
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
-      SnackBarComponentExample, PizzaPartyComponent];
+      SnackBarComponentExample, PizzaPartyComponent, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample,
+      TooltipAutoHideExample];
 
 @NgModule({
   imports: [
@@ -178,7 +184,8 @@ let components: any[] =
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
                    ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
-                   BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample],
+                   BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipCustomClassExample,
+                   TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
