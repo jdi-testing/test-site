@@ -116,6 +116,8 @@ import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progr
 import {RippleOverviewExample} from './app/buttons-and-indicators/ripples/ripple-overview-example';
 import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app/popups-and-modals/bottom-sheet/bottom-sheet-overview-example';
 import {DialogOverviewExample, DialogOverviewExampleDialog} from './app/popups-and-modals/dialog/dialog-overview-example';
+import {SnackBarOverviewExample} from './app/popups-and-modals/snackbar/snack-bar-overview-example';
+import {SnackBarComponentExample, PizzaPartyComponent} from './app/popups-and-modals/snackbar/snack-bar-component-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -141,7 +143,8 @@ let components: any[] =
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
-      BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog];
+      BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
+      SnackBarComponentExample, PizzaPartyComponent];
 
 @NgModule({
   imports: [
@@ -175,7 +178,7 @@ let components: any[] =
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
                    ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
-                   BottomSheetOverviewExample, DialogOverviewExample],
+                   BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
