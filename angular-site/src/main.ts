@@ -124,6 +124,7 @@ import {TooltipMessageExample} from './app/popups-and-modals/tooltip/tooltip-mes
 import {TooltipManualExample} from './app/popups-and-modals/tooltip/tooltip-manual-example';
 import {TooltipAutoHideExample} from './app/popups-and-modals/tooltip/tooltip-auto-hide-example';
 import {PaginatorConfigurableExample} from './app/data-table/paginator/paginator-configurable-example';
+import {SortOverviewExample} from './app/data-table/sort-header/sort-overview-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -152,7 +153,7 @@ let components: any[] =
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
       SnackBarComponentExample, PizzaPartyComponent, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample,
       TooltipAutoHideExample,
-      PaginatorConfigurableExample];
+      PaginatorConfigurableExample, SortOverviewExample];
 
 @NgModule({
   imports: [
@@ -188,7 +189,7 @@ let components: any[] =
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipCustomClassExample,
                    TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
-                   PaginatorConfigurableExample],
+                   PaginatorConfigurableExample, SortOverviewExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
