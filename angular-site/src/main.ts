@@ -131,7 +131,6 @@ import {TableDynamicColumnsExample} from './app/data-table/table/table-dynamic-c
 import {TableExpandableRowsExample} from './app/data-table/table/table-expandable-rows-example';
 import {TableSelectionExample} from './app/data-table/table/table-selection-example';
 import {TableMultipleHeaderFooterExample} from './app/data-table/table/table-multiple-header-footer-example';
-import {TableMultipleHeaderFooterExample} from './app/data-table/table/table-multiple-header-footer-example';
 import {TableOverviewExample} from './app/data-table/table/table-overview-example';
 import {TableStickyColumnsExample} from './app/data-table/table/table-sticky-columns-example';
 import {TableStickyHeaderExample} from './app/data-table/table/table-sticky-header-example';
