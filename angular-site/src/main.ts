@@ -127,6 +127,7 @@ import {PaginatorConfigurableExample} from './app/data-table/paginator/paginator
 import {SortOverviewExample} from './app/data-table/sort-header/sort-overview-example';
 import {TableBasicExample} from './app/data-table/table/table-basic-example';
 import {TableBasicFlexExample} from './app/data-table/table/table-basic-flex-example';
+import {TableDynamicColumnsExample} from './app/data-table/table/table-dynamic-columns-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -155,7 +156,7 @@ let components: any[] =
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
       SnackBarComponentExample, PizzaPartyComponent, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample,
       TooltipAutoHideExample,
-      PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample];
+      PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample];
 
 @NgModule({
   imports: [
@@ -191,7 +192,7 @@ let components: any[] =
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipCustomClassExample,
                    TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
-                   PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample],
+                   PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
