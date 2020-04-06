@@ -130,6 +130,7 @@ import {TableBasicFlexExample} from './app/data-table/table/table-basic-flex-exa
 import {TableDynamicColumnsExample} from './app/data-table/table/table-dynamic-columns-example';
 import {TableExpandableRowsExample} from './app/data-table/table/table-expandable-rows-example';
 import {TableSelectionExample} from './app/data-table/table/table-selection-example';
+import {TableMultipleHeaderFooterExample} from './app/data-table/table/table-multiple-header-footer-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -159,7 +160,7 @@ let components: any[] =
       SnackBarComponentExample, PizzaPartyComponent, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample,
       TooltipAutoHideExample,
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
-      TableExpandableRowsExample, TableSelectionExample];
+      TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample];
 
 @NgModule({
   imports: [
@@ -196,7 +197,7 @@ let components: any[] =
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipCustomClassExample,
                    TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
-                   TableExpandableRowsExample, TableSelectionExample],
+                   TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
