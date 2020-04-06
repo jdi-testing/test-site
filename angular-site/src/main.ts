@@ -136,6 +136,7 @@ import {TableOverviewExample} from './app/data-table/table/table-overview-exampl
 import {TableStickyColumnsExample} from './app/data-table/table/table-sticky-columns-example';
 import {TableStickyHeaderExample} from './app/data-table/table/table-sticky-header-example';
 import {TableStickyFooterExample} from './app/data-table/table/table-sticky-footer-example';
+import {TableReorderableExample} from './app/data-table/table/table-reorderable-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -166,7 +167,7 @@ let components: any[] =
       TooltipAutoHideExample,
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
       TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
-      TableStickyHeaderExample, TableStickyFooterExample];
+      TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample];
 
 @NgModule({
   imports: [
@@ -204,7 +205,7 @@ let components: any[] =
                    TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
                    TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
-                   TableStickyHeaderExample, TableStickyFooterExample],
+                   TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
