@@ -37,12 +37,12 @@ then
 fi
 
 # 1. Move to ./angular-site directory and perform npm install if needed
-# Todo: exit gracefully here
-[ ! -d "angular-site" ] && (echo "angular-site dir is not found" && (exit 1))
+[ ! -d "angular-site" ] && echo "angular-site dir is not found" && exit 1
 cd angular-site
-[ ! -d "node_modules" ] && (echo "node_modules dir is not found - performing npm install" && npm install)
 
-# 2. Verify the result visually
+[ ! -d "node_modules" ] && echo "node_modules dir is not found - performing npm install" && npm install
+
+# 2. Verify the result visually (output is muted in order not to cover the following echo output)
 ng serve --open > /dev/null &
 echo "Test site is going to be built and displayed in your browser in approximately 20 seconds"
 echo "Press Y if you are satisfied with the result and would like to proceed with building the js files and placing them to ${JDI_LIGHT_DIR}."
@@ -53,14 +53,14 @@ echo "This action cannot be undone."
 read -n 1 -r keypressed
 
 # We don't need running ng serve --open any mode
-# todo fix weird symbols after kill
-#NG_SERVE_PID=$(ps aux | grep '[n]g serve --open' | awk '{print $2}')
-#(kill ${NG_SERVE_PID}) > /dev/null
+NG_SERVE_PID=$(ps aux | grep '[n]g serve --open' | awk '{print $2}')
+echo "\nKilling previously started ng-serve at pid#${NG_SERVE_PID}"
+(kill ${NG_SERVE_PID}) > /dev/null
 
 if [[ $keypressed =~ ^[Yy]$ ]]
 then
     # 3.1. Build to 'dist' folder
-    echo "\nStarting the build job"
+    echo "Starting the build job"
     ng build --prod
 
     # Now let's move to angular-light dir and make sure that we are in gh-pages branch
