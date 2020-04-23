@@ -46,6 +46,7 @@ BRANCH=$(cd ../${JDI_LIGHT_DIR} && git symbolic-ref --short HEAD)
 if [[ ${BRANCH} != ${JDI_LIGHT_BRANCH} ]]
 then
     echo "Please change active branch of jdi-light to ${JDI_LIGHT_BRANCH}."
+    echo "You can also specify different value for JDI_LIGHT_BRANCH variable if needed"
     exit 1
 fi
 
@@ -71,7 +72,7 @@ pkill "ng serve --open"
 if [[ $keypressed =~ ^[Yy]$ ]]
 then
     # 3.1. Build to 'dist' folder
-    echo "Starting the build job"
+    echo "\nStarting the build job"
     ng build --prod
 
     # Now let's move to angular-light dir and make sure that we are in gh-pages branch
