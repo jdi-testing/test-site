@@ -14,6 +14,7 @@ export interface ChipColor {
   templateUrl: 'chips-stacked-example.html',
   styleUrls: ['chips-stacked-example.css'],
 })
+
 export class ChipsStackedExample {
   availableColors: ChipColor[] = [
     {name: 'none', color: undefined},
@@ -21,4 +22,5 @@ export class ChipsStackedExample {
     {name: 'Accent', color: 'accent'},
     {name: 'Warn', color: 'warn'}
   ];
+   clickedStackedChip;
 }

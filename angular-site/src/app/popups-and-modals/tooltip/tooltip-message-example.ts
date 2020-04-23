@@ -10,5 +10,5 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['tooltip-message-example.css'],
 })
 export class TooltipMessageExample {
-  message = new FormControl('Info about the action');
+  message = new FormControl('Have a nice day!');
 }

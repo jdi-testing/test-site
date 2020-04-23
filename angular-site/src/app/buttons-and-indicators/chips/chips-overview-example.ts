@@ -8,4 +8,7 @@ import {Component} from '@angular/core';
   templateUrl: 'chips-overview-example.html',
   styleUrls: ['chips-overview-example.css'],
 })
-export class ChipsOverviewExample {}
+
+export class ChipsOverviewExample {
+  clickedBasicChip;
+}
