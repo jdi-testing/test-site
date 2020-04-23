@@ -118,6 +118,7 @@ import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app
 import {DialogOverviewExample, DialogOverviewExampleDialog} from './app/popups-and-modals/dialog/dialog-overview-example';
 import {SnackBarOverviewExample} from './app/popups-and-modals/snackbar/snack-bar-overview-example';
 import {SnackBarComponentExample, PizzaPartyComponent} from './app/popups-and-modals/snackbar/snack-bar-component-example';
+import {TooltipOverviewExample} from './app/popups-and-modals/tooltip/tooltip-overview-example';
 import {TooltipCustomClassExample} from './app/popups-and-modals/tooltip/tooltip-custom-class-example';
 import {TooltipDelayExample} from './app/popups-and-modals/tooltip/tooltip-delay-example';
 import {TooltipMessageExample} from './app/popups-and-modals/tooltip/tooltip-message-example';
@@ -162,8 +163,8 @@ let components: any[] =
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
-      SnackBarComponentExample, PizzaPartyComponent, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample,
-      TooltipAutoHideExample,
+      SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample,
+      TooltipManualExample, TooltipAutoHideExample,
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
       TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
       TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample];
@@ -200,8 +201,8 @@ let components: any[] =
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
                    ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
-                   BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipCustomClassExample,
-                   TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
+                   BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipOverviewExample,
+                   TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
                    TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
                    TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample],
