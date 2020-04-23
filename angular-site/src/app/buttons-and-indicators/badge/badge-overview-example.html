@@ -6,8 +6,8 @@
 <p>
   Button with a badge on the left
   <button mat-raised-button color="primary"
-          matBadge="8" matBadgePosition="before" matBadgeColor="accent">
-    Action
+          matBadge="8" matBadgePosition="before" matBadgeColor="accent" (click)="showMsg = !showMsg">
+    {{showMsg ? 'Hide' : 'Show'}} message
   </button>
 </p>
 
@@ -19,3 +19,5 @@
       Example with a home icon with overlaid badge showing the number 15
     </span>
 </p>
+<h5 *ngIf="showMsg">Top secret message</h5>
+

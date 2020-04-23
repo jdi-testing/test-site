@@ -8,4 +8,7 @@ import {Component} from '@angular/core';
   templateUrl: 'badge-overview-example.html',
   styleUrls: ['badge-overview-example.css'],
 })
-export class BadgeOverviewExample {}
+
+export class BadgeOverviewExample {
+  showMsg : boolean = true;
+}
