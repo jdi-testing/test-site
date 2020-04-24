@@ -1,0 +1,48 @@
+language: node_js
+node_js:
+  - 12
+before_install:
+  - echo "Placeholder for before-install section"
+before_script:
+  - echo "Placeholder for before_script section"
+
+env:
+  global:
+    - ANGULAR_SITE_FOLDER="angular-site"
+
+stages:
+  - prepare
+  - compile
+  - test
+  - report
+
+jobs:
+  include:
+    - stage: prepare
+      name: Prepare stage
+      script:
+        - echo "Prepare stage"
+        - npm --version
+
+    - stage: compile
+      name: compile - Perform npm install
+      script:
+        - echo "Compile stage"
+        - cd $ANGULAR_SITE_FOLDER
+        - npm install
+
+    - stage: test
+      name: Run tests
+      script:
+        - echo "Test stage goes here"
+
+    - stage: reports
+      name: Publish report
+      script:
+        - echo "Reports are to be published at this stage"
+after_failure:
+  - echo "Build has failed"
+after_script:
+  - echo "after_script section"
+after_success:
+  - echo "Build has succeded"
