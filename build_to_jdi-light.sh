@@ -71,11 +71,11 @@ pkill "ng serve --open"
 
 if [[ $keypressed =~ ^[Yy]$ ]]
 then
-    # 3.1. Build to 'dist' folder
+    # 3.1. Build to 'dist' folder, \n is required to move to new line after user pressed 'Y'
     echo "\nStarting the build job"
     ng build --prod
 
-    # Now let's move to angular-light dir and make sure that we are in gh-pages branch
+    # Now let's move to jdi-light dir and make sure that we are in gh-pages branch
     echo "Changing working directory to ${JDI_LIGHT_DIR}, branch ${BRANCH}"
     cd ${TEST_SITE_DIR}
     cd ../${JDI_LIGHT_DIR}
@@ -83,7 +83,7 @@ then
     # we already know that we are in correct branch, so let's proceed:
     # 3.3. Copy the built app to ./angular directory of test-site
     echo "Copying the built angular site to ${JDI_LIGHT_DIR}/${JDI_LIGHT_ANGULAR_DIR}/"
-    rm -r ./${JDI_LIGHT_ANGULAR_DIR}/*
+    rm -rf ./${JDI_LIGHT_ANGULAR_DIR}/*
     cp -R ${TEST_SITE_DIR}/angular-site/dist/my-app/. ./${JDI_LIGHT_ANGULAR_DIR}/
 
     # Removing files that are not needed in jd-light
@@ -93,6 +93,6 @@ then
     done
 
     # 4. We can now run the site with python if needed
-    echo "\nStarting server at port ${SERVER_PORT}"
+    echo "Starting server at port ${SERVER_PORT}"
     python3 -m http.server ${SERVER_PORT}
 fi
