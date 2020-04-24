@@ -1,0 +1,45 @@
+language: node_js
+node_js:
+  - 12
+before_install:
+  # Before_install section
+  - ignore
+before_script:
+  # Before_script section
+  - ignore
+
+env:
+  global:
+    - ANGULAR_SITE_FOLDER="angular-site"
+
+stages:
+  - prepare
+  - compile
+  - test
+
+jobs:
+  include:
+    - stage: prepare
+      name: Prepare stage
+      script:
+        - npm --version
+
+    - stage: compile
+      name: compile - Perform npm install
+      script:
+        - cd $ANGULAR_SITE_FOLDER
+        - npm install
+
+    - stage: test
+      name: Run tests
+      script:
+        - echo "Test stage goes here, right now tests are considered passed by default"
+
+after_failure:
+  - echo "Build has failed"
+after_script:
+  #One can add some cleanup here
+  - ignore
+after_success:
+  - echo "Build has succeded"
+  - pwd
