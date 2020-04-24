@@ -10,5 +10,5 @@ import {Component} from '@angular/core';
 })
 
 export class BadgeOverviewExample {
-  showMsg : boolean = false;
+  showMsg = false;
 }

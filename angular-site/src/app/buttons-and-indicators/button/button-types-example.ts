@@ -10,11 +10,11 @@ import {Component} from '@angular/core';
 })
 
 export class ButtonTypesExample {
-  basicBtnClicked : string;
-  raisedBtnClicked : string;
-  strokedBtnClicked : string;
-  flatBtnClicked : string;
-  iconBtnClicked : string;
-  fabBtnClicked : string;
-  miniFabBtnClicked : string;
+  basicBtnClicked: string;
+  raisedBtnClicked: string;
+  strokedBtnClicked: string;
+  flatBtnClicked: string;
+  iconBtnClicked: string;
+  fabBtnClicked: string;
+  miniFabBtnClicked: string;
 }
