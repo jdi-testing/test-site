@@ -133,6 +133,9 @@ import {TableBasicExample} from './app/data-table/table/table-basic-example';
 import {TableBasicFlexExample} from './app/data-table/table/table-basic-flex-example';
 import {TableDynamicColumnsExample} from './app/data-table/table/table-dynamic-columns-example';
 import {TableExpandableRowsExample} from './app/data-table/table/table-expandable-rows-example';
+import {TableFilteringExample} from './app/data-table/table/table-filtering-example';
+import {TableFooterRowExample} from './app/data-table/table/table-footer-row-example';
+import {TableHttpExample} from './app/data-table/table/table-http-example';
 import {TableSelectionExample} from './app/data-table/table/table-selection-example';
 import {TableMultipleHeaderFooterExample} from './app/data-table/table/table-multiple-header-footer-example';
 import {TableOverviewExample} from './app/data-table/table/table-overview-example';
@@ -169,7 +172,8 @@ const components: any[] =
       SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample,
       TooltipDisabledExample, TooltipMessageExample, TooltipManualExample, TooltipModifiedDefaultsExample, TooltipAutoHideExample,
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
-      TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
+      TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
+      TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
       TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample];
 
 @NgModule({
@@ -208,7 +212,8 @@ const components: any[] =
                    TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample, TooltipDisabledExample, TooltipMessageExample, TooltipManualExample,
                    TooltipModifiedDefaultsExample, TooltipAutoHideExample,
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
-                   TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
+                   TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
+                   TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
                    TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
