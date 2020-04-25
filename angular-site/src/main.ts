@@ -143,6 +143,9 @@ import {TableStickyColumnsExample} from './app/data-table/table/table-sticky-col
 import {TableStickyHeaderExample} from './app/data-table/table/table-sticky-header-example';
 import {TableStickyFooterExample} from './app/data-table/table/table-sticky-footer-example';
 import {TableReorderableExample} from './app/data-table/table/table-reorderable-example';
+import {TablePaginationExample} from './app/data-table/table/table-pagination-example';
+import {TableRowContextExample} from './app/data-table/table/table-row-context-example';
+import {TableSortingExample} from './app/data-table/table/table-sorting-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -173,8 +176,8 @@ const components: any[] =
       TooltipDisabledExample, TooltipMessageExample, TooltipManualExample, TooltipModifiedDefaultsExample, TooltipAutoHideExample,
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
       TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
-      TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
-      TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample];
+      TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample, TablePaginationExample, TableRowContextExample,
+      TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample];
 
 @NgModule({
   imports: [
@@ -213,8 +216,8 @@ const components: any[] =
                    TooltipModifiedDefaultsExample, TooltipAutoHideExample,
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
                    TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
-                   TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
-                   TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample],
+                   TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample, TablePaginationExample, TableRowContextExample,
+                   TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
