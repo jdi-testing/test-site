@@ -119,10 +119,13 @@ import {DialogOverviewExample, DialogOverviewExampleDialog} from './app/popups-a
 import {SnackBarOverviewExample} from './app/popups-and-modals/snackbar/snack-bar-overview-example';
 import {SnackBarComponentExample, PizzaPartyComponent} from './app/popups-and-modals/snackbar/snack-bar-component-example';
 import {TooltipOverviewExample} from './app/popups-and-modals/tooltip/tooltip-overview-example';
+import {TooltipPositionExample} from './app/popups-and-modals/tooltip/tooltip-position-example';
 import {TooltipCustomClassExample} from './app/popups-and-modals/tooltip/tooltip-custom-class-example';
 import {TooltipDelayExample} from './app/popups-and-modals/tooltip/tooltip-delay-example';
+import {TooltipDisabledExample} from './app/popups-and-modals/tooltip/tooltip-disabled-example';
 import {TooltipMessageExample} from './app/popups-and-modals/tooltip/tooltip-message-example';
 import {TooltipManualExample} from './app/popups-and-modals/tooltip/tooltip-manual-example';
+import {TooltipModifiedDefaultsExample} from './app/popups-and-modals/tooltip/tooltip-modified-defaults-example';
 import {TooltipAutoHideExample} from './app/popups-and-modals/tooltip/tooltip-auto-hide-example';
 import {PaginatorConfigurableExample} from './app/data-table/paginator/paginator-configurable-example';
 import {SortOverviewExample} from './app/data-table/sort-header/sort-overview-example';
@@ -163,8 +166,8 @@ const components: any[] =
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
-      SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample,
-      TooltipManualExample, TooltipAutoHideExample,
+      SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample,
+      TooltipDisabledExample, TooltipMessageExample, TooltipManualExample, TooltipModifiedDefaultsExample, TooltipAutoHideExample,
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
       TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
       TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample];
@@ -202,7 +205,8 @@ const components: any[] =
                    ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipOverviewExample,
-                   TooltipCustomClassExample, TooltipDelayExample, TooltipMessageExample, TooltipManualExample, TooltipAutoHideExample,
+                   TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample, TooltipDisabledExample, TooltipMessageExample, TooltipManualExample,
+                   TooltipModifiedDefaultsExample, TooltipAutoHideExample,
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
                    TableExpandableRowsExample, TableSelectionExample, TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample,
                    TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample],
