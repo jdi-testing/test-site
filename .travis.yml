@@ -42,4 +42,6 @@ after_script:
   - ignore
 after_success:
   - echo "Build has succeded"
+  - cd $ANGULAR_SITE_FOLDER
   - pwd
+  - npm install
