@@ -6,8 +6,8 @@ echo $SHELL
 TEST_SITE_DIR=$(pwd)
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
-#PUSH_URI="https://$GITHUB_SECRET_TOKEN@github.com/$GITHUB_REPO"
-PUSH_URI="https://github.com/$GITHUB_REPO"
+#PUSH_URI="https://${GITHUB_SECRET_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
+PUSH_URI="https://github.com/${JDI_LIGHT_GITHUB_REPO}"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_DIR="jdi-light"
 JDI_LIGHT_ANGULAR_DIR="angular"
