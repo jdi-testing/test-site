@@ -8,7 +8,6 @@ import {Component} from '@angular/core';
   templateUrl: 'button-types-example.html',
   styleUrls: ['button-types-example.css'],
 })
-
 export class ButtonTypesExample {
   basicBtnClicked: string;
   raisedBtnClicked: string;

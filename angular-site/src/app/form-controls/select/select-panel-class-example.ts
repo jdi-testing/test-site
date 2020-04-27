@@ -15,8 +15,3 @@ import {FormControl} from '@angular/forms';
 export class SelectPanelClassExample {
   panelColor = new FormControl('red');
 }
-
-
-/**  Copyright 2019 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */
