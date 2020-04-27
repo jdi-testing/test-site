@@ -26,6 +26,14 @@ git checkout "$JDI_LIGHT_BRANCH"
 # Perform npm install in angular-site if not done yet
 cd ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}
 ([ ! -d "node_modules" ] && printf "node_modules dir is not found - performing npm install" && npm install)
+pwd
+ls -alh
+
+#Build angular-site
+echo "Performing ng-build"
+ng build --prod
+pwd
+ls -alh
 
 # Copy the required files
 rm -rf ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/*
