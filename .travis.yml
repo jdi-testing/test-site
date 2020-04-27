@@ -16,6 +16,7 @@ stages:
   - prepare
   - compile
   - test
+  - merge
 
 jobs:
   include:
@@ -35,6 +36,11 @@ jobs:
       script:
         - echo "Test stage goes here, right now tests are considered passed by default"
 
+    - stage: merge
+      name: Merge the changes into jdi-light
+      if: branch = travis-setup #should be 'master' in the future
+      script:
+        - sh travis_automerge_to_jdi_light.sh
 after_failure:
   - echo "Build has failed"
 after_script:
@@ -42,4 +48,3 @@ after_script:
   - ignore
 after_success:
   - echo "Build has succeded"
-  - sh travis_automerge_to_jdi_light.sh

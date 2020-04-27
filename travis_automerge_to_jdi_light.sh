@@ -6,6 +6,7 @@ echo $SHELL
 TEST_SITE_DIR=$(pwd)
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
+PUSH_URI="https://$GITHUB_SECRET_TOKEN@github.com/$GITHUB_REPO"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_DIR="jdi-light"
 JDI_LIGHT_ANGULAR_DIR="angular"
@@ -16,36 +17,44 @@ export GIT_COMMITTER_EMAIL='travis@travis'
 export GIT_COMMITTER_NAME='Travis CI'
 
 # Start
+GIT_COMMIT_MSG="[Travis-automerge] $(git show -s --format='%h %s')"
+
 # Clone jdi-light and checkout the required branch
+echo "\nChecking out ${JDI_LIGHT_GITHUB_REPO}"
 REPO_TEMP=$(mktemp -d)
 git clone "https://github.com/${JDI_LIGHT_GITHUB_REPO}" "${REPO_TEMP}"
+
+echo "\nSwitching to ${JDI_LIGHT_BRANCH}"
 cd "${REPO_TEMP}"
-echo "git checkout gh-pages_____________"
-git checkout "$JDI_LIGHT_BRANCH"
+git checkout "${JDI_LIGHT_BRANCH}"
 
 # Perform npm install in angular-site if not done yet
 cd ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}
-([ ! -d "node_modules" ] && printf "node_modules dir is not found - performing npm install" && npm install)
-pwd
-ls -alh
+([ ! -d "node_modules" ] && echo "\nPerforming npm install" && npm install)
 
 #Build angular-site
-echo "Performing ng-build"
+echo "\nPerforming ng-build"
 ng build --prod
-pwd
-ls -alh
 
 # Copy the required files
+echo "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-light/${JDI_LIGHT_ANGULAR_DIR}"
 rm -rf ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/*
 cp -R ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}/dist/my-app/. ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/
 
-rm ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt index.html
-rm ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html
+#These files are not needed. See beginning of script to find out why we don't iterate through an array here
+rm -rf ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt index.html
+rm -rf ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html
 
 # Add new files to git (or use git commit -a -m "commit_message")
+echo "\nAdding changes to git and checking the status"
 cd ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}
 git add --all
-# Print changes that are about to be committed
+# echo changes that are about to be committed
 git status
 
 # todo commit-push-merge-etc
+echo "\nMerge changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}"
+git commit -a -m "${GIT_COMMIT_MSG}"
+git status
+#todo Uncomment this when we are confident that everything is done correctly
+#git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH}
