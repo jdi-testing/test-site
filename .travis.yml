@@ -42,6 +42,4 @@ after_script:
   - ignore
 after_success:
   - echo "Build has succeded"
-  - cd $ANGULAR_SITE_FOLDER
-  - pwd
-  - npm install
+  - source travis_automerge_to_jdi_light.sh
