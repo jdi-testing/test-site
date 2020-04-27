@@ -25,23 +25,25 @@ jobs:
       skip_cleanup: true
       script:
         - npm --version
-        - cd $ANGULAR_SITE_FOLDER
-        - npm install
 
     - stage: compile
       name: Compile
-      skip_cleanup: true
       script:
         - cd $ANGULAR_SITE_FOLDER
+        - ls -alh
+        - npm install
+        - ls -alh
         - ng build --prod
 
     - stage: test
       name: Run tests
       script:
+        - cd $ANGULAR_SITE_FOLDER
+        - ls -alh
         - echo "Test stage goes here, right now tests are considered passed by default"
 
     - stage: merge
-      name: Merge the changes into jdi-light
+      name: Merge the changes into jdi-light repo
       if: branch = travis-setup #should be 'master' in the future
       github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       script:

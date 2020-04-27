@@ -29,14 +29,13 @@ echo "\nSwitching to ${JDI_LIGHT_BRANCH}"
 cd "${REPO_TEMP}"
 git checkout "${JDI_LIGHT_BRANCH}"
 
-# Temporarily commented - to be done on prepare and build stages
-## Perform npm install in angular-site if not done yet
-#cd ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}
-#([ ! -d "node_modules" ] && echo "\nPerforming npm install" && npm install)
-#
-##Build angular-site
-#echo "\nPerforming ng-build"
-#ng build --prod
+# Perform npm install in angular-site if not done yet
+cd ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}
+([ ! -d "node_modules" ] && echo "\nPerforming npm install" && npm install)
+
+#Build angular-site
+echo "\nPerforming ng-build"
+ng build --prod
 
 # Copy the required files
 echo "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-light/${JDI_LIGHT_ANGULAR_DIR}"
