@@ -9,7 +9,7 @@ JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_DIR="jdi-light"
 JDI_LIGHT_ANGULAR_DIR="angular"
-FILES_TO_EXCLUDE=( "3rdpartylicenses.txt" "index.html" )
+FILES_TO_EXCLUDE=(3rdpartylicenses.txt index.html)
 SERVER_PORT=8001
 
 export GIT_COMMITTER_EMAIL='travis@travis'
