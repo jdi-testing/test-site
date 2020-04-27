@@ -28,6 +28,7 @@ jobs:
 
     - stage: compile
       name: Compile
+      skip_cleanup: true
       script:
         - cd $ANGULAR_SITE_FOLDER
         - ls -alh
