@@ -21,15 +21,19 @@ stages:
 jobs:
   include:
     - stage: prepare
-      name: Prepare stage
+      name: Prepare
+      skip_cleanup: true
       script:
         - npm --version
-
-    - stage: compile
-      name: compile - Perform npm install
-      script:
         - cd $ANGULAR_SITE_FOLDER
         - npm install
+
+    - stage: compile
+      name: Compile
+      skip_cleanup: true
+      script:
+        - cd $ANGULAR_SITE_FOLDER
+        - ng build --prod
 
     - stage: test
       name: Run tests
@@ -39,6 +43,7 @@ jobs:
     - stage: merge
       name: Merge the changes into jdi-light
       if: branch = travis-setup #should be 'master' in the future
+      github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       script:
         - sh travis_automerge_to_jdi_light.sh
 after_failure:

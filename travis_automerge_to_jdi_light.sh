@@ -6,7 +6,7 @@ echo $SHELL
 TEST_SITE_DIR=$(pwd)
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
-#PUSH_URI="https://${GITHUB_SECRET_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
+#PUSH_URI="https://${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
 PUSH_URI="https://github.com/${JDI_LIGHT_GITHUB_REPO}"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_DIR="jdi-light"
@@ -29,13 +29,14 @@ echo "\nSwitching to ${JDI_LIGHT_BRANCH}"
 cd "${REPO_TEMP}"
 git checkout "${JDI_LIGHT_BRANCH}"
 
-# Perform npm install in angular-site if not done yet
-cd ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}
-([ ! -d "node_modules" ] && echo "\nPerforming npm install" && npm install)
-
-#Build angular-site
-echo "\nPerforming ng-build"
-ng build --prod
+# Temporarily commented - to be done on prepare and build stages
+## Perform npm install in angular-site if not done yet
+#cd ${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}
+#([ ! -d "node_modules" ] && echo "\nPerforming npm install" && npm install)
+#
+##Build angular-site
+#echo "\nPerforming ng-build"
+#ng build --prod
 
 # Copy the required files
 echo "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-light/${JDI_LIGHT_ANGULAR_DIR}"
