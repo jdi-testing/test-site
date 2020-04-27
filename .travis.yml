@@ -42,4 +42,4 @@ after_script:
   - ignore
 after_success:
   - echo "Build has succeded"
-  - source travis_automerge_to_jdi_light.sh
+  - sh travis_automerge_to_jdi_light.sh
