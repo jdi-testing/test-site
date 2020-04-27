@@ -1,4 +1,5 @@
 #!/bin/bash -v
+echo $SHELL
 
 # VARIABLES
 # Feel free to edit if your directory names or branches differ
