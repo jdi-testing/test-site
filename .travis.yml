@@ -30,17 +30,11 @@ jobs:
       name: Compile
       skip_cleanup: true
       script:
-        - cd $ANGULAR_SITE_FOLDER
-        - ls -alh
-        - npm install
-        - ls -alh
-        - ng build --prod
+        - echo "Compile stage"
 
     - stage: test
       name: Run tests
       script:
-        - cd $ANGULAR_SITE_FOLDER
-        - ls -alh
         - echo "Test stage goes here, right now tests are considered passed by default"
 
     - stage: merge

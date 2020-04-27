@@ -6,8 +6,8 @@ echo $SHELL
 TEST_SITE_DIR=$(pwd)
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
-#PUSH_URI="https://${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
-PUSH_URI="https://github.com/${JDI_LIGHT_GITHUB_REPO}"
+PUSH_URI="https://${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
+#PUSH_URI="https://github.com/${JDI_LIGHT_GITHUB_REPO}"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_DIR="jdi-light"
 JDI_LIGHT_ANGULAR_DIR="angular"
@@ -58,4 +58,5 @@ echo "\nMerge changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}"
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 #todo Uncomment this when we are confident that everything is done correctly
+echo "Performing: git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH}"
 git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH}
