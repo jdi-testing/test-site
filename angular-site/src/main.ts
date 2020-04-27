@@ -114,11 +114,43 @@ import {ProgressSpinnerOverviewExample} from './app/buttons-and-indicators/progr
 import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-configurable-example';
 import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progress-bar/progress-bar-configurable-example';
 import {RippleOverviewExample} from './app/buttons-and-indicators/ripples/ripple-overview-example';
+import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app/popups-and-modals/bottom-sheet/bottom-sheet-overview-example';
+import {DialogOverviewExample, DialogOverviewExampleDialog} from './app/popups-and-modals/dialog/dialog-overview-example';
+import {SnackBarOverviewExample} from './app/popups-and-modals/snackbar/snack-bar-overview-example';
+import {SnackBarComponentExample, PizzaPartyComponent} from './app/popups-and-modals/snackbar/snack-bar-component-example';
+import {TooltipOverviewExample} from './app/popups-and-modals/tooltip/tooltip-overview-example';
+import {TooltipPositionExample} from './app/popups-and-modals/tooltip/tooltip-position-example';
+import {TooltipCustomClassExample} from './app/popups-and-modals/tooltip/tooltip-custom-class-example';
+import {TooltipDelayExample} from './app/popups-and-modals/tooltip/tooltip-delay-example';
+import {TooltipDisabledExample} from './app/popups-and-modals/tooltip/tooltip-disabled-example';
+import {TooltipMessageExample} from './app/popups-and-modals/tooltip/tooltip-message-example';
+import {TooltipManualExample} from './app/popups-and-modals/tooltip/tooltip-manual-example';
+import {TooltipModifiedDefaultsExample} from './app/popups-and-modals/tooltip/tooltip-modified-defaults-example';
+import {TooltipAutoHideExample} from './app/popups-and-modals/tooltip/tooltip-auto-hide-example';
+import {PaginatorConfigurableExample} from './app/data-table/paginator/paginator-configurable-example';
+import {SortOverviewExample} from './app/data-table/sort-header/sort-overview-example';
+import {TableBasicExample} from './app/data-table/table/table-basic-example';
+import {TableBasicFlexExample} from './app/data-table/table/table-basic-flex-example';
+import {TableDynamicColumnsExample} from './app/data-table/table/table-dynamic-columns-example';
+import {TableExpandableRowsExample} from './app/data-table/table/table-expandable-rows-example';
+import {TableFilteringExample} from './app/data-table/table/table-filtering-example';
+import {TableFooterRowExample} from './app/data-table/table/table-footer-row-example';
+import {TableHttpExample} from './app/data-table/table/table-http-example';
+import {TableSelectionExample} from './app/data-table/table/table-selection-example';
+import {TableMultipleHeaderFooterExample} from './app/data-table/table/table-multiple-header-footer-example';
+import {TableOverviewExample} from './app/data-table/table/table-overview-example';
+import {TableStickyColumnsExample} from './app/data-table/table/table-sticky-columns-example';
+import {TableStickyHeaderExample} from './app/data-table/table/table-sticky-header-example';
+import {TableStickyFooterExample} from './app/data-table/table/table-sticky-footer-example';
+import {TableReorderableExample} from './app/data-table/table/table-reorderable-example';
+import {TablePaginationExample} from './app/data-table/table/table-pagination-example';
+import {TableRowContextExample} from './app/data-table/table/table-row-context-example';
+import {TableSortingExample} from './app/data-table/table/table-sorting-example';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
 // This makes the examples that use MatFormField render the same in StackBlitz as on the docs site.
-let components: any[] =
+const components: any[] =
     [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
       SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
       AutocompleteOptgroupExample, AutocompleteAutoActiveFirstOptionExample, SelectOverviewExample, SelectValueBindingExample, SelectFormExample,
@@ -138,7 +170,14 @@ let components: any[] =
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
-      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample];
+      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
+      BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
+      SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample,
+      TooltipDisabledExample, TooltipMessageExample, TooltipManualExample, TooltipModifiedDefaultsExample, TooltipAutoHideExample,
+      PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
+      TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
+      TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample, TablePaginationExample, TableRowContextExample,
+      TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample];
 
 @NgModule({
   imports: [
@@ -152,7 +191,33 @@ let components: any[] =
   ],
   entryComponents: components,
   declarations: components,
-  bootstrap: components,
+  bootstrap:  [RadioOverviewExample, RadioNgModelExample, CheckboxOverviewExample, CheckboxConfigurableExample, SlideToggleOverviewExample,
+                   SlideToggleConfigurableExample, AutocompleteOverviewExample, AutocompleteSimpleExample, AutocompleteDisplayExample, AutocompleteFilterExample,
+                   AutocompleteOptgroupExample, AutocompleteAutoActiveFirstOptionExample, SelectOverviewExample, SelectValueBindingExample, SelectFormExample,
+                   SelectHintErrorExample, SelectDisabledExample, SelectResetExample, SelectOptgroupExample, SelectMultipleExample, SelectCustomTriggerExample,
+                   SelectNoRippleExample, SelectPanelClassExample, InputOverviewExample, SelectErrorStateMatcherExample, InputErrorStateMatcherExample,
+                   TextFieldAutosizeTextareaExample, InputClearableExample, InputErrorsExample, InputFormExample, InputHintExample, InputPrefixSuffixExample,
+                   SliderOverviewExample, SliderFormattingExample, SliderConfigurableExample, DatepickerOverviewExample, DatepickerStartViewExample,
+                   DatepickerValueExample, DatepickerMinMaxExample, DatepickerFilterExample, DatepickerEventsExample, DatepickerDisabledExample,
+                   DatepickerTouchExample, DatepickerApiExample,
+                   FormFieldOverviewExample, FormFieldLabelExample, FormFieldAppearanceExample, FormFieldHintExample, FormFieldErrorExample,
+                   FormFieldPrefixSuffixExample, FormFieldThemingExample, FormFieldCustomControlExample, MyTelInput, MenuOverviewExample, MenuIconsExample,
+                   NestedMenuExample, ToolbarOverviewExample, ToolbarMultirowExample, SidenavOverviewExample, SidenavDrawerOverviewExample,
+                   SidenavAutosizeExample, CardOverviewExample, CardFancyExample, DividerOverviewExample, ExpansionOverviewExample, ExpansionStepsExample,
+                   GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
+                   TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
+                   TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
+                   TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
+                   ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
+                   ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+                   ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
+                   BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipOverviewExample,
+                   TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample, TooltipDisabledExample, TooltipMessageExample, TooltipManualExample,
+                   TooltipModifiedDefaultsExample, TooltipAutoHideExample,
+                   PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
+                   TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
+                   TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample, TablePaginationExample, TableRowContextExample,
+                   TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
@@ -161,8 +226,3 @@ export class AppModule {}
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
-
-
-/**  Copyright 2019 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */

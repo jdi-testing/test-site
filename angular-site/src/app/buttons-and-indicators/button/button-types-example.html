@@ -1,84 +1,98 @@
 <h2 class="example-h2">Basic Buttons</h2>
 <div class="example-button-row">
-  <button mat-button>Basic</button>
-  <button mat-button color="primary">Primary</button>
-  <button mat-button color="accent">Accent</button>
-  <button mat-button color="warn">Warn</button>
+  <button mat-button (click)="basicBtnClicked = 'Basic'">Basic</button>
+  <button mat-button color="primary" (click)="basicBtnClicked = 'Primary'">Primary</button>
+  <button mat-button color="accent" (click)="basicBtnClicked = 'Accent'">Accent</button>
+  <button mat-button color="warn" (click)="basicBtnClicked = 'Warn'">Warn</button>
   <button mat-button disabled>Disabled</button>
-  <a mat-button routerLink=".">Link</a>
+  <a mat-button routerLink="." (click)="basicBtnClicked = 'Link'">Link</a>
 </div>
+<br>
+<p>You clicked: {{basicBtnClicked}}</p>
 <hr>
 <h2 class="example-h2">Raised Buttons</h2>
 <div class="example-button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button (click)="raisedBtnClicked = 'Basic'">Basic</button>
+  <button mat-raised-button color="primary" (click)="raisedBtnClicked = 'Primary'">Primary</button>
+  <button mat-raised-button color="accent" (click)="raisedBtnClicked = 'Accent'">Accent</button>
+  <button mat-raised-button color="warn" (click)="raisedBtnClicked = 'Warn'">Warn</button>
   <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
+  <a mat-raised-button routerLink="." (click)="raisedBtnClicked = 'Link'">Link</a>
 </div>
+<br>
+<p>You clicked: {{raisedBtnClicked}}</p>
 <hr>
 <h2 class="example-h2">Stroked Buttons</h2>
 <div class="example-button-row">
-  <button mat-stroked-button>Basic</button>
-  <button mat-stroked-button color="primary">Primary</button>
-  <button mat-stroked-button color="accent">Accent</button>
-  <button mat-stroked-button color="warn">Warn</button>
+  <button mat-stroked-button (click)="strokedBtnClicked = 'Basic'">Basic</button>
+  <button mat-stroked-button color="primary" (click)="strokedBtnClicked = 'Primary'">Primary</button>
+  <button mat-stroked-button color="accent" (click)="strokedBtnClicked = 'Accent'">Accent</button>
+  <button mat-stroked-button color="warn" (click)="strokedBtnClicked = 'Warn'">Warn</button>
   <button mat-stroked-button disabled>Disabled</button>
-  <a mat-stroked-button routerLink=".">Link</a>
+  <a mat-stroked-button routerLink="." (click)="strokedBtnClicked = 'Link'">Link</a>
 </div>
+<br>
+<p>You clicked: {{strokedBtnClicked}}</p>
 <hr>
 <h2 class="example-h2">Flat Buttons</h2>
 <div class="example-button-row">
-  <button mat-flat-button>Basic</button>
-  <button mat-flat-button color="primary">Primary</button>
-  <button mat-flat-button color="accent">Accent</button>
-  <button mat-flat-button color="warn">Warn</button>
+  <button mat-flat-button (click)="flatBtnClicked = 'Basic'">Basic</button>
+  <button mat-flat-button color="primary" (click)="flatBtnClicked = 'Primary'">Primary</button>
+  <button mat-flat-button color="accent" (click)="flatBtnClicked = 'Accent'">Accent</button>
+  <button mat-flat-button color="warn" (click)="flatBtnClicked = 'Warn'">Warn</button>
   <button mat-flat-button disabled>Disabled</button>
-  <a mat-flat-button routerLink=".">Link</a>
+  <a mat-flat-button routerLink="." (click)="flatBtnClicked = 'Link'">Link</a>
 </div>
+<br>
+<p>You clicked: {{flatBtnClicked}}</p>
 <hr>
 <h2 class="example-h2">Icon Buttons</h2>
 <div class="example-button-row">
-  <button mat-icon-button aria-label="Example icon-button with a heart icon">
+  <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="iconBtnClicked = 'Basic'">
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon">
+  <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon" (click)="iconBtnClicked = 'Primary'">
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button color="accent" aria-label="Example icon-button with a heart icon">
+  <button mat-icon-button color="accent" aria-label="Example icon-button with a heart icon" (click)="iconBtnClicked = 'Accent'">
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+  <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon" (click)="iconBtnClicked = 'Warn'">
     <mat-icon>favorite</mat-icon>
   </button>
   <button mat-icon-button disabled aria-label="Example icon-button with a heart icon">
     <mat-icon>favorite</mat-icon>
   </button>
 </div>
+<br>
+<p>You clicked: {{iconBtnClicked}}</p>
 <hr>
 <h2 class="example-h2">Fab Buttons</h2>
-<div class="example-button-row">
-  <button mat-fab>Basic</button>
-  <button mat-fab color="primary">Primary</button>
-  <button mat-fab color="accent">Accent</button>
-  <button mat-fab color="warn">Warn</button>
+<div class="example-wide-button-row">
+  <button mat-fab (click)="fabBtnClicked = 'Basic'">Basic</button>
+  <button mat-fab color="primary" (click)="fabBtnClicked = 'Primary'">Primary</button>
+  <button mat-fab color="accent" (click)="fabBtnClicked = 'Accent'">Accent</button>
+  <button mat-fab color="warn" (click)="fabBtnClicked = 'Warn'">Warn</button>
   <button mat-fab disabled>Disabled</button>
-  <button mat-fab aria-label="Example icon-button with a heart icon">
+  <button mat-fab aria-label="Example icon-button with a heart icon" (click)="fabBtnClicked = 'Icon with a heart icon'">
     <mat-icon>favorite</mat-icon>
   </button>
-  <a mat-fab routerLink=".">Link</a>
+  <a mat-fab routerLink="." (click)="fabBtnClicked = 'Link'">Link</a>
 </div>
+<br>
+<p>You clicked: {{fabBtnClicked}}</p>
 <hr>
 <h2 class="example-h2">Mini Fab Buttons</h2>
-<div class="example-button-row">
-  <button mat-mini-fab>Basic</button>
-  <button mat-mini-fab color="primary">Primary</button>
-  <button mat-mini-fab color="accent">Accent</button>
-  <button mat-mini-fab color="warn">Warn</button>
+<div class="example-wide-button-row">
+  <button mat-mini-fab (click)="miniFabBtnClicked = 'Basic'">Basic</button>
+  <button mat-mini-fab color="primary" (click)="miniFabBtnClicked = 'Primary'">Primary</button>
+  <button mat-mini-fab color="accent" (click)="miniFabBtnClicked = 'Accent'">Accent</button>
+  <button mat-mini-fab color="warn" (click)="miniFabBtnClicked = 'Warn'">Warn</button>
   <button mat-mini-fab disabled>Disabled</button>
-  <button mat-mini-fab aria-label="Example icon-button with a heart icon">
+  <button mat-mini-fab aria-label="Example icon-button with a heart icon" (click)="miniFabBtnClicked = 'Icon with a heart icon'">
     <mat-icon>favorite</mat-icon>
   </button>
-  <a mat-mini-fab routerLink=".">Link</a>
+  <a mat-mini-fab routerLink="." (click)="miniFabBtnClicked = 'Link'">Link</a>
 </div>
+<br>
+<p>You clicked: {{miniFabBtnClicked}}</p>

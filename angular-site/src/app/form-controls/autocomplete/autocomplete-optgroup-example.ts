@@ -22,7 +22,6 @@ export const _filter = (opt: string[], value: string): string[] => {
   templateUrl: './autocomplete-optgroup-example.html',
   styleUrls: ['./autocomplete-optgroup-example.css'],
 })
-
 export class AutocompleteOptgroupExample implements OnInit {
   stateForm: FormGroup = this._formBuilder.group({
     stateGroup: '',
@@ -111,8 +110,3 @@ export class AutocompleteOptgroupExample implements OnInit {
     return this.stateGroups;
   }
 }
-
-
-/**  Copyright 2019 Google LLC. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */

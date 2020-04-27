@@ -1,0 +1,11 @@
+<h2 class="example-h2">Tooltip that can be disabled</h2>
+<button mat-raised-button
+        matTooltip="Tooltip message"
+        [matTooltipDisabled]="disabled.value"
+        aria-label="Button that displays a tooltip that can be programatically disabled">
+  Show tooltip
+</button>
+
+<mat-checkbox [formControl]="disabled" class="example-disabled-checkbox">
+  Tooltip disabled
+</mat-checkbox>
