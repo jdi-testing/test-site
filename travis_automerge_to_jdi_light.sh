@@ -59,4 +59,4 @@ git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 #todo Uncomment this when we are confident that everything is done correctly
 echo "Performing: git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH}"
-git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH}
+git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH} >/dev/null 2>&1

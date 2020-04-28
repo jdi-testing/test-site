@@ -40,7 +40,7 @@ jobs:
     - stage: merge
       name: Merge the changes into jdi-light repo
       if: branch = travis-setup #should be 'master' in the future
-      github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+      github_token: "SECRET_TOKEN" #$GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       script:
         - sh travis_automerge_to_jdi_light.sh
 after_failure:
