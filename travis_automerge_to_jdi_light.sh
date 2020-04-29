@@ -60,6 +60,12 @@ git status
 
 #SSH KEY
 ls ~/.ssh
+echo "\nAttempt to store key in file."
+echo "Key should be screened in case of output: ${A_SECRET_KEY}"
+echo ${A_SECRET_KEY} > temp_key_file
+exho "Let's see when it is written into a temp_key_file:"
+tail temp_key_file
+echo "--End--"
 #echo ${GITHUB_PRIVATE_KEY} > ~/.ssh/id_rsa
 #echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
 #git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH} >/dev/null 2>&1
