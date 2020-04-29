@@ -1,21 +1,21 @@
 #!/bin/bash -v
 echo $SHELL
 
+export GIT_COMMITTER_EMAIL='travis@travis'
+export GIT_COMMITTER_NAME='Travis CI'
+
 # VARIABLES
 # Feel free to edit if your directory names or branches differ
 TEST_SITE_DIR=$(pwd)
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
-PUSH_URI="https://${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
-#PUSH_URI="https://github.com/${JDI_LIGHT_GITHUB_REPO}"
+PUSH_URI="https://${GIT_COMMITTER_EMAIL}@github.com/${JDI_LIGHT_GITHUB_REPO}"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_DIR="jdi-light"
 JDI_LIGHT_ANGULAR_DIR="angular"
 # FILES_TO_EXCLUDE=( "3rdpartylicenses.txt" "index.html" ) #todo this declaration fails
 SERVER_PORT=8001
 
-export GIT_COMMITTER_EMAIL='travis@travis'
-export GIT_COMMITTER_NAME='Travis CI'
 
 # Start
 GIT_COMMIT_MSG="[Travis-automerge] $(git show -s --format='%h %s')"
@@ -47,16 +47,19 @@ rm -rf ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt index.html
 rm -rf ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html
 
 # Add new files to git (or use git commit -a -m "commit_message")
-echo "\nAdding changes to git and checking the status"
+echo "\nAdding changes to git and checking the status:"
 cd ${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}
 git add --all
 # echo changes that are about to be committed
 git status
 
 # todo commit-push-merge-etc
-echo "\nMerge changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}"
+echo "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}:"
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
-#todo Uncomment this when we are confident that everything is done correctly
-echo "Performing: git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH}"
-git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH} >/dev/null 2>&1
+
+#SSH KEY
+ls ~/.ssh
+#echo ${GITHUB_PRIVATE_KEY} > ~/.ssh/id_rsa
+#echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
+#git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH} >/dev/null 2>&1
