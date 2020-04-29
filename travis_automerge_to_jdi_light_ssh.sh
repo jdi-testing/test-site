@@ -61,8 +61,9 @@ git status
 
 # Push to jdi-light
 printf "\nPushing to ${BRANCH_TO_MERGE} of ${JDI_LIGHT_GITHUB_REPO}:\n"
+eval `ssh-agent -s`
 echo ${GITHUB_PRIVATE_KEY} | ssh-add
-echo "This commit is to check if following command fails"
+echo "Git push"
 git push origin "${BRANCH_TO_MERGE}"
 
 
