@@ -10,8 +10,8 @@ before_script:
 
 env:
   global:
-    - SOURCE_TEST_SITE_BRANCH = "travis-setup"
-    - TARGET_JDI_LIGHT_BRANCH = "gh-pages" # merge stage would be executed for specified branch only
+    - SOURCE_TEST_SITE_BRANCH=travis-setup
+    - TARGET_JDI_LIGHT_BRANCH=gh-pages
 
 stages:
   - prepare
@@ -28,6 +28,7 @@ jobs:
 
     - stage: compile
       name: Compile
+      if: branch = "$SOURCE_TEST_SITE_BRANCH"
       script:
         - echo "Compile stage"
 
@@ -38,8 +39,7 @@ jobs:
 
     - stage: merge
       name: Merge the changes into jdi-light repo
-      if: branch = "gh-pages"
-      github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+      if: branch = "travis-setup"
       script:
         - sh travis_automerge_to_jdi_light.sh
 after_failure:
