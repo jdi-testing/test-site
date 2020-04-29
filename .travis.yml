@@ -40,7 +40,7 @@ jobs:
       name: Merge the changes into jdi-light repo
       if: branch = "travis-setup"
       script:
-        - sh travis_automerge_to_jdi_light.sh
+        - sh travis_automerge_to_jdi_light_ssh.sh
 after_failure:
   - echo "Build has failed"
 after_script:
