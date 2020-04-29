@@ -60,6 +60,10 @@ git status
 
 #Adding ssh key
 printf '%s\n' "${A_SECRET_KEY}"
+${A_SECRET_KEY}
+ANOTHER_SECRET_KEY=${A_SECRET_KEY}
+echo ${ANOTHER_SECRET_KEY}
+
 ssh-add - <<< "${GITHUB_PRIVATE_KEY}" 2>&1
 
 echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
