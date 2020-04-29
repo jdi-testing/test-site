@@ -41,7 +41,7 @@ ng build --prod
 # Copy the required files
 printf "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-light/${JDI_LIGHT_ANGULAR_DIR}\n"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/*"
-cp -R "{TEST_SITE_DIR}/${ANGULAR_SITE_DIR}/dist/my-app/." "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/"
+cp -R "${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}/dist/my-app/." "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/"
 
 #These files are not needed. See beginning of script to find out why we don't iterate through an array here
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt"
