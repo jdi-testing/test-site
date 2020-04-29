@@ -58,7 +58,8 @@ echo "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_R
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 
-#Adding shs key
+#Adding ssh key
+printf '%s\n' "${A_SECRET_KEY}"
 ssh-add - <<< "${GITHUB_PRIVATE_KEY}" 2>&1
 
 echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
