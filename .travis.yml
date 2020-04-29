@@ -28,7 +28,6 @@ jobs:
 
     - stage: compile
       name: Compile
-      if: branch = "$SOURCE_TEST_SITE_BRANCH"
       script:
         - echo "Compile stage"
 

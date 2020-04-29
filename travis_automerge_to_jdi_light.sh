@@ -1,5 +1,5 @@
 #!/bin/bash -v
-export GIT_COMMITTER_EMAIL='travis@travis'
+export GIT_COMMITTER_EMAIL='travis%40travis'
 export GIT_COMMITTER_NAME='Travis CI'
 
 # VARIABLES
@@ -7,23 +7,28 @@ export GIT_COMMITTER_NAME='Travis CI'
 TEST_SITE_DIR=$(pwd)
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
-PUSH_URI="https://${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
+PUSH_URI="https://${GIT_COMMITTER_EMAIL}:${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
 JDI_LIGHT_BRANCH="gh-pages"
 JDI_LIGHT_ANGULAR_DIR="angular"
 # FILES_TO_EXCLUDE=( "3rdpartylicenses.txt" "index.html" ) #todo this declaration fails
 
 
 # Start
-GIT_COMMIT_MSG="[Travis automerge from test-site] $(git show -s --format='%h %s')"
+GIT_COMMIT_MSG="$(git show -s --format='[Travis automerge] %h %s')"
+BRANCH_TO_MERGE="$(git show -s --format='test-site#%h')"
 
 # Clone jdi-light and checkout the required branch
 printf "\nChecking out ${JDI_LIGHT_GITHUB_REPO}\n"
 REPO_TEMP=$(mktemp -d)
 git clone "https://github.com/${JDI_LIGHT_GITHUB_REPO}" "${REPO_TEMP}"
+cd "${REPO_TEMP}"
+git remote set-url origin "${PUSH_URI}"
 
 printf "\nSwitching to ${JDI_LIGHT_BRANCH}\n"
-cd "${REPO_TEMP}"
 git checkout "${JDI_LIGHT_BRANCH}"
+git branch "${BRANCH_TO_MERGE}"
+git checkout "${BRANCH_TO_MERGE}"
+
 
 # Perform npm install in angular-site if not done yet
 cd "${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}"
@@ -55,6 +60,9 @@ git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 
 # Push to jdi-light
-#todo: sort out how to use token or private key and perform push
-printf "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:\n"
-git push "${PUSH_URI}" "${JDI_LIGHT_BRANCH}" >/dev/null 2>&1
+printf "\nPushing to ${BRANCH_TO_MERGE} of ${JDI_LIGHT_GITHUB_REPO}:\n"
+git push origin "${BRANCH_TO_MERGE}"
+# Seems that everything is ok till this point
+
+printf "\nCreating a pull request to merge changes from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH} in ${JDI_LIGHT_GITHUB_REPO}:\n"
+git request-pull "${JDI_LIGHT_BRANCH}" "https://github.com/${JDI_LIGHT_GITHUB_REPO}"
