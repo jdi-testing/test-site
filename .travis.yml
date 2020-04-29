@@ -38,7 +38,7 @@ jobs:
 
     - stage: merge
       name: Merge the changes into jdi-light repo
-      if: branch = "$TARGET_JDI_LIGHT_BRANCH"
+      if: branch = "gh-pages"
       github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       script:
         - sh travis_automerge_to_jdi_light.sh
