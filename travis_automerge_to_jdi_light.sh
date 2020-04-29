@@ -17,24 +17,24 @@ JDI_LIGHT_ANGULAR_DIR="angular"
 GIT_COMMIT_MSG="[Travis automerge from test-site] $(git show -s --format='%h %s')"
 
 # Clone jdi-light and checkout the required branch
-echo "\nChecking out ${JDI_LIGHT_GITHUB_REPO}"
+printf "\nChecking out ${JDI_LIGHT_GITHUB_REPO}\n"
 REPO_TEMP=$(mktemp -d)
 git clone "https://github.com/${JDI_LIGHT_GITHUB_REPO}" "${REPO_TEMP}"
 
-echo "\nSwitching to ${JDI_LIGHT_BRANCH}"
+printf "\nSwitching to ${JDI_LIGHT_BRANCH}\n"
 cd "${REPO_TEMP}"
 git checkout "${JDI_LIGHT_BRANCH}"
 
 # Perform npm install in angular-site if not done yet
 cd "${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}"
-([ ! -d "node_modules" ] && echo "\nPerforming npm install" && npm install)
+([ ! -d "node_modules" ] && printf "\nPerforming npm install\n" && npm install)
 
 #Build angular-site
-echo "\nPerforming ng-build"
+printf "\nPerforming ng-build\n"
 ng build --prod
 
 # Copy the required files
-echo "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-light/${JDI_LIGHT_ANGULAR_DIR}"
+printf "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-light/${JDI_LIGHT_ANGULAR_DIR}\n"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/*"
 cp -R "{TEST_SITE_DIR}/${ANGULAR_SITE_DIR}/dist/my-app/." "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/"
 
@@ -43,18 +43,18 @@ rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 
 # Add new files to git
-echo "\nAdding changes to git and checking the status:"
+printf "\nAdding changes to git and checking the status:\n"
 cd "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}"
 git add --all
-# echo changes that are about to be committed
+# Log changes that are about to be committed
 git status
 
 # Commit
-echo "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}:"
+printf "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 
 # Push to jdi-light
 #todo: sort out how to use token or private key and perform push
-echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
+printf "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git push "${PUSH_URI}" "${JDI_LIGHT_BRANCH}" >/dev/null 2>&1
