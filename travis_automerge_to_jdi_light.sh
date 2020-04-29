@@ -58,7 +58,8 @@ echo "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_R
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 
-#SSH KEY
-echo "Is GITHUB_TOKEN variable defined? -> ${GITHUB_TOKEN} <- Should be displayed here if yes"
-#echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
-#git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH} >/dev/null 2>&1
+#Adding shs key
+ssh-add - <<< "${GITHUB_PRIVATE_KEY}" 2>&1
+
+echo "\nPushing to ${JDI_LIGHT_BRANCH} of ${JDI_LIGHT_GITHUB_REPO}:"
+git push "${PUSH_URI}" ${JDI_LIGHT_BRANCH} >/dev/null 2>&1
