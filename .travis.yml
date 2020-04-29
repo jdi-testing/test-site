@@ -10,7 +10,8 @@ before_script:
 
 env:
   global:
-    - ANGULAR_SITE_FOLDER="angular-site"
+    - SOURCE_TEST_SITE_BRANCH = "travis-setup" #merge stage would be executed for specified branch only
+    - TARGET_JDI_LIGHT_BRANCH = "gh-pages"
 
 stages:
   - prepare
@@ -22,13 +23,11 @@ jobs:
   include:
     - stage: prepare
       name: Prepare
-      skip_cleanup: true
       script:
         - npm --version
 
     - stage: compile
       name: Compile
-      skip_cleanup: true
       script:
         - echo "Compile stage"
 
@@ -39,8 +38,8 @@ jobs:
 
     - stage: merge
       name: Merge the changes into jdi-light repo
-      if: branch = travis-setup #should be 'master' in the future
-      github_token: "SECRET_TOKEN" #$GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+      if: branch = $SOURCE_TEST_SITE_BRANCH
+      github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
       script:
         - sh travis_automerge_to_jdi_light.sh
 after_failure:
@@ -49,4 +48,4 @@ after_script:
   #One can add some cleanup here
   - ignore
 after_success:
-  - echo "Build has succeded"
+  - echo "Build has succeeded"
