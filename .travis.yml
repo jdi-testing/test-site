@@ -2,10 +2,8 @@ language: node_js
 node_js:
   - 12
 before_install:
-  # Before_install section
   - ignore
 before_script:
-  # Before_script section
   - ignore
 
 env:
@@ -14,23 +12,11 @@ env:
     - TARGET_JDI_LIGHT_BRANCH=gh-pages
 
 stages:
-  - prepare
-  - compile
   - test
   - merge
 
 jobs:
   include:
-    - stage: prepare
-      name: Prepare
-      script:
-        - npm --version
-
-    - stage: compile
-      name: Compile
-      script:
-        - echo "Compile stage"
-
     - stage: test
       name: Run tests
       script:
@@ -46,7 +32,6 @@ jobs:
 after_failure:
   - echo "Build has failed"
 after_script:
-  #One can add some cleanup here
   - ignore
 after_success:
   - echo "Build has succeeded"

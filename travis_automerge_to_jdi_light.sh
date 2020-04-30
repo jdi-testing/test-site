@@ -4,7 +4,7 @@ export GIT_COMMITTER_NAME='Travis CI'
 
 # VARIABLES
 # Feel free to edit if your directory names or branches differ
-TEST_SITE_DIR=$(pwd)
+TEST_SITE_DIR="$(pwd)"
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
 PUSH_URI="https://${GIT_COMMITTER_EMAIL}:${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
@@ -19,7 +19,7 @@ BRANCH_TO_MERGE="$(git show -s --format='test-site#%h')"
 
 # Clone jdi-light and checkout the required branch
 printf "\nChecking out ${JDI_LIGHT_GITHUB_REPO}\n"
-REPO_TEMP=$(mktemp -d)
+REPO_TEMP="$(mktemp -d)"
 git clone "https://github.com/${JDI_LIGHT_GITHUB_REPO}" "${REPO_TEMP}"
 cd "${REPO_TEMP}"
 git remote set-url origin "${PUSH_URI}"
@@ -34,7 +34,7 @@ git checkout "${BRANCH_TO_MERGE}"
 cd "${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}"
 ([ ! -d "node_modules" ] && printf "\nPerforming npm install\n" && npm install)
 
-#Build angular-site
+# Build angular-site
 printf "\nPerforming ng-build\n"
 ng build --prod
 
@@ -43,7 +43,7 @@ printf "\nCopying the built files from ${ANGULAR_SITE_DIR}/dist/my-app/ to jdi-l
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/*"
 cp -R "${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}/dist/my-app/." "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/"
 
-#These files are not needed. See beginning of script to find out why we don't iterate through an array here
+# These files are not needed. See beginning of script to find out why we don't iterate through an array here
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 
@@ -58,8 +58,8 @@ git update-index --refresh
 git diff-index --name-status HEAD
 printf "End of list\n"
 
-#This would stop the execution in case there is nothing to commit
-git diff-index --quiet HEAD && exit 0 || echo "There are changes to be committed\n"
+# This would stop the execution in case there is nothing to commit
+git diff-index --quiet HEAD && exit 0 || printf "There are changes to be committed\n"
 
 # Commit
 printf "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}:\n"
@@ -70,8 +70,8 @@ git status
 printf "\nPushing to ${BRANCH_TO_MERGE} of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git push origin "${BRANCH_TO_MERGE}"
 
-#Creating a pull request using hub
+# Create a pull request using hub
 printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}:/n"
-hub pull-request --base ${JDI_LIGHT_BRANCH} --head ${BRANCH_TO_MERGE} --message "${GIT_COMMIT_MSG}"
+hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE}" --message "${GIT_COMMIT_MSG}"
 
 printf "\nEnd of script\n"
