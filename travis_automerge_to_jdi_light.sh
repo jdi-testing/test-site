@@ -48,9 +48,16 @@ rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 
 # Add new files to git
-printf "\nAdding changes to git and checking the status:\n"
+printf "\nAdding changes to git and checking the status.\n"
 cd "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}"
 git add --all
+
+# Detect if there are any changes
+printf "\nChanges made since ${JDI_LIGHT_BRANCH} was checked out:\n"
+git update-index --refresh
+git diff-index --name-status HEAD
+printf "End of list\n"
+
 # Log changes that are about to be committed
 git status
 
