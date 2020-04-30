@@ -58,8 +58,8 @@ git update-index --refresh
 git diff-index --name-status HEAD
 printf "End of list\n"
 
-# Log changes that are about to be committed
-git status
+#This would stop the execution in case there is nothing to commit
+git diff-index --quiet HEAD && exit 0 || echo "There are changes to be committed\n"
 
 # Commit
 printf "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}:\n"
