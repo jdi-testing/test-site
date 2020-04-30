@@ -54,9 +54,9 @@ import {DatepickerEventsExample} from './app/form-controls/datepicker/datepicker
 import {DatepickerDisabledExample} from './app/form-controls/datepicker/datepicker-disabled-example';
 import {DatepickerTouchExample} from './app/form-controls/datepicker/datepicker-touch-example';
 import {DatepickerApiExample} from './app/form-controls/datepicker/datepicker-api-example';
-// import {DatepickerLocaleExample} from './app/form-controls/datepicker/datepicker-locale-example';
-// import {DatepickerMomentExample} from './app/form-controls/datepicker/datepicker-moment-example';
-// import {DatepickerFormatsExample} from './app/form-controls/datepicker/datepicker-formats-example';
+import {DatepickerLocaleExample} from './app/form-controls/datepicker/datepicker-locale-example';
+import {DatepickerMomentExample} from './app/form-controls/datepicker/datepicker-moment-example';
+import {DatepickerFormatsExample} from './app/form-controls/datepicker/datepicker-formats-example';
 import {FormFieldOverviewExample} from './app/form-controls/form-field/form-field-overview-example';
 import {FormFieldLabelExample} from './app/form-controls/form-field/form-field-label-example';
 import {FormFieldAppearanceExample} from './app/form-controls/form-field/form-field-appearance-example';
@@ -177,7 +177,8 @@ const components: any[] =
       PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
       TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
       TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample, TablePaginationExample, TableRowContextExample,
-      TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample];
+      TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample,
+      DatepickerLocaleExample, DatepickerMomentExample, DatepickerFormatsExample];
 
 @NgModule({
   imports: [
@@ -217,7 +218,8 @@ const components: any[] =
                    PaginatorConfigurableExample, SortOverviewExample, TableBasicExample, TableBasicFlexExample, TableDynamicColumnsExample,
                    TableExpandableRowsExample, TableFilteringExample, TableFooterRowExample, TableHttpExample, TableSelectionExample,
                    TableMultipleHeaderFooterExample, TableOverviewExample, TableStickyColumnsExample, TablePaginationExample, TableRowContextExample,
-                   TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample],
+                   TableStickyHeaderExample, TableStickyFooterExample, TableReorderableExample, TableSortingExample,
+                   DatepickerLocaleExample, DatepickerMomentExample, DatepickerFormatsExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
   ]
