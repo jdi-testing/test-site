@@ -64,5 +64,9 @@ printf "\nPushing to ${BRANCH_TO_MERGE} of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git push origin "${BRANCH_TO_MERGE}"
 # Seems that everything is ok till this point
 
-printf "\nCreating a pull request to merge changes from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH} in ${JDI_LIGHT_GITHUB_REPO}:\n"
-git request-pull "${JDI_LIGHT_BRANCH}" "https://github.com/${JDI_LIGHT_GITHUB_REPO}"
+#Researching possibility to install hub
+printf "\nAttempting to install hub via homebrew/n"
+hub --version
+brew install hub
+hub --version
+printf "End"
