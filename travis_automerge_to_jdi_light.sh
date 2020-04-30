@@ -65,6 +65,6 @@ git push origin "${BRANCH_TO_MERGE}"
 
 #Creating a pull request using hub
 printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}:/n"
-hub pull-request --base ${JDI_LIGHT_BRANCH} --head ${BRANCH_TO_MERGE} --message ${GIT_COMMIT_MSG}
+hub pull-request --base ${JDI_LIGHT_BRANCH} --head ${BRANCH_TO_MERGE} --message "${GIT_COMMIT_MSG}"
 
-printf "--End of script--"
+printf "\nEnd of script\n"
