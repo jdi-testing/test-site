@@ -42,7 +42,7 @@ jobs:
       script:
         - sudo snap install hub --classic
         - hub version
-#        - sh travis_automerge_to_jdi_light.sh
+        - sh travis_automerge_to_jdi_light.sh
 after_failure:
   - echo "Build has failed"
 after_script:

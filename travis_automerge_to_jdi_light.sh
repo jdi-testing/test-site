@@ -59,14 +59,12 @@ printf "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 
-# Push to jdi-light
+# Push to a new branch of jdi-light
 printf "\nPushing to ${BRANCH_TO_MERGE} of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git push origin "${BRANCH_TO_MERGE}"
-# Seems that everything is ok till this point
 
-#Researching possibility to install hub
-printf "\nAttempting to install hub via homebrew/n"
-hub --version
-brew install hub
-hub --version
-printf "End"
+#Creating a pull request using hub
+printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}:/n"
+hub pull-request --base ${JDI_LIGHT_BRANCH} --head ${BRANCH_TO_MERGE} --message ${GIT_COMMIT_MSG}
+
+printf "--End of script--"
