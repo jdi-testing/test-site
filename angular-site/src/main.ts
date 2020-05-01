@@ -113,7 +113,7 @@ import {ChipsStackedExample} from './app/buttons-and-indicators/chips/chips-stac
 import {ChipsAutocompleteExample} from './app/buttons-and-indicators/chips/chips-autocomplete-example';
 import {ChipsInputExample} from './app/buttons-and-indicators/chips/chips-input-example';
 import {IconOverviewExample} from './app/buttons-and-indicators/icon/icon-overview-example';
-//import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example';
+import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example';
 import {ProgressSpinnerOverviewExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-overview-example';
 import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-configurable-example';
 import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progress-bar/progress-bar-configurable-example';
@@ -174,7 +174,7 @@ const components: any[] =
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
-      ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+      ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
       SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample,
@@ -216,7 +216,7 @@ const components: any[] =
                    TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
                    TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
-                   ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+                   ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipOverviewExample,
                    TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample, TooltipDisabledExample, TooltipMessageExample, TooltipManualExample,
