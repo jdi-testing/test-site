@@ -72,7 +72,15 @@ printf "\nPushing to ${BRANCH_TO_MERGE} of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git push origin "${BRANCH_TO_MERGE}"
 
 # Create a pull request using hub
-printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}:/n"
-hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE}" --message "${LAST_MERGED_PR}"
+printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}:\n"
+PR_URL=$(hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE}" --message "${LAST_MERGED_PR}")
+
+printf "Following pull request has been created: ${PR_URL}\n"
+PR_NUMBER=$(echo ${PR_URL} | sed 's/[^0-9]*//g')
+
+# Attempts to merge the request.
+# GITHUB_TOKEN must belong to user that has permission to push into BRANCH_TO_MERGE
+printf "\nMerging pull request #${PR_NUMBER}"
+hub api -XPUT "repos/jdi-testing/jdi-light/pulls/${PR_NUMBER}/merge"
 
 printf "\nEnd of script\n"
