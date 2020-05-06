@@ -72,9 +72,13 @@ import {ToolbarOverviewExample} from './app/navigation/toolbar/toolbar-overview-
 import {ToolbarMultirowExample} from './app/navigation/toolbar/toolbar-multirow-example';
 import {SidenavOverviewExample} from './app/navigation/sidenav/sidenav-overview-example';
 import {SidenavDrawerOverviewExample} from './app/navigation/sidenav/sidenav-drawer-overview-example';
-// There should be some more sidenavs
+import {SidenavPositionExample} from './app/navigation/sidenav/sidenav-position-example';
+import {SidenavOpenCloseExample} from './app/navigation/sidenav/sidenav-open-close-example';
+import {SidenavModeExample} from './app/navigation/sidenav/sidenav-mode-example';
+import {SidenavDisableCloseExample} from './app/navigation/sidenav/sidenav-disable-close-example';
 import {SidenavAutosizeExample} from './app/navigation/sidenav/sidenav-autosize-example';
-// There should be some more sidenavs
+import {SidenavFixedExample} from './app/navigation/sidenav/sidenav-fixed-example';
+import {SidenavResponsiveExample} from './app/navigation/sidenav/sidenav-responsive-example';
 import {CardOverviewExample} from './app/layout/card/card-overview-example';
 import {CardFancyExample} from './app/layout/card/card-fancy-example';
 import {DividerOverviewExample} from './app/layout/divider/divider-overview-example';
@@ -109,7 +113,7 @@ import {ChipsStackedExample} from './app/buttons-and-indicators/chips/chips-stac
 import {ChipsAutocompleteExample} from './app/buttons-and-indicators/chips/chips-autocomplete-example';
 import {ChipsInputExample} from './app/buttons-and-indicators/chips/chips-input-example';
 import {IconOverviewExample} from './app/buttons-and-indicators/icon/icon-overview-example';
-//import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example';
+import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example';
 import {ProgressSpinnerOverviewExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-overview-example';
 import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-configurable-example';
 import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progress-bar/progress-bar-configurable-example';
@@ -163,13 +167,14 @@ const components: any[] =
       FormFieldOverviewExample, FormFieldLabelExample, FormFieldAppearanceExample, FormFieldHintExample, FormFieldErrorExample,
       FormFieldPrefixSuffixExample, FormFieldThemingExample, FormFieldCustomControlExample, MyTelInput, MenuOverviewExample, MenuIconsExample,
       NestedMenuExample, ToolbarOverviewExample, ToolbarMultirowExample, SidenavOverviewExample, SidenavDrawerOverviewExample,
+      SidenavPositionExample, SidenavOpenCloseExample, SidenavModeExample, SidenavDisableCloseExample, SidenavFixedExample, SidenavResponsiveExample,
       SidenavAutosizeExample, CardOverviewExample, CardFancyExample, DividerOverviewExample, ExpansionOverviewExample, ExpansionStepsExample,
       GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
       TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
       TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
-      ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+      ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample,
       ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
       SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample,
@@ -204,13 +209,14 @@ const components: any[] =
                    FormFieldOverviewExample, FormFieldLabelExample, FormFieldAppearanceExample, FormFieldHintExample, FormFieldErrorExample,
                    FormFieldPrefixSuffixExample, FormFieldThemingExample, FormFieldCustomControlExample, MyTelInput, MenuOverviewExample, MenuIconsExample,
                    NestedMenuExample, ToolbarOverviewExample, ToolbarMultirowExample, SidenavOverviewExample, SidenavDrawerOverviewExample,
+                   SidenavPositionExample, SidenavOpenCloseExample, SidenavModeExample, SidenavDisableCloseExample, SidenavFixedExample, SidenavResponsiveExample,
                    SidenavAutosizeExample, CardOverviewExample, CardFancyExample, DividerOverviewExample, ExpansionOverviewExample, ExpansionStepsExample,
                    GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
                    TreeChecklistExample, TreeNestedOverviewExample, TreeLoadmoreExample, StepperOverviewExample, StepperOptionalExample, TabGroupBasicExample,
                    TabGroupCustomLabelExample, TabGroupDynamicHeightExample, TabGroupDynamicExample, TabGroupHeaderBelowExample, TabGroupLazyLoadedExample,
                    TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
-                   ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, //IconSvgExample,
+                   ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample,
                    ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarConfigurableExample, RippleOverviewExample,
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipOverviewExample,
                    TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample, TooltipDisabledExample, TooltipMessageExample, TooltipManualExample,

@@ -6,6 +6,4 @@ import {Component} from '@angular/core';
   templateUrl: 'sidenav-overview-example.html',
   styleUrls: ['sidenav-overview-example.css'],
 })
-export class SidenavOverviewExample {
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
-}
+export class SidenavOverviewExample {}
