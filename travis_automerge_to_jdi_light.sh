@@ -80,7 +80,7 @@ PR_NUMBER=$(echo ${PR_URL} | sed 's/[^0-9]*//g')
 
 # Attempts to merge the request.
 # GITHUB_TOKEN must belong to user that has permission to push into BRANCH_TO_MERGE
-printf "\nMerging pull request #${PR_NUMBER}"
+printf "\nMerging pull request #${PR_NUMBER}:\n"
 hub api -XPUT "repos/jdi-testing/jdi-light/pulls/${PR_NUMBER}/merge"
 
-printf "\nEnd of script\n"
+printf "\n\nEnd of script\n"
