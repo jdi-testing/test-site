@@ -8,8 +8,8 @@ TEST_SITE_DIR="$(pwd)"
 ANGULAR_SITE_DIR="angular-site"
 JDI_LIGHT_GITHUB_REPO="jdi-testing/jdi-light"
 PUSH_URI="https://${GIT_COMMITTER_EMAIL}:${GITHUB_TOKEN}@github.com/${JDI_LIGHT_GITHUB_REPO}"
-JDI_LIGHT_BRANCH=${SOURCE_TEST_SITE_BRANCH}
-JDI_LIGHT_ANGULAR_DIR=${TARGET_JDI_LIGHT_BRANCH}
+JDI_LIGHT_BRANCH=${TARGET_JDI_LIGHT_BRANCH}
+JDI_LIGHT_ANGULAR_DIR="angular"
 # FILES_TO_EXCLUDE=( "3rdpartylicenses.txt" "index.html" ) #todo this declaration fails
 
 

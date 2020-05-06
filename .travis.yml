@@ -8,7 +8,6 @@ before_script:
 
 env:
   global:
-    - SOURCE_TEST_SITE_BRANCH=travis-setup
     - TARGET_JDI_LIGHT_BRANCH=gh-pages
 
 stages:
