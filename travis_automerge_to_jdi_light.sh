@@ -14,7 +14,8 @@ JDI_LIGHT_ANGULAR_DIR="angular"
 
 
 # Start
-GIT_COMMIT_MSG="$(git show -s --format='[Travis automerge] %h %s')"
+LAST_MERGED_PR="[Travis automerge from test-site] $(hub pr list -s merged -L 1 | xargs)"
+GIT_COMMIT_MSG="$(git show -s --format='[test-site#%h] %s')"
 BRANCH_TO_MERGE="$(git show -s --format='test-site#%h')"
 
 # Clone jdi-light and checkout the required branch
@@ -72,6 +73,6 @@ git push origin "${BRANCH_TO_MERGE}"
 
 # Create a pull request using hub
 printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}:/n"
-hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE}" --message "${GIT_COMMIT_MSG}"
+hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE}" --message "${LAST_MERGED_PR}"
 
 printf "\nEnd of script\n"
