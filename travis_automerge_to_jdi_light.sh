@@ -63,7 +63,7 @@ printf "End of list\n"
 git diff-index --quiet HEAD && exit 0 || printf "There are changes to be committed\n"
 
 # Commit
-printf "\nCommitting changes to ${JDI_LIGHT_BRANCH} branch of ${JDI_LIGHT_GITHUB_REPO}:\n"
+printf "\nCommitting changes to ${BRANCH_TO_MERGE} branch of ${JDI_LIGHT_GITHUB_REPO}:\n"
 git commit -a -m "${GIT_COMMIT_MSG}"
 git status
 
@@ -76,7 +76,7 @@ printf "\nCreating a pull request from ${BRANCH_TO_MERGE} to ${JDI_LIGHT_BRANCH}
 PR_URL=$(hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE}" --message "${LAST_MERGED_PR}")
 
 printf "Following pull request has been created: ${PR_URL}\n"
-PR_NUMBER=$(echo ${PR_URL} | sed 's/[^0-9]*//g')
+PR_NUMBER="${PR_URL//[^0-9]/}"
 
 # Attempts to merge the request.
 # GITHUB_TOKEN must belong to user that has permission to push into BRANCH_TO_MERGE
