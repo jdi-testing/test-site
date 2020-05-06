@@ -77,7 +77,8 @@ PR_URL=$(hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE
 
 printf "Following pull request has been created: ${PR_URL}\n"
 #PR_NUMBER=$(echo "${PR_URL}" | sed 's/[^0-9]*//g')
-PR_NUMBER="${PR_URL//[^0-9]/}"
+#PR_NUMBER="${PR_URL//[^0-9]/}"
+PR_NUMBER=$(echo "${MY_VAR}" | tr -d -c 0-9 )
 
 # Attempts to merge the request.
 # GITHUB_TOKEN must belong to user that has permission to push into BRANCH_TO_MERGE
