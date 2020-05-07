@@ -49,12 +49,12 @@ rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 
 # Let's move to our jdi-light dir now
-cd ${REPO_TEMP}
+cd "${REPO_TEMP}"
 
 # Exclude angular-generated .js file from codacy review scope:
 ([ ! -f .codacy.yaml ] &&
   printf "\nCreating .codacy.yaml file\n" &&
-  printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > ${REPO_TEMP}/.codacy.yaml &&
+  printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > "${REPO_TEMP}/.codacy.yaml" &&
   git add .codacy.yaml)
 
 # Add all new files to git
