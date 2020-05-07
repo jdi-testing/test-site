@@ -48,6 +48,12 @@ cp -R "${TEST_SITE_DIR}/${ANGULAR_SITE_DIR}/dist/my-app/." "${REPO_TEMP}/${JDI_L
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/3rdpartylicenses.txt"
 rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 
+# Exclude paths
+([ ! -f .codacy.yaml ] && printf "\nCreating .codacy.yaml file\n" && printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > ${REPO_TEMP}\.codacy.yaml)
+
+# Debug to see what happens on travis
+cat .codacy.yaml
+
 # Add new files to git
 printf "\nAdding changes to git and checking the status.\n"
 cd "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}"
