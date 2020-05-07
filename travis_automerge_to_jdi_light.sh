@@ -91,4 +91,7 @@ printf "\nMerging pull request #${PR_NUMBER}:\n"
 hub api -XPUT "repos/jdi-testing/jdi-light/pulls/${PR_NUMBER}/merge"\
   -f merge_method=squash -f commit_title='Automerged by Travis job'
 
+# Remove the created branch after it was merged
+git push origin --delete "${BRANCH_TO_MERGE}"
+
 printf "\n\nEnd of script\n"

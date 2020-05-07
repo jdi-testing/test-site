@@ -8,7 +8,8 @@ before_script:
 
 env:
   global:
-    - TARGET_JDI_LIGHT_BRANCH=gh-pages
+    - TEST_SITE_BRANCH="travis-setup"
+    - TARGET_JDI_LIGHT_BRANCH="gh-pages"
 
 stages:
   - test
@@ -23,7 +24,7 @@ jobs:
 
     - stage: merge
       name: Merge the changes into jdi-light repo
-      if: branch = "travis-setup"
+      if: branch = $TEST_SITE_BRANCH
       script:
         - sudo snap install hub --classic
         - hub version
