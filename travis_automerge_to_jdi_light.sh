@@ -52,12 +52,13 @@ rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 ([ ! -f .codacy.yaml ] && printf "\nCreating .codacy.yaml file\n" && printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > ${REPO_TEMP}\.codacy.yaml)
 
 # Debug to see what happens on travis
-cat .codacy.yaml
+cat ${REPO_TEMP}\.codacy.yaml
+# Add all new files to git
 
-# Add new files to git
-printf "\nAdding changes to git and checking the status.\n"
-cd "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}"
 git add --all
+
+printf "\nAll changes have been added to git. Checking the status.\n"
+cd "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}"
 
 # Detect if there are any changes
 printf "\nChanges made since ${JDI_LIGHT_BRANCH} was checked out:\n"
