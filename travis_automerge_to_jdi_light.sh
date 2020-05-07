@@ -52,7 +52,7 @@ rm -rf "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}/index.html"
 cd ${REPO_TEMP}
 
 # Exclude paths
-([ ! -f .codacy.yaml ] && printf "\nCreating .codacy.yaml file\n" && printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > ${REPO_TEMP}\.codacy.yaml)
+([ ! -f .codacy.yaml ] && printf "\nCreating .codacy.yaml file\n" && printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > ${REPO_TEMP}/.codacy.yaml)
 
 # Debug to see what happens on travis
 cat ${REPO_TEMP}/.codacy.yaml
