@@ -23,7 +23,7 @@ jobs:
 
     - stage: merge
       name: Merge the changes into jdi-light repo
-      if: branch = "master"
+      if: branch = "travis-setup"
       script:
         - sudo snap install hub --classic
         - hub version
