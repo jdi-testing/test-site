@@ -85,9 +85,10 @@ PR_URL=$(hub pull-request --base "${JDI_LIGHT_BRANCH}" --head "${BRANCH_TO_MERGE
 printf "Following pull request has been created: ${PR_URL}\n"
 PR_NUMBER=$(echo "${PR_URL}" | sed 's/[^0-9]*//g')
 
-# Attempts to merge the request.
+# Attempts to squash merge the request (merge_method=squash).
 # GITHUB_TOKEN must belong to user that has permission to push into BRANCH_TO_MERGE
 printf "\nMerging pull request #${PR_NUMBER}:\n"
-hub api -XPUT "repos/jdi-testing/jdi-light/pulls/${PR_NUMBER}/merge"
+hub api -XPUT "repos/jdi-testing/jdi-light/pulls/${PR_NUMBER}/merge"\
+  -f merge_method=squash -f commit_title='Automerged by Travis job'
 
 printf "\n\nEnd of script\n"
