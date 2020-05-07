@@ -55,12 +55,12 @@ cd ${REPO_TEMP}
 ([ ! -f .codacy.yaml ] && printf "\nCreating .codacy.yaml file\n" && printf "exclude_paths:\n  - '${JDI_LIGHT_ANGULAR_DIR}/**'\n" > ${REPO_TEMP}\.codacy.yaml)
 
 # Debug to see what happens on travis
-cat ${REPO_TEMP}\.codacy.yaml
-
+cat ${REPO_TEMP}/.codacy.yaml
+git add .codacy.yaml
 # Add all new files to git
-git add --all
 
 printf "\nAll changes have been added to git. Checking the status.\n"
+git add --all
 cd "${REPO_TEMP}/${JDI_LIGHT_ANGULAR_DIR}"
 
 # Detect if there are any changes
