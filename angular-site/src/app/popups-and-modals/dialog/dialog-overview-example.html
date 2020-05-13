@@ -1,0 +1,20 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/dialog/overview">
+    Dialog Overview
+  </a>
+</h2>
+<ol>
+  <li>
+    <mat-form-field>
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <br>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol>

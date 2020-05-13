@@ -1,4 +1,8 @@
-<h2 class="example-h2">Badge</h2>
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/badge/overview">
+    Badge overview
+  </a>
+</h2>
 <p>
   <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
 </p>
@@ -6,8 +10,8 @@
 <p>
   Button with a badge on the left
   <button mat-raised-button color="primary"
-          matBadge="8" matBadgePosition="before" matBadgeColor="accent">
-    Action
+          matBadge="8" matBadgePosition="before" matBadgeColor="accent" (click)="showMsg = !showMsg">
+    {{showMsg ? 'Hide' : 'Show'}} message
   </button>
 </p>
 
@@ -19,3 +23,5 @@
       Example with a home icon with overlaid badge showing the number 15
     </span>
 </p>
+<div *ngIf="showMsg">Top secret message</div>
+

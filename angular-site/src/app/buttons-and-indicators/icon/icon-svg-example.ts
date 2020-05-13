@@ -14,6 +14,6 @@ export class IconSvgExample {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
         'thumbs-up',
-        sanitizer.bypassSecurityTrustResourceUrl('./src/assets/img/examples/thumbup_icon.svg'));
+        sanitizer.bypassSecurityTrustResourceUrl('./angular/assets/img/examples/thumbup_icon.svg'));
   }
 }

@@ -1,7 +1,14 @@
-<h2 class="example-h2">Basic chips</h2>
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/chips/overview">
+    Basic chips
+  </a>
+</h2>
 <mat-chip-list aria-label="Fish selection">
-  <mat-chip>One fish</mat-chip>
-  <mat-chip>Two fish</mat-chip>
-  <mat-chip color="primary" selected>Primary fish</mat-chip>
-  <mat-chip color="accent" selected>Accent fish</mat-chip>
+  <mat-chip (click)="clickedBasicChip='One fish'">One fish</mat-chip>
+  <mat-chip (click)="clickedBasicChip='Two fish'">Two fish</mat-chip>
+  <mat-chip color="primary" selected (click)="clickedBasicChip='Primary fish'">Primary fish</mat-chip>
+  <mat-chip color="accent" selected (click)="clickedBasicChip='Accent fish'">Accent fish</mat-chip>
 </mat-chip-list>
+<br>
+<br>
+<p>You clicked: {{clickedBasicChip}}</p>
