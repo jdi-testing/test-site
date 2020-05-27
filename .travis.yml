@@ -20,6 +20,7 @@ jobs:
       name: Run tests
       script:
         - echo "Test stage goes here, right now tests are considered passed by default"
+        - cd angular-site && ng build --prod
 
     - stage: merge
       name: Merge the changes into jdi-light repo
