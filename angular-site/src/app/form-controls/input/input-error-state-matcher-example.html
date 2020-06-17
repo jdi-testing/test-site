@@ -13,11 +13,11 @@
            placeholder="Ex. pat@example.com">
     <mat-hint>Errors appear instantly!</mat-hint>
     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')"
-               id="inputs_errorStateMatcher_invalidMessage">
+               id="inputs_errorStateMatcher_message">
       Please enter a valid email address
     </mat-error>
     <mat-error *ngIf="emailFormControl.hasError('required')"
-               id="inputs_errorStateMatcher_requiredMessage">
+               id="inputs_errorStateMatcher_message">
       Email is <strong>required</strong>
     </mat-error>
   </mat-form-field>
