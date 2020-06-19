@@ -1,0 +1,11 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/progress-bar/overview#indeterminate">
+    Indeterminate progress-bar
+  </a>
+</h2>
+<button mat-raised-button (click)="showProgressBar(5)">
+  Show progress-bar for 5 seconds
+</button>
+<div [hidden]="!isShown">
+  <mat-progress-bar id="progress_bars-indeterminate_progress_bar" mode="indeterminate"></mat-progress-bar>
+</div>
