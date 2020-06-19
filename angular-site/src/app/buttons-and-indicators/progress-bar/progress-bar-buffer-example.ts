@@ -8,4 +8,13 @@ import {Component} from '@angular/core';
   templateUrl: 'progress-bar-buffer-example.html',
   styleUrls: ['progress-bar-buffer-example.css'],
 })
-export class ProgressBarBufferExample {}
+export class ProgressBarBufferExample {
+  isShown = false;
+
+  showProgressBar(seconds): void {
+     this.isShown = true;
+     setTimeout(() => {
+                  this.isShown = false;
+                }, seconds * 1000);
+  }
+}

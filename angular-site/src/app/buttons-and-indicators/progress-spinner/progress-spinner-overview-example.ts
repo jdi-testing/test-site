@@ -11,7 +11,7 @@ import {Component} from '@angular/core';
 export class ProgressSpinnerOverviewExample {
   spinnerIsShown = false;
 
-  showSpinnerForSeconds(seconds): void {
+  showSpinner(seconds): void {
      this.spinnerIsShown = true;
      setTimeout(() => {
                   this.spinnerIsShown = false;
