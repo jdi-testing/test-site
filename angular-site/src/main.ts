@@ -117,6 +117,9 @@ import {IconSvgExample} from './app/buttons-and-indicators/icon/icon-svg-example
 import {ProgressSpinnerOverviewExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-overview-example';
 import {ProgressSpinnerConfigurableExample} from './app/buttons-and-indicators/progress-spinner/progress-spinner-configurable-example';
 import {ProgressBarBufferExample} from './app/buttons-and-indicators/progress-bar/progress-bar-buffer-example';
+import {ProgressBarDeterminateExample} from './app/buttons-and-indicators/progress-bar/progress-bar-determinate-example';
+import {ProgressBarIndeterminateExample} from './app/buttons-and-indicators/progress-bar/progress-bar-indeterminate-example';
+import {ProgressBarQueryExample} from './app/buttons-and-indicators/progress-bar/progress-bar-query-example';
 import {ProgressBarConfigurableExample} from './app/buttons-and-indicators/progress-bar/progress-bar-configurable-example';
 import {RippleOverviewExample} from './app/buttons-and-indicators/ripples/ripple-overview-example';
 import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from './app/popups-and-modals/bottom-sheet/bottom-sheet-overview-example';
@@ -176,8 +179,8 @@ const components: any[] =
       TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
       ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
       ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample,
-      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarBufferExample,
-      ProgressBarConfigurableExample, RippleOverviewExample,
+      ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarBufferExample, ProgressBarDeterminateExample,
+      ProgressBarIndeterminateExample, ProgressBarQueryExample, ProgressBarConfigurableExample, RippleOverviewExample,
       BottomSheetOverviewExample, BottomSheetOverviewExampleSheet, DialogOverviewExample, DialogOverviewExampleDialog, SnackBarOverviewExample,
       SnackBarComponentExample, PizzaPartyComponent, TooltipOverviewExample, TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample,
       TooltipDisabledExample, TooltipMessageExample, TooltipManualExample, TooltipModifiedDefaultsExample, TooltipAutoHideExample,
@@ -219,8 +222,8 @@ const components: any[] =
                    TabGroupThemeExample, TabGroupAsyncExample, TabNavBarBasicExample,
                    ButtonTypesExample, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, BadgeOverviewExample, ChipsOverviewExample,
                    ChipsStackedExample, ChipsAutocompleteExample, ChipsInputExample, IconOverviewExample, IconSvgExample,
-                   ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarBufferExample,
-                   ProgressBarConfigurableExample, RippleOverviewExample,
+                   ProgressSpinnerOverviewExample, ProgressSpinnerConfigurableExample, ProgressBarBufferExample, ProgressBarDeterminateExample,
+                   ProgressBarIndeterminateExample, ProgressBarQueryExample, ProgressBarConfigurableExample, RippleOverviewExample,
                    BottomSheetOverviewExample, DialogOverviewExample, SnackBarOverviewExample, SnackBarComponentExample, TooltipOverviewExample,
                    TooltipPositionExample, TooltipCustomClassExample, TooltipDelayExample, TooltipDisabledExample, TooltipMessageExample, TooltipManualExample,
                    TooltipModifiedDefaultsExample, TooltipAutoHideExample,
