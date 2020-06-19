@@ -8,4 +8,13 @@ import {Component} from '@angular/core';
   templateUrl: 'progress-spinner-overview-example.html',
   styleUrls: ['progress-spinner-overview-example.css'],
 })
-export class ProgressSpinnerOverviewExample {}
+export class ProgressSpinnerOverviewExample {
+  spinnerIsShown = false;
+
+  showSpinnerForSeconds(seconds): void {
+     this.spinnerIsShown = true;
+     setTimeout(() => {
+                  this.spinnerIsShown = false;
+                }, seconds * 1000);
+  }
+}
