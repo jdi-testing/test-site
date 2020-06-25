@@ -3,7 +3,7 @@
     Nested menu
   </a>
 </h2>
-<button mat-button [matMenuTriggerFor]="animals">Animal index</button>
+<button id="nested_menu" mat-button [matMenuTriggerFor]="animals">Animal index</button>
 <mat-menu #animals="matMenu">
   <button mat-menu-item (click)="menuOptionSelected = 'Vertebrates'" [matMenuTriggerFor]="vertebrates">Vertebrates
   </button>
