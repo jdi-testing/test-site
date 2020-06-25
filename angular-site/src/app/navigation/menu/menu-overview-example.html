@@ -3,7 +3,7 @@
     Basic menu
   </a>
 </h2>
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<button id="basic_menu_button" mat-button [matMenuTriggerFor]="menu">Menu</button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item (click)="menuOptionSelected = 'Item 1'">Item 1</button>
   <button mat-menu-item (click)="menuOptionSelected = 'Item 2'">Item 2</button>
