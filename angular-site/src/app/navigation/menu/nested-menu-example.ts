@@ -8,4 +8,6 @@ import {Component} from '@angular/core';
   templateUrl: 'nested-menu-example.html',
   styleUrls: ['nested-menu-example.css'],
 })
-export class NestedMenuExample {}
+export class NestedMenuExample {
+  menuOptionSelected: string;
+}
