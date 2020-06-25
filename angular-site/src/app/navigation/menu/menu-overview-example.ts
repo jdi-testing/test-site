@@ -8,4 +8,6 @@ import {Component} from '@angular/core';
   templateUrl: 'menu-overview-example.html',
   styleUrls: ['menu-overview-example.css'],
 })
-export class MenuOverviewExample {}
+export class MenuOverviewExample {
+  menuOptionSelected: string;
+}

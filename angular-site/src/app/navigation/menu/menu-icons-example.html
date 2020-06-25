@@ -3,16 +3,19 @@
   <mat-icon>more_vert</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
+  <button mat-menu-item (click)="menuOptionSelected = 'Redial'">
     <mat-icon>dialpad</mat-icon>
     <span>Redial</span>
   </button>
-  <button mat-menu-item disabled>
+  <button mat-menu-item disabled (click)="menuOptionSelected = 'voicemail'">
     <mat-icon>voicemail</mat-icon>
     <span>Check voice mail</span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="menuOptionSelected = 'notifications_off'">
     <mat-icon>notifications_off</mat-icon>
     <span>Disable alerts</span>
   </button>
 </mat-menu>
+<p>Selected:
+  <span id="icons-menu-selected-option">{{menuOptionSelected}}</span>
+</p>

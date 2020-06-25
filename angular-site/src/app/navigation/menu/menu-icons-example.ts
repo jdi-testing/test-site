@@ -8,4 +8,6 @@ import {Component} from '@angular/core';
   templateUrl: 'menu-icons-example.html',
   styleUrls: ['menu-icons-example.css'],
 })
-export class MenuIconsExample {}
+export class MenuIconsExample {
+  menuOptionSelected: string;
+}
