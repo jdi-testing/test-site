@@ -7,22 +7,22 @@
   <h4>mat-select</h4>
   <mat-form-field>
     <mat-label>Favorite food</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="food">
-      <mat-option *ngFor="let food of foods" [value]="food.value">
+    <mat-select [(ngModel)]="selectedValue" name="food" id="form-mat-select">
+      <mat-option *ngFor="let food of foods" [value]="food.value" id="form-mat-select-list">
         {{food.viewValue}}
       </mat-option>
     </mat-select>
   </mat-form-field>
-  <p> Selected food: {{selectedValue}} </p>
+  <p id="form-mat-select-confirm"> Selected food: {{selectedValue}} </p>
   <h4>native html select</h4>
   <mat-form-field>
     <mat-label>Favorite car</mat-label>
-    <select matNativeControl [(ngModel)]="selectedCar" name="car">
+    <select matNativeControl [(ngModel)]="selectedCar" name="car" id="form-native-select">
       <option value="" selected></option>
       <option *ngFor="let car of cars" [value]="car.value">
         {{car.viewValue}}
       </option>
     </select>
   </mat-form-field>
-  <p> Selected car: {{selectedCar}} </p>
+  <p id="form-native-select-confirm"> Selected car: {{selectedCar}} </p>
 </form>
