@@ -6,7 +6,7 @@
 <h4>mat-select</h4>
 <mat-form-field>
   <mat-label>State</mat-label>
-  <mat-select>
+  <mat-select id="reset-mat-select">
     <mat-option>None</mat-option>
     <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
   </mat-select>
@@ -15,8 +15,8 @@
 <h4>native html select</h4>
 <mat-form-field>
   <mat-label>Select your car</mat-label>
-  <select matNativeControl id="mySelectId">
-    <option value="" disabled selected></option>
+  <select matNativeControl id="reset-native-select">
+    <option value="" selected></option>
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
     <option value="mercedes">Mercedes</option>
