@@ -30,5 +30,8 @@ export class SnackBarComponentExample {
       color: hotpink;
     }
   `],
+  host: {
+    id: 'snack-bar_custom_component'
+  },
 })
 export class PizzaPartyComponent {}
