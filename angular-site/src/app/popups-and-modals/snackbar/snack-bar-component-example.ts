@@ -31,7 +31,7 @@ export class SnackBarComponentExample {
     }
   `],
   host: {
-    id: 'snack-bar_custom_component'
+    id: 'snack-bar-custom-component'
   },
 })
 export class PizzaPartyComponent {}
