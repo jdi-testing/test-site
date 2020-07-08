@@ -4,24 +4,24 @@
   </a>
 </h2>
 <p>
-  <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+  <span matBadge="4" matBadgeOverlap="false" id="text-with-badge">Text with a badge</span>
 </p>
 
 <p>
   Button with a badge on the left
   <button mat-raised-button color="primary"
-          matBadge="8" matBadgePosition="before" matBadgeColor="accent" (click)="showMsg = !showMsg">
+          matBadge="8" matBadgePosition="before" matBadgeColor="accent" (click)="showMsg = !showMsg" id="button-with-left-badge">
     {{showMsg ? 'Hide' : 'Show'}} message
   </button>
 </p>
 
 <p>
   Icon with a badge
-  <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+  <mat-icon matBadge="15" matBadgeColor="warn" id="icon-with-badge">home</mat-icon>
   <!-- Include text description of the icon's meaning for screen-readers -->
   <span class="cdk-visually-hidden">
       Example with a home icon with overlaid badge showing the number 15
     </span>
 </p>
-<div *ngIf="showMsg">Top secret message</div>
+<div *ngIf="showMsg" id="hidden-message">Top secret message</div>
 
