@@ -9,7 +9,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
   templateUrl: 'snack-bar-overview-example.html',
   styleUrls: ['snack-bar-overview-example.css'],
   host: {
-    id: "snack-bar"
+    id: "basic-snack-bar"
   }
 })
 export class SnackBarOverviewExample {
