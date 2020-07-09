@@ -12,7 +12,7 @@
   </mat-list-item>
   <mat-divider></mat-divider>
   <div mat-subheader>Notes</div>
-  <mat-list-item id="{{ 'list-with-section-items-' + note.name.toLowerCase().replace(/ /,'-') }}" *ngFor="let note of notes">
+  <mat-list-item id="{{ 'list-with-section-items-' + note.name.toLowerCase().replace(' ','-') }}" *ngFor="let note of notes">
     <mat-icon mat-list-icon>note</mat-icon>
     <div mat-line>{{note.name}}</div>
     <div mat-line> {{note.updated | date}} </div>
