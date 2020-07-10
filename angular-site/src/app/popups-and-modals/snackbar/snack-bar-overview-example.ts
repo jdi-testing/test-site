@@ -8,9 +8,12 @@ import {MatSnackBar} from '@angular/material/snack-bar';
   selector: 'snack-bar-overview-example',
   templateUrl: 'snack-bar-overview-example.html',
   styleUrls: ['snack-bar-overview-example.css'],
+  host: {
+    id: "basic-snack-bar"
+  }
 })
 export class SnackBarOverviewExample {
-  constructor(private _snackBar: MatSnackBar, public id: "basic-snack-bar") {}
+  constructor(private _snackBar: MatSnackBar) {}
 
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
