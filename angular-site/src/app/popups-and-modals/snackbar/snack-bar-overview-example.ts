@@ -8,9 +8,6 @@ import {MatSnackBar} from '@angular/material/snack-bar';
   selector: 'snack-bar-overview-example',
   templateUrl: 'snack-bar-overview-example.html',
   styleUrls: ['snack-bar-overview-example.css'],
-  host: {
-    id: "snack-bar"
-  }
 })
 export class SnackBarOverviewExample {
   constructor(private _snackBar: MatSnackBar) {}
@@ -19,5 +16,7 @@ export class SnackBarOverviewExample {
     this._snackBar.open(message, action, {
       duration: 2000,
     });
+
+    document.querySelector("snack-bar-container").setAttribute("id", "basic-snack-bar-container")
   }
 }
