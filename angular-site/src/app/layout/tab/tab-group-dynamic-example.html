@@ -13,7 +13,7 @@
   <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
 </div>
 
-<mat-tab-group [selectedIndex]="selected.value"
+<mat-tab-group id = "tab-dynamically-changing" [selectedIndex]="selected.value"
                (selectedIndexChange)="selected.setValue($event)">
   <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
     Contents for {{tab}} tab
