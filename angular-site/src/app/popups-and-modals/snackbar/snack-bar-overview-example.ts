@@ -14,7 +14,7 @@ export class SnackBarOverviewExample {
 
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
-      duration: 60000, //2000
+      duration: 2000
     });
   }
 }
