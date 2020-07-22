@@ -1,5 +1,5 @@
 <h2 class="example-h2">Basic use of the tab nav bar</h2>
-<nav mat-tab-nav-bar [backgroundColor]="background">
+<nav  mat-tab-nav-bar  [backgroundColor]="background" id = "tabs-nav-bar">
   <a mat-tab-link *ngFor="let link of links"
      (click)="activeLink = link"
      [active]="activeLink == link"> {{link}} </a>
