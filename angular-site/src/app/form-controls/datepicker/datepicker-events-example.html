@@ -6,10 +6,11 @@
 <mat-form-field>
   <mat-label>Input & change events</mat-label>
   <input matInput [matDatepicker]="picker"
-         (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+         (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)"
+         id="input-change-events-datepicker">
+  <mat-datepicker-toggle matSuffix [for]="picker" id="input-change-events-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
-<div class="example-events">
+<div class="example-events" id="input-change-events-area">
   <div *ngFor="let e of events">{{e}}</div>
 </div>
