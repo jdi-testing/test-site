@@ -4,7 +4,7 @@
   </a>
 </h2>
 <div class="example-container">
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="fill" id="prefix-suffix-form-field-password">
     <mat-label>Enter your password</mat-label>
     <input matInput [type]="hide ? 'password' : 'text'">
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -12,7 +12,7 @@
     </button>
   </mat-form-field>
 
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="fill" id="prefix-suffix-form-field-amount">
     <mat-label>Amount</mat-label>
     <input matInput type="number" class="example-right-align">
     <span matPrefix>$&nbsp;</span>

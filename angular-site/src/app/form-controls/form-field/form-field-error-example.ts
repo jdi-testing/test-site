@@ -8,13 +8,13 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['form-field-error-example.css'],
 })
 export class FormFieldErrorExample {
-  email = new FormControl('', [Validators.required, Validators.email]);
+  email = new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+[\.]{1}[a-z]+$")]);
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
     }
 
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+    return this.email.hasError('pattern') ? 'Not a valid email' : '';
   }
 }
