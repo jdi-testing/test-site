@@ -3,7 +3,7 @@
     Tab group where the tab content is loaded lazily (when activated)
   </a>
 </h2>
-<mat-tab-group>
+<mat-tab-group id = "tabs-with-lazy-loaded-content">
   <mat-tab label="First">
     <ng-template matTabContent>
       Content 1 - Loaded: {{getTimeLoaded(1) | date:'medium'}}

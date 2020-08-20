@@ -1,6 +1,6 @@
 <h2 class="example-h2">Customizing the theme options on the tab group</h2>
 <div>
-  <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
+  <mat-button-toggle-group id = "mat-button-toggle-group-color" #colorToggle="matButtonToggleGroup"
                            value="primary"
                            aria-label="Change color">
     <mat-button-toggle value="primary"> Primary </mat-button-toggle>
@@ -10,7 +10,7 @@
 </div>
 
 <div>
-  <mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup"
+  <mat-button-toggle-group id = "mat-button-toggle-group-background-color" #backgroundColorToggle="matButtonToggleGroup"
                            value="primary"
                            aria-label="Change color">
     <mat-button-toggle value="primary"> Primary </mat-button-toggle>
@@ -19,7 +19,7 @@
   <span class="example-button-toggle-label"> Background Color </span>
 </div>
 
-<mat-tab-group [color]="colorToggle.value" [backgroundColor]="backgroundColorToggle.value">
+<mat-tab-group id = "tab-group-theme-example" [color]="colorToggle.value" [backgroundColor]="backgroundColorToggle.value">
   <mat-tab label="First"> Content 1 </mat-tab>
   <mat-tab label="Second"> Content 2 </mat-tab>
   <mat-tab label="Third"> Content 3 </mat-tab>

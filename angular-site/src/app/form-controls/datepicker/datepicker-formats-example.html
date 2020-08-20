@@ -5,7 +5,7 @@
 </h2>
 <mat-form-field>
   <mat-label>Verbose datepicker</mat-label>
-  <input matInput [matDatepicker]="dp" [formControl]="date">
-  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+  <input matInput [matDatepicker]="dp" [formControl]="date" id="custom-formats-datepicker">
+  <mat-datepicker-toggle matSuffix [for]="dp" id="custom-formats-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #dp></mat-datepicker>
 </mat-form-field>

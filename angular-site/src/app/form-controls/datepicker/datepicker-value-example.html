@@ -5,20 +5,20 @@
 </h2>
 <mat-form-field>
   <mat-label>Angular forms</mat-label>
-  <input matInput [matDatepicker]="picker1" [formControl]="date">
-  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <input matInput [matDatepicker]="picker1" [formControl]="date" id="selected-datepicker">
+  <mat-datepicker-toggle matSuffix [for]="picker1" id="selected-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #picker1></mat-datepicker>
 </mat-form-field>
 <mat-form-field>
   <mat-label>Angular forms (w/ deserialization)</mat-label>
   <input matInput [matDatepicker]="picker2"
-         [formControl]="serializedDate">
-  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+         [formControl]="serializedDate" id="deserialize-datepicker">
+  <mat-datepicker-toggle matSuffix [for]="picker2" id="deserialize-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #picker2></mat-datepicker>
 </mat-form-field>
 <mat-form-field>
   <mat-label>Value binding</mat-label>
-  <input matInput [matDatepicker]="picker3" [value]="date.value">
-  <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+  <input matInput [matDatepicker]="picker3" [value]="date.value" id="binding-datepicker">
+  <mat-datepicker-toggle matSuffix [for]="picker3" id="binding-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #picker3></mat-datepicker>
 </mat-form-field>
