@@ -64,7 +64,7 @@ import {FormFieldHintExample} from './app/form-controls/form-field/form-field-hi
 import {FormFieldErrorExample} from './app/form-controls/form-field/form-field-error-example';
 import {FormFieldPrefixSuffixExample} from './app/form-controls/form-field/form-field-prefix-suffix-example';
 import {FormFieldThemingExample} from './app/form-controls/form-field/form-field-theming-example';
-import {FormFieldCustomControlExample, MyTelInput} from './app/form-controls/form-field/form-field-custom-control-example';
+import {FormFieldCustomControlExample, MyTelInput, NumberDirective} from './app/form-controls/form-field/form-field-custom-control-example';
 import {MenuOverviewExample} from './app/navigation/menu/menu-overview-example';
 import {MenuIconsExample} from './app/navigation/menu/menu-icons-example';
 import {NestedMenuExample} from './app/navigation/menu/nested-menu-example';
@@ -169,8 +169,8 @@ const components: any[] =
       DatepickerValueExample, DatepickerMinMaxExample, DatepickerFilterExample, DatepickerEventsExample, DatepickerDisabledExample,
       DatepickerTouchExample, DatepickerApiExample,
       FormFieldOverviewExample, FormFieldLabelExample, FormFieldAppearanceExample, FormFieldHintExample, FormFieldErrorExample,
-      FormFieldPrefixSuffixExample, FormFieldThemingExample, FormFieldCustomControlExample, MyTelInput, MenuOverviewExample, MenuIconsExample,
-      NestedMenuExample, ToolbarOverviewExample, ToolbarMultirowExample, SidenavOverviewExample, SidenavDrawerOverviewExample,
+      FormFieldPrefixSuffixExample, FormFieldThemingExample, FormFieldCustomControlExample, MyTelInput, NumberDirective, MenuOverviewExample,
+      MenuIconsExample, NestedMenuExample, ToolbarOverviewExample, ToolbarMultirowExample, SidenavOverviewExample, SidenavDrawerOverviewExample,
       SidenavPositionExample, SidenavOpenCloseExample, SidenavModeExample, SidenavDisableCloseExample, SidenavFixedExample, SidenavResponsiveExample,
       SidenavAutosizeExample, CardOverviewExample, CardFancyExample, DividerOverviewExample, ExpansionOverviewExample, ExpansionStepsExample,
       GridListOverviewExample, GridListDynamicExample, ListOverviewExample, ListSectionsExample, TreeDynamicExample, TreeFlatOverviewExample,
