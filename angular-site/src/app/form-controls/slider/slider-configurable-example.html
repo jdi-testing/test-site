@@ -6,44 +6,44 @@
     <section class="example-section">
       <mat-form-field class="example-margin">
         <mat-label>Value</mat-label>
-        <input matInput type="number" [(ngModel)]="value" id="slider_configurable_value">
+        <input matInput type="number" [(ngModel)]="value" id="slider-configurable-value">
       </mat-form-field>
       <mat-form-field class="example-margin">
         <mat-label>Min value</mat-label>
-        <input matInput type="number" [(ngModel)]="min" id="slider_configurable_min">
+        <input matInput type="number" [(ngModel)]="min" id="slider-configurable-min">
       </mat-form-field>
       <mat-form-field class="example-margin">
         <mat-label>Max value</mat-label>
-        <input matInput type="number" [(ngModel)]="max" id="slider_configurable_max">
+        <input matInput type="number" [(ngModel)]="max" id="slider-configurable-max">
       </mat-form-field>
       <mat-form-field class="example-margin">
         <mat-label>Step size</mat-label>
-        <input matInput type="number" [(ngModel)]="step" id="slider_configurable_step">
+        <input matInput type="number" [(ngModel)]="step" id="slider-configurable-step">
       </mat-form-field>
     </section>
 
     <section class="example-section">
-      <mat-checkbox class="example-margin" [(ngModel)]="showTicks" id="slider_configurable_showTicks">Show ticks</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="autoTicks" *ngIf="showTicks" id="slider_configurable_autoTicks">
+      <mat-checkbox class="example-margin" [(ngModel)]="showTicks" id="slider-configurable-showTicks">Show ticks</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="autoTicks" *ngIf="showTicks" id="slider-configurable-autoTicks">
         Auto ticks
       </mat-checkbox>
       <mat-form-field class="example-margin" *ngIf="showTicks && !autoTicks">
         <mat-label>Tick interval</mat-label>
-        <input matInput type="number" [(ngModel)]="tickInterval" id="slider_configurable_tickInterval">
+        <input matInput type="number" [(ngModel)]="tickInterval" id="slider-configurable-tickInterval">
       </mat-form-field>
     </section>
 
     <section class="example-section">
-      <mat-checkbox class="example-margin" [(ngModel)]="thumbLabel" id="slider_configurable_thumbLabel">Show thumb label</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="thumbLabel" id="slider-configurable-thumb-label">Show thumb label</mat-checkbox>
     </section>
 
     <section class="example-section">
-      <mat-checkbox class="example-margin" [(ngModel)]="vertical" id="slider_configurable_vertical">Vertical</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="invert" id="slider_configurable_invert">Inverted</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="vertical" id="slider-configurable-vertical">Vertical</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="invert" id="slider-configurable-invert">Inverted</mat-checkbox>
     </section>
 
     <section class="example-section">
-      <mat-checkbox class="example-margin" [(ngModel)]="disabled" id="slider_configurable_disabled">Disabled</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="disabled" id="slider-configurable-disabled">Disabled</mat-checkbox>
     </section>
 
   </mat-card-content>
@@ -53,7 +53,7 @@
   <mat-card-content>
     <h4>Result</h4>
 
-    <mat-slider
+    <mat-slider id="mat-slider-configurable"
         class="example-margin"
         [disabled]="disabled"
         [invert]="invert"

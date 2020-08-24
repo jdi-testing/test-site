@@ -2,6 +2,7 @@
 <form class="example-form">
   <mat-form-field class="example-full-width">
     <input matInput
+           id="autocomplete-overview-input"
            placeholder="State"
            aria-label="State"
            [matAutocomplete]="auto"
@@ -19,6 +20,7 @@
 
   <mat-slide-toggle
     [checked]="stateCtrl.disabled"
+    id="autocomplete-overview-slide-toggle"
     (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()">
     Disable Input?
   </mat-slide-toggle>

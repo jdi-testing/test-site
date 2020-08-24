@@ -4,7 +4,7 @@
   </a>
 </h2>
 <mat-form-field class="example-full-width">
-  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date" id="open-method-datepicker">
   <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
-<button mat-raised-button (click)="picker.open()">Open</button>
+<button mat-raised-button (click)="picker.open()" id="open-method-datepicker-button">Open</button>

@@ -1,16 +1,16 @@
 <h2 class="example-h2">Configurable paginator</h2>
 <mat-form-field>
   <mat-label>List length</mat-label>
-  <input matInput [(ngModel)]="length" type="number">
+  <input id="paginator-list-length-input" matInput [(ngModel)]="length" type="number">
 </mat-form-field>
 
 <mat-form-field>
   <mat-label>Page size</mat-label>
-  <input matInput [(ngModel)]="pageSize" type="number">
+  <input id="paginator-page-size-input" matInput [(ngModel)]="pageSize" type="number">
 </mat-form-field>
 <mat-form-field>
   <mat-label>Page size options</mat-label>
-  <input matInput [ngModel]="pageSizeOptions" (ngModelChange)="setPageSizeOptions($event)"
+  <input id="paginator-page-size-options-input" matInput [ngModel]="pageSizeOptions" (ngModelChange)="setPageSizeOptions($event)"
          [ngModelOptions]="{updateOn: 'blur'}" placeholder="Ex. 10,25,50">
 </mat-form-field>
 
