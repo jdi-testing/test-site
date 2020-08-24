@@ -4,13 +4,13 @@
   </a>
 </h2>
 <div class="example-container">
-  <form [formGroup]="options">
-    <mat-checkbox [formControl]="hideRequiredControl" id="form-field-with-label-checkbox">Hide required marker</mat-checkbox>
+  <form [formGroup]="options" id="form-field-with-label">
+    <mat-checkbox [formControl]="hideRequiredControl">Hide required marker</mat-checkbox>
     <div>
       <label>Float label: </label>
       <mat-radio-group [formControl]="floatLabelControl" id="form-field-with-label-radio">
-        <mat-radio-button value="auto" id="form-field-with-label-radio-auto">Auto</mat-radio-button>
-        <mat-radio-button value="always" id="form-field-with-label-radio-always">Always</mat-radio-button>
+        <mat-radio-button value="auto">Auto</mat-radio-button>
+        <mat-radio-button value="always">Always</mat-radio-button>
       </mat-radio-group>
     </div>
 
