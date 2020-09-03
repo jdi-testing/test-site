@@ -5,7 +5,7 @@
 </h2>
 
 <mat-card class="sidenav-demonstration-card">
-  <mat-sidenav-container class="example-container">
+  <mat-sidenav-container id = "open-close-behavior" class="example-container">
    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
                 (closed)="events.push('close!')">
       Sidenav content

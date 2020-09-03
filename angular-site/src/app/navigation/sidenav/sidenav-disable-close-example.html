@@ -5,7 +5,7 @@
 </h2>
 
 <mat-card class="sidenav-demonstration-card">
-  <mat-sidenav-container
+  <mat-sidenav-container id = "custom-escape-backdrop"
     class="example-container" (backdropClick)="close('backdrop')">
     <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
       <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
