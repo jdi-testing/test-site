@@ -9,7 +9,7 @@
     <mat-sidenav #sidenav [mode]="mode.value">
       <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
       <p>
-        <mat-radio-group class="example-radio-group" [formControl]="mode">
+        <mat-radio-group class="example-radio-group" id="side-nav-radio-buttons" [formControl]="mode">
           <label>Mode:</label>
           <br>
           <mat-radio-button value="over">Over</mat-radio-button>
@@ -22,7 +22,7 @@
     <mat-sidenav-content>
       <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
       <p>
-        <mat-radio-group class="example-radio-group" [formControl]="mode">
+        <mat-radio-group class="example-radio-group" id = "side-nav-content-radio-buttons" [formControl]="mode">
           <label>Mode:</label>
           <br>
           <mat-radio-button value="over">Over</mat-radio-button>
