@@ -3,7 +3,7 @@
     Expansion panel as accordion
   </a>
 </h2>
-<mat-accordion class="example-headers-align">
+<mat-accordion class="example-headers-align" id="accordion-expansion-panel">
   <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -17,12 +17,12 @@
 
     <mat-form-field>
       <mat-label>First name</mat-label>
-      <input matInput>
+      <input matInput id="accordion-first-name-input">
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Age</mat-label>
-      <input matInput type="number" min="1">
+      <input matInput type="number" min="1" id="accordion-age-input">
     </mat-form-field>
 
     <mat-action-row>
@@ -43,7 +43,7 @@
 
     <mat-form-field>
       <mat-label>Country</mat-label>
-      <input matInput>
+      <input matInput id="accordion-country-input">
     </mat-form-field>
 
     <mat-action-row>
@@ -65,7 +65,7 @@
 
     <mat-form-field>
       <mat-label>Date</mat-label>
-      <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly>
+      <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly id="accordion-date-input">
     </mat-form-field>
     <mat-datepicker #picker></mat-datepicker>
 
