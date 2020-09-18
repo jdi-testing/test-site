@@ -3,9 +3,9 @@
     Basic progress-spinner
   </a>
 </h2>
-<button mat-raised-button (click)="showSpinner(5)">
+<button mat-raised-button id = "show-spinner" (click)="showSpinner(5)">
   Show progress-spinner for 5 seconds
 </button>
 <div [hidden]="!spinnerIsShown">
-  <mat-spinner id="basic_progress_spinner"></mat-spinner>
+  <mat-spinner id="basic-progress-spinner"></mat-spinner>
 </div>
