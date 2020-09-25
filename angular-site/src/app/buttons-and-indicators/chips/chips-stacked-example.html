@@ -3,7 +3,7 @@
     Stacked chips
   </a>
 </h2>
-<mat-chip-list id="stacked-chips-list" class="mat-chip-list-stacked" aria-label="Color selection">
+<mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection" id="stacked-chips-list">
   <mat-chip *ngFor="let chip of availableColors" selected [color]="chip.color"
             (click)="clickedStackedChip=chip.name">
     {{chip.name}}
