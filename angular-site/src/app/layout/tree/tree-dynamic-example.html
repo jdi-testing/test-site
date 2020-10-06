@@ -1,5 +1,5 @@
 <h2 class="example-h2">Tree with dynamic data</h2>
-<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl" id="tree-dynamic">
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
     <button mat-icon-button disabled></button>
     {{node.item}}
