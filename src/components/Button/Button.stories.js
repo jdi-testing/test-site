@@ -14,5 +14,5 @@ export const Default = Template.bind({});
 export const Primary = Template.bind({});
 Primary.args = {
   variant: 'contained',
-  color: 'primary'
+  color: 'primary',
 };

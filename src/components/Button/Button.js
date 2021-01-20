@@ -1,7 +1,6 @@
+import React from 'react';
 import MButton from '@material-ui/core/Button';
 
-const Button = (props) => {
-    return <MButton {...props}/>
-}
+const Button = (props) => <MButton {...props} />;
 
 export default Button;
