@@ -9,7 +9,8 @@
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "dev": "next",
