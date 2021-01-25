@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Button from './Button';
 
 export default {
@@ -7,7 +6,7 @@ export default {
   component: Button,
 };
 
-const Template = (args) => <Button {...args} onClick={() => console.log('123')}>Button</Button>;
+const Template = (args) => <Button {...args} onClick={() => console.log('Button clicked')}>Button</Button>;
 
 // Stories
 export const Default = Template.bind({});
@@ -22,4 +21,16 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   variant: 'contained',
   color: 'secondary',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  variant: 'contained',
+  disabled: true
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+  variant: 'outlined',
+  color: 'primary',
 };
