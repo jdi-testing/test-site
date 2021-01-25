@@ -18,7 +18,9 @@ const Template = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {
-    showLabels: true,
-    value: 0,
+Default.args = {};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    disabled: true
 };
