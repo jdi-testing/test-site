@@ -28,3 +28,8 @@ Extended.args = {
     variant: 'extended',
     color: 'secondary'
 };
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    disabled: true
+};
