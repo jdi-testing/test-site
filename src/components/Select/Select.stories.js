@@ -1,10 +1,13 @@
-import Selects from "./Select";
+import DisabledSelect from "./DisabledSelect";
+import MultipleSelect from "./MultipleSelect";
+import SimpleSelect from "./SilmpleSelect";
 import React from "react";
 
 export default {
-    title: 'Material Ui/Select',
-    component: Selects,
-
+    title: 'Material Ui/Inputs/Select',
+    component: DisabledSelect, MultipleSelect, SimpleSelect,
 };
 
-export const SelectView = (args) => <Selects {...args}>Multiple Select</Selects>;
+export const DisabledSelectView = (args) => <DisabledSelect {...args}>Multiple Select</DisabledSelect>;
+export const MultipleSelectView = (args) => <MultipleSelect {...args}>Multiple Select</MultipleSelect>;
+export const SimpleSelectView = (args) => <SimpleSelect {...args}>Multiple Select</SimpleSelect>;

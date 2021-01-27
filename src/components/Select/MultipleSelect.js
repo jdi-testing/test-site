@@ -48,19 +48,6 @@ const names = [
     'Kelly',
 ];
 
-const lastNames = [
-    'Hansen',
-    'Henry',
-    'Tucker',
-    'Hubbard',
-    'Alexander',
-    'Abbott',
-    'Wagner',
-    'Wilkerson',
-    'Andrews',
-    'Snyder',
-];
-
 function getStyles(name, personName, theme) {
     return {
         fontWeight:
@@ -70,24 +57,13 @@ function getStyles(name, personName, theme) {
     };
 }
 
-export default function Selects() {
+export default function MultipleSelect() {
     const classes = useStyles();
     const theme = useTheme();
     const [personName, setPersonName] = React.useState([]);
 
     const handleChange = (event) => {
         setPersonName(event.target.value);
-    };
-
-    const handleChangeMultiple = (event) => {
-        const { options } = event.target;
-        const value = [];
-        for (let i = 0, l = options.length; i < l; i += 1) {
-            if (options[i].selected) {
-                value.push(options[i].value);
-            }
-        }
-        setPersonName(value);
     };
 
     return (
@@ -105,27 +81,6 @@ export default function Selects() {
                     {names.map((name) => (
                         <MenuItem key={name} value={name} style={getStyles(name, personName, theme)}>
                             {name}
-                        </MenuItem>
-                    ))}
-                </Select>
-            </FormControl>
-            <FormControl className={classes.formControl}>
-                <InputLabel id="demo-disabled-select">Disabled Select</InputLabel>
-                <Select
-                    id="disabled-select"
-                    disabled>
-                    <MenuItem value="10">Ten</MenuItem>
-                    <MenuItem value="20">Twenty</MenuItem>
-                    <MenuItem value="30">Thirty</MenuItem>
-                </Select>
-            </FormControl>
-            <FormControl className={classes.formControl}>
-                <InputLabel id="demo-simple-select">Simple Select</InputLabel>
-                <Select
-                    id="simple-select">
-                    {lastNames.map((lastNames) => (
-                        <MenuItem key={lastNames} value={lastNames} style={getStyles(lastNames, personName, theme)}>
-                            {lastNames}
                         </MenuItem>
                     ))}
                 </Select>
