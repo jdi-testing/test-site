@@ -3,7 +3,6 @@ import React from 'react';
 import FakedReferencePopper from "./FakedReferencePopper";
 import Popper from "./Popper";
 import PositionedPopper from "./PositionedPopper";
-
 import SimplePopper from "./SimplePopper";
 import TransitionsPopper from "./TransitionsPopper";
 
@@ -17,15 +16,15 @@ const SimplePopperTemplate = (args) => (
 );
 
 const TransitionsPopperTemplate = (args) => (
-    <TransitionsPopper {...args}>Popover content</TransitionsPopper>
+    <TransitionsPopper {...args}>Popper content</TransitionsPopper>
 );
 
 const FakedReferencePopperTemplate = (args) => (
-    <FakedReferencePopper {...args}>Popover content</FakedReferencePopper>
+    <FakedReferencePopper {...args}>Popper content</FakedReferencePopper>
 );
 
 const PositionedPopperTemplate = (args) => (
-    <PositionedPopper {...args}>Popover content</PositionedPopper>
+    <PositionedPopper {...args}>Popper content</PositionedPopper>
 );
 
 export const Simple = SimplePopperTemplate.bind({});
