@@ -3,7 +3,7 @@ import React from 'react';
 import Portal from './Portal';
 
 export default {
-  title: 'Material Ui/Portal',
+  title: 'Material Ui/Utils/Portal',
   component: Portal,
 };
 
