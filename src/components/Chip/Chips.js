@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Chips() {
+export default function Chips(args) {
   const classes = useStyles();
 
   const handleDelete = () => {
@@ -33,7 +33,7 @@ export default function Chips() {
       <Chip label="Disabled" disabled />
       <Chip avatar={<Avatar>M</Avatar>} label="Clickable" onClick={handleClick} />
       <Chip
-        avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
+        avatar={<Avatar {...args}>{args.children}</Avatar>}
         label="Deletable"
         onDelete={handleDelete}
       />

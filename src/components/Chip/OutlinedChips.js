@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function OutlinedChips() {
+export default function OutlinedChips(args) {
   const classes = useStyles();
 
   const handleDelete = () => {
@@ -38,7 +38,7 @@ export default function OutlinedChips() {
         variant="outlined"
       />
       <Chip
-        avatar={<Avatar alt="Natacha" src="/static/images/avatar/1.jpg" />}
+        avatar={<Avatar {...args}>{args.children}</Avatar>}
         label="Deletable"
         onDelete={handleDelete}
         variant="outlined"
