@@ -1,6 +1,6 @@
 import Circular from './CircularIndeterminate';
 import CirDeterminate from './CircularDeterminate';
-import Intergraion from './CircularIntegration';
+import Integration from './CircularIntegration';
 import CircularWithLabel from './CircularWithValueLabel';
 import Linear from './LinearIndeterminate';
 import LinDeterminate from './LinearDeterminate';
@@ -23,18 +23,18 @@ SecondaryCircularIndeterminate.args = {
 
 export const CircularDeterminate = CirDeterminate.bind({});
 
-export const CircularIntegration = Intergraion.bind({});
+export const CircularIntegration = Integration.bind({});
 
 export const CircularWithValueLabel = CircularWithLabel.bind({});
 
-export const LinearProgress = Linear.bind({});
+export const LinearIndeterminate = Linear.bind({});
 
-export const LinearProgressSecondary = Linear.bind({});
-LinearProgressSecondary.args = {
+export const LinearIndeterminateSecondary = Linear.bind({});
+LinearIndeterminateSecondary.args = {
   color: 'secondary',
 }
 
-export const LinearIndeterminate = LinDeterminate.bind({});
+export const LinearDeterminate = LinDeterminate.bind({});
 
 export const LinearBuffer = LinBuffer.bind({});
 
