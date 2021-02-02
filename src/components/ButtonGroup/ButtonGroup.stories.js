@@ -83,9 +83,6 @@ function SplitButtonTemplate() {
             </Popper>
         </Box>
     );
-    // return (
-    //     <Button/>
-    // )
 }
 
 export const Default = Template.bind({});
