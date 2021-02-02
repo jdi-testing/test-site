@@ -10,11 +10,23 @@ import NSwitch from '@material-ui/core/Switch';
 import FormGroupConst from './FormGroup';
 
 export default {
-  title: 'Material Ui/Checkbox',
+  title: 'Material Ui/Inputs/Checkbox',
   component: CheckboxConst,
 };
 
 const Template = (args) => <CheckboxConst {...args} />;
+
+const checkedConst = {
+  checked: true,
+};
+
+const disabledConst = {
+  disabled: true,
+};
+
+const shrinkConst = {
+  shrink: true,
+};
 
 export const Primary = Template.bind({});
 Primary.args = {
@@ -27,19 +39,19 @@ export const Disabled = Template.bind({});
 Disabled.args = {
     id: "disabled-checkbox",
     value: "Disabled",
-    disabled: "true",
+    disabled: true,
     inputProps: { 'aria-label': 'Checkbox B' }
 };
 
 export const Required = Template.bind({});
 Required.args = {
     id: "required-checkbox",
-    required: "true",
+    required: true,
     color: "secondary",
 };
 
 const Template1 = (args) => <FormControlConst {...args} >
-                                        <InputLabel htmlFor="my-input" shrink="true">Email address</InputLabel>
+                                        <InputLabel htmlFor="my-input" shrink={Boolean(shrinkConst)}>Email address</InputLabel>
                                         <Input id="my-input" type="checkbox" aria-describedby="my-helper-text" />
                                         <FormHelperText id="my-helper-text" margin="dense">We ll never share your email.</FormHelperText>
                                     </FormControlConst>;
@@ -70,8 +82,8 @@ DisabledControlLabel.args = {
 
 const Template3 = (args) => <FormGroupConst {...args} >
                                         <CheckboxConst id="first" />
-                                        <CheckboxConst id="second" checked="true"/>
-                                        <CheckboxConst id="third" disabled="true" />
+                                        <CheckboxConst id="second" checked={Boolean(checkedConst)}/>
+                                        <CheckboxConst id="third" disabled={Boolean(disabledConst)} />
                                     </FormGroupConst>;
 export const Group = Template3.bind({});
 Group.args = {
