@@ -53,7 +53,7 @@ function SplitButtonTemplate() {
 
     return (
         <Box>
-            <ButtonGroup variant="contained" color="primary" ref={anchorRef}>
+            <ButtonGroup variant="contained" color="primary" >
                 <Button onClick={handleClick}>{options[selectedIndex]}</Button>
                 <Button color="primary" size="small" onClick={handleToggle}>
                     <ArrowDropDownIcon/>
@@ -61,7 +61,6 @@ function SplitButtonTemplate() {
             </ButtonGroup>
             <Popper
                 open={open}
-                anchorEl={anchorRef.current}
                 role={undefined}
                 transition
                 disablePortal
@@ -84,6 +83,9 @@ function SplitButtonTemplate() {
             </Popper>
         </Box>
     );
+    // return (
+    //     <Button/>
+    // )
 }
 
 export const Default = Template.bind({});
