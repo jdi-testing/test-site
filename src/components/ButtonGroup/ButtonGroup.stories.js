@@ -27,7 +27,7 @@ const Template = (args) =>
 
 function SplitButtonTemplate() {
     const [open, setOpen] = React.useState(false);
-    const anchorRef = React.useRef(null);
+    const [anchorRef, setAnchorRef] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(1);
 
     const handleClick = () => {
@@ -39,7 +39,8 @@ function SplitButtonTemplate() {
         setOpen(false);
     };
 
-    const handleToggle = () => {
+    const handleToggle = (event) => {
+        setAnchorRef(event.currentTarget);
         setOpen((prevOpen) => !prevOpen);
     };
 
@@ -47,13 +48,12 @@ function SplitButtonTemplate() {
         if (anchorRef.current && anchorRef.current.contains(event.target)) {
             return;
         }
-
         setOpen(false);
     };
 
     return (
         <Box>
-            <ButtonGroup variant="contained" color="primary" >
+            <ButtonGroup variant="contained" color="primary" ref={anchorRef}>
                 <Button onClick={handleClick}>{options[selectedIndex]}</Button>
                 <Button color="primary" size="small" onClick={handleToggle}>
                     <ArrowDropDownIcon/>
@@ -61,6 +61,7 @@ function SplitButtonTemplate() {
             </ButtonGroup>
             <Popper
                 open={open}
+                anchorEl={anchorRef}
                 role={undefined}
                 transition
                 disablePortal
