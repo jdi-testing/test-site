@@ -12,7 +12,11 @@ export default function Actions(props) {
   return (
     <DialogActions>
       {buttons.map((text, index) => (
-        <Button onClick={(e) => handleClick(e, index)} color="primary">
+        <Button
+          onClick={(e) => handleClick(e, index)}
+          color="primary"
+          key={text}
+        >
           {text}
         </Button>
       ))}
