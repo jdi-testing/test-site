@@ -1,6 +1,8 @@
 import React from 'react';
 import MTextareaAutosize from '@material-ui/core/TextareaAutosize';
 
-const TextareaAutosize = (props) => <MTextareaAutosize {...props} />;
+export default function TextareaAutosize() {
+  return <MTextareaAutosize aria-label="empty textarea" placeholder="Empty" />;
+}
 
-export default TextareaAutosize;
+
