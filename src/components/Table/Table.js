@@ -15,7 +15,7 @@ export default function TableTemplate(props) {
         <TableHead>
           <TableRow>
             {headerNames.map((headerName) => (
-              <TableCell>{headerName}</TableCell>
+              <TableCell key={headerName}>{headerName}</TableCell>
             ))}
           </TableRow>
         </TableHead>
