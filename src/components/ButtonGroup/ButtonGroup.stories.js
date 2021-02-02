@@ -2,11 +2,21 @@ import React from 'react';
 
 import ButtonGroup from './ButtonGroup';
 import Button from '../Button/Button';
+import Box from "../Box/Box";
+import {ClickAwayListener, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 export default {
     title: 'Material Ui/ButtonGroup',
     component: ButtonGroup, Button
 };
+
+const options = [
+    "Create a merge commit",
+    "Squash and merge",
+    "Rebase and merge",
+    "Update project"
+];
 
 const Template = (args) =>
     <ButtonGroup {...args} onClick={() => console.log('ButtonGroup clicked')}>
@@ -14,6 +24,67 @@ const Template = (args) =>
         <Button>Two</Button>
         <Button>Three</Button>
     </ButtonGroup>;
+
+function SplitButtonTemplate() {
+    const [open, setOpen] = React.useState(false);
+    const [anchorRef, setAnchorRef] = React.useState(null);
+    const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+    const handleClick = () => {
+        console.info(`${options[selectedIndex]} clicked`);
+    };
+
+    const handleMenuItemClick = (event, index) => {
+        setSelectedIndex(index);
+        setOpen(false);
+    };
+
+    const handleToggle = (event) => {
+        setAnchorRef(event.currentTarget);
+        setOpen((prevOpen) => !prevOpen);
+    };
+
+    const handleClose = (event) => {
+        if (anchorRef.current && anchorRef.current.contains(event.target)) {
+            return;
+        }
+        setOpen(false);
+    };
+
+    return (
+        <Box>
+            <ButtonGroup variant="contained" color="primary" ref={anchorRef}>
+                <Button onClick={handleClick}>{options[selectedIndex]}</Button>
+                <Button color="primary" size="small" onClick={handleToggle}>
+                    <ArrowDropDownIcon/>
+                </Button>
+            </ButtonGroup>
+            <Popper
+                open={open}
+                anchorEl={anchorRef}
+                role={undefined}
+                transition
+                disablePortal
+            >
+                <Paper>
+                    <ClickAwayListener onClickAway={handleClose}>
+                        <MenuList id="split-button-menu">
+                            {options.map((option, index) => (
+                                <MenuItem
+                                    key={option}
+                                    disabled={index === 2}
+                                    onClick={(event) => handleMenuItemClick(event, index)}
+                                >
+                                    {option}
+                                </MenuItem>
+                            ))}
+                        </MenuList>
+                    </ClickAwayListener>
+                </Paper>
+            </Popper>
+        </Box>
+    );
+}
 
 export const Default = Template.bind({});
 
@@ -41,3 +112,5 @@ Vertical.args = {
     orientation: 'vertical',
     color: 'secondary'
 }
+
+export const SplitButton = SplitButtonTemplate.bind({});
