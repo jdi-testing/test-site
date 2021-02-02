@@ -2,16 +2,6 @@ import React from 'react';
 import Popper from '@material-ui/core/Popper';
 import { makeStyles } from '@material-ui/core/styles';
 
-//const SimplePopper = (props) => <div>
-//                                                                <button aria-describedby='popper' type="button">
-//                                                                  Toggle Popper
-//                                                                </button>
-//                                                                <MP {...props}>
-//                                                                  <div>The content of the Popper.</div>
-//                                                                </MP>
-//                                                              </div>
-//                                                              ;
-
 const useStyles = makeStyles((theme) => ({
   paper: {
     border: '1px solid',
