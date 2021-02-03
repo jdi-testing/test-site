@@ -11,11 +11,11 @@ const TemplateButton = React.createElement(Button, {variant: 'contained', color:
 
 export const GridView = (args) =>
 <GridForm container {...args} >
-  <GridForm container item>
-    {args.buttonItem}
+  <GridForm container item {...args.griditem} >
+    {args.buttonitem}
   </GridForm>
-  <GridForm container item>
-      {args.buttonItem}
+  <GridForm container item {...args.griditem} >
+      {args.buttonitem}
     </GridForm>
  </GridForm>;
 
@@ -23,10 +23,12 @@ export const GridView = (args) =>
 GridView.args = {
     direction: "row",
     justify: "center",
-    alignItems: "center",
-    elementType: "div",
-    lg: "2",
-    xs: "12",
-    spacing: "4",
-    buttonItem: TemplateButton
+    alignitems: "center",
+    elementtype: "div",
+    spacing: 4,
+    buttonitem: TemplateButton,
+    griditem: {
+        lg: 2,
+        xs: 12
+    }
 };
