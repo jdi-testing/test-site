@@ -8,4 +8,4 @@ export default {
 };
 
 const HiddenWidth = withWidth()(BreakpointDown);
-export const Hidden = (args) => <HiddenWidth {...args}>Hidden</HiddenWidth>;
+export const DefaultHidden = (args) => <HiddenWidth {...args}>DefaultHidden</HiddenWidth>;
