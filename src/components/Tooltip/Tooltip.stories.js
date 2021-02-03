@@ -14,13 +14,13 @@ export default {
     component: Tooltip
 };
 
-const DefaultTooltips = (args) => [
-    <Tooltip {...args} title='Add'>
+const DefaultTooltips = () => [
+    <Tooltip key={"addIcon"} title='Add'>
         <IconButton>
             <AddIcon/>
         </IconButton>
     </Tooltip>,
-    <Tooltip {...args} arrow title='Delete'>
+    <Tooltip key={"deleteIcon"} arrow title='Delete'>
         <IconButton>
             <DeleteIcon/>
         </IconButton>
@@ -74,25 +74,25 @@ function TriggersTooltips() {
     );
 }
 
-const InteractiveTooltips = (args) =>
-    <Tooltip {...args} interactive title='This tooltip does not disappear if you hover the mouse over it'>
+const InteractiveTooltips = () =>
+    <Tooltip interactive title='This tooltip does not disappear if you hover the mouse over it'>
         <IconButton color={'secondary'}>
             <DeleteIcon/>
         </IconButton>
     </Tooltip>
 
-const CustomizedTooltips = (args) => [
-    <Tooltip {...args} TransitionComponent={Fade} TransitionProps={{ timeout: 600 }} title='Fade'>
+const CustomizedTooltips = () => [
+    <Tooltip TransitionComponent={Fade} TransitionProps={{ timeout: 600 }} key={"fade"} title='Fade'>
         <IconButton color={'primary'}>
             <FavoriteIcon/>
         </IconButton>
     </Tooltip>,
-    <Tooltip {...args} TransitionComponent={Zoom} title='Zoom'>
+    <Tooltip TransitionComponent={Zoom} key={"zoom"} title='Zoom'>
         <IconButton color={'secondary'}>
             <DeleteIcon/>
         </IconButton>
     </Tooltip>,
-    <Tooltip title="Showing for 500ms, leaving for 200ms" enterDelay={500} leaveDelay={200}>
+    <Tooltip key={"differentTime"} title="Showing for 500ms, leaving for 200ms" enterDelay={500} leaveDelay={200}>
         <IconButton color={'default'}>
             <AddIcon/>
         </IconButton>
