@@ -3,7 +3,9 @@ import Temporary from './Backdrop';
 
 export default {
   title: 'Material Ui/Feedback/Backdrop',
-  component: Backdrop,
+  component: Temporary,
 };
 
-export const Backdrop = Temporary.bind({});
+export const DefaultBackdrop = Temporary.bind({});
+
+
