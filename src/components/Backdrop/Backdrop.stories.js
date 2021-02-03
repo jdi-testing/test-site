@@ -2,7 +2,7 @@ import Temporary from './Backdrop';
 
 
 export default {
-  title: 'Material Ui/Backdrop',
+  title: 'Material Ui/Feedback/Backdrop',
   component: Backdrop,
 };
 
