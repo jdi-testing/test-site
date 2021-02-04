@@ -1,6 +1,6 @@
 import DisabledSelect from "./DisabledSelect";
 import MultipleSelect from "./MultipleSelect";
-import SimpleSelect from "./SilmpleSelect";
+import SimpleSelect from "./SimpleSelect";
 import React from "react";
 
 export default {
