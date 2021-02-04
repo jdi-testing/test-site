@@ -32,7 +32,8 @@ export default function DisabledSelect() {
                 <InputLabel id="demo-disabled-select">Disabled Select</InputLabel>
                 <Select
                     id="disabled-select"
-                    disabled>
+                    disabled
+                    defaultValue="">
                     <MenuItem value="10">Ten</MenuItem>
                     <MenuItem value="20">Twenty</MenuItem>
                     <MenuItem value="30">Thirty</MenuItem>

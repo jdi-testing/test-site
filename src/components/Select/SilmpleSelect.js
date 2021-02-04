@@ -55,7 +55,8 @@ export default function SimpleSelect() {
             <FormControl className={classes.formControl}>
                 <InputLabel id="demo-simple-select">Simple Select</InputLabel>
                 <Select
-                    id="simple-select">
+                    id="simple-select"
+                    defaultValue="">
                     {lastNames.map((lastNames) => (
                         <MenuItem key={lastNames} value={lastNames} style={getStyles(lastNames, personName, theme)}>
                             {lastNames}

@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
         minWidth: 150,
         maxWidth: 300,
+        marginThreshold: 0,
     },
     chips: {
         display: 'flex',
