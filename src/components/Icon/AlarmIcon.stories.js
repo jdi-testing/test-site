@@ -15,7 +15,6 @@ const Template = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-    color:"default",
     fontSize:"default"
 }
 
