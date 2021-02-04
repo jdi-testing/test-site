@@ -1,11 +1,11 @@
-import InsetDividers from "./InsetDividers";
+import Dividers from "./InsetDividers";
 import VerticalDividers from "./VerticalDividers";
 import React from "react";
 
 export default {
     title: 'Material Ui/Data Display/InsetDividers',
-    component: InsetDividers, VerticalDividers
+    component: Dividers, VerticalDividers
 };
 
-export const InsetDividersView = (args) => <InsetDividers {...args}>Types View</InsetDividers>;
+export const InsetDividersView = (args) => <Dividers {...args}>Types View</Dividers>;
 export const VerticalDividersView = (args) => <VerticalDividers {...args}>Types View</VerticalDividers>;
