@@ -7,8 +7,11 @@ export default {
     component: Fab
 };
 
-const Template = (args) => <Fab {...args} component={AddIcon}
-                                onClick={() => console.log('Floating Action Button pressed')}/>;
+const Template = (args) => <Fab {...args}
+                                onClick={() => console.log('Floating Action Button pressed')}
+                            >
+                                <AddIcon/>
+                            </Fab>;
 
 export const Default = Template.bind({});
 
