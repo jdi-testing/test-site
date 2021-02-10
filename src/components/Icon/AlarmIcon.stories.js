@@ -3,7 +3,7 @@ import React from 'react';
 import AlarmIcon from './AlarmIcon';
 
 export default {
-    title: 'Material Ui/Data Display/Icon',
+    title: 'Material Ui/Data Display/Material Icons',
     component: AlarmIcon,
 };
 

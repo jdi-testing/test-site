@@ -4,7 +4,7 @@ import UseMediaQuery from "./UseMediaQuery";
 import UseWidth from "./UseWidth";
 
 export default {
-    title: 'Material UI/Utils/UseMediaQuery',
+    title: 'Material UI/Utils/Use Media Query',
     component: UseMediaQuery,
 };
 

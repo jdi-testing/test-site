@@ -3,7 +3,7 @@ import Fab from './Fab';
 import AddIcon from '@material-ui/icons/Add';
 
 export default {
-    title: 'Material Ui/Fab',
+    title: 'Material Ui/Inputs/Floating Action Button',
     component: Fab
 };
 

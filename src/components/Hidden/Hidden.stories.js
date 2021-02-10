@@ -3,7 +3,7 @@ import withWidth from '@material-ui/core/withWidth';
 import BreakpointDown from './Hidden';
 
 export default {
-  title: 'Material Ui/Hidden',
+  title: 'Material Ui/Layout/Hidden',
   function: BreakpointDown,
 };
 

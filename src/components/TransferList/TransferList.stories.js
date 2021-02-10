@@ -3,7 +3,7 @@ import SimpleTransferList from "./SimpleTransferList";
 import React from "react";
 
 export default {
-    title: 'Material Ui/Inputs/TransferList',
+    title: 'Material Ui/Inputs/Transfer List',
     component: EnhancedTransferList, SimpleTransferList
 };
 

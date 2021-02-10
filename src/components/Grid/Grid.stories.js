@@ -3,7 +3,7 @@ import GridForm from './Grid';
 import Button from "../Button/Button";
 
 export default {
-    title: "Material Ui/Grid",
+    title: "Material Ui/Layout/Grid",
     component: GridForm,
 };
 

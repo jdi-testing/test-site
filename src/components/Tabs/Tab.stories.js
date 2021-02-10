@@ -6,7 +6,7 @@ import PreventScrollButtons from './PreventScrollButtons';
 import VerticalTab from './VerticalTab';
 
 export default {
-  title: 'Material Ui/Tabs',
+  title: 'Material Ui/Navigation/Tabs',
   component: TabPanel,
 };
 

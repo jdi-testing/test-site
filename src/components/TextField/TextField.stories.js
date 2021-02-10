@@ -3,7 +3,7 @@ import React from 'react';
 import BuildTextField from './TextField';
 
 export default {
-    title: "Material Ui/TextField",
+    title: "Material Ui/Inputs/Text Field",
     component: BuildTextField,
 }
 

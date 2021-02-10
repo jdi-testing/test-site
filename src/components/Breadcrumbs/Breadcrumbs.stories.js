@@ -7,7 +7,7 @@ import SimpleBreadcrumbs from './SimpleBreadcrumbs';
 import CollapsedBreadcrumbs from './CollapsedBreadcrumbs';
 
 export default {
-  title: 'Material Ui/Navs/Breadcrumbs',
+  title: 'Material Ui/Navigation/Breadcrumbs',
   component: Breadcrumbs,
 };
 
