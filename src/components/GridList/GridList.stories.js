@@ -5,7 +5,7 @@ import TitleBarGridList from './TitleBarGridList';
 import SingleLineGridList from './SingleLineGridList';
 
 export default {
-    title: "Material Ui/Grid List",
+    title: "Material Ui/Layout/Grid List",
     component: ImageGridList,
 }
 

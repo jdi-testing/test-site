@@ -7,7 +7,7 @@ import {ClickAwayListener, MenuList, MenuItem, Paper, Popper} from "@material-ui
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 export default {
-    title: 'Material Ui/ButtonGroup',
+    title: 'Material Ui/Inputs/Button Group',
     component: ButtonGroup, Button
 };
 

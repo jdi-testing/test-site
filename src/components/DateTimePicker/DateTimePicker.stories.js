@@ -4,7 +4,7 @@ import MaterialUIDatePicker from './DatePicker';
 import MaterialUITimePicker from './TimePicker';
 
 export default {
-  title: 'Material UI/Inputs/Date Time Pickers',
+  title: 'Material UI/Inputs/Date\\Time',
   component: MaterialUIDatePicker, MaterialUITimePicker,
 };
 

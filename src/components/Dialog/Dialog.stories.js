@@ -5,7 +5,7 @@ import ConfirmationDialog from './ConfirmationDialog';
 import ScrollableDialog from './ScrollableDialog';
 
 export default {
-  title: 'Material Ui/Navs/Dialog',
+  title: 'Material Ui/Feedback/Dialog',
   component: ListItemsDialog,
 };
 

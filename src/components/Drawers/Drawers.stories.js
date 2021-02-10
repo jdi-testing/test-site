@@ -10,7 +10,7 @@ import PermanentRight from './PermanentDrawerRight';
 import Clipped from './ClippedDrawer';
 
 export default {
-  title: 'Material Ui/Navs/Drawer',
+  title: 'Material Ui/Navigation/Drawer',
   component: Drawer,
 };
 

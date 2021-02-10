@@ -3,7 +3,7 @@ import React from 'react';
 import BuildAppBar from './AppBar';
 
 export default {
-    title: "Material Ui/Surfaces/AppBar",
+    title: "Material Ui/Surfaces/App Bar",
     component: BuildAppBar,
 }
 

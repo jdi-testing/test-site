@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 export default {
-  title: 'Material Ui/Button',
+  title: 'Material Ui/Inputs/Button',
   component: Button,
 };
 

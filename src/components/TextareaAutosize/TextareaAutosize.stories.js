@@ -4,7 +4,7 @@ import MinHeightTextarea from './MinHeightTextarea';
 import TextareaAutosize from './TextareaAutosize';
 
 export default {
-  title: 'Material Ui/Utils/TextareaAutosize',
+  title: 'Material Ui/Utils/Textarea Autosize',
   component: TextareaAutosize,
 };
 

@@ -4,7 +4,7 @@ import RangeSlider from './RangeSlider';
 import VerticalSlider from './VerticalSlider';
 
 export default {
-  title: 'Material Ui/Sliders',
+  title: 'Material Ui/Inputs/Sliders',
   component: Slider,
 };
 

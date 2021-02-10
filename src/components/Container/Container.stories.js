@@ -3,7 +3,7 @@ import Container from './Container';
 
 
 export default {
-    title: 'Material Ui/Container',
+    title: 'Material Ui/Layout/Container',
     component: Container,
   };
 

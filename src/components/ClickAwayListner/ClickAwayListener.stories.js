@@ -1,13 +1,13 @@
 import React from 'react';
-import ClickAwayListner from './ClickAwayListner';
+import ClickAwayListener from './ClickAwayListener';
 import Portal from './Portal';
 
 export default {
-    title: 'Material Ui/ClickAwayListner',
-    component: ClickAwayListner,
+    title: 'Material Ui/Utils/Click Away Listener',
+    component: ClickAwayListener,
   };
 
-  const Template = args => <ClickAwayListner {...args} />;
+  const Template = args => <ClickAwayListener {...args} />;
   const TemplatePortal = args => <Portal {...args} />;
 
   export const Default = Template.bind({});
