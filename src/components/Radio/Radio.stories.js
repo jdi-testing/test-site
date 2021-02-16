@@ -2,7 +2,7 @@ import React from 'react';
 import Radio from './Radio';
 
 export default {
-  title: 'Material Ui/Radio',
+  title: 'Material Ui/Inputs/Radio',
   component: Radio,
 };
 

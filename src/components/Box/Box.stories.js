@@ -3,7 +3,7 @@ import Box from './Box';
 import Button from "../Button/Button";
 
 export default {
-    title: 'Material Ui/Box',
+    title: 'Material Ui/Layout/Box',
     component: Box,
 };
 

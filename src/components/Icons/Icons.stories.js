@@ -5,7 +5,7 @@ import SvgIconsColor from './ColorIcons';
 import SvgIconsSize from './SizeIcons';
 
 export default {
-    title: 'Material Ui/Icons',
+    title: 'Material Ui/Data Display/Icons',
     component: SimpleIcons,
 };
 

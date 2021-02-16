@@ -3,7 +3,7 @@ import React from 'react';
 import Switch from './Switch';
 
 export default {
-    title: 'Material Ui/Switch',
+    title: 'Material Ui/Inputs/Switch',
     component: Switch
 };
 

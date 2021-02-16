@@ -8,7 +8,7 @@ import Context from './ContextMenu';
 import IconsMenu from './IconsMenu';
 
 export default {
-  title: 'Material Ui/Navs/Menus',
+  title: 'Material Ui/Navigation/Menu',
   component: Menu,
 };
 

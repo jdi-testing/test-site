@@ -4,7 +4,7 @@ import NonLinear from './NonLinearStepper';
 import Mobile from './MobileStepper';
 
 export default {
-  title: 'Material Ui/Navs/Stepper',
+  title: 'Material Ui/Navigation/Stepper',
   component: Stepper,
 };
 

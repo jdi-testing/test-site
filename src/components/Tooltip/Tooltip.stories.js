@@ -10,7 +10,7 @@ import Fade from '@material-ui/core/Fade';
 import Zoom from '@material-ui/core/Zoom';
 
 export default {
-    title: 'Material Ui/ToolTip',
+    title: 'Material Ui/Data Display/ToolTip',
     component: Tooltip
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import Link from './Link';
 
 export default {
-  title: 'Material Ui/Navs/Link',
+  title: 'Material Ui/Navigation/Link',
   component: Link,
 };
 

@@ -7,7 +7,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BottomNavigation from './BottomNavigation';
 
 export default {
-  title: 'Material Ui/Navs/BottomNavigation',
+  title: 'Material Ui/Navigation/Bottom Navigation',
   component: BottomNavigation,
 };
 

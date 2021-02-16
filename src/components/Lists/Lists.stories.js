@@ -5,7 +5,7 @@ import CheckboxList from './CheckboxList';
 import PinnedSubheaderList from './PinnedSubheaderList';
 
 export default {
-  title: 'Material Ui/Lists',
+  title: 'Material Ui/Data Display/Lists',
   component: SimpleList,
 };
 
