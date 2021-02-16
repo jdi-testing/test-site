@@ -10,22 +10,22 @@ import NSwitch from '@material-ui/core/Switch';
 import FormGroupConst from './FormGroup';
 
 export default {
-  title: 'Material Ui/Inputs/Checkbox',
-  component: CheckboxConst,
+    title: 'Material Ui/Inputs/Checkbox',
+    component: CheckboxConst,
 };
 
 const Template = (args) => <CheckboxConst {...args} />;
 
 const checkedConst = {
-  checked: true,
+    checked: true,
 };
 
 const disabledConst = {
-  disabled: true,
+    disabled: true,
 };
 
 const shrinkConst = {
-  shrink: true,
+    shrink: true,
 };
 
 export const Primary = Template.bind({});
@@ -51,10 +51,10 @@ Required.args = {
 };
 
 const Template1 = (args) => <FormControlConst {...args} >
-                                        <InputLabel htmlFor="my-input" shrink={Boolean(shrinkConst)}>Email address</InputLabel>
-                                        <Input id="my-input" type="checkbox" aria-describedby="my-helper-text" />
-                                        <FormHelperText id="my-helper-text" margin="dense">We ll never share your email.</FormHelperText>
-                                    </FormControlConst>;
+    <InputLabel htmlFor="my-input" shrink={Boolean(shrinkConst)}>Email address</InputLabel>
+    <Input id="my-input" type="checkbox" aria-describedby="my-helper-text" />
+    <FormHelperText id="my-helper-text" margin="dense">We ll never share your email.</FormHelperText>
+</FormControlConst>;
 export const FormControl = Template1.bind({});
 FormControl.args = {
     error: true,
@@ -68,7 +68,7 @@ LabelBox.args = {
     label: 'With Label',
     labelPlacement: 'bottom',
     value: "value",
-    control: <NSwitch/>
+    control: <NSwitch />
 };
 
 export const DisabledControlLabel = Template2.bind({});
@@ -77,14 +77,14 @@ DisabledControlLabel.args = {
     disabled: true,
     label: 'Disabled',
     labelPlacement: 'top',
-    control: <NSwitch/>
+    control: <NSwitch />
 };
 
 const Template3 = (args) => <FormGroupConst {...args} >
-                                        <CheckboxConst id="first" />
-                                        <CheckboxConst id="second" checked={Boolean(checkedConst)}/>
-                                        <CheckboxConst id="third" disabled={Boolean(disabledConst)} />
-                                    </FormGroupConst>;
+    <CheckboxConst id="first" />
+    <CheckboxConst id="second" checked={Boolean(checkedConst)} />
+    <CheckboxConst id="third" disabled={Boolean(disabledConst)} />
+</FormGroupConst>;
 export const Group = Template3.bind({});
 Group.args = {
     row: true,
