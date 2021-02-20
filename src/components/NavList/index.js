@@ -35,7 +35,7 @@ const NavList = () => {
 
   return (
     <div >
-        <ListSubheader component="div" id="nested-list-subheader-inputs" disableSticky="true">
+        <ListSubheader component="div" id="nested-list-subheader-inputs" disableSticky>
           Inputs
         </ListSubheader>
 
@@ -107,26 +107,26 @@ const NavList = () => {
           </Link>
         </List>
 
-        <ListItem button onClick={() => handleClick(6)}>
-          <ListItemText primary="Checkbox" />
-          {checkIfOpen(6) ? <ExpandLess /> : <ExpandMore />}
-        </ListItem>
-        <Collapse in={checkIfOpen(6)} timeout="auto">
-          <List component="div" disablePadding>
-            <Link href="/basic_checkboxes">
-              <ListItem button >
-                <ListItemText primary="Basic Checkboxes" />
-              </ListItem>
-            </Link>
-          </List>
-          <List component="div" disablePadding>
-            <Link href="/checkboxes_group">
-              <ListItem button >
-                <ListItemText primary="Checkboxes Group" />
-              </ListItem>
-            </Link>
-          </List>
-        </Collapse>
+        {/*<ListItem button onClick={() => handleClick(6)}>*/}
+        {/*  <ListItemText primary="Checkbox" />*/}
+        {/*  {checkIfOpen(6) ? <ExpandLess /> : <ExpandMore />}*/}
+        {/*</ListItem>*/}
+        {/*<Collapse in={checkIfOpen(6)} timeout="auto">*/}
+        {/*  <List component="div" disablePadding>*/}
+        {/*    <Link href="/basic_checkboxes">*/}
+        {/*      <ListItem button >*/}
+        {/*        <ListItemText primary="Basic Checkboxes" />*/}
+        {/*      </ListItem>*/}
+        {/*    </Link>*/}
+        {/*  </List>*/}
+        {/*  <List component="div" disablePadding>*/}
+        {/*    <Link href="/checkboxes_group">*/}
+        {/*      <ListItem button >*/}
+        {/*        <ListItemText primary="Checkboxes Group" />*/}
+        {/*      </ListItem>*/}
+        {/*    </Link>*/}
+        {/*  </List>*/}
+        {/*</Collapse>*/}
 
         <ListItem button onClick={() => handleClick(7)}>
           <ListItemText primary="Date / Time" />
@@ -134,7 +134,7 @@ const NavList = () => {
         </ListItem>
         <Collapse in={checkIfOpen(7)} timeout="auto">
           <List component="div" disablePadding>
-            <Link href="/date_picker_inline'">
+            <Link href="/date_picker_inline">
               <ListItem button >
                 <ListItemText primary="Date Picker Inline" />
               </ListItem>
@@ -249,7 +249,7 @@ const NavList = () => {
           </List>
         </Collapse>
 
-        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky="true">
+        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
           Navigation
         </ListSubheader>
         <List component="div" disablePadding>
@@ -436,7 +436,7 @@ const NavList = () => {
 
         </Collapse>
 
-        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky="true">
+        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
           Feedback
         </ListSubheader>
         <ListItem button onClick={() => handleClick(16)}>
