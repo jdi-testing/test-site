@@ -39,8 +39,8 @@ const NavList = () => {
           Inputs
         </ListSubheader>
 
-        <ListItem button onClick={() => handleClick(3)}>
-          <ListItemText primary="Button" />
+        <ListItem button onClick={() => handleClick(3)} id="button">
+          <ListItemText primary="Button"/>
           {checkIfOpen(3) ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={checkIfOpen(3)} timeout="auto">
