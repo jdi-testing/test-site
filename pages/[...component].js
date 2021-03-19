@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Accordion from "../src/components/Accordion/Accordion";
 import AppBar from '../src/components/AppBar/AppBar';
 import Paper from '../src/components/Paper/Paper';
+import Card from '../src/components/Card/Card';
 
 import {ButtonDefaultProps} from '../src/components/Button/props';
 import {ButtonDisabledProps} from '../src/components/Button/props';
@@ -198,7 +199,7 @@ const PageComponent = () => {
 
         {componentName === 'accordion_surface' && <Accordion />}
         {componentName === 'paper_surface' && <Paper /> }
-        {componentName === 'card_surface' && <Accordion /> }
+        {componentName === 'card_surface' && <Card /> }
         {componentName === 'appbar_surface' && <AppBar />}
 
         {componentName === 'avatar' && <Avatar />}

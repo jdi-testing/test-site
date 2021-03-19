@@ -4,34 +4,13 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 
 import Card from './Card';
 import SampleImage from './assets/400x200.png';
+import Container from "../Container/Container";
 
 export default {
   title: 'Material Ui/Surfaces/Card',
   component: Card,
 };
 
-export const Simple = Card.bind({});
-Simple.args = {
-  raised: true,
-};
+const Template = args => <Card {...args} />;
 
-export const Outlined = Card.bind({});
-Outlined.args = {
-  variant: 'outlined',
-};
-
-const ImageTemplate = (args) => (
-  <Card {...args}>
-    <CardMedia component="img" image={SampleImage} />
-  </Card>
-);
-export const BackgroundImage = ImageTemplate.bind({});
-
-const ClickableCard = (args) => (
-  <Card {...args}>
-    <CardActionArea>
-      <CardMedia component="img" image={SampleImage} />
-    </CardActionArea>
-  </Card>
-);
-export const CardWithClickableArea = ClickableCard.bind({});
+export const Default = Template.bind({});
