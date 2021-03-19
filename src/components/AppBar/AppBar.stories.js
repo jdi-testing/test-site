@@ -9,6 +9,6 @@ export default {
 
 export const SimpleAppBar = (args) => <BuildAppBar {...args}>BuildAppBar</BuildAppBar>;
 SimpleAppBar.args = {
-                      position: "static",
-                      color: "primary",
-                  };
+    position: "static",
+    color: "primary",
+};
