@@ -96,6 +96,7 @@ import LongTextSnackbar from '../src/components/Snackbar/LongTextSnackbar';
 
 import Avatar from '../src/components/Avatar/Avatar';
 import Badge from '../src/components/Badge/Badge';
+import Chips from '../src/components/Chip/Chips';
 import InsetDividersView from '../src/components/Divider/InsetDividers';
 import VerticalDividersView from '../src/components/Divider/VerticalDividers';
 
@@ -204,7 +205,7 @@ const PageComponent = () => {
 
         {componentName === 'avatar' && <Avatar />}
         {componentName === 'badge' && <Badge />}
-        {componentName === 'chips' && <AppBar />}
+        {componentName === 'chips' && <Chips />}
         {componentName === 'inset_divider' && <InsetDividersView />}
         {componentName === 'vertical_divider' && <VerticalDividersView />}
         {componentName === 'simple_icons' && <AppBar />}

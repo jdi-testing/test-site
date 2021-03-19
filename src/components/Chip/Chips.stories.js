@@ -9,6 +9,8 @@ export default {
   title: 'Material Ui/Data Display/Chips',
   component: Chips,
 };
+export const Default = Chips.bind({});
+
 
 export const DefaultChip = Chips.bind({});
 DefaultChip.args = {

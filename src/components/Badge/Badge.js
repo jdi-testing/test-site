@@ -41,6 +41,7 @@ export default function BadgeVisibility() {
 
   return (
       <div className={classes.root}>
+        <h1>Badges</h1>
         <div>
           <Badge badgeContent={4} color="primary" id="primaryColorBadge">
               <MailIcon />
