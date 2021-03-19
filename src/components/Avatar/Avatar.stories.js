@@ -43,3 +43,5 @@ const IconTemplate = () => (
   </Avatar>
 );
 export const Icon = IconTemplate.bind({});
+
+export const Default = Avatar.bind({});

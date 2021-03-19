@@ -1,4 +1,6 @@
 import { useRouter } from 'next/router'
+
+import Accordion from "../src/components/Accordion/Accordion";
 import AppBar from '../src/components/AppBar/AppBar';
  
 import {ButtonDefaultProps} from '../src/components/Button/props';
@@ -90,6 +92,11 @@ import FabIntegrationSnackbar from '../src/components/Snackbar/FabIntegrationSna
 import IntegrationNotistack from '../src/components/Snackbar/IntegrationNotistack';
 import LongTextSnackbar from '../src/components/Snackbar/LongTextSnackbar';
 
+import Avatar from '../src/components/Avatar/Avatar';
+import Badge from '../src/components/Badge/Badge';
+import InsetDividersView from '../src/components/Divider/InsetDividers';
+import VerticalDividersView from '../src/components/Divider/VerticalDividers';
+
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
 const PageComponent = () => {
@@ -103,8 +110,6 @@ const PageComponent = () => {
 
     return <div>
         
-        {componentName === 'app_bar' && <AppBar />}
-
         {componentName === 'button_default' && <Button {...ButtonDefaultProps} />}
         {componentName === 'button_disabled' && <Button {...ButtonDisabledProps} />}
        
@@ -189,6 +194,33 @@ const PageComponent = () => {
         {componentName === 'fab_integration_snackbar' && <FabIntegrationSnackbar />}
         {componentName === 'integration_notistack' && <IntegrationNotistack />}
         {componentName === 'long_text_snackbar' && <LongTextSnackbar />}
+
+        {componentName === 'accordion_surface' && <Accordion />}
+        {/* componentName === 'paper_surface' && <Accordion /> */}
+        {/*componentName === 'card_surface' && <Accordion /> */}
+        {componentName === 'appbar_surface' && <AppBar />}
+
+        {componentName === 'avatar' && <Avatar />}
+        {componentName === 'badge' && <Badge />}
+        {componentName === 'chips' && <AppBar />}
+        {componentName === 'inset_divider' && <InsetDividersView />}
+        {componentName === 'vertical_divider' && <VerticalDividersView />}
+        {componentName === 'simple_icons' && <AppBar />}
+        {componentName === 'color_icons' && <AppBar />}
+        {componentName === 'size_icons' && <AppBar />}
+        {componentName === 'alarm_icon' && <AppBar />}
+        {componentName === 'simple_List' && <AppBar />}
+        {componentName === 'checkbox_list' && <AppBar />}
+        {componentName === 'pinned_subheader_list' && <AppBar />}
+        {componentName === 'simple_table' && <AppBar />}
+        {componentName === 'sorted_table' && <AppBar />}
+        {componentName === 'paginated_table' && <AppBar />}
+        {componentName === 'spanning_table' && <AppBar />}
+        {componentName === 'sticky_table' && <AppBar />}
+        {componentName === 'tooltip' && <AppBar />}
+        {componentName === 'typography' && <AppBar />}
+
+
 
         {componentName === 'backdrop' && <Backdrop />}
        

@@ -228,6 +228,14 @@ const NavList = () => {
           </Link>
         </List>
 
+      <List component="div" disablePadding>
+        <Link href="/text_field">
+          <ListItem button >
+            <ListItemText primary="Text Field" />
+          </ListItem>
+        </Link>
+      </List>
+
         <ListItem button onClick={() => handleClick(10)}>
           <ListItemText primary="Transfer List" />
           {checkIfOpen(10) ? <ExpandLess /> : <ExpandMore />}
@@ -621,13 +629,308 @@ const NavList = () => {
           </List>
         </Collapse>
 
+        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
+          Surfaces
+        </ListSubheader>
         <List component="div" disablePadding>
-            <Link href="/backdrop">
+          <Link href="/appbar_surface">
+            <ListItem button >
+              <ListItemText primary="AppBar" />
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/accordion_surface">
+            <ListItem button >
+              <ListItemText primary="Accordion" />
+            </ListItem>
+          </Link>
+        </List>
+
+        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
+          Data Display
+        </ListSubheader>
+        <List component="div" disablePadding>
+          <Link href="/avatar">
+            <ListItem button >
+              <ListItemText primary="Avatar" />
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/badge">
+            <ListItem button >
+              <ListItemText primary="Badge" />
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/chips">
+            <ListItem button >
+              <ListItemText primary="Chips" />
+            </ListItem>
+          </Link>
+        </List>
+        <ListItem button onClick={() => handleClick(19)}>
+          <ListItemText primary="Dividers" />
+          {checkIfOpen(19) ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+
+        <Collapse in={checkIfOpen(19)} timeout="auto">
+          <List component="div" disablePadding>
+            <Link href="/inset_divider">
               <ListItem button >
-                <ListItemText primary="Backdrop" />
+                <ListItemText primary="Inset Divider" />
               </ListItem>
             </Link>
           </List>
+          <List component="div" disablePadding>
+            <Link href="/vertical_divider">
+              <ListItem button >
+                <ListItemText primary="Vertical Divider" />
+              </ListItem>
+            </Link>
+          </List>
+        </Collapse>
+
+        <ListItem button onClick={() => handleClick(20)}>
+          <ListItemText primary="Icons" />
+          {checkIfOpen(20) ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+        <Collapse in={checkIfOpen(20)} timeout="auto">
+          <List component="div" disablePadding>
+            <Link href="/simple_icons">
+              <ListItem button >
+                <ListItemText primary="Simple Icons" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/color_icons">
+              <ListItem button >
+                <ListItemText primary="Icons with different color" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/size_icons">
+              <ListItem button >
+                <ListItemText primary="Icons with different sizes" />
+              </ListItem>
+            </Link>
+          </List>
+        </Collapse>
+        <ListItem button onClick={() => handleClick(21)}>
+          <ListItemText primary="Material Icons" />
+          {checkIfOpen(21) ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+        <Collapse in={checkIfOpen(21)} timeout="auto">
+          <List component="div" disablePadding>
+            <Link href="/alarm_icon">
+              <ListItem button >
+                <ListItemText primary="Alarm Icon" />
+              </ListItem>
+            </Link>
+          </List>
+        </Collapse>
+
+        <ListItem button onClick={() => handleClick(22)}>
+          <ListItemText primary="Lists" />
+          {checkIfOpen(22) ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+        <Collapse in={checkIfOpen(22)} timeout="auto">
+          <List component="div" disablePadding>
+            <Link href="/simple_List">
+              <ListItem button >
+                <ListItemText primary="Simple List" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/checkbox_list">
+              <ListItem button >
+                <ListItemText primary="Checkbox List" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/pinned_subheader_list">
+              <ListItem button >
+                <ListItemText primary="Pinned Subheader List" />
+              </ListItem>
+            </Link>
+          </List>
+        </Collapse>
+
+        <ListItem button onClick={() => handleClick(23)}>
+          <ListItemText primary="Tables" />
+          {checkIfOpen(23) ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+        <Collapse in={checkIfOpen(23)} timeout="auto">
+          <List component="div" disablePadding>
+            <Link href="/simple_table">
+              <ListItem button >
+                <ListItemText primary="Simple Table" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/sorted_table">
+              <ListItem button >
+                <ListItemText primary="Sorted Table" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/paginated_table">
+              <ListItem button >
+                <ListItemText primary="Paginated Table" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/spanning_table">
+              <ListItem button >
+                <ListItemText primary="Spanning Table" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/dense_table">
+              <ListItem button >
+                <ListItemText primary="Dense Table" />
+              </ListItem>
+            </Link>
+          </List>
+          <List component="div" disablePadding>
+            <Link href="/sticky_table">
+              <ListItem button >
+                <ListItemText primary="Sticky Header Table" />
+              </ListItem>
+            </Link>
+          </List>
+        </Collapse>
+        <List component="div" disablePadding>
+          <Link href="/tooltip">
+            <ListItem button >
+              <ListItemText primary="Tooltip" />
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/typography">
+            <ListItem button >
+              <ListItemText primary="Typography" />
+            </ListItem>
+          </Link>
+        </List>
+
+        <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
+          Layout
+        </ListSubheader>
+      <List component="div" disablePadding>
+        <Link href="/box_layout">
+          <ListItem button >
+            <ListItemText primary="Box" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/container_layout">
+          <ListItem button >
+            <ListItemText primary="Container" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/grid_layout">
+          <ListItem button >
+            <ListItemText primary="Grid" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/grid_list_layout">
+          <ListItem button >
+            <ListItemText primary="Grid List" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/hidden_layout">
+          <ListItem button >
+            <ListItemText primary="Hidden" />
+          </ListItem>
+        </Link>
+      </List>
+
+      <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
+        Utils
+      </ListSubheader>
+      <List component="div" disablePadding>
+        <Link href="/click_away_listener">
+          <ListItem button >
+            <ListItemText primary="Click Away Listener" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/modal">
+          <ListItem button >
+            <ListItemText primary="Modal" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/popover">
+          <ListItem button >
+            <ListItemText primary="Popover" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/popper">
+          <ListItem button >
+            <ListItemText primary="Popper" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/portal">
+          <ListItem button >
+            <ListItemText primary="Portal" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/textarea_autosize">
+          <ListItem button >
+            <ListItemText primary="Textarea Autosize" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/transitions">
+          <ListItem button >
+            <ListItemText primary="Transitions" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/use_media_query">
+          <ListItem button >
+            <ListItemText primary="Use Media Query" />
+          </ListItem>
+        </Link>
+      </List>
+
+        <List component="div" disablePadding>
+          <Link href="/backdrop">
+            <ListItem button >
+              <ListItemText primary="Backdrop" />
+            </ListItem>
+          </Link>
+        </List>
 
 
     

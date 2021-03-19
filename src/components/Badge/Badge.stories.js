@@ -9,10 +9,10 @@ export default {
 };
 
 const Template = (args) => (
-  <Badge {...args}>
-    <MailIcon />
-  </Badge>
+  <Badge {...args}/>
 );
+
+export const Default = Template.bind({});
 
 export const Primary = Template.bind({});
 Primary.args = {
