@@ -38,7 +38,7 @@ export default function MRadio() {
           label="Disabled" />
 
       </RadioGroup>
-      <p>You clicked {text}</p>
+      <p id="lastClickContent">You clicked {text}</p>
       
     </FormControl>
   );

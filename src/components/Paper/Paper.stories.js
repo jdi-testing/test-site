@@ -8,18 +8,8 @@ export default {
 };
 
 const Template = (args) => (
-    <Paper {...args}>Paper</Paper>
+    <Paper {...args} />
 );
 
 export const Default = Template.bind({});
 Default.args = {};
-
-export const Elevated = Template.bind({});
-Elevated.args = {
-    elevation: 5
-}
-
-export const Outlined = Template.bind({});
-Outlined.args = {
-    variant: "outlined"
-}
