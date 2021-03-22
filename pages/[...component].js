@@ -112,6 +112,7 @@ import GridList from '../src/components/GridList/GridList';
 import Hidden from '../src/components/Hidden/Hidden';
 
 import ClickAwayListener from '../src/components/ClickAwayListner/ClickAwayListener';
+import SimpleModal from "../src/components/Modal/SimpleModal";
 
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
@@ -239,6 +240,7 @@ const PageComponent = () => {
         {componentName === 'hidden_layout' && <Hidden />}
 
         {componentName === 'click_away_listener' && <ClickAwayListener />}
+        {componentName === 'modal' && <SimpleModal />}
 
 
         {componentName === 'backdrop' && <Backdrop />}
