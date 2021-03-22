@@ -1,32 +1,26 @@
-import morning from './morning.jpg';
-import plant from './plant.jpg';
-import hats from './hats.jpg';
-import bike from './bike.jpg';
-import camera from './camera.jpg';
-
 export const tileData = [
   {
-    img: morning,
+    img: './morning.jpg',
     title: 'morning',
     author: 'author',
   },
   {
-    img: plant,
+    img: './plant.jpg',
     title: 'plant',
     author: 'author2',
   },
   {
-    img: hats,
+    img: './hats.jpg',
     title: 'hats',
     author: 'author3',
   },
   {
-    img: bike,
+    img: './bike.jpg',
     title: 'bike',
     author: 'author4',
   },
   {
-    img: camera,
+    img: './camera.jpg',
     title: 'camera',
     author: 'author5',
   },

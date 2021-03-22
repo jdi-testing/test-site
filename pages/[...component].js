@@ -107,6 +107,7 @@ import Typography from '../src/components/Typography/Typography';
 import Box from '../src/components/Box/Box';
 import Container from '../src/components/Container/Container';
 import Grid from '../src/components/Grid/Grid';
+import GridList from '../src/components/GridList/GridList';
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
@@ -228,7 +229,7 @@ const PageComponent = () => {
         {componentName === 'box_layout' && <Box />}
         {componentName === 'container_layout' && <Container />}
         {componentName === 'grid_layout' && <Grid />}
-        {componentName === 'grid_list_layout' && <Container />}
+        {componentName === 'grid_list_layout' && <GridList />}
         {componentName === 'hidden_layout' && <Container />}
 
 
