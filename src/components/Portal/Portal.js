@@ -21,18 +21,21 @@ export default function Portal() {
 
   return (
     <div>
-      <button type="button" onClick={handleClick}>
-        {show ? 'Unmount children' : 'Mount children'}
-      </button>
-      <div className={classes.alert}>
-        It looks like I will render here.
-        {show ? (
-          <MPortal container={container.current}>
-            <span>But I actually render here!</span>
-          </MPortal>
-        ) : null}
+      <h1>Portal</h1>
+      <div>
+        <button type="button" onClick={handleClick}>
+          {show ? 'Unmount children' : 'Mount children'}
+        </button>
+        <div className={classes.alert}>
+          It looks like I will render here.
+          {show ? (
+            <MPortal container={container.current}>
+              <span>But I actually render here!</span>
+            </MPortal>
+          ) : null}
+        </div>
+        <div className={classes.alert} ref={container} />
       </div>
-      <div className={classes.alert} ref={container} />
     </div>
   );
 }
