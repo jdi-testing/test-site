@@ -32,19 +32,19 @@ export default function BreakpointDown(props) {
         Current width: {width}
       </Typography>
       <div className={classes.container}>
-        <Hidden xsDown>
+        <Hidden xsDown id={"hiddenXsDown"}>
           <Paper className={classes.paper}>xsDown</Paper>
         </Hidden>
-        <Hidden smDown>
+        <Hidden smDown id={"hiddenSmDown"}>
           <Paper className={classes.paper}>smDown</Paper>
         </Hidden>
-        <Hidden mdDown>
+        <Hidden mdDown id={"hiddenMdDown"}>
           <Paper className={classes.paper}>mdDown</Paper>
         </Hidden>
-        <Hidden lgDown>
+        <Hidden lgDown id={"hiddenLgDown"}>
           <Paper className={classes.paper}>lgDown</Paper>
         </Hidden>
-        <Hidden xlDown>
+        <Hidden xlDown id={"hiddenXlDown"}>
           <Paper className={classes.paper}>xlDown</Paper>
         </Hidden>
       </div>

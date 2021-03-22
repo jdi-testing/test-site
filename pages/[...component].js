@@ -108,6 +108,8 @@ import Box from '../src/components/Box/Box';
 import Container from '../src/components/Container/Container';
 import Grid from '../src/components/Grid/Grid';
 import GridList from '../src/components/GridList/GridList';
+import Hidden from '../src/components/Hidden/Hidden';
+
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
@@ -230,7 +232,7 @@ const PageComponent = () => {
         {componentName === 'container_layout' && <Container />}
         {componentName === 'grid_layout' && <Grid />}
         {componentName === 'grid_list_layout' && <GridList />}
-        {componentName === 'hidden_layout' && <Container />}
+        {componentName === 'hidden_layout' && <Hidden />}
 
 
         {componentName === 'backdrop' && <Backdrop />}
