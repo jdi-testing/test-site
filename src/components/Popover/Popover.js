@@ -13,6 +13,18 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+export default function Popovers() {
+    return (
+      <div>
+          <h1>Popovers</h1>
+          <h2>Click popover</h2>
+          <ClickPopover />
+          <h2>Mouse over popover</h2>
+          <HoverPopover />
+      </div>
+    );
+}
+
 export function ClickPopover() {
     const Popover = (props) => <MPopover {...props} />;
 
@@ -36,6 +48,7 @@ export function ClickPopover() {
                 Click to open Popover
             </Button>
             <Popover
+                id="click-popover"
                 open={open}
                 anchorEl={anchorEl}
                 onClose={handleClose}
