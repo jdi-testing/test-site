@@ -104,6 +104,8 @@ import Table from '../src/components/Table/Table';
 import Tooltip from '../src/components/Tooltip/Tooltip';
 import Typography from '../src/components/Typography/Typography';
 
+import Box from '../src/components/Box/Box';
+
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
 const PageComponent = () => {
@@ -220,6 +222,8 @@ const PageComponent = () => {
         {componentName === 'simple_table' && <Table />}
         {componentName === 'tooltip' && <Tooltip />}
         {componentName === 'typography' && <Typography />}
+
+        {componentName === 'box_layout' && <Box />}
 
 
         {componentName === 'backdrop' && <Backdrop />}
