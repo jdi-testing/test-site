@@ -747,83 +747,20 @@ const NavList = () => {
           </Link>
         </List>
       </Collapse>
-
-      <ListItem button onClick={() => handleClick(22)}>
-        <ListItemText primary="Lists"/>
-        {checkIfOpen(22) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(22)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/simple_List">
-            <ListItem button>
-              <ListItemText primary="Simple List"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/checkbox_list">
-            <ListItem button>
-              <ListItemText primary="Checkbox List"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/pinned_subheader_list">
-            <ListItem button>
-              <ListItemText primary="Pinned Subheader List"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
-
-      <ListItem button onClick={() => handleClick(23)}>
-        <ListItemText primary="Tables"/>
-        {checkIfOpen(23) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(23)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/simple_table">
-            <ListItem button>
-              <ListItemText primary="Simple Table"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/sorted_table">
-            <ListItem button>
-              <ListItemText primary="Sorted Table"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/paginated_table">
-            <ListItem button>
-              <ListItemText primary="Paginated Table"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/spanning_table">
-            <ListItem button>
-              <ListItemText primary="Spanning Table"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/dense_table">
-            <ListItem button>
-              <ListItemText primary="Dense Table"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/sticky_table">
-            <ListItem button>
-              <ListItemText primary="Sticky Header Table"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/simple_list">
+          <ListItem button>
+            <ListItemText primary="List"/>
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/simple_table">
+          <ListItem button>
+            <ListItemText primary="Table"/>
+          </ListItem>
+        </Link>
+      </List>
       <List component="div" disablePadding>
         <Link href="/tooltip">
           <ListItem button>

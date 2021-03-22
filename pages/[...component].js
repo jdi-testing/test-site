@@ -101,6 +101,8 @@ import InsetDividersView from '../src/components/Divider/InsetDividers';
 import VerticalDividersView from '../src/components/Divider/VerticalDividers';
 import Lists from '../src/components/Lists/Lists';
 import Table from '../src/components/Table/Table';
+import Tooltip from '../src/components/Tooltip/Tooltip';
+import Typography from '../src/components/Typography/Typography';
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
@@ -214,17 +216,10 @@ const PageComponent = () => {
         {componentName === 'color_icons' && <AppBar />}
         {componentName === 'size_icons' && <AppBar />}
         {componentName === 'alarm_icon' && <AppBar />}
-        {componentName === 'simple_List' && <Lists />}
-        {componentName === 'checkbox_list' && <AppBar />}
-        {componentName === 'pinned_subheader_list' && <AppBar />}
+        {componentName === 'simple_list' && <Lists />}
         {componentName === 'simple_table' && <Table />}
-        {componentName === 'sorted_table' && <AppBar />}
-        {componentName === 'paginated_table' && <AppBar />}
-        {componentName === 'spanning_table' && <AppBar />}
-        {componentName === 'sticky_table' && <AppBar />}
-        {componentName === 'tooltip' && <AppBar />}
-        {componentName === 'typography' && <AppBar />}
-
+        {componentName === 'tooltip' && <Tooltip />}
+        {componentName === 'typography' && <Typography />}
 
 
         {componentName === 'backdrop' && <Backdrop />}
