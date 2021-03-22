@@ -35,6 +35,7 @@ import RangeSlider from '../src/components/Slider/RangeSlider';
 import VerticalSlider from '../src/components/Slider/VerticalSlider';
 
 import BasicSwitches from '../src/components/Switch/BasicSwitches';
+import TextField from '../src/components/TextField/TextField';
 
 import SimpleTransferList from '../src/components/TransferList/SimpleTransferList';
 import EnhancedTransferList from '../src/components/TransferList/EnhancedTransferList';
@@ -150,6 +151,7 @@ const PageComponent = () => {
         {componentName === 'vertical_slider' && <VerticalSlider />}
 
         {componentName === 'basic_switches' && <BasicSwitches />}
+        {componentName === 'text_field' && <TextField />}
 
         {componentName === 'simple_transfer_list' && <SimpleTransferList />}
         {componentName === 'enhanced_transfer_list' && <EnhancedTransferList />}
