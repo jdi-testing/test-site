@@ -114,6 +114,7 @@ import Hidden from '../src/components/Hidden/Hidden';
 import ClickAwayListener from '../src/components/ClickAwayListner/ClickAwayListener';
 import SimpleModal from "../src/components/Modal/SimpleModal";
 import Popover from "../src/components/Popover/Popover"
+import PositionedPopper from "../src/components/Popper/PositionedPopper"
 
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
@@ -243,7 +244,7 @@ const PageComponent = () => {
         {componentName === 'click_away_listener' && <ClickAwayListener />}
         {componentName === 'modal' && <SimpleModal />}
         {componentName === 'popover' && <Popover />}
-        {componentName === 'popper' && <SimpleModal />}
+        {componentName === 'popper' && <PositionedPopper />}
         {componentName === 'portal' && <SimpleModal />}
         {componentName === 'textarea_autosize' && <SimpleModal />}
         {componentName === 'transitions' && <SimpleModal />}
