@@ -117,6 +117,7 @@ import Popover from "../src/components/Popover/Popover"
 import PositionedPopper from "../src/components/Popper/PositionedPopper"
 import Portal from "../src/components/Portal/Portal"
 import TextareaAutosize from "../src/components/TextareaAutosize/TextareaAutosize"
+import Transitions from "../src/components/Transitions/Transitions"
 
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
@@ -249,7 +250,7 @@ const PageComponent = () => {
         {componentName === 'popper' && <PositionedPopper />}
         {componentName === 'portal' && <Portal />}
         {componentName === 'textarea_autosize' && <TextareaAutosize />}
-        {componentName === 'transitions' && <SimpleModal />}
+        {componentName === 'transitions' && <Transitions />}
         {componentName === 'use_media_query' && <SimpleModal />}
 
 
