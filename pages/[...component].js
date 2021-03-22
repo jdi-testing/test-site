@@ -100,6 +100,7 @@ import Chips from '../src/components/Chip/Chips';
 import InsetDividersView from '../src/components/Divider/InsetDividers';
 import VerticalDividersView from '../src/components/Divider/VerticalDividers';
 import Lists from '../src/components/Lists/Lists';
+import Table from '../src/components/Table/Table';
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
@@ -216,7 +217,7 @@ const PageComponent = () => {
         {componentName === 'simple_List' && <Lists />}
         {componentName === 'checkbox_list' && <AppBar />}
         {componentName === 'pinned_subheader_list' && <AppBar />}
-        {componentName === 'simple_table' && <AppBar />}
+        {componentName === 'simple_table' && <Table />}
         {componentName === 'sorted_table' && <AppBar />}
         {componentName === 'paginated_table' && <AppBar />}
         {componentName === 'spanning_table' && <AppBar />}

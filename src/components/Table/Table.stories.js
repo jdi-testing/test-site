@@ -1,28 +1,11 @@
-import Table from './SimpleTable';
-import Pagination from './PaginationTable';
-import Sorting from './SortingTable';
-import Spanning from './SpanningTable';
+import Table from './Table';
+import React from "react";
 
 export default {
   title: 'Material Ui/Data Display/Table',
   component: Table,
 };
 
-export const Simple = Table.bind({});
+const Template = args => <Table {...args} />;
 
-export const Dense = Table.bind({});
-Dense.args = {
-  size: 'small',
-};
-
-export const StickyHeader = Table.bind({});
-StickyHeader.args = {
-  stickyHeader: true,
-  containerStyle: { maxHeight: 440 },
-};
-
-export const TableWithPagination = Pagination.bind({});
-
-export const SortingTable = Sorting.bind({});
-
-export const SpanningTable = Spanning.bind({});
+export const Default = Template.bind({});
