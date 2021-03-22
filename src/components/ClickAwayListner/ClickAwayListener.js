@@ -31,17 +31,21 @@ export default function ClickAway() {
   };
 
   return (
-    <ClickAwayListener onClickAway={handleClickAway}>
-      <div className={classes.root}>
-        <button type="button" onClick={handleClick}>
-          Open menu dropdown
-        </button>
-        {open ? (
-          <div className={classes.dropdown}>
-            Click me, I will stay visible until you click outside.
-          </div>
-        ) : null}
-      </div>
-    </ClickAwayListener>
+    <div>
+      <h1>Click Away Listener</h1>
+      <p/>
+      <ClickAwayListener onClickAway={handleClickAway}>
+        <div className={classes.root}>
+          <button type="button" onClick={handleClick}>
+            Open menu dropdown
+          </button>
+          {open ? (
+            <div className={classes.dropdown}>
+              Click me, I will stay visible until you click outside.
+            </div>
+          ) : null}
+        </div>
+      </ClickAwayListener>
+    </div>
   );
 }

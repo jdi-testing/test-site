@@ -111,6 +111,8 @@ import Grid from '../src/components/Grid/Grid';
 import GridList from '../src/components/GridList/GridList';
 import Hidden from '../src/components/Hidden/Hidden';
 
+import ClickAwayListener from '../src/components/ClickAwayListner/ClickAwayListener';
+
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
 
@@ -235,6 +237,8 @@ const PageComponent = () => {
         {componentName === 'grid_layout' && <Grid />}
         {componentName === 'grid_list_layout' && <GridList />}
         {componentName === 'hidden_layout' && <Hidden />}
+
+        {componentName === 'click_away_listener' && <ClickAwayListener />}
 
 
         {componentName === 'backdrop' && <Backdrop />}
