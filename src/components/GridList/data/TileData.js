@@ -1,26 +1,26 @@
 export const tileData = [
   {
-    img: './morning.jpg',
+    img: '/material/img/gridlist/data/morning.jpg',
     title: 'morning',
     author: 'author',
   },
   {
-    img: './plant.jpg',
+    img: '/material/img/gridlist/data/plant.jpg',
     title: 'plant',
     author: 'author2',
   },
   {
-    img: './hats.jpg',
+    img: '/material/img/gridlist/data/hats.jpg',
     title: 'hats',
     author: 'author3',
   },
   {
-    img: './bike.jpg',
+    img: '/material/img/gridlist/data/bike.jpg',
     title: 'bike',
     author: 'author4',
   },
   {
-    img: './camera.jpg',
+    img: '/material/img/gridlist/data/camera.jpg',
     title: 'camera',
     author: 'author5',
   },

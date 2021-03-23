@@ -72,7 +72,7 @@ export default function BadgeAvatars() {
             }}
             variant="dot"
         >
-          <Avatar alt="Remy Sharp" src="{./assets/sample_avatar.jpg}" />
+          <Avatar alt="Remy Sharp" src={"/material/img/sample_avatar.jpg"} />
         </StyledBadge>
         <Badge
             overlap="circle"
@@ -82,7 +82,7 @@ export default function BadgeAvatars() {
             }}
             badgeContent={<SmallAvatar alt="Remy Sharp" src={AssignmentIcon} />}
         >
-          <Avatar alt="Travis Howard" src="{./assets/sample_avatar.jpg}" />
+          <Avatar alt="Travis Howard" src={"/material/img/sample_avatar.jpg"} />
         </Badge>
         <Avatar src="/broken-image" alt="Lorem" />
         <Avatar variant="square" className={classes.square}>
