@@ -47,26 +47,13 @@ const NavList = () => {
         </Link>
       </List>
 
-      <ListItem button onClick={() => handleClick(4)}>
-        <ListItemText primary="Button Group"/>
-        {checkIfOpen(4) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(4)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/button_group">
-            <ListItem button>
-              <ListItemText primary="Default"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/split_button">
-            <ListItem button>
-              <ListItemText primary="Split Button"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/button_groups">
+          <ListItem button>
+            <ListItemText primary="Button Groups"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <ListItem button onClick={() => handleClick(5)}>
         <ListItemText primary="Checkbox"/>

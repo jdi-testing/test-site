@@ -6,10 +6,7 @@ import Paper from '../src/components/Paper/Paper';
 import Card from '../src/components/Card/Card';
 
 import Button from '../src/components/Button/Button';
-
-import {ButtonGroupDefaultProps} from '../src/components/ButtonGroup/props';
 import ButtonGroup from '../src/components/ButtonGroup/ButtonGroup';
-import SplitButton from '../src/components/ButtonGroup/SplitButton';
 
 import BasicCheckboxes from '../src/components/Checkbox/BasicCheckboxes';
 import CheckboxesGroup from '../src/components/Checkbox/CheckboxesGroup';
@@ -134,8 +131,7 @@ const PageComponent = () => {
         
         {componentName === 'buttons' && <Button />}
 
-        {componentName === 'button_group' && <ButtonGroup {...ButtonGroupDefaultProps} />}
-        {componentName === 'split_button' && <SplitButton />}
+        {componentName === 'button_groups' && <ButtonGroup />}
 
         {componentName === 'basic_checkboxes' && <BasicCheckboxes />}
         {componentName === 'checkboxes_group' && <CheckboxesGroup />}
