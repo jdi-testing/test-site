@@ -1,19 +1,28 @@
 import React from 'react';
-import MButton from '@material-ui/core/Button';
-// import styled from 'styled-components';
+import ContainedButtons from "./SimpleButtons";
+import TextButtons from "./TextButtons";
+import IconLabelButtons from "./LabeledButtons";
+import IconButtons from "./IconButtons";
+import CustomizedButtons from "./CustomizedButtons";
+import ButtonBases from "./ComplexButtons";
 
-const Button = (props) => <MButton {...props} />;
 
-// How redefine styles of material component via Styled Components
-// const Button = (props) => <StyledButton {...props} />;
-// const StyledButton = styled(MButton)`
-//   background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
-//   border-radius: 3px;
-//   border: 0;
-//   color: white;
-//   height: 48px;
-//   padding: 0 30px;
-//   box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
-// `;
-
-export default Button;
+export default function Buttons(...args) {
+  return (
+    <div>
+      <h1>Buttons</h1>
+      <h2>Contained buttons</h2>
+      <ContainedButtons id={"containedBtns"} />
+      <h2>Text buttons</h2>
+      <TextButtons id={"textBtns"} />
+      <h2>Buttons with icons and label</h2>
+      <IconLabelButtons id={"iconLabelBtns"} />
+      <h2>Icon buttons</h2>
+      <IconButtons id={"iconBtns"} />
+      <h2>Customized buttons</h2>
+      <CustomizedButtons id={"customizedBtns"} />
+      <h2>Complex buttons</h2>
+      <ButtonBases id={"complexBtns"} />
+    </div>
+  );
+}

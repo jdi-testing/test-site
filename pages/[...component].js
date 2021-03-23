@@ -5,8 +5,6 @@ import AppBar from '../src/components/AppBar/AppBar';
 import Paper from '../src/components/Paper/Paper';
 import Card from '../src/components/Card/Card';
 
-import {ButtonDefaultProps} from '../src/components/Button/props';
-import {ButtonDisabledProps} from '../src/components/Button/props';
 import Button from '../src/components/Button/Button';
 
 import {ButtonGroupDefaultProps} from '../src/components/ButtonGroup/props';
@@ -134,9 +132,8 @@ const PageComponent = () => {
 
     return <div>
         
-        {componentName === 'button_default' && <Button {...ButtonDefaultProps} />}
-        {componentName === 'button_disabled' && <Button {...ButtonDisabledProps} />}
-       
+        {componentName === 'buttons' && <Button />}
+
         {componentName === 'button_group' && <ButtonGroup {...ButtonGroupDefaultProps} />}
         {componentName === 'split_button' && <SplitButton />}
 
