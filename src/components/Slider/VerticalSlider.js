@@ -14,14 +14,13 @@ export default function VerticalSlider() {
   const [value, setValue] = React.useState(30);
 
   const handleChange = (event, newValue) => {
-    console.log('Vertical Slider value is updated to ', newValue);
     setValue(newValue);
   };
 
   return (
     <React.Fragment>
       <Typography id="vertical-slider" gutterBottom>
-        Vertical Slider
+        Vertical Slider with value {value}
       </Typography>
       <div className={classes.root}>
         <Slider

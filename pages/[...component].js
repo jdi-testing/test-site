@@ -18,9 +18,7 @@ import Radio from '../src/components/Radio/Radio';
 
 import Selects from '../src/components/Select/Selects';
 
-import Slider from '../src/components/Slider/Slider';
-import RangeSlider from '../src/components/Slider/RangeSlider';
-import VerticalSlider from '../src/components/Slider/VerticalSlider';
+import Sliders from '../src/components/Slider/Sliders';
 
 import BasicSwitches from '../src/components/Switch/BasicSwitches';
 import TextField from '../src/components/TextField/TextField';
@@ -123,22 +121,13 @@ const PageComponent = () => {
     return <div>
         
         {componentName === 'buttons' && <Button />}
-
         {componentName === 'button_groups' && <ButtonGroup />}
-
         {componentName === 'checkboxes' && <Checkbox />}
-
         {componentName === 'floating_action_button' && <FloatingActionButton />}
-
         {componentName === 'date_picker' && <DatePicker />}
-
         {componentName === 'radio' && <Radio />}
-
         {componentName === 'selects' && <Selects />}
-
-        {componentName === 'slider' && <Slider />}
-        {componentName === 'range_slider' && <RangeSlider />}
-        {componentName === 'vertical_slider' && <VerticalSlider />}
+        {componentName === 'sliders' && <Sliders />}
 
         {componentName === 'basic_switches' && <BasicSwitches />}
         {componentName === 'text_field' && <TextField />}

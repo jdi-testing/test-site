@@ -89,34 +89,13 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
-      <ListItem button onClick={() => handleClick(9)}>
-        <ListItemText primary="Slider"/>
-        {checkIfOpen(9) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(9)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/slider">
-            <ListItem button>
-              <ListItemText primary="Slider"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/range_slider">
-            <ListItem button>
-              <ListItemText primary="Range Slider"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/vertical_slider">
-            <ListItem button>
-              <ListItemText primary="Vertical Slider"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/sliders">
+          <ListItem button>
+            <ListItemText primary="Sliders"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <List component="div" disablePadding>
         <Link href="/basic_switches">

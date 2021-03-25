@@ -6,7 +6,7 @@ import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 400,
   },
 });
 
@@ -27,6 +27,7 @@ export default function ContinuousSlider() {
         <Grid item xs>
           <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" />
         </Grid>
+        <Typography id={"continuousValue"}>Selected value: {value}</Typography>
       </Grid>
       <Typography id="disabled-slider" gutterBottom>
         Disabled slider

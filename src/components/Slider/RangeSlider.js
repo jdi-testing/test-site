@@ -5,7 +5,7 @@ import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 400,
   },
 });
 
@@ -18,14 +18,13 @@ export default function RangeSlider() {
   const [value, setValue] = React.useState([20, 37]);
 
   const handleChange = (event, newValue) => {
-    console.log('Range Slider value is updated to ', newValue);
     setValue(newValue);
   };
 
   return (
     <div className={classes.root}>
       <Typography id="range-slider" gutterBottom>
-        Range Slider
+        Range Slider with selection from {value[0]} to {value[1]}
       </Typography>
       <Slider
         value={value}
