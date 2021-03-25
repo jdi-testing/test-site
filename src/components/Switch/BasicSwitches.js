@@ -1,5 +1,6 @@
 import React from 'react';
 import Switch from '@material-ui/core/Switch';
+import SwitchesGroup from "./GroupSwitches";
 
 export default function Switches() {
   const [state, setState] = React.useState({
@@ -13,6 +14,8 @@ export default function Switches() {
 
   return (
     <div>
+      <h1>Switch</h1>
+      <h2>Basic switches</h2>
       <Switch
         checked={state.checkedA}
         onChange={handleChange}
@@ -34,6 +37,8 @@ export default function Switches() {
         color="default"
         inputProps={{ 'aria-label': 'checkbox with default color' }}
       />
+      <h2>Switches with FormGroup</h2>
+      <SwitchesGroup id={"groupSwitches"} />
     </div>
   );
 }
