@@ -46,7 +46,6 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
       <List component="div" disablePadding>
         <Link href="/button_groups">
           <ListItem button>
@@ -54,27 +53,13 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
-      <ListItem button onClick={() => handleClick(5)}>
-        <ListItemText primary="Checkbox"/>
-        {checkIfOpen(5) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(5)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/basic_checkboxes">
-            <ListItem button>
-              <ListItemText primary="Basic Checkboxes"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/checkboxes_group">
-            <ListItem button>
-              <ListItemText primary="Checkboxes Group"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/checkboxes">
+          <ListItem button>
+            <ListItemText primary="Checkboxes"/>
+          </ListItem>
+        </Link>
+      </List>
       <List component="div" disablePadding>
         <Link href="/floating_action_button">
           <ListItem button>

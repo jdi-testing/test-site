@@ -8,8 +8,7 @@ import Card from '../src/components/Card/Card';
 import Button from '../src/components/Button/Button';
 import ButtonGroup from '../src/components/ButtonGroup/ButtonGroup';
 
-import BasicCheckboxes from '../src/components/Checkbox/BasicCheckboxes';
-import CheckboxesGroup from '../src/components/Checkbox/CheckboxesGroup';
+import Checkbox from '../src/components/Checkbox/Checkbox';
 
 import FloatingActionButton from '../src/components/FloatingActionButton/FloatingActionButton';
 
@@ -133,8 +132,7 @@ const PageComponent = () => {
 
         {componentName === 'button_groups' && <ButtonGroup />}
 
-        {componentName === 'basic_checkboxes' && <BasicCheckboxes />}
-        {componentName === 'checkboxes_group' && <CheckboxesGroup />}
+        {componentName === 'checkboxes' && <Checkbox />}
 
         {componentName === 'floating_action_button' && <FloatingActionButton />}
 
