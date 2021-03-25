@@ -4,17 +4,16 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 
 function handleClick(event) {
-  event.preventDefault();
-  console.info('You clicked a breadcrumb.');
+  //event.preventDefault();
 }
 
 export default function SimpleBreadcrumbs() {
   return (
     <Breadcrumbs aria-label="breadcrumb">
-      <Link color="inherit" href="/" onClick={ handleClick }>
+      <Link color="inherit" href="#materialUI" onClick={ handleClick }>
         Material-UI
       </Link>
-      <Link color="inherit" href="/getting-started/installation/" onClick={ handleClick }>
+      <Link color="inherit" href="#core" onClick={ handleClick }>
         Core
       </Link>
       <Typography color="textPrimary">Breadcrumb</Typography>

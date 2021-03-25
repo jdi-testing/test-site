@@ -28,8 +28,8 @@ import EnhancedTransferList from '../src/components/TransferList/EnhancedTransfe
 
 import ButtomNavigation from '../src/components/BottomNavigation/ButtomNavigationDefault';
 
-import SimpleBreadcrumbs from '../src/components/Breadcrumbs/SimpleBreadcrumbs';
-import RouterBreadcrumbs from '../src/components/Breadcrumbs/RouterBreadcrumbs';
+import Breadcrumbs from '../src/components/Breadcrumbs/Breadcrumbs';
+import RouterBreadcrumbs from "../src/components/Breadcrumbs/RouterBreadcrumbs";
 
 import TemporaryDrawer from '../src/components/Drawers/TemporaryDrawer';
 import ResponsiveDrawer from '../src/components/Drawers/ResponsiveDrawer';
@@ -137,8 +137,7 @@ const PageComponent = () => {
 
 
         {componentName === 'button_navigation' && <ButtomNavigation />}
-
-        {componentName === 'simple_breadcrumbs' && <SimpleBreadcrumbs />}
+        {componentName === 'simple_breadcrumbs' && <Breadcrumbs />}
         {componentName === 'router_breadcrumbs' && <RouterBreadcrumbs />}
 
         {componentName === 'temporary_drawer' && <TemporaryDrawer />}
