@@ -16,9 +16,7 @@ import DatePicker from '../src/components/DateTimePicker/DatePicker';
 
 import Radio from '../src/components/Radio/Radio';
 
-import SimpleSelect from '../src/components/Select/SimpleSelect';
-import DisabledSelect from '../src/components/Select/DisabledSelect';
-import MultipleSelect from '../src/components/Select/MultipleSelect';
+import Selects from '../src/components/Select/Selects';
 
 import Slider from '../src/components/Slider/Slider';
 import RangeSlider from '../src/components/Slider/RangeSlider';
@@ -136,9 +134,7 @@ const PageComponent = () => {
 
         {componentName === 'radio' && <Radio />}
 
-        {componentName === 'simple_select' && <SimpleSelect />}
-        {componentName === 'disabled_select' && <DisabledSelect />}
-        {componentName === 'multiple_select' && <MultipleSelect />}
+        {componentName === 'selects' && <Selects />}
 
         {componentName === 'slider' && <Slider />}
         {componentName === 'range_slider' && <RangeSlider />}
