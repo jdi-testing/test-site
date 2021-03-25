@@ -67,55 +67,13 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
-      {/*<ListItem button onClick={() => handleClick(6)}>*/}
-      {/*  <ListItemText primary="Checkbox" />*/}
-      {/*  {checkIfOpen(6) ? <ExpandLess /> : <ExpandMore />}*/}
-      {/*</ListItem>*/}
-      {/*<Collapse in={checkIfOpen(6)} timeout="auto">*/}
-      {/*  <List component="div" disablePadding>*/}
-      {/*    <Link href="/basic_checkboxes">*/}
-      {/*      <ListItem button >*/}
-      {/*        <ListItemText primary="Basic Checkboxes" />*/}
-      {/*      </ListItem>*/}
-      {/*    </Link>*/}
-      {/*  </List>*/}
-      {/*  <List component="div" disablePadding>*/}
-      {/*    <Link href="/checkboxes_group">*/}
-      {/*      <ListItem button >*/}
-      {/*        <ListItemText primary="Checkboxes Group" />*/}
-      {/*      </ListItem>*/}
-      {/*    </Link>*/}
-      {/*  </List>*/}
-      {/*</Collapse>*/}
-
-      <ListItem button onClick={() => handleClick(7)}>
-        <ListItemText primary="Date / Time"/>
-        {checkIfOpen(7) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(7)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/date_picker_inline">
-            <ListItem button>
-              <ListItemText primary="Date Picker Inline"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/date_picker_dialog">
-            <ListItem button>
-              <ListItemText primary="Date Picker Dialog"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/time_picker">
-            <ListItem button>
-              <ListItemText primary="Time Picker"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/date_picker">
+          <ListItem button>
+            <ListItemText primary="Date / Time"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <List component="div" disablePadding>
         <Link href="/radio">

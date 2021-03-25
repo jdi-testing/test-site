@@ -12,11 +12,7 @@ import Checkbox from '../src/components/Checkbox/Checkbox';
 
 import FloatingActionButton from '../src/components/FloatingActionButton/FloatingActionButton';
 
-import {DatePickerInlineProps} from '../src/components/DateTimePicker/props';
-import {DatePickerDialogProps} from '../src/components/DateTimePicker/props';
-import {TimePickerProps} from '../src/components/DateTimePicker/props';
 import DatePicker from '../src/components/DateTimePicker/DatePicker';
-import TimePicker from '../src/components/DateTimePicker/TimePicker';
 
 import Radio from '../src/components/Radio/Radio';
 
@@ -136,9 +132,7 @@ const PageComponent = () => {
 
         {componentName === 'floating_action_button' && <FloatingActionButton />}
 
-        {componentName === 'date_picker_inline' && <DatePicker {...DatePickerInlineProps} />}
-        {componentName === 'date_picker_dialog' && <DatePicker {...DatePickerDialogProps} />}
-        {componentName === 'time_picker' && <TimePicker {...TimePickerProps} />}
+        {componentName === 'date_picker' && <DatePicker />}
 
         {componentName === 'radio' && <Radio />}
 

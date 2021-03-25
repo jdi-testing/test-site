@@ -1,32 +1,25 @@
 // npm i --save date-fns@next @date-io/date-fns@1.3.13
 // npm install @material-ui/pickers
 import React from 'react';
-import 'date-fns';
-import DateFnsUtils from '@date-io/date-fns';
-import {
-  MuiPickersUtilsProvider,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
+import MaterialUIPickers from "./DateTimePickers";
+import NativeDatePickers from "./NativePickers";
+import DateAndTimePickers from "./DateTimePicker";
+import TimePickers from "./TimePicker";
 
+export default function DatePickers(args) {
 
-
-export default function MaterialUIDatePicker(args) {
-
-    const [selectedDate, setSelectedDate] = React.useState(new Date());
-
-    const handleDateChange = (date) => {
-        console.log('Date is updated to ', date);
-        setSelectedDate(date);
-    };
 
   return (
-      <MuiPickersUtilsProvider utils={DateFnsUtils}>
-        <KeyboardDatePicker {...args}
-          value={selectedDate}
-          onChange={handleDateChange}
-          KeyboardButtonProps={{
-            'aria-label': 'change date',
-          }} />
-      </MuiPickersUtilsProvider>
+      <div>
+        <h1>Date / Time</h1>
+        <h2>Date and time pickers</h2>
+        <MaterialUIPickers id={"materialUIDateTimePickers"} />
+        <h2>Native pickers</h2>
+        <NativeDatePickers id={"nativeDatePickers"} />
+        <h2>Date & Time pickers</h2>
+        <DateAndTimePickers id={"dateTimePickers"} />
+        <h2>Time pickers</h2>
+        <TimePickers id={"timePickers"} />
+      </div>
   );
 }

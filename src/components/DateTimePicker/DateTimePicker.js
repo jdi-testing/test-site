@@ -14,22 +14,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TimePickers() {
+export default function DateAndTimePickers() {
   const classes = useStyles();
 
   return (
     <form className={classes.container} noValidate>
       <TextField
-        id="time"
-        label="Alarm clock"
-        type="time"
-        defaultValue="07:30"
+        id="datetime-local"
+        label="Next appointment"
+        type="datetime-local"
+        defaultValue="2017-05-24T10:30"
         className={classes.textField}
         InputLabelProps={{
           shrink: true,
-        }}
-        inputProps={{
-          step: 300, // 5 min
         }}
       />
     </form>
