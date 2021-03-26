@@ -243,40 +243,13 @@ const NavList = () => {
         </List>
       </Collapse>
 
-      <ListItem button onClick={() => handleClick(14)}>
-        <ListItemText primary="Stepper"/>
-        {checkIfOpen(14) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(14)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/simple_stepper">
-            <ListItem button>
-              <ListItemText primary="Simple Stepper"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/mobile_stepper">
-            <ListItem button>
-              <ListItemText primary="Mobile Stepper"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/stepper_with_option">
-            <ListItem button>
-              <ListItemText primary="Stepper With Option"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/non_linear_stepper">
-            <ListItem button>
-              <ListItemText primary="Non Linear Stepper"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/steppers">
+          <ListItem button>
+            <ListItemText primary="Stepper"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <ListItem button onClick={() => handleClick(15)}>
         <ListItemText primary="Tabs"/>

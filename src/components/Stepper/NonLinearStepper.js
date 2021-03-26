@@ -78,7 +78,7 @@ export default function HorizontalNonLinearStepper(args) {
           </div>
         ) : (
           <div>
-            <Typography>{getStepContent(activeStep)}</Typography>
+            <Typography id={"activeNonLinearStep"}>{getStepContent(activeStep)}</Typography>
             <div>
               <Button disabled={activeStep === 0} onClick={handleBack}>
                 Back

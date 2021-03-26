@@ -43,7 +43,7 @@ export default function SimpleStepper(args) {
       <Step key={label}>
         <StepLabel>{label}</StepLabel>
         <StepContent>
-          <Typography>{getStepContent(index)}</Typography>
+          <Typography id={"activeSimpleStep"}>{getStepContent(index)}</Typography>
           <div>
             <Button disabled={activeStep === 0} onClick={handleBack}>
               Back

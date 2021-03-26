@@ -43,10 +43,7 @@ import Link from '../src/components/Links/SimpleLinks';
 import SimpleMenu from '../src/components/Menus/SimpleMenu';
 import ContextMenu from '../src/components/Menus/ContextMenu';
 
-import SimpleStepper from '../src/components/Stepper/SimpleStepper';
-import MobileStepper from '../src/components/Stepper/MobileStepper';
-import StepperWithOption from '../src/components/Stepper/StepperWithOption';
-import NonLinearStepper from '../src/components/Stepper/NonLinearStepper';
+import Steppers from '../src/components/Stepper/Steppers';
 
 import TabPanel from '../src/components/Tabs/TabPanel';
 import VerticalTab from '../src/components/Tabs/VerticalTab';
@@ -152,10 +149,7 @@ const PageComponent = () => {
         {componentName === 'simple_menu' && <SimpleMenu />}
         {componentName === 'context_menu' && <ContextMenu />}
 
-        {componentName === 'simple_stepper' && <SimpleStepper />}
-        {componentName === 'mobile_stepper' && <MobileStepper />}
-        {componentName === 'stepper_with_option' && <StepperWithOption />}
-        {componentName === 'non_linear_stepper' && <NonLinearStepper />}
+        {componentName === 'steppers' && <Steppers />}
 
         {componentName === 'tab_panel' && <TabPanel />}
         {componentName === 'vertical_tab' && <VerticalTab />}
