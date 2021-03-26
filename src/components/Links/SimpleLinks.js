@@ -13,19 +13,27 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Links() {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
 
   return (
-    <Typography className={classes.root}>
-      <Link href="#" onClick={preventDefault}>
-        Link
-      </Link>
-      <Link href="#" onClick={preventDefault} color="inherit">
-        {'color="inherit"'}
-      </Link>
-      <Link href="#" onClick={preventDefault} variant="body2">
-        {'variant="body2"'}
-      </Link>
-    </Typography>
+    <div>
+      <h1>Link</h1>
+      <Typography className={classes.root}>
+        <Link href="#link1" >
+          Link
+        </Link>
+        <Link href="#link2" color="inherit">
+          {'color="inherit"'}
+        </Link>
+        <Link href="#link3" variant="body2">
+          {'variant="body2"'}
+        </Link>
+      </Typography>
+      <br/>
+      <br/>
+      <br/>
+      <Typography id={"link1"}>Link1</Typography>
+      <Typography id={"link2"}>Link2</Typography>
+      <Typography id={"link3"}>Link3</Typography>
+    </div>
   );
 }
