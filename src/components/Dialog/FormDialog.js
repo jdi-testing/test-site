@@ -5,9 +5,11 @@ import TextField from '@material-ui/core/TextField';
 import Dialog from './Dialog';
 import DialogContent from './DialogContent';
 import DialogActions from './DialogActions';
+import Typography from "@material-ui/core/Typography";
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
+  const [mail, setMail] = React.useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -15,6 +17,14 @@ export default function FormDialog() {
 
   const handleClose = () => {
     setOpen(false);
+    setMail("")
+  };
+  const handleOk = () => {
+    setOpen(false);
+  };
+  const saveMail = (event) => {
+    console.info("Change to " + event.target.value)
+    setMail(event.target.value);
   };
 
   const textField = (
@@ -25,6 +35,8 @@ export default function FormDialog() {
       label="Email Address"
       type="email"
       fullWidth
+      value={mail}
+      onChange={saveMail}
     />
   );
 
@@ -41,7 +53,7 @@ export default function FormDialog() {
       </DialogContent>
       <DialogActions
         buttons={['close', 'ok']}
-        onClickHandlers={[handleClose, handleClose]}
+        onClickHandlers={[handleClose, handleOk]}
       />
     </div>
   );
@@ -51,6 +63,7 @@ export default function FormDialog() {
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Open form dialog
       </Button>
+      <Typography variant="subtitle1" id={"mailDialogSelection"}>Entered email: {mail}</Typography>
       <Dialog open={open} onClose={handleClose} title="Form Dialog">
         {content}
       </Dialog>

@@ -107,6 +107,7 @@ import UseMediaQuery from "../src/components/UseMediaQuery/UseMediaQuery"
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
 import Progresses from "../src/components/Progress/Progress";
+import Dialogs from "../src/components/Dialog/Dialogs";
 
 const PageComponent = () => {
     const router = useRouter()
@@ -156,16 +157,8 @@ const PageComponent = () => {
         {componentName === 'tabs' && <Tabs />}
 
         {componentName === 'progress' && <Progresses />}
-        {componentName === 'circular_indeterminate' && <CircularIndeterminate />}
-        {componentName === 'circular_determinate' && <CircularDeterminate />}
-        {componentName === 'circular_with_value_label' && <CircularWithValueLabel />}
-        {componentName === 'linear_indeterminate' && <LinearIndeterminate />}
-        {componentName === 'linear_determinate' && <LinearDeterminate />}
-        {componentName === 'linear_buffer' && <LinearBuffer />}
-        {componentName === 'linear_with_value_label' && <LinearWithValueLabel />}
-        {componentName === 'customized_progress_bars' && <CustomizedProgressBars />}
-        {componentName === 'delaying_appearance' && <DelayingAppearance />}
 
+        {componentName === 'dialog' && <Dialogs />}
         {componentName === 'alert_dialog' && <AlertDialog />}
         {componentName === 'confirmation_dialog' && <ConfirmationDialog />}
         {componentName === 'form_dialog' && <FormDialog />}

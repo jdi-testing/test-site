@@ -268,48 +268,13 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
-      <ListItem button onClick={() => handleClick(17)}>
-        <ListItemText primary="Dialog"/>
-        {checkIfOpen(17) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(17)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/alert_dialog">
-            <ListItem button>
-              <ListItemText primary="Alert Dialog"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/confirmation_dialog">
-            <ListItem button>
-              <ListItemText primary="Confirmation Dialog"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/form_dialog">
-            <ListItem button>
-              <ListItemText primary="Form Dialog"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/list_items_dialog">
-            <ListItem button>
-              <ListItemText primary="List Items Dialog"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/scrollable_dialog">
-            <ListItem button>
-              <ListItemText primary="Scrollable Dialog"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/dialog">
+          <ListItem button>
+            <ListItemText primary="Dialog"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <ListItem button onClick={() => handleClick(18)}>
         <ListItemText primary="Snackbar"/>
