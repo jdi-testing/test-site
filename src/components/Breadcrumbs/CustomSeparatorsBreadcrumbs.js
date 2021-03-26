@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function handleClick(event) {
-  event.preventDefault();
+  //event.preventDefault();
 }
 
 export default function CustomSeparator() {
@@ -23,28 +23,28 @@ export default function CustomSeparator() {
   return (
     <div className={ classes.root }>
       <Breadcrumbs separator="›" aria-label="breadcrumb">
-        <Link color="inherit" href="/" onClick={ handleClick }>
+        <Link color="inherit" href="#materialUI" onClick={ handleClick }>
           Material-UI
         </Link>
-        <Link color="inherit" href="/getting-started/installation/" onClick={ handleClick }>
+        <Link color="inherit" href="#core" onClick={ handleClick }>
           Core
         </Link>
         <Typography color="textPrimary">Breadcrumb</Typography>
       </Breadcrumbs>
       <Breadcrumbs separator="-" aria-label="breadcrumb">
-        <Link color="inherit" href="/" onClick={ handleClick }>
+        <Link color="inherit" href="#materialUI" onClick={ handleClick }>
           Material-UI
         </Link>
-        <Link color="inherit" href="/getting-started/installation/" onClick={ handleClick }>
+        <Link color="inherit" href="#core" onClick={ handleClick }>
           Core
         </Link>
         <Typography color="textPrimary">Breadcrumb</Typography>
       </Breadcrumbs>
       <Breadcrumbs separator={ <NavigateNextIcon fontSize="small"/> } aria-label="breadcrumb">
-        <Link color="inherit" href="/" onClick={ handleClick }>
+        <Link color="inherit" href="#materialUI" onClick={ handleClick }>
           Material-UI
         </Link>
-        <Link color="inherit" href="/getting-started/installation/" onClick={ handleClick }>
+        <Link color="inherit" href="#core" onClick={ handleClick }>
           Core
         </Link>
         <Typography color="textPrimary">Breadcrumb</Typography>

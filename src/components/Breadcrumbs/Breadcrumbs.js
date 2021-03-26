@@ -3,6 +3,7 @@ import SimpleBreadcrumbs from "./SimpleBreadcrumbs";
 import IconBreadcrumbs from "./BreadcrumbsWithIcons";
 import CollapsedBreadcrumbs from "./CollapsedBreadcrumbs";
 import CustomizedBreadcrumbs from "./CustomizedBreadcrumbs";
+import CustomSeparator from "./CustomSeparatorsBreadcrumbs";
 
 
 export default function Selects(...args) {
@@ -13,6 +14,8 @@ export default function Selects(...args) {
       <SimpleBreadcrumbs id={"simpleBreadcrumbs"} />
       <h2>Breadcrumbs with icons</h2>
       <IconBreadcrumbs id={"iconBreadcrumbs"} />
+      <h2>Custom separator</h2>
+      <CustomSeparator id={"customSeparatorBreadcrumbs"} />
       <h2>Collapsed breadcrumbs</h2>
       <CollapsedBreadcrumbs id={"collapsedBreadcrumbs"} />
       <h2>Customized breadcrumbs</h2>
