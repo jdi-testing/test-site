@@ -250,49 +250,13 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
-      <ListItem button onClick={() => handleClick(15)}>
-        <ListItemText primary="Tabs"/>
-        {checkIfOpen(15) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(15)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/tab_panel">
-            <ListItem button>
-              <ListItemText primary="Tab Panel"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/vertical_tab">
-            <ListItem button>
-              <ListItemText primary="Vertical Tab"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/disabled_tab">
-            <ListItem button>
-              <ListItemText primary="Disabled Tab"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/prevent_scroll_buttons">
-            <ListItem button>
-              <ListItemText primary="Prevent Scroll Buttons"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/scrollable_tab">
-            <ListItem button>
-              <ListItemText primary="Scrollable Tab"/>
-            </ListItem>
-          </Link>
-        </List>
-
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/tabs">
+          <ListItem button>
+            <ListItemText primary="Tabs"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
         Feedback

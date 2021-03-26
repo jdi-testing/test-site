@@ -62,6 +62,8 @@ export default function SimpleTabs() {
           <Tab label="Item One" {...a11yProps(0)} />
           <Tab label="Item Two" {...a11yProps(1)} />
           <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Item Four" {...a11yProps(3)} disabled />
+          <Tab label="Item Five" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -72,6 +74,12 @@ export default function SimpleTabs() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        Item Four
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        Item Five
       </TabPanel>
     </div>
   );

@@ -45,6 +45,7 @@ import ContextMenu from '../src/components/Menus/ContextMenu';
 
 import Steppers from '../src/components/Stepper/Steppers';
 
+import Tabs from '../src/components/Tabs/Tabs';
 import TabPanel from '../src/components/Tabs/TabPanel';
 import VerticalTab from '../src/components/Tabs/VerticalTab';
 import DisabledTab from '../src/components/Tabs/DisabledTab';
@@ -151,11 +152,7 @@ const PageComponent = () => {
 
         {componentName === 'steppers' && <Steppers />}
 
-        {componentName === 'tab_panel' && <TabPanel />}
-        {componentName === 'vertical_tab' && <VerticalTab />}
-        {componentName === 'disabled_tab' && <DisabledTab />}
-        {componentName === 'prevent_scroll_buttons' && <PreventScrollButtons />}
-        {componentName === 'scrollable_tab' && <ScrollableTab />}
+        {componentName === 'tabs' && <Tabs />}
 
         {componentName === 'circular_indeterminate' && <CircularIndeterminate />}
         {componentName === 'circular_determinate' && <CircularDeterminate />}
