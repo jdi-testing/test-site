@@ -11,13 +11,15 @@ import Typography from '@material-ui/core/Typography';
 
 export default function TypographyMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [selected, setMenu] = React.useState("");
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (event) => {
     setAnchorEl(null);
+    setMenu(event.currentTarget.textContent)
   };
 
   return (
@@ -48,6 +50,7 @@ export default function TypographyMenu() {
           </Typography>
         </MenuItem>
       </Menu>
+      <p id={"selectedIconMenu"}>Selected menu: {selected}</p>
     </div>
   );
 }
