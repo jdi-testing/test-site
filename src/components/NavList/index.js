@@ -261,75 +261,13 @@ const NavList = () => {
       <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
         Feedback
       </ListSubheader>
-      <ListItem button onClick={() => handleClick(16)}>
-        <ListItemText primary="Progress"/>
-        {checkIfOpen(16) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(16)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/circular_indeterminate">
-            <ListItem button>
-              <ListItemText primary="Circular Indeterminate Menu"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/circular_determinate">
-            <ListItem button>
-              <ListItemText primary="Circular Determinate"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/circular_with_value_label">
-            <ListItem button>
-              <ListItemText primary="Circular With Value Label"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/linear_indeterminate">
-            <ListItem button>
-              <ListItemText primary="Linear Indeterminate"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/linear_determinate">
-            <ListItem button>
-              <ListItemText primary="Linear Determinate"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/linear_buffer">
-            <ListItem button>
-              <ListItemText primary="Linear Buffer"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/linear_with_value_label">
-            <ListItem button>
-              <ListItemText primary="Linear With Value Label"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/customized_progress_bars">
-            <ListItem button>
-              <ListItemText primary="Customized Progress Bars"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/delaying_appearance">
-            <ListItem button>
-              <ListItemText primary="Delaying Appearance"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/progress">
+          <ListItem button>
+            <ListItemText primary="Progress"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <ListItem button onClick={() => handleClick(17)}>
         <ListItemText primary="Dialog"/>

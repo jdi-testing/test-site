@@ -106,6 +106,7 @@ import UseMediaQuery from "../src/components/UseMediaQuery/UseMediaQuery"
 
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
+import Progresses from "../src/components/Progress/Progress";
 
 const PageComponent = () => {
     const router = useRouter()
@@ -154,6 +155,7 @@ const PageComponent = () => {
 
         {componentName === 'tabs' && <Tabs />}
 
+        {componentName === 'progress' && <Progresses />}
         {componentName === 'circular_indeterminate' && <CircularIndeterminate />}
         {componentName === 'circular_determinate' && <CircularDeterminate />}
         {componentName === 'circular_with_value_label' && <CircularWithValueLabel />}
