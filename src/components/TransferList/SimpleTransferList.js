@@ -101,53 +101,56 @@ export default function SimpleTransferList() {
     );
 
     return (
-        <Grid container spacing={2} justify="center" alignItems="center" className={classes.root}>
-            <Grid item>{customList(left)}</Grid>
-            <Grid item>
-                <Grid container direction="column" alignItems="center">
-                    <Button
+      <div>
+          <h1>Simple Transfer list</h1>
+          <Grid container spacing={2} justify="center" alignItems="center" className={classes.root}>
+              <Grid item>{customList(left)}</Grid>
+              <Grid item>
+                  <Grid container direction="column" alignItems="center">
+                      <Button
                         variant="outlined"
                         size="small"
                         className={classes.button}
                         onClick={handleAllRight}
                         disabled={left.length === 0}
                         aria-label="move all right"
-                    >
-                        ≫
-                    </Button>
-                    <Button
+                      >
+                          ≫
+                      </Button>
+                      <Button
                         variant="outlined"
                         size="small"
                         className={classes.button}
                         onClick={handleCheckedRight}
                         disabled={leftChecked.length === 0}
                         aria-label="move selected right"
-                    >
-                        &gt;
-                    </Button>
-                    <Button
+                      >
+                          &gt;
+                      </Button>
+                      <Button
                         variant="outlined"
                         size="small"
                         className={classes.button}
                         onClick={handleCheckedLeft}
                         disabled={rightChecked.length === 0}
                         aria-label="move selected left"
-                    >
-                        &lt;
-                    </Button>
-                    <Button
+                      >
+                          &lt;
+                      </Button>
+                      <Button
                         variant="outlined"
                         size="small"
                         className={classes.button}
                         onClick={handleAllLeft}
                         disabled={right.length === 0}
                         aria-label="move all left"
-                    >
-                        ≪
-                    </Button>
-                </Grid>
-            </Grid>
-            <Grid item>{customList(right)}</Grid>
-        </Grid>
+                      >
+                          ≪
+                      </Button>
+                  </Grid>
+              </Grid>
+              <Grid item>{customList(right)}</Grid>
+          </Grid>
+      </div>
     );
 }
