@@ -276,75 +276,20 @@ const NavList = () => {
         </Link>
       </List>
 
-      <ListItem button onClick={() => handleClick(18)}>
-        <ListItemText primary="Snackbar"/>
-        {checkIfOpen(18) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(18)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/simple_snackbar">
-            <ListItem button>
-              <ListItemText primary="Simple Snackbar"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/customized_snackbars">
-            <ListItem button>
-              <ListItemText primary="Customized Snackbars"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/positioned_snackbar">
-            <ListItem button>
-              <ListItemText primary="Positioned Snackbar"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/transitions_snackbar">
-            <ListItem button>
-              <ListItemText primary="Transitions Snackbar"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/consecutive_snackbars">
-            <ListItem button>
-              <ListItemText primary="Consecutive Snackbars"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/direction_snackbar">
-            <ListItem button>
-              <ListItemText primary="Direction Snackbar"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/fab_integration_snackbar">
-            <ListItem button>
-              <ListItemText primary="Fab Integration Snackbar"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/integration_notistack">
-            <ListItem button>
-              <ListItemText primary="Integration Notistack"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/long_text_snackbar">
-            <ListItem button>
-              <ListItemText primary="Long Text Snackbar"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/snackbar">
+          <ListItem button>
+            <ListItemText primary="Snackbar"/>
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/backdrop">
+          <ListItem button>
+            <ListItemText primary="Backdrop"/>
+          </ListItem>
+        </Link>
+      </List>
 
       <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
         Surfaces
@@ -591,15 +536,6 @@ const NavList = () => {
           </ListItem>
         </Link>
       </List>
-
-      <List component="div" disablePadding>
-        <Link href="/backdrop">
-          <ListItem button>
-            <ListItemText primary="Backdrop"/>
-          </ListItem>
-        </Link>
-      </List>
-
 
     </div>
   )

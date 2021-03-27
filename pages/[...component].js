@@ -42,32 +42,12 @@ import Link from '../src/components/Links/SimpleLinks';
 
 import SimpleMenu from '../src/components/Menus/SimpleMenu';
 import ContextMenu from '../src/components/Menus/ContextMenu';
-
 import Steppers from '../src/components/Stepper/Steppers';
-
 import Tabs from '../src/components/Tabs/Tabs';
-import TabPanel from '../src/components/Tabs/TabPanel';
-import VerticalTab from '../src/components/Tabs/VerticalTab';
-import DisabledTab from '../src/components/Tabs/DisabledTab';
-import PreventScrollButtons from '../src/components/Tabs/PreventScrollButtons';
-import ScrollableTab from '../src/components/Tabs/ScrollableTab';
 
-import CircularIndeterminate from '../src/components/Progress/CircularIndeterminate';
-import CircularDeterminate from '../src/components/Progress/CircularDeterminate';
-import CircularWithValueLabel from '../src/components/Progress/CircularWithValueLabel';
-import LinearIndeterminate from '../src/components/Progress/LinearIndeterminate';
-import LinearDeterminate from '../src/components/Progress/LinearDeterminate';
-import LinearBuffer from '../src/components/Progress/LinearBuffer';
-import LinearWithValueLabel from '../src/components/Progress/LinearWithValueLabel';
-import CustomizedProgressBars from '../src/components/Progress/CustomizedProgressBars';
-import DelayingAppearance from '../src/components/Progress/DelayingAppearance';
-
-import AlertDialog from '../src/components/Dialog/AlertDialog';
-import ConfirmationDialog from '../src/components/Dialog/ConfirmationDialog';
-import DialogActions from '../src/components/Dialog/DialogActions';
-import FormDialog from '../src/components/Dialog/FormDialog';
-import ListItemsDialog from '../src/components/Dialog/ListItemsDialog';
-import ScrollableDialog from '../src/components/Dialog/ScrollableDialog';
+import Progresses from "../src/components/Progress/Progress";
+import Dialogs from "../src/components/Dialog/Dialogs";
+import Snackbars from "../src/components/Snackbar/Snackbars";
 
 import SimpleSnackbar from '../src/components/Snackbar/SimpleSnackbar';
 import CustomizedSnackbars from '../src/components/Snackbar/CustomizedSnackbars';
@@ -106,8 +86,7 @@ import UseMediaQuery from "../src/components/UseMediaQuery/UseMediaQuery"
 
 
 import Backdrop from '../src/components/Backdrop/Backdrop';
-import Progresses from "../src/components/Progress/Progress";
-import Dialogs from "../src/components/Dialog/Dialogs";
+
 
 const PageComponent = () => {
     const router = useRouter()
@@ -159,21 +138,9 @@ const PageComponent = () => {
         {componentName === 'progress' && <Progresses />}
 
         {componentName === 'dialog' && <Dialogs />}
-        {componentName === 'alert_dialog' && <AlertDialog />}
-        {componentName === 'confirmation_dialog' && <ConfirmationDialog />}
-        {componentName === 'form_dialog' && <FormDialog />}
-        {componentName === 'list_items_dialog' && <ListItemsDialog />}
-        {componentName === 'scrollable_dialog' && <ScrollableDialog />}
 
-        {componentName === 'simple_snackbar' && <SimpleSnackbar />}
-        {componentName === 'customized_snackbars' && <CustomizedSnackbars />}
-        {componentName === 'positioned_snackbar' && <PositionedSnackbar />}
-        {componentName === 'transitions_snackbar' && <TransitionsSnackbar />}
-        {componentName === 'consecutive_snackbars' && <ConsecutiveSnackbars />}
-        {componentName === 'direction_snackbar' && <DirectionSnackbar />}
-        {componentName === 'fab_integration_snackbar' && <FabIntegrationSnackbar />}
-        {componentName === 'integration_notistack' && <IntegrationNotistack />}
-        {componentName === 'long_text_snackbar' && <LongTextSnackbar />}
+        {componentName === 'snackbar' && <Snackbars />}
+        {componentName === 'backdrop' && <Backdrop />}
 
         {componentName === 'accordion_surface' && <Accordion />}
         {componentName === 'paper_surface' && <Paper /> }
@@ -208,9 +175,6 @@ const PageComponent = () => {
         {componentName === 'textarea_autosize' && <TextareaAutosize />}
         {componentName === 'transitions' && <Transitions />}
         {componentName === 'use_media_query' && <UseMediaQuery />}
-
-
-        {componentName === 'backdrop' && <Backdrop />}
        
     </div>
 
