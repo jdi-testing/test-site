@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const [text, setText] = React.useState(0);
+  const [text, setText] = React.useState("");
 
   return (
     <div>
