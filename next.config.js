@@ -1,3 +1,3 @@
 module.exports = {
-    basePath: '',
+    basePath: '/jdi-light/material',
   }
