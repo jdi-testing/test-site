@@ -294,13 +294,48 @@ const NavList = () => {
       <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
         Surfaces
       </ListSubheader>
-      <List component="div" disablePadding>
-        <Link href="/appbar_surface">
-          <ListItem button>
-            <ListItemText primary="AppBar"/>
-          </ListItem>
-        </Link>
-      </List>
+      <ListItem button onClick={() => handleClick(15)}>
+        <ListItemText primary="App Bar"/>
+        {checkIfOpen(15) ? <ExpandLess/> : <ExpandMore/>}
+      </ListItem>
+      <Collapse in={checkIfOpen(15)} timeout="auto">
+        <List component="div" disablePadding>
+          <Link href="/appbar_surface">
+            <ListItem button>
+              <ListItemText primary="Simple App Bars"/>
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/appbar_bottom">
+            <ListItem button>
+              <ListItemText primary="Bottom App Bar"/>
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/appbar_scroll_hide">
+            <ListItem button>
+              <ListItemText primary="Hide App Bar"/>
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/appbar_elevate">
+            <ListItem button>
+              <ListItemText primary="Elevate App Bar"/>
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/appbar_back_to_top">
+            <ListItem button>
+              <ListItemText primary="Back to top"/>
+            </ListItem>
+          </Link>
+        </List>
+      </Collapse>
+
       <List component="div" disablePadding>
         <Link href="/accordion_surface">
           <ListItem button>
@@ -368,47 +403,20 @@ const NavList = () => {
           </Link>
         </List>
       </Collapse>
-
-      <ListItem button onClick={() => handleClick(20)}>
-        <ListItemText primary="Icons"/>
-        {checkIfOpen(20) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(20)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/simple_icons">
-            <ListItem button>
-              <ListItemText primary="Simple Icons"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/color_icons">
-            <ListItem button>
-              <ListItemText primary="Icons with different color"/>
-            </ListItem>
-          </Link>
-        </List>
-        <List component="div" disablePadding>
-          <Link href="/size_icons">
-            <ListItem button>
-              <ListItemText primary="Icons with different sizes"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
-      <ListItem button onClick={() => handleClick(21)}>
-        <ListItemText primary="Material Icons"/>
-        {checkIfOpen(21) ? <ExpandLess/> : <ExpandMore/>}
-      </ListItem>
-      <Collapse in={checkIfOpen(21)} timeout="auto">
-        <List component="div" disablePadding>
-          <Link href="/alarm_icon">
-            <ListItem button>
-              <ListItemText primary="Alarm Icon"/>
-            </ListItem>
-          </Link>
-        </List>
-      </Collapse>
+      <List component="div" disablePadding>
+        <Link href="/icons">
+          <ListItem button>
+            <ListItemText primary="Icons"/>
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
+        <Link href="/material_icons">
+          <ListItem button>
+            <ListItemText primary="Material Icons"/>
+          </ListItem>
+        </Link>
+      </List>
       <List component="div" disablePadding>
         <Link href="/simple_list">
           <ListItem button>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
@@ -20,13 +20,28 @@ function HomeIcon(props) {
 
 export default function SvgIconsSize() {
     const classes = useStyles();
+    const [lastClick, setClick] = useState("");
+    const [lastHover, setHover] = useState("");
+
 
     return (
+      <div>
         <div className={classes.root}>
-            <HomeIcon fontSize="small" />
-            <HomeIcon />
-            <HomeIcon fontSize="large" />
-            <HomeIcon style={{ fontSize: 40 }} />
+            <HomeIcon fontSize="small"
+                      onClick={() => setClick("small size")}
+                      onMouseOver={() => setHover("small size")}/>
+            <HomeIcon alt={"default home"}
+                      onClick={() => setClick("default size")}
+                      onMouseOver={() => setHover("default size")}/>
+            <HomeIcon fontSize="large"
+                      onClick={() => setClick("large size")}
+                      onMouseOver={() => setHover("large size")}/>
+            <HomeIcon style={{ fontSize: 40 }}
+                      onClick={() => setClick("40 size")}
+                      onMouseOver={() => setHover("40 size")}/>
         </div>
+        <p id={"sizeLastClick"}>Last click: {lastClick}</p>
+        <p id={"sizeLastHover"}>Last hover: {lastHover}</p>
+      </div>
     );
 }

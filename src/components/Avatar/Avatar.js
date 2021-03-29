@@ -72,7 +72,7 @@ export default function BadgeAvatars() {
             }}
             variant="dot"
         >
-          <Avatar alt="Remy Sharp" src={"/jdi-light/material/img/sample_avatar.jpg"} />
+          <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
         </StyledBadge>
         <Badge
             overlap="circle"
@@ -82,7 +82,7 @@ export default function BadgeAvatars() {
             }}
             badgeContent={<SmallAvatar alt="Remy Sharp" src={AssignmentIcon} />}
         >
-          <Avatar alt="Travis Howard" src={"/jdi-light/material/img/sample_avatar.jpg"} />
+          <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/1.jpg" />
         </Badge>
         <Avatar src="/broken-image" alt="Lorem" />
         <Avatar variant="square" className={classes.square}>

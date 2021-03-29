@@ -30,6 +30,7 @@ export default function VerticalDividers() {
 
     return (
         <div>
+            <h1>Vertical divider</h1>
             <Grid container alignItems="center" className={classes.root}>
                 <FormatAlignLeftIcon />
                 <FormatAlignCenterIcon />

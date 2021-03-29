@@ -1,40 +1,31 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Typography from '@material-ui/core/Typography';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@icons/material/MenuIcon';
-import MButton from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
+import MenuAppBar from "./AppBarMenu";
+import ProminentAppBar from "./ProminentAppBar";
+import ButtonAppBar from "./SimpleAppBar";
+import {makeStyles} from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
+const useStyles = makeStyles((theme) => ({
+  app_root: {
+    display: 'flex',
+    justifyContent: 'center',
+    position: 'relative'
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
+
 }));
 
-
-export default function BuildAppBar(props) {
-    const classes = useStyles();
-
+export default function BuildAppBar() {
+  const classes = useStyles();
 
     return (
-    <AppBar {...props}>
-      <Toolbar>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
-        <Typography variant="h6" className={classes.title}>
-          News
-        </Typography>
-        <MButton color="inherit">Login</MButton>
-      </Toolbar>
-    </AppBar>
+    <div>
+      <h1>App Bar</h1>
+      <h2>Simple App bar</h2>
+      <ButtonAppBar id={"simpleAppBar"} />
+      <h2>App Bar with menu</h2>
+      <MenuAppBar id={"menuAppBar"} />
+      <h2>Prominent App Bar</h2>
+      <ProminentAppBar id={"prominentAppBar"} />
+
+    </div>
     );
 }

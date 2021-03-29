@@ -22,6 +22,8 @@ export default function InsetDividers() {
     const classes = useStyles();
 
     return (
+      <div>
+        <h1>Inset divider</h1>
         <List className={classes.root}>
             <ListItem>
                 <ListItemAvatar>
@@ -50,5 +52,6 @@ export default function InsetDividers() {
                 <ListItemText primary="Vacation" secondary="July 20, 2014" />
             </ListItem>
         </List>
+      </div>
     );
 }

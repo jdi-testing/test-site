@@ -3,7 +3,7 @@ import BasicButtonGroup from "./BasicButtonGroup";
 import GroupOrientation from "./VerticalButtonGroup";
 import SplitButton from "./SplitButton";
 
-export default function Buttons(...args) {
+export default function ButtonGroups(...args) {
   return (
     <div>
       <h1>Button Groups</h1>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
 import SvgIcon from '@material-ui/core/SvgIcon';
@@ -21,15 +21,28 @@ function HomeIcon(props) {
 
 export default function SvgIconsColor() {
     const classes = useStyles();
+    const [lastClick, setClick] = useState("");
+    const [lastHover, setHover] = useState("");
 
     return (
+      <div>
         <div className={classes.root}>
-            <HomeIcon />
-            <HomeIcon color="primary" />
-            <HomeIcon color="secondary" />
-            <HomeIcon color="action" />
-            <HomeIcon color="disabled" />
-            <HomeIcon style={{ color: green[500] }} />
+            <HomeIcon onClick={() => setClick("default")}
+                      onMouseOver={() => setHover("default")}/>
+            <HomeIcon color="primary" onClick={() => setClick("primary")}
+                      onMouseOver={() => setHover("primary")}/>
+            <HomeIcon color="secondary"
+                      onClick={() => setClick("secondary")}
+                      onMouseOver={() => setHover("secondary")}/>
+            <HomeIcon color="action" onClick={() => setClick("action")}
+                      onMouseOver={() => setHover("action")}/>
+            <HomeIcon color="disabled" onClick={() => setClick("disabled")}
+                      onMouseOver={() => setHover("disabled")}/>
+            <HomeIcon style={{ color: green[500] }} onClick={() => setClick("green[500]")}
+                      onMouseOver={() => setHover("green[500]")}/>
         </div>
+        <p id={"colorLastClick"}>Last click: {lastClick}</p>
+        <p id={"colorLastHover"}>Last hover: {lastHover}</p>
+      </div>
     );
 }

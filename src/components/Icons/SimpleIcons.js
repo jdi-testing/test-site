@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -24,52 +24,71 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SvgMaterialIcons() {
     const classes = useStyles();
+    const [lastClick, setClick] = useState("");
+    const [lastHover, setHover] = useState("");
 
     return (
+      <div>
         <Grid container className={classes.root}>
             <Grid item xs={4}>
                 <Typography>Filled</Typography>
             </Grid>
             <Grid item xs={8}>
-                <DeleteIcon />
-                <DeleteForeverIcon />
+                <DeleteIcon onClick={() => setClick("DeleteIcon")}
+                            onMouseOver={() => setHover("DeleteIcon")}/>
+                <DeleteForeverIcon onClick={() => setClick("DeleteForeverIcon")}
+                                   onMouseOver={() => setHover("DeleteForeverIcon")}/>
             </Grid>
             <Grid item xs={4}>
                 <Typography>Outlined</Typography>
             </Grid>
             <Grid item xs={8}>
-                <DeleteOutlinedIcon />
-                <DeleteForeverOutlinedIcon />
+                <DeleteOutlinedIcon onClick={() => setClick("DeleteOutlinedIcon")}
+                                    onMouseOver={() => setHover("DeleteOutlinedIcon")}/>
+                <DeleteForeverOutlinedIcon onClick={() => setClick("DeleteForeverOutlinedIcon")}
+                                           onMouseOver={() => setHover("DeleteForeverOutlinedIcon")}/>
             </Grid>
             <Grid item xs={4}>
                 <Typography>Rounded</Typography>
             </Grid>
             <Grid item xs={8}>
-                <DeleteRoundedIcon />
-                <DeleteForeverRoundedIcon />
+                <DeleteRoundedIcon onClick={() => setClick("DeleteRoundedIcon")}
+                                   onMouseOver={() => setHover("DeleteRoundedIcon")}/>
+                <DeleteForeverRoundedIcon onClick={() => setClick("DeleteForeverRoundedIcon")}
+                                          onMouseOver={() => setHover("DeleteForeverRoundedIcon")}/>
             </Grid>
             <Grid item xs={4}>
                 <Typography>Two Tone</Typography>
             </Grid>
             <Grid item xs={8}>
-                <DeleteTwoToneIcon />
-                <DeleteForeverTwoToneIcon />
+                <DeleteTwoToneIcon onClick={() => setClick("DeleteTwoToneIcon")}
+                                   onMouseOver={() => setHover("DeleteTwoToneIcon")}/>
+                <DeleteForeverTwoToneIcon onClick={() => setClick("DeleteForeverTwoToneIcon")}
+                                          onMouseOver={() => setHover("DeleteForeverTwoToneIcon")}/>
             </Grid>
             <Grid item xs={4}>
                 <Typography>Sharp</Typography>
             </Grid>
             <Grid item xs={8}>
-                <DeleteSharpIcon />
-                <DeleteForeverSharpIcon />
+                <DeleteSharpIcon onClick={() => setClick("DeleteSharpIcon")}
+                                 onMouseOver={() => setHover("DeleteSharpIcon")}/>
+                <DeleteForeverSharpIcon onClick={() => setClick("DeleteForeverSharpIcon")}
+                                        onMouseOver={() => setHover("DeleteForeverSharpIcon")}/>
             </Grid>
             <Grid item xs={4}>
                 <Typography>Edge-cases</Typography>
             </Grid>
             <Grid item xs={8}>
-                <ThreeDRotationIcon />
-                <FourKIcon />
-                <ThreeSixtyIcon />
+                <ThreeDRotationIcon onClick={() => setClick("ThreeDRotationIcon")}
+                                    onMouseOver={() => setHover("ThreeDRotationIcon")}/>
+                <FourKIcon onClick={() => setClick("FourKIcon")}
+                           onMouseOver={() => setHover("FourKIcon")}/>
+                <ThreeSixtyIcon onClick={() => setClick("ThreeSixtyIcon")}
+                                onMouseOver={() => setHover("ThreeSixtyIcon")}/>
             </Grid>
         </Grid>
+        <p id={"simpleLastClick"}>Last click: {lastClick}</p>
+        <p id={"simpleLastHover"}>Last hover: {lastHover}</p>
+      </div>
     );
 }

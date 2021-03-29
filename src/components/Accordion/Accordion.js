@@ -31,6 +31,7 @@ export default function AccordionSurface() {
 
     return (
         <div className={classes.root}>
+            <h1>Accordion</h1>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
