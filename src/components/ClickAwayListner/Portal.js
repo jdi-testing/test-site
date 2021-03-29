@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     backgroundColor: theme.palette.background.paper,
   },
-}));
+  }));
 
 export default function PortalClickAway() {
   const classes = useStyles();
