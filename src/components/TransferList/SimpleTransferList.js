@@ -102,7 +102,7 @@ export default function SimpleTransferList() {
 
     return (
       <div>
-          <h1>Simple Transfer list</h1>
+          <h1>Simple Transfer List</h1>
           <Grid container spacing={2} justify="center" alignItems="center" className={classes.root}>
               <Grid item>{customList(left)}</Grid>
               <Grid item>

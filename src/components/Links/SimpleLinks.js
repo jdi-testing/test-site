@@ -21,11 +21,14 @@ export default function Links() {
         <Link href="#link1" >
           Link
         </Link>
-        <Link href="#link2" color="inherit">
+        <Link href="#link2" color="inherit" >
           {'color="inherit"'}
         </Link>
         <Link href="#link3" variant="body2">
           {'variant="body2"'}
+        </Link>
+        <Link href="#link4" underline={"always"}>
+          Underlined link4
         </Link>
       </Typography>
       <br/>
@@ -34,6 +37,7 @@ export default function Links() {
       <Typography id={"link1"}>Link1</Typography>
       <Typography id={"link2"}>Link2</Typography>
       <Typography id={"link3"}>Link3</Typography>
+      <Typography id={"link4"}>Link4</Typography>
     </div>
   );
 }

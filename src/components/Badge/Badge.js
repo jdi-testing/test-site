@@ -46,9 +46,10 @@ export default function BadgeVisibility() {
           <Badge badgeContent={4} color="primary" id="primaryColorBadge">
               <MailIcon />
           </Badge>
-            <Badge badgeContent={4} color="error" id="errorColorBadge">
-                <MailIcon />
-            </Badge>
+
+          <Badge badgeContent={4} color="error" id="errorColorBadge">
+              <MailIcon />
+          </Badge>
         </div>
         <div>
           <Badge color="secondary" badgeContent={count} max={10} showZero={showZero} id="secondaryColorBadge">
@@ -85,6 +86,39 @@ export default function BadgeVisibility() {
               control={<Switch color="primary" checked={!invisible} onChange={handleBadgeVisibility} />}
               label="Show Badge"
           />
+        </div>
+        <div>
+          <Badge badgeContent={-1} color="primary" anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+          >
+            <MailIcon />
+          </Badge>
+          <Badge badgeContent={5} color="primary"
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'right',
+            }}
+          >
+            <MailIcon />
+          </Badge>
+          <Badge badgeContent={6} color="primary"
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+          >
+            <MailIcon />
+          </Badge>
+          <Badge badgeContent={7} color="primary"
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+          >
+            <MailIcon />
+          </Badge>
         </div>
       </div>
   );

@@ -85,6 +85,7 @@ export default function BadgeAvatars() {
           <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/1.jpg" />
         </Badge>
         <Avatar src="/broken-image" alt="Lorem" />
+        <Avatar src="/broken-image" />
         <Avatar variant="square" className={classes.square}>
           A
         </Avatar>

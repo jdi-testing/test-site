@@ -15,6 +15,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import SimpleCard from "./SimpleCard";
+import OutlinedCard from "./OutlinedCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,6 +65,11 @@ export default function RecipeReviewCard() {
   return (
     <div>
       <h1>Card</h1>
+      <h2>Simple Card</h2>
+      <SimpleCard id={"simpleCard"} />
+      <h2>Outlined Card</h2>
+      <OutlinedCard id={"outlinedCard"} />
+      <h2>Complex Interaction</h2>
       <Card className={classes.root}>
         <CardHeader
           avatar={

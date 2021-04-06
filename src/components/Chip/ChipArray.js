@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
@@ -28,11 +28,18 @@ export default function ChipsArray() {
     { key: 4, label: 'Vue.js' },
   ]);
 
+  const [lastClick, setClick] = useState("");
+
+  const handleClick = (event) => {
+    setClick(event.target.textContent);
+  };
+
   const handleDelete = (chipToDelete) => () => {
     setChipData((chips) => chips.filter((chip) => chip.key !== chipToDelete.key));
   };
 
   return (
+    <div>
     <Paper component="ul" className={classes.root}>
       {chipData.map((data) => {
         let icon;
@@ -46,6 +53,7 @@ export default function ChipsArray() {
             <Chip
               icon={icon}
               label={data.label}
+              onClick={(event) => handleClick(event)}
               onDelete={data.label === 'React' ? undefined : handleDelete(data)}
               className={classes.chip}
             />
@@ -53,5 +61,7 @@ export default function ChipsArray() {
         );
       })}
     </Paper>
+      <p id={"lastChipArrayClickInfo"}>You clicked on: {lastClick}</p>
+    </div>
   );
 }

@@ -12,6 +12,7 @@ import EnhancedTable from "./SortingTable";
 import CollapsibleTable from "./CollapsibleTable";
 import SpanningTable from "./SpanningTable";
 import ReactVirtualizedTable from "./VirtualizedTable";
+import DenseTable from "./DenseTable";
 
 const useStyles = makeStyles({
   table: {
@@ -113,6 +114,8 @@ export default function DataTable(props) {
       <div style={{ height: 400, width: '100%' }}>
         <DataGrid id="dataTable" rows={dataRows} columns={columns} pageSize={5} checkboxSelection />
       </div>
+      <h2>Dense table</h2>
+      <DenseTable id={"denseTable"} />
       <h2>Sorting and selecting table</h2>
       <EnhancedTable id={"sortingTable"}/>
       <h2>Collapsible table</h2>

@@ -23,6 +23,7 @@ import Switch from '@material-ui/core/Switch';
 import WifiIcon from '@material-ui/icons/Wifi';
 import BluetoothIcon from '@material-ui/icons/Bluetooth';
 import CommentIcon from '@material-ui/icons/Comment';
+import SimpleList from "./SimpleList";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -93,6 +94,8 @@ export default function Lists() {
   return (
     <div>
       <h1>Lists</h1>
+      <h2>Simple List</h2>
+      <SimpleList id={"simpleList"} />
       <div className={classes.root}>
         <FormGroup row>
           <FormControlLabel
@@ -201,7 +204,7 @@ export default function Lists() {
             </div>
           </Grid>
         </Grid>
-        <h2>Selected list</h2>
+        <h2>Selected List</h2>
         <List component="nav" aria-label="main mailbox folders" id={"selectedList"}>
           <ListItem
             button
@@ -241,7 +244,7 @@ export default function Lists() {
             <ListItemText primary="Spam" />
           </ListItem>
         </List>
-        <h2>CheckBox list</h2>
+        <h2>Checkbox List</h2>
         <List className={classes.root}>
           {[0, 1, 2, 3].map((value) => {
             const labelId = `checkbox-list-label-${value}`;
@@ -267,7 +270,7 @@ export default function Lists() {
             );
           })}
         </List>
-        <h2>List with switch</h2>
+        <h2>List with Switch</h2>
         <List subheader={<ListSubheader>Settings</ListSubheader>} className={classes.root}>
           <ListItem>
             <ListItemIcon>

@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
+import withWidth from '@material-ui/core/withWidth';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function BreakpointDown(props) {
+function BreakpointDown(props) {
   const classes = useStyles();
   const { width } = props;
 
@@ -55,3 +56,5 @@ export default function BreakpointDown(props) {
 BreakpointDown.propTypes = {
   width: PropTypes.oneOf(['lg', 'md', 'sm', 'xl', 'xs']).isRequired,
 };
+
+export default withWidth()(BreakpointDown);

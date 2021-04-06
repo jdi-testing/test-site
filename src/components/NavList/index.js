@@ -56,7 +56,7 @@ const NavList = () => {
       <List component="div" disablePadding>
         <Link href="/checkboxes">
           <ListItem button>
-            <ListItemText primary="Checkboxes"/>
+            <ListItemText primary="Checkbox"/>
           </ListItem>
         </Link>
       </List>
@@ -92,7 +92,7 @@ const NavList = () => {
       <List component="div" disablePadding>
         <Link href="/sliders">
           <ListItem button>
-            <ListItemText primary="Sliders"/>
+            <ListItemText primary="Slider"/>
           </ListItem>
         </Link>
       </List>
@@ -100,7 +100,7 @@ const NavList = () => {
       <List component="div" disablePadding>
         <Link href="/basic_switches">
           <ListItem button>
-            <ListItemText primary="Switches"/>
+            <ListItemText primary="Switch"/>
           </ListItem>
         </Link>
       </List>
@@ -128,7 +128,7 @@ const NavList = () => {
         <List component="div" disablePadding>
           <Link href="/enhanced_transfer_list">
             <ListItem button>
-              <ListItemText primary="Enhanced transfer list"/>
+              <ListItemText primary="Enhanced Transfer List"/>
             </ListItem>
           </Link>
         </List>
@@ -175,6 +175,13 @@ const NavList = () => {
           <Link href="/temporary_drawer">
             <ListItem button>
               <ListItemText primary="Temporary Drawer"/>
+            </ListItem>
+          </Link>
+        </List>
+        <List component="div" disablePadding>
+          <Link href="/swipeable_drawer">
+            <ListItem button>
+              <ListItemText primary="Swipeable Drawer"/>
             </ListItem>
           </Link>
         </List>

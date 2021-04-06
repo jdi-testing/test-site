@@ -80,7 +80,7 @@ export default function FormPropsTextFields() {
 
   return (
     <div>
-      <h1>TextFields</h1>
+      <h1>Text Fields</h1>
       <h2>Form props</h2>
       <form className={classes.root} noValidate autoComplete="off" id={"formProps"}>
         <div>
@@ -116,6 +116,7 @@ export default function FormPropsTextFields() {
             helperText="Some important text"
           />
         </div>
+        <h2>Validation</h2>
         <div>
           <TextField
             error
@@ -133,6 +134,7 @@ export default function FormPropsTextFields() {
             variant="filled"
           />
         </div>
+        <h2>Multiline</h2>
         <div>
           <TextField
             id="outlined-multiline-flexible"
@@ -159,6 +161,7 @@ export default function FormPropsTextFields() {
             variant="outlined"
           />
         </div>
+        <h2>Select</h2>
         <div>
           <TextField
             id="outlined-select-currency"
@@ -194,6 +197,7 @@ export default function FormPropsTextFields() {
             ))}
           </TextField>
         </div>
+        <h2>Input Adornments</h2>
         <div>
           <TextField
             label="With normal TextField"

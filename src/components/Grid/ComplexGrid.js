@@ -36,7 +36,7 @@ export default function ComplexGrid() {
         <Grid container spacing={2} id={"complexGrid"}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
+              <img className={classes.img} alt="complex" src="https://material-ui.com/static/images/grid/complex.jpg" />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>

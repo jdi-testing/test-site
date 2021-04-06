@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -18,17 +18,22 @@ function ListItemLink(props) {
 
 export default function SimpleList() {
   const classes = useStyles();
+  const [lastClick, setClick] = useState("");
+  const handleClick = (event) => {
+    setClick(event.target.textContent);
+  };
 
   return (
     <div className={classes.root}>
       <List component="nav" aria-label="List items">
         <ListItem button>
-          <ListItemText primary="List item 1" />
+          <ListItemText primary="List item 1" onClick={(event => {handleClick(event)})}/>
         </ListItem>
         <ListItemLink button>
-          <ListItemText primary="List item 2" />
+          <ListItemText primary="List item 2" onClick={(event => {handleClick(event)})}/>
         </ListItemLink>
       </List>
+      <p id={"lastClickInfo"}>You clicked on: {lastClick}</p>
     </div>
   );
 }

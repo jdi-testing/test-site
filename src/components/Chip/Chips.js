@@ -4,6 +4,8 @@ import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 import FaceIcon from '@material-ui/icons/Face';
 import DoneIcon from '@material-ui/icons/Done';
+import OutlinedChips from "./OutlinedChips";
+import ChipsArray from "./ChipArray";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +30,8 @@ export default function Chips(args) {
 
   return (
     <div>
-      <h1>Chips</h1>
+      <h1>Chip</h1>
+      <h2>Chip</h2>
       <div className={classes.root}>
         <Chip label="Basic" />
         <Chip label="Disabled" disabled />
@@ -82,6 +85,12 @@ export default function Chips(args) {
       </div>
       <p id={"lastClickInfo"}>You clicked on: {lastClick}</p>
       <p id={"lastDeleteInfo"}>You delete : {lastDelete}</p>
+
+      <h2>Outlined Chips</h2>
+      <OutlinedChips id={"outlinedChips"}/>
+      <h2>Chip array</h2>
+      <ChipsArray id={"chipsArray"}/>
+
       <p id="chip">Clickable link paragraph</p>
     </div>
   );

@@ -11,7 +11,7 @@ export default function ButtonGroups(...args) {
       <BasicButtonGroup id={"basicBtnGroups"} />
       <h2>Vertical button groups</h2>
       <GroupOrientation id={"verticalBtnGroups"} />
-      <h2>Buttons with icons and label</h2>
+      <h2>Split button</h2>
       <SplitButton id={"splitBtnGroups"} />
     </div>
   );

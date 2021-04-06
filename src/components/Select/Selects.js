@@ -20,7 +20,7 @@ export default function Selects(...args) {
       <MultipleSelect id={"multipleSelect"} />
       <h2>Grouping select</h2>
       <GroupedSelect id={"groupedSelect"} />
-      <h2>Controlles open select</h2>
+      <h2>Controlled open select</h2>
       <ControlledOpenSelect id={"controlledOpenSelect"} />
     </div>
   );

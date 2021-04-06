@@ -127,7 +127,7 @@ export default function EnhancedTransferListView() {
 
     return (
       <div>
-        <h1>Enhanced Transfer list</h1>
+        <h1>Enhanced Transfer List</h1>
         <Grid container spacing={2} justify="center" alignItems="center" className={classes.root}>
             <Grid item>{customList('Choices', left)}</Grid>
             <Grid item>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
@@ -19,71 +19,82 @@ const useStyles = makeStyles((theme) => ({
 export default function OutlinedChips(args) {
   const classes = useStyles();
 
-  const handleDelete = () => {
-    console.info('You clicked the delete icon.');
-  };
+  const [lastClick, setClick] = useState("");
+  const [lastDelete, setDelete] = useState("");
 
-  const handleClick = () => {
-    console.info('You clicked the Chip.');
+  const handleClick = (event) => {
+    setClick(event.target.textContent);
   };
 
   return (
-    <div className={classes.root}>
-      <Chip label="Basic" variant="outlined" />
-      <Chip label="Disabled" disabled variant="outlined" />
-      <Chip
-        avatar={<Avatar>M</Avatar>}
-        label="Clickable"
-        onClick={handleClick}
-        variant="outlined"
-      />
-      <Chip
-        avatar={<Avatar {...args}>{args.children}</Avatar>}
-        label="Deletable"
-        onDelete={handleDelete}
-        variant="outlined"
-      />
-      <Chip
-        icon={<FaceIcon />}
-        label="Clickable deletable"
-        onClick={handleClick}
-        onDelete={handleDelete}
-        variant="outlined"
-      />
-      <Chip
-        label="Custom delete icon"
-        onClick={handleClick}
-        onDelete={handleDelete}
-        deleteIcon={<DoneIcon />}
-        variant="outlined"
-      />
-      <Chip label="Clickable link" component="a" href="#chip" clickable variant="outlined" />
-      <Chip
-        avatar={<Avatar>M</Avatar>}
-        label="Primary clickable"
-        clickable
-        color="primary"
-        onDelete={handleDelete}
-        deleteIcon={<DoneIcon />}
-        variant="outlined"
-      />
-      <Chip
-        icon={<FaceIcon />}
-        label="Primary clickable"
-        clickable
-        color="primary"
-        onDelete={handleDelete}
-        deleteIcon={<DoneIcon />}
-        variant="outlined"
-      />
-      <Chip label="Deletable primary" onDelete={handleDelete} color="primary" variant="outlined" />
-      <Chip
-        icon={<FaceIcon />}
-        label="Deletable secondary"
-        onDelete={handleDelete}
-        color="secondary"
-        variant="outlined"
-      />
+    <div>
+      <div className={classes.root}>
+        <Chip label="Basic" variant="outlined" onClick={(event) => handleClick(event)}/>
+        <Chip label="Disabled" disabled variant="outlined" onClick={(event) => handleClick(event)}/>
+        <Chip
+          avatar={<Avatar>M</Avatar>}
+          label="Clickable"
+          onClick={(event) => handleClick(event)}
+          variant="outlined"
+        />
+        <Chip
+          avatar={<Avatar {...args}>{args.children}</Avatar>}
+          label="Deletable"
+          onClick={(event) => handleClick(event)}
+          onDelete={() => setDelete("Deletable")}
+          variant="outlined"
+        />
+        <Chip
+          icon={<FaceIcon />}
+          label="Clickable deletable"
+          onClick={(event) => handleClick(event)}
+          onDelete={() => setDelete("Clickable deletable")}
+          variant="outlined"
+        />
+        <Chip
+          label="Custom delete icon"
+          onClick={(event) => handleClick(event)}
+          onDelete={() => setDelete("Custom delete icon")}
+          deleteIcon={<DoneIcon />}
+          variant="outlined"
+        />
+        <Chip label="Clickable link" component="a" href="#chip" clickable variant="outlined" />
+        <Chip
+          avatar={<Avatar>M</Avatar>}
+          label="Primary clickable"
+          clickable
+          color="primary"
+          onClick={(event) => handleClick(event)}
+          onDelete={() => setDelete("Primary clickable")}
+          deleteIcon={<DoneIcon />}
+          variant="outlined"
+        />
+        <Chip
+          icon={<FaceIcon />}
+          label="Primary clickable with face"
+          clickable
+          color="primary"
+          onClick={(event) => handleClick(event)}
+          onDelete={() => setDelete("Primary clickable with face")}
+          deleteIcon={<DoneIcon />}
+          variant="outlined"
+        />
+        <Chip label="Deletable primary"
+              onClick={(event) => handleClick(event)}
+              onDelete={() => setDelete("Deletable primary")}
+              color="primary"
+              variant="outlined" />
+        <Chip
+          icon={<FaceIcon />}
+          label="Deletable secondary"
+          onClick={(event) => handleClick(event)}
+          onDelete={() => setDelete("Deletable secondary")}
+          color="secondary"
+          variant="outlined"
+        />
+      </div>
+      <p id={"lastOutlinedClickInfo"}>You clicked on: {lastClick}</p>
+      <p id={"lastOutlinedDeleteInfo"}>You delete : {lastDelete}</p>
     </div>
   );
 }

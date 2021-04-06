@@ -15,10 +15,11 @@ export default function DatePickers(args) {
         <h2>Date and time pickers</h2>
         <MaterialUIPickers id={"materialUIDateTimePickers"} />
         <h2>Native pickers</h2>
+        <h3>Datepickers</h3>
         <NativeDatePickers id={"nativeDatePickers"} />
-        <h2>Date & Time pickers</h2>
+        <h3>Date & Time pickers</h3>
         <DateAndTimePickers id={"dateTimePickers"} />
-        <h2>Time pickers</h2>
+        <h3>Time pickers</h3>
         <TimePickers id={"timePickers"} />
       </div>
   );
