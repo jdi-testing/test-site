@@ -29,6 +29,7 @@ function BreakpointDown(props) {
 
   return (
     <div className={classes.root}>
+      <h1>Hidden</h1>
       <Typography variant="subtitle1">
         Current width: {width}
       </Typography>
