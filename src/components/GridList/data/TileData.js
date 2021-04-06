@@ -10,7 +10,7 @@ export const tileData = [
     author: 'author2',
   },
   {
-    img: '/jdi-light/jdi-light/material/img/gridlist/data/hats.jpg',
+    img: '/jdi-light/material/img/gridlist/data/hats.jpg',
     title: 'hats',
     author: 'author3',
   },
