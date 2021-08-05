@@ -1,8 +1,6 @@
 <template>
   <v-container>
     <img alt="JDI logo" src="../assets/jdi_logo.png">
-    <img alt="Vue logo" src="../assets/logo_vuetify.png">
-
     <v-row class="text-center">
 
       <v-col class="mb-4">

@@ -20,5 +20,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 
+Для деплоя на продакшн - делаем билд и копируем файлы из папки 'dist'(из этого проекта test-site) в папку 'vuetify'(в проект jdi-light, ветка gh-pages-vuetify), далее пулл реквест gh-pages-vuetify к ветке gh-pages
