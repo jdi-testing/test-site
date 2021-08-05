@@ -11,7 +11,9 @@ env:
     - TARGET_JDI_LIGHT_BRANCH="gh-pages"
 
 stages:
-  - tests
+  - test
+  - lint
+
 
 jobs:
   include:
@@ -19,8 +21,12 @@ jobs:
       name: Run tests
       script:
         - echo "Test stage goes here, right now tests are considered passed by default"
-        - npm install && npm build --prod
+        - npm install && npm run build
 
+    - stage: lint
+      name: Check for linting errors
+      script:
+        - npm run lint
 after_failure:
   - echo "Build has failed"
 after_script:

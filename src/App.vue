@@ -1,6 +1,6 @@
  <template>
   <v-app>
-    
+
     <v-navigation-drawer permanent app>
       <v-list-item>
         <v-list-item-content>
@@ -13,7 +13,7 @@
         dense
         nav
       >
-        <div 
+        <div
           v-for="item in nav_items"
           :key="item.title"
         >
@@ -40,6 +40,7 @@
             v-for="subitem in item.subitems"
             :key="subitem.title"
             link
+            :to="subitem.link"
             >
               <v-list-item-title v-text="subitem.title"></v-list-item-title>
             </v-list-item>
@@ -65,100 +66,117 @@ export default {
     return {
       nav_items: [
         { title: 'Alerts', link: '/alerts' },
-        { title: 'Application', link: '' },
-        { title: 'Aspect ratios', link: '/aspect_ratios' },
+        { title: 'Application', link: '/application' },
+        { title: 'Aspect ratios', link: '/aspect-ratios' },
         { title: 'Avatars', link: '/avatars' },
         { title: 'Badges', link: '/badges' },
-        { title: 'Banners', link: '' },
-        { title: 'Bars', link: '', 
-          subitems : [
-            { title: 'App bars', link: '' },
-            { title: 'Toolbars', link: '' },
-            { title: 'System bars', link: '' }
-          ]},
-        { title: 'Buttom navigation', link: '' },
-        { title: 'Bottom sheets', link: '' },
-        { title: 'Breadcumbs', link: '' },
-        { title: 'Buttons', link: '' },
-        { title: 'Buttons: Floating Action Button', link: '' },
-        { title: 'Calendars', link: '' },
-        { title: 'Cards', link: '' },
-        { title: 'Carousels', link: '' },
-        { title: 'Chips', link: '' },
-        { title: 'Dialogs', link: '' },
-        { title: 'Dividers', link: '' },
-        { title: 'Expansion panels', link: '' },
-        { title: 'Footers', link: '' },
-        { title: 'Form input & controls', link: '',
+        { title: 'Banners', link: '/banners' },
+        {
+          title: 'Bars',
+          link: '',
           subitems: [
-            { title: 'Autocompletes', link: '' },
-            { title: 'Checkboxes', link: '' },
-            { title: 'Combobox', link: '' },
-            { title: 'File inputs', link: '' },
-            { title: 'Forms', link: '' },
-            { title: 'Inputs', link: '' },
-            { title: 'Overflow buttons', link: '' },
-            { title: 'Radio buttons', link: '' },
-            { title: 'Range Sliders', link: '' },
-            { title: 'Selects', link: '' },
-            { title: 'Sliders', link: '' },
-            { title: 'Switches', link: '' },
-            { title: 'Textareas', link: '' },
-            { title: 'Text fields', link: '' },
-          ]},
-        { title: 'Grid system', link: '' },
-        { title: 'Groups', link: '',
+            { title: 'App bars', link: '/app-bars' },
+            { title: 'Toolbars', link: '/toolbars' },
+            { title: 'System bars', link: '/system-bars' },
+          ],
+        },
+        { title: 'Buttom navigation', link: '/buttom-navigation' },
+        { title: 'Bottom sheets', link: '/bottom-sheets' },
+        { title: 'Breadcumbs', link: '/breadcumbs' },
+        { title: 'Buttons', link: '/buttons' },
+        { title: 'Buttons: Floating Action Button', link: '/floating-action-button' },
+        { title: 'Calendars', link: '/calendars' },
+        { title: 'Cards', link: '/cards' },
+        { title: 'Carousels', link: '/carousels' },
+        { title: 'Chips', link: '/chips' },
+        { title: 'Dialogs', link: '/dialogs' },
+        { title: 'Dividers', link: '/dividers' },
+        { title: 'Expansion panels', link: '/expansion-panels' },
+        { title: 'Footers', link: '/footers' },
+        {
+          title: 'Form input & controls',
+          link: '',
           subitems: [
-            { title: 'Button groups', link: '' },
-            { title: 'Chip groups', link: '' },
-            { title: 'Item groups', link: '' },
-            { title: 'List item groups', link: '' },
-            { title: 'Slide groups', link: '' },
-            { title: 'Windows', link: '' },
-          ]},
-        { title: 'Hover', link: '' },
-        { title: 'Icons', link: '' },
-        { title: 'Images', link: '' },
-        { title: 'Lazy', link: '' },
-        { title: 'Lists', link: '' },
-        { title: 'Menus', link: '' },
-        { title: 'Navigation drawers', link: '' },
-        { title: 'Overlays', link: '' },
-        { title: 'Pagination', link: '' },
-        { title: 'Parallax', link: '' },
-        { title: 'Pickers', link: '',
+            { title: 'Autocompletes', link: '/autocompletes' },
+            { title: 'Checkboxes', link: '/checkboxes' },
+            { title: 'Combobox', link: '/combobox' },
+            { title: 'File inputs', link: '/file-inputs' },
+            { title: 'Forms', link: '/forms' },
+            { title: 'Inputs', link: '/inputs' },
+            { title: 'Overflow buttons', link: '/overflow-buttons' },
+            { title: 'Radio buttons', link: '/radio-buttons' },
+            { title: 'Range Sliders', link: '/range-sliders' },
+            { title: 'Selects', link: '/selects' },
+            { title: 'Sliders', link: '/sliders' },
+            { title: 'Switches', link: '/switches' },
+            { title: 'Textareas', link: '/textareas' },
+            { title: 'Text fields', link: '/text-fields' },
+          ],
+        },
+        { title: 'Grid system', link: '/grid-system' },
+        {
+          title: 'Groups',
+          link: '',
           subitems: [
-            { title: 'Color pickers', link: '' },
-            { title: 'Date pickers', link: '' },
-            { title: 'Date pickers - month', link: '' },
-            { title: 'Time pickers', link: '' },
-          ]},
-        { title: 'Progress', link: '',
+            { title: 'Button groups', link: '/button-groups' },
+            { title: 'Chip groups', link: '/chip-groups' },
+            { title: 'Item groups', link: '/item-groups' },
+            { title: 'List item groups', link: '/list-item-groups' },
+            { title: 'Slide groups', link: '/slide-groups' },
+            { title: 'Windows', link: '/windows' },
+          ],
+        },
+        { title: 'Hover', link: '/hover' },
+        { title: 'Icons', link: '/icons' },
+        { title: 'Images', link: '/images' },
+        { title: 'Lazy', link: '/lazy' },
+        { title: 'Lists', link: '/lists' },
+        { title: 'Menus', link: '/menus' },
+        { title: 'Navigation drawers', link: '/navigation-drawers' },
+        { title: 'Overlays', link: '/overlays' },
+        { title: 'Pagination', link: '/pagination' },
+        { title: 'Parallax', link: '/parallax' },
+        {
+          title: 'Pickers',
+          link: '',
           subitems: [
-            { title: 'Progress circular', link: '' },
-            { title: 'Progress linear', link: '' },
-          ]},
-        { title: 'Ratings', link: '' },
-        { title: 'Sheets', link: '' },
-        { title: 'Skeleton loaders', link: '' },
-        { title: 'Snackbars', link: '' },
-        { title: 'Sparklines', link: '' },
-        { title: 'Steppers', link: '' },
-        { title: 'Subheaders', link: '' },
-        { title: 'Tables', link: '',
+            { title: 'Color pickers', link: '/color-pickers' },
+            { title: 'Date pickers', link: '/date-pickers' },
+            { title: 'Date pickers - month', link: '/date-pickers-month' },
+            { title: 'Time pickers', link: '/time-pickers' },
+          ],
+        },
+        {
+          title: 'Progress',
+          link: '',
           subitems: [
-            { title: 'Data iterators', link: '' },
-            { title: 'Simple tables', link: '' },
-            { title: 'Data tables', link: '' },
-          ]},
-        { title: 'Tabs', link: '' },
-        { title: 'Timelines', link: '' },
-        { title: 'Tooltips', link: '' },
-        { title: 'Treeview', link: '' },
-        { title: 'Virtual scroller', link: '' },
-      ]
-    }
-  }
+            { title: 'Progress circular', link: '/progress-circular' },
+            { title: 'Progress linear', link: '/progress-linear' },
+          ],
+        },
+        { title: 'Ratings', link: '/ratings' },
+        { title: 'Sheets', link: '/sheets' },
+        { title: 'Skeleton loaders', link: '/skeleton-loaders' },
+        { title: 'Snackbars', link: '/snackbars' },
+        { title: 'Sparklines', link: '/sparklines' },
+        { title: 'Steppers', link: '/steppers' },
+        { title: 'Subheaders', link: '/subheaders' },
+        {
+          title: 'Tables',
+          link: '/tables',
+          subitems: [
+            { title: 'Data iterators', link: '/data-iterators' },
+            { title: 'Simple tables', link: '/simple-tables' },
+            { title: 'Data tables', link: '/data-tables' },
+          ],
+        },
+        { title: 'Tabs', link: '/tabs' },
+        { title: 'Timelines', link: '/timelines' },
+        { title: 'Tooltips', link: '/tooltips' },
+        { title: 'Treeview', link: '/treeview' },
+        { title: 'Virtual scroller', link: '/virtual-scroller' },
+      ],
+    };
+  },
 };
 </script>
-
