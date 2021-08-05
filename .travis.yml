@@ -11,8 +11,7 @@ env:
     - TARGET_JDI_LIGHT_BRANCH="gh-pages"
 
 stages:
-  - test
-  - merge
+  - tests
 
 jobs:
   include:
@@ -20,15 +19,8 @@ jobs:
       name: Run tests
       script:
         - echo "Test stage goes here, right now tests are considered passed by default"
-        - cd angular-site && npm install && ng build --prod
+        - npm install && npm build --prod
 
-    - stage: merge
-      name: Merge the changes into jdi-light repo
-      if: branch = "master"
-      script:
-        - sudo snap install hub --classic
-        - hub version
-        - sh travis_automerge_to_jdi_light.sh
 after_failure:
   - echo "Build has failed"
 after_script:
