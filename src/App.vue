@@ -1,6 +1,6 @@
  <template>
   <v-app>
-    
+
     <v-navigation-drawer permanent app>
       <v-list-item>
         <v-list-item-content>
@@ -13,7 +13,7 @@
         dense
         nav
       >
-        <div 
+        <div
           v-for="item in nav_items"
           :key="item.title"
         >
@@ -71,12 +71,15 @@ export default {
         { title: 'Avatars', link: '/avatars' },
         { title: 'Badges', link: '/badges' },
         { title: 'Banners', link: '/banners' },
-        { title: 'Bars', link: '', 
-          subitems : [
+        {
+          title: 'Bars',
+          link: '',
+          subitems: [
             { title: 'App bars', link: '/app-bars' },
             { title: 'Toolbars', link: '/toolbars' },
-            { title: 'System bars', link: '/system-bars' }
-          ]},
+            { title: 'System bars', link: '/system-bars' },
+          ],
+        },
         { title: 'Buttom navigation', link: '/buttom-navigation' },
         { title: 'Bottom sheets', link: '/bottom-sheets' },
         { title: 'Breadcumbs', link: '/breadcumbs' },
@@ -90,7 +93,9 @@ export default {
         { title: 'Dividers', link: '/dividers' },
         { title: 'Expansion panels', link: '/expansion-panels' },
         { title: 'Footers', link: '/footers' },
-        { title: 'Form input & controls', link: '',
+        {
+          title: 'Form input & controls',
+          link: '',
           subitems: [
             { title: 'Autocompletes', link: '/autocompletes' },
             { title: 'Checkboxes', link: '/checkboxes' },
@@ -106,9 +111,12 @@ export default {
             { title: 'Switches', link: '/switches' },
             { title: 'Textareas', link: '/textareas' },
             { title: 'Text fields', link: '/text-fields' },
-          ]},
+          ],
+        },
         { title: 'Grid system', link: '/grid-system' },
-        { title: 'Groups', link: '',
+        {
+          title: 'Groups',
+          link: '',
           subitems: [
             { title: 'Button groups', link: '/button-groups' },
             { title: 'Chip groups', link: '/chip-groups' },
@@ -116,7 +124,8 @@ export default {
             { title: 'List item groups', link: '/list-item-groups' },
             { title: 'Slide groups', link: '/slide-groups' },
             { title: 'Windows', link: '/windows' },
-          ]},
+          ],
+        },
         { title: 'Hover', link: '/hover' },
         { title: 'Icons', link: '/icons' },
         { title: 'Images', link: '/images' },
@@ -127,18 +136,24 @@ export default {
         { title: 'Overlays', link: '/overlays' },
         { title: 'Pagination', link: '/pagination' },
         { title: 'Parallax', link: '/parallax' },
-        { title: 'Pickers', link: '',
+        {
+          title: 'Pickers',
+          link: '',
           subitems: [
             { title: 'Color pickers', link: '/color-pickers' },
             { title: 'Date pickers', link: '/date-pickers' },
             { title: 'Date pickers - month', link: '/date-pickers-month' },
             { title: 'Time pickers', link: '/time-pickers' },
-          ]},
-        { title: 'Progress', link: '',
+          ],
+        },
+        {
+          title: 'Progress',
+          link: '',
           subitems: [
             { title: 'Progress circular', link: '/progress-circular' },
             { title: 'Progress linear', link: '/progress-linear' },
-          ]},
+          ],
+        },
         { title: 'Ratings', link: '/ratings' },
         { title: 'Sheets', link: '/sheets' },
         { title: 'Skeleton loaders', link: '/skeleton-loaders' },
@@ -146,20 +161,22 @@ export default {
         { title: 'Sparklines', link: '/sparklines' },
         { title: 'Steppers', link: '/steppers' },
         { title: 'Subheaders', link: '/subheaders' },
-        { title: 'Tables', link: '/tables',
+        {
+          title: 'Tables',
+          link: '/tables',
           subitems: [
             { title: 'Data iterators', link: '/data-iterators' },
             { title: 'Simple tables', link: '/simple-tables' },
             { title: 'Data tables', link: '/data-tables' },
-          ]},
+          ],
+        },
         { title: 'Tabs', link: '/tabs' },
         { title: 'Timelines', link: '/timelines' },
         { title: 'Tooltips', link: '/tooltips' },
         { title: 'Treeview', link: '/treeview' },
         { title: 'Virtual scroller', link: '/virtual-scroller' },
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
 </script>
-

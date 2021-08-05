@@ -12,7 +12,7 @@ env:
 
 stages:
   - test
-  - merge
+  - lint
 
 jobs:
   include:
@@ -20,15 +20,12 @@ jobs:
       name: Run tests
       script:
         - echo "Test stage goes here, right now tests are considered passed by default"
-        - cd angular-site && npm install && ng build --prod
+        - npm install && npm run build
 
-    - stage: merge
-      name: Merge the changes into jdi-light repo
-      if: branch = "master"
+    - stage: lint
+      name: Check for linting errors
       script:
-        - sudo snap install hub --classic
-        - hub version
-        - sh travis_automerge_to_jdi_light.sh
+        - npm run lint
 after_failure:
   - echo "Build has failed"
 after_script:
