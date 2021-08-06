@@ -23,6 +23,11 @@ const routes = [
     name: 'Alerts',
     component: () => import('../views/Alerts.vue'),
   },
+  {
+    path: '/aspect-ratios',
+    name: 'Aspect Ratios',
+    component: () => import('../views/AspectRatios.vue'),
+  },
 ];
 
 const router = new VueRouter({
