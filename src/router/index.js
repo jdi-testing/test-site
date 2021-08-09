@@ -28,6 +28,11 @@ const routes = [
     name: 'Aspect Ratios',
     component: () => import('../views/AspectRatios.vue'),
   },
+  {
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
+  },
 ];
 
 const router = new VueRouter({
