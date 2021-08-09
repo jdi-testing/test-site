@@ -8,13 +8,13 @@
                 <p class="text-h5">
                     Collapsible bar
                 </p>
-                <CollapsibleBar />    
+                <CollapsibleBar id="collapsibleBar"/>    
             </v-col>
             <v-col>
                 <p class="text-h5">
                     Dense
                 </p>
-                <DenseBar />
+                <DenseBar id="denseBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -22,13 +22,13 @@
                 <p class="text-h5">
                     Elevate to scroll bar
                 </p>
-                <ElevateScrollBar />
+                <ElevateScrollBar id="elevateScrollBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
                     Image bar
                 </p>
-                <ImageBar />
+                <ImageBar id="imageBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -36,13 +36,13 @@
                 <p class="text-h5">
                     Hiding on scroll
                 </p>
-                <HidingScrollBar />
+                <HidingScrollBar id="hidingScrollBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
                     Fade image on scroll
                 </p>
-                <FadeImageBar />
+                <FadeImageBar id="fadeImageBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -50,13 +50,13 @@
                 <p class="text-h5">
                     Scroll threshold
                 </p>
-                <ScrollThresholdBar />
+                <ScrollThresholdBar id="scrollThresholdBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
                     Toggle navigation drawers
                 </p>
-                <ToggleNavigationDrawersBar />
+                <ToggleNavigationDrawersBar id="toggleNavigationDrawersBar"/>
             </v-col>
         </v-row>
     </v-container>
