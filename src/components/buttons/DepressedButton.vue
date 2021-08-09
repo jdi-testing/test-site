@@ -43,13 +43,13 @@ export default {
   }),
 
   methods: {
-    async click_normal() {
+    click_normal() {
       this.state = 'Depressed button clicked: Normal';
     },
-    async click_primary() {
+    click_primary() {
       this.state = 'Depressed button clicked: Primary';
     },
-    async click_error() {
+    click_error() {
       this.state = 'Depressed button clicked: Error';
     },
   },

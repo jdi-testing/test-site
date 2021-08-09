@@ -13,7 +13,7 @@
     <v-btn
       icon
       color="indigo"
-      @click="click_star"
+      @click="click_start"
     >
       <v-icon>mdi-star</v-icon>
     </v-btn>
@@ -76,7 +76,7 @@ export default {
     click_heart() {
       this.state = 'Icon button clicked: heart';
     },
-    click_star() {
+    click_start() {
       this.state = 'Icon button clicked: star';
     },
     click_thumb_up() {

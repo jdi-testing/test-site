@@ -18,7 +18,7 @@ export default {
   }),
 
   methods: {
-    async click() {
+    click() {
       this.state = 'Button clicked';
     },
   },
