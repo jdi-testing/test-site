@@ -1,0 +1,86 @@
+<template>
+    <div>
+        <v-row 
+            class="ma-2"
+        >
+            <div class="ma-5">
+                <v-badge
+                    :content="1"
+                >
+                    <v-icon
+                        large
+                    >
+                        mdi-email
+                    </v-icon>
+                </v-badge>
+            </div>
+            <div class="ma-5">
+                <v-badge
+                    bottom
+                    :content="1"
+                    color="warning"
+                >
+                    <v-icon
+                        large
+                    >
+                        mdi-email
+                    </v-icon>
+                </v-badge>
+            </div>
+            <div class="ma-5">
+                <v-badge
+                    left
+                    :content="1"
+                    color="purple"
+                >
+                    <v-icon
+                        large
+                    >
+                        mdi-email
+                    </v-icon>
+                </v-badge>
+            </div>
+            <div class="ma-5">
+                <v-badge
+                    left
+                    bottom
+                    :content="1"
+                    color="success"
+                >
+                    <v-icon
+                        large
+                    >
+                        mdi-email
+                    </v-icon>
+                </v-badge>
+            </div>
+            <div class="ma-5">
+                <v-badge
+                    inline
+                    :content="1"
+                    color="pink"
+                >
+                    <v-icon
+                        large
+                    >
+                        mdi-email
+                    </v-icon>
+                </v-badge>
+            </div>
+            <div class="ma-5">
+                <v-badge
+                    inline
+                    left    
+                    :content="1"
+                    color="lime"
+                >
+                    <v-icon
+                        large
+                    >
+                        mdi-email
+                    </v-icon>
+                </v-badge>
+            </div>
+        </v-row>
+    </div>
+</template>
