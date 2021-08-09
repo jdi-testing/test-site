@@ -28,6 +28,16 @@ const routes = [
     name: 'Aspect Ratios',
     component: () => import('../views/AspectRatios.vue'),
   },
+  {
+    path: '/buttons',
+    name: 'Buttons',
+    component: () => import('../views/Buttons.vue'),
+  },
+  {
+    path: '/floating-action-button',
+    name: 'Buttons: Floating Action Button',
+    component: () => import('../views/FloatingActionButtons.vue'),
+  },
 ];
 
 const router = new VueRouter({
