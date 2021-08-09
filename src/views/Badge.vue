@@ -35,18 +35,18 @@
 </template>
 
 <script>
-import SimpleBadge from '@/components/badges/SimpleBadge.vue'
-import CustomBadge from '@/components/badges/CustomBadge.vue'
-import DynamicBadge from '@/components/badges/DynamicBadge.vue'
-import HoverBadge from '@/components/badges/HoverBadge.vue'
+import SimpleBadge from '@/components/badges/SimpleBadge.vue';
+import CustomBadge from '@/components/badges/CustomBadge.vue';
+import DynamicBadge from '@/components/badges/DynamicBadge.vue';
+import HoverBadge from '@/components/badges/HoverBadge.vue';
 
 export default {
-    name: 'Bages',
-    components: {
-        SimpleBadge,
-        CustomBadge,
-        DynamicBadge,
-        HoverBadge,
-    }
-}
+  name: 'Bages',
+  components: {
+    SimpleBadge,
+    CustomBadge,
+    DynamicBadge,
+    HoverBadge,
+  },
+};
 </script>

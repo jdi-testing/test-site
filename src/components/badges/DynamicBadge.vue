@@ -35,11 +35,11 @@
 <script>
 
 export default {
-    data() {
-        return {
-            messages: 0,
-        }
-    }
-}
+  data() {
+    return {
+      messages: 0,
+    };
+  },
+};
 
 </script>

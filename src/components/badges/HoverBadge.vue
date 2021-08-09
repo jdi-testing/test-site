@@ -22,10 +22,10 @@
 <script>
 
 export default {
-    data() {
-        return {
-            hover: false, 
-        }
-    }
-}
+  data() {
+    return {
+      hover: false, 
+    };
+  },
+};
 </script>

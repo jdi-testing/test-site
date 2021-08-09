@@ -76,10 +76,10 @@
 <script>
 
 export default {
-    data() {
-        return {
-            locked: true,
-        }
-    }
-}
+  data() {
+    return {
+      locked: true,
+    };
+  },
+};
 </script>
