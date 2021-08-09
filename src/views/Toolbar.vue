@@ -8,7 +8,7 @@
                 <p class="text-h5">
                     Background
                 </p>
-                <BackgroundToolbar />
+                <BackgroundToolbar id="backgroundToolbar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -16,7 +16,7 @@
                 <p class="text-h5">
                     Collapse
                 </p>
-                <CollapseToolbar />
+                <CollapseToolbar id="collapseToolbar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -24,7 +24,7 @@
                 <p class="text-h5">
                     Dense
                 </p>
-                <DenseToolbar />
+                <DenseToolbar id="denseToolbar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -32,7 +32,7 @@
                 <p class="text-h5">
                     Extended toolbar
                 </p>
-                <ExtendedToolbar />
+                <ExtendedToolbar id="extendedToolbar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -40,7 +40,7 @@
                 <p class="text-h5">
                     Floating with search toolbar
                 </p>
-                <FloatingWithSearchToolbar />
+                <FloatingWithSearchToolbar id="floatingWithSearchToolbar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -48,7 +48,7 @@
                 <p class="text-h5">
                     Context Action toolbar
                 </p>
-                <ContextActionToolbar />
+                <ContextActionToolbar id="contextActionToolbar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -56,7 +56,7 @@
                 <p class="text-h5">
                     Flexible and card toolbar
                 </p>
-                <FlexibleAndCardToolbar />
+                <FlexibleAndCardToolbar id="flexibleAndCardToolbar"/>
             </v-col>
         </v-row>
     </v-container>
