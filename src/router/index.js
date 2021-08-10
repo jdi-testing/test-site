@@ -63,6 +63,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/expansion-panels',
+    name: 'Expansion Panels',
+    component: () => import('../views/ExpansionPanels.vue'),
+  },
 ];
 
 const router = new VueRouter({
