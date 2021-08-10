@@ -29,6 +29,31 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
+  },
+  {
+    path: '/badges',
+    name: 'Badges',
+    component: () => import('../views/Badge.vue'),
+  },
+  {
+    path: '/avatars',
+    name: 'Avatars',
+    component: () => import('../views/Avatars.vue'),
+  },
+  {
+    path: '/buttons',
+    name: 'Buttons',
+    component: () => import('../views/Buttons.vue'),
+  },
+  {
+    path: '/floating-action-button',
+    name: 'Buttons: Floating Action Button',
+    component: () => import('../views/FloatingActionButtons.vue'),
+  },
+  {
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
