@@ -63,6 +63,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/carousels',
+    name: 'Carousels',
+    component: () => import('../views/Carousels.vue'),
+  },
 ];
 
 const router = new VueRouter({
