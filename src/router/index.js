@@ -33,6 +33,26 @@ const routes = [
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
+  {
+    path: '/badges',
+    name: 'Badges',
+    component: () => import('../views/Badge.vue'),
+  },
+  {
+    path: '/avatars',
+    name: 'Avatars',
+    component: () => import('../views/Avatars.vue'),
+  },
+  {
+    path: '/buttons',
+    name: 'Buttons',
+    component: () => import('../views/Buttons.vue'),
+  },
+  {
+    path: '/floating-action-button',
+    name: 'Buttons: Floating Action Button',
+    component: () => import('../views/FloatingActionButtons.vue'),
+  },
 ];
 
 const router = new VueRouter({
