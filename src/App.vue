@@ -80,7 +80,7 @@ export default {
             { title: 'System bars', link: '/system-bars' },
           ],
         },
-        { title: 'Buttom navigation', link: '/buttom-navigation' },
+        { title: 'Bottom navigation', link: '/bottom-navigation' },
         { title: 'Bottom sheets', link: '/bottom-sheets' },
         { title: 'Breadcumbs', link: '/breadcumbs' },
         { title: 'Buttons', link: '/buttons' },
