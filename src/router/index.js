@@ -29,6 +29,11 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/toolbars',
+    name: 'Toolbars',
+    component: () => import('../views/Toolbar.vue'),
+  },
+  {
     path: '/app-bars',
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
