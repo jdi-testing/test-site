@@ -43,6 +43,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/cards',
+    name: 'Cards',
+    component: () => import('../views/Cards.vue'),
+  },
 ];
 
 const router = new VueRouter({
