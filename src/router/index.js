@@ -33,6 +33,7 @@ const routes = [
     name: 'Avatars',
     component: () => import('../views/Avatars.vue'),
   },
+  {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
