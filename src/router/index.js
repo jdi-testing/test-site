@@ -63,6 +63,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/chips',
+    name: 'Chips',
+    component: () => import('../views/Chips.vue'),
+  },
 ];
 
 const router = new VueRouter({
