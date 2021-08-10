@@ -29,6 +29,11 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/app-bars',
+    name: 'App Bars',
+    component: () => import('../views/AppBar.vue'),
+  },
+  {
     path: '/bottom-sheets',
     name: 'Bottom sheets',
     component: () => import('../views/BottomSheets.vue'),
