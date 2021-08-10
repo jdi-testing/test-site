@@ -24,14 +24,19 @@ const routes = [
     component: () => import('../views/Alerts.vue'),
   },
   {
+    path: '/application',
+    name: 'Application',
+    component: () => import('../views/Application.vue'),
+  },
+  {
     path: '/aspect-ratios',
     name: 'Aspect Ratios',
     component: () => import('../views/AspectRatios.vue'),
   },
   {
-    path: '/bottom-sheets',
-    name: 'Bottom sheets',
-    component: () => import('../views/BottomSheets.vue'),
+    path: '/avatars',
+    name: 'Avatars',
+    component: () => import('../views/Avatars.vue'),
   },
   {  
     path: '/badges',
@@ -39,9 +44,9 @@ const routes = [
     component: () => import('../views/Badge.vue'),
   },
   {
-    path: '/avatars',
-    name: 'Avatars',
-    component: () => import('../views/Avatars.vue'),
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
   },
   {
     path: '/buttons',
