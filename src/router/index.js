@@ -43,7 +43,7 @@ const routes = [
     name: 'Bottom sheets',
     component: () => import('../views/BottomSheets.vue'),
   },
-  {  
+  {
     path: '/badges',
     name: 'Badges',
     component: () => import('../views/Badge.vue'),
@@ -62,6 +62,11 @@ const routes = [
     path: '/floating-action-button',
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
+  },
+  {
+    path: '/system-bars',
+    name: 'System Bars',
+    component: () => import('../views/SystemBars.vue'),
   },
 ];
 
