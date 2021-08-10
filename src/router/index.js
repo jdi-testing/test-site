@@ -63,6 +63,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/hover',
+    name: 'Hover',
+    component: () => import('../views/Hover.vue'),
+  },
 ];
 
 const router = new VueRouter({
