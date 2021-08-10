@@ -63,6 +63,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/grid-system',
+    name: 'Grid System',
+    component: () => import('../views/GridSystem.vue'),
+  },
 ];
 
 const router = new VueRouter({
