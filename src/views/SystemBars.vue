@@ -8,7 +8,7 @@
                 <p class="text-h5">
                     Colored system bar
                 </p>
-                <ColoredSystemBar />
+                <ColoredSystemBar id="ColoredSystemBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1">
@@ -16,7 +16,7 @@
                 <p class="text-h5">
                     Lights out system bar
                 </p>
-                <LightsOutSystemBar />
+                <LightsOutSystemBar id="LightsOutSystemBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -24,7 +24,7 @@
                 <p class="text-h5">
                     Window system bar
                 </p>
-                <WindowSystemBar />
+                <WindowSystemBar id="WindowSystemBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -32,7 +32,7 @@
                 <p class="text-h5">
                     Absolute position system bar
                 </p>
-                <AbsolutePositionSystemBar />
+                <AbsolutePositionSystemBar id="AbsolutePositionSystemBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -40,7 +40,7 @@
                 <p class="text-h5">
                     App system bar
                 </p>
-                <AppSystemBar />
+                <AppSystemBar id="AppSystemBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1 mt-3">
@@ -48,7 +48,7 @@
                 <p class="text-h5">
                     High system bar
                 </p>
-                <HighSystemBar />
+                <HighSystemBar id="HighSystemBar"/>
             </v-col>
         </v-row>
     </v-container>
