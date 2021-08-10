@@ -34,6 +34,11 @@ const routes = [
     component: () => import('../views/AppBar.vue'),
   },
   {
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
+  },
+  {  
     path: '/badges',
     name: 'Badges',
     component: () => import('../views/Badge.vue'),
