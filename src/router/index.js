@@ -28,6 +28,11 @@ const routes = [
     name: 'Aspect Ratios',
     component: () => import('../views/AspectRatios.vue'),
   },
+  {
+    path: '/system-bars',
+    name: 'System Bars',
+    component: () => import('../views/SystemBars.vue'),
+  },
 ];
 
 const router = new VueRouter({
