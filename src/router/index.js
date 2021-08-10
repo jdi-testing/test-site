@@ -29,6 +29,11 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/badges',
+    name: 'Badges',
+    component: () => import('../views/Badge.vue'),
+  },
+  {
     path: '/avatars',
     name: 'Avatars',
     component: () => import('../views/Avatars.vue'),
