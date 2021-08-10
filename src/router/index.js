@@ -63,6 +63,11 @@ const routes = [
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
   },
+  {
+    path: '/dividers',
+    name: 'Dividers',
+    component: () => import('../views/Dividers.vue'),
+  },
 ];
 
 const router = new VueRouter({
