@@ -48,7 +48,8 @@ const routes = [
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
-  {    path: '/autocompletes',
+  {
+    path: '/autocompletes',
     name: 'Autocompletes',
     component: () => import('../views/Autocompletes.vue'),
   },
@@ -103,14 +104,29 @@ const routes = [
     component: () => import('../views/Carousels.vue'),
   },
   {
+    path: '/chips',
+    name: 'Chips',
+    component: () => import('../views/Chips.vue'),
+  },
+  {
     path: '/dividers',
     name: 'Dividers',
     component: () => import('../views/Dividers.vue'),
   },
   {
+    path: '/expansion-panels',
+    name: 'Expansion Panels',
+    component: () => import('../views/ExpansionPanels.vue'),
+  },
+  {
     path: '/footers',
     name: 'Footers',
     component: () => import('../views/Footers.vue'),
+  },
+  {
+    path: '/grid-system',
+    name: 'Grid System',
+    component: () => import('../views/GridSystem.vue'),
   },
   {
     path: '/hover',
