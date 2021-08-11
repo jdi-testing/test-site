@@ -38,6 +38,7 @@ const routes = [
     name: 'Breadcrumbs',
     component: () => import('../views/Breadcrumb.vue'),
   },
+  {
     path: '/avatars',
     name: 'Avatars',
     component: () => import('../views/Avatars.vue'),
