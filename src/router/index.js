@@ -64,6 +64,11 @@ const routes = [
     component: () => import('../views/FloatingActionButtons.vue'),
   },
   {
+    path: '/bottom-navigation',
+    name: 'Bottom navigation',
+    component: () => import('../views/BottomNavigation.vue'),
+  },
+  {
     path: '/toolbars',
     name: 'Toolbars',
     component: () => import('../views/Toolbar.vue'),
