@@ -59,6 +59,11 @@ const routes = [
     component: () => import('../views/Buttons.vue'),
   },
   {
+    path: '/cards',
+    name: 'Cards',
+    component: () => import('../views/Cards.vue'),
+  },
+  {
     path: '/floating-action-button',
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
