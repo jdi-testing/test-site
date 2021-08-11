@@ -18,7 +18,9 @@
           Lorem Ipsum Dolor
         </v-card-title>
         <v-card-text class="white text--primary">
-          <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+          <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, 
+            sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, 
+            vix an salutandi sententiae.</p>
           <v-btn
             :color="item.color"
             class="mx-0"
