@@ -108,6 +108,11 @@ const routes = [
     component: () => import('../views/Dividers.vue'),
   },
   {
+    path: '/footers',
+    name: 'Footers',
+    component: () => import('../views/Footers.vue'),
+  },
+  {
     path: '/snackbars',
     name: 'Snackbars',
     component: () => import('../views/Snackbars.vue'),
