@@ -1,30 +1,3 @@
-<script>
-import FormDialog from '@/components/dialogs/FormDialog.vue';
-import FullscreenDialog from '@/components/dialogs/FullscreenDialog.vue';
-import LoaderDialog from '@/components/dialogs/LoaderDialog.vue';
-import NestingDialog from '@/components/dialogs/NestingDialog.vue';
-import OverflowedDialog from '@/components/dialogs/OverflowedDialog.vue';
-import PersistentDialog from '@/components/dialogs/PersistentDialog.vue';
-import ScrollableDialog from '@/components/dialogs/ScrollableDialog.vue';
-import TransitionsDialog from '@/components/dialogs/TransitionsDialog.vue';
-import WithoutActivatorDialog from '@/components/dialogs/WithoutActivatorDialog.vue';
-
-export default {
-  name: 'Bottom sheets',
-  components: {
-    FormDialog,
-    FullscreenDialog,
-    LoaderDialog,
-    NestingDialog,
-    OverflowedDialog,
-    PersistentDialog,
-    ScrollableDialog,
-    TransitionsDialog,
-    WithoutActivatorDialog,
-  },
-};
-</script>
-
 <template>
     <v-container>
         <v-col>
@@ -77,3 +50,30 @@ export default {
         </v-col>
     </v-container>
 </template>
+
+<script>
+import FormDialog from '@/components/dialogs/FormDialog.vue';
+import FullscreenDialog from '@/components/dialogs/FullscreenDialog.vue';
+import LoaderDialog from '@/components/dialogs/LoaderDialog.vue';
+import NestingDialog from '@/components/dialogs/NestingDialog.vue';
+import OverflowedDialog from '@/components/dialogs/OverflowedDialog.vue';
+import PersistentDialog from '@/components/dialogs/PersistentDialog.vue';
+import ScrollableDialog from '@/components/dialogs/ScrollableDialog.vue';
+import TransitionsDialog from '@/components/dialogs/TransitionsDialog.vue';
+import WithoutActivatorDialog from '@/components/dialogs/WithoutActivatorDialog.vue';
+
+export default {
+  name: 'Dialogs',
+  components: {
+    FormDialog,
+    FullscreenDialog,
+    LoaderDialog,
+    NestingDialog,
+    OverflowedDialog,
+    PersistentDialog,
+    ScrollableDialog,
+    TransitionsDialog,
+    WithoutActivatorDialog,
+  },
+};
+</script>
