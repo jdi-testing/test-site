@@ -113,6 +113,11 @@ const routes = [
     component: () => import('../views/Dividers.vue'),
   },
   {
+    path: '/expansion-panels',
+    name: 'Expansion Panels',
+    component: () => import('../views/ExpansionPanels.vue'),
+  },
+  {
     path: '/footers',
     name: 'Footers',
     component: () => import('../views/Footers.vue'),
