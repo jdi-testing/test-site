@@ -32,7 +32,6 @@ const routes = [
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
-
   },
   {
     path: '/toolbars',
