@@ -34,6 +34,11 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/breadcrumbs',
+    name: 'Breadcrumbs',
+    component: () => import('../views/Breadcrumb.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),

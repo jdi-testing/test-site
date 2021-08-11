@@ -82,7 +82,7 @@ export default {
         },
         { title: 'Bottom navigation', link: '/bottom-navigation' },
         { title: 'Bottom sheets', link: '/bottom-sheets' },
-        { title: 'Breadcumbs', link: '/breadcumbs' },
+        { title: 'Breadcrumbs', link: '/breadcrumbs' },
         { title: 'Buttons', link: '/buttons' },
         { title: 'Buttons: Floating Action Button', link: '/floating-action-button' },
         { title: 'Calendars', link: '/calendars' },
