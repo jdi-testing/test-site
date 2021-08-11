@@ -43,7 +43,12 @@ const routes = [
     name: 'Bottom sheets',
     component: () => import('../views/BottomSheets.vue'),
   },
-  {  
+  {
+    path: '/carousels',
+    name: 'Carousels',
+    component: () => import('../views/Carousels.vue'),
+  },
+  {
     path: '/badges',
     name: 'Badges',
     component: () => import('../views/Badge.vue'),
@@ -64,9 +69,9 @@ const routes = [
     component: () => import('../views/FloatingActionButtons.vue'),
   },
   {
-    path: '/carousels',
-    name: 'Carousels',
-    component: () => import('../views/Carousels.vue'),
+    path: '/system-bars',
+    name: 'System Bars',
+    component: () => import('../views/SystemBars.vue'),
   },
 ];
 
