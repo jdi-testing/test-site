@@ -98,6 +98,11 @@ const routes = [
     name: 'Tooltips',
     component: () => import('../views/Tooltips.vue'),
   },
+  {
+    path: '/timelines',
+    name: 'Timelines',
+    component: () => import('../views/Timelines.vue'),
+  },
 ];
 
 const router = new VueRouter({
