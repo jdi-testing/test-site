@@ -49,6 +49,16 @@ const routes = [
     component: () => import('../views/Badge.vue'),
   },
   {
+    path: '/banners',
+    name: 'Banner',
+    component: () => import('../views/Banner.vue'),
+  },
+  {
+    path: '/avatars',
+    name: 'Avatars',
+    component: () => import('../views/Avatars.vue'),
+  },
+  {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
