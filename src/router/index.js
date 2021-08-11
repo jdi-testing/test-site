@@ -24,9 +24,19 @@ const routes = [
     component: () => import('../views/Alerts.vue'),
   },
   {
+    path: '/app-bars',
+    name: 'App Bars',
+    component: () => import('../views/AppBar.vue'),
+  },
+  {
     path: '/aspect-ratios',
     name: 'Aspect Ratios',
     component: () => import('../views/AspectRatios.vue'),
+  },
+  {
+    path: '/dialogs',
+    name: 'Dialogs',
+    component: () => import('../views/Dialogs.vue'),
   },
   {
     path: '/toolbars',
@@ -38,20 +48,34 @@ const routes = [
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
-  {
-    path: '/bottom-sheets',
-    name: 'Bottom sheets',
-    component: () => import('../views/BottomSheets.vue'),
-  },
-  {  
-    path: '/badges',
-    name: 'Badges',
-    component: () => import('../views/Badge.vue'),
+  {    path: '/autocompletes',
+    name: 'Autocompletes',
+    component: () => import('../views/Autocompletes.vue'),
   },
   {
     path: '/avatars',
     name: 'Avatars',
     component: () => import('../views/Avatars.vue'),
+  },
+  {
+    path: '/badges',
+    name: 'Badges',
+    component: () => import('../views/Badge.vue'),
+  },
+  {
+    path: '/banners',
+    name: 'Banner',
+    component: () => import('../views/Banner.vue'),
+  },
+  {
+    path: '/bottom-navigation',
+    name: 'Bottom navigation',
+    component: () => import('../views/BottomNavigation.vue'),
+  },
+  {
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
   },
   {
     path: '/buttons',
@@ -64,9 +88,54 @@ const routes = [
     component: () => import('../views/FloatingActionButtons.vue'),
   },
   {
+    path: '/calendars',
+    name: 'Calendars',
+    component: () => import('../views/Calendars.vue'),
+  },
+  {
+    path: '/cards',
+    name: 'Cards',
+    component: () => import('../views/Cards.vue'),
+  },
+  {
+    path: '/carousels',
+    name: 'Carousels',
+    component: () => import('../views/Carousels.vue'),
+  },
+  {
+    path: '/dividers',
+    name: 'Dividers',
+    component: () => import('../views/Dividers.vue'),
+  },
+  {
     path: '/expansion-panels',
     name: 'Expansion Panels',
     component: () => import('../views/ExpansionPanels.vue'),
+  },
+  {
+    path: '/footers',
+    name: 'Footers',
+    component: () => import('../views/Footers.vue'),
+  },
+  {
+    path: '/snackbars',
+    name: 'Snackbars',
+    component: () => import('../views/Snackbars.vue'),
+  },
+  {
+    path: '/system-bars',
+    name: 'System Bars',
+    component: () => import('../views/SystemBars.vue'),
+  },
+  {
+    path: '/toolbars',
+    name: 'Toolbars',
+    component: () => import('../views/Toolbar.vue'),
+  },
+  {
+    path: '/tooltips',
+    name: 'Tooltips',
+    component: () => import('../views/Tooltips.vue'),
   },
 ];
 
