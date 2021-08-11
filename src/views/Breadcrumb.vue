@@ -28,15 +28,7 @@
         Item slot breadcrumbs
       </p>
       <ItemSlotBreadcrumbs id="itemSlotBreadcrumbs"/>
-    <v-col>
-
-    </v-col>
     
-    <v-col>
-      <h3 id="dashboard">Dashboard</h3>
-      <h3 id="link1">Link 1</h3>
-      <h3 id="link2">Link 2</h3>
-    </v-col>
   </v-container>
   
 </template>

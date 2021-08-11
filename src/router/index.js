@@ -38,6 +38,7 @@ const routes = [
     name: 'Breadcrumbs',
     component: () => import('../views/Breadcrumb.vue'),
   },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
