@@ -34,6 +34,25 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/dialogs',
+    name: 'Dialogs',
+    component: () => import('../views/Dialogs.vue'),
+  },
+  {
+    path: '/toolbars',
+    name: 'Toolbars',
+    component: () => import('../views/Toolbar.vue'),
+  },
+  {
+    path: '/app-bars',
+    name: 'App Bars',
+    component: () => import('../views/AppBar.vue'),
+  },
+  {    path: '/autocompletes',
+    name: 'Autocompletes',
+    component: () => import('../views/Autocompletes.vue'),
+  },
+  {
     path: '/avatars',
     name: 'Avatars',
     component: () => import('../views/Avatars.vue'),
