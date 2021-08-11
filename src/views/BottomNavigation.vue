@@ -1,26 +1,3 @@
-<script>
-import ColorBottomNavigation from '@/components/bottom_navigation/ColorBottomNavigation.vue';
-import GrowBottomNavigation from '@/components/bottom_navigation/GrowBottomNavigation.vue';
-import HideOnScrollBottomNavigation from '@/components/bottom_navigation/HideOnScrollBottomNavigation.vue';
-import HorizontalBottomNavigation from '@/components/bottom_navigation/HorizontalBottomNavigation.vue';
-import ScrollThresholdBottomNavigation from '@/components/bottom_navigation/ScrollThresholdBottomNavigation.vue';
-import ShiftBottomNavigation from '@/components/bottom_navigation/ShiftBottomNavigation.vue';
-import ToggleBottomNavigation from '@/components/bottom_navigation/ToggleBottomNavigation.vue';
-
-export default {
-  name: 'Bottom navigation',
-  components: {
-    ColorBottomNavigation,
-    GrowBottomNavigation,
-    HideOnScrollBottomNavigation,
-    HorizontalBottomNavigation,
-    ScrollThresholdBottomNavigation,
-    ShiftBottomNavigation,
-    ToggleBottomNavigation,
-  },       
-};
-</script>
-
 <template>
     <v-container>
         <v-col>
@@ -77,3 +54,26 @@ export default {
         </v-col>                
     </v-container>
 </template>
+
+<script>
+import ColorBottomNavigation from '@/components/bottom_navigation/ColorBottomNavigation.vue';
+import GrowBottomNavigation from '@/components/bottom_navigation/GrowBottomNavigation.vue';
+import HideOnScrollBottomNavigation from '@/components/bottom_navigation/HideOnScrollBottomNavigation.vue';
+import HorizontalBottomNavigation from '@/components/bottom_navigation/HorizontalBottomNavigation.vue';
+import ScrollThresholdBottomNavigation from '@/components/bottom_navigation/ScrollThresholdBottomNavigation.vue';
+import ShiftBottomNavigation from '@/components/bottom_navigation/ShiftBottomNavigation.vue';
+import ToggleBottomNavigation from '@/components/bottom_navigation/ToggleBottomNavigation.vue';
+
+export default {
+  name: 'BottomNavigation',
+  components: {
+    ColorBottomNavigation,
+    GrowBottomNavigation,
+    HideOnScrollBottomNavigation,
+    HorizontalBottomNavigation,
+    ScrollThresholdBottomNavigation,
+    ShiftBottomNavigation,
+    ToggleBottomNavigation,
+  },       
+};
+</script>
