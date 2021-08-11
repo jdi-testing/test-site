@@ -129,6 +129,11 @@ const routes = [
     component: () => import('../views/GridSystem.vue'),
   },
   {
+    path: '/hover',
+    name: 'Hover',
+    component: () => import('../views/Hover.vue'),
+  },
+  {
     path: '/snackbars',
     name: 'Snackbars',
     component: () => import('../views/Snackbars.vue'),
