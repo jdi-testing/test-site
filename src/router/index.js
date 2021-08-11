@@ -48,6 +48,10 @@ const routes = [
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
+  {    path: '/autocompletes',
+    name: 'Autocompletes',
+    component: () => import('../views/Autocompletes.vue'),
+  },
   {
     path: '/avatars',
     name: 'Avatars',
@@ -64,14 +68,14 @@ const routes = [
     component: () => import('../views/Badge.vue'),
   },
   {
+    path: '/banners',
+    name: 'Banner',
+    component: () => import('../views/Banner.vue'),
+  },
+  {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
-  },
-  {
-    path: '/cards',
-    name: 'Cards',
-    component: () => import('../views/Cards.vue'),
   },
   {
     path: '/floating-action-button',
@@ -84,9 +88,9 @@ const routes = [
     component: () => import('../views/BottomNavigation.vue'),
   },
   {
-    path: '/toolbars',
-    name: 'Toolbars',
-    component: () => import('../views/Toolbar.vue'),
+    path: '/cards',
+    name: 'Cards',
+    component: () => import('../views/Cards.vue'),
   },
   {
     path: '/snackbars',
@@ -97,6 +101,11 @@ const routes = [
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
+  },
+  {
+    path: '/toolbars',
+    name: 'Toolbars',
+    component: () => import('../views/Toolbar.vue'),
   },
   {
     path: '/tooltips',
