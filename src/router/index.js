@@ -73,6 +73,11 @@ const routes = [
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
   },
+  {
+    path: '/tooltips',
+    name: 'Tooltips',
+    component: () => import('../views/Tooltips.vue'),
+  },
 ];
 
 const router = new VueRouter({
