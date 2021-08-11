@@ -39,11 +39,6 @@ const routes = [
     component: () => import('../views/Avatars.vue'),
   },
   {
-    path: '/bottom-sheets',
-    name: 'Bottom sheets',
-    component: () => import('../views/BottomSheets.vue'),
-  },
-  {
     path: '/badges',
     name: 'Badges',
     component: () => import('../views/Badge.vue'),
@@ -54,14 +49,24 @@ const routes = [
     component: () => import('../views/Banner.vue'),
   },
   {
-    path: '/avatars',
-    name: 'Avatars',
-    component: () => import('../views/Avatars.vue'),
+    path: '/bottom-navigation',
+    name: 'Bottom navigation',
+    component: () => import('../views/BottomNavigation.vue'),
+  },
+  {
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
   },
   {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
+  },
+  {
+    path: '/floating-action-button',
+    name: 'Buttons: Floating Action Button',
+    component: () => import('../views/FloatingActionButtons.vue'),
   },
   {
     path: '/calendars',
@@ -74,19 +79,9 @@ const routes = [
     component: () => import('../views/Cards.vue'),
   },
   {
-    path: '/floating-action-button',
-    name: 'Buttons: Floating Action Button',
-    component: () => import('../views/FloatingActionButtons.vue'),
-  },
-  {
-    path: '/bottom-navigation',
-    name: 'Bottom navigation',
-    component: () => import('../views/BottomNavigation.vue'),
-  },
-  {
-    path: '/toolbars',
-    name: 'Toolbars',
-    component: () => import('../views/Toolbar.vue'),
+    path: '/carousels',
+    name: 'Carousels',
+    component: () => import('../views/Carousels.vue'),
   },
   {
     path: '/snackbars',
@@ -97,6 +92,11 @@ const routes = [
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
+  },
+  {
+    path: '/toolbars',
+    name: 'Toolbars',
+    component: () => import('../views/Toolbar.vue'),
   },
   {
     path: '/tooltips',
