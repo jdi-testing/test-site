@@ -29,6 +29,11 @@ const routes = [
     component: () => import('../views/AspectRatios.vue'),
   },
   {
+    path: '/autocompletes',
+    name: 'Autocompletes',
+    component: () => import('../views/Autocompletes.vue'),
+  },
+  {
     path: '/toolbars',
     name: 'Toolbars',
     component: () => import('../views/Toolbar.vue'),
