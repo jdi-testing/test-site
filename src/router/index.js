@@ -48,7 +48,8 @@ const routes = [
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
-  {    path: '/autocompletes',
+  {
+    path: '/autocompletes',
     name: 'Autocompletes',
     component: () => import('../views/Autocompletes.vue'),
   },
@@ -121,6 +122,11 @@ const routes = [
     path: '/footers',
     name: 'Footers',
     component: () => import('../views/Footers.vue'),
+  },
+  {
+    path: '/grid-system',
+    name: 'Grid System',
+    component: () => import('../views/GridSystem.vue'),
   },
   {
     path: '/snackbars',
