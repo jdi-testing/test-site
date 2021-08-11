@@ -103,6 +103,11 @@ const routes = [
     component: () => import('../views/Carousels.vue'),
   },
   {
+    path: '/chips',
+    name: 'Chips',
+    component: () => import('../views/Chips.vue'),
+  },
+  {
     path: '/dividers',
     name: 'Dividers',
     component: () => import('../views/Dividers.vue'),
