@@ -48,7 +48,8 @@ const routes = [
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
-  {    path: '/autocompletes',
+  {
+    path: '/autocompletes',
     name: 'Autocompletes',
     component: () => import('../views/Autocompletes.vue'),
   },
