@@ -24,29 +24,14 @@ const routes = [
     component: () => import('../views/Alerts.vue'),
   },
   {
-    path: '/aspect-ratios',
-    name: 'Aspect Ratios',
-    component: () => import('../views/AspectRatios.vue'),
-  },
-  {
-    path: '/toolbars',
-    name: 'Toolbars',
-    component: () => import('../views/Toolbar.vue'),
-  },
-  {
     path: '/app-bars',
     name: 'App Bars',
     component: () => import('../views/AppBar.vue'),
   },
   {
-    path: '/bottom-sheets',
-    name: 'Bottom sheets',
-    component: () => import('../views/BottomSheets.vue'),
-  },
-  {  
-    path: '/badges',
-    name: 'Badges',
-    component: () => import('../views/Badge.vue'),
+    path: '/aspect-ratios',
+    name: 'Aspect Ratios',
+    component: () => import('../views/AspectRatios.vue'),
   },
   {
     path: '/avatars',
@@ -54,9 +39,24 @@ const routes = [
     component: () => import('../views/Avatars.vue'),
   },
   {
+    path: '/bottom-sheets',
+    name: 'Bottom sheets',
+    component: () => import('../views/BottomSheets.vue'),
+  },
+  {
+    path: '/badges',
+    name: 'Badges',
+    component: () => import('../views/Badge.vue'),
+  },
+  {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
+  },
+  {
+    path: '/cards',
+    name: 'Cards',
+    component: () => import('../views/Cards.vue'),
   },
   {
     path: '/floating-action-button',
@@ -67,6 +67,26 @@ const routes = [
     path: '/bottom-navigation',
     name: 'Bottom navigation',
     component: () => import('../views/BottomNavigation.vue'),
+  },
+  {
+    path: '/toolbars',
+    name: 'Toolbars',
+    component: () => import('../views/Toolbar.vue'),
+  },
+  {
+    path: '/snackbars',
+    name: 'Snackbars',
+    component: () => import('../views/Snackbars.vue'),
+  },
+  {
+    path: '/system-bars',
+    name: 'System Bars',
+    component: () => import('../views/SystemBars.vue'),
+  },
+  {
+    path: '/tooltips',
+    name: 'Tooltips',
+    component: () => import('../views/Tooltips.vue'),
   },
 ];
 
