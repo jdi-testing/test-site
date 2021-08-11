@@ -68,6 +68,11 @@ const routes = [
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
   },
+  {
+    path: '/overlays',
+    name: 'Overlays',
+    component: () => import('../views/Overlays.vue'),
+  },
 ];
 
 const router = new VueRouter({
