@@ -150,6 +150,11 @@ const routes = [
     component: () => import('../views/Snackbars.vue'),
   },
   {
+    path: '/steppers',
+    name: 'Steppers',
+    component: () => import('../views/Steppers.vue'),
+  },
+  {
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
