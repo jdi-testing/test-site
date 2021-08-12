@@ -55,7 +55,7 @@ import ClickIcon from '@/components/icons/ClickIcon.vue';
 import ButtonsIcon from '@/components/icons/ButtonsIcon.vue';
 import FontAwesomeIcon from '@/components/icons/FontAwesomeIcon.vue';
 import MaterialDesignIcon from '@/components/icons/MaterialDesignIcon.vue';
-// import MDISvgIcon from '@/components/icons/MDISvgIcon.vue';
+import MDISvgIcon from '@/components/icons/MDISvgIcon.vue';
 
 export default {
   name: 'Icons',
@@ -65,7 +65,7 @@ export default {
     ButtonsIcon,
     FontAwesomeIcon,
     MaterialDesignIcon,
-    // MDISvgIcon,
+    MDISvgIcon,
   },
 };
 </script>
