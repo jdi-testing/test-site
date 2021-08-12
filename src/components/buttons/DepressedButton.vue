@@ -1,12 +1,9 @@
 <template>
   <v-container>
     <h2>Depressed Buttons</h2>
-    <v-row
-      align="center"
-      justify="space-around"
-    >
       <v-btn 
         depressed 
+        class="ma-2"
         @click="click_normal"
       >
         Normal
@@ -15,6 +12,7 @@
         @click="click_primary"
         depressed
         color="primary"
+        class="ma-2"
       >
         Primary
       </v-btn>
@@ -22,16 +20,17 @@
         @click="click_error"
         depressed
         color="error"
+        class="ma-2"
       >
         Error
       </v-btn>
       <v-btn
         depressed
         disabled
+        class="ma-2"
       >
         Disabled
       </v-btn>
-    </v-row>
     <v-text-field id="depr-buttons-state" textarea v-model="state" readonly></v-text-field>
   </v-container>
 </template>
