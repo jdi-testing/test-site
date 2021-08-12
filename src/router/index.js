@@ -140,6 +140,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/navigation-drawers',
+    name: 'Navigation Drawers',
+    component: () => import('../views/NavigationDrawers.vue'),
+  },
+  {
     path: '/overlays',
     name: 'Overlays',
     component: () => import('../views/Overlays.vue'),
