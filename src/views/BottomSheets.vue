@@ -6,7 +6,7 @@ import PersistentBottomSheet from '@/components/bottom_sheets/PersistentBottomSh
 import InsetBottomSheet from '@/components/bottom_sheets/InsetBottomSheet.vue';
 
 export default {
-  name: 'Bottom sheets',
+  name: 'BottomSheets',
   components: {
     ModelBottomSheet,
     MusicPlayerBottomSheet,
