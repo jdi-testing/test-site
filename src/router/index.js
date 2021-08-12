@@ -145,6 +145,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/skeleton-loaders',
+    name: 'Skeleton loaders',
+    component: () => import('../views/SkeletonLoaders.vue'),
+  },
+  {
     path: '/snackbars',
     name: 'Snackbars',
     component: () => import('../views/Snackbars.vue'),
