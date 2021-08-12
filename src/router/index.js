@@ -150,6 +150,11 @@ const routes = [
     component: () => import('../views/SystemBars.vue'),
   },
   {
+    path: '/textareas',
+    name: 'Textareas',
+    component: () => import('../views/Textareas.vue'),
+  },
+  {
     path: '/toolbars',
     name: 'Toolbars',
     component: () => import('../views/Toolbar.vue'),
