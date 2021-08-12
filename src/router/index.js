@@ -129,6 +129,11 @@ const routes = [
     component: () => import('../views/Footers.vue'),
   },
   {
+    path: '/forms',
+    name: 'Forms',
+    component: () => import('../views/Forms.vue'),
+  },
+  {
     path: '/grid-system',
     name: 'Grid System',
     component: () => import('../views/GridSystem.vue'),
