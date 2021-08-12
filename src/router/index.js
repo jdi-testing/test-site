@@ -155,6 +155,11 @@ const routes = [
     component: () => import('../views/SystemBars.vue'),
   },
   {
+    path: '/time-pickers',
+    name: 'Time Pickers',
+    component: () => import('../views/TimePickers.vue'),
+  },
+  {
     path: '/toolbars',
     name: 'Toolbars',
     component: () => import('../views/Toolbar.vue'),
