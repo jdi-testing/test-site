@@ -149,6 +149,11 @@ const routes = [
     component: () => import('../views/Snackbars.vue'),
   },
   {
+    path: '/sparklines',
+    name: 'Sparklines',
+    component: () => import('../views/Sparklines.vue'),
+  },
+  {
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
