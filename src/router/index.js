@@ -115,6 +115,11 @@ const routes = [
     component: () => import('../views/ExpansionPanels.vue'),
   },
   {
+    path: '/file-inputs',
+    name: 'File Inputs',
+    component: () => import('../views/FileInputs.vue'),
+  },
+  {
     path: '/floating-action-button',
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
