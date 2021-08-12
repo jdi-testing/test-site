@@ -108,17 +108,21 @@ export default {
     search: null,
     y: 0,
   }),
+
   watch: {
     model(val, prev) {
       if (val.length === prev.length) return;
+
       this.model = val.map((v) => {
         if (typeof v === 'string') {
-          const a = {
+          v = {
             text: v,
             color: this.colors[this.nonce - 1],
           };
-          this.items.push(a);
-          this.nonce += 1;
+
+          this.items.push(v);
+
+          this.nonce++;
         }
         return v;
       });

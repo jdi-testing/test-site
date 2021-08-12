@@ -81,7 +81,7 @@ import AdvancedExpansionPanel from '@/components/expansion_panels/AdvancedExpans
 import CustomIconExpansionPanel from '@/components/expansion_panels/CustomIconExpansionPanel.vue';
 
 export default {
-  name: 'Expansion panels',
+  name: 'ExpansionPanels',
   components: {
     AccordionExpansionPanel,
     DisabledExpansionPanel,
