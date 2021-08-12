@@ -155,7 +155,7 @@ import UniqueLayoutsGridSystem from '@/components/grid_system/UniqueLayoutsGridS
 import VariableContentWidthGridSystem from '@/components/grid_system/VariableContentWidthGridSystem.vue';
 
 export default {
-  name: 'Grid system',
+  name: 'GridSystem',
   components: {
     AlignGridSystem,
     BreakpointSizingGridSystem,
