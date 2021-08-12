@@ -44,16 +44,16 @@
 <script>
 import RulesForm from '@/components/forms/RulesForm.vue';
 import ValidationWithSubmitClearForm from '@/components/forms/ValidationWithSubmitClearForm.vue';
-// import VeeValidateForm from '@/components/forms/VeeValidateForm.vue';
-// import VuelidateForm from '@/components/forms/VuelidateForm.vue';
+import VeeValidateForm from '@/components/forms/VeeValidateForm.vue';
+import VuelidateForm from '@/components/forms/VuelidateForm.vue';
 
 export default {
   name: 'Forms',
   components: {
     RulesForm,
     ValidationWithSubmitClearForm,
-    // VeeValidateForm,
-    // VuelidateForm,
+    VeeValidateForm,
+    VuelidateForm,
   },
 };
 </script>
