@@ -140,6 +140,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/radio-buttons',
+    name: 'Radio Buttons',
+    component: () => import('../views/RadioButtons.vue'),
+  },
+  {
     path: '/snackbars',
     name: 'Snackbars',
     component: () => import('../views/Snackbars.vue'),
