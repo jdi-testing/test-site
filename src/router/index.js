@@ -140,6 +140,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/range-sliders',
+    name: 'Range Sliders',
+    component: () => import('../views/RangeSliders.vue'),
+  },
+  {
     path: '/snackbars',
     name: 'Snackbars',
     component: () => import('../views/Snackbars.vue'),
