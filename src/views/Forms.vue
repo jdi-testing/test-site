@@ -22,9 +22,6 @@
             <p class="text-h5">
                 Vee-validate form
             </p>
-            vee-validate is a template Based Validation Framework for Vue.js. <br />
-            Documentation - https://logaretm.github.io/vee-validate/ <br />
-            VeeValidate code is commented out
             <VeeValidateForm id="VeeValidateForm" />
         </v-col>
 
@@ -32,9 +29,6 @@
             <p class="text-h5">
                 Vuelidate form
             </p>
-            vuelidate is a simple, lightweight model-based validation for Vue.js. <br />
-            Documentation - https://vuelidate.netlify.com/ <br />
-            Vuelidate code is commented out
             <VuelidateForm id="VuelidateForm" />
         </v-col>
 
