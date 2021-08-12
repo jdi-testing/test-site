@@ -139,6 +139,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/inputs',
+    name: 'Inputs',
+    component: () => import('../views/Inputs.vue'),
+  },
+  {
     path: '/overlays',
     name: 'Overlays',
     component: () => import('../views/Overlays.vue'),
