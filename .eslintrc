@@ -6,14 +6,15 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/airbnb"
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
     "rules": {
       "max-len": ["error", { "code": 150 }],
-      "no-trailing-spaces": 0
+      "no-trailing-spaces": 0,
+      "no-restricted-syntax": 0,
+      "no-plusplus": 0,
     }
 }

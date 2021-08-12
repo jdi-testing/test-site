@@ -5,7 +5,7 @@
     <BlockButton />
     <DepressedButton />
     <IconButton />
-    <Loader />
+    <LoaderButton />
     <TextButton />
     <PlainButton />
     <OutlinedButton />
@@ -20,6 +20,7 @@ import BlockButton from '@/components/buttons/BlockButton.vue';
 import DepressedButton from '@/components/buttons/DepressedButton.vue';
 import CommonButton from '@/components/buttons/CommonButton.vue';
 import IconButton from '@/components/buttons/IconButton.vue';
+import LoaderButton from '@/components/buttons/LoaderButton.vue';
 import TextButton from '@/components/buttons/TextButton.vue';
 import PlainButton from '@/components/buttons/PlainButton.vue';
 import OutlinedButton from '@/components/buttons/OutlinedButton.vue';
@@ -33,6 +34,7 @@ export default {
     DepressedButton,
     CommonButton,
     IconButton,
+    LoaderButton,
     TextButton,
     PlainButton,
     OutlinedButton,

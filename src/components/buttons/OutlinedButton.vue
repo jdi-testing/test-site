@@ -11,7 +11,7 @@
       Outlined Button
     </v-btn>
   </div>
-  <v-text-field id="text-buttons-state" textarea v-model="state" readonly></v-text-field>
+  <v-text-field id="outline-buttons-state" textarea v-model="state" readonly></v-text-field>
   </v-container>
 </template>
 

@@ -18,7 +18,7 @@ import SmallVariant from '@/components/floating_action_buttons/SmallVariant.vue'
 import SpeedDial from '@/components/floating_action_buttons/SpeedDial.vue';
 
 export default {
-  name: 'Buttons: Floating Action Button',
+  name: 'FloatingActionButtons',
   components: {
     FloatingButton,
     DisplayAnimation,
