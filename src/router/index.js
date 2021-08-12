@@ -29,24 +29,14 @@ const routes = [
     component: () => import('../views/AppBar.vue'),
   },
   {
+    path: '/application',
+    name: 'Application',
+    component: () => import('../views/Application.vue'),
+  },
+  {
     path: '/aspect-ratios',
     name: 'Aspect Ratios',
     component: () => import('../views/AspectRatios.vue'),
-  },
-  {
-    path: '/dialogs',
-    name: 'Dialogs',
-    component: () => import('../views/Dialogs.vue'),
-  },
-  {
-    path: '/toolbars',
-    name: 'Toolbars',
-    component: () => import('../views/Toolbar.vue'),
-  },
-  {
-    path: '/app-bars',
-    name: 'App Bars',
-    component: () => import('../views/AppBar.vue'),
   },
   {
     path: '/autocompletes',
@@ -54,6 +44,7 @@ const routes = [
     component: () => import('../views/Autocompletes.vue'),
   },
   {
+
     path: '/avatars',
     name: 'Avatars',
     component: () => import('../views/Avatars.vue'),
@@ -79,14 +70,14 @@ const routes = [
     component: () => import('../views/BottomSheets.vue'),
   },
   {
+    path: '/breadcrumbs',
+    name: 'Breadcrumbs',
+    component: () => import('../views/Breadcrumb.vue'),
+  },
+  {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
-  },
-  {
-    path: '/floating-action-button',
-    name: 'Buttons: Floating Action Button',
-    component: () => import('../views/FloatingActionButtons.vue'),
   },
   {
     path: '/calendars',
@@ -109,6 +100,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/dialogs',
+    name: 'Dialogs',
+    component: () => import('../views/Dialogs.vue'),
+  },
+  {
     path: '/dividers',
     name: 'Dividers',
     component: () => import('../views/Dividers.vue'),
@@ -117,6 +113,11 @@ const routes = [
     path: '/expansion-panels',
     name: 'Expansion Panels',
     component: () => import('../views/ExpansionPanels.vue'),
+  },
+  {
+    path: '/floating-action-button',
+    name: 'Buttons: Floating Action Button',
+    component: () => import('../views/FloatingActionButtons.vue'),
   },
   {
     path: '/footers',
@@ -162,6 +163,11 @@ const routes = [
     path: '/tooltips',
     name: 'Tooltips',
     component: () => import('../views/Tooltips.vue'),
+  },
+  {
+    path: '/timelines',
+    name: 'Timelines',
+    component: () => import('../views/Timelines.vue'),
   },
 ];
 

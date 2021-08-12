@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-system-bar
+      dark
       color="primary"
       id="system-bar-colored-primary"
     >
