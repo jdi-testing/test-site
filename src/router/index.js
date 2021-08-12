@@ -114,6 +114,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/combobox',
+    name: 'Combobox',
+    component: () => import('../views/Combobox.vue'),
+  },
+  {
     path: '/dividers',
     name: 'Dividers',
     component: () => import('../views/Dividers.vue'),
