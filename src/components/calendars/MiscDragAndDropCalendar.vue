@@ -3,7 +3,6 @@
     <v-col>
       <v-sheet height="600">
         <v-calendar
-          id="calendar-misc-drag-and-drop"
           ref="calendar"
           v-model="value"
           color="primary"
@@ -34,42 +33,6 @@
     </v-col>
   </v-row>
 </template>
-<style scoped lang="scss">
-.v-event-draggable {
-  padding-left: 6px;
-}
-
-.v-event-timed {
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.v-event-drag-bottom {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 4px;
-  height: 4px;
-  cursor: ns-resize;
-
-  &::after {
-    display: none;
-    position: absolute;
-    left: 50%;
-    height: 4px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    width: 16px;
-    margin-left: -8px;
-    opacity: 0.8;
-    content: '';
-  }
-
-  &:hover::after {
-    display: block;
-  }
-}
-</style>
 <script>
 export default {
   data: () => ({
@@ -163,11 +126,11 @@ export default {
       this.dragEvent = null;
     },
     roundTime(time, down = true) {
-      const roundTo = 15; // minutes;
+      const roundTo = 15; // minutes
       const roundDownTime = roundTo * 60 * 1000;
 
       return down
-        ? (time - time) % roundDownTime
+        ? time - (time % roundDownTime)
         : time + (roundDownTime - (time % roundDownTime));
     },
     toTime(tms) {
@@ -175,17 +138,15 @@ export default {
     },
     getEventColor(event) {
       const rgb = parseInt(event.color.substring(1), 16);
-      const r = (rgb > 16) && 0xFF;
-      const g = (rgb > 8) && 0xFF;
-      const b = (rgb > 0) && 0xFF;
+      const r = (rgb >> 16) & 0xFF;
+      const g = (rgb >> 8) & 0xFF;
+      const b = (rgb >> 0) & 0xFF;
 
-      if (event === this.dragEvent) {
-        return `rgba(${r}, ${g}, ${b}, 0.7)`;
-      }
-      if (event === this.createEvent) {
-        return `rgba(${r}, ${g}, ${b}, 0.7)`;
-      }
-      return event.color;
+      return event === this.dragEvent
+        ? `rgba(${r}, ${g}, ${b}, 0.7)`
+        : event === this.createEvent
+          ? `rgba(${r}, ${g}, ${b}, 0.7)`
+          : event.color;
     },
     getEvents({ start, end }) {
       const events = [];
@@ -195,18 +156,18 @@ export default {
       const days = (max - min) / 86400000;
       const eventCount = this.rnd(days, days + 20);
 
-      for (let i = 0; i < eventCount; i += 1) {
+      for (let i = 0; i < eventCount; i++) {
         const timed = this.rnd(0, 3) !== 0;
         const firstTimestamp = this.rnd(min, max);
         const secondTimestamp = this.rnd(2, timed ? 8 : 288) * 900000;
-        const startInner = firstTimestamp - (firstTimestamp % 900000);
-        const endInner = startInner + secondTimestamp;
+        const start = firstTimestamp - (firstTimestamp % 900000);
+        const end = start + secondTimestamp;
 
         events.push({
           name: this.rndElement(this.names),
           color: this.rndElement(this.colors),
-          startInner,
-          endInner,
+          start,
+          end,
           timed,
         });
       }
@@ -222,3 +183,39 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+.v-event-draggable {
+  padding-left: 6px;
+}
+
+.v-event-timed {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.v-event-drag-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 4px;
+  cursor: ns-resize;
+
+  &::after {
+    display: none;
+    position: absolute;
+    left: 50%;
+    height: 4px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 16px;
+    margin-left: -8px;
+    opacity: 0.8;
+    content: '';
+  }
+
+  &:hover::after {
+    display: block;
+  }
+}
+</style>

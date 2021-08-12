@@ -6,20 +6,52 @@
 
         <v-col>
             <p class="text-h5">
-                Banner and sticky banner
+                Single Banner
             </p>
-            <banner id="BannerId" />
+            <SingleBanner id="SingleBanner" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Events Banner (icon click)
+            </p>
+            <EventsBanner id="EventsBanner" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Actions Banner
+            </p>
+            <ActionsBanner id="ActionsBanner" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Icon Banner
+            </p>
+            <IconBanner id="IconBanner" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Two line Banner
+            </p>
+            <TwoLineBanner id="TwoLineBanner" />
         </v-col>
     </v-container>
 </template>
 
 <script>
-import Banner from '@/components/banners/Banner.vue';
+import SingleBanner from '@/components/banners/SingleBanner.vue';
+import EventsBanner from '@/components/banners/EventsBanner.vue';
+import ActionsBanner from '@/components/banners/ActionsBanner.vue';
+import IconBanner from '@/components/banners/IconBanner.vue';
+import TwoLineBanner from '@/components/banners/TwoLineBanner.vue';
 
 export default {
   name: 'Banners',
   components: {
-    Banner,
+    SingleBanner,
+    EventsBanner,
+    ActionsBanner,
+    IconBanner,
+    TwoLineBanner,
   },
 };
 </script>
