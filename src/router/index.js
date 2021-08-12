@@ -100,6 +100,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/combobox',
+    name: 'Combobox',
+    component: () => import('../views/Combobox.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
