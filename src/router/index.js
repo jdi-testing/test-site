@@ -135,6 +135,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/item-groups',
+    name: 'Item Groups',
+    component: () => import('../views/ItemGroups.vue'),
+  },
+  {
     path: '/overlays',
     name: 'Overlays',
     component: () => import('../views/Overlays.vue'),
