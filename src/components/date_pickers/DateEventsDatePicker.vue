@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="space-between">
+  <v-row justify="space-around">
     <div>
       <div class="subheading">
         Defined by array

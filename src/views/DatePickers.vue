@@ -162,7 +162,7 @@ import InternationalizationDatePicker from '@/components/date_pickers/Internatio
 import OrientationDatePicker from '@/components/date_pickers/OrientationDatePicker.vue';
 
 export default {
-  name: 'Date pickers',
+  name: 'DatePickers',
   components: {
     AllowedDatesDatePicker,
     ColorsDatePicker,
