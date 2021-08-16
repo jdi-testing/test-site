@@ -180,6 +180,11 @@ const routes = [
     component: () => import('../views/Snackbars.vue'),
   },
   {
+    path: '/sparklines',
+    name: 'Sparklines',
+    component: () => import('../views/Sparklines.vue'),
+  },
+  {
     path: '/switches',
     name: 'Switches',
     component: () => import('../views/Switches.vue'),
