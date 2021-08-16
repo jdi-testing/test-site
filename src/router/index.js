@@ -225,6 +225,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/skeleton-loaders',
+    name: 'Skeleton loaders',
+    component: () => import('../views/SkeletonLoaders.vue'),
+  },
+  {
     path: '/slide-groups',
     name: 'Slide Groups',
     component: () => import('../views/SlideGroups.vue'),
