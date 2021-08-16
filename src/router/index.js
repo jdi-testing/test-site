@@ -100,6 +100,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/combobox',
+    name: 'Combobox',
+    component: () => import('../views/Combobox.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
@@ -115,6 +120,11 @@ const routes = [
     component: () => import('../views/ExpansionPanels.vue'),
   },
   {
+    path: '/file-inputs',
+    name: 'File Inputs',
+    component: () => import('../views/FileInputs.vue'),
+  },
+  {
     path: '/floating-action-button',
     name: 'Buttons: Floating Action Button',
     component: () => import('../views/FloatingActionButtons.vue'),
@@ -123,6 +133,11 @@ const routes = [
     path: '/footers',
     name: 'Footers',
     component: () => import('../views/Footers.vue'),
+  },
+  {
+    path: '/forms',
+    name: 'Forms',
+    component: () => import('../views/Forms.vue'),
   },
   {
     path: '/grid-system',
@@ -135,6 +150,26 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/overflow-buttons',
+    name: 'Overflow Buttons',
+    component: () => import('../views/OverflowButtons.vue'),
+  },
+  {
+    path: '/ratings',
+    name: 'Ratings',
+    component: () => import('../views/Ratings.vue'),
+  },
+  {
+    path: '/inputs',
+    name: 'Inputs',
+    component: () => import('../views/Inputs.vue'),
+  },
+  {
+    path: '/lists',
+    name: 'Lists',
+    component: () => import('../views/Lists.vue'),
+  },
+  {
     path: '/overlays',
     name: 'Overlays',
     component: () => import('../views/Overlays.vue'),
@@ -145,14 +180,49 @@ const routes = [
     component: () => import('../views/RangeSliders.vue'),
   },
   {
+    path: '/radio-buttons',
+    name: 'Radio Buttons',
+    component: () => import('../views/RadioButtons.vue'),
+  },
+  {
+    path: '/sheets',
+    name: 'Sheets',
+    component: () => import('../views/Sheets.vue'),
+  },
+  {
+    path: '/sliders',
+    name: 'Sliders',
+    component: () => import('../views/Sliders.vue'),
+  },
+  {
+    path: '/selects',
+    name: 'Selects',
+    component: () => import('../views/Selects.vue'),
+  },
+  {
     path: '/snackbars',
     name: 'Snackbars',
     component: () => import('../views/Snackbars.vue'),
   },
   {
+    path: '/sparklines',
+    name: 'Sparklines',
+    component: () => import('../views/Sparklines.vue'),
+  },
+  {
+    path: '/switches',
+    name: 'Switches',
+    component: () => import('../views/Switches.vue'),
+  },
+  {
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
+  },
+  {
+    path: '/textareas',
+    name: 'Textareas',
+    component: () => import('../views/Textareas.vue'),
   },
   {
     path: '/toolbars',
@@ -168,6 +238,11 @@ const routes = [
     path: '/timelines',
     name: 'Timelines',
     component: () => import('../views/Timelines.vue'),
+  },
+  {
+    path: '/windows',
+    name: 'Windows',
+    component: () => import('../views/Windows.vue'),
   },
 ];
 
