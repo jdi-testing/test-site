@@ -170,6 +170,11 @@ const routes = [
     component: () => import('../views/Snackbars.vue'),
   },
   {
+    path: '/switches',
+    name: 'Switches',
+    component: () => import('../views/Switches.vue'),
+  },
+  {
     path: '/system-bars',
     name: 'System Bars',
     component: () => import('../views/SystemBars.vue'),
