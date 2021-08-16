@@ -120,6 +120,11 @@ const routes = [
     component: () => import('../views/Combobox.vue'),
   },
   {
+    path: '/date-pickers',
+    name: 'Date Pickers',
+    component: () => import('../views/DatePickers.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
