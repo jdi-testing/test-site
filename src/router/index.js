@@ -100,6 +100,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/combobox',
+    name: 'Combobox',
+    component: () => import('../views/Combobox.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
@@ -135,9 +140,39 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/ratings',
+    name: 'Ratings',
+    component: () => import('../views/Ratings.vue'),
+  },
+  {
+    path: '/inputs',
+    name: 'Inputs',
+    component: () => import('../views/Inputs.vue'),
+  },
+  {
+    path: '/lists',
+    name: 'Lists',
+    component: () => import('../views/Lists.vue'),
+  },
+  {
     path: '/overlays',
     name: 'Overlays',
     component: () => import('../views/Overlays.vue'),
+  },
+  {
+    path: '/sheets',
+    name: 'Sheets',
+    component: () => import('../views/Sheets.vue'),
+  },
+  {
+    path: '/sliders',
+    name: 'Sliders',
+    component: () => import('../views/Sliders.vue'),
+  },
+  {
+    path: '/selects',
+    name: 'Selects',
+    component: () => import('../views/Selects.vue'),
   },
   {
     path: '/snackbars',
@@ -148,6 +183,11 @@ const routes = [
     path: '/sparklines',
     name: 'Sparklines',
     component: () => import('../views/Sparklines.vue'),
+  },
+  {
+    path: '/switches',
+    name: 'Switches',
+    component: () => import('../views/Switches.vue'),
   },
   {
     path: '/system-bars',
