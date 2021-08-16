@@ -195,6 +195,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/slide-groups',
+    name: 'Slide Groups',
+    component: () => import('../views/SlideGroups.vue'),
+  },
+  {
     path: '/range-sliders',
     name: 'Range Sliders',
     component: () => import('../views/RangeSliders.vue'),
