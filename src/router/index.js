@@ -160,6 +160,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/images',
+    name: 'Images',
+    component: () => import('../views/Images.vue'),
+  },
+  {
     path: '/list-item-groups',
     name: 'List Item Groups',
     component: () => import('../views/ListItemGroups.vue'),
