@@ -100,6 +100,11 @@ const routes = [
     component: () => import('../views/Carousels.vue'),
   },
   {
+    path: '/chip-groups',
+    name: 'Chip Groups',
+    component: () => import('../views/ChipGroups.vue'),
+  },
+  {
     path: '/chips',
     name: 'Chips',
     component: () => import('../views/Chips.vue'),
