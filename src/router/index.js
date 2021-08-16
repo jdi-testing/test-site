@@ -160,6 +160,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/sheets',
+    name: 'Sheets',
+    component: () => import('../views/Sheets.vue'),
+  },
+  {
     path: '/sliders',
     name: 'Sliders',
     component: () => import('../views/Sliders.vue'),
