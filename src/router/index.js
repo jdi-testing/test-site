@@ -160,6 +160,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/list-item-groups',
+    name: 'List Item Groups',
+    component: () => import('../views/ListItemGroups.vue'),
+  },
+  {
     path: '/item-groups',
     name: 'Item Groups',
     component: () => import('../views/ItemGroups.vue'),
