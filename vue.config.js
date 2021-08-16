@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/vuetify/'
+    ? '/jdi-light/vuetify/'
     : '/',
   transpileDependencies: [
     'vuetify',
