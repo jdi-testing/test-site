@@ -110,6 +110,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/color-pickers',
+    name: 'Color Pickers',
+    component: () => import('../views/ColorPickers.vue'),
+  },
+  {
     path: '/combobox',
     name: 'Combobox',
     component: () => import('../views/Combobox.vue'),
