@@ -140,6 +140,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/ratings',
+    name: 'Ratings',
+    component: () => import('../views/Ratings.vue'),
+  },
+  {
     path: '/inputs',
     name: 'Inputs',
     component: () => import('../views/Inputs.vue'),
