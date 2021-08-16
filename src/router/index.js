@@ -100,6 +100,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/combobox',
+    name: 'Combobox',
+    component: () => import('../views/Combobox.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
@@ -135,6 +140,16 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/inputs',
+    name: 'Inputs',
+    component: () => import('../views/Inputs.vue'),
+  },
+  {
+    path: '/lists',
+    name: 'Lists',
+    component: () => import('../views/Lists.vue'),
+  },
+  {
     path: '/overlays',
     name: 'Overlays',
     component: () => import('../views/Overlays.vue'),
@@ -143,6 +158,11 @@ const routes = [
     path: '/sliders',
     name: 'Sliders',
     component: () => import('../views/Sliders.vue'),
+  },
+  {
+    path: '/selects',
+    name: 'Selects',
+    component: () => import('../views/Selects.vue'),
   },
   {
     path: '/snackbars',
