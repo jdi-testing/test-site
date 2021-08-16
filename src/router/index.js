@@ -265,6 +265,11 @@ const routes = [
     component: () => import('../views/Snackbars.vue'),
   },
   {
+    path: '/steppers',
+    name: 'Steppers',
+    component: () => import('../views/Steppers.vue'),
+  },
+  {
     path: '/sparklines',
     name: 'Sparklines',
     component: () => import('../views/Sparklines.vue'),
