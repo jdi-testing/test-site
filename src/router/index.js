@@ -220,6 +220,11 @@ const routes = [
     component: () => import('../views/SystemBars.vue'),
   },
   {
+    path: '/text-fields',
+    name: 'Text Fields',
+    component: () => import('../views/TextFields.vue'),
+  },
+  {
     path: '/textareas',
     name: 'Textareas',
     component: () => import('../views/Textareas.vue'),
