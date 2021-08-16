@@ -150,6 +150,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/overflow-buttons',
+    name: 'Overflow Buttons',
+    component: () => import('../views/OverflowButtons.vue'),
+  },
+  {
     path: '/ratings',
     name: 'Ratings',
     component: () => import('../views/Ratings.vue'),
