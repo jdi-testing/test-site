@@ -219,6 +219,11 @@ const routes = [
     name: 'Timelines',
     component: () => import('../views/Timelines.vue'),
   },
+  {
+    path: '/windows',
+    name: 'Windows',
+    component: () => import('../views/Windows.vue'),
+  },
 ];
 
 const router = new VueRouter({
