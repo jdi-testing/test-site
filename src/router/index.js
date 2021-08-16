@@ -100,6 +100,11 @@ const routes = [
     component: () => import('../views/Chips.vue'),
   },
   {
+    path: '/combobox',
+    name: 'Combobox',
+    component: () => import('../views/Combobox.vue'),
+  },
+  {
     path: '/dialogs',
     name: 'Dialogs',
     component: () => import('../views/Dialogs.vue'),
@@ -138,6 +143,11 @@ const routes = [
     path: '/inputs',
     name: 'Inputs',
     component: () => import('../views/Inputs.vue'),
+  },
+  {
+    path: '/lists',
+    name: 'Lists',
+    component: () => import('../views/Lists.vue'),
   },
   {
     path: '/overlays',
