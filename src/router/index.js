@@ -160,6 +160,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/menus',
+    name: 'Menus',
+    component: () => import('../views/Menus.vue'),
+  },
+  {
     path: '/images',
     name: 'Images',
     component: () => import('../views/Images.vue'),
