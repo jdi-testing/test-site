@@ -175,6 +175,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/range-sliders',
+    name: 'Range Sliders',
+    component: () => import('../views/RangeSliders.vue'),
+  },
+  {
     path: '/radio-buttons',
     name: 'Radio Buttons',
     component: () => import('../views/RadioButtons.vue'),
