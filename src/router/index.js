@@ -175,6 +175,11 @@ const routes = [
     component: () => import('../views/Overlays.vue'),
   },
   {
+    path: '/radio-buttons',
+    name: 'Radio Buttons',
+    component: () => import('../views/RadioButtons.vue'),
+  },
+  {
     path: '/sheets',
     name: 'Sheets',
     component: () => import('../views/Sheets.vue'),
