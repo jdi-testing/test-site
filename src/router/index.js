@@ -75,6 +75,11 @@ const routes = [
     component: () => import('../views/Breadcrumb.vue'),
   },
   {
+    path: '/button-groups',
+    name: 'Button Groups',
+    component: () => import('../views/ButtonGroups.vue'),
+  },
+  {
     path: '/buttons',
     name: 'Buttons',
     component: () => import('../views/Buttons.vue'),
