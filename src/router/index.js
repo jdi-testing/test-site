@@ -165,6 +165,11 @@ const routes = [
     component: () => import('../views/Hover.vue'),
   },
   {
+    path: '/navigation-drawers',
+    name: 'Navigation Drawers',
+    component: () => import('../views/NavigationDrawers.vue'),
+  },
+  {
     path: '/menus',
     name: 'Menus',
     component: () => import('../views/Menus.vue'),
