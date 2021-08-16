@@ -155,6 +155,11 @@ const routes = [
     component: () => import('../views/GridSystem.vue'),
   },
   {
+    path: '/icons',
+    name: 'Icons',
+    component: () => import('../views/Icons.vue'),
+  },
+  {
     path: '/hover',
     name: 'Hover',
     component: () => import('../views/Hover.vue'),
