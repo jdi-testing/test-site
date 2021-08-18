@@ -186,7 +186,7 @@ import FullWidthWithCounterTextField from '@/components/text_fields/FullWidthWit
 import PasswordInputTextField from '@/components/text_fields/PasswordInputTextField.vue';
 
 export default {
-  name: 'Text fields',
+  name: 'TextFields',
   components: {
     CounterTextField,
     ClearableTextField,

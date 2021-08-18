@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import FloatingButton from '@/components/floating_action_buttons/FloatingButton.vue';
 import DisplayAnimation from '@/components/floating_action_buttons/DisplayAnimation.vue';
 import LateralScreens from '@/components/floating_action_buttons/LateralScreens.vue';

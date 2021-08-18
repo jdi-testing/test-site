@@ -3,6 +3,9 @@ node_modules
 /dist
 package-lock.json
 
+# nuxt.js build output
+.nuxt
+
 # local env files
 .env.local
 .env.*.local

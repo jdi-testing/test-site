@@ -42,7 +42,7 @@ import MandatoryRadioButton from '@/components/radio_buttons/MandatoryRadioButto
 import LabelRadioButton from '@/components/radio_buttons/LabelRadioButton.vue';
 
 export default {
-  name: 'Radio buttons',
+  name: 'RadioButtons',
   components: {
     ColorsRadioButton,
     DirectionRadioButton,

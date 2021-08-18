@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import AutocompleteDense from '@/components/autocompletes/AutocompleteDense.vue';
 import AutocompleteFilter from '@/components/autocompletes/AutocompleteFilter.vue';
 import AutocompleteSlots from '@/components/autocompletes/AutocompleteSlots.vue';

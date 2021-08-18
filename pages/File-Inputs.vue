@@ -90,7 +90,7 @@ import SelectionFileInput from '@/components/file_inputs/SelectionFileInput.vue'
 import ComplexSelectionSlotFileInput from '@/components/file_inputs/ComplexSelectionSlotFileInput.vue';
 
 export default {
-  name: 'File inputs',
+  name: 'FileInputs',
   components: {
     AcceptFileInput,
     ChipsFileInput,

@@ -50,7 +50,7 @@ import ModelColorPicker from '@/components/color_pickers/ModelColorPicker.vue';
 import SwatchesColorPicker from '@/components/color_pickers/SwatchesColorPicker.vue';
 
 export default {
-  name: 'Color pickers',
+  name: 'ColorPickers',
   components: {
     CanvasColorPicker,
     ElevationColorPicker,

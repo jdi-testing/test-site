@@ -114,7 +114,7 @@ import WidthTimePicker from '@/components/time_pickers/WidthTimePicker.vue';
 import DialogAndMenuTimePicker from '@/components/time_pickers/DialogAndMenuTimePicker.vue';
 
 export default {
-  name: 'Time pickers',
+  name: 'TimePickers',
   components: {
     AllowedTimesTimePicker,
     AMPMInTitleTimePicker,

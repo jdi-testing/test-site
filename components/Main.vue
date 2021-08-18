@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <img alt="JDI logo" src="../assets/jdi_logo.png">
+    <img alt="JDI logo" src="../static/jdi_logo.png">
     <v-row class="text-center">
 
       <v-col class="mb-4">

@@ -50,7 +50,7 @@ import MultipleSlideGroup from '@/components/slide_groups/MultipleSlideGroup.vue
 import PseudoCarouselSlideGroup from '@/components/slide_groups/PseudoCarouselSlideGroup.vue';
 
 export default {
-  name: 'Slide groups',
+  name: 'SlideGroups',
   components: {
     ActiveClassSlideGroup,
     CenterActiveSlideGroup,

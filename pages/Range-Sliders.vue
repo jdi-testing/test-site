@@ -50,7 +50,7 @@ import VerticalSlidersRangeSlider from '@/components/range_sliders/VerticalSlide
 import ThumbLabelRangeSlider from '@/components/range_sliders/ThumbLabelRangeSlider.vue';
 
 export default {
-  name: 'Range Sliders',
+  name: 'RangeSliders',
   components: {
     DisabledRangeSlider,
     MinAndMaxRangeSlider,

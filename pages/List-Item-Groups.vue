@@ -50,7 +50,7 @@ import FlatListListItemGroup from '@/components/list_item_groups/FlatListListIte
 import SelectionControlsListItemGroup from '@/components/list_item_groups/SelectionControlsListItemGroup.vue';
 
 export default {
-  name: 'List item groups',
+  name: 'ListItemGroups',
   components: {
     ActiveClassListItemGroup,
     MandatoryListItemGroup,

@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import SimpleSnackbar from '@/components/snackbars/SimpleSnackbar.vue';
 import MultiLineSnackbar from '@/components/snackbars/MultiLineSnackbar.vue';
 import TimeoutSnackbar from '@/components/snackbars/TimeoutSnackbar.vue';

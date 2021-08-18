@@ -1,6 +1,5 @@
  <template>
   <v-app>
-
     <v-navigation-drawer permanent app>
       <v-list-item>
         <v-list-item-content>
@@ -52,13 +51,12 @@
     </v-navigation-drawer>
 
     <v-main>
-      <router-view/>
+      <Nuxt />
     </v-main>
   </v-app>
 </template>
 
 <script>
-
 export default {
   name: 'App',
 
@@ -84,7 +82,7 @@ export default {
         { title: 'Bottom sheets', link: '/bottom-sheets' },
         { title: 'Breadcrumbs', link: '/breadcrumbs' },
         { title: 'Buttons', link: '/buttons' },
-        { title: 'Buttons: Floating Action Button', link: '/floating-action-button' },
+        { title: 'Buttons: Floating Action Button', link: '/floating-action-buttons' },
         { title: 'Calendars', link: '/calendars' },
         { title: 'Cards', link: '/cards' },
         { title: 'Carousels', link: '/carousels' },

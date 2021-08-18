@@ -41,7 +41,7 @@ import DynamicBadge from '@/components/badges/DynamicBadge.vue';
 import HoverBadge from '@/components/badges/HoverBadge.vue';
 
 export default {
-  name: 'Bages',
+  name: 'Badges',
   components: {
     SimpleBadge,
     CustomBadge,

@@ -82,7 +82,7 @@ import ColoredDrawerNavigationDrawer from '@/components/navigation_drawers/Color
 import CombinedDrawerNavigationDrawer from '@/components/navigation_drawers/CombinedDrawerNavigationDrawer.vue';
 
 export default {
-  name: 'Navigation drawers',
+  name: 'NavigationDrawers',
   components: {
     BottomDrawerNavigationDrawer,
     ExpandOnHoverNavigationDrawer,

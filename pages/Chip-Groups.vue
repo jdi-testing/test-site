@@ -58,7 +58,7 @@ import ProductCardChipGroup from '@/components/chip_groups/ProductCardChipGroup.
 import ToothbrushCardChipGroup from '@/components/chip_groups/ToothbrushCardChipGroup.vue';
 
 export default {
-  name: 'Chip groups',
+  name: 'ChipGroups',
   components: {
     ColumnChipGroup,
     FilterResultsChipGroup,

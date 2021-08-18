@@ -90,7 +90,7 @@ import ReadonlyOverflowButton from '@/components/overflow_buttons/ReadonlyOverfl
 import SegmentedOverflowButton from '@/components/overflow_buttons/SegmentedOverflowButton.vue';
 
 export default {
-  name: 'Overflow buttons',
+  name: 'OverflowButtons',
   components: {
     CounterOverflowButton,
     DenseOverflowButton,

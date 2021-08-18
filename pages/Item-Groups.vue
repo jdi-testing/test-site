@@ -50,7 +50,7 @@ import ChipsItemGroup from '@/components/item_groups/ChipsItemGroup.vue';
 import SelectionItemGroup from '@/components/item_groups/SelectionItemGroup.vue';
 
 export default {
-  name: 'Item groups',
+  name: 'ItemGroups',
   components: {
     ActiveClassItemGroup,
     MandatoryItemGroup,

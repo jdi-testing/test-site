@@ -18,7 +18,7 @@
 import BoilerplateComponentSkeletonLoader from '@/components/skeleton_loaders/BoilerplateComponentSkeletonLoader.vue';
 
 export default {
-  name: 'Skeleton loaders',
+  name: 'SkeletonLoaders',
   components: {
     BoilerplateComponentSkeletonLoader,
   },

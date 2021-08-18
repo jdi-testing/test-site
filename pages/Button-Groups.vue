@@ -50,7 +50,7 @@ import ToolbarButtonGroup from '@/components/button_groups/ToolbarButtonGroup.vu
 import WYSIWYGButtonGroup from '@/components/button_groups/WYSIWYGButtonGroup.vue';
 
 export default {
-  name: 'Button groups',
+  name: 'ButtonGroups',
   components: {
     MandatoryButtonGroup,
     MultipleButtonGroup,
