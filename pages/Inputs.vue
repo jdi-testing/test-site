@@ -71,15 +71,15 @@
 </template>
 
 <script>
-import ErrorCountInput1 from '@/components/inputs/ErrorCountInput1.vue';
-import ErrorCountInput2 from '@/components/inputs/ErrorCountInput2.vue';
-import HideDetailsInput from '@/components/inputs/HideDetailsInput.vue';
-import HintInput from '@/components/inputs/HintInput.vue';
-import LoadingInput from '@/components/inputs/LoadingInput.vue';
-import RulesInput from '@/components/inputs/RulesInput.vue';
-import SuccessInput from '@/components/inputs/SuccessInput.vue';
-import SlotClicksInput from '@/components/inputs/SlotClicksInput.vue';
-import AppendAndPrependInput from '@/components/inputs/AppendAndPrependInput.vue';
+import ErrorCountInput1 from '@/components/form_inputs/inputs/ErrorCountInput1.vue';
+import ErrorCountInput2 from '@/components/form_inputs/inputs/ErrorCountInput2.vue';
+import HideDetailsInput from '@/components/form_inputs/inputs/HideDetailsInput.vue';
+import HintInput from '@/components/form_inputs/inputs/HintInput.vue';
+import LoadingInput from '@/components/form_inputs/inputs/LoadingInput.vue';
+import RulesInput from '@/components/form_inputs/inputs/RulesInput.vue';
+import SuccessInput from '@/components/form_inputs/inputs/SuccessInput.vue';
+import SlotClicksInput from '@/components/form_inputs/inputs/SlotClicksInput.vue';
+import AppendAndPrependInput from '@/components/form_inputs/inputs/AppendAndPrependInput.vue';
 
 export default {
   name: 'Inputs',

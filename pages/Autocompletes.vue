@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import AutocompleteDense from '@/components/autocompletes/AutocompleteDense.vue';
-import AutocompleteFilter from '@/components/autocompletes/AutocompleteFilter.vue';
-import AutocompleteSlots from '@/components/autocompletes/AutocompleteSlots.vue';
-import AutocompleteAPISearch from '@/components/autocompletes/AutocompleteAPISearch.vue';
-import AutocompleteAsyncItems from '@/components/autocompletes/AutocompleteAsyncItems.vue';
+import AutocompleteDense from '@/components/form_inputs/autocompletes/AutocompleteDense.vue';
+import AutocompleteFilter from '@/components/form_inputs/autocompletes/AutocompleteFilter.vue';
+import AutocompleteSlots from '@/components/form_inputs/autocompletes/AutocompleteSlots.vue';
+import AutocompleteAPISearch from '@/components/form_inputs/autocompletes/AutocompleteAPISearch.vue';
+import AutocompleteAsyncItems from '@/components/form_inputs/autocompletes/AutocompleteAsyncItems.vue';
 
 export default {
   name: 'Autocompletes',

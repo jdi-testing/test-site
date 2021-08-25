@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import ColorsRadioButton from '@/components/radio_buttons/ColorsRadioButton.vue';
-import DirectionRadioButton from '@/components/radio_buttons/DirectionRadioButton.vue';
-import MandatoryRadioButton from '@/components/radio_buttons/MandatoryRadioButton.vue';
-import LabelRadioButton from '@/components/radio_buttons/LabelRadioButton.vue';
+import ColorsRadioButton from '@/components/form_inputs/radio_buttons/ColorsRadioButton.vue';
+import DirectionRadioButton from '@/components/form_inputs/radio_buttons/DirectionRadioButton.vue';
+import MandatoryRadioButton from '@/components/form_inputs/radio_buttons/MandatoryRadioButton.vue';
+import LabelRadioButton from '@/components/form_inputs/radio_buttons/LabelRadioButton.vue';
 
 export default {
   name: 'RadioButtons',

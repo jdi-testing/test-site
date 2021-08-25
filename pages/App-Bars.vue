@@ -64,14 +64,14 @@
 
 <script>
 
-import CollapsibleBar from '@/components/appbars/CollapsibleBar.vue';
-import DenseBar from '@/components/appbars/DenseBar.vue';
-import ElevateScrollBar from '@/components/appbars/ElevateScrollBar.vue';
-import FadeImageBar from '@/components/appbars/FadeImageBar.vue';
-import HidingScrollBar from '@/components/appbars/HidingScrollBar.vue';
-import ImageBar from '@/components/appbars/ImageBar.vue';
-import ScrollThresholdBar from '@/components/appbars/ScrollThresholdBar.vue';
-import ToggleNavigationDrawersBar from '@/components/appbars/ToggleNavigationDrawersBar.vue';
+import CollapsibleBar from '@/components/bars/appbars/CollapsibleBar.vue';
+import DenseBar from '@/components/bars/appbars/DenseBar.vue';
+import ElevateScrollBar from '@/components/bars/appbars/ElevateScrollBar.vue';
+import FadeImageBar from '@/components/bars/appbars/FadeImageBar.vue';
+import HidingScrollBar from '@/components/bars/appbars/HidingScrollBar.vue';
+import ImageBar from '@/components/bars/appbars/ImageBar.vue';
+import ScrollThresholdBar from '@/components/bars/appbars/ScrollThresholdBar.vue';
+import ToggleNavigationDrawersBar from '@/components/bars/appbars/ToggleNavigationDrawersBar.vue';
 
 export default {
   name: 'AppBars',

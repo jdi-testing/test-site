@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import RulesForm from '@/components/forms/RulesForm.vue';
-import ValidationWithSubmitClearForm from '@/components/forms/ValidationWithSubmitClearForm.vue';
-import VeeValidateForm from '@/components/forms/VeeValidateForm.vue';
-import VuelidateForm from '@/components/forms/VuelidateForm.vue';
+import RulesForm from '@/components/form_inputs/forms/RulesForm.vue';
+import ValidationWithSubmitClearForm from '@/components/form_inputs/forms/ValidationWithSubmitClearForm.vue';
+import VeeValidateForm from '@/components/form_inputs/forms/VeeValidateForm.vue';
+import VuelidateForm from '@/components/form_inputs/forms/VuelidateForm.vue';
 
 export default {
   name: 'Forms',

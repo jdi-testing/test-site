@@ -55,12 +55,12 @@
 </template>
 
 <script>
-import ColoredSystemBar from '@/components/system_bars/ColoredSystemBar.vue';
-import LightsOutSystemBar from '@/components/system_bars/LightsOutSystemBar.vue';
-import AbsolutePositionSystemBar from '@/components/system_bars/AbsolutePositionSystemBar.vue';
-import HighSystemBar from '@/components/system_bars/HighSystemBar.vue';
-import AppSystemBar from '@/components/system_bars/AppSystemBar.vue';
-import WindowSystemBar from '@/components/system_bars/WindowSystemBar.vue';
+import ColoredSystemBar from '@/components/bars/system_bars/ColoredSystemBar.vue';
+import LightsOutSystemBar from '@/components/bars/system_bars/LightsOutSystemBar.vue';
+import AbsolutePositionSystemBar from '@/components/bars/system_bars/AbsolutePositionSystemBar.vue';
+import HighSystemBar from '@/components/bars/system_bars/HighSystemBar.vue';
+import AppSystemBar from '@/components/bars/system_bars/AppSystemBar.vue';
+import WindowSystemBar from '@/components/bars/system_bars/WindowSystemBar.vue';
 
 export default {
   name: 'SystemBars',

@@ -43,11 +43,11 @@
 </template>
 
 <script>
-import DisabledRangeSlider from '@/components/range_sliders/DisabledRangeSlider.vue';
-import MinAndMaxRangeSlider from '@/components/range_sliders/MinAndMaxRangeSlider.vue';
-import StepRangeSlider from '@/components/range_sliders/StepRangeSlider.vue';
-import VerticalSlidersRangeSlider from '@/components/range_sliders/VerticalSlidersRangeSlider.vue';
-import ThumbLabelRangeSlider from '@/components/range_sliders/ThumbLabelRangeSlider.vue';
+import DisabledRangeSlider from '@/components/form_inputs/range_sliders/DisabledRangeSlider.vue';
+import MinAndMaxRangeSlider from '@/components/form_inputs/range_sliders/MinAndMaxRangeSlider.vue';
+import StepRangeSlider from '@/components/form_inputs/range_sliders/StepRangeSlider.vue';
+import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/VerticalSlidersRangeSlider.vue';
+import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
 
 export default {
   name: 'RangeSliders',

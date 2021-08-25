@@ -141,25 +141,25 @@
 </template>
 
 <script>
-import AllowedDatesDatePicker from '@/components/date_pickers/AllowedDatesDatePicker.vue';
-import ColorsDatePicker from '@/components/date_pickers/ColorsDatePicker.vue';
-import ElevationDatePicker from '@/components/date_pickers/ElevationDatePicker.vue';
-import IconsDatePicker from '@/components/date_pickers/IconsDatePicker.vue';
-import MultipleDatePicker from '@/components/date_pickers/MultipleDatePicker.vue';
-import PickerDateDatePicker from '@/components/date_pickers/PickerDateDatePicker.vue';
-import RangeDatePicker from '@/components/date_pickers/RangeDatePicker.vue';
-import ReadonlyDatePicker from '@/components/date_pickers/ReadonlyDatePicker.vue';
-import ShowCurrentDatePicker from '@/components/date_pickers/ShowCurrentDatePicker.vue';
-import ShowSiblingMonthsDatePicker from '@/components/date_pickers/ShowSiblingMonthsDatePicker.vue';
-import WidthDatePicker from '@/components/date_pickers/WidthDatePicker.vue';
-import DateButtonsDatePicker from '@/components/date_pickers/DateButtonsDatePicker.vue';
-import DateEventsDatePicker from '@/components/date_pickers/DateEventsDatePicker.vue';
-import ActivePickerDatePicker from '@/components/date_pickers/ActivePickerDatePicker.vue';
-import DialogAndMenuDatePicker from '@/components/date_pickers/DialogAndMenuDatePicker.vue';
-import FormattingDatePicker from '@/components/date_pickers/FormattingDatePicker.vue';
-import FormattingWithExternalLibrariesDatePicker from '@/components/date_pickers/FormattingWithExternalLibrariesDatePicker.vue';
-import InternationalizationDatePicker from '@/components/date_pickers/InternationalizationDatePicker.vue';
-import OrientationDatePicker from '@/components/date_pickers/OrientationDatePicker.vue';
+import AllowedDatesDatePicker from '@/components/pickers/date_pickers/AllowedDatesDatePicker.vue';
+import ColorsDatePicker from '@/components/pickers/date_pickers/ColorsDatePicker.vue';
+import ElevationDatePicker from '@/components/pickers/date_pickers/ElevationDatePicker.vue';
+import IconsDatePicker from '@/components/pickers/date_pickers/IconsDatePicker.vue';
+import MultipleDatePicker from '@/components/pickers/date_pickers/MultipleDatePicker.vue';
+import PickerDateDatePicker from '@/components/pickers/date_pickers/PickerDateDatePicker.vue';
+import RangeDatePicker from '@/components/pickers/date_pickers/RangeDatePicker.vue';
+import ReadonlyDatePicker from '@/components/pickers/date_pickers/ReadonlyDatePicker.vue';
+import ShowCurrentDatePicker from '@/components/pickers/date_pickers/ShowCurrentDatePicker.vue';
+import ShowSiblingMonthsDatePicker from '@/components/pickers/date_pickers/ShowSiblingMonthsDatePicker.vue';
+import WidthDatePicker from '@/components/pickers/date_pickers/WidthDatePicker.vue';
+import DateButtonsDatePicker from '@/components/pickers/date_pickers/DateButtonsDatePicker.vue';
+import DateEventsDatePicker from '@/components/pickers/date_pickers/DateEventsDatePicker.vue';
+import ActivePickerDatePicker from '@/components/pickers/date_pickers/ActivePickerDatePicker.vue';
+import DialogAndMenuDatePicker from '@/components/pickers/date_pickers/DialogAndMenuDatePicker.vue';
+import FormattingDatePicker from '@/components/pickers/date_pickers/FormattingDatePicker.vue';
+import FormattingWithExternalLibrariesDatePicker from '@/components/pickers/date_pickers/FormattingWithExternalLibrariesDatePicker.vue';
+import InternationalizationDatePicker from '@/components/pickers/date_pickers/InternationalizationDatePicker.vue';
+import OrientationDatePicker from '@/components/pickers/date_pickers/OrientationDatePicker.vue';
 
 export default {
   name: 'DatePickers',

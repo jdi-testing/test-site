@@ -43,11 +43,11 @@
 </template>
 
 <script>
-import CanvasColorPicker from '@/components/color_pickers/CanvasColorPicker.vue';
-import ElevationColorPicker from '@/components/color_pickers/ElevationColorPicker.vue';
-import InputsColorPicker from '@/components/color_pickers/InputsColorPicker.vue';
-import ModelColorPicker from '@/components/color_pickers/ModelColorPicker.vue';
-import SwatchesColorPicker from '@/components/color_pickers/SwatchesColorPicker.vue';
+import CanvasColorPicker from '@/components/pickers/color_pickers/CanvasColorPicker.vue';
+import ElevationColorPicker from '@/components/pickers/color_pickers/ElevationColorPicker.vue';
+import InputsColorPicker from '@/components/pickers/color_pickers/InputsColorPicker.vue';
+import ModelColorPicker from '@/components/pickers/color_pickers/ModelColorPicker.vue';
+import SwatchesColorPicker from '@/components/pickers/color_pickers/SwatchesColorPicker.vue';
 
 export default {
   name: 'ColorPickers',

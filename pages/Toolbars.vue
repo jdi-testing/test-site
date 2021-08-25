@@ -63,13 +63,13 @@
 </template>
 
 <script>
-import BackgroundToolbar from '@/components/toolbars/BackgroundToolbar.vue';
-import CollapseToolbar from '@/components/toolbars/CollapseToolbar.vue';
-import DenseToolbar from '@/components/toolbars/DenseToolbar.vue';
-import ExtendedToolbar from '@/components/toolbars/ExtendedToolbar.vue';
-import FloatingWithSearchToolbar from '@/components/toolbars/FloatingWithSearchToolbar.vue';
-import ContextActionToolbar from '@/components/toolbars/ContextualActionToolbar.vue';
-import FlexibleAndCardToolbar from '@/components/toolbars/FlexibleAndCardToolbar.vue';
+import BackgroundToolbar from '@/components/bars/toolbars/BackgroundToolbar.vue';
+import CollapseToolbar from '@/components/bars/toolbars/CollapseToolbar.vue';
+import DenseToolbar from '@/components/bars/toolbars/DenseToolbar.vue';
+import ExtendedToolbar from '@/components/bars/toolbars/ExtendedToolbar.vue';
+import FloatingWithSearchToolbar from '@/components/bars/toolbars/FloatingWithSearchToolbar.vue';
+import ContextActionToolbar from '@/components/bars/toolbars/ContextualActionToolbar.vue';
+import FlexibleAndCardToolbar from '@/components/bars/toolbars/FlexibleAndCardToolbar.vue';
 
 export default {
   name: 'Toolbars',

@@ -78,16 +78,16 @@
 </template>
 
 <script>
-import AcceptFileInput from '@/components/file_inputs/AcceptFileInput.vue';
-import ChipsFileInput from '@/components/file_inputs/ChipsFileInput.vue';
-import CounterFileInput from '@/components/file_inputs/CounterFileInput.vue';
-import DenseFileInput from '@/components/file_inputs/DenseFileInput.vue';
-import MultipleFileInput from '@/components/file_inputs/MultipleFileInput.vue';
-import PrependIconFileInput from '@/components/file_inputs/PrependIconFileInput.vue';
-import ShowSizeFileInput from '@/components/file_inputs/ShowSizeFileInput.vue';
-import ValidationFileInput from '@/components/file_inputs/ValidationFileInput.vue';
-import SelectionFileInput from '@/components/file_inputs/SelectionFileInput.vue';
-import ComplexSelectionSlotFileInput from '@/components/file_inputs/ComplexSelectionSlotFileInput.vue';
+import AcceptFileInput from '@/components/form_inputs/file_inputs/AcceptFileInput.vue';
+import ChipsFileInput from '@/components/form_inputs/file_inputs/ChipsFileInput.vue';
+import CounterFileInput from '@/components/form_inputs/file_inputs/CounterFileInput.vue';
+import DenseFileInput from '@/components/form_inputs/file_inputs/DenseFileInput.vue';
+import MultipleFileInput from '@/components/form_inputs/file_inputs/MultipleFileInput.vue';
+import PrependIconFileInput from '@/components/form_inputs/file_inputs/PrependIconFileInput.vue';
+import ShowSizeFileInput from '@/components/form_inputs/file_inputs/ShowSizeFileInput.vue';
+import ValidationFileInput from '@/components/form_inputs/file_inputs/ValidationFileInput.vue';
+import SelectionFileInput from '@/components/form_inputs/file_inputs/SelectionFileInput.vue';
+import ComplexSelectionSlotFileInput from '@/components/form_inputs/file_inputs/ComplexSelectionSlotFileInput.vue';
 
 export default {
   name: 'FileInputs',

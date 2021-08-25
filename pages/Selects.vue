@@ -78,16 +78,16 @@
 </template>
 
 <script>
-import CustomTextAndValueSelect from '@/components/selects/CustomTextAndValueSelect.vue';
-import DenseSelect from '@/components/selects/DenseSelect.vue';
-import DisabledSelect from '@/components/selects/DisabledSelect.vue';
-import IconsSelect from '@/components/selects/IconsSelect.vue';
-import LightSelect from '@/components/selects/LightSelect.vue';
-import MenuPropsSelect from '@/components/selects/MenuPropsSelect.vue';
-import MultipleSelect from '@/components/selects/MultipleSelect.vue';
-import ReadonlySelect from '@/components/selects/ReadonlySelect.vue';
-import AppendAndPrependItemSelect from '@/components/selects/AppendAndPrependItemSelect.vue';
-import SelectionSelect from '@/components/selects/SelectionSelect.vue';
+import CustomTextAndValueSelect from '@/components/form_inputs/selects/CustomTextAndValueSelect.vue';
+import DenseSelect from '@/components/form_inputs/selects/DenseSelect.vue';
+import DisabledSelect from '@/components/form_inputs/selects/DisabledSelect.vue';
+import IconsSelect from '@/components/form_inputs/selects/IconsSelect.vue';
+import LightSelect from '@/components/form_inputs/selects/LightSelect.vue';
+import MenuPropsSelect from '@/components/form_inputs/selects/MenuPropsSelect.vue';
+import MultipleSelect from '@/components/form_inputs/selects/MultipleSelect.vue';
+import ReadonlySelect from '@/components/form_inputs/selects/ReadonlySelect.vue';
+import AppendAndPrependItemSelect from '@/components/form_inputs/selects/AppendAndPrependItemSelect.vue';
+import SelectionSelect from '@/components/form_inputs/selects/SelectionSelect.vue';
 
 export default {
   name: 'Selects',

@@ -57,13 +57,13 @@
 </template>
 
 <script>
-import ColorsSwitch from '@/components/switches/ColorsSwitch.vue';
-import FlatSwitch from '@/components/switches/FlatSwitch.vue';
-import InsetSwitch from '@/components/switches/InsetSwitch.vue';
-import ModelAsArraySwitch from '@/components/switches/ModelAsArraySwitch.vue';
-import ModelAsBooleanSwitch from '@/components/switches/ModelAsBooleanSwitch.vue';
-import StatesSwitch from '@/components/switches/StatesSwitch.vue';
-import LabelSwitch from '@/components/switches/LabelSwitch.vue';
+import ColorsSwitch from '@/components/form_inputs/switches/ColorsSwitch.vue';
+import FlatSwitch from '@/components/form_inputs/switches/FlatSwitch.vue';
+import InsetSwitch from '@/components/form_inputs/switches/InsetSwitch.vue';
+import ModelAsArraySwitch from '@/components/form_inputs/switches/ModelAsArraySwitch.vue';
+import ModelAsBooleanSwitch from '@/components/form_inputs/switches/ModelAsBooleanSwitch.vue';
+import StatesSwitch from '@/components/form_inputs/switches/StatesSwitch.vue';
+import LabelSwitch from '@/components/form_inputs/switches/LabelSwitch.vue';
 
 export default {
   name: 'Switches',

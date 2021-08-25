@@ -99,19 +99,19 @@
 </template>
 
 <script>
-import AllowedTimesTimePicker from '@/components/time_pickers/AllowedTimesTimePicker.vue';
-import AMPMInTitleTimePicker from '@/components/time_pickers/AMPMInTitleTimePicker.vue';
-import ColorsTimePicker from '@/components/time_pickers/ColorsTimePicker.vue';
-import DisabledTimePicker from '@/components/time_pickers/DisabledTimePicker.vue';
-import ElevationTimePicker from '@/components/time_pickers/ElevationTimePicker.vue';
-import FormatTimePicker from '@/components/time_pickers/FormatTimePicker.vue';
-import NoTitleTimePicker from '@/components/time_pickers/NoTitleTimePicker.vue';
-import RangeTimePicker from '@/components/time_pickers/RangeTimePicker.vue';
-import ReadOnlyTimePicker from '@/components/time_pickers/ReadOnlyTimePicker.vue';
-import ScrollableTimePicker from '@/components/time_pickers/ScrollableTimePicker.vue';
-import UseSecondsTimePicker from '@/components/time_pickers/UseSecondsTimePicker.vue';
-import WidthTimePicker from '@/components/time_pickers/WidthTimePicker.vue';
-import DialogAndMenuTimePicker from '@/components/time_pickers/DialogAndMenuTimePicker.vue';
+import AllowedTimesTimePicker from '@/components/pickers/time_pickers/AllowedTimesTimePicker.vue';
+import AMPMInTitleTimePicker from '@/components/pickers/time_pickers/AMPMInTitleTimePicker.vue';
+import ColorsTimePicker from '@/components/pickers/time_pickers/ColorsTimePicker.vue';
+import DisabledTimePicker from '@/components/pickers/time_pickers/DisabledTimePicker.vue';
+import ElevationTimePicker from '@/components/pickers/time_pickers/ElevationTimePicker.vue';
+import FormatTimePicker from '@/components/pickers/time_pickers/FormatTimePicker.vue';
+import NoTitleTimePicker from '@/components/pickers/time_pickers/NoTitleTimePicker.vue';
+import RangeTimePicker from '@/components/pickers/time_pickers/RangeTimePicker.vue';
+import ReadOnlyTimePicker from '@/components/pickers/time_pickers/ReadOnlyTimePicker.vue';
+import ScrollableTimePicker from '@/components/pickers/time_pickers/ScrollableTimePicker.vue';
+import UseSecondsTimePicker from '@/components/pickers/time_pickers/UseSecondsTimePicker.vue';
+import WidthTimePicker from '@/components/pickers/time_pickers/WidthTimePicker.vue';
+import DialogAndMenuTimePicker from '@/components/pickers/time_pickers/DialogAndMenuTimePicker.vue';
 
 export default {
   name: 'TimePickers',

@@ -106,20 +106,20 @@
 </template>
 
 <script>
-import ColorsSlider from '@/components/sliders/ColorsSlider.vue';
-import DisabledSlider from '@/components/sliders/DisabledSlider.vue';
-import DiscreteSlider from '@/components/sliders/DiscreteSlider.vue';
-import IconsSlider from '@/components/sliders/IconsSlider.vue';
-import InverseLabelSlider from '@/components/sliders/InverseLabelSlider.vue';
-import MinAndMaxSlider from '@/components/sliders/MinAndMaxSlider.vue';
-import ReadonlySlider from '@/components/sliders/ReadonlySlider.vue';
-import StepSlider from '@/components/sliders/StepSlider.vue';
-import ThumbSlider from '@/components/sliders/ThumbSlider.vue';
-import TicksSlider from '@/components/sliders/TicksSlider.vue';
-import ValidationSlider from '@/components/sliders/ValidationSlider.vue';
-import VerticalSlidersSlider from '@/components/sliders/VerticalSlidersSlider.vue';
-import AppendAndPrependSlider from '@/components/sliders/AppendAndPrependSlider.vue';
-import AppendTextFieldSlider from '@/components/sliders/AppendTextFieldSlider.vue';
+import ColorsSlider from '@/components/form_inputs/sliders/ColorsSlider.vue';
+import DisabledSlider from '@/components/form_inputs/sliders/DisabledSlider.vue';
+import DiscreteSlider from '@/components/form_inputs/sliders/DiscreteSlider.vue';
+import IconsSlider from '@/components/form_inputs/sliders/IconsSlider.vue';
+import InverseLabelSlider from '@/components/form_inputs/sliders/InverseLabelSlider.vue';
+import MinAndMaxSlider from '@/components/form_inputs/sliders/MinAndMaxSlider.vue';
+import ReadonlySlider from '@/components/form_inputs/sliders/ReadonlySlider.vue';
+import StepSlider from '@/components/form_inputs/sliders/StepSlider.vue';
+import ThumbSlider from '@/components/form_inputs/sliders/ThumbSlider.vue';
+import TicksSlider from '@/components/form_inputs/sliders/TicksSlider.vue';
+import ValidationSlider from '@/components/form_inputs/sliders/ValidationSlider.vue';
+import VerticalSlidersSlider from '@/components/form_inputs/sliders/VerticalSlidersSlider.vue';
+import AppendAndPrependSlider from '@/components/form_inputs/sliders/AppendAndPrependSlider.vue';
+import AppendTextFieldSlider from '@/components/form_inputs/sliders/AppendTextFieldSlider.vue';
 
 export default {
   name: 'Sliders',

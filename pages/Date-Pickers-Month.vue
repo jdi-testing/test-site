@@ -70,16 +70,16 @@
     </v-container>
 </template>
 <script>
-import AllowedMonthPicker from '@/components/date_pickers_month/AllowedMonthPicker.vue';
-import ColorsMonthPicker from '@/components/date_pickers_month/ColorsMonthPicker.vue';
-import IconsMonthPicker from '@/components/date_pickers_month/IconsMonthPicker.vue';
-import MultipleMonthPicker from '@/components/date_pickers_month/MultipleMonthPicker.vue';
-import ReadonlyMonthPicker from '@/components/date_pickers_month/ReadonlyMonthPicker.vue';
-import ShowCurrentMonthPicker from '@/components/date_pickers_month/ShowCurrentMonthPicker.vue';
-import WidthMonthPicker from '@/components/date_pickers_month/WidthMonthPicker.vue';
-import DialogMenuMonthPicker from '@/components/date_pickers_month/DialogMenuMonthPicker.vue';
-import InternationalizationMonthPicker from '@/components/date_pickers_month/InternationalizationMonthPicker.vue';
-import OrientationMonthPicker from '@/components/date_pickers_month/OrientationMonthPicker.vue';
+import AllowedMonthPicker from '@/components/pickers/date_pickers_month/AllowedMonthPicker.vue';
+import ColorsMonthPicker from '@/components/pickers/date_pickers_month/ColorsMonthPicker.vue';
+import IconsMonthPicker from '@/components/pickers/date_pickers_month/IconsMonthPicker.vue';
+import MultipleMonthPicker from '@/components/pickers/date_pickers_month/MultipleMonthPicker.vue';
+import ReadonlyMonthPicker from '@/components/pickers/date_pickers_month/ReadonlyMonthPicker.vue';
+import ShowCurrentMonthPicker from '@/components/pickers/date_pickers_month/ShowCurrentMonthPicker.vue';
+import WidthMonthPicker from '@/components/pickers/date_pickers_month/WidthMonthPicker.vue';
+import DialogMenuMonthPicker from '@/components/pickers/date_pickers_month/DialogMenuMonthPicker.vue';
+import InternationalizationMonthPicker from '@/components/pickers/date_pickers_month/InternationalizationMonthPicker.vue';
+import OrientationMonthPicker from '@/components/pickers/date_pickers_month/OrientationMonthPicker.vue';
 
 export default {
   name: 'DatePickerMonth',

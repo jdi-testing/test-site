@@ -162,28 +162,28 @@
 </template>
 
 <script>
-import CounterTextField from '@/components/text_fields/CounterTextField.vue';
-import ClearableTextField from '@/components/text_fields/ClearableTextField.vue';
-import CustomColorsTextField from '@/components/text_fields/CustomColorsTextField.vue';
-import DenseTextField from '@/components/text_fields/DenseTextField.vue';
-import DisabledAndReadonlyTextField from '@/components/text_fields/DisabledAndReadonlyTextField.vue';
-import FilledTextField from '@/components/text_fields/FilledTextField.vue';
-import HideDetailsTextField from '@/components/text_fields/HideDetailsTextField.vue';
-import HintTextField from '@/components/text_fields/HintTextField.vue';
-import IconsTextField from '@/components/text_fields/IconsTextField.vue';
-import OutlinedTextField from '@/components/text_fields/OutlinedTextField.vue';
-import PrefixesAndSuffixesTextField from '@/components/text_fields/PrefixesAndSuffixesTextField.vue';
-import ShapedTextField from '@/components/text_fields/ShapedTextField.vue';
-import SingleLineTextField from '@/components/text_fields/SingleLineTextField.vue';
-import SoloTextField from '@/components/text_fields/SoloTextField.vue';
-import ValidationTextField from '@/components/text_fields/ValidationTextField.vue';
-import IconEventsTextField from '@/components/text_fields/IconEventsTextField.vue';
-import IconSlotsTextField from '@/components/text_fields/IconSlotsTextField.vue';
-import LabelTextField from '@/components/text_fields/LabelTextField.vue';
-import ProgressTextField from '@/components/text_fields/ProgressTextField.vue';
-import CustomValidationTextField from '@/components/text_fields/CustomValidationTextField.vue';
-import FullWidthWithCounterTextField from '@/components/text_fields/FullWidthWithCounterTextField.vue';
-import PasswordInputTextField from '@/components/text_fields/PasswordInputTextField.vue';
+import CounterTextField from '@/components/form_inputs/text_fields/CounterTextField.vue';
+import ClearableTextField from '@/components/form_inputs/text_fields/ClearableTextField.vue';
+import CustomColorsTextField from '@/components/form_inputs/text_fields/CustomColorsTextField.vue';
+import DenseTextField from '@/components/form_inputs/text_fields/DenseTextField.vue';
+import DisabledAndReadonlyTextField from '@/components/form_inputs/text_fields/DisabledAndReadonlyTextField.vue';
+import FilledTextField from '@/components/form_inputs/text_fields/FilledTextField.vue';
+import HideDetailsTextField from '@/components/form_inputs/text_fields/HideDetailsTextField.vue';
+import HintTextField from '@/components/form_inputs/text_fields/HintTextField.vue';
+import IconsTextField from '@/components/form_inputs/text_fields/IconsTextField.vue';
+import OutlinedTextField from '@/components/form_inputs/text_fields/OutlinedTextField.vue';
+import PrefixesAndSuffixesTextField from '@/components/form_inputs/text_fields/PrefixesAndSuffixesTextField.vue';
+import ShapedTextField from '@/components/form_inputs/text_fields/ShapedTextField.vue';
+import SingleLineTextField from '@/components/form_inputs/text_fields/SingleLineTextField.vue';
+import SoloTextField from '@/components/form_inputs/text_fields/SoloTextField.vue';
+import ValidationTextField from '@/components/form_inputs/text_fields/ValidationTextField.vue';
+import IconEventsTextField from '@/components/form_inputs/text_fields/IconEventsTextField.vue';
+import IconSlotsTextField from '@/components/form_inputs/text_fields/IconSlotsTextField.vue';
+import LabelTextField from '@/components/form_inputs/text_fields/LabelTextField.vue';
+import ProgressTextField from '@/components/form_inputs/text_fields/ProgressTextField.vue';
+import CustomValidationTextField from '@/components/form_inputs/text_fields/CustomValidationTextField.vue';
+import FullWidthWithCounterTextField from '@/components/form_inputs/text_fields/FullWidthWithCounterTextField.vue';
+import PasswordInputTextField from '@/components/form_inputs/text_fields/PasswordInputTextField.vue';
 
 export default {
   name: 'TextFields',

@@ -78,16 +78,16 @@
 </template>
 
 <script>
-import CounterOverflowButton from '@/components/overflow_buttons/CounterOverflowButton.vue';
-import DenseOverflowButton from '@/components/overflow_buttons/DenseOverflowButton.vue';
-import DisabledOverflowButton from '@/components/overflow_buttons/DisabledOverflowButton.vue';
-import EditableOverflowButton from '@/components/overflow_buttons/EditableOverflowButton.vue';
-import FilledOverflowButton from '@/components/overflow_buttons/FilledOverflowButton.vue';
-import HintOverflowButton from '@/components/overflow_buttons/HintOverflowButton.vue';
-import LoadingOverflowButton from '@/components/overflow_buttons/LoadingOverflowButton.vue';
-import MenuPropsOverflowButton from '@/components/overflow_buttons/MenuPropsOverflowButton.vue';
-import ReadonlyOverflowButton from '@/components/overflow_buttons/ReadonlyOverflowButton.vue';
-import SegmentedOverflowButton from '@/components/overflow_buttons/SegmentedOverflowButton.vue';
+import CounterOverflowButton from '@/components/form_inputs/overflow_buttons/CounterOverflowButton.vue';
+import DenseOverflowButton from '@/components/form_inputs/overflow_buttons/DenseOverflowButton.vue';
+import DisabledOverflowButton from '@/components/form_inputs/overflow_buttons/DisabledOverflowButton.vue';
+import EditableOverflowButton from '@/components/form_inputs/overflow_buttons/EditableOverflowButton.vue';
+import FilledOverflowButton from '@/components/form_inputs/overflow_buttons/FilledOverflowButton.vue';
+import HintOverflowButton from '@/components/form_inputs/overflow_buttons/HintOverflowButton.vue';
+import LoadingOverflowButton from '@/components/form_inputs/overflow_buttons/LoadingOverflowButton.vue';
+import MenuPropsOverflowButton from '@/components/form_inputs/overflow_buttons/MenuPropsOverflowButton.vue';
+import ReadonlyOverflowButton from '@/components/form_inputs/overflow_buttons/ReadonlyOverflowButton.vue';
+import SegmentedOverflowButton from '@/components/form_inputs/overflow_buttons/SegmentedOverflowButton.vue';
 
 export default {
   name: 'OverflowButtons',

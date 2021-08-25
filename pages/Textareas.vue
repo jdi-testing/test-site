@@ -71,15 +71,15 @@
 </template>
 
 <script>
-import AutoGrowTextarea from '@/components/textareas/AutoGrowTextarea.vue';
-import BackgroundColorTextarea from '@/components/textareas/BackgroundColorTextarea.vue';
-import BrowserAutocompleteTextarea from '@/components/textareas/BrowserAutocompleteTextarea.vue';
-import ClearableTextarea from '@/components/textareas/ClearableTextarea.vue';
-import CounterTextarea from '@/components/textareas/CounterTextarea.vue';
-import IconsTextarea from '@/components/textareas/IconsTextarea.vue';
-import NoResizeTextarea from '@/components/textareas/NoResizeTextarea.vue';
-import RowsTextarea from '@/components/textareas/RowsTextarea.vue';
-import SignupFormTextarea from '@/components/textareas/SignupFormTextarea.vue';
+import AutoGrowTextarea from '@/components/form_inputs/textareas/AutoGrowTextarea.vue';
+import BackgroundColorTextarea from '@/components/form_inputs/textareas/BackgroundColorTextarea.vue';
+import BrowserAutocompleteTextarea from '@/components/form_inputs/textareas/BrowserAutocompleteTextarea.vue';
+import ClearableTextarea from '@/components/form_inputs/textareas/ClearableTextarea.vue';
+import CounterTextarea from '@/components/form_inputs/textareas/CounterTextarea.vue';
+import IconsTextarea from '@/components/form_inputs/textareas/IconsTextarea.vue';
+import NoResizeTextarea from '@/components/form_inputs/textareas/NoResizeTextarea.vue';
+import RowsTextarea from '@/components/form_inputs/textareas/RowsTextarea.vue';
+import SignupFormTextarea from '@/components/form_inputs/textareas/SignupFormTextarea.vue';
 
 export default {
   name: 'Textareas',

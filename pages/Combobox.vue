@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import DenseCombobox from '@/components/combobox/DenseCombobox.vue';
-import MultipleCombobox from '@/components/combobox/MultipleCombobox.vue';
-import NoDataWithChipsCombobox from '@/components/combobox/NoDataWithChipsCombobox.vue';
-import AdvancedCustomOptionsCombobox from '@/components/combobox/AdvancedCustomOptionsCombobox.vue';
+import DenseCombobox from '@/components/form_inputs/combobox/DenseCombobox.vue';
+import MultipleCombobox from '@/components/form_inputs/combobox/MultipleCombobox.vue';
+import NoDataWithChipsCombobox from '@/components/form_inputs/combobox/NoDataWithChipsCombobox.vue';
+import AdvancedCustomOptionsCombobox from '@/components/form_inputs/combobox/AdvancedCustomOptionsCombobox.vue';
 
 export default {
   name: 'Combobox',
