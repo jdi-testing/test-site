@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Overlays</h1>
+            <p class="body-1 mt-2">
+                The <code>v-overlay</code> component is used to provide emphasis on a particular element or parts of it. 
+                It signals to the user of a state change within the application and can be used for creating loaders, 
+                dialogs and more.
+            </p>
         </v-col>
 
         <v-col>

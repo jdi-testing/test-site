@@ -1,7 +1,7 @@
 export default {
   head: {
     titleTemplate: '%s - nuxt-app',
-    title: 'nuxt-app',
+    title: 'Vuetify components',
     htmlAttrs: {
       lang: 'en'
     },
@@ -24,5 +24,12 @@ export default {
   buildModules: [
     '@nuxtjs/vuetify',
   ],
+  router: {
+    base: '/jdi-light/vuetify/'
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/jdi-light/vuetify/'
+    : '/',
+  target: 'static'
 }
 

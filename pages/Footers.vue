@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Footers</h1>
+            <p class="body-1 mt-2">
+                The <code>v-footer</code> component is used for displaying general information that a user might 
+                want to access from any page within your site.
+            </p>
         </v-col>
 
         <v-col>

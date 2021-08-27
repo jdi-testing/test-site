@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Slide groups</h1>
+            <p class="body-1 mt-2">
+                The <code>v-slide-group</code> component is used to display pseudo paginated information. 
+                It uses v-item-group at its core and provides a baseline for components such as v-tabs and v-chip-group.
+            </p>
         </v-col>
 
         <v-col>
@@ -43,11 +47,11 @@
 </template>
 
 <script>
-import ActiveClassSlideGroup from '@/components/slide_groups/ActiveClassSlideGroup.vue';
-import CenterActiveSlideGroup from '@/components/slide_groups/CenterActiveSlideGroup.vue';
-import CustomIconsSlideGroup from '@/components/slide_groups/CustomIconsSlideGroup.vue';
-import MultipleSlideGroup from '@/components/slide_groups/MultipleSlideGroup.vue';
-import PseudoCarouselSlideGroup from '@/components/slide_groups/PseudoCarouselSlideGroup.vue';
+import ActiveClassSlideGroup from '@/components/groups/slide_groups/ActiveClassSlideGroup.vue';
+import CenterActiveSlideGroup from '@/components/groups/slide_groups/CenterActiveSlideGroup.vue';
+import CustomIconsSlideGroup from '@/components/groups/slide_groups/CustomIconsSlideGroup.vue';
+import MultipleSlideGroup from '@/components/groups/slide_groups/MultipleSlideGroup.vue';
+import PseudoCarouselSlideGroup from '@/components/groups/slide_groups/PseudoCarouselSlideGroup.vue';
 
 export default {
   name: 'SlideGroups',

@@ -1,13 +1,19 @@
 <template>
-  <div class="cards">
-    <h1>Cards</h1>
+  <v-container class="cards">
+    <v-col>
+      <h1>Cards</h1>
+      <p class="body-1 mt-2">
+        The <code>v-card</code> component is a versatile component that can be used for anything from a panel to a static image. 
+        The card component has numerous helper components to make markup as easy as possible. 
+      </p>
+    </v-col>
     <InformationCard />
     <OutlinedCard />
     <MediaWithTextCard />
     <LoadingCard />
     <CardReveal />
     <CustomActionsCard />
-  </div>
+  </v-container>
 </template>
 
 <script>

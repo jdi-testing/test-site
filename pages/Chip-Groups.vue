@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Chip groups</h1>
+            <p class="body-1 mt-2">
+                The <code>v-chip-group</code> supercharges the <code>v-chip</code> component by providing groupable 
+                functionality. It is used for creating groups of selections using chips.
+            </p>
         </v-col>
 
         <v-col>
@@ -50,12 +54,12 @@
 </template>
 
 <script>
-import ColumnChipGroup from '@/components/chip_groups/ColumnChipGroup.vue';
-import FilterResultsChipGroup from '@/components/chip_groups/FilterResultsChipGroup.vue';
-import MandatoryChipGroup from '@/components/chip_groups/MandatoryChipGroup.vue';
-import MultipleChipGroup from '@/components/chip_groups/MultipleChipGroup.vue';
-import ProductCardChipGroup from '@/components/chip_groups/ProductCardChipGroup.vue';
-import ToothbrushCardChipGroup from '@/components/chip_groups/ToothbrushCardChipGroup.vue';
+import ColumnChipGroup from '@/components/groups/chip_groups/ColumnChipGroup.vue';
+import FilterResultsChipGroup from '@/components/groups/chip_groups/FilterResultsChipGroup.vue';
+import MandatoryChipGroup from '@/components/groups/chip_groups/MandatoryChipGroup.vue';
+import MultipleChipGroup from '@/components/groups/chip_groups/MultipleChipGroup.vue';
+import ProductCardChipGroup from '@/components/groups/chip_groups/ProductCardChipGroup.vue';
+import ToothbrushCardChipGroup from '@/components/groups/chip_groups/ToothbrushCardChipGroup.vue';
 
 export default {
   name: 'ChipGroups',

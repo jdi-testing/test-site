@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>System bars</h1>
+            <p class="body-1 mt-2">
+                The <code>v-system-bar</code> component can be used for displaying statuses to the user. 
+                It looks like the Android system bar and can contain icons, spacers, and some text.
+            </p>
         </v-col>
         <v-row class="mx-1">
             <v-col>

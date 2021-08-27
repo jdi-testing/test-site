@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Menus</h1>
+            <p class="body-1 mt-2">
+                The <code>v-menu</code> component shows a menu at the position of the element used to activate it.
+            </p>
         </v-col>
 
         <v-col>

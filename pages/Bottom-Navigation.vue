@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Bottom navigation</h1>
+            <p class="body-1 mt-2">
+                The <code>v-bottom-navigation</code> component is an alternative to the sidebar. 
+                It is primarily used for mobile applications and comes in three variants, icons and text, and shift.
+            </p>
         </v-col>
 
         <v-col>

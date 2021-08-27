@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Inputs</h1>
+            <p class="body-1 mt-2">
+                The <code>v-input</code> component gives you a baseline to create your own custom inputs. 
+                It consists of a prepend/append slot, messages, and a default slot. 
+                It is recommended that you extend this component, but it can be used as a standalone.
+            </p>
         </v-col>
 
         <v-col>

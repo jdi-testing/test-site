@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Grid system</h1>
+            <p class="body-1 mt-2">
+                The Vuetify grid is heavily inspired by the Bootstrap grid. It is integrated by using a series 
+                of containers, rows, and columns to layout and align content.
+            </p>
         </v-col>
 
         <v-col>

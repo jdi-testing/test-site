@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Text fields</h1>
+            <p class="body-1 mt-2">
+                Text fields components are used for collecting user provided information.
+            </p>
         </v-col>
 
         <v-col>

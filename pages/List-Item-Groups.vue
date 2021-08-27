@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>List item groups</h1>
+            <p class="body-1 mt-2">
+                The <code>v-list-item-group</code> provides the ability to create a group of selectable <code>v-list-items</code>. 
+                The <code>v-list-item-group</code> component utilizes v-item-group at its core to provide a clean interface for interactive lists.
+            </p>
         </v-col>
 
         <v-col>
@@ -43,11 +47,11 @@
 </template>
 
 <script>
-import ActiveClassListItemGroup from '@/components/list_item_groups/ActiveClassListItemGroup.vue';
-import MandatoryListItemGroup from '@/components/list_item_groups/MandatoryListItemGroup.vue';
-import MultipleListItemGroup from '@/components/list_item_groups/MultipleListItemGroup.vue';
-import FlatListListItemGroup from '@/components/list_item_groups/FlatListListItemGroup.vue';
-import SelectionControlsListItemGroup from '@/components/list_item_groups/SelectionControlsListItemGroup.vue';
+import ActiveClassListItemGroup from '@/components/groups/list_item_groups/ActiveClassListItemGroup.vue';
+import MandatoryListItemGroup from '@/components/groups/list_item_groups/MandatoryListItemGroup.vue';
+import MultipleListItemGroup from '@/components/groups/list_item_groups/MultipleListItemGroup.vue';
+import FlatListListItemGroup from '@/components/groups/list_item_groups/FlatListListItemGroup.vue';
+import SelectionControlsListItemGroup from '@/components/groups/list_item_groups/SelectionControlsListItemGroup.vue';
 
 export default {
   name: 'ListItemGroups',

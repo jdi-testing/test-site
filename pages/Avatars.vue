@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Avatars</h1>
+            <p class="body-1 mt-2">
+                The <code>v-avatar</code> component is typically used to display circular user profile pictures. 
+                This component will allow you to dynamically size and add a border radius of responsive images, icons, and text. 
+                A tile variation is available for displaying an avatar without border radius.
+            </p>
         </v-col>
 
         <v-col>

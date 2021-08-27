@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>App bars</h1>
+            <p class="body-1 mt-2">
+                The <code>v-app-bar</code> component is pivotal to any graphical user interface (GUI), 
+                as it generally is the primary source of site navigation.
+            </p>
         </v-col>
         <v-row class="mx-1">
             <v-col>

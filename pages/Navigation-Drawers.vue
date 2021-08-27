@@ -2,6 +2,12 @@
     <v-container>
         <v-col>
             <h1>Navigation drawers</h1>
+            <p class="body-1 mt-2">
+                The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application. 
+                The navigation-drawer is pre-configured to work with or without vue-router right out the box. 
+                For the purpose of display, some examples are wrapped in a <code>v-card</code> element. 
+                Within your application you will generally place the <code>v-navigation-drawer</code> as a direct child of v-app
+            </p>
         </v-col>
 
         <v-col>

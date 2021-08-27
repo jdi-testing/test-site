@@ -1,12 +1,18 @@
 <template>
-  <div class="snackbars">
-    <h1>Snackbars</h1>
+  <v-container class="snackbars">
+    <v-col>
+      <h1>Snackbars</h1>
+      <p class="body-1 mt-2">
+        The <code>v-snackbar</code> component is used to display a quick message to a user. 
+        Snackbars support positioning, removal delay, and callbacks.
+      </p>
+    </v-col>
     <SimpleSnackbar />
     <MultiLineSnackbar />
     <TimeoutSnackbar />
     <DifferentStylesSnackbars />
     <VerticalSnackbar />
-  </div>
+  </v-container>
 </template>
 
 <script>

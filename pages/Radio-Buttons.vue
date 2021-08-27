@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Radio buttons</h1>
+            <p class="body-1 mt-2">
+                The <code>v-radio</code> component is a simple radio button. 
+                When combined with the <code>v-radio-group</code> component you can provide groupable functionality 
+                to allow users to select from a predefined set of options.
+            </p>
         </v-col>
 
         <v-col>

@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Expansion panels</h1>
+            <p class="body-1 mt-2">
+                The <code>v-expansion-panel</code> component is useful for reducing vertical space with large amounts of information. 
+                The default functionality of the component is to only display one expansion-panel body at a time; 
+                however, with the multiple property, the expansion-panel can remain open until explicitly closed.
+            </p>
         </v-col>
 
         <v-col>

@@ -1,12 +1,17 @@
 <template>
-  <div class="autocompletes">
-    <h1>Autocompletes</h1>
+  <v-container class="autocompletes">
+    <v-col>
+      <h1>Autocompletes</h1>
+      <p class="body-1 mt-2">
+        The <code>v-autocomplete</code> component can be used to fix any section to a specific aspect ratio
+      </p>
+    </v-col>
     <AutocompleteDense />
     <AutocompleteFilter />
     <AutocompleteSlots />
     <AutocompleteAPISearch />
     <AutocompleteAsyncItems />
-  </div>
+  </v-container>
 </template>
 
 <script>

@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Windows</h1>
+            <p class="body-1 mt-2">
+                The <code>v-window</code> component provides the baseline functionality for transitioning content 
+                from 1 pane to another. Other components such as <code>v-tabs</code>, <code>v-carousel</code> and 
+                <code>v-stepper</code> utilize this component at their core.
+            </p>
         </v-col>
 
         <v-col>
@@ -43,11 +48,11 @@
 </template>
 
 <script>
-import ReverseWindow from '@/components/windows/ReverseWindow.vue';
-import VerticalWindow from '@/components/windows/VerticalWindow.vue';
-import CustomizedArrowsWindow from '@/components/windows/CustomizedArrowsWindow.vue';
-import AccountCreationWindow from '@/components/windows/AccountCreationWindow.vue';
-import OnboardingWindow from '@/components/windows/OnboardingWindow.vue';
+import ReverseWindow from '@/components/groups/windows/ReverseWindow.vue';
+import VerticalWindow from '@/components/groups/windows/VerticalWindow.vue';
+import CustomizedArrowsWindow from '@/components/groups/windows/CustomizedArrowsWindow.vue';
+import AccountCreationWindow from '@/components/groups/windows/AccountCreationWindow.vue';
+import OnboardingWindow from '@/components/groups/windows/OnboardingWindow.vue';
 
 export default {
   name: 'Windows',

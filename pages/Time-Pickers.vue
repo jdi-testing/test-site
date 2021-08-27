@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Time pickers</h1>
+            <p class="body-1 mt-2">
+                The <code>v-time-picker</code> is stand-alone component that can be utilized in many existing 
+                Vuetify components. It offers the user a visual representation for selecting the time.
+            </p>
         </v-col>
 
         <v-col>

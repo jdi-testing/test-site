@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Steppers</h1>
+            <p class="body-1 mt-2">
+                The <code>v-stepper</code> component displays progress through numbered steps.
+            </p>
         </v-col>
 
         <v-col>

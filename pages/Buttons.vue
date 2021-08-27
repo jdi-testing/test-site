@@ -1,6 +1,12 @@
 <template>
-  <div class="buttons">
-    <h1>Buttons</h1>
+  <v-container class="buttons">
+    <v-col>
+      <h1>Buttons</h1>
+      <p class="body-1 mt-2">
+        The <code>v-btn</code> component replaces the standard html button with a material design theme and a multitude of options. 
+        Any color helper class can be used to alter the background or text color.
+      </p>
+    </v-col>
     <CommonButton />
     <BlockButton />
     <DepressedButton />
@@ -11,11 +17,10 @@
     <OutlinedButton />
     <RoundedButton />
     <TileButton />
-  </div>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
 import BlockButton from '@/components/buttons/BlockButton.vue';
 import DepressedButton from '@/components/buttons/DepressedButton.vue';
 import CommonButton from '@/components/buttons/CommonButton.vue';

@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Chips</h1>
+            <p class="body-1 mt-2">
+                The <code>v-chip</code> component is used to convey small pieces of information. 
+                Using the close property, the chip becomes interactive, allowing user interaction. 
+            </p>
         </v-col>
 
         <v-col>

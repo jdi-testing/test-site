@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Color pickers</h1>
+            <p class="body-1 mt-2">
+                The <code>v-color-picker</code> allows you to select a color using a variety of input methods.
+            </p>
         </v-col>
 
         <v-col>

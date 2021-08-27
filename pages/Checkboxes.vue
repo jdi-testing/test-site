@@ -4,7 +4,9 @@
             <h1>Checkboxes</h1>
             <p class="body-1 mt-2">
              The <code>v-checkbox</code> component provides users the ability to choose between two distinct values. 
-             These are very similar to a switch and can be used in complex forms and checklists. A simpler version, <code>v-simple-checkbox</code> is used primarily as a lightweight alternative in data-table components to select rows or display inline boolean data.
+             These are very similar to a switch and can be used in complex forms and checklists. A simpler version, 
+             <code>v-simple-checkbox</code> is used primarily as a lightweight alternative in data-table components 
+             to select rows or display inline boolean data.
             </p>
         </v-col>
         <v-col>

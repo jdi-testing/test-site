@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Hover</h1>
+            <p class="body-1 mt-2">
+                The <code>v-hover</code> component provides a clean interface for handling hover states for any component.
+            </p>
         </v-col>
 
         <v-col>

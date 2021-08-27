@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Switches</h1>
+            <p class="body-1 mt-2">
+                The <code>v-switch</code> component provides users the ability to choose between two distinct values. 
+                These are very similar to a toggle, or on/off switch, though aesthetically different than a checkbox.
+            </p>
         </v-col>
 
         <v-col>

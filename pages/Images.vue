@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Images</h1>
+            <p class="body-1 mt-2">
+                The <code>v-img</code> component is packed with features to support rich media. 
+                Combined with the vuetify-loader, you can add dynamic progressive images to provide a better user experience.
+            </p>
         </v-col>
 
         <v-col>

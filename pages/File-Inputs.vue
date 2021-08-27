@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>File inputs</h1>
+            <p class="body-1 mt-2">
+                The <code>v-file-input</code> component is a specialized input that provides a clean interface 
+                for selecting files, showing detailed selection information and upload progress. 
+                It is meant to be a direct replacement for a standard file input.
+            </p>
         </v-col>
 
         <v-col>

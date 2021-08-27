@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Button groups</h1>
+            <p class="body-1 mt-2">
+                The <code>v-btn-toggle</code> component is a simple wrapper for <code>v-item-group</code> 
+                built specifically to work with <code>v-btn</code>.
+            </p>
         </v-col>
 
         <v-col>
@@ -43,11 +47,11 @@
 </template>
 
 <script>
-import MandatoryButtonGroup from '@/components/button_groups/MandatoryButtonGroup.vue';
-import MultipleButtonGroup from '@/components/button_groups/MultipleButtonGroup.vue';
-import RoundedButtonGroup from '@/components/button_groups/RoundedButtonGroup.vue';
-import ToolbarButtonGroup from '@/components/button_groups/ToolbarButtonGroup.vue';
-import WYSIWYGButtonGroup from '@/components/button_groups/WYSIWYGButtonGroup.vue';
+import MandatoryButtonGroup from '@/components/groups/button_groups/MandatoryButtonGroup.vue';
+import MultipleButtonGroup from '@/components/groups/button_groups/MultipleButtonGroup.vue';
+import RoundedButtonGroup from '@/components/groups/button_groups/RoundedButtonGroup.vue';
+import ToolbarButtonGroup from '@/components/groups/button_groups/ToolbarButtonGroup.vue';
+import WYSIWYGButtonGroup from '@/components/groups/button_groups/WYSIWYGButtonGroup.vue';
 
 export default {
   name: 'ButtonGroups',

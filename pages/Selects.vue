@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Selects</h1>
+            <p class="body-1 mt-2">
+                Select fields components are used for collecting user provided information from a list of options.
+            </p>
         </v-col>
 
         <v-col>

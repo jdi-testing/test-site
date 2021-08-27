@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Banner</h1>
+            <p class="body-1 mt-2">
+                The <code>v-banner</code> component is used as middle-interruptive message to user with 1-2 actions. 
+                It comes in 2 variations single-line and multi-line (implicit). 
+                These can have icons which you can use with your message and actions.
+            </p>
         </v-col>
 
         <v-col>

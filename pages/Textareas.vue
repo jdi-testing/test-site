@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Textareas</h1>
+            <p class="body-1 mt-2">
+                Textarea components are used for collecting large amounts of textual data.
+            </p>
         </v-col>
 
         <v-col>

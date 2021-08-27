@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Dialogs</h1>
+            <p class="body-1 mt-2">
+                The <code>v-dialog</code> component inform users about a specific task and may contain critical information, 
+                require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive.
+            </p>
         </v-col>
 
         <v-col>

@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Combobox</h1>
+            <p class="body-1 mt-2">
+                The <code>v-combobox</code> component is a v-autocomplete that allows the user to enter values 
+                that do not exist within the provided items. Created items will be returned as strings.
+            </p>
         </v-col>
 
         <v-col>

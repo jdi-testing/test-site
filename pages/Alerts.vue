@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Alerts</h1>
+            <p class="body-1 mt-2">
+                The <code>v-alert</code> component is used to convey important information to the user through the 
+                use contextual types icons and color. These default types come in in 4 variations: success, info, warning, and error. 
+                Default icons are assigned which help represent different actions each type portrays.
+            </p>
         </v-col>
 
         <v-col>

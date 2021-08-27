@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Sparklines</h1>
+            <p class="body-1 mt-2">
+                The sparkline component can be used to create simple graphs, like GitHub’s contribution chart.
+            </p>
         </v-col>
 
         <v-col>

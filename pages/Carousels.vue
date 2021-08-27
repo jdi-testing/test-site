@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Carousels</h1>
+            <p class="body-1 mt-2">
+                The <code>v-carousel</code> component is used to display large numbers of visual content on a rotating timer.
+            </p>
         </v-col>
 
         <v-col>

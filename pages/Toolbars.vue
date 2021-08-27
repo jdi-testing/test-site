@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Toolbars</h1>
+            <p class="body-1 mt-2">
+                The <code>v-toolbar</code> component is pivotal to any gui, as it generally is the primary source 
+                of site navigation. The toolbar component works great in conjunction with v-navigation-drawer and v-card.
+            </p>
         </v-col>
         <v-row class="mx-1">
             <v-col>

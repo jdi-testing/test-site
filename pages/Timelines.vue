@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Timelines</h1>
+            <p class="body-1 mt-2">
+                The <code>v-timeline</code> is useful for stylistically displaying chronological information.
+            </p>
         </v-col>
 
         <v-col>

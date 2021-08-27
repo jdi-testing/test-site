@@ -2,6 +2,11 @@
     <v-container>
         <v-col>
             <h1>Ratings</h1>
+            <p class="body-1 mt-2">
+                The <code>v-rating</code> component is a specialized but crucial piece in building user widgets. 
+                Collecting user feedback via ratings is a simple analytic that can provide a lot of feedback 
+                to your product or application.
+            </p>
         </v-col>
 
         <v-col>

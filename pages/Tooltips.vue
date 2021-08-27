@@ -1,9 +1,14 @@
 <template>
-  <div class="tooltips">
-    <h1>Tooltips</h1>
+  <v-container class="tooltips">
+    <v-col>
+      <h1>Tooltips</h1>
+      <p class="body-1 mt-2">
+        The <code>v-tooltip</code> component is useful for conveying information when a user hovers over an element.
+      </p>
+    </v-col>
     <SimpleTooltip />
     <ProgrammaticTooltip />
-  </div>
+  </v-container>
 </template>
 
 <script>

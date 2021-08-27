@@ -2,6 +2,10 @@
     <v-container>
         <v-col>
             <h1>Overflow buttons</h1>
+            <p class="body-1 mt-2">
+                <code>v-overflow-btn</code> is used to give the user the ability to select items from the list. 
+                It has 3 variations: editable, overflow and segmented
+            </p>
         </v-col>
 
         <v-col>

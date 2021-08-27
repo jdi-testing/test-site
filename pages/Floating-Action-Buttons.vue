@@ -1,12 +1,19 @@
 <template>
-  <div class="floating-action-buttons">
-    <h1>Floating Action Buttons</h1>
+  <v-container class="floating-action-buttons">
+    <v-col>
+      <h1>Floating Action Buttons</h1>
+      <p class="body-1 mt-2">
+        The <code>v-btn</code> component can be used as a floating action button. 
+        This provides an application with a main point of action. Combined with the <code>v-speed-dial</code> component, 
+        you can create a diverse set of functions available for your users.
+      </p>
+    </v-col>
     <FloatingButton />
     <DisplayAnimation />
     <LateralScreens />
     <SmallVariant />
     <SpeedDial />
-  </div>
+  </v-container>
 </template>
 
 <script>

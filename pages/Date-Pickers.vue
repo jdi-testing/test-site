@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Date pickers</h1>
+            <p class="body-1 mt-2">
+                <code>v-date-picker</code> is a fully featured date selection component that lets users select a date, or range of dates.
+            </p>
         </v-col>
 
         <v-col>

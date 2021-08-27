@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Icons</h1>
+            <p class="body-1 mt-2">
+                The <code>v-icon</code> component provides a large set of glyphs to provide context to various aspects of your application.
+            </p>
         </v-col>
 
         <v-col>

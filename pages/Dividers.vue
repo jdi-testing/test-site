@@ -2,6 +2,9 @@
     <v-container>
         <v-col>
             <h1>Dividers</h1>
+            <p class="body-1 mt-2">
+                The <code>v-divider</code> component is used to separate sections of lists or layouts.
+            </p>
         </v-col>
 
         <v-col>

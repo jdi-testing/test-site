@@ -1,5 +1,5 @@
 <template>
-    <v-container class="">
+    <v-container>
         <v-col>
             <h1>Application</h1>
         </v-col>
