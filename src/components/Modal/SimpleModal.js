@@ -28,6 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+let idCounter = 0;
+
 export default function SimpleModal() {
   const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
@@ -35,6 +37,7 @@ export default function SimpleModal() {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
+    idCounter += 1;
     setOpen(true);
   };
 
@@ -44,8 +47,8 @@ export default function SimpleModal() {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Text in a modal</h2>
-      <p id="simple-modal-description">
+      <h2 id={`simple-modal-title${idCounter}`}>Text in a modal</h2>
+      <p id={`simple-modal-description${idCounter}`}>
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
       </p>
       <SimpleModal />
