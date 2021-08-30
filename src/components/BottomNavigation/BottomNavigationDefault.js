@@ -15,16 +15,16 @@ const useStyles = makeStyles({
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const [text, setText] = React.useState("");
+  const [text, setText] = React.useState('');
 
   return (
     <div>
-      <h1>Buttom Navigation</h1>
+      <h1>Bottom Navigation</h1>
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
-          setText(event.currentTarget.textContent)
+          setText(event.currentTarget.textContent);
         }}
         showLabels
         className={classes.root}
@@ -33,7 +33,13 @@ export default function SimpleBottomNavigation() {
         <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
         <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
       </BottomNavigation>
-      <p id={"currentPosition"}>Current is {text}({value})</p>
+      <p id="currentPosition">
+        Current is
+        {text}
+        (
+        {value}
+        )
+      </p>
     </div>
   );
 }
