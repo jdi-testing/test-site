@@ -15,8 +15,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import SimpleCard from "./SimpleCard";
-import OutlinedCard from "./OutlinedCard";
+import SimpleCard from './SimpleCard';
+import OutlinedCard from './OutlinedCard';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: red[500],
   },
   favorite: {
-    color: red[500]
+    color: red[500],
   },
 }));
 
@@ -56,8 +56,7 @@ export default function RecipeReviewCard() {
     setFavorite(!favorite);
     if (favorite == true) {
       event.target.style.classes = red[500];
-    }
-    else {
+    } else {
       event.target.style.color;
     }
   };
@@ -66,22 +65,22 @@ export default function RecipeReviewCard() {
     <div>
       <h1>Card</h1>
       <h2>Simple Card</h2>
-      <SimpleCard id={"simpleCard"} />
+      <SimpleCard id="simpleCard" />
       <h2>Outlined Card</h2>
-      <OutlinedCard id={"outlinedCard"} />
+      <OutlinedCard id="outlinedCard" />
       <h2>Complex Interaction</h2>
-      <Card className={classes.root}>
+      <Card className={classes.root} id="complexInteraction">
         <CardHeader
-          avatar={
+          avatar={(
             <Avatar aria-label="recipe" className={classes.avatar}>
               R
             </Avatar>
-          }
-          action={
+          )}
+          action={(
             <IconButton aria-label="settings">
               <MoreVertIcon />
             </IconButton>
-          }
+          )}
           title="Shrimp and Chorizo Paella"
           subheader="September 14, 2016"
         />
@@ -98,7 +97,7 @@ export default function RecipeReviewCard() {
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
-            <FavoriteIcon className={favorite ? classes.favorite: null} onClick={(event) => handleFavoriteClick(event)}/>
+            <FavoriteIcon className={favorite ? classes.favorite : null} onClick={(event) => handleFavoriteClick(event)} />
           </IconButton>
           <IconButton aria-label="share">
             <ShareIcon />
