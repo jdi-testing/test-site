@@ -61,6 +61,7 @@
       ></v-text-field>
       <v-text-field
         v-model="phone"
+        :rules="[rules.phone]"
         filled
         color="deep-purple"
         label="Phone number"
@@ -169,7 +170,8 @@ export default {
     password: undefined,
     phone: undefined,
     rules: {
-      email: v => !!(v || '').match(/@/) || 'Please enter a valid email',
+      email: (v) => /.+@.+\..+/.test(v) || 'Please enter a valid email',
+      phone: (v) => !!(v || '').match(/^\d+$/) || 'Please enter a valid phone number',
       length: len => v => (v || '').length >= len || `Invalid character length, required ${len}`,
       password: v => !!(v || '').match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$/) ||
         'Password must contain an upper case letter, a numeric character, and a special character',

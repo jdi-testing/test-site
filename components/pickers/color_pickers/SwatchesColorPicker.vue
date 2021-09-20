@@ -3,21 +3,30 @@
     <v-color-picker
       class="ma-2"
       show-swatches
+      @input="checkInput"
+      @update:mode="updateMode"
     ></v-color-picker>
     <v-color-picker
       class="ma-2"
       :swatches="swatches"
       show-swatches
+      @input="checkInput"
+      @update:mode="updateMode"
     ></v-color-picker>
     <v-color-picker
       class="ma-2"
       show-swatches
       swatches-max-height="300px"
+      @input="checkInput"
+      @update:mode="updateMode"
     ></v-color-picker>
   </v-row>
 </template>
 <script>
+import colorPicker from "@/mixins/colorPicker.js";
 export default {
+  name: 'SwatchesColorPicker',
+  mixins: [colorPicker],
   data: () => ({
     swatches: [
       ['#FF0000', '#AA0000', '#550000'],

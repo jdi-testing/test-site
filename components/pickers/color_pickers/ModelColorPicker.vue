@@ -18,7 +18,11 @@
       <v-col
         class="d-flex justify-center"
       >
-        <v-color-picker v-model="color"></v-color-picker>
+        <v-color-picker 
+          v-model="color"
+          @input="checkInput"
+          @update:mode="updateMode"
+        ></v-color-picker>
       </v-col>
       <v-col
         cols="12"
@@ -35,7 +39,10 @@
   </v-container>
 </template>
 <script>
+import colorPicker from "@/mixins/colorPicker.js";
 export default {
+  name: 'ModelColorPicker',
+  mixins: [colorPicker],
   data: () => ({
     types: ['hex', 'hexa', 'rgba', 'hsla', 'hsva'],
     type: 'hex',
