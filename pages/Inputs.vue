@@ -16,7 +16,7 @@
             <p class="text-h6">
                 Few errors
             </p>
-            <ErrorCountInput2 id="ErrorCountInput2" /><br />
+            <ErrorCountInput2 id="ErrorCountInput2" :errors="errors"/><br />
             <p class="text-h6">
                 One error
             </p>
@@ -27,7 +27,7 @@
             <p class="text-h5">
                 Hide details input
             </p>
-            <HideDetailsInput id="HideDetailsInput" />
+            <HideDetailsInput id="HideDetailsInput" @countErrors="countErrors"/>
         </v-col>
 
         <v-col>
@@ -48,7 +48,7 @@
             <p class="text-h5">
                 Rules input
             </p>
-            <RulesInput id="RulesInput" />
+            <RulesInput id="RulesInput" @countErrors="countErrors"/>
         </v-col>
 
         <v-col>
@@ -99,5 +99,20 @@ export default {
     SlotClicksInput,
     AppendAndPrependInput,
   },
+  data() {
+    return {
+       errors: [], 
+    }
+  },
+  methods: {
+      countErrors(hasError, message) {
+        if(hasError && !this.errors.includes(message)) {
+            this.errors.push(message);
+        } else if(!hasError && this.errors.includes(message)){
+            let index = this.errors.indexOf(message);
+            this.errors.splice(index, 1);
+        }
+      }
+  }
 };
 </script>

@@ -23,7 +23,9 @@
       >
         Continue
       </v-btn>
-      <v-btn text>
+      <v-btn text 
+        @click="e6 = 1"
+      >
         Cancel
       </v-btn>
     </v-stepper-content>
@@ -47,7 +49,9 @@
       >
         Continue
       </v-btn>
-      <v-btn text>
+      <v-btn text 
+        @click="e6 = 1"
+      >
         Cancel
       </v-btn>
     </v-stepper-content>
@@ -71,7 +75,9 @@
       >
         Continue
       </v-btn>
-      <v-btn text>
+      <v-btn text 
+        @click="e6 = 1"
+      >
         Cancel
       </v-btn>
     </v-stepper-content>
@@ -91,7 +97,9 @@
       >
         Continue
       </v-btn>
-      <v-btn text>
+      <v-btn text 
+        @click="e6 = 1"
+      >
         Cancel
       </v-btn>
     </v-stepper-content>

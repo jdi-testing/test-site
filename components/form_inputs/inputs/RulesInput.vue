@@ -1,9 +1,15 @@
 <template>
-  <v-text-field :rules="rules"></v-text-field>
+  <v-form v-model="valid">
+    <v-text-field 
+      :rules="rules"
+      @change="$emit('countErrors', !valid, 'rules input error')"
+    ></v-text-field>
+  </v-form>
 </template>
 <script>
 export default {
   data: () => ({
+    valid: false,
     rules: [
       (value) => !!value || 'Required.',
       (value) => (value || '').length <= 20 || 'Max 20 characters',
