@@ -63,35 +63,35 @@ export default function BadgeAvatars() {
   const classes = useStyles();
 
   return (
-      <div className={classes.root}>
-        <StyledBadge
-            overlap="circle"
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'right',
-            }}
-            variant="dot"
-        >
-          <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
-        </StyledBadge>
-        <Badge
-            overlap="circle"
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'right',
-            }}
-            badgeContent={<SmallAvatar alt="Remy Sharp" src={AssignmentIcon} />}
-        >
-          <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/1.jpg" />
-        </Badge>
-        <Avatar src="/broken-image" alt="Lorem" />
-        <Avatar src="/broken-image" />
-        <Avatar variant="square" className={classes.square}>
-          A
-        </Avatar>
-        <Avatar variant="rounded" className={classes.rounded}>
-          <AssignmentIcon />
-        </Avatar>
-      </div>
+    <div className={classes.root}>
+      <StyledBadge
+        overlap="circle"
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        variant="dot"
+      >
+        <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" />
+      </StyledBadge>
+      <Badge
+        overlap="circle"
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        badgeContent={<SmallAvatar alt="Remy Sharp" src={AssignmentIcon} />}
+      >
+        <Avatar alt="Travis Howard" src="https://mui.com/static/images/avatar/1.jpg" />
+      </Badge>
+      <Avatar src="/broken-image" alt="Lorem" />
+      <Avatar src="/broken-image" />
+      <Avatar variant="square" className={classes.square}>
+        A
+      </Avatar>
+      <Avatar variant="rounded" className={classes.rounded}>
+        <AssignmentIcon />
+      </Avatar>
+    </div>
   );
 }

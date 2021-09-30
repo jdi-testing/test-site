@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -28,15 +28,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ComplexGrid() {
   const classes = useStyles();
-  const [text, setText] = useState("Remove");
+  const [text, setText] = useState('Remove');
 
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <Grid container spacing={2} id={"complexGrid"}>
+        <Grid container spacing={2} id="complexGrid">
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="https://material-ui.com/static/images/grid/complex.jpg" />
+              <img className={classes.img} alt="complex" src="https://mui.com/static/images/grid/complex.jpg" />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
@@ -56,7 +56,8 @@ export default function ComplexGrid() {
                 <Typography
                   variant="body2"
                   style={{ cursor: 'pointer' }}
-                  onClick={() => setText(text =="Restore" ? "Remove" : "Restore")}>
+                  onClick={() => setText(text === 'Restore' ? 'Remove' : 'Restore')}
+                >
                   {text}
                 </Typography>
               </Grid>

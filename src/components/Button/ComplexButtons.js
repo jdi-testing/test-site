@@ -1,21 +1,21 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
 const images = [
   {
-    url: '/jdi-light/material/img/gridlist/data/breakfast.jpg',
+    url: 'https://mui.com/static/images/buttons/breakfast.jpg',
     title: 'Breakfast',
     width: '40%',
   },
   {
-    url: '/jdi-light/material/img/gridlist/data/burgers.jpg',
+    url: 'https://mui.com/static/images/buttons/burgers.jpg',
     title: 'Burgers',
     width: '30%',
   },
   {
-    url: '/jdi-light/material/img/gridlist/data/camera.jpg',
+    url: 'https://mui.com/static/images/buttons/camera.jpg',
     title: 'Camera',
     width: '30%',
   },
@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonBases() {
   const classes = useStyles();
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
   const handleClick = (event) => {
     setText(event.target.textContent);
   };
@@ -134,7 +134,10 @@ export default function ButtonBases() {
           </span>
         </ButtonBase>
       ))}
-      <p id={"complexLastClick"}>Last click: {text}</p>
+      <p id="complexLastClick">
+        Last click:
+        {text}
+      </p>
     </div>
   );
 }
