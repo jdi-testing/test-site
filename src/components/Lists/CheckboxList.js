@@ -32,7 +32,7 @@ export default function CheckboxList() {
   };
 
   return (
-    <List className={classes.root}>
+    <List className={classes.root} id={"checkboxList"}>
       {[0, 1, 2, 3].map((value) => {
         const labelId = `checkbox-list-label-${value}`;
 
