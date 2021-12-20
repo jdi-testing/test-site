@@ -302,7 +302,7 @@ export default function Lists() {
           </ListItem>
         </List>
         <h2>Pinned subheader List</h2>
-        <List className={classes.root} subheader={<li />}>
+        <List id="pinnedSubheaderList" className={classes.root} subheader={<li />}>
           {[0, 1, 2, 3, 4].map((sectionId) => (
             <li key={`section-${sectionId}`} className={classes.listSection}>
               <ul className={classes.ul}>
