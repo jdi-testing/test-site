@@ -100,13 +100,13 @@ export default function Lists() {
         <FormGroup row>
           <FormControlLabel
             control={
-              <Checkbox checked={dense} onChange={(event) => setDense(event.target.checked)} />
+              <Checkbox id="denseCheckbox" checked={dense} onChange={(event) => setDense(event.target.checked)} />
             }
             label="Enable dense"
           />
           <FormControlLabel
             control={
-              <Checkbox
+              <Checkbox id="secondaryTextCheckbox"
                 checked={secondary}
                 onChange={(event) => setSecondary(event.target.checked)}
               />
@@ -120,7 +120,7 @@ export default function Lists() {
               Text only
             </Typography>
             <div className={classes.demo}>
-              <List dense={dense}>
+              <List id="textOnlyList" dense={dense}>
                 {generate(
                   <ListItem>
                     <ListItemText
@@ -137,7 +137,7 @@ export default function Lists() {
               Icon with text
             </Typography>
             <div className={classes.demo}>
-              <List dense={dense}>
+              <List id="iconWithTextList" dense={dense}>
                 {generate(
                   <ListItem>
                     <ListItemIcon>
@@ -159,7 +159,7 @@ export default function Lists() {
               Avatar with text
             </Typography>
             <div className={classes.demo}>
-              <List dense={dense}>
+              <List id="avatarWithTextList" dense={dense}>
                 {generate(
                   <ListItem>
                     <ListItemAvatar>
@@ -181,7 +181,7 @@ export default function Lists() {
               Avatar with text and icon
             </Typography>
             <div className={classes.demo}>
-              <List dense={dense}>
+              <List id="avatarWithTextAndIconList" dense={dense}>
                 {generate(
                   <ListItem>
                     <ListItemAvatar>
@@ -228,7 +228,7 @@ export default function Lists() {
           </ListItem>
         </List>
         <Divider />
-        <List component="nav" aria-label="secondary mailbox folder">
+        <List component="nav" aria-label="secondary mailbox folder" id="selectedListLowerHalf">
           <ListItem
             button
             selected={selectedIndex === 2}
@@ -245,7 +245,7 @@ export default function Lists() {
           </ListItem>
         </List>
         <h2>Checkbox List</h2>
-        <List className={classes.root}>
+        <List id="checkboxList" className={classes.root}>
           {[0, 1, 2, 3].map((value) => {
             const labelId = `checkbox-list-label-${value}`;
 
@@ -271,7 +271,7 @@ export default function Lists() {
           })}
         </List>
         <h2>List with Switch</h2>
-        <List subheader={<ListSubheader>Settings</ListSubheader>} className={classes.root}>
+        <List id="listWithSwitch" subheader={<ListSubheader>Settings</ListSubheader>} className={classes.root}>
           <ListItem>
             <ListItemIcon>
               <WifiIcon />
