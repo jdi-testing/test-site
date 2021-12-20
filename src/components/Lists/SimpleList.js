@@ -16,7 +16,7 @@ function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
 }
 
-export default function SimpleList() {
+export default function SimpleList(props) {
   const classes = useStyles();
   const [lastClick, setClick] = useState("");
   const handleClick = (event) => {
@@ -25,7 +25,7 @@ export default function SimpleList() {
 
   return (
     <div className={classes.root}>
-      <List component="nav" aria-label="List items">
+      <List component="nav" aria-label="List items" {...props}>
         <ListItem button>
           <ListItemText primary="List item 1" onClick={(event => {handleClick(event)})}/>
         </ListItem>
