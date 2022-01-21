@@ -368,6 +368,13 @@ const NavList = () => {
         Data Display
       </ListSubheader>
       <List component="div" disablePadding>
+        <Link href="/alert">
+          <ListItem button>
+            <ListItemText primary="Alert" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
         <Link href="/avatar">
           <ListItem button>
             <ListItemText primary="Avatar" />
