@@ -23,7 +23,8 @@ import Switch from '@material-ui/core/Switch';
 import WifiIcon from '@material-ui/icons/Wifi';
 import BluetoothIcon from '@material-ui/icons/Bluetooth';
 import CommentIcon from '@material-ui/icons/Comment';
-import SimpleList from "./SimpleList";
+import NestedList from './NestedList';
+import SimpleList from './SimpleList';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,11 +47,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function generate(element) {
-  return [0, 1, 2].map((value) =>
-    React.cloneElement(element, {
-      key: value,
-    }),
-  );
+  return [0, 1, 2].map((value) => React.cloneElement(element, {
+    key: value,
+  }));
 }
 
 export default function Lists() {
@@ -95,7 +94,8 @@ export default function Lists() {
     <div>
       <h1>Lists</h1>
       <h2>Simple List</h2>
-      <SimpleList id={"simpleList"} />
+      <SimpleList id="simpleList" />
+      <NestedList id="nestedList" />
       <div className={classes.root}>
         <FormGroup row>
           <FormControlLabel
@@ -105,12 +105,13 @@ export default function Lists() {
             label="Enable dense"
           />
           <FormControlLabel
-            control={
-              <Checkbox id="secondaryTextCheckbox"
+            control={(
+              <Checkbox
+                id="secondaryTextCheckbox"
                 checked={secondary}
                 onChange={(event) => setSecondary(event.target.checked)}
               />
-            }
+            )}
             label="Enable secondary text"
           />
         </FormGroup>
@@ -205,7 +206,7 @@ export default function Lists() {
           </Grid>
         </Grid>
         <h2>Selected List</h2>
-        <List component="nav" aria-label="main mailbox folders" id={"selectedList"}>
+        <List component="nav" aria-label="main mailbox folders" id="selectedList">
           <ListItem
             button
             selected={selectedIndex === 0}
