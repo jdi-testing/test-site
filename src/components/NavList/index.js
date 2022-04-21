@@ -268,6 +268,13 @@ const NavList = () => {
         Feedback
       </ListSubheader>
       <List component="div" disablePadding>
+        <Link href="/alert">
+          <ListItem button>
+            <ListItemText primary="Alert" />
+          </ListItem>
+        </Link>
+      </List>
+      <List component="div" disablePadding>
         <Link href="/progress">
           <ListItem button>
             <ListItemText primary="Progress" />
@@ -367,13 +374,6 @@ const NavList = () => {
       <ListSubheader component="div" id="nested-list-subheader-navigation" disableSticky>
         Data Display
       </ListSubheader>
-      <List component="div" disablePadding>
-        <Link href="/alert">
-          <ListItem button>
-            <ListItemText primary="Alert" />
-          </ListItem>
-        </Link>
-      </List>
       <List component="div" disablePadding>
         <Link href="/avatar">
           <ListItem button>
