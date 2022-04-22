@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
 import Paper from '@material-ui/core/Paper';
-import Collapse from '@material-ui/core/Collapse';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { Fade } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,20 +41,20 @@ export default function SimpleFade() {
         label="Show"
       />
       <div className={classes.container}>
-        <Collapse in={checked}>
+        <Fade in={checked}>
           <Paper elevation={4} className={classes.paper}>
             <svg className={classes.svg}>
               <polygon points="0,100 50,00, 100,100" className={classes.polygon} />
             </svg>
           </Paper>
-        </Collapse>
-        <Collapse in={checked} collapsedHeight={40}>
+        </Fade>
+        <Fade in={checked}>
           <Paper elevation={4} className={classes.paper}>
             <svg className={classes.svg}>
               <polygon points="0,100 50,00, 100,100" className={classes.polygon} />
             </svg>
           </Paper>
-        </Collapse>
+        </Fade>
       </div>
     </div>
   );
