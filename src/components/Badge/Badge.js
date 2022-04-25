@@ -74,7 +74,7 @@ export default function BadgeVisibility() {
             </Button>
           </ButtonGroup>
           <FormControlLabel
-              control={<Switch color="primary" checked={!showZero} onChange={handleZeroVisibility} />}
+              control={<Switch color="primary" checked={showZero} onChange={handleZeroVisibility} />}
               label="Show Zero"
           />
         </div>
