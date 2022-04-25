@@ -1,8 +1,9 @@
 import React from 'react';
-import MenuAppBar from "./AppBarMenu";
-import ProminentAppBar from "./ProminentAppBar";
-import ButtonAppBar from "./SimpleAppBar";
-import {makeStyles} from "@material-ui/core/styles";
+import MenuAppBar from './AppBarMenu';
+import ProminentAppBar from './ProminentAppBar';
+import ButtonAppBar from './SimpleAppBar';
+import { makeStyles } from '@material-ui/core/styles';
+import SearchAppBar from './SearchAppBar';
 
 const useStyles = makeStyles((theme) => ({
   app_root: {
@@ -23,6 +24,8 @@ export default function BuildAppBar() {
       <ButtonAppBar id={"simpleAppBar"} />
       <h2>App Bar with menu</h2>
       <MenuAppBar id={"menuAppBar"} />
+      <h2>Search App Bar</h2>
+      <SearchAppBar id={"searchAppBar"} />
       <h2>Prominent App Bar</h2>
       <ProminentAppBar id={"prominentAppBar"} />
 
