@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { green, purple } from '@material-ui/core/colors';
 
@@ -57,13 +57,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: green,
   },
 });
 
-export default function CustomizedButtons() {
+export default function CustomizedButtons({id}) {
   const classes = useStyles();
   const [text, setText] = useState("");
   const handleClick = (event) => {
@@ -72,14 +72,16 @@ export default function CustomizedButtons() {
 
   return (
     <div>
-      <ColorButton variant="contained"
+      <ColorButton id={`${id}-custom-css`}
+                   variant="contained"
                    color="primary"
                    className={classes.margin}
                    onClick={(event) => handleClick(event)}>
         Custom CSS
       </ColorButton>
       <ThemeProvider theme={theme}>
-        <Button variant="contained"
+        <Button id={`${id}-theme-provider`}
+                variant="contained"
                 color="primary"
                 className={classes.margin}
                 onClick={(event) => handleClick(event)}>
@@ -87,6 +89,7 @@ export default function CustomizedButtons() {
         </Button>
       </ThemeProvider>
       <BootstrapButton
+        id={`${id}-bootstrap`}
         variant="contained"
         color="primary"
         disableRipple
@@ -94,7 +97,7 @@ export default function CustomizedButtons() {
         onClick={(event) => handleClick(event)}>
         Bootstrap
       </BootstrapButton>
-      <p id={"customizedLastClick"}>Last click: {text}</p>
+      <p id={`${id}-last-click`}>Last click: {text}</p>
     </div>
   );
 }

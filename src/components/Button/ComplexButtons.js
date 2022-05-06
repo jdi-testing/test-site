@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonBases() {
+export default function ButtonBases({id}) {
   const classes = useStyles();
   const [text, setText] = useState('');
   const handleClick = (event) => {
@@ -105,6 +105,7 @@ export default function ButtonBases() {
     <div className={classes.root}>
       {images.map((image) => (
         <ButtonBase
+          id={`${id}-${image.title}`}
           focusRipple
           key={image.title}
           className={classes.image}
@@ -134,7 +135,7 @@ export default function ButtonBases() {
           </span>
         </ButtonBase>
       ))}
-      <p id="complexLastClick">
+      <p id={`${id}-last-click`}>
         Last click:
         {text}
       </p>

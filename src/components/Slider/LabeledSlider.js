@@ -35,7 +35,7 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-export default function LabeledDiscreteSlider() {
+export default function LabeledDiscreteSlider({id}) {
   const classes = useStyles();
 
   return (
@@ -44,10 +44,11 @@ export default function LabeledDiscreteSlider() {
         Always visible
       </Typography>
       <Slider
-        defaultValue={80}
+        id={id}
+        defaultValue={37}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider-always"
-        step={10}
+        step={null}
         marks={marks}
         valueLabelDisplay="on"
       />

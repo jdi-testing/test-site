@@ -13,7 +13,7 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-export default function RangeSlider() {
+export default function RangeSlider({id}) {
   const classes = useStyles();
   const [value, setValue] = React.useState([20, 37]);
 
@@ -23,10 +23,11 @@ export default function RangeSlider() {
 
   return (
     <div className={classes.root}>
-      <Typography id="range-slider" gutterBottom>
+      <Typography id={`${id}-value`} gutterBottom>
         Range Slider with selection from {value[0]} to {value[1]}
       </Typography>
       <Slider
+        id={id}
         value={value}
         onChange={handleChange}
         valueLabelDisplay="auto"

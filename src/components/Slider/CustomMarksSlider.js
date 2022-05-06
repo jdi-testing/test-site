@@ -36,7 +36,7 @@ function valueLabelFormat(value) {
   return marks.findIndex((mark) => mark.value === value) + 1;
 }
 
-export default function CustomDiscreteSlider() {
+export default function CustomDiscreteSlider({id}) {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
@@ -50,6 +50,7 @@ export default function CustomDiscreteSlider() {
         Restricted values with value {valuetext(value)}
       </Typography>
       <Slider
+        id={id}
         defaultValue={20}
         valueLabelFormat={valueLabelFormat}
         getAriaValueText={valuetext}

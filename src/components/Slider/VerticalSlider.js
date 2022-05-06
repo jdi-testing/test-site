@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function VerticalSlider() {
+export default function VerticalSlider({id}) {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
@@ -18,18 +18,17 @@ export default function VerticalSlider() {
   };
 
   return (
-    <React.Fragment>
-      <Typography id="vertical-slider" gutterBottom>
+    <div className={classes.root}>
+      <Typography id={`${id}-value`} gutterBottom>
         Vertical Slider with value {value}
       </Typography>
-      <div className={classes.root}>
-        <Slider
-          orientation="vertical"
-          onChange={handleChange}
-          defaultValue={30}
-          aria-labelledby="vertical-slider"
-        />
-      </div>
-    </React.Fragment>
+      <Slider
+        id={id}
+        orientation="vertical"
+        onChange={handleChange}
+        defaultValue={30}
+        aria-labelledby="vertical-slider"
+      />
+    </div>
   );
 }
