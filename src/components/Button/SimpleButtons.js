@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContainedButtons() {
+export default function ContainedButtons({id}) {
   const classes = useStyles();
   const [text, setText] = useState("");
   const handleClick = (event) => {
@@ -19,20 +19,20 @@ export default function ContainedButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" onClick={(event) => handleClick(event)}>Default</Button>
-      <Button variant="contained" onClick={(event) => handleClick(event)} color="primary">
+      <Button id={`${id}-default`} variant="contained" onClick={(event) => handleClick(event)}>Default</Button>
+      <Button id={`${id}-primary`} variant="contained" onClick={(event) => handleClick(event)} color="primary">
         Primary
       </Button>
-      <Button variant="contained" color="secondary" onClick={(event) => handleClick(event)}>
+      <Button id={`${id}-secondary`} variant="contained" color="secondary" onClick={(event) => handleClick(event)}>
         Secondary
       </Button>
-      <Button variant="contained" disabled onClick={(event) => handleClick(event)}>
+      <Button id={`${id}-disabled`}variant="contained" disabled onClick={(event) => handleClick(event)}>
         Disabled
       </Button>
-      <Button variant="contained" color="primary" href="#simpleLastClick" onClick={(event) => handleClick(event)}>
+      <Button id={`${id}-link`} variant="contained" color="primary" href="#simpleLastClick" onClick={(event) => handleClick(event)}>
         Link
       </Button>
-      <p id={"simpleLastClick"}>Last click: {text}</p>
+      <p id={`${id}-last-click`}>Last click: {text}</p>
     </div>
   );
 }

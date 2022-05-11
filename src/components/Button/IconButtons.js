@@ -13,25 +13,25 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IconButtons() {
+export default function IconButtons({id}) {
   const classes = useStyles();
   const [text, setText] = useState("");
 
   return (
     <div className={classes.root}>
-      <IconButton aria-label="delete" onClick={() => setText("Delete enabled")}>
+      <IconButton id={`${id}-delete`} aria-label="delete" onClick={() => setText("Delete enabled")}>
         <DeleteIcon />
       </IconButton>
-      <IconButton aria-label="delete" disabled color="primary" onClick={() => setText("Delete disabled")}>
+      <IconButton id={`${id}-disabled`} aria-label="delete" disabled color="primary" onClick={() => setText("Delete disabled")}>
         <DeleteIcon />
       </IconButton>
-      <IconButton color="secondary" aria-label="add an alarm" onClick={() => setText("Alarm")}>
+      <IconButton id={`${id}-alarm`} color="secondary" aria-label="add an alarm" onClick={() => setText("Alarm")}>
         <AlarmIcon />
       </IconButton>
-      <IconButton color="primary" aria-label="add to shopping cart" onClick={() => setText("Shopping cart")}>
+      <IconButton id={`${id}-cart`} color="primary" aria-label="add to shopping cart" onClick={() => setText("Shopping cart")}>
         <AddShoppingCartIcon />
       </IconButton>
-      <p id={"iconLastClick"}>Last click: {text}</p>
+      <p id={`${id}-last-click`}>Last click: {text}</p>
     </div>
   );
 }

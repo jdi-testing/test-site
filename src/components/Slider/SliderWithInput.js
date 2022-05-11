@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function InputSlider() {
+export default function InputSlider({id}) {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
@@ -37,7 +37,7 @@ export default function InputSlider() {
 
   return (
     <div className={classes.root}>
-      <Typography id="input-slider" gutterBottom>
+      <Typography gutterBottom>
         Volume
       </Typography>
       <Grid container spacing={2} alignItems="center">
@@ -46,6 +46,7 @@ export default function InputSlider() {
         </Grid>
         <Grid item xs>
           <Slider
+            id={id}
             value={typeof value === 'number' ? value : 0}
             onChange={handleSliderChange}
             aria-labelledby="input-slider"
@@ -53,6 +54,7 @@ export default function InputSlider() {
         </Grid>
         <Grid item>
           <Input
+            id={`${id}-input`}
             className={classes.input}
             value={value}
             margin="dense"

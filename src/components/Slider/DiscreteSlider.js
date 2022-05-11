@@ -13,7 +13,7 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-export default function DiscreteSlider() {
+export default function DiscreteSlider({id}) {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
@@ -23,10 +23,11 @@ export default function DiscreteSlider() {
 
   return (
     <div className={classes.root}>
-      <Typography id="discrete-slider" gutterBottom>
+      <Typography id={`${id}-value`} gutterBottom>
         Temperature is {valuetext(value)}
       </Typography>
       <Slider
+        id={id}
         defaultValue={30}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"
@@ -37,10 +38,11 @@ export default function DiscreteSlider() {
         max={110}
         onChange={handleChange}
       />
-      <Typography id="discrete-slider" gutterBottom>
+      <Typography gutterBottom>
         Disabled
       </Typography>
       <Slider
+        id={`${id}-disabled`}
         defaultValue={30}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"

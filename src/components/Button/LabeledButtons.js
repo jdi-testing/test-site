@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import DeleteIcon from '@material-ui/icons/Delete';
+import SendIcon from '@material-ui/icons/Send';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
-import Icon from '@material-ui/core/Icon';
 import SaveIcon from '@material-ui/icons/Save';
 
 const useStyles = makeStyles((theme) => ({
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IconLabelButtons() {
+export default function IconLabelButtons({id}) {
   const classes = useStyles();
   const [text, setText] = useState("");
   const handleClick = (event) => {
@@ -23,6 +23,7 @@ export default function IconLabelButtons() {
   return (
     <div>
       <Button
+        id={`${id}-delete`}
         variant="contained"
         color="secondary"
         className={classes.button}
@@ -33,15 +34,17 @@ export default function IconLabelButtons() {
       </Button>
       {/* This Button uses a Font Icon, see the installation instructions in the Icon component docs. */}
       <Button
+        id={`${id}-send`}
         variant="contained"
         color="primary"
         className={classes.button}
-        endIcon={<Icon>send</Icon>}
+        endIcon={<SendIcon />}
         onClick={(event) => handleClick(event)}
       >
         Send
       </Button>
       <Button
+        id={`${id}-upload`}
         variant="contained"
         color="default"
         className={classes.button}
@@ -51,6 +54,7 @@ export default function IconLabelButtons() {
         Upload
       </Button>
       <Button
+        id={`${id}-talk`}
         variant="contained"
         disabled
         color="secondary"
@@ -61,6 +65,7 @@ export default function IconLabelButtons() {
         Talk
       </Button>
       <Button
+        id={`${id}-save`}
         variant="contained"
         color="secondary"
         size="small"
@@ -71,6 +76,7 @@ export default function IconLabelButtons() {
         Save
       </Button>
       <Button
+        id={`${id}-save-all`}
         variant="contained"
         color="primary"
         size="large"
@@ -80,7 +86,7 @@ export default function IconLabelButtons() {
       >
         Save all
       </Button>
-      <p id={"labeledLastClick"}>Last click: {text}</p>
+      <p id={`${id}-last-click`}>Last click: {text}</p>
     </div>
   );
 }

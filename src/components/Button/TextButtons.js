@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function TextButtons() {
+export default function TextButtons({id}) {
   const classes = useStyles();
   const [text, setText] = useState("");
   const handleClick = (event) => {
@@ -19,14 +19,14 @@ export default function TextButtons() {
 
   return (
     <div className={classes.root}>
-      <Button onClick={(event) => handleClick(event)}>Default</Button>
-      <Button color="primary" onClick={(event) => handleClick(event)}>Primary</Button>
-      <Button color="secondary" onClick={(event) => handleClick(event)}>Secondary</Button>
-      <Button disabled onClick={(event) => handleClick(event)}>Disabled</Button>
-      <Button href="#textLastClick" color="primary" onClick={(event) => handleClick(event)}>
+      <Button id={`${id}-default`} onClick={(event) => handleClick(event)}>Default</Button>
+      <Button id={`${id}-primary`} color="primary" onClick={(event) => handleClick(event)}>Primary</Button>
+      <Button id={`${id}-secondary`} color="secondary" onClick={(event) => handleClick(event)}>Secondary</Button>
+      <Button id={`${id}-disabled`} disabled onClick={(event) => handleClick(event)}>Disabled</Button>
+      <Button id={`${id}-link`} href="#textLastClick" color="primary" onClick={(event) => handleClick(event)}>
         Link
       </Button>
-      <p id={"textLastClick"}>Last click: {text}</p>
+      <p id={`${id}-last-click`}>Last click: {text}</p>
     </div>
   );
 }

@@ -12,17 +12,17 @@ export default function Buttons(...args) {
     <div>
       <h1>Buttons</h1>
       <h2>Contained buttons</h2>
-      <ContainedButtons id={"containedBtns"} />
+      <ContainedButtons id={"contained-button"} />
       <h2>Text buttons</h2>
-      <TextButtons id={"textBtns"} />
+      <TextButtons id={"text-button"} />
       <h2>Buttons with icons and label</h2>
-      <IconLabelButtons id={"iconLabelBtns"} />
+      <IconLabelButtons id={"icon-label-button"} />
       <h2>Icon buttons</h2>
-      <IconButtons id={"iconBtns"} />
+      <IconButtons id={"icon-button"} />
       <h2>Customized buttons</h2>
-      <CustomizedButtons id={"customizedBtns"} />
+      <CustomizedButtons id={"customized-button"} />
       <h2>Complex buttons</h2>
-      <ButtonBases id={"complexBtns"} />
+      <ButtonBases id={"complex-button"} />
     </div>
   );
 }

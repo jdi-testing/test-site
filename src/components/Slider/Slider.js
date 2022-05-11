@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ContinuousSlider() {
+export default function ContinuousSlider({id}) {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
@@ -20,19 +20,19 @@ export default function ContinuousSlider() {
 
   return (
     <div className={classes.root}>
-      <Typography id="continuous-slider" gutterBottom>
+      <Typography gutterBottom>
         Default Slider
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs>
-          <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" />
+          <Slider id={id} value={value} onChange={handleChange} aria-labelledby="continuous-slider" />
         </Grid>
-        <Typography id={"continuousValue"}>Selected value: {value}</Typography>
+        <Typography id={`${id}-value`}>Selected value: {value}</Typography>
       </Grid>
-      <Typography id="disabled-slider" gutterBottom>
+      <Typography gutterBottom>
         Disabled slider
       </Typography>
-      <Slider disabled defaultValue={30} aria-labelledby="disabled-slider" />
+      <Slider id={`${id}-disabled`} disabled defaultValue={30} aria-labelledby="disabled-slider" />
     </div>
   );
 }
