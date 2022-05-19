@@ -8,8 +8,12 @@ export default function SimpleContainer() {
     <React.Fragment>
       <CssBaseline />
       <h1>Container</h1>
-      <Container maxWidth="sm">
+      <Container maxWidth="sm" id="container-fluid">
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>Example text</Typography>
+      </Container>
+      <h1>Container fixed</h1>
+      <Container fixed id="container-fixed">
+        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>Fixed container text</Typography>
       </Container>
     </React.Fragment>
   );
