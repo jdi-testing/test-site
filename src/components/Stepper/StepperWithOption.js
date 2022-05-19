@@ -13,7 +13,7 @@ function getStepContent(stepIndex) {
   return `You are on ${getSteps()[stepIndex]}`;
 }
 
-export default function HorizontalLinearStepper() {
+export default function StepperWithOption() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
   const steps = getSteps();
@@ -79,7 +79,7 @@ export default function HorizontalLinearStepper() {
           </div>
         ) : (
           <div>
-            <Typography id={"activeOptionStep"}>{getStepContent(activeStep)}</Typography>
+            <Typography id="activeOptionStep">{getStepContent(activeStep)}</Typography>
             <div>
               <Button disabled={activeStep === 0} onClick={handleBack}>
                 Back
