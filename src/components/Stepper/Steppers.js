@@ -7,7 +7,6 @@ import DotsMobileStepper from './MobileDotsStepper';
 import ProgressMobileStepper from './MobileProgressStepper';
 import StepperWithOption from './StepperWithOption';
 import StepperWithError from './StepperWithError';
-import EditableStepper from './EditableStepper';
 
 export default function Steppers(...args) {
   return (
