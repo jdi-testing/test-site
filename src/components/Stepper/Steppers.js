@@ -7,6 +7,7 @@ import DotsMobileStepper from './MobileDotsStepper';
 import ProgressMobileStepper from './MobileProgressStepper';
 import StepperWithOption from './StepperWithOption';
 import StepperWithError from './StepperWithError';
+import EditableStepper from './EditableStepper';
 
 export default function Steppers(...args) {
   return (
@@ -16,6 +17,8 @@ export default function Steppers(...args) {
       <SimpleStepper id="simpleStepper" />
       <h2>Non-linear stepper</h2>
       <HorizontalNonLinearStepper id="nonLinearStepper" />
+      <h2>Non-linear stepper with disable complete</h2>
+      <HorizontalNonLinearStepper id="stepperWithDisableComplete" isDisableComplete />
       <h2>Stepper with error</h2>
       <StepperWithError id="stepperWithError" />
       <h2>Stepper with optional</h2>

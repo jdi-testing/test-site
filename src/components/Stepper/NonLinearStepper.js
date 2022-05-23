@@ -13,7 +13,7 @@ function getStepContent(stepIndex) {
   return `You are on ${getSteps()[stepIndex]}`;
 }
 
-export default function HorizontalNonLinearStepper(args) {
+export default function HorizontalNonLinearStepper(args, isDisableComplete) {
   const [activeStep, setActiveStep] = React.useState(0);
   const [completed, setCompleted] = React.useState({});
   const steps = getSteps();
@@ -56,11 +56,13 @@ export default function HorizontalNonLinearStepper(args) {
     setCompleted({});
   };
 
+  const isDisableStep = isDisableComplete && activeStep === 1;
+
   return (
     <div>
       <Stepper {...args} activeStep={activeStep}>
         {steps.map((label, index) => (
-          <Step key={label}>
+          <Step key={label} disabled={isDisableStep}>
             <StepButton
               onClick={handleStep(index)}
               completed={completed[index]}
@@ -78,7 +80,7 @@ export default function HorizontalNonLinearStepper(args) {
           </div>
         ) : (
           <div>
-            <Typography id={"activeNonLinearStep"}>{getStepContent(activeStep)}</Typography>
+            <Typography id="activeNonLinearStep">{getStepContent(activeStep)}</Typography>
             <div>
               <Button disabled={activeStep === 0} onClick={handleBack}>
                 Back
@@ -90,7 +92,7 @@ export default function HorizontalNonLinearStepper(args) {
                     Step {activeStep + 1} already completed
                   </Typography>
                 ) : (
-                  <Button onClick={handleComplete}>
+                  <Button onClick={handleComplete} disabled={isDisableStep}>
                     {completedSteps() === totalSteps() - 1
                       ? 'Finish'
                       : 'Complete Step'}
