@@ -43,6 +43,13 @@
             <WYSIWYGButtonGroup id="WYSIWYGButtonGroup" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Text Options Button Group
+            </p>
+            <TextOptionsButtonGroup id="TextOptionsButtonGroup" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -52,6 +59,7 @@ import MultipleButtonGroup from '@/components/groups/button_groups/MultipleButto
 import RoundedButtonGroup from '@/components/groups/button_groups/RoundedButtonGroup.vue';
 import ToolbarButtonGroup from '@/components/groups/button_groups/ToolbarButtonGroup.vue';
 import WYSIWYGButtonGroup from '@/components/groups/button_groups/WYSIWYGButtonGroup.vue';
+import TextOptionsButtonGroup from '@/components/groups/button_groups/TextOptionsButtonGroup.vue';
 
 export default {
   name: 'ButtonGroups',
@@ -61,6 +69,7 @@ export default {
     RoundedButtonGroup,
     ToolbarButtonGroup,
     WYSIWYGButtonGroup,
+    TextOptionsButtonGroup,
   },
 };
 </script>
