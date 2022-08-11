@@ -10,7 +10,7 @@
                 color="#fcb69f"
                 dark
                 shrink-on-scroll
-                src="https://picsum.photos/1920/1080?random"
+                src="/jdi-light/vuetify/pictures/car_in_forest_1080.jpeg"
                 scroll-target="#scrolling-techniques-2"
             >
                 <template v-slot:img="{ props }">

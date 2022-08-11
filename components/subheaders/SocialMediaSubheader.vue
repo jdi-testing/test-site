@@ -19,7 +19,7 @@
     </v-toolbar>
 
     <v-container
-      v-for="type in types"
+      v-for="(type, i) in types"
       :key="type"
       class="grey lighten-4"
       fluid
@@ -29,7 +29,7 @@
       <v-row>
         <v-spacer></v-spacer>
         <v-col
-          v-for="card in cards"
+          v-for="(card, k) in cards"
           :key="card"
           cols="12"
           sm="6"
@@ -37,7 +37,7 @@
         >
           <v-card>
             <v-img
-              :src="`https://picsum.photos/200/300?image=${getImage()}`"
+              :src="`/jdi-light/vuetify/pictures/social_cards/${i + 1}_${k + 1}.jpeg`"
               height="300px"
             >
               <span
@@ -85,14 +85,5 @@
         },
       ],
     }),
-
-    methods: {
-      getImage () {
-        const min = 550
-        const max = 560
-
-        return Math.floor(Math.random() * (max - min + 1)) + min
-      },
-    },
   }
 </script>

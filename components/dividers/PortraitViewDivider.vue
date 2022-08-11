@@ -88,7 +88,7 @@
         </v-list>
 
         <v-img
-          src="https://picsum.photos/700?image=996"
+          src="/jdi-light/vuetify/pictures/portrait_700.jpeg"
           height="200px"
         ></v-img>
       </v-card>

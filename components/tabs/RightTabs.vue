@@ -21,8 +21,8 @@
               md="4"
             >
               <v-img
-                :src="`https://picsum.photos/500/300?image=${i * n * 5 + 10}`"
-                :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 10}`"
+                :src="`/jdi-light/vuetify/pictures/right_tabs/${n}_${i}_large.jpeg`"
+                :lazy-src="`/jdi-light/vuetify/right_tabs/${n}_${i}_small.jpeg`"
                 aspect-ratio="1"
               ></v-img>
             </v-col>

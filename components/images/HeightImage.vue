@@ -9,7 +9,7 @@
         <v-col cols="6">
           <v-card>
             <v-img
-              src="https://picsum.photos/350/165?random"
+              src="/jdi-light/vuetify/pictures/empty_subway_165.jpeg"
               height="125"
               class="grey darken-4"
             ></v-img>
@@ -22,7 +22,7 @@
         <v-col cols="6">
           <v-card>
             <v-img
-              src="https://picsum.photos/350/165?random"
+              src="/jdi-light/vuetify/pictures/field_sunset.jpeg"
               height="125"
               contain
               class="grey darken-4"
@@ -36,7 +36,7 @@
         <v-col cols="6">
           <v-card>
             <v-img
-              src="https://picsum.photos/350/165?random"
+              src="/jdi-light/vuetify/pictures/snow_desert_165.jpeg"
               max-height="125"
               class="grey darken-4"
             ></v-img>
@@ -49,7 +49,7 @@
         <v-col cols="6">
           <v-card>
             <v-img
-              src="https://picsum.photos/350/165?random"
+              src="/jdi-light/vuetify/pictures/white_stairs_165.jpeg"
               max-height="125"
               contain
               class="grey darken-4"
