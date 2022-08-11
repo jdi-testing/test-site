@@ -36,6 +36,21 @@
             </p>
             <ProfileCard id="profileCard" />
         </v-col>
+
+        <v-col class="mt-3">
+            <p class="text-h5">
+                Combination with menu
+            </p>
+            <AvatarMenuCombi id="avatarMenuCombi" />
+        </v-col>
+
+        <v-col class="mt-3">
+            <p class="text-h5">
+                Combination with elements
+            </p>
+            <AvatarMix id="avatarMix" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -45,6 +60,8 @@ import AvatarSize from '@/components/avatars/AvatarSize.vue';
 import TileAvatar from '@/components/avatars/TileAvatar.vue';
 import SlotAvatar from '@/components/avatars/SlotAvatar.vue';
 import ProfileCard from '@/components/avatars/ProfileCard.vue';
+import AvatarMenuCombi from '@/components/avatars/AvatarMenuCombi.vue';
+import AvatarMix from '@/components/avatars/AvatarMix.vue';
 
 export default {
   name: 'Avatars',
@@ -53,6 +70,8 @@ export default {
     TileAvatar,
     SlotAvatar,
     ProfileCard,
+    AvatarMenuCombi,
+    AvatarMix,
   },
 };
 
