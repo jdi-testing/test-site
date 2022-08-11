@@ -6,10 +6,10 @@
         <v-alert type="info">
             I'm an info alert.
         </v-alert>
-        <v-alert type="warning">
+        <v-alert shaped type="warning">
             I'm a warning alert.
         </v-alert>
-        <v-alert type="error">
+        <v-alert elevation="24" type="error">
             I'm an error alert.
         </v-alert>
     </div>
