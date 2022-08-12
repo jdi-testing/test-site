@@ -2,7 +2,7 @@
   <v-row justify="center">
     <v-img
       src="https://bad.src/not/valid"
-      lazy-src="https://picsum.photos/id/11/100/60"
+      lazy-src="/jdi-light/vuetify/placeholder_60.jpeg"
       max-width="500"
       max-height="300"
     >

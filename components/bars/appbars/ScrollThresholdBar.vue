@@ -11,7 +11,7 @@
                 dark
                 shrink-on-scroll
                 prominent
-                src="https://picsum.photos/1920/1080?random"
+                src="/jdi-light/vuetify/pictures/foggy_city_1080.jpeg"
                 fade-img-on-scroll
                 scroll-target="#scrolling-techniques-5"
                 scroll-threshold="500"
