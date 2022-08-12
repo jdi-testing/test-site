@@ -25,7 +25,8 @@ export default {
     '@nuxtjs/vuetify',
   ],
   router: {
-    base: '/jdi-light/vuetify/'
+    base: '/jdi-light/vuetify/',
+    mode: 'hash',
   },
   publicPath: process.env.NODE_ENV === 'production'
     ? '/jdi-light/vuetify/'
