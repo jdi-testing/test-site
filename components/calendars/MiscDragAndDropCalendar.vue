@@ -10,7 +10,6 @@
           :events="events"
           :event-color="getEventColor"
           :event-ripple="false"
-          @change="getEvents"
           @mousedown:event="startDrag"
           @mousedown:time="startTime"
           @mousemove:time="mouseMove"
@@ -34,10 +33,125 @@
   </v-row>
 </template>
 <script>
+const events = [
+  {
+    "name": "Conference",
+    "color": "#FF9800",
+    "start": [ 4, 45 ],
+    "end": [ 5, 30 ],
+  },
+  {
+    "name": "PTO",
+    "color": "#00BCD4",
+    "start": [ 10, 0 ],
+    "end": [ 11, 15 ],
+  },
+  {
+    "name": "Meeting",
+    "color": "#3F51B5",
+    "start": [ 14, 0 ],
+    "end": [ 15, 30 ],
+  },
+  {
+    "name": "Meeting",
+    "color": "#673AB7",
+    "start": [ 21, 15 ],
+    "end": [ 22, 30 ],
+  },
+  {
+    "name": "Holiday",
+    "color": "#00BCD4",
+    "start": [ 2, 30 ],
+    "end": [ 3, 0 ],
+  },
+  {
+    "name": "Event",
+    "color": "#757575",
+    "start": [ 7, 45 ],
+    "end": [ 8, 45 ],
+  },
+  {
+    "name": "Birthday",
+    "color": "#757575",
+    "start": [ 15, 0 ],
+    "end": [ 16, 30 ],
+  },
+  {
+    "name": "Party",
+    "color": "#4CAF50",
+    "start": [ 15, 15 ],
+    "end": [ 18, 30 ],
+  },
+  {
+    "name": "Travel",
+    "color": "#4CAF50",
+    "start": [ 1, 15 ],
+    "end": [ 2, 0 ],
+  },
+  {
+    "name": "Event",
+    "color": "#673AB7",
+    "start": [ 3, 30 ],
+    "end": [ 5, 0 ],
+  },
+  {
+    "name": "Event",
+    "color": "#2196F3",
+    "start": [ 16, 0 ],
+    "end": [ 17, 0 ],
+  },
+  {
+    "name": "Meeting",
+    "color": "#FF9800",
+    "start": [ 18, 0 ],
+    "end": [ 19, 0 ],
+  },
+  {
+    "name": "Travel",
+    "color": "#673AB7",
+    "start": [ 1, 15 ],
+    "end": [ 2, 0 ],
+  },
+  {
+    "name": "PTO",
+    "color": "#3F51B5",
+    "start": [ 2, 45 ],
+    "end": [ 4, 0 ],
+  },
+  {
+    "name": "Party",
+    "color": "#4CAF50",
+    "start": [ 10, 0 ],
+    "end": [ 10, 45 ],
+  },
+  {
+    "name": "Holiday",
+    "color": "#00BCD4",
+    "start": [ 21, 15 ],
+    "end": [ 22, 30 ],
+  }
+];
+
+const today = new Date().getDate();
+
+const getTimeDate = (day, [hours, minutes]) => {
+  const date = new Date();
+  date.setDate(today + day);
+  date.setHours(hours, minutes, 0);
+  return date.getTime();
+};
+
+const formattedEvents = events.map((event, i) => ({
+  ...event,
+  timed: true,
+  start: getTimeDate(Math.floor(i / 4), event.start),
+  end: getTimeDate(Math.floor(i / 4), event.end)
+}));
+
 export default {
   data: () => ({
     value: '',
-    events: [],
+    events: formattedEvents,
     colors: ['#2196F3', '#3F51B5', '#673AB7', '#00BCD4', '#4CAF50', '#FF9800', '#757575'],
     names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
     dragEvent: null,
