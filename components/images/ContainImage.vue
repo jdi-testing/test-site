@@ -16,7 +16,7 @@
           Too high
         </div>
         <v-img
-          src="/pictures/black_band_300.jpeg"
+          src="/jdi-light/vuetify/pictures/black_band_300.jpeg"
           aspect-ratio="2"
         ></v-img>
         <div class="subheading pt-4">
