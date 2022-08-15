@@ -22,7 +22,7 @@
         <v-col cols="6">
           <v-card>
             <v-img
-              src="/jdi-light/vuetify/pictures/field_sunset.jpeg"
+              src="/jdi-light/vuetify/pictures/field_sunset_165.jpeg"
               height="125"
               contain
               class="grey darken-4"

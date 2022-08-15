@@ -2,7 +2,7 @@
   <v-row justify="center">
     <v-img
       src="https://bad.src/not/valid"
-      lazy-src="/jdi-light/vuetify/placeholder_60.jpeg"
+      lazy-src="/jdi-light/vuetify/pictures/placeholder_60.jpeg"
       max-width="500"
       max-height="300"
     >
