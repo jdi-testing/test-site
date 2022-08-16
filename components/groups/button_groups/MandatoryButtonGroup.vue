@@ -15,6 +15,7 @@
         </v-col>
         <v-btn-toggle
           v-model="toggle_exclusive"
+          shaped
           mandatory
         >
           <v-btn>
