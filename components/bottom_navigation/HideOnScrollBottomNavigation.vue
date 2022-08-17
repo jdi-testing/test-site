@@ -9,10 +9,12 @@
       hide-on-scroll
       horizontal
       scroll-target="#hide-on-scroll-example"
+      @change="selected = $event"
     >
       <v-btn
         color="deep-purple accent-4"
         text
+        value="Recents"
       >
         <span>Recents</span>
 
@@ -22,6 +24,7 @@
       <v-btn
         color="deep-purple accent-4"
         text
+        value="Favorites"
       >
         <span>Favorites</span>
 
@@ -31,6 +34,7 @@
       <v-btn
         color="deep-purple accent-4"
         text
+        value="Nearby"
       >
         <span>Nearby</span>
 
@@ -43,7 +47,14 @@
       class="overflow-y-auto"
       max-height="600"
     >
-      <v-responsive height="1500"></v-responsive>
+      <v-responsive height="1500">{{ selected }}</v-responsive>
     </v-responsive>
   </v-card>
 </template>
+<script>
+export default {
+  data: () => ({
+    selected: null,
+  })
+}
+</script>
