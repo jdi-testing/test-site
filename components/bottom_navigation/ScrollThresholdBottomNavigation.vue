@@ -11,20 +11,21 @@
       horizontal
       scroll-target="#scroll-threshold-example"
       scroll-threshold="500"
+      @change="selected = $event"
     >
-      <v-btn>
+      <v-btn value="Recents">
         <span>Recents</span>
 
         <v-icon>mdi-history</v-icon>
       </v-btn>
 
-      <v-btn>
+      <v-btn value="Favorites">
         <span>Favorites</span>
 
         <v-icon>mdi-heart</v-icon>
       </v-btn>
 
-      <v-btn>
+      <v-btn value="Nearby">
         <span>Nearby</span>
 
         <v-icon>mdi-map-marker</v-icon>
@@ -36,7 +37,14 @@
       class="overflow-y-auto pb-16"
       max-height="600"
     >
-      <v-responsive height="1500"></v-responsive>
+      <v-responsive height="1500">{{ selected }}</v-responsive>
     </v-sheet>
   </v-card>
 </template>
+<script>
+export default {
+  data: () => ({
+    selected: null,
+  })
+}
+</script>

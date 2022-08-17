@@ -13,7 +13,7 @@
             Button
           </v-btn>
         </template>
-        <span>Tooltip</span>
+        <span>Tooltip for "Button"</span>
       </v-tooltip>
 
       <v-tooltip bottom>
@@ -27,7 +27,7 @@
             mdi-home
           </v-icon>
         </template>
-        <span>Tooltip</span>
+        <span>Tooltip for "mdi-home"</span>
       </v-tooltip>
 
       <v-tooltip bottom>
@@ -37,7 +37,7 @@
             v-on="on"
           >This text has a tooltip</span>
         </template>
-        <span>Tooltip</span>
+        <span>Tooltip for "This text has a tooltip"</span>
       </v-tooltip>
     </div>
   </v-container>

@@ -7,6 +7,8 @@
       </p>
     </v-col>
     <SimpleTooltip />
+    <AlignmentTooltips />
+    <ColorTooltips />
     <ProgrammaticTooltip />
   </v-container>
 </template>
@@ -14,12 +16,16 @@
 <script>
 // @ is an alias to /src
 import SimpleTooltip from '@/components/tooltips/SimpleTooltip.vue';
+import AlignmentTooltips from '@/components/tooltips/AlignmentTooltips.vue';
+import ColorTooltips from '@/components/tooltips/ColorTooltips.vue';
 import ProgrammaticTooltip from '@/components/tooltips/ProgrammaticTooltip.vue';
 
 export default {
   name: 'Tooltips',
   components: {
     SimpleTooltip,
+    AlignmentTooltips,
+    ColorTooltips,
     ProgrammaticTooltip,
   },
 };

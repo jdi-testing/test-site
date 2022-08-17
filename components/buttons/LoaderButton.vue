@@ -1,22 +1,22 @@
 <template>
-  <v-container> 
+  <v-container>
     <h2>Loader Buttons</h2>
     <v-btn
       class="ma-2"
-      :loading="loading"
-      :disabled="loading"
+      :loading="acceptTerms"
+      :disabled="acceptTerms"
       color="secondary"
-      @click="loader = 'loading'"
+      @click="loader = 'acceptTerms'"
     >
       Accept Terms
     </v-btn>
 
     <v-btn
-      :loading="loading3"
-      :disabled="loading3"
+      :loading="upload"
+      :disabled="upload"
       color="blue-grey"
       class="ma-2 white--text"
-      @click="loader = 'loading3'"
+      @click="loader = 'upload'"
     >
       Upload
       <v-icon
@@ -29,10 +29,10 @@
 
     <v-btn
       class="ma-2"
-      :loading="loading2"
-      :disabled="loading2"
+      :loading="customLoader"
+      :disabled="customLoader"
       color="success"
-      @click="loader = 'loading2'"
+      @click="loader = 'customLoader'"
     >
       Custom Loader
       <template v-slot:loader>
@@ -42,10 +42,10 @@
 
     <v-btn
       class="ma-2"
-      :loading="loading4"
-      :disabled="loading4"
+      :loading="iconLoader"
+      :disabled="iconLoader"
       color="info"
-      @click="loader = 'loading4'"
+      @click="loader = 'iconLoader'"
     >
       Icon Loader
       <template v-slot:loader>
@@ -56,17 +56,33 @@
     </v-btn>
 
     <v-btn
-      :loading="loading5"
-      :disabled="loading5"
+      :loading="cloudIcon"
+      :disabled="cloudIcon"
       color="blue-grey"
       class="ma-2 white--text"
       fab
-      @click="loader = 'loading5'"
+      @click="loader = 'cloudIcon'"
     >
       <v-icon dark>
         mdi-cloud-upload
       </v-icon>
     </v-btn>
+    <v-snackbar
+        v-model="snackbarVisible"
+        timeout="3000"
+    >
+      {{ snackbarText }}
+      <template v-slot:action="{ attrs }">
+        <v-btn
+            color="blue"
+            text
+            v-bind="attrs"
+            @click="snackbarVisible = false"
+        >
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-container>
 </template>
 <script>
@@ -74,19 +90,27 @@ export default {
   data() {
     return {
       loader: null,
-      loading: false,
-      loading2: false,
-      loading3: false,
-      loading4: false,
-      loading5: false,
+      acceptTerms: false,
+      upload: false,
+      customLoader: false,
+      iconLoader: false,
+      cloudIcon: false,
+      snackbarText: '',
+      snackbarVisible: false,
     };
   },
   watch: {
     loader() {
+      if (this.loader === null) return;
+      this.snackbarVisible = false;
       const l = this.loader;
       this[l] = !this[l];
 
-      setTimeout(() => { this[l] = false; }, 3000);
+      setTimeout(() => {
+        this[l] = false;
+        this.snackbarText = `${l} finished loading`;
+        this.snackbarVisible = true;
+      }, 3000);
 
       this.loader = null;
     },
