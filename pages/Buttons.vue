@@ -17,6 +17,7 @@
     <OutlinedButton />
     <RoundedButton />
     <TileButton />
+    <SizingButton />
   </v-container>
 </template>
 
@@ -31,6 +32,7 @@ import PlainButton from '@/components/buttons/PlainButton.vue';
 import OutlinedButton from '@/components/buttons/OutlinedButton.vue';
 import RoundedButton from '@/components/buttons/RoundedButton.vue';
 import TileButton from '@/components/buttons/TileButton.vue';
+import SizingButton from '@/components/buttons/SizingButton.vue';
 
 export default {
   name: 'Buttons',
@@ -45,6 +47,7 @@ export default {
     OutlinedButton,
     RoundedButton,
     TileButton,
+    SizingButton,
   },
 };
 </script>
