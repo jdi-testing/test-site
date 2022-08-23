@@ -43,7 +43,7 @@
               return setTimeout(this.queryAndIndeterminate, 2000)
             }
             this.value += 25
-          }, 1000)
+          }, 2000)
         }, 2500)
       },
     },

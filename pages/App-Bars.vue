@@ -3,16 +3,58 @@
         <v-col>
             <h1>App bars</h1>
             <p class="body-1 mt-2">
-                The <code>v-app-bar</code> component is pivotal to any graphical user interface (GUI), 
+                The <code>v-app-bar</code> component is pivotal to any graphical user interface (GUI),
                 as it generally is the primary source of site navigation.
             </p>
         </v-col>
         <v-row class="mx-1">
             <v-col>
                 <p class="text-h5">
+                  Simple bar
+                </p>
+                <SimpleBar id="collapsibleBar"/>
+            </v-col>
+            <v-col>
+                <p class="text-h5">
+                  Outlined bar
+                </p>
+                <OutlinedBar id="collapsibleBar"/>
+            </v-col>
+        </v-row>
+        <v-row class="mx-1">
+            <v-col>
+                <p class="text-h5">
+                  Flat bar
+                </p>
+                <FlatBar id="collapsibleBar"/>
+            </v-col>
+            <v-col>
+                <p class="text-h5">
+                  Rounded bar
+                </p>
+                <RoundedBar id="collapsibleBar"/>
+            </v-col>
+        </v-row>
+        <v-row class="mx-1">
+            <v-col>
+                <p class="text-h5">
+                  Shaped bar
+                </p>
+                <ShapedBar id="collapsibleBar"/>
+            </v-col>
+            <v-col>
+                <p class="text-h5">
+                  Short bar
+                </p>
+                <ShortBar id="collapsibleBar"/>
+            </v-col>
+        </v-row>
+        <v-row class="mx-1">
+            <v-col>
+                <p class="text-h5">
                     Collapsible bar
                 </p>
-                <CollapsibleBar id="collapsibleBar"/>    
+                <CollapsibleBar id="collapsibleBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
@@ -63,11 +105,27 @@
                 <ToggleNavigationDrawersBar id="toggleNavigationDrawersBar"/>
             </v-col>
         </v-row>
+        <v-row class="mx-1 mt-3">
+            <v-col>
+                <p class="text-h5">
+                  Inverted Scrolling
+                </p>
+                <InvertedScrollingBar id="invertedScrollingBar"/>
+            </v-col>
+            <v-col>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 
 <script>
 
+import SimpleBar from '@/components/bars/appbars/SimpleBar.vue';
+import OutlinedBar from '@/components/bars/appbars/OutlinedBar.vue';
+import FlatBar from '@/components/bars/appbars/FlatBar.vue';
+import RoundedBar from '@/components/bars/appbars/RoundedBar.vue';
+import ShapedBar from '@/components/bars/appbars/ShapedBar.vue';
+import ShortBar from '@/components/bars/appbars/ShortBar.vue';
 import CollapsibleBar from '@/components/bars/appbars/CollapsibleBar.vue';
 import DenseBar from '@/components/bars/appbars/DenseBar.vue';
 import ElevateScrollBar from '@/components/bars/appbars/ElevateScrollBar.vue';
@@ -76,10 +134,17 @@ import HidingScrollBar from '@/components/bars/appbars/HidingScrollBar.vue';
 import ImageBar from '@/components/bars/appbars/ImageBar.vue';
 import ScrollThresholdBar from '@/components/bars/appbars/ScrollThresholdBar.vue';
 import ToggleNavigationDrawersBar from '@/components/bars/appbars/ToggleNavigationDrawersBar.vue';
+import InvertedScrollingBar from '@/components/bars/appbars/InvertedScrollingBar.vue';
 
 export default {
   name: 'AppBars',
   components: {
+    SimpleBar,
+    OutlinedBar,
+    FlatBar,
+    RoundedBar,
+    ShapedBar,
+    ShortBar,
     CollapsibleBar,
     DenseBar,
     ElevateScrollBar,
@@ -88,6 +153,7 @@ export default {
     ImageBar,
     ScrollThresholdBar,
     ToggleNavigationDrawersBar,
+    InvertedScrollingBar,
   },
 };
 </script>
