@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-pagination
       v-model="page"
-      :length="4"
+      :length="5"
       color="red"
     ></v-pagination>
   </div>
