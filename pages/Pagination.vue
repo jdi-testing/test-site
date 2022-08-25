@@ -38,7 +38,18 @@
             </p>
             <TotalVisiblePagination id="TotalVisiblePagination" />
         </v-col>
-
+        <v-col>
+             <p class="text-h5">
+                 Color
+             </p>
+             <ColorPagination id="ColorPagination" />
+        </v-col>
+        <v-col>
+             <p class="text-h5">
+                 Dark
+             </p>
+             <DarkPagination id="DarkPagination" />
+        </v-col>
     </v-container>
 </template>
 <script>
@@ -47,6 +58,8 @@ import DisabledPagination from '@/components/pagination/DisabledPagination.vue';
 import IconsPagination from '@/components/pagination/IconsPagination.vue';
 import LengthPagination from '@/components/pagination/LengthPagination.vue';
 import TotalVisiblePagination from '@/components/pagination/TotalVisiblePagination.vue';
+import ColorPagination from '@/components/pagination/ColorPagination.vue';
+import DarkPagination from '@/components/pagination/DarkPagination.vue';
 
 export default {
   name: 'Pagination',
@@ -55,7 +68,9 @@ export default {
     DisabledPagination,
     IconsPagination,
     LengthPagination,
-    TotalVisiblePagination
+    TotalVisiblePagination,
+    ColorPagination,
+    DarkPagination
   },
 };
 </script>
