@@ -23,6 +23,7 @@
                 :value="messages"
                 color="green"
                 overlap
+                tile
             >
                 <v-icon large>
                     mdi-vuetify
