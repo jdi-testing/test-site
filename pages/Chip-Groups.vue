@@ -50,6 +50,13 @@
             <ToothbrushCardChipGroup id="ToothbrushCardChipGroup" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Adjustable chip group
+            </p>
+            <AdjustableChipGroup id="ToothbrushCardChipGroup" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -60,6 +67,7 @@ import MandatoryChipGroup from '@/components/groups/chip_groups/MandatoryChipGro
 import MultipleChipGroup from '@/components/groups/chip_groups/MultipleChipGroup.vue';
 import ProductCardChipGroup from '@/components/groups/chip_groups/ProductCardChipGroup.vue';
 import ToothbrushCardChipGroup from '@/components/groups/chip_groups/ToothbrushCardChipGroup.vue';
+import AdjustableChipGroup from '@/components/groups/chip_groups/AdjustableChipGroup.vue';
 
 export default {
   name: 'ChipGroups',
@@ -70,6 +78,7 @@ export default {
     MultipleChipGroup,
     ProductCardChipGroup,
     ToothbrushCardChipGroup,
+    AdjustableChipGroup,
   },
 };
 </script>
