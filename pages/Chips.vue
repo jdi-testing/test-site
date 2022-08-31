@@ -106,6 +106,26 @@
             <InSelectsChip id="InSelectsChip" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Disabled chip
+            </p>
+            <DisabledChip id="DisabledChip" />
+        </v-col>
+
+         <v-col>
+            <p class="text-h5">
+                Dark chip
+            </p>
+            <DarkChip id="DarkChip" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Chip with random text color
+            </p>
+            <SelectableColorChip id="DarkChip" />
+        </v-col>
     </v-container>
 </template>
 
@@ -124,6 +144,9 @@ import CustomListChip from '@/components/chips/CustomListChip.vue';
 import ExpandableChip from '@/components/chips/ExpandableChip.vue';
 import FilteringChip from '@/components/chips/FilteringChip.vue';
 import InSelectsChip from '@/components/chips/InSelectsChip.vue';
+import DisabledChip from '@/components/chips/DisabledChip.vue';
+import DarkChip from '@/components/chips/DarkChip.vue';
+import SelectableColorChip from '@/components/chips/SelectableColorChip.vue';
 
 export default {
   name: 'Chips',
@@ -142,6 +165,9 @@ export default {
     ExpandableChip,
     FilteringChip,
     InSelectsChip,
+    DisabledChip,
+    DarkChip,
+    SelectableColorChip,
   },
 };
 </script>
