@@ -4,7 +4,6 @@
       <v-sheet elevation="10" class="py-4 px-1">
         <v-chip-group
           :dark="isDarkTheme"
-          :center-active="isActiveCentered"
           :show-arrows="showArrows"
           :max="maxSelectedAmount"
           multiple
@@ -22,10 +21,6 @@
         <v-row>
           <v-col>
             <v-switch v-model="isDarkTheme" label="Dark theme"></v-switch>
-            <v-switch
-              v-model="isActiveCentered"
-              label="Center active"
-            ></v-switch>
             <v-switch v-model="showArrows" label="Show arrows"></v-switch>
           </v-col>
           <v-col>
@@ -57,7 +52,6 @@ export default {
       'Creative Writing',
     ],
     isDarkTheme: false,
-    isActiveCentered: false,
     showArrows: false,
     maxSelectedAmount: 1,
     previousIcon: 'mdi-menu-left',

@@ -24,7 +24,7 @@
 
         <v-col>
             <p class="text-h5">
-                Mandatory chip group
+                Mandatory chip group (center active)
             </p>
             <MandatoryChipGroup id="MandatoryChipGroup" />
         </v-col>
