@@ -11,6 +11,7 @@
       >
         <v-chip-group
           mandatory
+          center-active
           active-class="primary--text"
         >
           <v-chip
