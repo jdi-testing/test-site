@@ -106,6 +106,13 @@
             <AppendTextFieldSlider id="AppendTextFieldSlider" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Adjustable Slider
+            </p>
+            <AdjustableSlider id="AdjustableSlider" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -124,6 +131,7 @@ import ValidationSlider from '@/components/form_inputs/sliders/ValidationSlider.
 import VerticalSlidersSlider from '@/components/form_inputs/sliders/VerticalSlidersSlider.vue';
 import AppendAndPrependSlider from '@/components/form_inputs/sliders/AppendAndPrependSlider.vue';
 import AppendTextFieldSlider from '@/components/form_inputs/sliders/AppendTextFieldSlider.vue';
+import AdjustableSlider from '@/components/form_inputs/sliders/AdjustableSlider.vue';
 
 export default {
   name: 'Sliders',
@@ -142,6 +150,7 @@ export default {
     VerticalSlidersSlider,
     AppendAndPrependSlider,
     AppendTextFieldSlider,
+    AdjustableSlider
   },
 };
 </script>
