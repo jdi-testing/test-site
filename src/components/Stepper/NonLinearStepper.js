@@ -58,9 +58,9 @@ export default function HorizontalNonLinearStepper(args) {
 
   return (
     <div>
-      <Stepper {...args} activeStep={activeStep}>
+      <Stepper {...args} nonLinear activeStep={activeStep}>
         {steps.map((label, index) => (
-          <Step key={label}>
+          <Step key={label} completed={completed[index]}>
             <StepButton
               onClick={handleStep(index)}
               completed={completed[index]}
