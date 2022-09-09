@@ -25,7 +25,7 @@
 
       <v-divider class="my-2"></v-divider>
 
-      <v-item-group multiple>
+      <v-item-group multiple max=3>
         <v-subheader>Tags</v-subheader>
         <v-item
           v-for="n in 8"
