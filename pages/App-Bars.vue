@@ -12,13 +12,13 @@
                 <p class="text-h5">
                   Simple bar
                 </p>
-                <SimpleBar id="collapsibleBar"/>
+                <SimpleBar id="simpleBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
                   Outlined bar
                 </p>
-                <OutlinedBar id="collapsibleBar"/>
+                <OutlinedBar id="outlineBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1">
@@ -26,13 +26,13 @@
                 <p class="text-h5">
                   Flat bar
                 </p>
-                <FlatBar id="collapsibleBar"/>
+                <FlatBar id="flatBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
                   Rounded bar
                 </p>
-                <RoundedBar id="collapsibleBar"/>
+                <RoundedBar id="roundedBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1">
@@ -40,13 +40,13 @@
                 <p class="text-h5">
                   Shaped bar
                 </p>
-                <ShapedBar id="collapsibleBar"/>
+                <ShapedBar id="shapedBar"/>
             </v-col>
             <v-col>
                 <p class="text-h5">
                   Short bar
                 </p>
-                <ShortBar id="collapsibleBar"/>
+                <ShortBar id="shortBar"/>
             </v-col>
         </v-row>
         <v-row class="mx-1">
