@@ -11,6 +11,12 @@
 
         <v-col>
             <p class="text-h5">
+              Single Banner
+            </p>
+            <SingleBanner id="SingleBanner" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
               Simple Banner
             </p>
             <SimpleBanner id="SimpleBanner" />
