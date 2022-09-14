@@ -31,7 +31,7 @@
 
         <v-col>
             <p class="text-h5">
-                Multiple slide group
+                Multiple slide group (max 3 selections)
             </p>
             <MultipleSlideGroup id="MultipleSlideGroup" />
         </v-col>
