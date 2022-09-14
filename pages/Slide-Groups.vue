@@ -38,6 +38,13 @@
 
         <v-col>
             <p class="text-h5">
+                Multiple slide group with max elements restriction
+            </p>
+            <MultipleSlideGroupWithMax id="MultipleSlideGroupWIthMax" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Pseudo Carousel slide group
             </p>
             <PseudoCarouselSlideGroup id="PseudoCarouselSlideGroup" />
@@ -51,6 +58,7 @@ import ActiveClassSlideGroup from '@/components/groups/slide_groups/ActiveClassS
 import CenterActiveSlideGroup from '@/components/groups/slide_groups/CenterActiveSlideGroup.vue';
 import CustomIconsSlideGroup from '@/components/groups/slide_groups/CustomIconsSlideGroup.vue';
 import MultipleSlideGroup from '@/components/groups/slide_groups/MultipleSlideGroup.vue';
+import MultipleSlideGroupWithMax from '@/components/groups/slide_groups/MultipleSlideGroupWithMax.vue';
 import PseudoCarouselSlideGroup from '@/components/groups/slide_groups/PseudoCarouselSlideGroup.vue';
 
 export default {
@@ -60,6 +68,7 @@ export default {
     CenterActiveSlideGroup,
     CustomIconsSlideGroup,
     MultipleSlideGroup,
+    MultipleSlideGroupWithMax,
     PseudoCarouselSlideGroup,
   },
 };
