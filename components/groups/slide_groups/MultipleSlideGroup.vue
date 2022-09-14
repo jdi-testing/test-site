@@ -9,6 +9,7 @@
       class="pa-4"
       multiple
       show-arrows
+      max=3
     >
       <v-slide-item
         v-for="n in 15"
