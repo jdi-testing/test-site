@@ -13,7 +13,7 @@
         shaped
         top
       >
-        Lorem ipsum dolor sit amet consectetur.
+        snackbar with <strong>Shaped, Left, Top</strong> properties.
       </v-snackbar>
 
       <v-snackbar
@@ -25,7 +25,7 @@
         rounded="pill"
         top
       >
-        Lorem ipsum dolor sit amet consectetur.
+        snackbar with <strong>Rounded, Right, Top</strong> properties.
       </v-snackbar>
 
       <v-snackbar
@@ -33,10 +33,23 @@
         :value="true"
         absolute
         centered
+        left
         color="deep-purple accent-4"
         elevation="24"
       >
-        Lorem ipsum dolor sit amet consectetur.
+        snackbar with <strong>Centered, Left, Elevation</strong> properties.
+      </v-snackbar>
+
+      <v-snackbar
+        :timeout="-1"
+        :value="true"
+        absolute
+        centered
+        right
+        tile
+        color="red accent-2"
+      >
+        snackbar with <strong>Centered, Right, Tile</strong> properties.
       </v-snackbar>
 
       <v-snackbar
@@ -48,7 +61,7 @@
         left
         text
       >
-        Lorem ipsum dolor sit amet consectetur.
+        snackbar with <strong>Bottom, Left, Text</strong> properties.
       </v-snackbar>
 
       <v-snackbar
@@ -60,7 +73,7 @@
         outlined
         right
       >
-        Lorem ipsum dolor sit amet consectetur.
+        snackbar with <strong>Bottom, Outlined, Right</strong> properties.
       </v-snackbar>
     </v-card>
   </v-container>
