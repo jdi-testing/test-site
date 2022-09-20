@@ -6,7 +6,6 @@
             overlay-color="purple"
             overlay-opacity="0.1"
             width = 500
-            no-click-animation
             >
             <template v-slot:activator="{ on, attrs }">
                 <v-btn color="green" dark v-bind="attrs" v-on="on">
