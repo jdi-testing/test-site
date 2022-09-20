@@ -1,8 +1,8 @@
 <template>
     <div class="text-center">
         <v-btn color="blue" dark @click="sheet = !sheet"> Open v-model </v-btn>
-        <v-bottom-sheet v-model="sheet">
-            <v-sheet class="text-center" height="200px">
+        <v-bottom-sheet v-model="sheet" fullscreen>
+            <v-sheet class="text-center" height="100%">
                 <v-btn class="mt-6" text color="red" @click="sheet = !sheet">
                     close
                 </v-btn>

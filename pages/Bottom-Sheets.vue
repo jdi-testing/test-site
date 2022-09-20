@@ -33,6 +33,11 @@
             <p class="text-h5">Open In List bottom sheet</p>
             <OpenInListBottomSheet id="open-in-list-bottom-sheet" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">Scrollable bottom sheet</p>
+            <ScrollableBottomSheet id="scrollable-bottom-sheet" />
+        </v-col>
     </v-container>
 </template>
 <script>
@@ -41,6 +46,7 @@ import MusicPlayerBottomSheet from '@/components/bottom_sheets/MusicPlayerBottom
 import OpenInListBottomSheet from '@/components/bottom_sheets/OpenInListBottomSheet.vue';
 import PersistentBottomSheet from '@/components/bottom_sheets/PersistentBottomSheet.vue';
 import InsetBottomSheet from '@/components/bottom_sheets/InsetBottomSheet.vue';
+import ScrollableBottomSheet from '@/components/bottom_sheets/ScrollableBottomSheet.vue';
 
 export default {
   name: 'BottomSheets',
@@ -50,6 +56,7 @@ export default {
     OpenInListBottomSheet,
     PersistentBottomSheet,
     InsetBottomSheet,
+    ScrollableBottomSheet,
   },
 };
 </script>

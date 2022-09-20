@@ -1,6 +1,12 @@
 <template>
     <div class="text-center">
-        <v-bottom-sheet v-model="sheet" persistent>
+        <v-bottom-sheet
+            v-model="sheet"
+            persistent
+            overlay-color="purple"
+            overlay-opacity="0.1"
+            width = 500
+            >
             <template v-slot:activator="{ on, attrs }">
                 <v-btn color="green" dark v-bind="attrs" v-on="on">
                     Open Persistent
