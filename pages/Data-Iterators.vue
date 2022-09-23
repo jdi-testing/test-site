@@ -25,20 +25,43 @@
             </p>
             <FilterTable id="FilterTable" />
         </v-col>
-
+        <v-col>
+            <p class="text-h5">
+                Filter with multiple sort
+            </p>
+            <MultiSortTable id="MultiSortTable" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Filter with no text data
+            </p>
+            <NoTextDataTable id="NoTextDataTable" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Filter with loading text
+            </p>
+            <LoadingTextTable id="LoadingTextTable" />
+        </v-col>
     </v-container>
 </template>
 <script>
 import DefaultTable from '@/components/tables/data_iterators/DefaultTable.vue';
 import HeaderFooterTable from '@/components/tables/data_iterators/HeaderFooterTable.vue';
 import FilterTable from '@/components/tables/data_iterators/FilterTable.vue';
+import LoadingTextTable from '@/components/tables/data_iterators/LoadingTextTable.vue';
+import MultiSortTable from '@/components/tables/data_iterators/MultiSortTable.vue';
+import NoTextDataTable from '@/components/tables/data_iterators/NoTextDataTable.vue';
 
 export default {
   name: 'DataIterators',
   components: {
     DefaultTable,
     HeaderFooterTable,
-    FilterTable
+    FilterTable,
+    LoadingTextTable,
+    MultiSortTable,
+    NoTextDataTable,
   },
 };
 </script>

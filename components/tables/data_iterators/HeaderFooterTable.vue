@@ -4,6 +4,7 @@
       :items="items"
       :items-per-page.sync="itemsPerPage"
       hide-default-footer
+      group-by="fat"
     >
       <template v-slot:header>
         <v-toolbar
