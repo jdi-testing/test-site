@@ -91,6 +91,13 @@
             <VerticalErrorsStepper id="VerticalErrorsStepper" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Various attribute stepper
+            </p>
+            <VariousAttributeStepper id="VariousAttributeStepper" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -107,6 +114,7 @@ import LinearSteppersStepper from '@/components/steppers/LinearSteppersStepper.v
 import NonEditableStepsStepper from '@/components/steppers/NonEditableStepsStepper.vue';
 import OptionalStepsStepper from '@/components/steppers/OptionalStepsStepper.vue';
 import VerticalErrorsStepper from '@/components/steppers/VerticalErrorsStepper.vue';
+import VariousAttributeStepper from '@/components/steppers/VariousAttributeStepper.vue';
 
 export default {
   name: 'Steppers',
@@ -123,6 +131,7 @@ export default {
     NonEditableStepsStepper,
     OptionalStepsStepper,
     VerticalErrorsStepper,
+    VariousAttributeStepper,
   },
 };
 </script>
