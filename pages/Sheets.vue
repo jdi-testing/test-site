@@ -29,6 +29,28 @@
             <ColorSheet id="ColorSheet" />
         </v-col>
 
+        <v-row justify="space-around">
+            <v-col cols="3" md="4">
+                <p class="text-h5">
+                    Outlined sheet
+                </p>
+                <OutlinedSheet id="OutlinedSheet" />
+            </v-col>
+
+            <v-col>
+                <p class="text-h5">
+                    Shaped sheet
+                </p>
+                <ShapedSheet id="ShapedSheet" />
+            </v-col>
+
+            <v-col>
+                <p class="text-h5">
+                    Tile sheet
+                </p>
+                <TileSheet id="TileSheet" />
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 
@@ -36,6 +58,9 @@
 import ElevationSheet from '@/components/sheets/ElevationSheet.vue';
 import RoundedSheet from '@/components/sheets/RoundedSheet.vue';
 import ColorSheet from '@/components/sheets/ColorSheet.vue';
+import OutlinedSheet from '@/components/sheets/OutlinedSheet.vue';
+import ShapedSheet from '@/components/sheets/ShapedSheet.vue';
+import TileSheet from '@/components/sheets/TileSheet.vue';
 
 export default {
   name: 'Sheets',
@@ -43,6 +68,9 @@ export default {
     ElevationSheet,
     RoundedSheet,
     ColorSheet,
+    OutlinedSheet,
+    ShapedSheet,
+    TileSheet,
   },
 };
 </script>
