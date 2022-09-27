@@ -16,16 +16,22 @@
             <BoilerplateComponentSkeletonLoader id="BoilerplateComponentSkeletonLoader" />
         </v-col>
 
+        <v-col>
+            <DarkAnimationSkeletonLoader id="DarkAnimationSkeletonLoader" />
+        </v-col>
+
     </v-container>
 </template>
 
 <script>
 import BoilerplateComponentSkeletonLoader from '@/components/skeleton_loaders/BoilerplateComponentSkeletonLoader.vue';
+import DarkAnimationSkeletonLoader from '@/components/skeleton_loaders/DarkAnimationSkeletonLoader.vue';
 
 export default {
   name: 'SkeletonLoaders',
   components: {
     BoilerplateComponentSkeletonLoader,
+    DarkAnimationSkeletonLoader,
   },
 };
 </script>

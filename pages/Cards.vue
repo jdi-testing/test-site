@@ -13,6 +13,7 @@
     <LoadingCard />
     <CardReveal />
     <CustomActionsCard />
+    <VariousAttributesCard />
   </v-container>
 </template>
 
@@ -24,6 +25,7 @@ import LoadingCard from '@/components/cards/LoadingCard.vue';
 import CardReveal from '@/components/cards/CardReveal.vue';
 import CustomActionsCard from '@/components/cards/CustomActionsCard.vue';
 import OutlinedCard from '@/components/cards/OutlinedCard.vue';
+import VariousAttributesCard from '@/components/cards/VariousAttributesCard.vue';
 
 export default {
   name: 'Cards',
@@ -34,6 +36,7 @@ export default {
     LoadingCard,
     CardReveal,
     CustomActionsCard,
+    VariousAttributesCard,
   },
 };
 </script>

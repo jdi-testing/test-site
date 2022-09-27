@@ -2,6 +2,7 @@
   <v-stepper
     v-model="e13"
     vertical
+    shaped
   >
     <v-stepper-step
       step="1"
