@@ -77,6 +77,13 @@
             <SelectionSelect id="SelectionSelect" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Various attributes select
+            </p>
+            <VariousAttributesSelect id="VariousAttributesSelect" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -91,6 +98,7 @@ import MultipleSelect from '@/components/form_inputs/selects/MultipleSelect.vue'
 import ReadonlySelect from '@/components/form_inputs/selects/ReadonlySelect.vue';
 import AppendAndPrependItemSelect from '@/components/form_inputs/selects/AppendAndPrependItemSelect.vue';
 import SelectionSelect from '@/components/form_inputs/selects/SelectionSelect.vue';
+import VariousAttributesSelect from '@/components/form_inputs/selects/VariousAttributesSelect.vue';
 
 export default {
   name: 'Selects',
@@ -105,6 +113,7 @@ export default {
     ReadonlySelect,
     AppendAndPrependItemSelect,
     SelectionSelect,
+    VariousAttributesSelect,
   },
 };
 </script>

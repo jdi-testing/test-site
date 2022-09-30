@@ -57,6 +57,13 @@
             <LabelSwitch id="LabelSwitch"  />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Various attributes switch
+            </p>
+            <VariousAttributesSwitch id="VariousAttributesSwitch"  />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -68,6 +75,7 @@ import ModelAsArraySwitch from '@/components/form_inputs/switches/ModelAsArraySw
 import ModelAsBooleanSwitch from '@/components/form_inputs/switches/ModelAsBooleanSwitch.vue';
 import StatesSwitch from '@/components/form_inputs/switches/StatesSwitch.vue';
 import LabelSwitch from '@/components/form_inputs/switches/LabelSwitch.vue';
+import VariousAttributesSwitch from '@/components/form_inputs/switches/VariousAttributesSwitch.vue'
 
 export default {
   name: 'Switches',
@@ -79,6 +87,7 @@ export default {
     ModelAsBooleanSwitch,
     StatesSwitch,
     LabelSwitch,
+    VariousAttributesSwitch,
   },
 };
 </script>

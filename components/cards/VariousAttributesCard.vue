@@ -29,15 +29,15 @@
             </v-card-actions>
         </v-card>
         <v-card
-        class="mx-auto mt-2"
-        max-width="344"
-        elevation="5"
-        shaped
+            class="mx-auto mt-2"
+            max-width="344"
+            shaped
+            hover
         >
         <v-card-text>
             <div>Word of the Day</div>
             <p class="text-h4 text--primary">
-            Shaped
+            Shaped & hover
             </p>
             <p>adjective</p>
             <div class="text--primary">
@@ -58,7 +58,7 @@
             class="mx-auto mt-2"
             max-width="344"
             elevation="5"
-            rounded
+            rounded="3"
             ripple
         >
             <v-card-text>
@@ -107,17 +107,16 @@
                 </v-btn>
             </v-card-actions>
         </v-card>
-         <v-card
+        <v-card
             class="mx-auto mt-2"
             max-width="344"
             flat
-            hover
             link
         >
             <v-card-text>
                 <div>Word of the Day</div>
                 <p class="text-h4 text--primary">
-                    Flat & Hover & Link
+                    Flat & Link
                 </p>
                 <p>adjective</p>
                 <div class="text--primary">
