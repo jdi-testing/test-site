@@ -3,9 +3,7 @@
     <v-stepper 
       non-linear
       elevation="4"
-      rounded
       outlined
-      shaped
       tile
     >
       <v-stepper-header>
