@@ -61,16 +61,23 @@
 
         <v-col>
             <p class="text-h5">
-                Colored drawer navigation drawer
+                Colored navigation drawer
             </p>
             <ColoredDrawerNavigationDrawer id="ColoredDrawerNavigationDrawer" />
         </v-col>
 
         <v-col>
             <p class="text-h5">
-                Combined drawer navigation drawer
+                Combined navigation drawer
             </p>
             <CombinedDrawerNavigationDrawer id="CombinedDrawerNavigationDrawer" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Clipped navigation drawer
+            </p>
+            <ClippedNavigationDrawer id="ClippedNavigationDrawer" />
         </v-col>
 
     </v-container>
@@ -86,6 +93,7 @@ import RightNavigationDrawer from '@/components/navigation_drawers/RightNavigati
 import TemporaryNavigationDrawer from '@/components/navigation_drawers/TemporaryNavigationDrawer.vue';
 import ColoredDrawerNavigationDrawer from '@/components/navigation_drawers/ColoredDrawerNavigationDrawer.vue';
 import CombinedDrawerNavigationDrawer from '@/components/navigation_drawers/CombinedDrawerNavigationDrawer.vue';
+import ClippedNavigationDrawer from '@/components/navigation_drawers/ClippedNavigationDrawer';
 
 export default {
   name: 'NavigationDrawers',
@@ -99,6 +107,7 @@ export default {
     TemporaryNavigationDrawer,
     ColoredDrawerNavigationDrawer,
     CombinedDrawerNavigationDrawer,
+    ClippedNavigationDrawer,
   },
 };
 </script>
