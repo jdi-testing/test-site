@@ -3,7 +3,6 @@
     <v-app>
       <v-main class="pl-0">
         <v-app-bar absolute clipped-right dense flat>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
         </v-app-bar>
         <v-navigation-drawer clipped permanent>
           <v-list-item>
