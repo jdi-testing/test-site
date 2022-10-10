@@ -101,6 +101,7 @@ export default {
             { title: 'File inputs', link: '/file-inputs' },
             { title: 'Forms', link: '/forms' },
             { title: 'Inputs', link: '/inputs' },
+            { title: 'OTP Input', link: '/otp-input' },
             { title: 'Overflow buttons', link: '/overflow-buttons' },
             { title: 'Radio buttons', link: '/radio-buttons' },
             { title: 'Range Sliders', link: '/range-sliders' },
