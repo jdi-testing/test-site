@@ -34,6 +34,10 @@
         Item slot breadcrumbs
       </p>
       <ItemSlotBreadcrumbs id="itemSlotBreadcrumbs"/>
+      <p class="text-h5">
+        Dark theme ripple breadcrumbs
+      </p>
+      <DarkThemeRippleBreadcrumbs id="darkThemeRippleBreadcrumbs"/>
     
   </v-container>
   
@@ -45,6 +49,7 @@ import DifferentDividersBreadcrumbs from '@/components/breadcrumbs/DifferentDivi
 import LargeBreadcrumbs from '@/components/breadcrumbs/LargeBreadcrumbs.vue';
 import CustomDividersBreadcrumbs from '@/components/breadcrumbs/CustomDividersBreadcrumbs.vue';
 import ItemSlotBreadcrumbs from '@/components/breadcrumbs/ItemSlotBreadcrumbs.vue';
+import DarkThemeRippleBreadcrumbs from '@/components/breadcrumbs/DarkThemeRippleBreadcrumbs.vue';
 
 export default {
   name: 'Breadcrumbs',
@@ -53,6 +58,7 @@ export default {
     LargeBreadcrumbs,
     CustomDividersBreadcrumbs,
     ItemSlotBreadcrumbs,
+    DarkThemeRippleBreadcrumbs
   },
 };
 </script>
