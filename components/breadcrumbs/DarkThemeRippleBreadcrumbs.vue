@@ -10,6 +10,12 @@
     </div>
 </template>
 
+<style lang="scss">
+  #darkThemeRippleBreadcrumbs {
+    background-color: black;
+  }
+</style>
+
 <script>
 export default {
   data: () => ({
