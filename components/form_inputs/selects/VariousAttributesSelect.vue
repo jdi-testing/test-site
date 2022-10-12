@@ -13,7 +13,7 @@
         sm="6"
       >
         <v-select
-          v-model="e7"
+          v-model="e6"
           :items="states"
           label="Select"
           dark
@@ -63,7 +63,7 @@
       >
         Rounded, solo-invertedm no-data-text, flat
         <v-select
-          v-model="e7"
+          v-model="e8"
           label="Select"
           messages="some message"
           rounded
@@ -83,7 +83,7 @@
           sm="6"
         >
           <v-select
-            v-model="e7"
+            v-model="e9"
             :rules="[(value) => value.length < 8 || 'some error']"
             validate-on-blur
             append-icon="mdi-message-text"
@@ -113,6 +113,8 @@ export default {
     return {
       e6: [],
       e7: [],
+      e8: [],
+      e9: [],
       states: [
         'Alabama', 'Alaska', 'American Samoa', 'Arizona',
         'Arkansas', 'California', 'Colorado', 'Connecticut',
