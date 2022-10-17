@@ -28,7 +28,7 @@
           loading
           loader-height="10"
           error-count="2"
-          error-messages="'some error'"
+          :error-messages="['First', 'Second']"
           deletable-chips
           hint="What are the target regions"
           persistent-hint
@@ -45,7 +45,6 @@
           v-model="e7"
           :items="states"
           label="Select"
-          messages="some message"
           open-on-clear
           shaped
           disable-lookup
@@ -71,8 +70,6 @@
           solo-inverted
           no-data-text="No data is present"
           background-color="blue"
-          hint="What are the target regions"
-          persistent-hint
         ></v-select>
       </v-col>
 
