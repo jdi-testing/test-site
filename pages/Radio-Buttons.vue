@@ -37,6 +37,13 @@
             <LabelRadioButton id="LabelRadioButton" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Various attributes radio button
+            </p>
+            <VariousAttributesRadioButtons id="VariousAttributesRadioButtons" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -45,6 +52,7 @@ import ColorsRadioButton from '@/components/form_inputs/radio_buttons/ColorsRadi
 import DirectionRadioButton from '@/components/form_inputs/radio_buttons/DirectionRadioButton.vue';
 import MandatoryRadioButton from '@/components/form_inputs/radio_buttons/MandatoryRadioButton.vue';
 import LabelRadioButton from '@/components/form_inputs/radio_buttons/LabelRadioButton.vue';
+import VariousAttributesRadioButtons from '@/components/form_inputs/radio_buttons/VariousAttributesRadioButtons.vue';
 
 export default {
   name: 'RadioButtons',
@@ -53,6 +61,7 @@ export default {
     DirectionRadioButton,
     MandatoryRadioButton,
     LabelRadioButton,
+    VariousAttributesRadioButtons,
   },
 };
 </script>
