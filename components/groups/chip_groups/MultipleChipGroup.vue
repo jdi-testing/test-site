@@ -8,6 +8,7 @@
       <v-sheet
         elevation="10"
         class="py-4 px-1"
+        width="750"
       >
         <v-chip-group
           multiple
