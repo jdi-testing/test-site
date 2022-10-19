@@ -3,6 +3,7 @@
    <v-row align="center">
      <span class="mr-3">Success, Hint, Background-color, Readonly</span>
           <v-radio-group v-model="radioGroup"
+             id="SuccessReadOnlyRadioButtonWithHint"
              success
              hint="some hint"
              persistent-hint
@@ -13,13 +14,13 @@
               :key="n"
               :label="`Radio ${n}`"
               :value="n"
-
             ></v-radio>
           </v-radio-group>
    </v-row>
    <v-row align="center">
-        <span class="mr-3">Error, Dense, </span>
+        <span class="mr-3">Error, Dense</span>
              <v-radio-group v-model="radioGroup"
+                id="ErrorDenseRadioButton"
                 error
                 dense
                 background-color="blue"
@@ -29,13 +30,13 @@
                  :key="n"
                  :label="`Radio ${n}`"
                  :value="n"
-
                ></v-radio>
              </v-radio-group>
       </v-row>
       <v-row align="center">
-        <span class="mr-3">Disabled </span>
+        <span class="mr-3">Disabled</span>
              <v-radio-group v-model="radioGroup"
+                id="DisabledRadioButton"
                 disabled
                 >
                <v-radio
@@ -43,11 +44,9 @@
                  :key="n"
                  :label="`Radio ${n}`"
                  :value="n"
-
                ></v-radio>
              </v-radio-group>
       </v-row>
-
   </v-container>
 </template>
 <script>
