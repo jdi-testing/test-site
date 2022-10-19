@@ -45,6 +45,12 @@
             </p>
             <InlineTextFieldCheckboxes id="InlineTextFieldCheckboxes" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Various Attributes Checkbox
+            </p>
+            <VariousAttributesCheckbox id="VariousAttributesCheckbox" />
+        </v-col>
 
     </v-container>
 </template>
@@ -55,6 +61,7 @@ import ModelBooleanCheckboxes from '@/components/form_inputs/checkboxes/ModelBoo
 import StatesCheckboxes from '@/components/form_inputs/checkboxes/StatesCheckboxes.vue';
 import LabelSlotCheckboxes from '@/components/form_inputs/checkboxes/LabelSlotCheckboxes.vue';
 import InlineTextFieldCheckboxes from '@/components/form_inputs/checkboxes/InlineTextFieldCheckboxes.vue';
+import VariousAttributesCheckbox from '@/components/form_inputs/checkboxes/VariousAttributesCheckbox.vue';
 
 export default {
   name: 'Checkboxes',
@@ -64,7 +71,8 @@ export default {
     ModelBooleanCheckboxes,
     StatesCheckboxes,
     LabelSlotCheckboxes,
-    InlineTextFieldCheckboxes
+    InlineTextFieldCheckboxes,
+    VariousAttributesCheckbox,
   },
 };
 </script>
