@@ -3,7 +3,7 @@
         <v-col>
             <h1>Dialogs</h1>
             <p class="body-1 mt-2">
-                The <code>v-dialog</code> component inform users about a specific task and may contain critical information, 
+                The <code>v-dialog</code> component inform users about a specific task and may contain critical information,
                 require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive.
             </p>
         </v-col>
@@ -52,6 +52,11 @@
             <p class="text-h5">Without activator</p>
             <WithoutActivatorDialog id="withoutActivatorDialog" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">Disabled dialog</p>
+            <DisabledDialog id="disabledDialog" />
+        </v-col>
     </v-container>
 </template>
 
@@ -65,6 +70,7 @@ import PersistentDialog from '@/components/dialogs/PersistentDialog.vue';
 import ScrollableDialog from '@/components/dialogs/ScrollableDialog.vue';
 import TransitionsDialog from '@/components/dialogs/TransitionsDialog.vue';
 import WithoutActivatorDialog from '@/components/dialogs/WithoutActivatorDialog.vue';
+import DisabledDialog from '@/components/dialogs/DisabledDialog.vue';
 
 export default {
   name: 'Dialogs',
@@ -78,6 +84,7 @@ export default {
     ScrollableDialog,
     TransitionsDialog,
     WithoutActivatorDialog,
+    DisabledDialog
   },
 };
 </script>
