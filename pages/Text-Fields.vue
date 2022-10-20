@@ -161,6 +161,75 @@
             <PasswordInputTextField id="PasswordInputTextField" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Placeholder text field
+            </p>
+            <PlaceholderTextField id="PlaceholderTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Reverse text field
+            </p>
+            <ReverseTextField id="ReverseTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Loading text field
+            </p>
+            <LoadingTextField id="LoadingTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Loading custom height text field
+            </p>
+            <LoadingHeightTextField id="LoadingHeightTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Dark text field
+            </p>
+            <DarkTextField id="DarkTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Flat text field
+            </p>
+            <FlatTextField id="FlatTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Background colored text field
+            </p>
+            <BackgroundColoredTextField id="BackgroundColoredTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Custom height text field
+            </p>
+            <CustomHeightTextField id="CustomHeightTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Error/Success text field
+            </p>
+            <ErrorSuccessTextField id="ErrorSuccessTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Autofocused text field
+            </p>
+            <AutofocusedTextField id="AutofocusedTextField" />
+        </v-col>
     </v-container>
 </template>
 
@@ -187,32 +256,52 @@ import ProgressTextField from '@/components/form_inputs/text_fields/ProgressText
 import CustomValidationTextField from '@/components/form_inputs/text_fields/CustomValidationTextField.vue';
 import FullWidthWithCounterTextField from '@/components/form_inputs/text_fields/FullWidthWithCounterTextField.vue';
 import PasswordInputTextField from '@/components/form_inputs/text_fields/PasswordInputTextField.vue';
+import PlaceholderTextField from '@/components/form_inputs/text_fields/PlaceholderTextField.vue';
+import ReverseTextField from '@/components/form_inputs/text_fields/ReverseTextField.vue';
+import LoadingTextField from '@/components/form_inputs/text_fields/LoadingTextField.vue';
+import LoadingHeightTextField from '@/components/form_inputs/text_fields/LoadingHeightTextField.vue';
+import DarkTextField from '@/components/form_inputs/text_fields/DarkTextField.vue';
+import FlatTextField from '@/components/form_inputs/text_fields/FlatTextField.vue';
+import BackgroundColoredTextField from '@/components/form_inputs/text_fields/BackgroundColoredTextField.vue';
+import CustomHeightTextField from '@/components/form_inputs/text_fields/CustomHeightTextField.vue';
+import ErrorSuccessTextField from '@/components/form_inputs/text_fields/ErrorSuccessTextField.vue';
+import AutofocusedTextField from '@/components/form_inputs/text_fields/AutofocusedTextField.vue';
 
 export default {
-  name: 'TextFields',
-  components: {
-    CounterTextField,
-    ClearableTextField,
-    CustomColorsTextField,
-    DenseTextField,
-    DisabledAndReadonlyTextField,
-    FilledTextField,
-    HideDetailsTextField,
-    HintTextField,
-    IconsTextField,
-    OutlinedTextField,
-    PrefixesAndSuffixesTextField,
-    ShapedTextField,
-    SingleLineTextField,
-    SoloTextField,
-    ValidationTextField,
-    IconEventsTextField,
-    IconSlotsTextField,
-    LabelTextField,
-    ProgressTextField,
-    CustomValidationTextField,
-    FullWidthWithCounterTextField,
-    PasswordInputTextField,
-  },
+    name: 'TextFields',
+    components: {
+        CounterTextField,
+        ClearableTextField,
+        CustomColorsTextField,
+        DenseTextField,
+        DisabledAndReadonlyTextField,
+        FilledTextField,
+        HideDetailsTextField,
+        HintTextField,
+        IconsTextField,
+        OutlinedTextField,
+        PrefixesAndSuffixesTextField,
+        ShapedTextField,
+        SingleLineTextField,
+        SoloTextField,
+        ValidationTextField,
+        IconEventsTextField,
+        IconSlotsTextField,
+        LabelTextField,
+        ProgressTextField,
+        CustomValidationTextField,
+        FullWidthWithCounterTextField,
+        PasswordInputTextField,
+        PlaceholderTextField,
+        ReverseTextField,
+        LoadingTextField,
+        LoadingHeightTextField,
+        DarkTextField,
+        FlatTextField,
+        BackgroundColoredTextField,
+        CustomHeightTextField,
+        ErrorSuccessTextField,
+        AutofocusedTextField,
+    },
 };
 </script>
