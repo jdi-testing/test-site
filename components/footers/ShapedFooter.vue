@@ -2,8 +2,8 @@
   <v-footer
     id="ShapedFooter"
     color="primary lighten-1"
-    shaped=true
-    outlined=true
+    shaped
+    outlined
   >
     <v-row
       justify="center"
