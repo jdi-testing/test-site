@@ -51,6 +51,13 @@
             </p>
             <ShapedFooter id="ShapedFooter" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Fixed footer
+            </p>
+            <FixedFooter id="FixedFooter" />
+        </v-col>
     </v-container>
 </template>
 
@@ -61,6 +68,7 @@ import IndigoFooter from '@/components/footers/IndigoFooter.vue';
 import TealFooter from '@/components/footers/TealFooter.vue';
 import AbsoluteFooter from '@/components/footers/AbsoluteFooter.vue';
 import ShapedFooter from '@/components/footers/ShapedFooter.vue';
+import FixedFooter from '@/components/footers/FixedFooter.vue';
 
 export default {
   name: 'Footers',
@@ -71,6 +79,7 @@ export default {
     TealFooter,
     AbsoluteFooter,
     ShapedFooter,
+    FixedFooter
   },
 };
 </script>
