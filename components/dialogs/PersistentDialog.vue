@@ -27,7 +27,7 @@
             </v-card>
         </v-dialog>
 
-        <v-dialog v-model="dialog" persistent no-click-animation=true max-width="290">
+        <v-dialog v-model="dialog" persistent no-click-animation max-width="290">
             <template v-slot:activator="{ on, attrs }">
                 <v-btn color="primary" dark v-bind="attrs" v-on="on">
                     Open Dialog no click animation
