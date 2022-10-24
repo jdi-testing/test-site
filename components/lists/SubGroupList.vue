@@ -4,7 +4,7 @@
       <v-col>
         <v-card
           class="mx-auto"
-          width="300"
+          width="250"
         >
           <v-list>
             <v-list-item>
@@ -77,7 +77,7 @@
       <v-col>
         <v-card
           class="mx-auto"
-          width="300"
+          width="250"
         >
           <v-list>
             <v-list-group>
@@ -101,7 +101,7 @@
       <v-col>
         <v-card
           class="mx-auto"
-          width="300"
+          width="250"
         >
           <v-list>
             <v-list-group>
@@ -124,6 +124,46 @@
                 <v-list-item>
                   <v-list-item-title>Item 3</v-list-item-title>
                 </v-list-item>
+              </v-list-group>
+            </v-list-group>
+          </v-list>
+        </v-card>
+      </v-col>
+
+      <v-col>
+        <v-card
+          class="mx-auto"
+          width="250"
+        >
+          <v-list>
+            <v-list-group>
+              <template v-slot:activator>
+                <v-list-item-title>Subgroup depth 3</v-list-item-title>
+              </template>
+              <v-list-group
+                sub-group
+                no-action
+              >
+                <template v-slot:activator>
+                  <v-list-item-title>Subgroup depth 2</v-list-item-title>
+                </template>
+                <v-list-group
+                  sub-group
+                  no-action
+                >
+                  <template v-slot:activator>
+                    <v-list-item-title>Subgroup depth 1</v-list-item-title>
+                  </template>
+                  <v-list-item>
+                    <v-list-item-title>Item 1</v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>Item 2</v-list-item-title>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-title>Item 3</v-list-item-title>
+                  </v-list-item>
+                </v-list-group>
               </v-list-group>
             </v-list-group>
           </v-list>
