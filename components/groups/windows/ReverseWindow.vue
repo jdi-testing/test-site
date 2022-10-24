@@ -6,8 +6,10 @@
     <v-window
       v-model="onboarding"
       reverse
+      show-arrows
     >
       <v-window-item
+        eager
         v-for="n in length"
         :key="`card-${n}`"
       >
