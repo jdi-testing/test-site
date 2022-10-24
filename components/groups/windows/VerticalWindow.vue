@@ -6,6 +6,8 @@
     <v-window
       v-model="onboarding"
       vertical
+      show-arrows
+      show-arrows-on-hover
     >
       <v-window-item
         v-for="n in length"
