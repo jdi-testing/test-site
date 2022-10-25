@@ -13,7 +13,6 @@
    <v-row align="center">
      <span id="OpenCloseDelayRating" class="mr-3">Open-delay, close-delay</span>
           <v-rating
-                v-model="rating1"
                 color="orange"
                 background-color="blue lighten-3"
                 large
@@ -25,7 +24,6 @@
    <v-row align="center">
         <span id="RatingWithValue" class="mr-3">Value</span>
              <v-rating
-                   v-model="rating2"
                    length="7"
                    size="64"
                    value="5"
