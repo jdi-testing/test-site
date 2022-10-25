@@ -226,6 +226,13 @@
 
         <v-col>
             <p class="text-h5">
+                Error/Success count text field
+            </p>
+            <ErrorSuccessCountTextField id="ErrorSuccessCountTextField" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Autofocused text field
             </p>
             <AutofocusedTextField id="AutofocusedTextField" />
@@ -265,6 +272,7 @@ import FlatTextField from '@/components/form_inputs/text_fields/FlatTextField.vu
 import BackgroundColoredTextField from '@/components/form_inputs/text_fields/BackgroundColoredTextField.vue';
 import CustomHeightTextField from '@/components/form_inputs/text_fields/CustomHeightTextField.vue';
 import ErrorSuccessTextField from '@/components/form_inputs/text_fields/ErrorSuccessTextField.vue';
+import ErrorSuccessCountTextField from '@/components/form_inputs/text_fields/ErrorSuccessCountTextField.vue';
 import AutofocusedTextField from '@/components/form_inputs/text_fields/AutofocusedTextField.vue';
 
 export default {
@@ -301,6 +309,7 @@ export default {
         BackgroundColoredTextField,
         CustomHeightTextField,
         ErrorSuccessTextField,
+        ErrorSuccessCountTextField,
         AutofocusedTextField,
     },
 };
