@@ -33,6 +33,20 @@
 
         <v-col>
             <p class="text-h5">
+                Dark list
+            </p>
+            <DarkList id="DarkList" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Elevated list
+            </p>
+            <ElevatedList id="ElevatedList" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Nav list
             </p>
             <NavList id="NavList" />
@@ -129,6 +143,8 @@
 import DenseList from '@/components/lists/DenseList.vue';
 import DisabledList from '@/components/lists/DisabledList.vue';
 import FlatList from '@/components/lists/FlatList.vue';
+import DarkList from '@/components/lists/DarkList.vue';
+import ElevatedList from '@/components/lists/ElevatedList.vue';
 import NavList from '@/components/lists/NavList.vue';
 import RoundedList from '@/components/lists/RoundedList.vue';
 import ShapedList from '@/components/lists/ShapedList.vue';
@@ -149,6 +165,8 @@ export default {
     DenseList,
     DisabledList,
     FlatList,
+    DarkList,
+    ElevatedList,
     NavList,
     RoundedList,
     ShapedList,
