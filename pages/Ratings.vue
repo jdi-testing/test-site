@@ -65,6 +65,13 @@
             <CardRatingsRating id="CardRatingsRating" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Various attributes rating
+            </p>
+            <VariousAttributesRating id="VariousAttributesRating" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -77,6 +84,7 @@ import IconLabelRating from '@/components/ratings/IconLabelRating.vue';
 import ItemSlotRating from '@/components/ratings/ItemSlotRating.vue';
 import AdvancedUsageRating from '@/components/ratings/AdvancedUsageRating.vue';
 import CardRatingsRating from '@/components/ratings/CardRatingsRating.vue';
+import VariousAttributesRating from '@/components/ratings/VariousAttributesRating.vue';
 
 export default {
   name: 'Ratings',
@@ -89,6 +97,7 @@ export default {
     ItemSlotRating,
     AdvancedUsageRating,
     CardRatingsRating,
+    VariousAttributesRating
   },
 };
 </script>
