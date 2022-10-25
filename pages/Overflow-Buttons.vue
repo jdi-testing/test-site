@@ -78,6 +78,20 @@
             <SegmentedOverflowButton id="SegmentedOverflowButton" />
         </v-col>
 
+
+        <v-col>
+            <p class="text-h5">
+                Flat overflow button with small deletable chips
+            </p>
+            <WithChipsOverflowButton id="WithChipsOverflowButton" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Outlined full-width overflow button with success messages
+            </p>
+            <OutlinedOverflowButton id="OutlinedOverflowButton" />
+        </v-col>
     </v-container>
 </template>
 
@@ -92,6 +106,9 @@ import LoadingOverflowButton from '@/components/form_inputs/overflow_buttons/Loa
 import MenuPropsOverflowButton from '@/components/form_inputs/overflow_buttons/MenuPropsOverflowButton.vue';
 import ReadonlyOverflowButton from '@/components/form_inputs/overflow_buttons/ReadonlyOverflowButton.vue';
 import SegmentedOverflowButton from '@/components/form_inputs/overflow_buttons/SegmentedOverflowButton.vue';
+import ReversedOverflowButton from '@/components/form_inputs/overflow_buttons/ReversedOverflowButton.vue';
+import WithChipsOverflowButton from '@/components/form_inputs/overflow_buttons/WithChipsOverflowButton.vue';
+import OutlinedOverflowButton from '@/components/form_inputs/overflow_buttons/OutlinedOverflowButton.vue';
 
 export default {
   name: 'OverflowButtons',
@@ -106,6 +123,9 @@ export default {
     MenuPropsOverflowButton,
     ReadonlyOverflowButton,
     SegmentedOverflowButton,
+    ReversedOverflowButton,
+    WithChipsOverflowButton,
+    OutlinedOverflowButton
   },
 };
 </script>
