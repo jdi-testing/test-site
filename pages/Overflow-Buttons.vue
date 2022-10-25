@@ -78,6 +78,12 @@
             <SegmentedOverflowButton id="SegmentedOverflowButton" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Reversed overflow button
+            </p>
+            <ReversedOverflowButton id="ReversedOverflowButton" />
+        </v-col>
 
         <v-col>
             <p class="text-h5">
@@ -88,7 +94,7 @@
 
         <v-col>
             <p class="text-h5">
-                Outlined full-width overflow button with success messages
+                Outlined shaped full-width overflow button with success messages
             </p>
             <OutlinedOverflowButton id="OutlinedOverflowButton" />
         </v-col>

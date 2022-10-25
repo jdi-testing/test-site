@@ -3,7 +3,7 @@
     <v-overflow-btn
       class="my-2"
       :items="items"
-      label="Overflow Btn - Dense"
+      label="Overflow Btn - With Chips"
       flat
       chips
       small-chips

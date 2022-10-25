@@ -3,9 +3,10 @@
     <v-overflow-btn
       class="my-2"
       :items="items"
-      label="Overflow Btn - Dense"
+      label="Overflow Btn - Outlined"
       dark
       outlined
+      shaped
       full-width
       success
       success-messages="Success message"

@@ -6,7 +6,6 @@
       label="Overflow Btn - Reversed"
       reverse
       rounded
-      shaped
     ></v-overflow-btn>
   </v-container>
 </template>
