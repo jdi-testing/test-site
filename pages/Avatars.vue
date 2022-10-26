@@ -51,6 +51,20 @@
             <AvatarMix id="avatarMix" />
         </v-col>
 
+        <v-col class="mt-3">
+            <p class="text-h5">
+                Left Avatar
+            </p>
+            <LeftAvatar id="leftAvatar" />
+        </v-col>
+
+        <v-col class="mt-3">
+            <p class="text-h5">
+                Right Avatar
+            </p>
+            <RightAvatar id="rightAvatar" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -62,6 +76,8 @@ import SlotAvatar from '@/components/avatars/SlotAvatar.vue';
 import ProfileCard from '@/components/avatars/ProfileCard.vue';
 import AvatarMenuCombi from '@/components/avatars/AvatarMenuCombi.vue';
 import AvatarMix from '@/components/avatars/AvatarMix.vue';
+import LeftAvatar from '@/components/avatars/LeftAvatar.vue';
+import RightAvatar from '@/components/avatars/RightAvatar.vue';
 
 export default {
   name: 'Avatars',
@@ -72,6 +88,8 @@ export default {
     ProfileCard,
     AvatarMenuCombi,
     AvatarMix,
+    LeftAvatar,
+    RightAvatar,
   },
 };
 
