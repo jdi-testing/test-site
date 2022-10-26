@@ -35,6 +35,13 @@
             <HeartRateSparkline id="HeartRateSparkline" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Bar sparkline
+            </p>
+            <BarSparkline id="BarSparkline" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -43,6 +50,7 @@ import FillSparkline from '@/components/sparklines/FillSparkline.vue';
 import CustomLabelsSparkline from '@/components/sparklines/CustomLabelsSparkline.vue';
 import DashboardCardSparkline from '@/components/sparklines/DashboardCardSparkline.vue';
 import HeartRateSparkline from '@/components/sparklines/HeartRateSparkline.vue';
+import BarSparkline from '@/components/sparklines/BarSparkline.vue';
 
 export default {
   name: 'Sparklines',
@@ -51,6 +59,7 @@ export default {
     CustomLabelsSparkline,
     DashboardCardSparkline,
     HeartRateSparkline,
+    BarSparkline,
   },
 };
 </script>
