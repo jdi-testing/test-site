@@ -1,0 +1,52 @@
+<template>
+  <v-card dark>
+    <v-form>
+      <v-container>
+        <v-row>
+          <v-col
+            cols="12"
+            sm="6"
+          >
+            <v-text-field
+              label="Regular"
+              dark
+            ></v-text-field>
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="6"
+          >
+            <v-text-field
+              label="Solo"
+              dark
+              solo
+            ></v-text-field>
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="6"
+          >
+            <v-text-field
+              label="Filled"
+              dark
+              filled
+            ></v-text-field>
+          </v-col>
+
+          <v-col
+            cols="12"
+            sm="6"
+          >
+            <v-text-field
+              label="Outlined"
+              dark
+              outlined
+            ></v-text-field>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-form>
+  </v-card>
+</template>
