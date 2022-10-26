@@ -134,6 +134,13 @@
             <VariableContentWidthGridSystem id="VariableContentWidthGridSystem" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Fluid grid system
+            </p>
+            <FluidGridSystem id="FluidGridSystem" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -157,6 +164,7 @@ import RowAndColumnBreakpointsGridSystem from '@/components/grid_system/RowAndCo
 import SpacersGridSystem from '@/components/grid_system/SpacersGridSystem.vue';
 import UniqueLayoutsGridSystem from '@/components/grid_system/UniqueLayoutsGridSystem.vue';
 import VariableContentWidthGridSystem from '@/components/grid_system/VariableContentWidthGridSystem.vue';
+import FluidGridSystem from '@/components/grid_system/FluidGridSystem.vue';
 
 export default {
   name: 'GridSystem',
@@ -179,6 +187,7 @@ export default {
     SpacersGridSystem,
     UniqueLayoutsGridSystem,
     VariableContentWidthGridSystem,
+    FluidGridSystem
   },
 };
 </script>

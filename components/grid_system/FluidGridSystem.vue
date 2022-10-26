@@ -1,9 +1,13 @@
 <template>
-  <v-container class="grey lighten-5">
-    <v-row no-gutters>
+  <v-container class="grey lighten-5"
+    fluid
+  >
+    <v-row no-gutters
+      dense
+      align-content="center"
+    >
       <template v-for="n in 4">
-        <v-col :key="n"
-        align-self="center">
+        <v-col :key="n">
           <v-card
             class="pa-2"
             outlined
