@@ -71,6 +71,20 @@
             </p>
             <CustomIconExpansionPanel id="CustomIconExpansionPanel" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Flat expansion panel
+            </p>
+            <FlatExpansionPanel id="FlatExpansionPanel" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Tile expansion panel
+            </p>
+            <TileExpansionPanel id="TileExpansionPanel" />
+        </v-col>
     </v-container>
 </template>
 
@@ -84,6 +98,8 @@ import PopoutExpansionPanel from '@/components/expansion_panels/PopoutExpansionP
 import ReadonlyExpansionPanel from '@/components/expansion_panels/ReadonlyExpansionPanel.vue';
 import AdvancedExpansionPanel from '@/components/expansion_panels/AdvancedExpansionPanel.vue';
 import CustomIconExpansionPanel from '@/components/expansion_panels/CustomIconExpansionPanel.vue';
+import FlatExpansionPanel from '@/components/expansion_panels/FlatExpansionPanel.vue';
+import TileExpansionPanel from '@/components/expansion_panels/TileExpansionPanel.vue';
 
 export default {
   name: 'ExpansionPanels',
@@ -97,6 +113,8 @@ export default {
     ReadonlyExpansionPanel,
     AdvancedExpansionPanel,
     CustomIconExpansionPanel,
+    FlatExpansionPanel,
+    TileExpansionPanel
   },
 };
 </script>
