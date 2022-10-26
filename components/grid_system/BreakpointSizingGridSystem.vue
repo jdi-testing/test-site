@@ -5,6 +5,7 @@
       :key="n"
       :class="n === 1 ? 'mb-6' : ''"
       no-gutters
+      align-content="start"
     >
       <v-col
         v-for="k in n + 1"

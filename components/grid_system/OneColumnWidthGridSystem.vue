@@ -8,6 +8,7 @@
         v-for="n in 3"
         :key="n"
         :cols="n === 2 ? 6 : undefined"
+        align-self="stretch"
       >
         <v-card
           class="pa-2"

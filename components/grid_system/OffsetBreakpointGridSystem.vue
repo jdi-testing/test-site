@@ -7,6 +7,7 @@
       <v-col
         sm="5"
         md="6"
+        align-self="auto"
       >
         <v-card
           class="pa-2"
