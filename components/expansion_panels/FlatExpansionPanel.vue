@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-expansion-panels id="FlatExpansionPanels" flat dark multiple max=2 mandatory>
+    <v-expansion-panels flat dark multiple max=2 mandatory>
       <v-expansion-panel
         v-for="(item,i) in 5"
         :key="i"

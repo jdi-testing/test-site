@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-expansion-panels id="TileExpansionPanels" tile>
+    <v-expansion-panels tile>
       <v-expansion-panel
         v-for="(item,i) in 5"
         :key="i"
