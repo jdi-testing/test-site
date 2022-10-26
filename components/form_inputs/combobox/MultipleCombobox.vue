@@ -7,6 +7,9 @@
           :items="items"
           label="Select a favorite activity or create a new one"
           multiple
+          clearable
+          reverse
+          single-line
         ></v-combobox>
       </v-col>
       <v-col cols="12">
@@ -16,6 +19,7 @@
           label="I use chips"
           multiple
           chips
+          filled
         ></v-combobox>
       </v-col>
       <v-col cols="12">
