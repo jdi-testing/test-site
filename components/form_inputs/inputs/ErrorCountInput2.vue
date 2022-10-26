@@ -1,17 +1,13 @@
 <template>
   <v-input
-    :error-count="errors.length"
-    :error-messages="errors"
+    :error-count="2"
+    :error-messages="['error1', 'error2']"
     error
-    disabled
   >
-    {{errors.length}}
+  Input
   </v-input>
 </template>
 <script>
 export default {
-  props: {
-    errors: Array,
-  }
 }
 </script>
