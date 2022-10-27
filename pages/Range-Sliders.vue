@@ -3,7 +3,7 @@
         <v-col>
             <h1>Range Sliders</h1>
             <p class="body-1 mt-2">
-                The <code>v-slider</code> component is a better visualization of the number input. 
+                The <code>v-range-slider</code> component is a better visualization of the number input.
                 It is used for gathering numerical user data.
             </p>
         </v-col>
