@@ -5,6 +5,7 @@
       height="10"
       value="10"
       striped
+      dark
     ></v-progress-linear>
     <br>
     <v-progress-linear
@@ -12,20 +13,23 @@
       height="10"
       value="20"
       striped
+      dark
     ></v-progress-linear>
     <br>
     <v-progress-linear
+      color="lime"
       height="10"
       value="45"
       striped
-      color="lime"
+      dark
     ></v-progress-linear>
     <br>
     <v-progress-linear
+      color="deep-orange"
       value="60"
       height="10"
       striped
-      color="deep-orange"
+      dark
     ></v-progress-linear>
   </div>
 </template>
