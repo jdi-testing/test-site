@@ -1,6 +1,7 @@
 <template>
   <v-container class="grey lighten-5">
-    <v-row no-gutters>
+    <v-row no-gutters
+    align-content="space-between">
       <v-col cols="9">
         <v-card
           class="pa-2"

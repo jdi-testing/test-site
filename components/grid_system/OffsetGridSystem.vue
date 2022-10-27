@@ -4,7 +4,8 @@
       class="mb-6"
       no-gutters
     >
-      <v-col md="4">
+      <v-col md="4"
+      align-self="baseline">
         <v-card
           class="pa-2"
           outlined

@@ -3,6 +3,7 @@
     <v-row
       class="mb-6"
       no-gutters
+      align-content="space-around"
     >
       <v-col
         v-for="n in 4"

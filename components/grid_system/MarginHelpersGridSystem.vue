@@ -1,7 +1,9 @@
 <template>
   <div class="ma-5 pa-5">
     <v-container class="grey lighten-5">
-      <v-row>
+      <v-row
+        align-content="stretch"
+      >
         <v-col md="4">
           <v-card
             class="pa-2"

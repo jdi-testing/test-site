@@ -55,13 +55,6 @@
             </p>
             <ModelCarousel id="ModelCarousel" />
         </v-col>
-
-        <v-col>
-            <p class="text-h5">
-                Vertical reversed carousel with progress
-            </p>
-            <VerticalCarousel id="VerticalCarousel" />
-        </v-col>
     </v-container>
 </template>
 
@@ -73,7 +66,6 @@ import HideControlsCarousel from '@/components/carousels/HideControlsCarousel.vu
 import CustomizedArrowsCarousel from '@/components/carousels/CustomizedArrowsCarousel.vue';
 import HideDelimitersCarousel from '@/components/carousels/HideDelimitersCarousel.vue';
 import ModelCarousel from '@/components/carousels/ModelCarousel.vue';
-import VerticalCarousel from '@/components/carousels/VerticalCarousel.vue';
 
 export default {
   name: 'Carousels',
@@ -85,7 +77,6 @@ export default {
     CustomizedArrowsCarousel,
     HideDelimitersCarousel,
     ModelCarousel,
-    VerticalCarousel
   },
 };
 </script>
