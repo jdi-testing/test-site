@@ -8,6 +8,8 @@
       v-model="picker"
       :landscape="landscape"
       type="month"
+      dark
+      elevation="10"
     ></v-date-picker>
   </v-row>
 </template>
