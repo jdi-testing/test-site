@@ -5,6 +5,7 @@
         <v-range-slider
           v-model="value"
           disabled
+          append-icon="mdi-magnify"
           label="Disabled"
           value="30"
         ></v-range-slider>

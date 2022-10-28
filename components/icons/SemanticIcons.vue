@@ -7,10 +7,10 @@
         <v-icon aria-label="My Account" role="img" aria-hidden="false">
           mdiAccount
         </v-icon>
-
-        <script>
-        import { mdiAccount } from "@mdi/js";
-
+    </v-row>
+</template>
+<script>
+    import { mdiAccount } from "@mdi/js";
         export default {
           data: () => ({
             icons: {
@@ -18,6 +18,4 @@
             }
           })
         };
-        </script>
-    </v-row>
-</template>
+</script>
