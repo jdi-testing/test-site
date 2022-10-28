@@ -49,6 +49,19 @@
             <MDISvgIcon id="MDISvgIcon" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Semantic Icons (aria-hidden = false)
+            </p>
+            <SemanticIcons id="SemanticIcons" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Disabled Icons
+            </p>
+            <DisabledIcons id="DisabledIcons" />
+        </v-col>
     </v-container>
 </template>
 
@@ -59,6 +72,8 @@ import ButtonsIcon from '@/components/icons/ButtonsIcon.vue';
 import FontAwesomeIcon from '@/components/icons/FontAwesomeIcon.vue';
 import MaterialDesignIcon from '@/components/icons/MaterialDesignIcon.vue';
 import MDISvgIcon from '@/components/icons/MDISvgIcon.vue';
+import SemanticIcons from '@/components/icons/SemanticIcons.vue';
+import DisabledIcons from '@/components/icons/DisabledIcons.vue';
 
 export default {
   name: 'Icons',
@@ -69,6 +84,8 @@ export default {
     FontAwesomeIcon,
     MaterialDesignIcon,
     MDISvgIcon,
+    SemanticIcons,
+    DisabledIcons,
   },
 };
 </script>
