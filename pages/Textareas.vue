@@ -9,7 +9,7 @@
 
         <v-col>
             <p class="text-h5">
-                Auto grow textarea
+                Auto grow dense autofocus textarea
             </p>
             <AutoGrowTextarea id="AutoGrowTextarea" />
         </v-col>
@@ -70,6 +70,33 @@
             <SignupFormTextarea id="SignupFormTextarea" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Suffix-Prefix textarea
+            </p>
+            <SuffixPrefixTextarea id="SuffixPrefixTextarea" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Loading textarea
+            </p>
+            <LoadingTextarea id="LoadingTextarea" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Disabled textarea
+            </p>
+            <DisabledTextarea id="DisabledTextarea" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Readonly textarea
+            </p>
+            <ReadonlyTextarea id="ReadonlyTextarea" />
+        </v-col>
     </v-container>
 </template>
 
@@ -83,6 +110,10 @@ import IconsTextarea from '@/components/form_inputs/textareas/IconsTextarea.vue'
 import NoResizeTextarea from '@/components/form_inputs/textareas/NoResizeTextarea.vue';
 import RowsTextarea from '@/components/form_inputs/textareas/RowsTextarea.vue';
 import SignupFormTextarea from '@/components/form_inputs/textareas/SignupFormTextarea.vue';
+import SuffixPrefixTextarea from '@/components/form_inputs/textareas/SuffixPrefixTextarea.vue';
+import LoadingTextarea from '@/components/form_inputs/textareas/LoadingTextarea.vue';
+import DisabledTextarea from '@/components/form_inputs/textareas/DisabledTextarea.vue';
+import ReadonlyTextarea from '@/components/form_inputs/textareas/ReadonlyTextarea.vue';
 
 export default {
   name: 'Textareas',
@@ -96,6 +127,10 @@ export default {
     NoResizeTextarea,
     RowsTextarea,
     SignupFormTextarea,
+    SuffixPrefixTextarea,
+    LoadingTextarea,
+    DisabledTextarea,
+    ReadonlyTextarea
   },
 };
 </script>

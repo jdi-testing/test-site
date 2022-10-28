@@ -1,0 +1,12 @@
+<template>
+  <v-container>
+    <v-textarea
+      color="black"
+      label="Label"
+      loading
+      loader-height="10"
+      type="number"
+      hide-spin-buttons
+    ></v-textarea>
+  </v-container>
+</template>

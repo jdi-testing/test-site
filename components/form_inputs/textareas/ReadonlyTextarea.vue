@@ -1,0 +1,11 @@
+<template>
+  <v-container>
+    <v-textarea
+      color="black"
+      label="Label"
+      readonly
+      message="Message"
+      hide-details
+    ></v-textarea>
+  </v-container>
+</template>
