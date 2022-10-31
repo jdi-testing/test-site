@@ -56,7 +56,6 @@
             </p>
             <WithSubGroupListItemGroup id="WithSubGroupListItemGroup" />
         </v-col>
-
     </v-container>
 </template>
 
