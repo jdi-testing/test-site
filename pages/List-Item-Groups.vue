@@ -45,9 +45,16 @@
 
         <v-col>
             <p class="text-h5">
-                No-action list item group with sub-groups
+                No-action list item group
             </p>
             <NoActionListItemGroup id="NoActionListItemGroup" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                List item group with sub-group
+            </p>
+            <WithSubGroupListItemGroup id="WithSubGroupListItemGroup" />
         </v-col>
 
     </v-container>
@@ -60,6 +67,7 @@ import MultipleListItemGroup from '@/components/groups/list_item_groups/Multiple
 import FlatListListItemGroup from '@/components/groups/list_item_groups/FlatListListItemGroup.vue';
 import SelectionControlsListItemGroup from '@/components/groups/list_item_groups/SelectionControlsListItemGroup.vue';
 import NoActionListItemGroup from '@/components/groups/list_item_groups/NoActionListItemGroup.vue';
+import WithSubGroupListItemGroup from '@/components/groups/list_item_groups/WithSubGroupListItemGroup.vue';
 
 export default {
   name: 'ListItemGroups',
@@ -69,7 +77,8 @@ export default {
     MultipleListItemGroup,
     FlatListListItemGroup,
     SelectionControlsListItemGroup,
-    NoActionListItemGroup
+    NoActionListItemGroup,
+    WithSubGroupListItemGroup
   },
 };
 </script>

@@ -7,7 +7,6 @@
       <v-list-group
         v-model="model"
         color="indigo"
-        no-action
       >
         <v-list-item
           v-for="(item, i) in items"
@@ -21,6 +20,23 @@
             <v-list-item-title v-text="item.text"></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-group
+          v-model="model"
+          sub-group
+        >
+          <v-list-item
+            v-for="(item, i) in items"
+            :key="i"
+          >
+            <v-list-item-icon>
+              <v-icon v-text="item.icon"></v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title v-text="item.text"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-group>
       </v-list-group>
     </v-list>
   </v-card>
