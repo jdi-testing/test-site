@@ -56,6 +56,13 @@
             </p>
             <ColorRangerSlider id="ColorRangerSlider" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Dark RangerSlider
+            </p>
+            <DarkRangerSlider id="DarkRangerSlider" />
+        </v-col>
     </v-container>
 </template>
 
@@ -67,6 +74,7 @@ import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/V
 import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
 import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range_sliders/AppendAndPrependIconsWithRangeSlider.vue';
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
+import DarkRangerSlider from '@/components/form_inputs/range_sliders/DarkRangerSlider.vue';
 
 export default {
   name: 'RangeSliders',
@@ -78,6 +86,7 @@ export default {
     ThumbLabelRangeSlider,
     AppendAndPrependIconsWithRangeSlider,
     ColorRangerSlider,
+    DarkRangerSlider,
   },
 };
 </script>
