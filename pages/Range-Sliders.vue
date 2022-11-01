@@ -43,6 +43,12 @@
             <ThumbLabelRangeSlider id="ThumbLabelRangeSlider" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Append And Prepend Icons With RangeSlider
+            </p>
+            <AppendAndPrependIconsWithRangeSlider id="AppendAndPrependIconsWithRangeSlider" />
+        </v-col>
     </v-container>
 </template>
 
@@ -52,6 +58,7 @@ import MinAndMaxRangeSlider from '@/components/form_inputs/range_sliders/MinAndM
 import StepRangeSlider from '@/components/form_inputs/range_sliders/StepRangeSlider.vue';
 import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/VerticalSlidersRangeSlider.vue';
 import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
+import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range_sliders/AppendAndPrependIconsWithRangeSlider.vue';
 
 export default {
   name: 'RangeSliders',
@@ -61,6 +68,7 @@ export default {
     StepRangeSlider,
     VerticalSlidersRangeSlider,
     ThumbLabelRangeSlider,
+    AppendAndPrependIconsWithRangeSlider,
   },
 };
 </script>
