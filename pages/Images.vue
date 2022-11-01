@@ -50,6 +50,13 @@
             <GridImage id="GridImage" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                With alt text image
+            </p>
+            <AltImage id="AltImage" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -60,6 +67,7 @@ import GradientsImage from '@/components/images/GradientsImage.vue';
 import HeightImage from '@/components/images/HeightImage.vue';
 import PlaceholderImage from '@/components/images/PlaceholderImage.vue';
 import GridImage from '@/components/images/GridImage.vue';
+import AltImage from '@/components/images/AltImage.vue';
 
 export default {
   name: 'Images',
@@ -70,6 +78,7 @@ export default {
     HeightImage,
     PlaceholderImage,
     GridImage,
+    AltImage
   },
 };
 </script>
