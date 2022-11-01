@@ -25,7 +25,7 @@
 
         <v-col>
             <p class="text-h5">
-                Counter file input
+                Flat Counter file input
             </p>
             <CounterFileInput id="CounterFileInput" />
         </v-col>
@@ -46,9 +46,9 @@
 
         <v-col>
             <p class="text-h5">
-                Prepend icon file input
+                Append prepend icon file input
             </p>
-            <PrependIconFileInput id="PrependIconFileInput" />
+            <AppendPrependIconFileInput id="AppendPrependIconFileInput" />
         </v-col>
 
         <v-col>
@@ -79,6 +79,54 @@
             <ComplexSelectionSlotFileInput id="ComplexSelectionSlotFileInput" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Background-color clearable autofocus file input
+            </p>
+            <BackgroundColorFileInput id="BackgroundColorFileInput" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Loading reversed file input
+            </p>
+            <LoadingFileInput id="LoadingFileInput" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                With an error file input
+            </p>
+            <ErrorFileInput id="ErrorFileInput" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Successful file input
+            </p>
+            <SuccessFileInput id="SuccessFileInput" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Hide details and input full-width file input
+            </p>
+            <FullWidthFileInput id="FullWidthFileInput" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Solo-inverted file input with truncated file name
+            </p>
+            <SoloFileInput id="SoloFileInput" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Disabled file input
+            </p>
+            <DisabledFileInput id="DisabledFileInput" />
+        </v-col>
     </v-container>
 </template>
 
@@ -88,11 +136,18 @@ import ChipsFileInput from '@/components/form_inputs/file_inputs/ChipsFileInput.
 import CounterFileInput from '@/components/form_inputs/file_inputs/CounterFileInput.vue';
 import DenseFileInput from '@/components/form_inputs/file_inputs/DenseFileInput.vue';
 import MultipleFileInput from '@/components/form_inputs/file_inputs/MultipleFileInput.vue';
-import PrependIconFileInput from '@/components/form_inputs/file_inputs/PrependIconFileInput.vue';
+import AppendPrependIconFileInput from '@/components/form_inputs/file_inputs/AppendPrependIconFileInput.vue';
 import ShowSizeFileInput from '@/components/form_inputs/file_inputs/ShowSizeFileInput.vue';
 import ValidationFileInput from '@/components/form_inputs/file_inputs/ValidationFileInput.vue';
 import SelectionFileInput from '@/components/form_inputs/file_inputs/SelectionFileInput.vue';
 import ComplexSelectionSlotFileInput from '@/components/form_inputs/file_inputs/ComplexSelectionSlotFileInput.vue';
+import BackgroundColorFileInput from '@/components/form_inputs/file_inputs/BackgroundColorFileInput.vue';
+import LoadingFileInput from '@/components/form_inputs/file_inputs/LoadingFileInput.vue';
+import ErrorFileInput from '@/components/form_inputs/file_inputs/ErrorFileInput.vue';
+import SuccessFileInput from '@/components/form_inputs/file_inputs/SuccessFileInput.vue';
+import FullWidthFileInput from '@/components/form_inputs/file_inputs/FullWidthFileInput.vue';
+import SoloFileInput from '@/components/form_inputs/file_inputs/SoloFileInput.vue';
+import DisabledFileInput from '@/components/form_inputs/file_inputs/DisabledFileInput.vue';
 
 export default {
   name: 'FileInputs',
@@ -102,11 +157,18 @@ export default {
     CounterFileInput,
     DenseFileInput,
     MultipleFileInput,
-    PrependIconFileInput,
+    AppendPrependIconFileInput,
     ShowSizeFileInput,
     ValidationFileInput,
     SelectionFileInput,
     ComplexSelectionSlotFileInput,
+    BackgroundColorFileInput,
+    LoadingFileInput,
+    ErrorFileInput,
+    SuccessFileInput,
+    FullWidthFileInput,
+    SoloFileInput,
+    DisabledFileInput
   },
 };
 </script>
