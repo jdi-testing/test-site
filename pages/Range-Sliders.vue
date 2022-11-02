@@ -59,7 +59,7 @@
 
         <v-col>
             <p class="text-h5">
-                Dark RangerSlider
+                RangerSlider with dark theme
             </p>
             <DarkRangerSlider id="DarkRangerSlider" />
         </v-col>
