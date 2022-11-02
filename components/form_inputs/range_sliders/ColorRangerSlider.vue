@@ -4,7 +4,7 @@
       max="50"
       min="-50"
       :value="[-25, 25]"
-      background-color="red"
+      background-color="orange"
       label="background-color"
     ></v-range-slider>
 
@@ -12,7 +12,7 @@
       max="50"
       min="-50"
       :value="[-25, 25]"
-      color="red"
+      color="orange"
       label="color"
     ></v-range-slider>
 
@@ -20,7 +20,7 @@
       max="50"
       min="-50"
       :value="[-25, 25]"
-      thumb-color="red"
+      thumb-color="orange"
       label="thumb-color"
     ></v-range-slider>
 
@@ -28,7 +28,7 @@
       max="50"
       min="-50"
       :value="[-25, 25]"
-      track-color="red"
+      track-color="orange"
       label="track-color"
     ></v-range-slider>
 
@@ -36,7 +36,7 @@
       max="50"
       min="-50"
       :value="[-25, 25]"
-      track-fill-color="red"
+      track-fill-color="orange"
       label="track-fill-color"
     ></v-range-slider>
   </v-container>

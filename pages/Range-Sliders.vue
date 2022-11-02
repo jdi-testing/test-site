@@ -70,6 +70,13 @@
             </p>
             <DenseRangerSlider id="DenseRangerSlider" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Errors Ranger Slider
+            </p>
+            <ErrorsRangerSlider id="ErrorsRangerSlider" />
+        </v-col>
     </v-container>
 </template>
 
@@ -83,6 +90,7 @@ import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import DarkRangerSlider from '@/components/form_inputs/range_sliders/DarkRangerSlider.vue';
 import DenseRangerSlider from '@/components/form_inputs/range_sliders/DenseRangerSlider.vue';
+import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 
 export default {
   name: 'RangeSliders',
@@ -96,6 +104,7 @@ export default {
     ColorRangerSlider,
     DarkRangerSlider,
     DenseRangerSlider,
+    ErrorsRangerSlider,
   },
 };
 </script>
