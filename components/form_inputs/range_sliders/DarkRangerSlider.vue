@@ -1,5 +1,5 @@
-<template>
-  <v-container>
+<template dark>
+  <v-container dark>
     <v-range-slider
       max="50"
       min="-50"
