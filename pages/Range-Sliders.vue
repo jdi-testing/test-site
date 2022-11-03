@@ -91,6 +91,13 @@
             </p>
             <HideDetailsRangerSlider id="HideDetailsRangerSlider" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Hint Ranger Slider
+            </p>
+            <HintRangerSlider id="HintRangerSlider" />
+        </v-col>
     </v-container>
 </template>
 
@@ -107,6 +114,7 @@ import DenseRangerSlider from '@/components/form_inputs/range_sliders/DenseRange
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import HeightRangerSlider from '@/components/form_inputs/range_sliders/HeightRangerSlider.vue';
 import HideDetailsRangerSlider from '@/components/form_inputs/range_sliders/HideDetailsRangerSlider.vue';
+import HintRangerSlider from '@/components/form_inputs/range_sliders/HintRangerSlider.vue';
 
 export default {
   name: 'RangeSliders',
@@ -123,6 +131,7 @@ export default {
     ErrorsRangerSlider,
     HeightRangerSlider,
     HideDetailsRangerSlider,
+    HintRangerSlider,
   },
 };
 </script>
