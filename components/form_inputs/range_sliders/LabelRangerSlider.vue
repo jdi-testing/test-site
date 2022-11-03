@@ -1,20 +1,22 @@
 <template>
   <v-container>
 
-    <v-subheader>height</v-subheader>
+    <v-subheader>Label</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
+      label="lableText"
       :value="[-25, 25]"
-      height="200px"
     ></v-range-slider>
 
-    <v-subheader>loader-height</v-subheader>
+    <v-subheader>Inverse label</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
+      label="inverselableText"
+      inverse-label
       :value="[-25, 25]"
-      :loader-height="loaderHeight"
     ></v-range-slider>
+
   </v-container>
 </template>

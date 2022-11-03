@@ -1,43 +1,44 @@
 <template>
   <v-container>
+
+    <v-subheader>background-color="orange"</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
       :value="[-25, 25]"
       background-color="orange"
-      label="background-color"
     ></v-range-slider>
 
+    <v-subheader>color="orange"</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
       :value="[-25, 25]"
       color="orange"
-      label="color"
     ></v-range-slider>
 
+    <v-subheader>thumb-color="orange"</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
       :value="[-25, 25]"
       thumb-color="orange"
-      label="thumb-color"
     ></v-range-slider>
 
+    <v-subheader>track-color="orange"</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
       :value="[-25, 25]"
       track-color="orange"
-      label="track-color"
     ></v-range-slider>
 
+    <v-subheader>track-fill-color="orange"</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
       :value="[-25, 25]"
       track-fill-color="orange"
-      label="track-fill-color"
     ></v-range-slider>
   </v-container>
 </template>

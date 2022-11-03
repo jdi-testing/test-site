@@ -59,21 +59,7 @@
 
         <v-col>
             <p class="text-h5">
-                RangerSlider with dark theme
-            </p>
-            <DarkRangerSlider id="DarkRangerSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
-                Dense Ranger Slider
-            </p>
-            <DenseRangerSlider id="DenseRangerSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
-                Errors Ranger Slider
+                Errors ranger sliders
             </p>
             <ErrorsRangerSlider id="ErrorsRangerSlider" />
         </v-col>
@@ -94,9 +80,16 @@
 
         <v-col>
             <p class="text-h5">
-                Hint Ranger Slider
+                Label ranger slider
             </p>
-            <HintRangerSlider id="HintRangerSlider" />
+            <LabelRangerSlider id="LabelRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Different ranger sliders
+            </p>
+            <DifferentRangerSliders id="DifferentRangerSliders" />
         </v-col>
     </v-container>
 </template>
@@ -109,12 +102,11 @@ import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/V
 import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
 import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range_sliders/AppendAndPrependIconsWithRangeSlider.vue';
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
-import DarkRangerSlider from '@/components/form_inputs/range_sliders/DarkRangerSlider.vue';
-import DenseRangerSlider from '@/components/form_inputs/range_sliders/DenseRangerSlider.vue';
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import HeightRangerSlider from '@/components/form_inputs/range_sliders/HeightRangerSlider.vue';
 import HideDetailsRangerSlider from '@/components/form_inputs/range_sliders/HideDetailsRangerSlider.vue';
-import HintRangerSlider from '@/components/form_inputs/range_sliders/HintRangerSlider.vue';
+import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
+import DifferentRangerSliders from '@/components/form_inputs/range_sliders/DifferentRangerSliders.vue';
 
 export default {
   name: 'RangeSliders',
@@ -126,12 +118,11 @@ export default {
     ThumbLabelRangeSlider,
     AppendAndPrependIconsWithRangeSlider,
     ColorRangerSlider,
-    DarkRangerSlider,
-    DenseRangerSlider,
     ErrorsRangerSlider,
     HeightRangerSlider,
     HideDetailsRangerSlider,
-    HintRangerSlider,
+    LabelRangerSlider,
+    DifferentRangerSliders,
   },
 };
 </script>

@@ -1,29 +1,29 @@
-<template>
-  <v-container>
+<template dark>
+  <v-container dark>
 
-    <v-subheader>error slider</v-subheader>
+    <v-subheader>dark theme (with color=orange for visibility)"</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
+      dark
+      color="green"
       :value="[-25, 25]"
-      error
     ></v-range-slider>
 
-    <v-subheader>error with error text</v-subheader>
+    <v-subheader>dense</v-subheader>
     <v-range-slider
       max="50"
       min="-50"
+      dense
       :value="[-25, 25]"
-      error-messages = "errorText1"
     ></v-range-slider>
 
-    <v-subheader>error with multi errors</v-subheader>
+    <v-subheader>hint</v-subheader>
     <v-range-slider
+      hint="hint"
       max="50"
       min="-50"
       :value="[-25, 25]"
-      :error-messages="['errorText1', 'errorText2', 'errorText3']"
-      :error-count="3"
     ></v-range-slider>
   </v-container>
 </template>
