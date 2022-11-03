@@ -4,7 +4,6 @@
     label="File input"
     color=black
     autofocus
-    clearable
     outlined
     shaped
     messages="Message"
