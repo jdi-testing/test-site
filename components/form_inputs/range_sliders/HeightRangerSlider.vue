@@ -11,7 +11,7 @@
       max="50"
       min="-50"
       :value="[-25, 25]"
-      loader-height="10"
+      :loader-height="loaderHeight"
     ></v-range-slider>
   </v-container>
 </template>
