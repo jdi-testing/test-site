@@ -2,6 +2,7 @@
   <v-file-input
     v-model="files"
     placeholder="Upload your documents"
+    persistent-placeholder
     label="File input"
     multiple
     prepend-icon="mdi-paperclip"
