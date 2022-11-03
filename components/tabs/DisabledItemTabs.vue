@@ -13,6 +13,7 @@
 
     <v-tabs-items
       v-model="tab"
+      show-arrows
     >
       <v-tab-item
         v-for="tab in tabs"
