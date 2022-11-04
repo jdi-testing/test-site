@@ -115,13 +115,6 @@
 
         <v-col>
             <p class="text-h5">
-                Overflow combobox
-            </p>
-            <OverflowCombobox id="OverflowCombobox" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
                 Full width combobox
             </p>
             <FullWidthCombobox id="FullWidthCombobox" />
@@ -208,7 +201,6 @@ import FlatCombobox from '@/components/form_inputs/combobox/FlatCombobox.vue';
 import ErrorSuccessCombobox from '@/components/form_inputs/combobox/ErrorSuccessCombobox.vue';
 import HideDetailsCombobox from '@/components/form_inputs/combobox/HideDetailsCombobox.vue';
 import CounterCombobox from '@/components/form_inputs/combobox/CounterCombobox.vue';
-import OverflowCombobox from '@/components/form_inputs/combobox/OverflowCombobox.vue';
 import FullWidthCombobox from '@/components/form_inputs/combobox/FullWidthCombobox.vue';
 import OpenOnClearCombobox from '@/components/form_inputs/combobox/OpenOnClearCombobox.vue';
 import NoFilterCombobox from '@/components/form_inputs/combobox/NoFilterCombobox.vue';
@@ -239,7 +231,6 @@ export default {
     ErrorSuccessCombobox,
     HideDetailsCombobox,
     CounterCombobox,
-    OverflowCombobox,
     FullWidthCombobox,
     OpenOnClearCombobox,
     NoFilterCombobox,
