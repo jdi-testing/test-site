@@ -8,6 +8,7 @@
       hint="Some hint"
       :hide-details="isDetailsHidden"
       :error="isError"
+      :background-color="backgroundColor"
     ></v-range-slider>
 
     <v-col>
@@ -29,10 +30,9 @@
       </v-row>
 
       <v-row class="mx-5 align-center">
-        <span>Error</span>
-          <v-color-picker
-          dot-size="25"
-          swatches-max-height="200"
+        <span>Background color</span>
+        <v-color-picker
+          v-model="backgroundColor"
         ></v-color-picker>
       </v-row>
     </v-col>
@@ -47,6 +47,7 @@ export default {
     isDarkTheme: false,
     isDetailsHidden: false,
     isError: false,
+    backgroundColor: "green",
   }),
 };
 </script>
