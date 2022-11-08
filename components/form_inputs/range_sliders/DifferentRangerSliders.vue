@@ -27,6 +27,14 @@
         <span>Error</span>
         <v-switch v-model="isError" class="ma-0 ml-5" />
       </v-row>
+
+      <v-row class="mx-5 align-center">
+        <span>Error</span>
+          <v-color-picker
+          dot-size="25"
+          swatches-max-height="200"
+        ></v-color-picker>
+      </v-row>
     </v-col>
   </v-col>
 </template>
