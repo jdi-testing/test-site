@@ -73,13 +73,6 @@
 
         <v-col>
             <p class="text-h5">
-                Hide Details Ranger Slider
-            </p>
-            <HideDetailsRangerSlider id="HideDetailsRangerSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
                 Label ranger slider
             </p>
             <LabelRangerSlider id="LabelRangerSlider" />
@@ -104,7 +97,6 @@ import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import HeightRangerSlider from '@/components/form_inputs/range_sliders/HeightRangerSlider.vue';
-import HideDetailsRangerSlider from '@/components/form_inputs/range_sliders/HideDetailsRangerSlider.vue';
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
 import DifferentRangerSliders from '@/components/form_inputs/range_sliders/DifferentRangerSliders.vue';
 
@@ -120,7 +112,6 @@ export default {
     ColorRangerSlider,
     ErrorsRangerSlider,
     HeightRangerSlider,
-    HideDetailsRangerSlider,
     LabelRangerSlider,
     DifferentRangerSliders,
   },
