@@ -26,7 +26,6 @@
 			<v-card class="d-flex ma-2">
 				<v-subheader>Loader height</v-subheader>
 				<v-text-field label="Loader height" v-model="loaderHeight" type="number" max="50"min="0" class="shrink"/>
-				<v-subheader>Loading</v-subheader>
 				<v-switch v-model="isLoading" class="ma-0 ml-5"/>
 			</v-card>
 		</v-row>
