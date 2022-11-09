@@ -9,15 +9,15 @@
 		<v-row class="justify-space-around">
 			<v-card class="d-flex ma-2">
 				<v-subheader>Dark theme</v-subheader>
-				<v-switch v-model="isDarkTheme" class="ma-0 ml-5"/>
+				<v-switch v-model="isDarkTheme"/>
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-subheader>Hide details</v-subheader>
-				<v-switch v-model="isDetailsHidden" class="ma-0 ml-5"/>
+				<v-switch v-model="isDetailsHidden"/>
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-subheader>Error</v-subheader>
-				<v-switch v-model="isError" class="ma-0 ml-5"/>
+				<v-switch v-model="isError"/>
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-subheader>Height</v-subheader>
@@ -26,7 +26,7 @@
 			<v-card class="d-flex ma-2">
 				<v-subheader>Loader height</v-subheader>
 				<v-text-field label="Loader height" v-model="loaderHeight" type="number" max="50"min="0" class="shrink"/>
-				<v-switch v-model="isLoading" class="ma-0 ml-5"/>
+				<v-switch v-model="isLoading"/>
 			</v-card>
 		</v-row>
 		<v-row class="justify-space-around">
