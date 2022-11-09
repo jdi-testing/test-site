@@ -11,6 +11,8 @@
       :background-color="backgroundColor"
       :color="color"
       :track-color="trackColor"
+      :track-fill-color="trackFillColor"
+      :thumb-color="thumbColor"
     ></v-range-slider>
 
     <v-col>
@@ -51,6 +53,20 @@
           v-model="trackColor"
         ></v-color-picker>
       </v-row>
+
+      <v-subheader>Track-fill-color</v-subheader>
+      <v-row class="mx-5 align-center">
+        <v-color-picker
+          v-model="trackFillColor"
+        ></v-color-picker>
+      </v-row>
+
+      <v-subheader>Thumb-color</v-subheader>
+      <v-row class="mx-5 align-center">
+        <v-color-picker
+          v-model="thumbColor"
+        ></v-color-picker>
+      </v-row>
     </v-col>
   </v-col>
 </template>
@@ -66,6 +82,8 @@ export default {
     backgroundColor: "Blue",
     color: "Orange",
     trackColor: "Green",
+    trackFillColor: "Yellow",
+    thumbColor: "Red",
   }),
 };
 </script>
