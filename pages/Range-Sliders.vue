@@ -52,13 +52,6 @@
 
         <v-col>
             <p class="text-h5">
-                Color RangerSlider
-            </p>
-            <ColorRangerSlider id="ColorRangerSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
                 Errors ranger sliders
             </p>
             <ErrorsRangerSlider id="ErrorsRangerSlider" />
@@ -80,9 +73,9 @@
 
         <v-col>
             <p class="text-h5">
-                Different ranger sliders
+                Adjustable ranger sliders
             </p>
-            <DifferentRangerSliders id="DifferentRangerSliders" />
+            <AdjustableRangerSliders id="AdjustableRangerSliders" />
         </v-col>
     </v-container>
 </template>
@@ -94,11 +87,10 @@ import StepRangeSlider from '@/components/form_inputs/range_sliders/StepRangeSli
 import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/VerticalSlidersRangeSlider.vue';
 import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
 import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range_sliders/AppendAndPrependIconsWithRangeSlider.vue';
-import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import HeightRangerSlider from '@/components/form_inputs/range_sliders/HeightRangerSlider.vue';
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
-import DifferentRangerSliders from '@/components/form_inputs/range_sliders/DifferentRangerSliders.vue';
+import AdjustableRangerSliders from '@/components/form_inputs/range_sliders/AdjustableRangerSliders.vue';
 
 export default {
   name: 'RangeSliders',
@@ -109,11 +101,10 @@ export default {
     VerticalSlidersRangeSlider,
     ThumbLabelRangeSlider,
     AppendAndPrependIconsWithRangeSlider,
-    ColorRangerSlider,
     ErrorsRangerSlider,
     HeightRangerSlider,
     LabelRangerSlider,
-    DifferentRangerSliders,
+    AdjustableRangerSliders,
   },
 };
 </script>
