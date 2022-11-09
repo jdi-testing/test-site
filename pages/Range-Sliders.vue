@@ -73,9 +73,16 @@
 
         <v-col>
             <p class="text-h5">
-                Adjustable ranger sliders
+                Color ranger slider
             </p>
-            <AdjustableRangerSliders id="AdjustableRangerSliders" />
+            <ColorRangerSlider id="ColorRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Adjustable ranger slider
+            </p>
+            <AdjustableRangerSlider id="AdjustableRangerSlider" />
         </v-col>
     </v-container>
 </template>
@@ -90,7 +97,8 @@ import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import HeightRangerSlider from '@/components/form_inputs/range_sliders/HeightRangerSlider.vue';
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
-import AdjustableRangerSliders from '@/components/form_inputs/range_sliders/AdjustableRangerSliders.vue';
+import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
+import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
 
 export default {
   name: 'RangeSliders',
@@ -104,7 +112,8 @@ export default {
     ErrorsRangerSlider,
     HeightRangerSlider,
     LabelRangerSlider,
-    AdjustableRangerSliders,
+    ColorRangerSlider,
+    AdjustableRangerSlider,
   },
 };
 </script>
