@@ -59,13 +59,6 @@
 
         <v-col>
             <p class="text-h5">
-                Height Ranger Slider
-            </p>
-            <HeightRangerSlider id="HeightRangerSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
                 Label ranger slider
             </p>
             <LabelRangerSlider id="LabelRangerSlider" />
@@ -95,7 +88,6 @@ import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/V
 import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
 import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range_sliders/AppendAndPrependIconsWithRangeSlider.vue';
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
-import HeightRangerSlider from '@/components/form_inputs/range_sliders/HeightRangerSlider.vue';
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
@@ -110,7 +102,6 @@ export default {
     ThumbLabelRangeSlider,
     AppendAndPrependIconsWithRangeSlider,
     ErrorsRangerSlider,
-    HeightRangerSlider,
     LabelRangerSlider,
     ColorRangerSlider,
     AdjustableRangerSlider,
