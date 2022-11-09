@@ -66,9 +66,16 @@
 
         <v-col>
             <p class="text-h5">
-                Adjustable ranger slider
+                Color ranger slider
             </p>
-            <AdjustableRangerSlider id="AdjustableRangerSlider" />
+            <ColorRangerSlider id="ColorRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Loading ranger slider
+            </p>
+            <LoadingRangerSlider id="LoadingRangerSlider" />
         </v-col>
     </v-container>
 </template>
@@ -82,6 +89,7 @@ import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
+import LoadingRangerSlider from '@/components/form_inputs/range_sliders/LoadingRangerSlider.vue';
 import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
 
 export default {
@@ -95,6 +103,7 @@ export default {
     ErrorsRangerSlider,
     LabelRangerSlider,
     ColorRangerSlider,
+    LoadingRangerSlider,
     AdjustableRangerSlider,
   },
 };

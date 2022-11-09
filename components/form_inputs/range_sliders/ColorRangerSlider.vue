@@ -8,7 +8,7 @@
 </template>
 <script>
 	export default {
-	name: 'AdjustableRangerSliders',
+	name: 'ColorRangerSlider',
 	data: () => ({
 	color: "Orange",
 	}),
