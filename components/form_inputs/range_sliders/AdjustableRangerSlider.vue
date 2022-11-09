@@ -6,7 +6,6 @@
 		:loading="isLoading"
 		:disabled="isDisabled"
 		/>
-		<p class="text-h5">Settings</p>
 		<v-row class="justify-space-around">
 			<v-card class="d-flex ma-2">
 				<v-subheader>Disabled</v-subheader>

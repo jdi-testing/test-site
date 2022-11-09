@@ -10,13 +10,6 @@
 
         <v-col>
             <p class="text-h5">
-                Disabled range slider
-            </p>
-            <DisabledRangeSlider id="DisabledRangeSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
                 Min and max range slider
             </p>
             <MinAndMaxRangeSlider id="MinAndMaxRangeSlider" />
@@ -81,7 +74,6 @@
 </template>
 
 <script>
-import DisabledRangeSlider from '@/components/form_inputs/range_sliders/DisabledRangeSlider.vue';
 import MinAndMaxRangeSlider from '@/components/form_inputs/range_sliders/MinAndMaxRangeSlider.vue';
 import StepRangeSlider from '@/components/form_inputs/range_sliders/StepRangeSlider.vue';
 import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/VerticalSlidersRangeSlider.vue';
@@ -95,7 +87,6 @@ import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/Adjus
 export default {
   name: 'RangeSliders',
   components: {
-    DisabledRangeSlider,
     MinAndMaxRangeSlider,
     StepRangeSlider,
     VerticalSlidersRangeSlider,
