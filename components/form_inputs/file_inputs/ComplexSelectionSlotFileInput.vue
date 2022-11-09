@@ -6,6 +6,8 @@
     label="File input"
     multiple
     placeholder="Select your files"
+    hint="Persistent hint"
+    persistent-hint
     prepend-icon="mdi-paperclip"
     outlined
     :show-size="1000"

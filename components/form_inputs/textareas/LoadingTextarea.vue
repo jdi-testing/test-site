@@ -1,0 +1,10 @@
+<template>
+  <v-container>
+    <v-textarea
+      color="black"
+      label="Label"
+      loading
+      loader-height="10"
+    ></v-textarea>
+  </v-container>
+</template>

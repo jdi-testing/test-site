@@ -97,6 +97,42 @@
             </p>
             <TabItemsTabs id="TabItemsTabs" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Hide slider tabs
+            </p>
+            <HideSliderTabs id="HideSliderTabs" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Optional tabs
+            </p>
+            <OptionalTabs id="OptionalTabs" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Disabled tabs
+            </p>
+            <DisabledTabs id="DisabledTabs" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Tabs with href's
+            </p>
+            <HrefTabs id="HrefTabs" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Show arrows on hover tabs
+            </p>
+            <ArrowsOnHoverTabs id="ArrowsOnHoverTabs" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Disabled item tabs
+            </p>
+            <DisabledItemTabs id="DisabledItemTabs" />
+        </v-col>
 
     </v-container>
 </template>
@@ -116,6 +152,12 @@ import DynamicHeightTabs from '@/components/tabs/DynamicHeightTabs.vue';
 import DynamicTabs from '@/components/tabs/DynamicTabs.vue';
 import OverflowMenuTabs from '@/components/tabs/OverflowMenuTabs.vue';
 import TabItemsTabs from '@/components/tabs/TabItemsTabs.vue';
+import HideSliderTabs from '@/components/tabs/HideSliderTabs.vue';
+import OptionalTabs from '@/components/tabs/OptionalTabs.vue';
+import DisabledTabs from '@/components/tabs/DisabledTabs.vue';
+import HrefTabs from '@/components/tabs/HrefTabs.vue';
+import ArrowsOnHoverTabs from '@/components/tabs/ArrowsOnHoverTabs.vue';
+import DisabledItemTabs from '@/components/tabs/DisabledItemTabs.vue';
 
 export default {
   name: 'Tabs',
@@ -134,7 +176,13 @@ export default {
     DynamicHeightTabs,
     DynamicTabs,
     OverflowMenuTabs,
-    TabItemsTabs
+    TabItemsTabs,
+    HideSliderTabs,
+    OptionalTabs,
+    DisabledTabs,
+    HrefTabs,
+    ArrowsOnHoverTabs,
+    DisabledItemTabs,
   },
 };
 </script>
