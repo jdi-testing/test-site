@@ -10,7 +10,10 @@
       firstIcon: 'mdi-arrow-collapse-left',
       lastIcon: 'mdi-arrow-collapse-right',
       prevIcon: 'mdi-minus',
-      nextIcon: 'mdi-plus'
+      nextIcon: 'mdi-plus',
+      disableItemsPerPage: true,
+      disablePagination: true,
+      showCurrentPage: true
     }"
   ></v-data-table>
 </template>
