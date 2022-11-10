@@ -4,11 +4,10 @@
 		:success-messages="[successText1, successText2,successText3,successText4,successText5]"
 		:error-count="messageCount"
 		:hide-details="isDetailsHidden"
-		:success="isSuccess"/>
+		/>
 
 		<v-card class="ma-2 pa-2">
 			<v-switch label="Hide details" v-model="isDetailsHidden"/>
-			<v-switch label="Success" v-model="isSuccess"/>
 			<v-text-field label="Success count" v-model="messageCount" type="number" min="0" max="5"/>
 			<v-text-field v-model="successText1" label="Success messages 1"/>
 			<v-text-field v-model="successText2" label="Success messages 2"/>
