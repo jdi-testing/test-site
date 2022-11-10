@@ -73,6 +73,13 @@
 
         <v-col>
             <p class="text-h5">
+                Hint ranger slider
+            </p>
+            <HintRangerSlider id="HintRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Adjustable ranger slider
             </p>
             <AdjustableRangerSlider id="AdjustableRangerSlider" />
@@ -90,6 +97,7 @@ import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRan
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import LoadingRangerSlider from '@/components/form_inputs/range_sliders/LoadingRangerSlider.vue';
+import HintRangerSlider from '@/components/form_inputs/range_sliders/HintRangerSlider.vue';
 import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
 
 export default {
@@ -104,6 +112,7 @@ export default {
     LabelRangerSlider,
     ColorRangerSlider,
     LoadingRangerSlider,
+    HintRangerSlider,
     AdjustableRangerSlider,
   },
 };

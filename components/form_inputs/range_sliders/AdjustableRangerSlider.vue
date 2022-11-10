@@ -1,12 +1,17 @@
 <template>
 	<div>
-		<v-range-slider :dark="isDarkTheme" min="-50" max="50" :value="[-25, 25]" hint="Some hint" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor"
-		:height="height"
-		:loader-height="loaderHeight"
-		:loading="isLoading"
-		:disabled="isDisabled"
-		/>
-		<v-row class="justify-space-around">
+
+			<v-card class="pa-2 ma-2">
+        		<v-range-slider :dark="isDarkTheme" min="-50" max="50" :value="[-25, 25]" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor"
+        		:height="height"
+        		:loader-height="loaderHeight"
+        		:loading="isLoading"
+        		:disabled="isDisabled"x
+        		:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]"
+        		:error-count="messagesCount"
+        		/>
+        					</v-card>
+<v-row class="justify-space-around">
 			<v-card class="d-flex ma-2">
 				<v-subheader>Disabled</v-subheader>
 				<v-switch v-model="isDisabled"/>
@@ -51,6 +56,24 @@
 				<v-color-picker v-model="thumbColor"/>
 			</v-card>
 		</v-row>
+        			<v-card class="ma-2 pa-2">
+
+        							<v-text-field label="Message count height" v-model="messagesCount" type="number" max="5"min="0"/>
+
+        							<v-text-field v-model="messageText1" label="Messages 1" class="shrink"/>
+
+                    				<v-text-field v-model="messageText2" label="Messages 2" class="shrink"/>
+
+                    				<v-text-field v-model="messageText3" label="Messages 3" class="shrink"/>
+
+                    				<v-text-field v-model="messageText4" label="Messages 4" class="shrink"/>
+
+
+
+                    				<v-text-field v-model="messageText5" label="Messages 5" class="shrink"/>
+
+
+        						</v-card>
 	</div>
 </template>
 <script>
@@ -67,7 +90,13 @@
 	thumbColor: "Red",
 	height: 50,
 	loaderHeight: 10,
+	messagesCount: 0,
 	isLoading: false,
+		messageText1: "Message 1",
+    	messageText2: "Message 2",
+    	messageText3: "Message 3",
+    	messageText4: "Message 4",
+    	messageText5: "Message 5",
 	}),
 	};
 </script>
