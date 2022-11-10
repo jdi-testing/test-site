@@ -17,7 +17,7 @@
 	export default {
 	name: 'ErrorsRangerSlider',
 	data: () => ({
-	errorCount: 1,
+	errorCount: 3,
 	isDetailsHidden: false,
 	defaultText1: "errorText1",
 	defaultText2: "errorText2",
