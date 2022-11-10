@@ -55,7 +55,7 @@
 </template>
 <script>
 	export default {
-	name: 'AdjustableRangerSliders',
+	name: 'AdjustableRangerSlider',
 	data: () => ({
 	isDisabled: false,
 	isDarkTheme: false,

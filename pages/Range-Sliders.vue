@@ -66,16 +66,16 @@
 
         <v-col>
             <p class="text-h5">
-                Color ranger slider
+                Loading ranger slider
             </p>
-            <ColorRangerSlider id="ColorRangerSlider" />
+            <LoadingRangerSlider id="LoadingRangerSlider" />
         </v-col>
 
         <v-col>
             <p class="text-h5">
-                Loading ranger slider
+                Adjustable ranger slider
             </p>
-            <LoadingRangerSlider id="LoadingRangerSlider" />
+            <AdjustableRangerSlider id="AdjustableRangerSlider" />
         </v-col>
     </v-container>
 </template>
