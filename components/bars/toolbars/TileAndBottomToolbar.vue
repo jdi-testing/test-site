@@ -6,7 +6,7 @@
             height="200px"
             tile
         >
-            <v-toolbar tile bottom>
+            <v-toolbar tile absolute bottom>
                 <v-btn icon>
                     <v-icon>mdi-magnify</v-icon>
                 </v-btn>
