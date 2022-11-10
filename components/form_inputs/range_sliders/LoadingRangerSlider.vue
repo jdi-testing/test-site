@@ -12,7 +12,7 @@
 	name: 'LoadingRangerSlider',
 	data: () => ({
 	height: 10,
-	loadingColor: "Red",
+	loadingColor: '#1C64F6',
 	}),
 	};
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<div>
 
-			<v-card class="pa-2 ma-2">
+			<v-card class="pa-10 ma-10">
         		<v-range-slider :dark="isDarkTheme" min="-50" max="50" :value="[-25, 25]" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor"
         		:height="height"
         		:loader-height="loaderHeight"
@@ -9,12 +9,17 @@
         		:disabled="isDisabled"x
         		:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]"
         		:error-count="messagesCount"
+        		:readonly="readonly"
         		/>
         					</v-card>
 <v-row class="justify-space-around">
 			<v-card class="d-flex ma-2">
 				<v-subheader>Disabled</v-subheader>
 				<v-switch v-model="isDisabled"/>
+			</v-card>
+			<v-card class="d-flex ma-2">
+				<v-subheader>Readonly</v-subheader>
+				<v-switch v-model="readonly"/>
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-subheader>Dark theme</v-subheader>
@@ -84,13 +89,14 @@
 	isDarkTheme: false,
 	isDetailsHidden: false,
 	isError: false,
-	backgroundColor: "Blue",
-	trackColor: "Green",
-	trackFillColor: "Purple",
-	thumbColor: "Red",
+	backgroundColor: '#428EDA',
+	trackColor: '#17DF2C',
+	trackFillColor: '#B51CF6',
+	thumbColor: '#E75E10',
 	height: 50,
 	loaderHeight: 10,
 	messagesCount: 0,
+	readonly: false,
 	isLoading: false,
 		messageText1: "Message 1",
     	messageText2: "Message 2",
