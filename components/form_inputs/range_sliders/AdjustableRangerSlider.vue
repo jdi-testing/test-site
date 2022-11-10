@@ -10,6 +10,8 @@
         		:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]"
         		:error-count="messagesCount"
         		:readonly="readonly"
+        		:thumb-size="thumbSize"
+        		:thumb-label="thumbLabel"
         		/>
         					</v-card>
 <v-row class="justify-space-around">
@@ -39,8 +41,13 @@
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-subheader>Loader height</v-subheader>
-				<v-text-field label="Loader height" v-model="loaderHeight" type="number" max="50"min="0" class="shrink"/>
+				<v-text-field v-model="loaderHeight" type="number" max="50"min="0" class="shrink"/>
 				<v-switch v-model="isLoading"/>
+			</v-card>
+			<v-card class="d-flex ma-2">
+				<v-subheader>Thumb-size</v-subheader>
+				<v-text-field v-model="thumbSize" type="number" max="100"min="0" class="shrink"/>
+				<v-switch v-model="thumbLabel"/>
 			</v-card>
 		</v-row>
 		<v-row class="justify-space-around">
@@ -95,6 +102,8 @@
 	thumbColor: '#E75E10',
 	height: 50,
 	loaderHeight: 10,
+	thumbSize: 32,
+	thumbLabel: false,
 	messagesCount: 0,
 	readonly: false,
 	isLoading: false,

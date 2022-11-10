@@ -80,6 +80,13 @@
 
         <v-col>
             <p class="text-h5">
+                Success ranger slider
+            </p>
+            <SuccessRangerSlider id="SuccessRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Adjustable ranger slider
             </p>
             <AdjustableRangerSlider id="AdjustableRangerSlider" />
@@ -98,6 +105,7 @@ import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRange
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import LoadingRangerSlider from '@/components/form_inputs/range_sliders/LoadingRangerSlider.vue';
 import HintRangerSlider from '@/components/form_inputs/range_sliders/HintRangerSlider.vue';
+import SuccessRangerSlider from '@/components/form_inputs/range_sliders/SuccessRangerSlider.vue';
 import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
 
 export default {
@@ -113,6 +121,7 @@ export default {
     ColorRangerSlider,
     LoadingRangerSlider,
     HintRangerSlider,
+    SuccessRangerSlider,
     AdjustableRangerSlider,
   },
 };
