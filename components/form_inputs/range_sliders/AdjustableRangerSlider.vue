@@ -54,15 +54,15 @@
 				<v-subheader>Thumb-color</v-subheader>
 				<v-color-picker v-model="thumbColor"/>
 			</v-card>
+			<v-card class="ma-2 pa-2">
+				<v-text-field label="Message count height" v-model="messagesCount" type="number" max="5" min="0"/>
+				<v-text-field v-model="messageText1" label="Messages 1" class="shrink"/>
+				<v-text-field v-model="messageText2" label="Messages 2" class="shrink"/>
+				<v-text-field v-model="messageText3" label="Messages 3" class="shrink"/>
+				<v-text-field v-model="messageText4" label="Messages 4" class="shrink"/>
+				<v-text-field v-model="messageText5" label="Messages 5" class="shrink"/>
+			</v-card>
 		</v-row>
-		<v-card class="ma-2 pa-2">
-			<v-text-field label="Message count height" v-model="messagesCount" type="number" max="5" min="0"/>
-			<v-text-field v-model="messageText1" label="Messages 1" class="shrink"/>
-			<v-text-field v-model="messageText2" label="Messages 2" class="shrink"/>
-			<v-text-field v-model="messageText3" label="Messages 3" class="shrink"/>
-			<v-text-field v-model="messageText4" label="Messages 4" class="shrink"/>
-			<v-text-field v-model="messageText5" label="Messages 5" class="shrink"/>
-		</v-card>
 	</div>
 </template>
 <script>
