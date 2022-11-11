@@ -63,6 +63,23 @@
                 <FlexibleAndCardToolbar id="flexibleAndCardToolbar"/>
             </v-col>
         </v-row>
+        <v-row class="mx-1 mt-3">
+                    <v-col>
+                        <p class="text-h5">
+                            Tile and bottom toolbar
+                        </p>
+                        <TileAndBottomToolbar id="tileAndBottomToolbar"/>
+                    </v-col>
+                </v-row>
+        <v-row class="mx-1 mt-3">
+            <v-col>
+                <p class="text-h5">
+                    Various Attributes Toolbar
+                </p>
+                <VariousAttributesToolbar id="variousAttributesToolbar"/>
+            </v-col>
+        </v-row>
+
     </v-container>
 </template>
 
@@ -74,6 +91,8 @@ import ExtendedToolbar from '@/components/bars/toolbars/ExtendedToolbar.vue';
 import FloatingWithSearchToolbar from '@/components/bars/toolbars/FloatingWithSearchToolbar.vue';
 import ContextActionToolbar from '@/components/bars/toolbars/ContextualActionToolbar.vue';
 import FlexibleAndCardToolbar from '@/components/bars/toolbars/FlexibleAndCardToolbar.vue';
+import TileAndBottomToolbar from '@/components/bars/toolbars/TileAndBottomToolbar.vue';
+import VariousAttributesToolbar from '@/components/bars/toolbars/VariousAttributesToolbar.vue';
 
 export default {
   name: 'Toolbars',
@@ -85,6 +104,8 @@ export default {
     FloatingWithSearchToolbar,
     ContextActionToolbar,
     FlexibleAndCardToolbar,
+    TileAndBottomToolbar,
+    VariousAttributesToolbar,
   },
 };
 </script>
