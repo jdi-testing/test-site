@@ -1,13 +1,10 @@
 <template>
-    <div>
-        <v-sheet>
-            <v-avatar
-                color="indigo"
-                size="36"
-                left
-            >
-                <span class="white--text text-h5">36</span>
-            </v-avatar>
-        </v-sheet>
-    </div>
+  <div>
+    <v-chip class="ma-2" color="indigo" text-color="white">
+      <v-avatar left>
+        <v-icon>mdi-account-circle</v-icon>
+      </v-avatar>
+      Left avatar
+    </v-chip>
+  </div>
 </template>
