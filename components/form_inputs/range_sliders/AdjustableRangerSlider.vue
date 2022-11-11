@@ -1,57 +1,56 @@
 <template>
 	<div>
 		<v-card class="pa-10 ma-10">
-			<v-range-slider :dark="isDarkTheme" min="-50" max="50" :value="[-25, 25]" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor" :height="height" :loader-height="loaderHeight" :loading="isLoading" :disabled="isDisabled" x:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]" :error-count="messagesCount" :readonly="readonly" :thumb-size="thumbSize" :thumb-label="thumbLabel" :success="isSuccess"
-			:validate-on-blur="validateOnBlur"/>
+			<v-range-slider :dark="isDarkTheme" :min="-50" :max="50" :value="[-25, 25]" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor" :height="height" :loader-height="loaderHeight" :loading="isLoading" :disabled="isDisabled" :messages="[messageText1,messageText2,messageText3,messageText4,messageText5]" :error-count="messagesCount" :readonly="readonly" :thumb-size="thumbSize" :thumb-label="thumbLabel" :success="isSuccess"/>
 		</v-card>
 		<v-row class="justify-space-around">
-			<v-card class="d-flex ma-2">
+			<v-card class="d-flex ma-2 pa-2">
 				<v-switch label="Disabled" v-model="isDisabled"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
+			<v-card class="d-flex ma-2 pa-2">
 				<v-switch label="Success" v-model="isSuccess"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
+			<v-card class="d-flex ma-2 pa-2">
 				<v-switch label="Readonly" v-model="readonly"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
+			<v-card class="d-flex ma-2 pa-2">
 				<v-switch label="Dark theme" v-model="isDarkTheme"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
+			<v-card class="d-flex ma-2 pa-2">
 				<v-switch label="Hide details" v-model="isDetailsHidden"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
+			<v-card class="d-flex ma-2 pa-2">
 				<v-switch label="Error" v-model="isError"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
-				<v-switch label="Validate on blur" v-model="validateOnBlur"/>
+			<v-card class="d-flex ma-2 pa-2">
+				<v-subheader>Height</v-subheader>
+				<v-text-field v-model="height" type="number" min="0" class="shrink"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
-				<v-text-field label="Height" v-model="height" type="number" min="0" class="shrink"/>
-			</v-card>
-			<v-card class="d-flex ma-2">
-				<v-text-field label="Loader height" v-model="loaderHeight" type="number" max="50" min="0" class="shrink"/>
+			<v-card class="d-flex ma-2 pa-2">
+				<v-subheader>Loader height</v-subheader>
+				<v-text-field v-model="loaderHeight" type="number" max="50" min="0" class="shrink"/>
 				<v-switch v-model="isLoading"/>
 			</v-card>
-			<v-card class="d-flex ma-2">
-				<v-text-field label="Thumb-size" v-model="thumbSize" type="number" max="100" min="0" class="shrink"/>
+			<v-card class="d-flex ma-2 pa-2">
+				<v-subheader>Thumb-size</v-subheader>
+				<v-text-field v-model="thumbSize" type="number" max="100" min="0" class="shrink"/>
 				<v-switch v-model="thumbLabel"/>
 			</v-card>
 		</v-row>
 		<v-row class="justify-space-around">
-			<v-card class="ma-2">
+			<v-card class="ma-2 pa-2">
 				<v-subheader>Background color</v-subheader>
 				<v-color-picker v-model="backgroundColor"/>
 			</v-card>
-			<v-card class="ma-2">
+			<v-card class="ma-2 pa-2">
 				<v-subheader>Track-color</v-subheader>
 				<v-color-picker v-model="trackColor"/>
 			</v-card>
-			<v-card class="ma-2">
+			<v-card class="ma-2 pa-2">
 				<v-subheader>Track-fill-color</v-subheader>
 				<v-color-picker v-model="trackFillColor"/>
 			</v-card>
-			<v-card class="ma-2">
+			<v-card class="ma-2 pa-2">
 				<v-subheader>Thumb-color</v-subheader>
 				<v-color-picker v-model="thumbColor"/>
 			</v-card>
@@ -91,7 +90,6 @@
 	messageText4: "Message 4",
 	messageText5: "Message 5",
 	isSuccess: false,
-	validateOnBlur: false,
 	}),
 	};
 </script>
