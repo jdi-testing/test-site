@@ -1,7 +1,8 @@
 <template>
 	<div>
 		<v-card class="pa-10 ma-10">
-			<v-range-slider :dark="isDarkTheme" min="-50" max="50" :value="[-25, 25]" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor" :height="height" :loader-height="loaderHeight" :loading="isLoading" :disabled="isDisabled" x:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]" :error-count="messagesCount" :readonly="readonly" :thumb-size="thumbSize" :thumb-label="thumbLabel" :success="isSuccess"/>
+			<v-range-slider :dark="isDarkTheme" min="-50" max="50" :value="[-25, 25]" :hide-details="isDetailsHidden" :error="isError" :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor" :height="height" :loader-height="loaderHeight" :loading="isLoading" :disabled="isDisabled" x:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]" :error-count="messagesCount" :readonly="readonly" :thumb-size="thumbSize" :thumb-label="thumbLabel" :success="isSuccess"
+			:validate-on-blur="validateOnBlur"/>
 		</v-card>
 		<v-row class="justify-space-around">
 			<v-card class="d-flex ma-2">
@@ -21,6 +22,9 @@
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-switch label="Error" v-model="isError"/>
+			</v-card>
+			<v-card class="d-flex ma-2">
+				<v-switch label="Validate on blur" v-model="validateOnBlur"/>
 			</v-card>
 			<v-card class="d-flex ma-2">
 				<v-text-field label="Height" v-model="height" type="number" min="0" class="shrink"/>
@@ -87,6 +91,7 @@
 	messageText4: "Message 4",
 	messageText5: "Message 5",
 	isSuccess: false,
+	validateOnBlur: false,
 	}),
 	};
 </script>
