@@ -45,13 +45,6 @@
 
         <v-col>
             <p class="text-h5">
-                Errors ranger sliders
-            </p>
-            <ErrorsRangerSlider id="ErrorsRangerSlider" />
-        </v-col>
-
-        <v-col>
-            <p class="text-h5">
                 Label ranger slider
             </p>
             <LabelRangerSlider id="LabelRangerSlider" />
@@ -80,9 +73,23 @@
 
         <v-col>
             <p class="text-h5">
+                Rule ranger slider
+            </p>
+            <RuleRangerSlider id="RuleRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Success ranger slider
             </p>
             <SuccessRangerSlider id="SuccessRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Errors ranger sliders
+            </p>
+            <ErrorsRangerSlider id="ErrorsRangerSlider" />
         </v-col>
 
         <v-col>
@@ -100,12 +107,13 @@ import StepRangeSlider from '@/components/form_inputs/range_sliders/StepRangeSli
 import VerticalSlidersRangeSlider from '@/components/form_inputs/range_sliders/VerticalSlidersRangeSlider.vue';
 import ThumbLabelRangeSlider from '@/components/form_inputs/range_sliders/ThumbLabelRangeSlider.vue';
 import AppendAndPrependIconsWithRangeSlider from '@/components/form_inputs/range_sliders/AppendAndPrependIconsWithRangeSlider.vue';
-import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import LabelRangerSlider from '@/components/form_inputs/range_sliders/LabelRangerSlider.vue';
 import ColorRangerSlider from '@/components/form_inputs/range_sliders/ColorRangerSlider.vue';
 import LoadingRangerSlider from '@/components/form_inputs/range_sliders/LoadingRangerSlider.vue';
 import HintRangerSlider from '@/components/form_inputs/range_sliders/HintRangerSlider.vue';
+import RuleRangerSlider from '@/components/form_inputs/range_sliders/RuleRangerSlider.vue';
 import SuccessRangerSlider from '@/components/form_inputs/range_sliders/SuccessRangerSlider.vue';
+import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
 import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
 
 export default {
@@ -116,12 +124,13 @@ export default {
     VerticalSlidersRangeSlider,
     ThumbLabelRangeSlider,
     AppendAndPrependIconsWithRangeSlider,
-    ErrorsRangerSlider,
     LabelRangerSlider,
     ColorRangerSlider,
     LoadingRangerSlider,
     HintRangerSlider,
+    RuleRangerSlider,
     SuccessRangerSlider,
+    ErrorsRangerSlider,
     AdjustableRangerSlider,
   },
 };
