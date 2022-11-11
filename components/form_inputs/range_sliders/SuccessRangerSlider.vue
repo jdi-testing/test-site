@@ -1,11 +1,6 @@
 <template>
 	<v-container>
-		<v-range-slider max="50" min="-50" :value="[-25, 25]"
-		:success-messages="[successText1, successText2,successText3,successText4,successText5]"
-		:error-count="messageCount"
-		:hide-details="isDetailsHidden"
-		/>
-
+		<v-range-slider max="50" min="-50" :value="[-25, 25]" :success-messages="[successText1, successText2,successText3,successText4,successText5]" :error-count="messageCount" :hide-details="isDetailsHidden"/>
 		<v-card class="ma-2 pa-2">
 			<v-switch label="Hide details" v-model="isDetailsHidden"/>
 			<v-text-field label="Success count" v-model="messageCount" type="number" min="0" max="5"/>

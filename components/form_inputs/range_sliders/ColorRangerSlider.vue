@@ -4,7 +4,7 @@
 		<v-card class="ma-2">
 			<v-color-picker v-model="color"/>
 		</v-card>
-</div>
+	</div>
 </template>
 <script>
 	export default {
