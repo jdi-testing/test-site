@@ -87,6 +87,27 @@
           </v-menu>
         </v-toolbar>
       </v-sheet>
+      <v-sheet>
+        <v-toolbar flat>
+          <v-text-field
+            v-model="manualDate"
+            label="Date"
+            persistent-hint
+            prepend-icon="mdi-calendar"
+            :hint="manualDateHint"
+            :rules="[manualDateRule]"
+            validate-on-blur
+          ></v-text-field>
+          <v-btn
+            outlined
+            color="grey darken-2"
+            class="ml-4"
+            @click="showManualDate"
+          >
+            Show
+          </v-btn>
+        </v-toolbar>
+      </v-sheet>
       <v-sheet height="600">
         <v-calendar
           id="calendar-events-click"
@@ -186,6 +207,8 @@
 <script>
 import moment from 'moment'
 
+const manualDateFormat = 'DD/MM/YYYY'
+
 export default {
   data: () => ({
     start: undefined,
@@ -204,6 +227,8 @@ export default {
     colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
     names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
     editOpen: false,
+    manualDate: '',
+    manualDateHint: `${manualDateFormat} format`,
   }),
   computed: {
     focusDate () {
@@ -217,6 +242,15 @@ export default {
     this.$refs.calendar.checkChange();
   },
   methods: {
+    manualDateRule(value) {
+      return moment(value, manualDateFormat).isValid() || `Invalid format. Should be "${manualDateFormat}"`
+    },
+    showManualDate() {
+      const manualDateParsed = moment(this.manualDate, manualDateFormat, /*strict=*/true)
+      if (manualDateParsed.isValid()) {
+        this.viewDay({date: manualDateParsed.toDate()})
+      }
+    },
     viewDay({ date }) {
       this.focus = date;
       this.type = 'day';
