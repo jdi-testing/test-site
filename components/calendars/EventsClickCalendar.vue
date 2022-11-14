@@ -38,6 +38,20 @@
           <v-toolbar-title v-if="$refs.calendar">
             {{ $refs.calendar.title }}
           </v-toolbar-title>
+          <v-btn
+            text
+            class="ml-4"
+            @click="prevYear"
+          >
+            Previous year
+          </v-btn>
+          <v-btn
+            text
+            class="ml-4"
+            @click="nextYear"
+          >
+            Next year
+          </v-btn>
           <v-spacer></v-spacer>
           <v-menu
             bottom
@@ -82,6 +96,7 @@
           :events="events"
           :event-color="getEventColor"
           :type="type"
+          :start="start"
           @click:event="showEvent"
           @click:more="viewDay"
           @click:date="viewDay"
@@ -169,8 +184,11 @@
   </v-row>
 </template>
 <script>
+import moment from 'moment'
+
 export default {
   data: () => ({
+    start: undefined,
     focus: '',
     type: 'month',
     typeToLabel: {
@@ -187,6 +205,14 @@ export default {
     names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
     editOpen: false,
   }),
+  computed: {
+    focusDate () {
+      if (this.focus === '') {
+        return moment()
+      }
+      return moment(this.focus)
+    }
+  },
   mounted() {
     this.$refs.calendar.checkChange();
   },
@@ -206,6 +232,12 @@ export default {
     },
     next() {
       this.$refs.calendar.next();
+    },
+    prevYear() {
+      this.start = this.focusDate.subtract(1, 'year').toDate()
+    },
+    nextYear() {
+      this.start = this.focusDate.add(1, 'year').toDate()
     },
     showEvent({ nativeEvent, event }) {
       const open = () => {
