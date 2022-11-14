@@ -2,7 +2,7 @@
     <div id="app">
         <v-card flat height=250>
           <v-container fluid>
-            <v-row class="child-flex">
+            <v-row>
               <v-col>
                 <v-toolbar rounded flat outlined short>
                   <v-btn
