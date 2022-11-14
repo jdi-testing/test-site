@@ -102,11 +102,47 @@
               :color="selectedEvent.color"
               dark
             >
-              <v-btn icon>
-                <v-icon>mdi-pencil</v-icon>
-              </v-btn>
+              <v-menu
+                offset-y
+                v-model="editOpen"
+                :close-on-content-click="false"
+              >
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    icon
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    <v-icon>mdi-pencil</v-icon>
+                  </v-btn>
+                </template>
+                <v-card>
+                  <v-card-title>
+                    Change event
+                  </v-card-title>
+                  <v-card-text>
+                    <v-text-field
+                      autofocus
+                      :value="selectedEvent.name"
+                      @change="changeEvent"
+                    />
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn
+                      color="secondary"
+                      text
+                      @click="editOpen = false"
+                    >
+                      Save and Close
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-menu>
               <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
               <v-spacer></v-spacer>
+              <v-btn icon @click="deleteEvent">
+                <v-icon>mdi-delete</v-icon>
+              </v-btn>
               <v-btn icon>
                 <v-icon>mdi-heart</v-icon>
               </v-btn>
@@ -149,6 +185,7 @@ export default {
     events: [],
     colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
     names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
+    editOpen: false,
   }),
   mounted() {
     this.$refs.calendar.checkChange();
@@ -207,6 +244,7 @@ export default {
           end: second,
           color: this.colors[this.rnd(0, this.colors.length - 1)],
           timed: !allDay,
+          id: i,
         });
       }
 
@@ -215,6 +253,16 @@ export default {
     rnd(a, b) {
       return Math.floor((b - a + 1) * Math.random()) + a;
     },
+    deleteEvent() {
+      this.events = this.events.filter(event => event.id !== this.selectedEvent.id)
+      this.selectedOpen = false
+    },
+    changeEvent(eventName) {
+      const changedEvent = {...this.selectedEvent, name: eventName}
+      this.events = this.events.map(event => event.id === this.selectedEvent.id ? changedEvent : event)
+      this.selectedEvent = changedEvent
+      this.editOpen = false
+    }
   },
 };
 </script>
