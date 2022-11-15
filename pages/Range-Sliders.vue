@@ -94,6 +94,13 @@
 
         <v-col>
             <p class="text-h5">
+                Ticks ranger sliders
+            </p>
+            <TicksRangerSlider id="TicksRangerSlider" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
                 Adjustable ranger slider
             </p>
             <AdjustableRangerSlider id="AdjustableRangerSlider" />
@@ -114,6 +121,7 @@ import HintRangerSlider from '@/components/form_inputs/range_sliders/HintRangerS
 import RuleRangerSlider from '@/components/form_inputs/range_sliders/RuleRangerSlider.vue';
 import SuccessRangerSlider from '@/components/form_inputs/range_sliders/SuccessRangerSlider.vue';
 import ErrorsRangerSlider from '@/components/form_inputs/range_sliders/ErrorsRangerSlider.vue';
+import TicksRangerSlider from '@/components/form_inputs/range_sliders/TicksRangerSlider.vue';
 import AdjustableRangerSlider from '@/components/form_inputs/range_sliders/AdjustableRangerSlider.vue';
 
 export default {
@@ -131,6 +139,7 @@ export default {
     RuleRangerSlider,
     SuccessRangerSlider,
     ErrorsRangerSlider,
+    TicksRangerSlider,
     AdjustableRangerSlider,
   },
 };

@@ -25,7 +25,7 @@
 				<v-text-field v-model="height" type="number" min="0" class="shrink"/>
 			</v-card>
 			<v-card class="d-flex ma-2 pa-2">
-				<v-subheader>Thumb-size</v-subheader>
+				<v-subheader>Thumb-size (default 'always')</v-subheader>
 				<v-text-field v-model="thumbSize" type="number" max="100" min="0" class="shrink"/>
 				<v-switch v-model="thumbLabel"/>
 			</v-card>
