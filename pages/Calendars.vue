@@ -52,6 +52,12 @@
             </p>
             <MiscDragAndDropCalendar id="MiscDragAndDropCalendar" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Dark theme calendar
+            </p>
+            <DarkCalendar id="DarkCalendar" />
+        </v-col>
 
     </v-container>
 </template>
@@ -65,6 +71,7 @@ import EventsClickCalendar from '@/components/calendars/EventsClickCalendar.vue'
 import SlotsDayCalendar from '@/components/calendars/SlotsDayCalendar.vue';
 import SlotsDayBodyCalendar from '@/components/calendars/SlotsDayBodyCalendar.vue';
 import MiscDragAndDropCalendar from '@/components/calendars/MiscDragAndDropCalendar.vue';
+import DarkCalendar from '@/components/calendars/DarkCalendar.vue';
 
 export default {
   name: 'Calendars',
@@ -76,6 +83,7 @@ export default {
     SlotsDayCalendar,
     SlotsDayBodyCalendar,
     MiscDragAndDropCalendar,
+    DarkCalendar,
   },
 };
 </script>
