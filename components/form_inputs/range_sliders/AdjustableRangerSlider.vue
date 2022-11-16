@@ -1,7 +1,23 @@
 <template>
 	<div>
 		<v-card class="pa-10 ma-10">
-			<v-range-slider :dark="isDarkTheme" :min="-50" :max="50" :value="[-25, 25]" :hide-details="isDetailsHidden"  :background-color="backgroundColor" :track-color="trackColor" :track-fill-color="trackFillColor" :thumb-color="thumbColor" :height="height" :disabled="isDisabled" :messages="[messageText1,messageText2,messageText3,messageText4,messageText5]" :readonly="readonly" :thumb-size="thumbSize" :thumb-label="thumbLabel" :dense="isDense"
+			<v-range-slider
+			:dark="isDarkTheme"
+			:min="-50"
+			:max="50"
+			:value="[-25, 25]"
+			:hide-details="isDetailsHidden"
+			:background-color="backgroundColor"
+			:track-color="trackColor"
+			:track-fill-color="trackFillColor"
+			:thumb-color="thumbColor"
+			:height="height"
+			:disabled="isDisabled"
+			:messages="[messageText1,messageText2,messageText3,messageText4,messageText5]"
+			:readonly="readonly"
+			:thumb-size="thumbSize"
+			:thumb-label="thumbLabel"
+			:dense="isDense"
 			:error-count="messagesCount" />
 		</v-card>
 		<v-row class="justify-space-around">
