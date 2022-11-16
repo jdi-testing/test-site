@@ -127,6 +127,36 @@
             </p>
             <ServerSideTable id="ServerSideTable" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Must sort
+            </p>
+            <MustSortTable id="MustSortTable" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Disabled sort
+            </p>
+            <DisabledSortTable id="DisabledSortTable" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Disabled pagination
+            </p>
+            <DisabledPaginationTable id="DisabledPaginationTable" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Fixed header
+            </p>
+            <FixedHeaderTable id="FixedHeaderTable" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                Dark
+            </p>
+            <DarkTable id="DarkTable" />
+        </v-col>
 
     </v-container>
 </template>
@@ -151,6 +181,11 @@ import ExpandableRowsTable from '@/components/tables/data_tables/ExpandableRowsT
 import ExternalPaginationTable from '@/components/tables/data_tables/ExternalPaginationTable.vue';
 import ExternalSortingTable from '@/components/tables/data_tables/ExternalSortingTable.vue';
 import ServerSideTable from '@/components/tables/data_tables/ServerSideTable.vue';
+import MustSortTable from '@/components/tables/data_tables/MustSortTable.vue';
+import DisabledSortTable from '@/components/tables/data_tables/DisabledSortTable.vue';
+import DisabledPaginationTable from '@/components/tables/data_tables/DisabledPaginationTable.vue';
+import FixedHeaderTable from '@/components/tables/data_tables/FixedHeaderTable.vue';
+import DarkTable from '@/components/tables/data_tables/DarkTable.vue';
 
 export default {
   name: 'DataTables',
@@ -174,7 +209,12 @@ export default {
     ExpandableRowsTable,
     ExternalPaginationTable,
     ExternalSortingTable,
-    ServerSideTable
+    ServerSideTable,
+    MustSortTable,
+    DisabledSortTable,
+    DisabledPaginationTable,
+    FixedHeaderTable,
+    DarkTable
   },
 };
 </script>
