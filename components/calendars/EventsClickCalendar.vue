@@ -231,7 +231,7 @@ export default {
     manualDateHint: `${manualDateFormat} format`,
   }),
   computed: {
-    focusDate () {
+    focusDate() {
       if (this.focus === '') {
         return moment()
       }
@@ -242,11 +242,14 @@ export default {
     this.$refs.calendar.checkChange();
   },
   methods: {
+    parseManualDate(value) {
+      return moment(value, manualDateFormat, /*strict=*/true)
+    },
     manualDateRule(value) {
-      return moment(value, manualDateFormat).isValid() || `Invalid format. Should be "${manualDateFormat}"`
+      return this.parseManualDate(value).isValid() || `Invalid format. Should be "${manualDateFormat}"`
     },
     showManualDate() {
-      const manualDateParsed = moment(this.manualDate, manualDateFormat, /*strict=*/true)
+      const manualDateParsed = this.parseManualDate(this.manualDate)
       if (manualDateParsed.isValid()) {
         this.viewDay({date: manualDateParsed.toDate()})
       }
@@ -267,11 +270,14 @@ export default {
     next() {
       this.$refs.calendar.next();
     },
+    formatFocusDate(value) {
+      return value.format('YYYY-MM-DD')
+    },
     prevYear() {
-      this.start = this.focusDate.subtract(1, 'year').toDate()
+      this.focus = this.formatFocusDate(this.focusDate.subtract(1, 'year'))
     },
     nextYear() {
-      this.start = this.focusDate.add(1, 'year').toDate()
+      this.focus = this.formatFocusDate(this.focusDate.add(1, 'year'))
     },
     showEvent({ nativeEvent, event }) {
       const open = () => {
