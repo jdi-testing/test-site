@@ -1,61 +1,30 @@
 <template>
-  <v-container>
-    <v-col>
-        <h1>Lazy</h1>
-        <p class="body-1 mt-2">
-          The <code>v-lazy</code> component is used to dynamically load components based upon an elements visibility.
-        </p>
-    </v-col>
-    
-    <v-responsive
-      class="overflow-y-auto"
-      max-height="400"
-    >
-      <div class="pa-6 text-center">
-        Scroll down
-      </div>
+    <v-container>
+        <v-col>
+            <h1>Lazy</h1>
+            <p class="body-1 mt-2">
+                The <code>v-lazy</code> component by default will not render its contents until it has been intersected.
+                 Scroll down and watch the element render as you go past it.
+            </p>
+        </v-col>
 
-      <v-responsive
-        height="200vh"
-        class="text-center pa-2"
-      >
-        <v-responsive min-height="50vh"></v-responsive>
-        <div class="text-center text-body-2 mb-12">
-          The card will appear below:
-        </div>
+        <v-col>
+            <p class="text-h5">
+                Lazy card
+            </p>
+            <LazyCard id="lazyCard" />
+        </v-col>
 
-        <v-lazy
-          v-model="isActive"
-          :options="{
-            threshold: .5
-          }"
-          min-height="200"
-          transition="fade-transition"
-        >
-          <v-card
-            class="mx-auto"
-            max-width="336"
-          >
-            <v-card-title>Card title</v-card-title>
-
-            <v-card-text>
-              Phasellus magna. Quisque rutrum. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, 
-              at malesuada velit leo quis pede. Aliquam lobortis. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna.
-
-              In turpis. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In turpis. Pellentesque dapibus 
-              hendrerit tortor. Ut varius tincidunt libero.
-            </v-card-text>
-          </v-card>
-        </v-lazy>
-      </v-responsive>
-    </v-responsive>
-  </v-container>
+    </v-container>
 </template>
+
 <script>
-  export default {
-    name: 'Lazy',
-    data: () => ({
-      isActive: false,
-    }),
-  }
+import LazyCard from '@/components/lazy/LazyCard.vue';
+
+export default {
+  name: 'Lazy',
+  components: {
+    LazyCard,
+  },
+};
 </script>
