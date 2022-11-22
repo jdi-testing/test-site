@@ -7,6 +7,7 @@
       show-arrows
     >
       <v-window-item
+      eager
       >
         <v-card
           color="grey"
@@ -28,6 +29,7 @@
       </v-window-item>
       <v-window-item
         disabled
+        eager
             >
               <v-card
                 color="green"
@@ -48,6 +50,7 @@
               </v-card>
             </v-window-item>
             <v-window-item
+            eager
                   >
                     <v-card
                       color="blue"
