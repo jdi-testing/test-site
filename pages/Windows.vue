@@ -46,7 +46,7 @@
 
         <v-col>
             <p class="text-h5">
-                Disabled window item
+                Disabled window item(№2 is disabled)
             </p>
             <DisabledWindowItem id="DisabledWindowItem" />
         </v-col>
