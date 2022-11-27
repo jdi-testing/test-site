@@ -32,21 +32,10 @@
                     dense
             ></v-autocomplete>
           </v-col>
-          <v-col cols="12">
-            <v-autocomplete
-                    v-model="values"
-                    :items="items"
-                    label="Small chips"
-                    multiple
-                    dense
-                    small-chips
-            ></v-autocomplete>
-          </v-col>
         </v-row>
       </v-container>
     </v-card>
   </v-container>
-
 </template>
 
 <script>
