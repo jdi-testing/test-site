@@ -1,5 +1,6 @@
 <template>
-  <v-stepper>
+  <v-stepper
+    dark>
     <v-stepper-header>
       <v-stepper-step step="1">
         Ad unit details
