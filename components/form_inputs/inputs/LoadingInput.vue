@@ -9,6 +9,7 @@
       color="success"
       :loading="loading"
       :disabled="loading"
+      height=35
     ></v-text-field>
   </div>
 </template>

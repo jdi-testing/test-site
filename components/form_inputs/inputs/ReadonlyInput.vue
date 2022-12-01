@@ -7,8 +7,12 @@
       <v-col cols="12">
         <v-input
           readonly
+          background-color=blue
+          text
+          color=white
+          dark
         >
-          Readonly input
+          Readonly&back-ground color&dark theme input
         </v-input>
       </v-col>
     </v-row>
