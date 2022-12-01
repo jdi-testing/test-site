@@ -6,7 +6,8 @@
         The <code>v-autocomplete</code> component can be used to fix any section to a specific aspect ratio
       </p>
     </v-col>
-    <AutocompleteDense />
+    <AutocompleteStyle />
+    <AutocompleteFunctionality />
     <AutocompleteFilter />
     <AutocompleteSlots />
     <AutocompleteAPISearch />
@@ -15,7 +16,8 @@
 </template>
 
 <script>
-import AutocompleteDense from '@/components/form_inputs/autocompletes/AutocompleteDense.vue';
+import AutocompleteStyle from '@/components/form_inputs/autocompletes/AutocompleteStyle.vue';
+import AutocompleteFunctionality from '@/components/form_inputs/autocompletes/AutocompleteFunctionality.vue';
 import AutocompleteFilter from '@/components/form_inputs/autocompletes/AutocompleteFilter.vue';
 import AutocompleteSlots from '@/components/form_inputs/autocompletes/AutocompleteSlots.vue';
 import AutocompleteAPISearch from '@/components/form_inputs/autocompletes/AutocompleteAPISearch.vue';
@@ -24,7 +26,8 @@ import AutocompleteAsyncItems from '@/components/form_inputs/autocompletes/Autoc
 export default {
   name: 'Autocompletes',
   components: {
-    AutocompleteDense,
+    AutocompleteStyle,
+    AutocompleteFunctionality,
     AutocompleteFilter,
     AutocompleteSlots,
     AutocompleteAPISearch,
