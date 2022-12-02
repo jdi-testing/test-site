@@ -2,6 +2,7 @@
   <v-input
     :success-messages="['Success']"
     success
+    dense
   >
     Input
   </v-input>
