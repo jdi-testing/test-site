@@ -77,6 +77,12 @@
             </p>
             <ReadonlyInput id="readonlyInput" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Validate-on-blur input
+            </p>
+            <ValidateOnBlurInput id="ValidateOnBlurInput" />
+        </v-col>
 
     </v-container>
 </template>
@@ -92,6 +98,7 @@ import SuccessInput from '@/components/form_inputs/inputs/SuccessInput.vue';
 import SlotClicksInput from '@/components/form_inputs/inputs/SlotClicksInput.vue';
 import AppendAndPrependInput from '@/components/form_inputs/inputs/AppendAndPrependInput.vue';
 import ReadonlyInput from '@/components/form_inputs/inputs/ReadonlyInput.vue';
+import ValidateOnBlurInput from '@/components/form_inputs/inputs/ValidateOnBlurInput.vue';
 
 export default {
   name: 'Inputs',
@@ -106,6 +113,7 @@ export default {
     SlotClicksInput,
     AppendAndPrependInput,
     ReadonlyInput,
+    ValidateOnBlurInput,
   },
   data() {
     return {
