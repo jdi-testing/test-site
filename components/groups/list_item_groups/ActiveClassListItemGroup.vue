@@ -5,9 +5,10 @@
   >
     <v-list>
       <v-list-item-group
+        dark
         v-model="model"
         active-class="border"
-        color="indigo"
+        color=blue
       >
         <v-list-item
           v-for="(item, i) in items"
@@ -47,7 +48,12 @@ export default {
 };
 </script>
 <style scoped>
-.border {
-  border: 2px dashed orange;
+  .border {
+    border: 2px dashed orange;
+  }
+</style>
+<style>
+#ActiveClassListItemGroup .v-item-group {
+background-color: black
 }
 </style>
