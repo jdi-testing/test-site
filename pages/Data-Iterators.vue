@@ -31,6 +31,12 @@
             </p>
             <SingleSelectTableIterator id="SingleSelectTableIterator" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Group Table Iterator
+            </p>
+            <GroupTableIterator id="GroupTableIterator" />
+        </v-col>
 
 
     </v-container>
@@ -40,6 +46,7 @@ import DefaultTable from '@/components/tables/data_iterators/DefaultTable.vue';
 import HeaderFooterTable from '@/components/tables/data_iterators/HeaderFooterTable.vue';
 import FilterTable from '@/components/tables/data_iterators/FilterTable.vue';
 import SingleSelectTableIterator from '@/components/tables/data_iterators/SingleSelectTableIterator.vue';
+import GroupTableIterator from '@/components/tables/data_iterators/GroupTableIterator.vue';
 
 export default {
   name: 'DataIterators',
@@ -47,7 +54,8 @@ export default {
     DefaultTable,
     HeaderFooterTable,
     FilterTable,
-    SingleSelectTableIterator
+    SingleSelectTableIterator,
+    GroupTableIterator,
   },
 };
 </script>
