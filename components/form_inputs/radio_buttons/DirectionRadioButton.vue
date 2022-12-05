@@ -3,6 +3,8 @@
     <v-radio-group
       v-model="column"
       column
+      dark
+      background-color="black"
     >
       <v-radio
         label="Option 1"
@@ -17,6 +19,8 @@
     <v-radio-group
       v-model="row"
       row
+      dark
+      background-color="black"
     >
       <v-radio
         label="Option 1"
