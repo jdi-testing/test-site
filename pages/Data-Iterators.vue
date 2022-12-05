@@ -25,6 +25,13 @@
             </p>
             <FilterTable id="FilterTable" />
         </v-col>
+        <v-col>
+            <p class="text-h5">
+                Single Select Table Iterator
+            </p>
+            <SingleSelectTableIterator id="SingleSelectTableIterator" />
+        </v-col>
+
 
     </v-container>
 </template>
@@ -32,13 +39,15 @@
 import DefaultTable from '@/components/tables/data_iterators/DefaultTable.vue';
 import HeaderFooterTable from '@/components/tables/data_iterators/HeaderFooterTable.vue';
 import FilterTable from '@/components/tables/data_iterators/FilterTable.vue';
+import SingleSelectTableIterator from '@/components/tables/data_iterators/SingleSelectTableIterator.vue';
 
 export default {
   name: 'DataIterators',
   components: {
     DefaultTable,
     HeaderFooterTable,
-    FilterTable
+    FilterTable,
+    SingleSelectTableIterator
   },
 };
 </script>
