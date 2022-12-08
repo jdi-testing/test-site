@@ -7,15 +7,16 @@
       elevation=10
       rounded
       app
+      max-height=60
+      max-width=1200
+      min-height=40
+      min-width=800
+      tile
+      color="red lighten-1"
     >
-      <v-card
-        width="100%"
-        class="red lighten-1 text-center"
-      >
-        <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-        </v-card-text>
-      </v-card>
+      <v-card-text class="white--text text-center">
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      </v-card-text>
     </v-footer>
   </v-card>
 </template>
