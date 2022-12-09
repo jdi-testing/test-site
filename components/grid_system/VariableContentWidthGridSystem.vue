@@ -3,6 +3,7 @@
     <v-row
       class="mb-6"
       justify="center"
+      align-content="end"
       no-gutters
     >
       <v-col lg="2">

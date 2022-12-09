@@ -40,6 +40,19 @@
             <VuelidateForm id="VuelidateForm" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Disabled form
+            </p>
+            <DisabledForm id="DisabledForm" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Readonly form
+            </p>
+            <ReadonlyForm id="ReadonlyForm" />
+        </v-col>
     </v-container>
 </template>
 
@@ -48,6 +61,8 @@ import RulesForm from '@/components/form_inputs/forms/RulesForm.vue';
 import ValidationWithSubmitClearForm from '@/components/form_inputs/forms/ValidationWithSubmitClearForm.vue';
 import VeeValidateForm from '@/components/form_inputs/forms/VeeValidateForm.vue';
 import VuelidateForm from '@/components/form_inputs/forms/VuelidateForm.vue';
+import DisabledForm from '@/components/form_inputs/forms/DisabledForm.vue';
+import ReadonlyForm from '@/components/form_inputs/forms/ReadonlyForm.vue';
 
 export default {
   name: 'Forms',
@@ -56,6 +71,8 @@ export default {
     ValidationWithSubmitClearForm,
     VeeValidateForm,
     VuelidateForm,
+    DisabledForm,
+    ReadonlyForm
   },
 };
 </script>

@@ -1,0 +1,22 @@
+<template>
+  <v-container>
+    <v-textarea
+      label="Label"
+      suffix="Suffix"
+      single-line
+      flat
+      solo
+      placeholder="Placeholder"
+      persistent-placeholder
+    ></v-textarea>
+
+    <v-textarea
+          label="Label"
+          prefix="Prefix"
+          flat
+          solo-inverted
+          hint="Hint"
+          persistent-hint
+        ></v-textarea>
+  </v-container>
+</template>

@@ -71,6 +71,20 @@
             </p>
             <TransitionAlert id="transitionAlert" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Rounded alert
+            </p>
+            <RoundedAlert id="roundedAlert" />
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Tile alert
+            </p>
+            <TileAlert id="tileAlert" />
+        </v-col>
     </v-container>
 </template>
 
@@ -85,6 +99,8 @@ import OutlinedAlert from '@/components/alerts/OutlinedAlert.vue';
 import ProminentAlert from '@/components/alerts/ProminentAlert.vue';
 import TextAlert from '@/components/alerts/TextAlert.vue';
 import TransitionAlert from '@/components/alerts/TransitionAlert.vue';
+import RoundedAlert from '@/components/alerts/RoundedAlert.vue';
+import TileAlert from '@/components/alerts/TileAlert.vue';
 
 export default {
   name: 'Alerts',
@@ -98,6 +114,8 @@ export default {
     ProminentAlert,
     TextAlert,
     TransitionAlert,
+    RoundedAlert,
+    TileAlert,
   },
 };
 </script>

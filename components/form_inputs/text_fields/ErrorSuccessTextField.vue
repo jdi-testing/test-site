@@ -1,0 +1,138 @@
+<template>
+  <v-form>
+    <v-container>
+      <v-row>
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field label="Regular"></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Regular"
+            error
+            errorMessages="Error"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Regular"
+            success
+            successMessages="Success"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Solo"
+            solo
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Solo"
+            solo
+            error
+            errorMessages="Error"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Solo"
+            solo
+            success
+            successMessages="Success"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Filled"
+            filled
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Filled"
+            filled
+            error
+            errorMessages="Error"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Filled"
+            filled
+            success
+            successMessages="Success"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Outlined"
+            outlined
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Outlined"
+            outlined
+            error
+            errorMessages="Error"
+          ></v-text-field>
+        </v-col>
+
+        <v-col
+          cols="12"
+          sm="4"
+        >
+          <v-text-field
+            label="Outlined"
+            outlined
+            success
+            successMessages="Success"
+          ></v-text-field>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-form>
+</template>

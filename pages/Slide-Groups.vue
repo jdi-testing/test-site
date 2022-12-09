@@ -43,6 +43,13 @@
             <PseudoCarouselSlideGroup id="PseudoCarouselSlideGroup" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Mandatory slide group
+            </p>
+            <MandatorySlideGroup id="MandatorySlideGroup" />
+        </v-col>
+
     </v-container>
 </template>
 
@@ -52,6 +59,7 @@ import CenterActiveSlideGroup from '@/components/groups/slide_groups/CenterActiv
 import CustomIconsSlideGroup from '@/components/groups/slide_groups/CustomIconsSlideGroup.vue';
 import MultipleSlideGroup from '@/components/groups/slide_groups/MultipleSlideGroup.vue';
 import PseudoCarouselSlideGroup from '@/components/groups/slide_groups/PseudoCarouselSlideGroup.vue';
+import MandatorySlideGroup from '@/components/groups/slide_groups/MandatorySlideGroup.vue';
 
 export default {
   name: 'SlideGroups',
@@ -61,6 +69,7 @@ export default {
     CustomIconsSlideGroup,
     MultipleSlideGroup,
     PseudoCarouselSlideGroup,
+    MandatorySlideGroup,
   },
 };
 </script>

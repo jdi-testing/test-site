@@ -1,7 +1,9 @@
 <template>
   <v-file-input
+    solo
+    solo-inverted
+    background-color=blue
+    truncate-length=10
     label="File input"
-    filled
-    prepend-icon="mdi-camera"
   ></v-file-input>
 </template>

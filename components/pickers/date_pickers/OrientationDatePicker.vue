@@ -7,6 +7,7 @@
     <v-date-picker
       v-model="picker"
       :landscape="landscape"
+      dark
     ></v-date-picker>
   </v-row>
 </template>

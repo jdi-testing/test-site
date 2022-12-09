@@ -1,0 +1,15 @@
+<template>
+  <v-container>
+    <v-textarea
+      color="black"
+      background-color="light-blue"
+      label="Label"
+      disabled
+      flat
+      full-width
+      height="100"
+      rounded
+      reverse
+    ></v-textarea>
+  </v-container>
+</template>

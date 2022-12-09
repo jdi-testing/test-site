@@ -38,6 +38,20 @@
           <v-toolbar-title v-if="$refs.calendar">
             {{ $refs.calendar.title }}
           </v-toolbar-title>
+          <v-btn
+            text
+            class="ml-4"
+            @click="prevYear"
+          >
+            Previous year
+          </v-btn>
+          <v-btn
+            text
+            class="ml-4"
+            @click="nextYear"
+          >
+            Next year
+          </v-btn>
           <v-spacer></v-spacer>
           <v-menu
             bottom
@@ -73,6 +87,27 @@
           </v-menu>
         </v-toolbar>
       </v-sheet>
+      <v-sheet>
+        <v-toolbar flat>
+          <v-text-field
+            v-model="manualDate"
+            label="Date"
+            persistent-hint
+            prepend-icon="mdi-calendar"
+            :hint="manualDateHint"
+            :rules="[manualDateRule]"
+            validate-on-blur
+          ></v-text-field>
+          <v-btn
+            outlined
+            color="grey darken-2"
+            class="ml-4"
+            @click="showManualDate"
+          >
+            Show
+          </v-btn>
+        </v-toolbar>
+      </v-sheet>
       <v-sheet height="600">
         <v-calendar
           id="calendar-events-click"
@@ -82,6 +117,7 @@
           :events="events"
           :event-color="getEventColor"
           :type="type"
+          :start="start"
           @click:event="showEvent"
           @click:more="viewDay"
           @click:date="viewDay"
@@ -102,11 +138,47 @@
               :color="selectedEvent.color"
               dark
             >
-              <v-btn icon>
-                <v-icon>mdi-pencil</v-icon>
-              </v-btn>
+              <v-menu
+                offset-y
+                v-model="editOpen"
+                :close-on-content-click="false"
+              >
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    icon
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    <v-icon>mdi-pencil</v-icon>
+                  </v-btn>
+                </template>
+                <v-card>
+                  <v-card-title>
+                    Change event
+                  </v-card-title>
+                  <v-card-text>
+                    <v-text-field
+                      autofocus
+                      :value="selectedEvent.name"
+                      @change="changeEvent"
+                    />
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-btn
+                      color="secondary"
+                      text
+                      @click="editOpen = false"
+                    >
+                      Save and Close
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-menu>
               <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
               <v-spacer></v-spacer>
+              <v-btn icon @click="deleteEvent">
+                <v-icon>mdi-delete</v-icon>
+              </v-btn>
               <v-btn icon>
                 <v-icon>mdi-heart</v-icon>
               </v-btn>
@@ -133,8 +205,13 @@
   </v-row>
 </template>
 <script>
+import moment from 'moment'
+
+const manualDateFormat = 'DD/MM/YYYY'
+
 export default {
   data: () => ({
+    start: undefined,
     focus: '',
     type: 'month',
     typeToLabel: {
@@ -149,11 +226,34 @@ export default {
     events: [],
     colors: ['blue', 'indigo', 'deep-purple', 'cyan', 'green', 'orange', 'grey darken-1'],
     names: ['Meeting', 'Holiday', 'PTO', 'Travel', 'Event', 'Birthday', 'Conference', 'Party'],
+    editOpen: false,
+    manualDate: '',
+    manualDateHint: `${manualDateFormat} format`,
   }),
+  computed: {
+    focusDate() {
+      if (this.focus === '') {
+        return moment()
+      }
+      return moment(this.focus)
+    }
+  },
   mounted() {
     this.$refs.calendar.checkChange();
   },
   methods: {
+    parseManualDate(value) {
+      return moment(value, manualDateFormat, /*strict=*/true)
+    },
+    manualDateRule(value) {
+      return this.parseManualDate(value).isValid() || `Invalid format. Should be "${manualDateFormat}"`
+    },
+    showManualDate() {
+      const manualDateParsed = this.parseManualDate(this.manualDate)
+      if (manualDateParsed.isValid()) {
+        this.viewDay({date: manualDateParsed.toDate()})
+      }
+    },
     viewDay({ date }) {
       this.focus = date;
       this.type = 'day';
@@ -169,6 +269,15 @@ export default {
     },
     next() {
       this.$refs.calendar.next();
+    },
+    formatFocusDate(value) {
+      return value.format('YYYY-MM-DD')
+    },
+    prevYear() {
+      this.focus = this.formatFocusDate(this.focusDate.subtract(1, 'year'))
+    },
+    nextYear() {
+      this.focus = this.formatFocusDate(this.focusDate.add(1, 'year'))
     },
     showEvent({ nativeEvent, event }) {
       const open = () => {
@@ -207,6 +316,7 @@ export default {
           end: second,
           color: this.colors[this.rnd(0, this.colors.length - 1)],
           timed: !allDay,
+          id: i,
         });
       }
 
@@ -215,6 +325,16 @@ export default {
     rnd(a, b) {
       return Math.floor((b - a + 1) * Math.random()) + a;
     },
+    deleteEvent() {
+      this.events = this.events.filter(event => event.id !== this.selectedEvent.id)
+      this.selectedOpen = false
+    },
+    changeEvent(eventName) {
+      const changedEvent = {...this.selectedEvent, name: eventName}
+      this.events = this.events.map(event => event.id === this.selectedEvent.id ? changedEvent : event)
+      this.selectedEvent = changedEvent
+      this.editOpen = false
+    }
   },
 };
 </script>

@@ -5,6 +5,7 @@
         cols="12"
         sm="6"
         md="8"
+        align-self="end"
       >
         <v-card
           class="pa-2"

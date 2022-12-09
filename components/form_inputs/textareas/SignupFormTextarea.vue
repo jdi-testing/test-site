@@ -62,6 +62,7 @@
       <v-text-field
         v-model="phone"
         :rules="[rules.phone]"
+        validate-on-blur
         filled
         color="deep-purple"
         label="Phone number"
@@ -69,6 +70,7 @@
       <v-text-field
         v-model="email"
         :rules="[rules.email]"
+        validate-on-blur
         filled
         color="deep-purple"
         label="Email address"
@@ -85,6 +87,7 @@
       <v-checkbox
         v-model="agreement"
         :rules="[rules.required]"
+        validate-on-blur
         color="deep-purple"
       >
         <template v-slot:label>

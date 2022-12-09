@@ -54,9 +54,8 @@
             <p class="text-h5">
                 Adjustable chip group
             </p>
-            <AdjustableChipGroup id="ToothbrushCardChipGroup" />
+            <AdjustableChipGroup id="AdjustableChipGroup" />
         </v-col>
-
     </v-container>
 </template>
 

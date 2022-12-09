@@ -5,6 +5,7 @@
       show-swatches
       @input="checkInput"
       @update:mode="updateMode"
+      dark
     ></v-color-picker>
     <v-color-picker
       class="ma-2"
@@ -12,6 +13,7 @@
       show-swatches
       @input="checkInput"
       @update:mode="updateMode"
+      dark
     ></v-color-picker>
     <v-color-picker
       class="ma-2"
@@ -19,6 +21,7 @@
       swatches-max-height="300px"
       @input="checkInput"
       @update:mode="updateMode"
+      dark
     ></v-color-picker>
   </v-row>
 </template>

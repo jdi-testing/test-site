@@ -1,7 +1,8 @@
 <template>
   <v-container class="grey lighten-5">
     <v-row>
-      <v-col sm="9">
+      <v-col sm="9"
+      align-self="start">
         <v-card
           class="pa-2"
           outlined

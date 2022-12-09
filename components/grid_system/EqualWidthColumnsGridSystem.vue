@@ -2,7 +2,8 @@
   <v-container class="grey lighten-5">
     <v-row no-gutters>
       <template v-for="n in 4">
-        <v-col :key="n">
+        <v-col :key="n"
+        align-self="center">
           <v-card
             class="pa-2"
             outlined

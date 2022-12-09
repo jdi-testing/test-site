@@ -34,7 +34,7 @@
     <v-col>
       <p class="text-h5">Settings</p>
       <v-row class="mx-5 align-center">
-        <span>Backround color</span>
+        <span>Background color</span>
         <v-color-picker
           v-model="backgroundColor"
           class="ma-0"

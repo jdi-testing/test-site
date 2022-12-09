@@ -6,6 +6,7 @@
     <v-time-picker
       v-model="picker"
       scrollable
+      dark
     ></v-time-picker>
   </v-row>
 </template>

@@ -2,7 +2,7 @@
   <v-input
     :success-messages="['Success']"
     success
-    disabled
+    dense
   >
     Input
   </v-input>

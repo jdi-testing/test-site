@@ -4,6 +4,7 @@
     class="pa-3"
   >
     <v-skeleton-loader
+      dark
       class="mx-auto"
       height="250"
       max-width="300"
@@ -14,13 +15,3 @@
     ></v-skeleton-loader>
   </v-sheet>
 </template>
-
-<script>
-  export default {
-    inject: {
-      theme: {
-        default: { isDark: true },
-      },
-    },
-  }
-</script>
