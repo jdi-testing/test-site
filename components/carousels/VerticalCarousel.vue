@@ -1,9 +1,7 @@
 <template>
   <v-carousel
-    id="VerticalCarousel"
     vertical
     vertical-delimiters
-    dark
     reverse
     cycle
     interval="6000"
