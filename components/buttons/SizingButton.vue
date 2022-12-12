@@ -9,7 +9,7 @@
          cols="12"
          sm="6"
        >
-         <div class="text-center">
+         <div class="text-center" id="SizingButtons">
            <div class="my-2">
              <v-btn
                x-small
@@ -65,7 +65,7 @@
          cols="12"
          sm="6"
        >
-         <div class="text-center">
+         <div class="text-center" id="SizingIconButtons">
            <div class="my-2">
              <v-btn
                color="secondary"
