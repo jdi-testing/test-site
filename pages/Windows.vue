@@ -51,6 +51,12 @@
             <DisabledWindowItem id="DisabledWindowItem" />
         </v-col>
 
+        <v-col>
+            <p class="text-h5">
+                Vertical buttons window
+            </p>
+            <VerticalButtonsWindow id="VerticalButtonsWindow" />
+        </v-col>
     </v-container>
 </template>
 
@@ -61,6 +67,7 @@ import CustomizedArrowsWindow from '@/components/groups/windows/CustomizedArrows
 import AccountCreationWindow from '@/components/groups/windows/AccountCreationWindow.vue';
 import OnboardingWindow from '@/components/groups/windows/OnboardingWindow.vue';
 import DisabledWindowItem from '@/components/groups/windows/DisabledWindowItem.vue';
+import VerticalButtonsWindow from '@/components/groups/windows/VerticalButtonsWindow.vue';
 
 export default {
   name: 'Windows',
@@ -71,6 +78,7 @@ export default {
     AccountCreationWindow,
     OnboardingWindow,
     DisabledWindowItem,
+    VerticalButtonsWindow
   },
 };
 </script>
