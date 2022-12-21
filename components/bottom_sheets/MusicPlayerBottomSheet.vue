@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <v-bottom-sheet inset>
+    <v-bottom-sheet inset max-width='800px'>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="red"
