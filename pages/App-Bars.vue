@@ -113,6 +113,10 @@
                 <InvertedScrollingBar id="invertedScrollingBar"/>
             </v-col>
             <v-col>
+                <p class="text-h5">
+                  Elevated
+                </p>
+                <ElevatedBar id="elevatedBar"/>
             </v-col>
         </v-row>
     </v-container>
@@ -135,6 +139,7 @@ import ImageBar from '@/components/bars/appbars/ImageBar.vue';
 import ScrollThresholdBar from '@/components/bars/appbars/ScrollThresholdBar.vue';
 import ToggleNavigationDrawersBar from '@/components/bars/appbars/ToggleNavigationDrawersBar.vue';
 import InvertedScrollingBar from '@/components/bars/appbars/InvertedScrollingBar.vue';
+import ElevatedBar from '@/components/bars/appbars/ElevatedBar.vue';
 
 export default {
   name: 'AppBars',
@@ -154,6 +159,7 @@ export default {
     ScrollThresholdBar,
     ToggleNavigationDrawersBar,
     InvertedScrollingBar,
+    ElevatedBar
   },
 };
 </script>
