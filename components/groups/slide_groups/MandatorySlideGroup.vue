@@ -3,6 +3,7 @@
     class="mx-auto"
     elevation="8"
     max-width="800"
+    dark
   >
     <v-slide-group
       v-model="model"
