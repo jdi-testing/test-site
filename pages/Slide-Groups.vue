@@ -10,7 +10,7 @@
 
         <v-col>
             <p class="text-h5">
-                Active class slide group (mandatory slide)
+                Active class slide group
             </p>
             <ActiveClassSlideGroup id="ActiveClassSlideGroup" />
         </v-col>
