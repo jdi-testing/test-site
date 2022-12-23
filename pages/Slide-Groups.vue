@@ -45,7 +45,7 @@
 
         <v-col>
             <p class="text-h5">
-                Mandatory slide group
+                Mandatory slide group with dark theme
             </p>
             <MandatorySlideGroup id="MandatorySlideGroup" />
         </v-col>
