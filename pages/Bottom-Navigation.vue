@@ -55,7 +55,14 @@
                 Toggle
             </p>
             <ToggleBottomNavigation id="toggleBottomNavigation" />
-        </v-col>                
+        </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Fixed
+            </p>
+            <FixedBottomNavigation id="fixedBottomNavigation" />
+        </v-col>
     </v-container>
 </template>
 
@@ -67,6 +74,7 @@ import HorizontalBottomNavigation from '@/components/bottom_navigation/Horizonta
 import ScrollThresholdBottomNavigation from '@/components/bottom_navigation/ScrollThresholdBottomNavigation.vue';
 import ShiftBottomNavigation from '@/components/bottom_navigation/ShiftBottomNavigation.vue';
 import ToggleBottomNavigation from '@/components/bottom_navigation/ToggleBottomNavigation.vue';
+import FixedBottomNavigation from '@/components/bottom_navigation/FixedBottomNavigation.vue';
 
 export default {
   name: 'BottomNavigation',
@@ -78,6 +86,7 @@ export default {
     ScrollThresholdBottomNavigation,
     ShiftBottomNavigation,
     ToggleBottomNavigation,
+    FixedBottomNavigation
   },       
 };
 </script>
