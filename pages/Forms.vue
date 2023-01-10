@@ -53,6 +53,13 @@
             </p>
             <ReadonlyForm id="ReadonlyForm" />
         </v-col>
+
+        <v-col>
+            <p class="text-h5">
+                Submit form
+            </p>
+            <SubmitForm id="SubmitForm" />
+        </v-col>
     </v-container>
 </template>
 
@@ -63,6 +70,7 @@ import VeeValidateForm from '@/components/form_inputs/forms/VeeValidateForm.vue'
 import VuelidateForm from '@/components/form_inputs/forms/VuelidateForm.vue';
 import DisabledForm from '@/components/form_inputs/forms/DisabledForm.vue';
 import ReadonlyForm from '@/components/form_inputs/forms/ReadonlyForm.vue';
+import SubmitForm from '@/components/form_inputs/forms/SubmitForm.vue';
 
 export default {
   name: 'Forms',
@@ -72,7 +80,8 @@ export default {
     VeeValidateForm,
     VuelidateForm,
     DisabledForm,
-    ReadonlyForm
+    ReadonlyForm,
+    SubmitForm
   },
 };
 </script>
