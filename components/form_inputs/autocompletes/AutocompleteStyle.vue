@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="style">
     <h2>Style</h2>
     <h3>Basic</h3>
     <v-card>

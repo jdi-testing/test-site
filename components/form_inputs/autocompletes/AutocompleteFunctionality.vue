@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="functionality">
     <h2>Functionality</h2>
     <v-card>
       <v-container>

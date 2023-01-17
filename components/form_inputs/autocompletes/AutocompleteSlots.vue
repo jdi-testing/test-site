@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="slots">
     <h2>Slots: Item and Selection</h2>
     <v-card
       color="blue-grey darken-1"
