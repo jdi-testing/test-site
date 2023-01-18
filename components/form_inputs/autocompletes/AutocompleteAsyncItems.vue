@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="async">
     <h2>Asynchronous Items</h2>
     <v-toolbar
       dark
