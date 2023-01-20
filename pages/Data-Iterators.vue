@@ -37,7 +37,24 @@
             </p>
             <GroupTableIterator id="GroupTableIterator" />
         </v-col>
-
+        <v-col>
+            <p class="text-h5">
+                Loading text
+            </p>
+            <LoadingText id="LoadingText" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                No Data text
+            </p>
+            <NoDataText id="NoDataText" />
+        </v-col>
+        <v-col>
+            <p class="text-h5">
+                No Results Text
+            </p>
+            <NoResultsText id="NoResultsText" />
+        </v-col>
 
     </v-container>
 </template>
@@ -47,6 +64,9 @@ import HeaderFooterTable from '@/components/tables/data_iterators/HeaderFooterTa
 import FilterTable from '@/components/tables/data_iterators/FilterTable.vue';
 import SingleSelectTableIterator from '@/components/tables/data_iterators/SingleSelectTableIterator.vue';
 import GroupTableIterator from '@/components/tables/data_iterators/GroupTableIterator.vue';
+import LoadingText from '@/components/tables/data_iterators/LoadingText.vue';
+import NoDataText from '@/components/tables/data_iterators/NoDataText.vue';
+import NoResultsText from '@/components/tables/data_iterators/NoResultsText.vue';
 
 export default {
   name: 'DataIterators',
@@ -56,6 +76,9 @@ export default {
     FilterTable,
     SingleSelectTableIterator,
     GroupTableIterator,
+    LoadingText,
+    NoDataText,
+    NoResultsText,
   },
 };
 </script>
