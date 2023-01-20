@@ -8,7 +8,7 @@
       :sort-by="sortBy.toLowerCase()"
       :sort-desc="sortDesc"
       hide-default-footer
-      no-results-text="Sorry, nothing found:("
+      no-results-text="Sorry, nothing found :("
     >
       <template v-slot:header>
         <v-toolbar
