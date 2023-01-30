@@ -36,7 +36,7 @@
       <v-row class="mx-5 align-center">
         <span>Background color</span>
         <v-color-picker
-          v-model="picker"
+          v-model="backgroundColor"
           class="ma-0"
           hide-mode-switch
           hide-canvas
@@ -93,7 +93,7 @@
           class="ma-0 ml-5"
         />
         <v-color-picker
-          v-model="picker"
+          v-model="loadingColor"
           class="ma-0"
           hide-canvas
           @update:color="onLoadingChange"
