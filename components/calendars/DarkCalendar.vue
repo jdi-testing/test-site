@@ -1,13 +1,14 @@
 <template>
   <v-row>
     <v-col>
-      <v-sheet height="400">
+      <v-sheet height="400" dark>
         <v-calendar
           :now="today"
           :value="today"
           :events="events"
           type="week"
           dark
+          weekdays=[0,1,2,3]
         ></v-calendar>
       </v-sheet>
     </v-col>
