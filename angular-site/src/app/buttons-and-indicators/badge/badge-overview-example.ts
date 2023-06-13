@@ -10,4 +10,14 @@ import {Component} from '@angular/core';
 })
 export class BadgeOverviewExample {
   showMsg = false;
+  isHidden = false;
+  isDisabled = true;
+
+  public toggleBadgeIsVisible(): void {
+    this.isHidden = !this.isHidden;
+  }
+
+  public toggleBadgeIsDisabled(): void {
+    this.isDisabled = !this.isDisabled;
+  }
 }

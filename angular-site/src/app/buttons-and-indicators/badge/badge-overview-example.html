@@ -8,6 +8,21 @@
 </p>
 
 <p>
+  <span matBadgeSize="large" matBadge="4">Text with a large badge</span>
+</p>
+
+<p>
+  <span matBadgeSize="small" matBadge="4">Text with a small badge</span>
+</p>
+<p>
+  <span matBadgeSize="large" matBadge="B">Text with a text-content badge</span>
+</p>
+
+<p>
+  <span matBadgePosition="below" matBadge="4">Badge position bellow</span>
+</p>
+
+<p>
   Button with a badge on the left
   <button mat-raised-button color="primary"
           matBadge="8" matBadgePosition="before" matBadgeColor="accent" (click)="showMsg = !showMsg" id="button-with-badge">
@@ -22,6 +37,20 @@
   <span class="cdk-visually-hidden">
       Example with a home icon with overlaid badge showing the number 15
     </span>
+</p>
+
+<p>
+  Button toggles badge visibility
+  <button mat-raised-button matBadge="7" [matBadgeHidden]="isHidden" (click)="toggleBadgeIsVisible()">
+    Hide
+  </button>
+</p>
+
+<p>
+  Button toggles badge disabled
+  <button mat-raised-button matBadge="7" [matBadgeDisabled]="isDisabled" (click)="toggleBadgeIsDisabled()">
+    isDisabled
+  </button>
 </p>
 <div *ngIf="showMsg" id="hidden-message">Top secret message</div>
 
