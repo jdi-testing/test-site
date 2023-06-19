@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {RoutingUrls} from "./routing-urls.enum";
 
 
@@ -30,6 +30,10 @@ const routes: Routes = [
         loadChildren: () =>
           import('./buttons-and-indicators/button-toggle/buttons-toggle.module')
             .then((m) => m.ButtonsToggleModule)
+      },
+      {
+        path: RoutingUrls.Chips,
+        loadChildren: () => import('./buttons-and-indicators/chips/chips.module').then((m) => m.ChipsModule)
       }
     ]
   },

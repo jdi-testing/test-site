@@ -3,4 +3,5 @@ export enum RoutingUrls {
   Autocompletes = 'autocompletes',
   Buttons = 'buttons',
   ButtonsToggle = 'buttons_toggle',
+  Chips = 'chips'
 }
