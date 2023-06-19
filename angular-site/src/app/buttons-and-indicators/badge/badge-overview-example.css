@@ -1,12 +1,7 @@
 /** No CSS for this example */
 
-
-.large-custom-size ::ng-deep .mat-badge-content {
+.large-custom-size::ng-deep .mat-badge-content {
   width: 42px;
   height: 42px;
   line-height: 42px;
 }
-
-
-
-
