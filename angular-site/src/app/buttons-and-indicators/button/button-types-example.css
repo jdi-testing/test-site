@@ -1,11 +1,16 @@
-:host {
-  .example-button-row button,
-  .example-button-row a {
-    margin-right: 8px;
-  }
-
-  .example-wide-button-row button,
-  .example-wide-button-row a {
-    margin-right: 20px;
-  }
+.example-button-row button {
+  margin-right: 8px;
 }
+
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.example-wide-button-row button {
+  margin-right: 20px;
+}
+
+.example-wide-button-row a {
+  margin-right: 20px;
+}
+

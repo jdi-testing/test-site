@@ -11,7 +11,7 @@ const routes: Routes = [
         path: RoutingUrls.Badges,
         loadChildren: () =>
           import('./buttons-and-indicators/badge/badge.module')
-            .then(m => m.BadgeModule)
+            .then((m) => m.BadgeModule)
       },
       // {
       //   path: RoutingUrls.Autocompletes,
@@ -23,13 +23,13 @@ const routes: Routes = [
         path: RoutingUrls.Buttons,
         loadChildren: () =>
           import('./buttons-and-indicators/button/buttons.module')
-            .then(m => m.ButtonsModule)
+            .then((m) => m.ButtonsModule)
       },
       {
         path: RoutingUrls.ButtonsToggle,
         loadChildren: () =>
           import('./buttons-and-indicators/button-toggle/buttons-toggle.module')
-            .then(m => m.ButtonsToggleModule)
+            .then((m) => m.ButtonsToggleModule)
       }
     ]
   },
