@@ -19,10 +19,10 @@ export class AppComponent {
       name: 'Badges',
       link: RoutingUrls .Badges,
     },
-    {
-      name: 'Autocompletes',
-      link: RoutingUrls.Autocompletes,
-    },
+    // {
+    //   name: 'Autocompletes',
+    //   link: RoutingUrls.Autocompletes,
+    // },
     {
       name: 'Buttons',
       link: RoutingUrls.Buttons,
@@ -34,6 +34,10 @@ export class AppComponent {
     {
       name: 'Chips',
       link: RoutingUrls.Chips,
+    },
+    {
+      name: 'Icons',
+      link: RoutingUrls.Icons,
     }
   ];
 }

@@ -4,4 +4,5 @@ export enum RoutingUrls {
   Buttons = 'buttons',
   ButtonsToggle = 'buttons_toggle',
   Chips = 'chips',
+  Icons = 'icons',
 }

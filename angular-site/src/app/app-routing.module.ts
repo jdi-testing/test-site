@@ -30,6 +30,12 @@ const routes: Routes = [
         loadChildren: () =>
           import('./buttons-and-indicators/chips/chips.module')
             .then((m) => m.ChipsModule)
+      },
+      {
+        path: RoutingUrls.Icons,
+        loadChildren: () =>
+          import('./buttons-and-indicators/icon/icons.module')
+            .then((m) => m.IconsModule)
       }
     ]
   },

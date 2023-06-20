@@ -14,7 +14,8 @@ import {ButtonsModule} from './buttons-and-indicators/button/buttons.module';
 
 import {BrowserModule} from '@angular/platform-browser';
 import {ButtonToggleModule} from './buttons-and-indicators/button-toggle/button-toggle.module';
-import {ChipsModule} from "./buttons-and-indicators/chips/chips.module";
+import {ChipsModule} from './buttons-and-indicators/chips/chips.module';
+import {IconsModule} from './buttons-and-indicators/icon/icons.module';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -35,6 +36,7 @@ import {ChipsModule} from "./buttons-and-indicators/chips/chips.module";
     MatSidenavModule,
     MatListModule,
     ChipsModule,
+    IconsModule,
   ],
   entryComponents: [AppComponent],
   declarations: [AppComponent],
