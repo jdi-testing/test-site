@@ -30,6 +30,10 @@ export class AppComponent {
     {
       name: 'Buttons Toggle',
       link: RoutingUrls.ButtonsToggle,
+    },
+    {
+      name: 'Chips',
+      link: RoutingUrls.Chips,
     }
   ];
 }

@@ -24,6 +24,12 @@ const routes: Routes = [
         loadChildren: () =>
           import('./buttons-and-indicators/button-toggle/button-toggle.module')
             .then((m) => m.ButtonToggleModule)
+      },
+      {
+        path: RoutingUrls.Chips,
+        loadChildren: () =>
+          import('./buttons-and-indicators/chips/chips.module')
+            .then((m) => m.ChipsModule)
       }
     ]
   },
