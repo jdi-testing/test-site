@@ -12,3 +12,6 @@ body {
   float: right;
   margin: 8px;
 }
+table {
+  width: 100%;
+}

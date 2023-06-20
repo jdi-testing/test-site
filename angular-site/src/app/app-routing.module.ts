@@ -36,6 +36,42 @@ const routes: Routes = [
         loadChildren: () =>
           import('./buttons-and-indicators/icon/icons.module')
             .then((m) => m.IconsModule)
+      },
+      {
+        path: RoutingUrls.ProgressBar,
+        loadChildren: () =>
+          import('./buttons-and-indicators/progress-bar/progress-bar.module')
+            .then((m) => m.ProgressBarModule)
+      },
+      {
+        path: RoutingUrls.ProgressSpinner,
+        loadChildren: () =>
+          import('./buttons-and-indicators/progress-spinner/progress-spinner.module')
+            .then((m) => m.ProgressSpinnerModule)
+      },
+      {
+        path: RoutingUrls.Ripple,
+        loadChildren: () =>
+          import('./buttons-and-indicators/ripples/ripple.module')
+            .then((m) => m.RippleModule)
+      },
+      {
+        path: RoutingUrls.Paginator,
+        loadChildren: () =>
+          import('./data-table/paginator/paginator.module')
+            .then((m) => m.PaginatorModule)
+      },
+      {
+        path: RoutingUrls.SortHeader,
+        loadChildren: () =>
+          import('./data-table/sort-header/sort-header.module')
+            .then((m) => m.SortHeaderModule)
+      },
+      {
+        path: RoutingUrls.Tables,
+        loadChildren: () =>
+          import('./data-table/table/tables.module')
+            .then((m) => m.TablesModule)
       }
     ]
   },

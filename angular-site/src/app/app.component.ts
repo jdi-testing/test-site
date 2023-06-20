@@ -38,6 +38,30 @@ export class AppComponent {
     {
       name: 'Icons',
       link: RoutingUrls.Icons,
+    },
+    {
+      name: 'Progress Bar',
+      link: RoutingUrls.ProgressBar,
+    },
+    {
+      name: 'Progress Spinner',
+      link: RoutingUrls.ProgressSpinner,
+    },
+    {
+      name: 'Ripple',
+      link: RoutingUrls.Ripple,
+    },
+    {
+      name: 'Paginator',
+      link: RoutingUrls.Paginator,
+    },
+    {
+      name: 'Sort Header',
+      link: RoutingUrls.SortHeader,
+    },
+    {
+      name: 'Tables',
+      link: RoutingUrls.Tables,
     }
   ];
 }

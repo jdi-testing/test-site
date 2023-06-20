@@ -16,6 +16,12 @@ import {BrowserModule} from '@angular/platform-browser';
 import {ButtonToggleModule} from './buttons-and-indicators/button-toggle/button-toggle.module';
 import {ChipsModule} from './buttons-and-indicators/chips/chips.module';
 import {IconsModule} from './buttons-and-indicators/icon/icons.module';
+import {ProgressBarModule} from './buttons-and-indicators/progress-bar/progress-bar.module';
+import {ProgressSpinnerModule} from './buttons-and-indicators/progress-spinner/progress-spinner.module';
+import {RippleModule} from './buttons-and-indicators/ripples/ripple.module';
+import {PaginatorModule} from './data-table/paginator/paginator.module';
+import {SortHeaderModule} from './data-table/sort-header/sort-header.module';
+import {TablesModule} from './data-table/table/tables.module';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -37,6 +43,12 @@ import {IconsModule} from './buttons-and-indicators/icon/icons.module';
     MatListModule,
     ChipsModule,
     IconsModule,
+    ProgressBarModule,
+    ProgressSpinnerModule,
+    RippleModule,
+    PaginatorModule,
+    SortHeaderModule,
+    TablesModule,
   ],
   entryComponents: [AppComponent],
   declarations: [AppComponent],
