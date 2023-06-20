@@ -22,7 +22,9 @@ import {RippleModule} from './buttons-and-indicators/ripples/ripple.module';
 import {PaginatorModule} from './data-table/paginator/paginator.module';
 import {SortHeaderModule} from './data-table/sort-header/sort-header.module';
 import {TablesModule} from './data-table/table/tables.module';
-import {AutocompleteModule} from "./form-controls/autocomplete/autocomplete.module";
+import {AutocompleteModule} from './form-controls/autocomplete/autocomplete.module';
+import {CheckboxModule} from './form-controls/checkbox/checkbox.module';
+import {DatepickerModule} from './form-controls/datepicker/datepicker.module';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -51,6 +53,8 @@ import {AutocompleteModule} from "./form-controls/autocomplete/autocomplete.modu
     SortHeaderModule,
     TablesModule,
     AutocompleteModule,
+    CheckboxModule,
+    DatepickerModule,
   ],
   entryComponents: [AppComponent],
   declarations: [AppComponent],

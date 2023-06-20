@@ -78,6 +78,18 @@ const routes: Routes = [
         loadChildren: () =>
           import('./form-controls/autocomplete/autocomplete.module')
             .then((m) => m.AutocompleteModule)
+      },
+      {
+        path: RoutingUrls.Checkbox,
+        loadChildren: () =>
+          import('./form-controls/checkbox/checkbox.module')
+            .then((m) => m.CheckboxModule)
+      },
+      {
+        path: RoutingUrls.Datepicker,
+        loadChildren: () =>
+          import('./form-controls/datepicker/datepicker.module')
+            .then((m) => m.DatepickerModule)
       }
     ]
   },
