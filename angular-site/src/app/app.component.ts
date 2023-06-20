@@ -19,10 +19,6 @@ export class AppComponent {
       name: 'Badges',
       link: RoutingUrls .Badges,
     },
-    // {
-    //   name: 'Autocompletes',
-    //   link: RoutingUrls.Autocompletes,
-    // },
     {
       name: 'Buttons',
       link: RoutingUrls.Buttons,
@@ -62,6 +58,42 @@ export class AppComponent {
     {
       name: 'Tables',
       link: RoutingUrls.Tables,
-    }
+    },
+    {
+      name: 'Autocomplete',
+      link: RoutingUrls.Autocompletes,
+    },
+    {
+      name: 'Checkbox',
+      link: RoutingUrls.Checkbox,
+    },
+    {
+      name: 'Datepicker',
+      link: RoutingUrls.Datepicker,
+    },
+    {
+      name: 'Form Fields',
+      link: RoutingUrls.FormField,
+    },
+    {
+      name: 'Inputs',
+      link: RoutingUrls.Input,
+    },
+    {
+      name: 'Radio Buttons',
+      link: RoutingUrls.RadioButton,
+    },
+    {
+      name: 'Select',
+      link: RoutingUrls.Select,
+    },
+    {
+      name: 'Slide Toggle',
+      link: RoutingUrls.SlideToggle,
+    },
+    {
+      name: 'Slider',
+      link: RoutingUrls.Slider,
+    },
   ];
 }

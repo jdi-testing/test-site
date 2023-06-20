@@ -9,7 +9,6 @@ import {map, startWith} from 'rxjs/operators';
 @Component({
   selector: 'autocomplete-filter-example',
   templateUrl: 'autocomplete-filter-example.html',
-  styleUrls: ['autocomplete-filter-example.css'],
 })
 export class AutocompleteFilterExample implements OnInit {
   myControl = new FormControl();

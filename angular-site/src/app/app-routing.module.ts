@@ -72,6 +72,12 @@ const routes: Routes = [
         loadChildren: () =>
           import('./data-table/table/tables.module')
             .then((m) => m.TablesModule)
+      },
+      {
+        path: RoutingUrls.Autocompletes,
+        loadChildren: () =>
+          import('./form-controls/autocomplete/autocomplete.module')
+            .then((m) => m.AutocompleteModule)
       }
     ]
   },

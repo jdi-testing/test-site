@@ -13,7 +13,6 @@ export interface User {
 @Component({
   selector: 'autocomplete-display-example',
   templateUrl: 'autocomplete-display-example.html',
-  styleUrls: ['autocomplete-display-example.css'],
 })
 export class AutocompleteDisplayExample implements OnInit {
   myControl = new FormControl();

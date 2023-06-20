@@ -11,4 +11,13 @@ export enum RoutingUrls {
   Paginator = 'paginator',
   SortHeader = 'sort_header',
   Tables = 'tables',
+  Autocomplete = 'autocomplete',
+  Checkbox = 'checkbox',
+  Datepicker = 'datepicker',
+  FormField = 'form_field',
+  Input = 'input',
+  RadioButton = 'radio_button',
+  Select = 'select',
+  SlideToggle = 'slide_toggle',
+  Slider = 'slider',
 }

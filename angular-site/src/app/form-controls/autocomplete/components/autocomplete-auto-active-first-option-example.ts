@@ -9,7 +9,6 @@ import {map, startWith} from 'rxjs/operators';
 @Component({
   selector: 'autocomplete-auto-active-first-option-example',
   templateUrl: 'autocomplete-auto-active-first-option-example.html',
-  styleUrls: ['autocomplete-auto-active-first-option-example.css'],
 })
 export class AutocompleteAutoActiveFirstOptionExample implements OnInit {
   myControl = new FormControl();
