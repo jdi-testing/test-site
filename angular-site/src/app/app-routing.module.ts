@@ -187,6 +187,30 @@ const routes: Routes = [
           import('./navigation/sidenav/sidenav.module')
             .then((m) => m.SidenavModule)
       },
+      {
+        path: RoutingUrls.BottomSheet,
+        loadChildren: () =>
+          import('./popups-and-modals/bottom-sheet/bottom-sheet.module')
+            .then((m) => m.BottomSheetModule)
+      },
+      {
+        path: RoutingUrls.Dialog,
+        loadChildren: () =>
+          import('./popups-and-modals/dialog/dialog.module')
+            .then((m) => m.DialogModule)
+      },
+      {
+        path: RoutingUrls.SnackBar,
+        loadChildren: () =>
+          import('./popups-and-modals/snackbar/snack-bar.module')
+            .then((m) => m.SnackBarModule)
+      },
+      {
+        path: RoutingUrls.Tooltip,
+        loadChildren: () =>
+          import('./popups-and-modals/tooltip/tooltip.module')
+            .then((m) => m.TooltipModule)
+      },
     ]
   },
   {
