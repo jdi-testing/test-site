@@ -127,5 +127,33 @@ export class AppComponent {
       name: 'Tree',
       link: RoutingUrls.Tree,
     },
+    {
+      name: 'Menu',
+      link: RoutingUrls.Menu,
+    },
+    {
+      name: 'Toolbar',
+      link: RoutingUrls.ToolBar,
+    },
+    {
+      name: 'Sidenav',
+      link: RoutingUrls.SideNav,
+    },
+    {
+      name: 'Bottom Sheet',
+      link: RoutingUrls.BottomSheet,
+    },
+    {
+      name: 'Dialog',
+      link: RoutingUrls.Dialog,
+    },
+    {
+      name: 'SnackBar',
+      link: RoutingUrls.SnackBar,
+    },
+    {
+      name: 'Tooltip',
+      link: RoutingUrls.Tooltip,
+    },
   ];
 }

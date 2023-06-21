@@ -169,6 +169,24 @@ const routes: Routes = [
           import('./form-controls/radio-button/radio-buttons.module')
             .then((m) => m.RadioButtonsModule)
       },
+      {
+        path: RoutingUrls.Menu,
+        loadChildren: () =>
+          import('./navigation/menu/menu.module')
+            .then((m) => m.MenuModule)
+      },
+      {
+        path: RoutingUrls.ToolBar,
+        loadChildren: () =>
+          import('./navigation/toolbar/toolbar.module')
+            .then((m) => m.ToolbarModule)
+      },
+      {
+        path: RoutingUrls.SideNav,
+        loadChildren: () =>
+          import('./navigation/sidenav/sidenav.module')
+            .then((m) => m.SidenavModule)
+      },
     ]
   },
   {

@@ -37,6 +37,9 @@ import {StepperModule} from './layout/stepper/stepper.module';
 import {TreeModule} from './layout/tree/tree.module';
 import {InputsModule} from './form-controls/input/inputs.module';
 import {RadioButtonsModule} from './form-controls/radio-button/radio-buttons.module';
+import {ToolbarModule} from './navigation/toolbar/toolbar.module';
+import {SidenavModule} from './navigation/sidenav/sidenav.module';
+import {MenuModule} from './navigation/menu/menu.module';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -80,6 +83,9 @@ import {RadioButtonsModule} from './form-controls/radio-button/radio-buttons.mod
     TreeModule,
     InputsModule,
     RadioButtonsModule,
+    ToolbarModule,
+    SidenavModule,
+    MenuModule,
   ],
   entryComponents: [AppComponent],
   declarations: [AppComponent],

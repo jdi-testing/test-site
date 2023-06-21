@@ -28,4 +28,11 @@ export enum RoutingUrls {
   Stepper = 'stepper',
   Tab = 'tab',
   Tree = 'tree',
+  Menu = 'menu',
+  SideNav = 'sidenav',
+  ToolBar = 'toolbar',
+  BottomSheet = 'bottom_sheet',
+  Dialog = 'dialog',
+  SnackBar = 'snack_bar',
+  Tooltip = 'tooltip',
 }
