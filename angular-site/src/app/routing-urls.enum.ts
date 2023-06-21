@@ -20,4 +20,12 @@ export enum RoutingUrls {
   Select = 'select',
   SlideToggle = 'slide_toggle',
   Slider = 'slider',
+  Card = 'card',
+  Divider = 'divider',
+  Panel = 'panel',
+  GridList = 'grid_list',
+  List = 'list',
+  Stepper = 'stepper',
+  Tab = 'tab',
+  Tree = 'tree',
 }

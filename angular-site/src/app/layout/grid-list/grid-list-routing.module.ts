@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {InputsComponent} from './inputs.component';
+import {GridListComponent} from './grid-list.component';
 
 
 const routes: Routes = [{
   path: '',
-  component: InputsComponent,
+  component: GridListComponent
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class InputsRoutingModule { }
+export class GridListRoutingModule { }

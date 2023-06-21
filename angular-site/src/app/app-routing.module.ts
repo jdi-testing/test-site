@@ -108,7 +108,67 @@ const routes: Routes = [
         loadChildren: () =>
           import('./form-controls/slide-toggle/slide-toggle.module')
             .then((m) => m.SlideToggleModule)
-      }
+      },
+      {
+        path: RoutingUrls.Card,
+        loadChildren: () =>
+          import('./layout/card/card.module')
+            .then((m) => m.CardModule)
+      },
+      {
+        path: RoutingUrls.Divider,
+        loadChildren: () =>
+          import('./layout/divider/divider.module')
+            .then((m) => m.DividerModule)
+      },
+      {
+        path: RoutingUrls.Panel,
+        loadChildren: () =>
+          import('./layout/expansion-panel/panel.module')
+            .then((m) => m.PanelModule)
+      },
+      {
+        path: RoutingUrls.GridList,
+        loadChildren: () =>
+          import('./layout/grid-list/grid-list.module')
+            .then((m) => m.GridListModule)
+      },
+      {
+        path: RoutingUrls.List,
+        loadChildren: () =>
+          import('./layout/list/list.module')
+            .then((m) => m.ListModule)
+      },
+      {
+        path: RoutingUrls.Stepper,
+        loadChildren: () =>
+          import('./layout/stepper/stepper.module')
+            .then((m) => m.StepperModule)
+      },
+      {
+        path: RoutingUrls.Tab,
+        loadChildren: () =>
+          import('./layout/tab/tab.module')
+            .then((m) => m.TabModule)
+      },
+      {
+        path: RoutingUrls.Tree,
+        loadChildren: () =>
+          import('./layout/tree/tree.module')
+            .then((m) => m.TreeModule)
+      },
+      {
+        path: RoutingUrls.Input,
+        loadChildren: () =>
+          import('./form-controls/input/inputs.module')
+            .then((m) => m.InputsModule)
+      },
+      {
+        path: RoutingUrls.RadioButton,
+        loadChildren: () =>
+          import('./form-controls/radio-button/radio-buttons.module')
+            .then((m) => m.RadioButtonsModule)
+      },
     ]
   },
   {

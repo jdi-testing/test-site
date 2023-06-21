@@ -6,6 +6,7 @@ import {PaginatorConfigurableExample} from './paginator-configurable-example';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     PaginatorRoutingModule,
     MatFormFieldModule,
     FormsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatInputModule
   ]
 })
 export class PaginatorModule { }

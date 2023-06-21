@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {InputsComponent} from './inputs.component';
+import {TreeComponent} from './tree.component';
 
 
 const routes: Routes = [{
   path: '',
-  component: InputsComponent,
+  component: TreeComponent
 }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class InputsRoutingModule { }
+export class TreeRoutingModule { }

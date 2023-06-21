@@ -28,6 +28,15 @@ import {DatepickerModule} from './form-controls/datepicker/datepicker.module';
 import {FormFieldsModule} from './form-controls/form-field/form-fields.module';
 import {SlideToggleModule} from './form-controls/slide-toggle/slide-toggle.module';
 import {SelectsModule} from './form-controls/select/selects.module';
+import {CardModule} from './layout/card/card.module';
+import {DividerModule} from './layout/divider/divider.module';
+import {PanelModule} from './layout/expansion-panel/panel.module';
+import {GridListModule} from './layout/grid-list/grid-list.module';
+import {ListModule} from './layout/list/list.module';
+import {StepperModule} from './layout/stepper/stepper.module';
+import {TreeModule} from './layout/tree/tree.module';
+import {InputsModule} from './form-controls/input/inputs.module';
+import {RadioButtonsModule} from './form-controls/radio-button/radio-buttons.module';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -61,6 +70,16 @@ import {SelectsModule} from './form-controls/select/selects.module';
     FormFieldsModule,
     SlideToggleModule,
     SelectsModule,
+    CardModule,
+    DividerModule,
+    PanelModule,
+    GridListModule,
+    ListModule,
+    StepperModule,
+    TablesModule,
+    TreeModule,
+    InputsModule,
+    RadioButtonsModule,
   ],
   entryComponents: [AppComponent],
   declarations: [AppComponent],

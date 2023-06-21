@@ -95,5 +95,37 @@ export class AppComponent {
       name: 'Slider',
       link: RoutingUrls.Slider,
     },
+    {
+      name: 'Card',
+      link: RoutingUrls.Card,
+    },
+    {
+      name: 'Divider',
+      link: RoutingUrls.Divider,
+    },
+    {
+      name: 'Expansion Panel',
+      link: RoutingUrls.Panel,
+    },
+    {
+      name: 'Grid List',
+      link: RoutingUrls.GridList,
+    },
+    {
+      name: 'List',
+      link: RoutingUrls.List,
+    },
+    {
+      name: 'Stepper',
+      link: RoutingUrls.Stepper,
+    },
+    {
+      name: 'Tab',
+      link: RoutingUrls.Tab,
+    },
+    {
+      name: 'Tree',
+      link: RoutingUrls.Tree,
+    },
   ];
 }

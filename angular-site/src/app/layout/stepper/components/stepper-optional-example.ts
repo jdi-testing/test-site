@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'stepper-optional-example',
   templateUrl: 'stepper-optional-example.html',
-  styleUrls: ['stepper-optional-example.css']
+  styleUrls: ['stepper-overview-example.css']
 })
 export class StepperOptionalExample implements OnInit {
   firstFormGroup: FormGroup;
