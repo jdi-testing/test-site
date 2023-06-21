@@ -90,6 +90,24 @@ const routes: Routes = [
         loadChildren: () =>
           import('./form-controls/datepicker/datepicker.module')
             .then((m) => m.DatepickerModule)
+      },
+      {
+        path: RoutingUrls.FormField,
+        loadChildren: () =>
+          import('./form-controls/form-field/form-fields.module')
+            .then((m) => m.FormFieldsModule)
+      },
+      {
+        path: RoutingUrls.Select,
+        loadChildren: () =>
+          import('./form-controls/select/selects.module')
+            .then((m) => m.SelectsModule)
+      },
+      {
+        path: RoutingUrls.SlideToggle,
+        loadChildren: () =>
+          import('./form-controls/slide-toggle/slide-toggle.module')
+            .then((m) => m.SlideToggleModule)
       }
     ]
   },

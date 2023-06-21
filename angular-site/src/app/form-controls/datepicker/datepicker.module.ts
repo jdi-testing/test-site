@@ -45,7 +45,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatDatepickerModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class DatepickerModule { }

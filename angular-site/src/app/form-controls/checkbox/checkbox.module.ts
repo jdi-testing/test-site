@@ -19,7 +19,7 @@ import {FormsModule} from '@angular/forms';
     MatCardModule,
     MatCheckboxModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class CheckboxModule { }
