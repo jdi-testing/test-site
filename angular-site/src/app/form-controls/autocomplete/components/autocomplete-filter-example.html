@@ -1,0 +1,20 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/autocomplete/overview#adding-a-custom-filter">
+    Filter autocomplete
+  </a>
+</h2>
+<div class="example-form">
+  <mat-form-field class="example-full-width">
+    <input type="text"
+           id="autocomplete-filter-input"
+           placeholder="Pick one"
+           aria-label="Number"
+           matInput [formControl]="myControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>

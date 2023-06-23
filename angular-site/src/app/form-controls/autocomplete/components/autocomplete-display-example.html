@@ -1,0 +1,19 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/autocomplete/overview#setting-separate-control-and-display-values">
+    Display value autocomplete
+  </a>
+</h2>
+<div class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Assignee</mat-label>
+    <input type="text"
+           matInput [formControl]="myControl"
+           [matAutocomplete]="auto"
+           id="autocomplete-display-value-input">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>
