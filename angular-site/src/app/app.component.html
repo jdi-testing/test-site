@@ -1,5 +1,5 @@
 <mat-nav-list class="nav-list">
-  <a class="nav-list-item" mat-list-item href="{{navLink.link}}" *ngFor="let navLink of navLinks" >{{ navLink.name }}</a>
+  <a class="nav-list-item" mat-list-item routerLink="{{navLink.link}}" *ngFor="let navLink of navLinks" >{{ navLink.name }}</a>
 </mat-nav-list>
 <div class="content">
   <router-outlet></router-outlet>

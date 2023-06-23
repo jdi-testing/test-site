@@ -17,7 +17,7 @@ export class AppComponent {
   navLinks: navLink[] = [
     {
       name: 'Badges',
-      link: RoutingUrls .Badges,
+      link: RoutingUrls.Badges,
     },
     {
       name: 'Buttons',

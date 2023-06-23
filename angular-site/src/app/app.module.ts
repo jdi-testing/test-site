@@ -8,6 +8,7 @@ import {MatListModule} from '@angular/material/list';
 import {AppComponent} from './app.component';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {BrowserModule} from '@angular/platform-browser';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
@@ -24,11 +25,11 @@ import {BrowserModule} from '@angular/platform-browser';
     AppRoutingModule,
     MatListModule,
   ],
-  entryComponents: [AppComponent],
   declarations: [AppComponent],
   bootstrap:  [AppComponent],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ]
 })
 export class AppModule {}
