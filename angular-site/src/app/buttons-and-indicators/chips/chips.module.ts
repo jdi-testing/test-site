@@ -17,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { ChipsDragAndDropComponent } from './components/chips-drag-and-drop/chips-drag-and-drop.component';
+import { ChipsAvatarComponent } from './components/chips-avatar/chips-avatar.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ChipsDragAndDropComponent } from './components/chips-drag-and-drop/chip
     ChipsInputExample,
     ChipsWithFormControlComponent,
     ChipsDragAndDropComponent,
+    ChipsAvatarComponent,
   ],
   imports: [
     CommonModule,
