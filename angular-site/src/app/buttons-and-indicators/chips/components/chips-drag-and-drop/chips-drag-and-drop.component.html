@@ -1,0 +1,22 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/chips/examples#chips-form-control">
+    Chips drag and drop
+  </a>
+</h2>
+<mat-form-field class="example-form-field">
+  <mat-label class="example-label">Choose values</mat-label>
+      <mat-chip-list
+        cdkDropList
+        cdkDropListOrientation="horizontal"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <mat-chip     cdkDrag
+                      *ngFor="let topping of toppings"
+                      [removable]="true"
+                      (removed)="onToppingRemoved(topping)"
+        >
+          {{ topping }}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+      </mat-chip-list>
+</mat-form-field>

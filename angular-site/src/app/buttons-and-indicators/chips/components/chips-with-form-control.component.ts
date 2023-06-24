@@ -1,7 +1,11 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {MatChipInputEvent} from '@angular/material/chips';
+import {CdkDragDrop, moveItemInArray} from "@angular/cdk/drag-drop";
 
+export interface Topping {
+  name: string;
+}
 
 @Component({
   selector: 'app-chips-with-form-control',
@@ -28,7 +32,6 @@ export class ChipsWithFormControlComponent {
     // Add our fruit
     if ((value || '').trim()) {
       this.keywords.push(value.trim());
-      console.log(this.formControl)
     }
 
     // Reset the input value

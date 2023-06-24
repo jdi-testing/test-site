@@ -14,6 +14,9 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ChipsWithFormControlComponent } from './components/chips-with-form-control.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { ChipsDragAndDropComponent } from './components/chips-drag-and-drop/chips-drag-and-drop.component';
 
 
 @NgModule({
@@ -24,6 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
     ChipsAutocompleteExample,
     ChipsInputExample,
     ChipsWithFormControlComponent,
+    ChipsDragAndDropComponent,
   ],
   imports: [
     CommonModule,
@@ -35,6 +39,8 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     MatButtonModule,
     FormsModule,
+    MatSelectModule,
+    DragDropModule,
   ]
 })
 export class ChipsModule { }
