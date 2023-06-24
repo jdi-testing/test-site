@@ -1,0 +1,32 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/chips/examples#chips-form-control">
+    Chips with form control
+  </a>
+</h2>
+<div class="example-button-container">
+  <button mat-raised-button (click)="formControl.disable()">Disable form control</button>
+  <button mat-raised-button (click)="formControl.enable()">Enable form control</button>
+</div>
+<p>
+  <em>Enter video keywords</em>
+</p>
+<mat-form-field class="example-form-field">
+  <mat-label class="example-label">Video keywords</mat-label>
+  <mat-chip-list #chipGrid aria-label="Enter keywords" [formControl]="formControl" >
+    <mat-chip
+      *ngFor="let keyword of keywords"
+
+      (removed)="removeKeyword(keyword)">
+      {{keyword}}
+      <mat-icon matChipRemove>cancel</mat-icon>
+    </mat-chip>
+  </mat-chip-list>
+  <input placeholder="New keyword..."
+         [matChipInputFor]="chipGrid"
+         (matChipInputTokenEnd)="add($event)"/>
+</mat-form-field>
+
+<p>
+  <strong>The following keywords are entered:</strong> {{keywords.join(' ,')}}
+</p>
+

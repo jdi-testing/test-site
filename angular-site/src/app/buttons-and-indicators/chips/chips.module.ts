@@ -11,11 +11,20 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ChipsWithFormControlComponent } from './components/chips-with-form-control.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
-  declarations: [ChipsComponent, ChipsStackedExample, ChipsOverviewExample, ChipsAutocompleteExample, ChipsInputExample],
+  declarations: [
+    ChipsComponent,
+    ChipsStackedExample,
+    ChipsOverviewExample,
+    ChipsAutocompleteExample,
+    ChipsInputExample,
+    ChipsWithFormControlComponent,
+  ],
   imports: [
     CommonModule,
     ChipsRoutingModule,
@@ -23,7 +32,9 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatIconModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    FormsModule,
   ]
 })
 export class ChipsModule { }
