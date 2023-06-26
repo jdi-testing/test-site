@@ -7,10 +7,10 @@ import {ChipsStackedExample} from './components/chips-stacked-example';
 import {ChipsOverviewExample} from './components/chips-overview-example';
 import {ChipsAutocompleteExample} from './components/chips-autocomplete-example';
 import {ChipsInputExample} from './components/chips-input-example';
-import {MatChipsModule} from '@angular/material/chips';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatLegacyChipsModule as MatChipsModule} from '@angular/material/legacy-chips';
+import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
 import {MatIconModule} from '@angular/material/icon';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatLegacyAutocompleteModule as MatAutocompleteModule} from '@angular/material/legacy-autocomplete';
 import {ReactiveFormsModule} from '@angular/forms';
 
 

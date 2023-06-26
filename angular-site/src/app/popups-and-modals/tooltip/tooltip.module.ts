@@ -12,13 +12,13 @@ import {TooltipModifiedDefaultsExample} from './components/tooltip-modified-defa
 import {TooltipPositionExample} from './components/tooltip-position-example';
 import {TooltipManualExample} from './components/tooltip-manual-example';
 import {TooltipOverviewExample} from './components/tooltip-overview-example';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatButtonModule} from '@angular/material/button';
+import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
+import {MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
+import {MatLegacyTooltipModule as MatTooltipModule} from '@angular/material/legacy-tooltip';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
+import {MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 
 

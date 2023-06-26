@@ -5,7 +5,7 @@ import { ListRoutingModule } from './list-routing.module';
 import { ListComponent } from './list.component';
 import {ListOverviewExample} from './components/list-overview-example';
 import {ListSectionsExample} from './components/list-sections-example';
-import {MatListModule} from '@angular/material/list';
+import {MatLegacyListModule as MatListModule} from '@angular/material/legacy-list';
 import {MatIconModule} from '@angular/material/icon';
 
 

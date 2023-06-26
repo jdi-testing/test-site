@@ -11,14 +11,14 @@ import {FormFieldOverviewExample} from './components/form-field-overview-example
 import {FormFieldPrefixSuffixExample} from './components/form-field-prefix-suffix-example';
 import {FormFieldThemingExample} from './components/form-field-theming-example';
 import {FormFieldCustomControlExample, MyTelInput} from './components/form-field-custom-control-example';
-import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
+import {MatLegacyFormFieldControl as MatFormFieldControl, MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
 import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
+import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
+import {MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatRadioModule} from '@angular/material/radio';
-import {MatButtonModule} from '@angular/material/button';
+import {MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
+import {MatLegacyRadioModule as MatRadioModule} from '@angular/material/legacy-radio';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 
 
 

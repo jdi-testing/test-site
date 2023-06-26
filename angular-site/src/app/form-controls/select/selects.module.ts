@@ -14,10 +14,10 @@ import {SelectOptgroupExample} from './components/select-optgroup-example';
 import {SelectPanelClassExample} from './components/select-panel-class-example';
 import {SelectResetExample} from './components/select-reset-example';
 import {SelectValueBindingExample} from './components/select-value-binding-example';
-import {MatSelectModule} from '@angular/material/select';
+import {MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatInputModule} from '@angular/material/input';
+import {MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
+import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
 
 
 @NgModule({

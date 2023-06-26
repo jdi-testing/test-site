@@ -9,11 +9,11 @@ import {AutocompleteAutoActiveFirstOptionExample} from './components/autocomplet
 import {AutocompleteOptgroupExample} from './components/autocomplete-optgroup-example';
 import {AutocompleteOverviewExample} from './components/autocomplete-overview-example';
 import {AutocompleteSimpleExample} from './components/autocomplete-simple-example';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
+import {MatLegacyAutocompleteModule as MatAutocompleteModule} from '@angular/material/legacy-autocomplete';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
+import {MatLegacySlideToggleModule as MatSlideToggleModule} from '@angular/material/legacy-slide-toggle';
 
 
 @NgModule({

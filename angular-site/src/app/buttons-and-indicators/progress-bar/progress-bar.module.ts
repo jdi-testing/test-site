@@ -8,12 +8,12 @@ import {ProgressBarDeterminateExample} from './components/progress-bar-determina
 import {ProgressBarConfigurableExample} from './components/progress-bar-configurable-example';
 import {ProgressBarIndeterminateExample} from './components/progress-bar-indeterminate-example';
 import {ProgressBarQueryExample} from './components/progress-bar-query-example';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatCardModule} from '@angular/material/card';
-import {MatRadioModule} from '@angular/material/radio';
+import {MatLegacyProgressBarModule as MatProgressBarModule} from '@angular/material/legacy-progress-bar';
+import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
+import {MatLegacyRadioModule as MatRadioModule} from '@angular/material/legacy-radio';
 import {FormsModule} from '@angular/forms';
-import {MatSliderModule} from '@angular/material/slider';
-import {MatButtonModule} from '@angular/material/button';
+import {MatLegacySliderModule as MatSliderModule} from '@angular/material/legacy-slider';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 
 
 @NgModule({

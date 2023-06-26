@@ -7,10 +7,10 @@ import {ExpansionStepsExample} from "../expansion-panel/components/expansion-ste
 import {StepperOptionalExample} from "./components/stepper-optional-example";
 import {StepperOverviewExample} from "./components/stepper-overview-example";
 import {MatStepperModule} from "@angular/material/stepper";
-import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatLegacyFormFieldModule as MatFormFieldModule} from "@angular/material/legacy-form-field";
 import {ReactiveFormsModule} from "@angular/forms";
-import {MatButtonModule} from "@angular/material/button";
-import {MatInputModule} from "@angular/material/input";
+import {MatLegacyButtonModule as MatButtonModule} from "@angular/material/legacy-button";
+import {MatLegacyInputModule as MatInputModule} from "@angular/material/legacy-input";
 
 
 @NgModule({

@@ -15,11 +15,11 @@ import {DatepickerOverviewExample} from './components/datepicker-overview-exampl
 import {DatepickerStartViewExample} from './components/datepicker-start-view-example';
 import {DatepickerTouchExample} from './components/datepicker-touch-example';
 import {DatepickerValueExample} from './components/datepicker-value-example';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatInputModule} from '@angular/material/input';
+import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 
 
 @NgModule({
