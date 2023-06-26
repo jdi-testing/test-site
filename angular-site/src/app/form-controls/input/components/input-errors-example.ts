@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {UntypedFormControl, Validators} from '@angular/forms';
 
 /**
  * @title Input with error messages
@@ -10,7 +10,7 @@ import {FormControl, Validators} from '@angular/forms';
   styleUrls: ['input-errors-example.css'],
 })
 export class InputErrorsExample {
-  emailFormControl = new FormControl('', [
+  emailFormControl = new UntypedFormControl('', [
     Validators.required,
     Validators.email,
   ]);

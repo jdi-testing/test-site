@@ -12,12 +12,12 @@ import {
   HostListener
 } from '@angular/core';
 import {
-  FormBuilder,
-  FormGroup,
+  UntypedFormBuilder,
+  UntypedFormGroup,
   ControlValueAccessor,
   NgControl,
   Validators,
-  FormControl,
+  UntypedFormControl,
   AbstractControl
 } from '@angular/forms';
 import {MatFormFieldControl} from '@angular/material/form-field';
@@ -29,8 +29,8 @@ import {Subject} from 'rxjs';
   templateUrl: 'form-field-custom-control-example.html',
 })
 export class FormFieldCustomControlExample {
-  form: FormGroup = new FormGroup({
-    tel: new FormControl(new MyTel('', '', ''))
+  form: UntypedFormGroup = new UntypedFormGroup({
+    tel: new UntypedFormControl(new MyTel('', '', ''))
   });
 }
 
@@ -62,7 +62,7 @@ export class MyTelInput
   @ViewChild('exchange') exchangeInput: HTMLInputElement;
   @ViewChild('subscriber') subscriberInput: HTMLInputElement;
 
-  parts: FormGroup;
+  parts: UntypedFormGroup;
   stateChanges = new Subject<void>();
   focused = false;
   errorState = false;
@@ -132,7 +132,7 @@ export class MyTelInput
   }
 
   constructor(
-    formBuilder: FormBuilder,
+    formBuilder: UntypedFormBuilder,
     private _focusMonitor: FocusMonitor,
     private _elementRef: ElementRef<HTMLElement>,
     @Optional() @Self() public ngControl: NgControl
