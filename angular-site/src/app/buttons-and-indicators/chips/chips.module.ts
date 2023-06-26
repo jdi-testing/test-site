@@ -12,12 +12,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { ChipsWithFormControlComponent } from './components/chips-with-form-control.component';
+import { ChipsWithFormControlComponent } from './components/chips-with-form-control/chips-with-form-control.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { ChipsDragAndDropComponent } from './components/chips-drag-and-drop/chips-drag-and-drop.component';
 import { ChipsAvatarComponent } from './components/chips-avatar/chips-avatar.component';
+import { ChipsDisableRippleComponent } from './components/chips-disable-ripple/chips-disable-ripple.component';
+import { ChipsDisabledComponent } from './components/chips-disabled/chips-disabled.component';
+import { ChipsHighlightedComponent } from './components/chips-highlighted/chips-highlighted.component';
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import { ChipsAvatarComponent } from './components/chips-avatar/chips-avatar.com
     ChipsWithFormControlComponent,
     ChipsDragAndDropComponent,
     ChipsAvatarComponent,
+    ChipsDisableRippleComponent,
+    ChipsDisabledComponent,
+    ChipsHighlightedComponent,
   ],
   imports: [
     CommonModule,

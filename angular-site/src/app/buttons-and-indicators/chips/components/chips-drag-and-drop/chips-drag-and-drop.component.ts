@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Topping} from '../chips-with-form-control.component';
+import {Topping} from '../chips-with-form-control/chips-with-form-control.component';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
