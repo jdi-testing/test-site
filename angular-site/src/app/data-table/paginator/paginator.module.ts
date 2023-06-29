@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { PaginatorRoutingModule } from './paginator-routing.module';
 import {PaginatorConfigurableExample} from './paginator-configurable-example';
-import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
 import {FormsModule} from '@angular/forms';
-import {MatLegacyPaginatorModule as MatPaginatorModule} from '@angular/material/legacy-paginator';
-import {MatLegacyInputModule as MatInputModule} from "@angular/material/legacy-input";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({

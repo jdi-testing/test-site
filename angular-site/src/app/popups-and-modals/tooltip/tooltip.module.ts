@@ -12,14 +12,14 @@ import {TooltipModifiedDefaultsExample} from './components/tooltip-modified-defa
 import {TooltipPositionExample} from './components/tooltip-position-example';
 import {TooltipManualExample} from './components/tooltip-manual-example';
 import {TooltipOverviewExample} from './components/tooltip-overview-example';
-import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
-import {MatLegacySelectModule as MatSelectModule} from '@angular/material/legacy-select';
-import {MatLegacyTooltipModule as MatTooltipModule} from '@angular/material/legacy-tooltip';
-import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
-import {ReactiveFormsModule} from '@angular/forms';
-import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
-import {MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({

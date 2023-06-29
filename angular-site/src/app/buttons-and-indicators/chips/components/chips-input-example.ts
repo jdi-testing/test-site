@@ -1,6 +1,6 @@
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {Component} from '@angular/core';
-import {MatLegacyChipInputEvent as MatChipInputEvent} from '@angular/material/legacy-chips';
+import {MatChipEditedEvent, MatChipInputEvent} from '@angular/material/chips';
 
 export interface Fruit {
   name: string;
@@ -15,30 +15,20 @@ export interface Fruit {
   styleUrls: ['chips-input-example.css'],
 })
 export class ChipsInputExample {
-  visible = true;
-  selectable = true;
-  removable = true;
   addOnBlur = true;
-  readonly separatorKeysCodes: number[] = [ENTER, COMMA];
-  fruits: Fruit[] = [
-    {name: 'Lemon'},
-    {name: 'Lime'},
-    {name: 'Apple'},
-  ];
+  readonly separatorKeysCodes = [ENTER, COMMA] as const;
+  fruits: Fruit[] = [{name: 'Lemon'}, {name: 'Lime'}, {name: 'Apple'}];
 
   add(event: MatChipInputEvent): void {
-    const input = event.input;
-    const value = event.value;
+    const value = (event.value || '').trim();
 
     // Add our fruit
-    if ((value || '').trim()) {
-      this.fruits.push({name: value.trim()});
+    if (value) {
+      this.fruits.push({name: value});
     }
 
-    // Reset the input value
-    if (input) {
-      input.value = '';
-    }
+    // Clear the input value
+    event.chipInput!.clear();
   }
 
   remove(fruit: Fruit): void {
@@ -46,6 +36,22 @@ export class ChipsInputExample {
 
     if (index >= 0) {
       this.fruits.splice(index, 1);
+    }
+  }
+
+  edit(fruit: Fruit, event: MatChipEditedEvent) {
+    const value = event.value.trim();
+
+    // Remove fruit if it no longer has a name
+    if (!value) {
+      this.remove(fruit);
+      return;
+    }
+
+    // Edit existing fruit
+    const index = this.fruits.indexOf(fruit);
+    if (index >= 0) {
+      this.fruits[index].name = value;
     }
   }
 }

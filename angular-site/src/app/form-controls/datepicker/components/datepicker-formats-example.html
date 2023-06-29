@@ -3,9 +3,10 @@
     Datepicker with custom formats
   </a>
 </h2>
-<mat-form-field>
+<mat-form-field appearance="fill">
   <mat-label>Verbose datepicker</mat-label>
   <input matInput [matDatepicker]="dp" [formControl]="date" id="custom-formats-datepicker">
-  <mat-datepicker-toggle matSuffix [for]="dp" id="custom-formats-datepicker-toggle"></mat-datepicker-toggle>
+  <mat-hint>MMMM DD, YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="dp" id="custom-formats-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #dp></mat-datepicker>
 </mat-form-field>

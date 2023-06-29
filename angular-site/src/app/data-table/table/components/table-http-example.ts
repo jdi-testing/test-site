@@ -1,9 +1,9 @@
 import {HttpClient} from '@angular/common/http';
 import {Component, ViewChild, AfterViewInit} from '@angular/core';
-import {MatLegacyPaginator as MatPaginator} from '@angular/material/legacy-paginator';
 import {MatSort} from '@angular/material/sort';
 import {merge, Observable, of as observableOf} from 'rxjs';
 import {catchError, map, startWith, switchMap} from 'rxjs/operators';
+import {MatPaginator} from "@angular/material/paginator";
 
 /**
  * @title Table retrieving data through HTTP
@@ -15,15 +15,15 @@ import {catchError, map, startWith, switchMap} from 'rxjs/operators';
 })
 export class TableHttpExample implements AfterViewInit {
   displayedColumns: string[] = ['created', 'state', 'number', 'title'];
-  exampleDatabase: ExampleHttpDatabase | null;
+  exampleDatabase?: ExampleHttpDatabase | null;
   data: GithubIssue[] = [];
 
   resultsLength = 0;
   isLoadingResults = true;
   isRateLimitReached = false;
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
 
   constructor(private _httpClient: HttpClient) {}
 

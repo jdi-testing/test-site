@@ -3,17 +3,23 @@
     Chips with input
   </a>
 </h2>
-<mat-form-field id="chips-with-input-field" class="example-chip-list">
-  <mat-chip-list #chipList aria-label="Fruit selection">
-    <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable"
-              [removable]="removable" (removed)="remove(fruit)">
+<mat-form-field id="chips-with-input-field" class="example-chip-list" appearance="fill">
+  <mat-label>Favorite Fruits</mat-label>
+  <mat-chip-grid #chipGrid aria-label="Enter fruits">
+    <mat-chip-row *ngFor="let fruit of fruits"
+                  (removed)="remove(fruit)"
+                  [editable]="true"
+                  (edited)="edit(fruit, $event)"
+                  [aria-description]="'press enter to edit ' + fruit.name">
       {{fruit.name}}
-      <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
-    </mat-chip>
+      <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </mat-chip-row>
     <input placeholder="New fruit..."
-           [matChipInputFor]="chipList"
+           [matChipInputFor]="chipGrid"
            [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
            [matChipInputAddOnBlur]="addOnBlur"
-           (matChipInputTokenEnd)="add($event)">
-  </mat-chip-list>
+           (matChipInputTokenEnd)="add($event)"/>
+  </mat-chip-grid>
 </mat-form-field>

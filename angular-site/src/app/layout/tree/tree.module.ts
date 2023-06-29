@@ -9,13 +9,12 @@ import {TreeFlatOverviewExample} from './components/tree-flat-overview-example';
 import {TreeLoadmoreExample} from './components/tree-loadmore-example';
 import {TreeNestedOverviewExample} from './components/tree-nested-overview-example';
 import {MatTreeModule} from '@angular/material/tree';
-import {MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
-import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
-import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
-import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
 import {MatIconModule} from '@angular/material/icon';
-import {MatLegacyProgressBarModule as MatProgressBarModule} from '@angular/material/legacy-progress-bar';
-
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatButtonModule} from "@angular/material/button";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [

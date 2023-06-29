@@ -1,3 +1,9 @@
 .mat-list-icon {
   color: rgba(0, 0, 0, 0.54);
 }
+
+.auto-height mat-list-item  {
+  height: auto;
+}
+
+

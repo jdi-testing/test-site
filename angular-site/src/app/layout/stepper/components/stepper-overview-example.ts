@@ -11,8 +11,8 @@ import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
 })
 export class StepperOverviewExample implements OnInit {
   isLinear = false;
-  firstFormGroup: UntypedFormGroup;
-  secondFormGroup: UntypedFormGroup;
+  firstFormGroup!: UntypedFormGroup;
+  secondFormGroup!: UntypedFormGroup;
 
   constructor(private _formBuilder: UntypedFormBuilder) {}
 

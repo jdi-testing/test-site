@@ -10,8 +10,8 @@ import {UntypedFormBuilder, UntypedFormGroup, Validators} from '@angular/forms';
   styleUrls: ['stepper-overview-example.css']
 })
 export class StepperOptionalExample implements OnInit {
-  firstFormGroup: UntypedFormGroup;
-  secondFormGroup: UntypedFormGroup;
+  firstFormGroup!: UntypedFormGroup;
+  secondFormGroup!: UntypedFormGroup;
   isOptional = false;
 
   constructor(private _formBuilder: UntypedFormBuilder) {}

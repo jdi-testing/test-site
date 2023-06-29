@@ -8,15 +8,15 @@ import {BehaviorSubject} from 'rxjs';
  * Node for to-do item
  */
 export class TodoItemNode {
-  children: TodoItemNode[];
-  item: string;
+  children?: TodoItemNode[];
+  item = '';
 }
 
 /** Flat to-do item node with expandable and level information */
 export class TodoItemFlatNode {
-  item: string;
-  level: number;
-  expandable: boolean;
+  item = '';
+  level!: number;
+  expandable = true;
 }
 
 /**
@@ -146,7 +146,7 @@ export class TreeChecklistExample {
 
   isExpandable = (node: TodoItemFlatNode) => node.expandable;
 
-  getChildren = (node: TodoItemNode): TodoItemNode[] => node.children;
+  getChildren = (node: TodoItemNode): TodoItemNode[] | undefined => node.children;
 
   hasChild = (_: number, _nodeData: TodoItemFlatNode) => _nodeData.expandable;
 

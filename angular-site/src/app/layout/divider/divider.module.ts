@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DividerRoutingModule } from './divider-routing.module';
 import {DividerOverviewExample} from './divider-overview-example';
-import {MatLegacyListModule as MatListModule} from '@angular/material/legacy-list';
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({

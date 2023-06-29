@@ -8,18 +8,18 @@
 </p>
 
 <p>
-  <span matBadgeSize="large" matBadge="4">Text with a large badge</span>
+  <span matBadgeSize="large" matBadge="4" id="large-badge">Text with a large badge</span>
 </p>
 
 <p>
-  <span matBadgeSize="small" matBadge="4">Text with a small badge</span>
+  <span matBadgeSize="small" matBadge="4" id="small-badge">Text with a small badge</span>
 </p>
 <p>
-  <span  matBadge="Best" class="large-custom-size">Text with a text-content badge</span>
+  <span  matBadge="Best" class="large-custom-size" id="custom-size-badge">Text with a text-content badge</span>
 </p>
 
 <p>
-  <span matBadgePosition="below" matBadge="4">Badge position bellow</span>
+  <span matBadgePosition="below" matBadge="4" id="bellow-position-badge">Badge position bellow</span>
 </p>
 
 <p>
@@ -33,7 +33,6 @@
 <p>
   Icon with a badge
   <mat-icon matBadge="15" matBadgeColor="warn" id="icon-with-badge">home</mat-icon>
-  <!-- Include text description of the icon's meaning for screen-readers -->
   <span class="cdk-visually-hidden">
       Example with a home icon with overlaid badge showing the number 15
     </span>
@@ -41,14 +40,14 @@
 
 <p>
   Button toggles badge visibility
-  <button mat-raised-button matBadge="7" [matBadgeHidden]="isHidden" (click)="toggleBadgeIsVisible()">
+  <button id="toggle-visibility-badge" mat-raised-button matBadge="7" [matBadgeHidden]="isHidden" (click)="toggleBadgeIsVisible()">
     Hide
   </button>
 </p>
 
 <p>
   Button toggles badge disabled
-  <button mat-raised-button matBadge="7" [matBadgeDisabled]="isDisabled" (click)="toggleBadgeIsDisabled()">
+  <button id="toggle-disabled-badge" mat-raised-button matBadge="7" [matBadgeDisabled]="isDisabled" (click)="toggleBadgeIsDisabled()">
     isDisabled
   </button>
 </p>

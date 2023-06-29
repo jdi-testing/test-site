@@ -5,12 +5,12 @@ import { ProgressSpinnerRoutingModule } from './progress-spinner-routing.module'
 import { ProgressSpinnerComponent } from './progress-spinner.component';
 import {ProgressSpinnerConfigurableExample} from './components/progress-spinner-configurable-example';
 import {ProgressSpinnerOverviewExample} from './components/progress-spinner-overview-example';
-import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
-import {MatLegacyRadioModule as MatRadioModule} from '@angular/material/legacy-radio';
 import {FormsModule} from '@angular/forms';
-import {MatLegacyProgressSpinnerModule as MatProgressSpinnerModule} from '@angular/material/legacy-progress-spinner';
-import {MatLegacySliderModule as MatSliderModule} from '@angular/material/legacy-slider';
-import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
+import {MatCardModule} from "@angular/material/card";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatSliderModule} from "@angular/material/slider";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({

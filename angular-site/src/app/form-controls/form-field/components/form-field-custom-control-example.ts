@@ -1,26 +1,25 @@
 import {FocusMonitor} from '@angular/cdk/a11y';
-import {coerceBooleanProperty} from '@angular/cdk/coercion';
+import {BooleanInput, coerceBooleanProperty} from '@angular/cdk/coercion';
 import {
   Component,
   ElementRef,
+  Inject,
   Input,
   OnDestroy,
   Optional,
   Self,
   ViewChild,
-  Directive,
-  HostListener
 } from '@angular/core';
 import {
-  UntypedFormBuilder,
-  UntypedFormGroup,
+  AbstractControl,
   ControlValueAccessor,
+  FormBuilder,
+  FormControl,
+  FormGroup,
   NgControl,
   Validators,
-  UntypedFormControl,
-  AbstractControl
 } from '@angular/forms';
-import {MatLegacyFormFieldControl as MatFormFieldControl} from '@angular/material/legacy-form-field';
+import {MAT_FORM_FIELD, MatFormField, MatFormFieldControl} from '@angular/material/form-field';
 import {Subject} from 'rxjs';
 
 /** @title Form field with custom telephone number input control. */
@@ -29,18 +28,14 @@ import {Subject} from 'rxjs';
   templateUrl: 'form-field-custom-control-example.html',
 })
 export class FormFieldCustomControlExample {
-  form: UntypedFormGroup = new UntypedFormGroup({
-    tel: new UntypedFormControl(new MyTel('', '', ''))
+  form: FormGroup = new FormGroup({
+    tel: new FormControl(new MyTel('', '', '')),
   });
 }
 
 /** Data structure for holding telephone number. */
 export class MyTel {
-  constructor(
-    public area: string,
-    public exchange: string,
-    public subscriber: string
-  ) {}
+  constructor(public area: string, public exchange: string, public subscriber: string) {}
 }
 
 /** Custom `MatFormFieldControl` for telephone number input. */
@@ -48,33 +43,34 @@ export class MyTel {
   selector: 'example-tel-input',
   templateUrl: 'example-tel-input-example.html',
   styleUrls: ['example-tel-input-example.css'],
-  providers: [{ provide: MatFormFieldControl, useExisting: MyTelInput }],
+  providers: [{provide: MatFormFieldControl, useExisting: MyTelInput}],
   host: {
     '[class.example-floating]': 'shouldLabelFloat',
     '[id]': 'id',
-    '[attr.aria-describedby]': 'describedBy'
-  }
+  },
 })
-export class MyTelInput
-  implements ControlValueAccessor, MatFormFieldControl<MyTel>, OnDestroy {
+export class MyTelInput implements ControlValueAccessor, MatFormFieldControl<MyTel>, OnDestroy {
   static nextId = 0;
-  @ViewChild('area') areaInput: HTMLInputElement;
-  @ViewChild('exchange') exchangeInput: HTMLInputElement;
-  @ViewChild('subscriber') subscriberInput: HTMLInputElement;
+  @ViewChild('area') areaInput!: HTMLInputElement;
+  @ViewChild('exchange') exchangeInput!: HTMLInputElement;
+  @ViewChild('subscriber') subscriberInput!: HTMLInputElement;
 
-  parts: UntypedFormGroup;
+  parts = this._formBuilder.group({
+    area: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(3)]],
+    exchange: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(3)]],
+    subscriber: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(4)]],
+  });
   stateChanges = new Subject<void>();
   focused = false;
-  errorState = false;
+  touched = false;
   controlType = 'example-tel-input';
   id = `example-tel-input-${MyTelInput.nextId++}`;
-  describedBy = '';
   onChange = (_: any) => {};
   onTouched = () => {};
 
   get empty() {
     const {
-      value: { area, exchange, subscriber }
+      value: {area, exchange, subscriber},
     } = this.parts;
 
     return !area && !exchange && !subscriber;
@@ -84,6 +80,8 @@ export class MyTelInput
     return this.focused || !this.empty;
   }
 
+  @Input('aria-describedby') userAriaDescribedBy!: string;
+
   @Input()
   get placeholder(): string {
     return this._placeholder;
@@ -92,13 +90,13 @@ export class MyTelInput
     this._placeholder = value;
     this.stateChanges.next();
   }
-  private _placeholder: string;
+  private _placeholder!: string;
 
   @Input()
   get required(): boolean {
     return this._required;
   }
-  set required(value: boolean) {
+  set required(value: BooleanInput) {
     this._required = coerceBooleanProperty(value);
     this.stateChanges.next();
   }
@@ -108,7 +106,7 @@ export class MyTelInput
   get disabled(): boolean {
     return this._disabled;
   }
-  set disabled(value: boolean) {
+  set disabled(value: BooleanInput) {
     this._disabled = coerceBooleanProperty(value);
     this._disabled ? this.parts.disable() : this.parts.enable();
     this.stateChanges.next();
@@ -119,49 +117,52 @@ export class MyTelInput
   get value(): MyTel | null {
     if (this.parts.valid) {
       const {
-        value: { area, exchange, subscriber }
+        value: {area, exchange, subscriber},
       } = this.parts;
-      return new MyTel(area, exchange, subscriber);
+      return new MyTel(area!, exchange!, subscriber!);
     }
     return null;
   }
   set value(tel: MyTel | null) {
-    const { area, exchange, subscriber } = tel || new MyTel('', '', '');
-    this.parts.setValue({ area, exchange, subscriber });
+    const {area, exchange, subscriber} = tel || new MyTel('', '', '');
+    this.parts.setValue({area, exchange, subscriber});
     this.stateChanges.next();
   }
 
+  get errorState(): boolean {
+    return this.parts.invalid && this.touched;
+  }
+
   constructor(
-    formBuilder: UntypedFormBuilder,
+    private _formBuilder: FormBuilder,
     private _focusMonitor: FocusMonitor,
     private _elementRef: ElementRef<HTMLElement>,
-    @Optional() @Self() public ngControl: NgControl
+    @Optional() @Inject(MAT_FORM_FIELD) public _formField: MatFormField,
+    @Optional() @Self() public ngControl: NgControl,
   ) {
-    this.parts = formBuilder.group({
-      area: [
-        null,
-        [Validators.required, Validators.minLength(3), Validators.maxLength(3)]
-      ],
-      exchange: [
-        null,
-        [Validators.required, Validators.minLength(3), Validators.maxLength(3)]
-      ],
-      subscriber: [
-        null,
-        [Validators.required, Validators.minLength(4), Validators.maxLength(4)]
-      ]
-    });
-
-    _focusMonitor.monitor(_elementRef, true).subscribe(origin => {
-      if (this.focused && !origin) {
-        this.onTouched();
-      }
-      this.focused = !!origin;
-      this.stateChanges.next();
-    });
-
     if (this.ngControl != null) {
       this.ngControl.valueAccessor = this;
+    }
+  }
+
+  ngOnDestroy() {
+    this.stateChanges.complete();
+    this._focusMonitor.stopMonitoring(this._elementRef);
+  }
+
+  onFocusIn(event: FocusEvent) {
+    if (!this.focused) {
+      this.focused = true;
+      this.stateChanges.next();
+    }
+  }
+
+  onFocusOut(event: FocusEvent) {
+    if (!this._elementRef.nativeElement.contains(event.relatedTarget as Element)) {
+      this.touched = true;
+      this.focused = false;
+      this.onTouched();
+      this.stateChanges.next();
     }
   }
 
@@ -177,16 +178,14 @@ export class MyTelInput
     }
   }
 
-  ngOnDestroy() {
-    this.stateChanges.complete();
-    this._focusMonitor.stopMonitoring(this._elementRef);
-  }
-
   setDescribedByIds(ids: string[]) {
-    this.describedBy = ids.join(' ');
+    const controlElement = this._elementRef.nativeElement.querySelector(
+      '.example-tel-input-container',
+    )!;
+    controlElement.setAttribute('aria-describedby', ids.join(' '));
   }
 
-  onContainerClick(event: MouseEvent) {
+  onContainerClick() {
     if (this.parts.controls.subscriber.valid) {
       this._focusMonitor.focusVia(this.subscriberInput, 'program');
     } else if (this.parts.controls.exchange.valid) {
@@ -217,24 +216,5 @@ export class MyTelInput
   _handleInput(control: AbstractControl, nextElement?: HTMLInputElement): void {
     this.autoFocusNext(control, nextElement);
     this.onChange(this.value);
-  }
-
-  static ngAcceptInputType_disabled: boolean | string | null | undefined;
-  static ngAcceptInputType_required: boolean | string | null | undefined;
-}
-
-@Directive({
-  selector: 'input[numbersOnly]'
-})
-export class NumberDirective {
-
-  constructor(private _el: ElementRef) { }
-
-  @HostListener('input', ['$event']) onInputChange(event: any) {
-    const initalValue = this._el.nativeElement.value;
-    this._el.nativeElement.value = initalValue.replace(/[^0-9]*/g, '');
-    if ( initalValue !== this._el.nativeElement.value) {
-      event.stopPropagation();
-    }
   }
 }

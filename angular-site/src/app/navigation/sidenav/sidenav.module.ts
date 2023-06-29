@@ -12,18 +12,17 @@ import {SidenavOpenCloseExample} from './components/sidenav-open-close-example';
 import {SidenavOverviewExample} from './components/sidenav-overview-example';
 import {SidenavPositionExample} from './components/sidenav-position-example';
 import {SidenavResponsiveExample} from './components/sidenav-responsive-example';
-import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatLegacyListModule as MatListModule} from '@angular/material/legacy-list';
-import {MatLegacyCheckboxModule as MatCheckboxModule} from '@angular/material/legacy-checkbox';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatLegacyRadioModule as MatRadioModule} from '@angular/material/legacy-radio';
-import {MatLegacyFormFieldModule as MatFormFieldModule} from '@angular/material/legacy-form-field';
-import {MatLegacyInputModule as MatInputModule} from '@angular/material/legacy-input';
-
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
+import {MatListModule} from "@angular/material/list";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [

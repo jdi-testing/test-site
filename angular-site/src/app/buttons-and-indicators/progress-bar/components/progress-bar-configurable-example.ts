@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
-import {LegacyProgressBarMode as ProgressBarMode} from '@angular/material/legacy-progress-bar';
+import {ProgressBarMode} from "@angular/material/progress-bar";
 
 /**
  * @title Configurable progress-bar
