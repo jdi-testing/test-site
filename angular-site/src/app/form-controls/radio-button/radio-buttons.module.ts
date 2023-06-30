@@ -5,8 +5,8 @@ import { RadioButtonsRoutingModule } from './radio-buttons-routing.module';
 import { RadioButtonsComponent } from './radio-buttons.component';
 import {RadioNgModelExample} from "./components/radio-ng-model-example";
 import {RadioOverviewExample} from "./components/radio-overview-example";
-import {MatRadioModule} from "@angular/material/radio";
 import {FormsModule} from "@angular/forms";
+import {MatRadioModule} from "@angular/material/radio";
 
 
 @NgModule({

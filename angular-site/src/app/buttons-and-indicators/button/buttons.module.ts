@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ButtonsRoutingModule } from './buttons-routing.module';
 import {ButtonTypesExample} from './button-types-example';
-import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({

@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { DialogRoutingModule } from './dialog-routing.module';
 import {DialogOverviewExample, DialogOverviewExampleDialog} from './dialog-overview-example';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from "@angular/material/input";
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatButtonModule} from "@angular/material/button";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 
 @NgModule({

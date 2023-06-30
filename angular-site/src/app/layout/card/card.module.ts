@@ -5,7 +5,7 @@ import { CardRoutingModule } from './card-routing.module';
 import {CardComponent} from './card.component';
 import {CardFancyExample} from './components/card-fancy-example';
 import {CardOverviewExample} from './components/card-overview-example';
-import {MatCardModule} from '@angular/material/card';
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({

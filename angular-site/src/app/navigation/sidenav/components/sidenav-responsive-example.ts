@@ -31,7 +31,7 @@ export class SidenavResponsiveExample implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  changeContent(text): void {
+  changeContent(text: string): void {
     this.fillerContent = Array.from({length: 500}, () => 'Selected ' + text);
   }
 }

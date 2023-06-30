@@ -21,5 +21,5 @@ export class ChipsStackedExample {
     {name: 'Accent', color: 'accent'},
     {name: 'Warn', color: 'warn'}
   ];
-   clickedStackedChip;
+   clickedStackedChip?: string;
 }

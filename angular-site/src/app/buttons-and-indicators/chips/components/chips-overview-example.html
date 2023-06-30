@@ -3,12 +3,12 @@
     Basic chips
   </a>
 </h2>
-<mat-chip-list aria-label="Fish selection" id="basic-chips-row">
-  <mat-chip (click)="clickedBasicChip='One fish'">One fish</mat-chip>
-  <mat-chip (click)="clickedBasicChip='Two fish'">Two fish</mat-chip>
-  <mat-chip color="primary" selected (click)="clickedBasicChip='Primary fish'">Primary fish</mat-chip>
-  <mat-chip color="accent" selected (click)="clickedBasicChip='Accent fish'">Accent fish</mat-chip>
-</mat-chip-list>
+<mat-chip-listbox id="basic-chips-row" aria-label="Fish selection">
+  <mat-chip-option (click)="clickedBasicChip('One fish')">One fish</mat-chip-option>
+  <mat-chip-option (click)="clickedBasicChip('Two fish')">Two fish</mat-chip-option>
+  <mat-chip-option color="primary" selected (click)="clickedBasicChip('Primary fish')">Primary fish</mat-chip-option>
+  <mat-chip-option color="warn" (click)="clickedBasicChip('Warn fish')">Warn fish</mat-chip-option>
+</mat-chip-listbox>
 <br>
 <br>
-<p id="basic-chips-label"> You clicked: {{clickedBasicChip}}</p>
+<p id="basic-chips-label"> You clicked: {{clickedValue}}</p>

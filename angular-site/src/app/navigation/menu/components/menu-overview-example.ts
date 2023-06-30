@@ -9,5 +9,5 @@ import {Component} from '@angular/core';
   styleUrls: ['menu-overview-example.css'],
 })
 export class MenuOverviewExample {
-  menuOptionSelected: string;
+  menuOptionSelected = '';
 }

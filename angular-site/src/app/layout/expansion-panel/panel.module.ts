@@ -6,11 +6,12 @@ import { PanelComponent } from './panel.component';
 import {ExpansionStepsExample} from './components/expansion-steps-example';
 import {ExpansionOverviewExample} from './components/expansion-overview-example';
 import {MatExpansionModule} from '@angular/material/expansion';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatButtonModule} from "@angular/material/button";
+import {MatInputModule} from "@angular/material/input";
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatDatepickerModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatNativeDateModule
   ]
 })
 export class PanelModule { }

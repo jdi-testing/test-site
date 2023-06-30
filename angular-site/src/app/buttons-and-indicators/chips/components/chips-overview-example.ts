@@ -9,5 +9,8 @@ import {Component} from '@angular/core';
 
 })
 export class ChipsOverviewExample {
-  clickedBasicChip;
+  clickedValue = '';
+  clickedBasicChip(value: string) {
+    this.clickedValue = value;
+  };
 }

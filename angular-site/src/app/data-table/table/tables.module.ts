@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { TablesRoutingModule } from './tables-routing.module';
 import { TablesComponent } from './tables.component';
 import {TableBasicExample} from './components/table-basic-example';
-import {MatTableModule} from '@angular/material/table';
 import {TableBasicFlexExample} from './components/table-basic-flex-example';
 import {TableDynamicColumnsExample} from './components/table-dynamic-columns-example';
 import {TableExpandableRowsExample} from './components/table-expandable-rows-example';
@@ -21,15 +20,16 @@ import {TableSortingExample} from './components/table-sorting-example';
 import {TableStickyColumnsExample} from './components/table-sticky-columns-example';
 import {TableStickyFooterExample} from './components/table-sticky-footer-example';
 import {TableStickyHeaderExample} from './components/table-sticky-header-example';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSortModule} from '@angular/material/sort';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatPaginatorModule} from '@angular/material/paginator';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from "@angular/material/table";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
