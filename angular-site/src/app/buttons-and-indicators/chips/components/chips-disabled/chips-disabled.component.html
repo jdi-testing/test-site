@@ -3,8 +3,11 @@
     Chips disabled
   </a>
 </h2>
-<mat-chip-list aria-label="Fish selection" id="basic-chips-row">
-  <mat-chip color="primary" selected [disabled] = true>Disabled Primary</mat-chip>
-  <mat-chip color="accent" selected [disabled]= true >Disable Accent</mat-chip>
-  <mat-chip [disabled]= true>Disabled base</mat-chip>
-</mat-chip-list>
+<mat-chip-listbox aria-label="Fish selection" id="chips-disabled">
+  <mat-chip-option *ngFor="let chip of availableColors" selected [color]="chip.color" disabled>
+    Selected disabled color {{chip.name}}
+  </mat-chip-option>
+  <mat-chip-option disabled [color]="availableColors[1].color">
+    Unselected disabled {{availableColors[1].name}}
+  </mat-chip-option>
+</mat-chip-listbox>

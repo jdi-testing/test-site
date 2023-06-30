@@ -1,10 +1,6 @@
 import {Component} from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
-
-export interface ChipColor {
-  name: string;
-  color: ThemePalette;
-}
+import {availableColorsConfig} from "../chips-config";
 
 /**
  * @title Stacked chips
@@ -15,11 +11,6 @@ export interface ChipColor {
   styleUrls: ['chips-stacked-example.css'],
 })
 export class ChipsStackedExample {
-  availableColors: ChipColor[] = [
-    {name: 'none', color: undefined},
-    {name: 'Primary', color: 'primary'},
-    {name: 'Accent', color: 'accent'},
-    {name: 'Warn', color: 'warn'}
-  ];
-   clickedStackedChip?: string;
+  readonly availableColors = availableColorsConfig;
+  clickedStackedChip?: string;
 }

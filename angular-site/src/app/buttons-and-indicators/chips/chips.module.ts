@@ -21,6 +21,9 @@ import { ChipsAvatarComponent } from './components/chips-avatar/chips-avatar.com
 import { ChipsDisableRippleComponent } from './components/chips-disable-ripple/chips-disable-ripple.component';
 import { ChipsDisabledComponent } from './components/chips-disabled/chips-disabled.component';
 import { ChipsHighlightedComponent } from './components/chips-highlighted/chips-highlighted.component';
+import { ChipsDefaultColorComponent } from './components/chips-default-color/chips-default-color.component';
+import {ChipsMultipleComponent} from "./components/chips-multiple/chips-multiple.component";
+import {ChipsRequired} from "./components/chips-required/chips-required";
 
 
 @NgModule({
@@ -36,6 +39,9 @@ import { ChipsHighlightedComponent } from './components/chips-highlighted/chips-
     ChipsDisableRippleComponent,
     ChipsDisabledComponent,
     ChipsHighlightedComponent,
+    ChipsDefaultColorComponent,
+    ChipsMultipleComponent,
+    ChipsRequired,
   ],
   imports: [
     CommonModule,

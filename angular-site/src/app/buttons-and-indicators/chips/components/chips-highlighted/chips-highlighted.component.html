@@ -3,7 +3,8 @@
     Chips highlighted
   </a>
 </h2>
-<mat-chip-list #list [multiple]="true" aria-label="Fish selection" id="basic-chips-row">
-  <mat-chip color="primary" (click)="showSelected(list)" >Disabled ripple</mat-chip>
-  <mat-chip color="primary"   >Unable ripple</mat-chip>
-</mat-chip-list>
+<mat-chip-listbox aria-label="Fish selection" id="chips-highlighted">
+  <mat-chip-option *ngFor="let chip of availableColors" highlighted [color]="chip.color">
+    Highlighted color {{chip.name}}
+  </mat-chip-option>
+</mat-chip-listbox>

@@ -1,7 +1,6 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {MatChipInputEvent} from '@angular/material/chips';
-import {CdkDragDrop, moveItemInArray} from "@angular/cdk/drag-drop";
 
 export interface Topping {
   name: string;
@@ -17,7 +16,7 @@ export class ChipsWithFormControlComponent {
   keywords = ['angular', 'how-to', 'tutorial', 'accessibility'];
   formControl = new FormControl(['angular']);
 
-  removeKeyword(keyword: string): void {
+  removeKeyword(keyword: string) {
     const index = this.keywords.indexOf(keyword);
     if (index >= 0) {
       this.keywords.splice(index, 1);
@@ -25,20 +24,15 @@ export class ChipsWithFormControlComponent {
   }
 
   add(event: MatChipInputEvent): void {
+    const value = (event.value || '').trim();
 
-    const input = event.input;
-    const value = event.value;
-
-    // Add our fruit
-    if ((value || '').trim()) {
-      this.keywords.push(value.trim());
+    // Add our keyword
+    if (value) {
+      this.keywords.push(value);
     }
 
-    // Reset the input value
-    if (input) {
-      input.value = '';
-      console.log(this.formControl)
-    }
+    // Clear the input value
+    event.chipInput!.clear();
   }
 
 }
