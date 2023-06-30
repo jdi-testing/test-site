@@ -11,13 +11,13 @@ import {InputHintExample} from './components/input-hint-example';
 import {InputOverviewExample} from './components/input-overview-example';
 import {InputPrefixSuffixExample} from './components/input-prefix-suffix-example';
 import {TextFieldAutosizeTextareaExample} from './components/text-field-autosize-textarea-example';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
-import {MatOptionModule} from '@angular/material/core';
-import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
 
 
 @NgModule({

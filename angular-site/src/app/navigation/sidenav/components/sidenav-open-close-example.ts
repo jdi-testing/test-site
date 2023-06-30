@@ -8,5 +8,5 @@ import {Component} from '@angular/core';
 })
 export class SidenavOpenCloseExample {
   events: string[] = [];
-  opened: boolean;
+  opened = false;
 }

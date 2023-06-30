@@ -11,7 +11,7 @@ import {Component} from '@angular/core';
 export class ProgressBarBufferExample {
   isShown = false;
 
-  showProgressBar(seconds): void {
+  showProgressBar(seconds: number): void {
      this.isShown = true;
      setTimeout(() => {
                   this.isShown = false;

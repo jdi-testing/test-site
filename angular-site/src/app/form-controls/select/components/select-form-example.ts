@@ -18,8 +18,8 @@ interface Car {
   templateUrl: 'select-form-example.html',
 })
 export class SelectFormExample {
-  selectedValue: string;
-  selectedCar: string;
+  selectedValue = '';
+  selectedCar = '';
 
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},

@@ -1,4 +1,4 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 body {
   font-family: Roboto, Arial, sans-serif;
@@ -27,4 +27,12 @@ table {
 
 .example-full-width {
   width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h2.example-h2 {
+  margin: 20px 0 10px;
+  font-size: 30px;
 }

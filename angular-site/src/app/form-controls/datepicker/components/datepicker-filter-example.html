@@ -3,9 +3,10 @@
     Datepicker with filter validation
   </a>
 </h2>
-<mat-form-field class="example-full-width">
+<mat-form-field class="example-full-width" appearance="fill">
   <mat-label>Choose a date</mat-label>
   <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" id="filter-datepicker">
-  <mat-datepicker-toggle matSuffix [for]="picker" id="filter-datepicker-toggle"></mat-datepicker-toggle>
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matIconSuffix [for]="picker" id="filter-datepicker-toggle"></mat-datepicker-toggle>
   <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>

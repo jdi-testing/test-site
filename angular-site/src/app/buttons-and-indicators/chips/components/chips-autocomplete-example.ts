@@ -1,10 +1,11 @@
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {Component, ElementRef, ViewChild} from '@angular/core';
-import {FormControl} from '@angular/forms';
-import {MatAutocompleteSelectedEvent, MatAutocomplete} from '@angular/material/autocomplete';
-import {MatChipInputEvent} from '@angular/material/chips';
+import {UntypedFormControl} from '@angular/forms';
+
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import {MatAutocomplete, MatAutocompleteSelectedEvent} from "@angular/material/autocomplete";
+import {MatChipInputEvent} from "@angular/material/chips";
 
 /**
  * @title Chips Autocomplete
@@ -19,13 +20,13 @@ export class ChipsAutocompleteExample {
   selectable = true;
   removable = true;
   separatorKeysCodes: number[] = [ENTER, COMMA];
-  fruitCtrl = new FormControl();
-  filteredFruits: Observable<string[]>;
+  fruitCtrl = new UntypedFormControl();
+  filteredFruits?: Observable<string[]>;
   fruits: string[] = ['Lemon'];
   allFruits: string[] = ['Apple', 'Lemon', 'Lime', 'Orange', 'Strawberry'];
 
-  @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement>;
-  @ViewChild('auto') matAutocomplete: MatAutocomplete;
+  @ViewChild('fruitInput') fruitInput?: ElementRef<HTMLInputElement>;
+  @ViewChild('auto') matAutocomplete?: MatAutocomplete;
 
   constructor() {
     this.filteredFruits = this.fruitCtrl.valueChanges.pipe(
@@ -60,7 +61,7 @@ export class ChipsAutocompleteExample {
 
   selected(event: MatAutocompleteSelectedEvent): void {
     this.fruits.push(event.option.viewValue);
-    this.fruitInput.nativeElement.value = '';
+    this.fruitInput!.nativeElement.value = '';
     this.fruitCtrl.setValue(null);
   }
 

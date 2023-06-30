@@ -15,11 +15,12 @@ import {DatepickerOverviewExample} from './components/datepicker-overview-exampl
 import {DatepickerStartViewExample} from './components/datepicker-start-view-example';
 import {DatepickerTouchExample} from './components/datepicker-touch-example';
 import {DatepickerValueExample} from './components/datepicker-value-example';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
+import {MatMomentDateModule} from "@angular/material-moment-adapter";
 
 
 @NgModule({
@@ -36,7 +37,7 @@ import {MatButtonModule} from '@angular/material/button';
     DatepickerOverviewExample,
     DatepickerStartViewExample,
     DatepickerTouchExample,
-    DatepickerValueExample
+    DatepickerValueExample,
   ],
   imports: [
     CommonModule,
@@ -45,7 +46,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatDatepickerModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatButtonModule,
+    MatButtonModule,MatMomentDateModule
   ]
 })
 export class DatepickerModule { }

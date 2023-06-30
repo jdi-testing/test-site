@@ -12,15 +12,15 @@ import {TabGroupHeaderBelowExample} from './components/tab-group-header-below-ex
 import {TabGroupLazyLoadedExample} from './components/tab-group-lazy-loaded-example';
 import {TabGroupThemeExample} from './components/tab-group-theme-example';
 import {TabNavBarBasicExample} from './components/tab-nav-bar-basic-example';
-import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTableModule} from '@angular/material/table';
-import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatButtonModule} from "@angular/material/button";
+import {MatTableModule} from "@angular/material/table";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({

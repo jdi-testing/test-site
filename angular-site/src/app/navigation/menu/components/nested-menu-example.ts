@@ -9,5 +9,5 @@ import {Component} from '@angular/core';
   styleUrls: ['nested-menu-example.css'],
 })
 export class NestedMenuExample {
-  menuOptionSelected: string;
+  menuOptionSelected = '';
 }
