@@ -4,10 +4,7 @@
   </a>
 </h2>
 <mat-chip-listbox aria-label="Fish selection" id="chips-disabled">
-  <mat-chip-option *ngFor="let chip of availableColors" selected [color]="chip.color" disabled>
+  <mat-chip-option *ngFor="let chip of availableColors" [selected] ="chip.name === 'Primary'"  [color]="chip.color" disabled>
     Selected disabled color {{chip.name}}
-  </mat-chip-option>
-  <mat-chip-option disabled [color]="availableColors[1].color">
-    Unselected disabled {{availableColors[1].name}}
   </mat-chip-option>
 </mat-chip-listbox>
