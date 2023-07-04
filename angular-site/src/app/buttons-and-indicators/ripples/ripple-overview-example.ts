@@ -13,6 +13,6 @@ export class RippleOverviewExample {
   disabled = false;
   unbounded = false;
 
-  radius = 0;
-  color = '';
+  radius: number;
+  color: string;
 }
