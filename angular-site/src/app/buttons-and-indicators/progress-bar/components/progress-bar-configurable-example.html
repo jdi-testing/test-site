@@ -1,0 +1,70 @@
+<h2 class="example-h2">Configurable progress bar</h2>
+<mat-card class="example-card">
+  <mat-card-content>
+    <h2 class="example-h2">Progress bar configuration</h2>
+
+    <section class="example-section">
+      <label class="example-margin">Color:</label>
+      <mat-radio-group [(ngModel)]="color">
+        <mat-radio-button id="progress-bars-primary-color-radio" class="example-margin" value="primary">
+          Primary
+        </mat-radio-button>
+        <mat-radio-button id="progress-bars-accent-color-radio" class="example-margin" value="accent">
+          Accent
+        </mat-radio-button>
+        <mat-radio-button id="progress-bars-warn-color-radio" class="example-margin" value="warn">
+          Warn
+        </mat-radio-button>
+      </mat-radio-group>
+    </section>
+
+    <section class="example-section">
+      <label class="example-margin">Mode:</label>
+      <mat-radio-group [(ngModel)]="mode">
+        <mat-radio-button id="progress-bars-determinate-mode-radio" class="example-margin" value="determinate">
+          Determinate
+        </mat-radio-button>
+        <mat-radio-button id="progress-bars-indeterminate-mode-radio" class="example-margin" value="indeterminate">
+          Indeterminate
+        </mat-radio-button>
+        <mat-radio-button id="progress-bars-buffer-mode-radio" class="example-margin" value="buffer">
+          Buffer
+        </mat-radio-button>
+        <mat-radio-button id="progress-bars-query-mode-radio" class="example-margin" value="query">
+          Query
+        </mat-radio-button>
+      </mat-radio-group>
+    </section>
+
+    <section class="example-section" *ngIf="mode === 'determinate' || mode === 'buffer'">
+      <label class="example-margin">Progress:</label>
+      <mat-slider id="progress-bars-progress-slider" class="example-margin">
+        <input type="range" [(ngModel)]="value" matSliderThumb>
+      </mat-slider>
+    </section>
+    <section class="example-section" *ngIf="mode === 'buffer'">
+      <label class="example-margin">Buffer:</label>
+      <mat-slider id="progress-bars-buffer-slider" class="example-margin">
+        <input type="range" [(ngModel)]="bufferValue" matSliderThumb>
+      </mat-slider>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card">
+  <mat-card-content>
+    <h2 class="example-h2">Result</h2>
+
+    <section class="example-section">
+      <mat-progress-bar
+        id="mat-progress-bar-configurable"
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value"
+        [bufferValue]="bufferValue">
+      </mat-progress-bar>
+    </section>
+  </mat-card-content>
+</mat-card>
+

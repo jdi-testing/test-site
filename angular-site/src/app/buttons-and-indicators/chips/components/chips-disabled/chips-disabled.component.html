@@ -1,0 +1,10 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/chips/api#MatChip">
+    Chips disabled
+  </a>
+</h2>
+<mat-chip-listbox aria-label="Fish selection" id="chips-disabled">
+  <mat-chip-option *ngFor="let chip of availableColors" [selected] ="chip.name === 'Primary'"  [color]="chip.color" disabled>
+    Selected disabled color {{chip.name}}
+  </mat-chip-option>
+</mat-chip-listbox>

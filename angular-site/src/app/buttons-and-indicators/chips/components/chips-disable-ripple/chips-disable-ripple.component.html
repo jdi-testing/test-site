@@ -1,0 +1,15 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/chips/api#MatChip">
+    Chips disable ripple
+  </a>
+</h2>
+<mat-chip-listbox aria-label="Fish selection" id="chips-disabled-ripple">
+  <mat-chip-option *ngFor="let chip of availableColors" [color]="chip.color" [disableRipple] = true>
+    Disabled ripple {{chip.name}}
+  </mat-chip-option>
+</mat-chip-listbox>
+<mat-chip-listbox aria-label="Fish selection" id="chips-enabled-ripple">
+  <mat-chip-option *ngFor="let chip of availableColors" [color]="chip.color">
+    Enable ripple {{chip.name}}
+  </mat-chip-option>
+</mat-chip-listbox>
