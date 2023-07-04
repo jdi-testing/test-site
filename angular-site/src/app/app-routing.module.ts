@@ -110,6 +110,12 @@ const routes: Routes = [
             .then((m) => m.SlideToggleModule)
       },
       {
+        path: RoutingUrls.Slider,
+        loadChildren: () =>
+          import('./form-controls/slider/slider.module')
+            .then((m) => m.SliderModule)
+      },
+      {
         path: RoutingUrls.Card,
         loadChildren: () =>
           import('./layout/card/card.module')
