@@ -7,19 +7,39 @@ import {ChipsStackedExample} from './components/chips-stacked-example';
 import {ChipsOverviewExample} from './components/chips-overview-example';
 import {ChipsAutocompleteExample} from './components/chips-autocomplete-example';
 import {ChipsInputExample} from './components/chips-input-example';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
-import {ReactiveFormsModule} from '@angular/forms';
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatChipsModule} from "@angular/material/chips";
-import {MatAutocompleteModule} from "@angular/material/autocomplete";
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ChipsWithFormControlComponent } from './components/chips-with-form-control/chips-with-form-control.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { ChipsDragAndDropComponent } from './components/chips-drag-and-drop/chips-drag-and-drop.component';
+import { ChipsAvatarComponent } from './components/chips-avatar/chips-avatar.component';
+import { ChipsDisableRippleComponent } from './components/chips-disable-ripple/chips-disable-ripple.component';
+import { ChipsDisabledComponent } from './components/chips-disabled/chips-disabled.component';
+import { ChipsHighlightedComponent } from './components/chips-highlighted/chips-highlighted.component';
+import {ChipsMultipleComponent} from "./components/chips-multiple/chips-multiple.component";
+import {ChipsErrorState} from "./components/chips-error-state/chips-error-state";
 
 
 @NgModule({
-  declarations: [ChipsComponent,
+  declarations: [
+    ChipsComponent,
     ChipsStackedExample,
     ChipsOverviewExample,
     ChipsAutocompleteExample,
     ChipsInputExample,
+    ChipsWithFormControlComponent,
+    ChipsDragAndDropComponent,
+    ChipsAvatarComponent,
+    ChipsDisableRippleComponent,
+    ChipsDisabledComponent,
+    ChipsHighlightedComponent,
+    ChipsMultipleComponent,
+    ChipsErrorState,
   ],
   imports: [
     CommonModule,
@@ -28,7 +48,11 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
     MatFormFieldModule,
     MatIconModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    FormsModule,
+    MatSelectModule,
+    DragDropModule,
   ]
 })
 export class ChipsModule { }
