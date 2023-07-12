@@ -11,10 +11,11 @@ import {ButtonToggleAppearanceComponent} from "./components/button-toggle-appear
 import { ButtonToggleDisabledComponent } from './components/button-toggle-disabled/button-toggle-disabled.component';
 import { ButtonToggleVerticalComponent } from './components/button-toggle-vertical/button-toggle-vertical.component';
 import { ButtonToggleDisableRippleComponent } from './components/button-toggle-disable-ripple/button-toggle-disable-ripple.component';
+import { ButtonToggleMultiComponent } from './components/button-toggle-multi/button-toggle-multi.component';
 
 
 @NgModule({
-  declarations: [ButtonToggleComponent, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, ButtonToggleAppearanceComponent, ButtonToggleDisabledComponent, ButtonToggleVerticalComponent, ButtonToggleDisableRippleComponent],
+  declarations: [ButtonToggleComponent, ButtonToggleOverviewExample, ButtonToggleExclusiveExample, ButtonToggleAppearanceComponent, ButtonToggleDisabledComponent, ButtonToggleVerticalComponent, ButtonToggleDisableRippleComponent, ButtonToggleMultiComponent],
   imports: [
     CommonModule,
     ButtonToggleRoutingModule,
