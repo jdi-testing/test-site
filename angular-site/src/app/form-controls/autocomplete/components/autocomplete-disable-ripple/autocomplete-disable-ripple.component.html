@@ -1,0 +1,22 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/autocomplete/api#MatAutocomplete" target="_blank">
+    disableRipple: boolean (true)
+  </a>
+</h2>
+<div class="example-form">
+  <mat-form-field class="example-full-width">
+    <input type="text"
+           placeholder="Pick one"
+           matInput
+           [formControl]="myControl"
+           [matAutocomplete]="auto"
+    >
+    <mat-autocomplete
+      [disableRipple]="true" #auto="matAutocomplete"
+    >
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>
