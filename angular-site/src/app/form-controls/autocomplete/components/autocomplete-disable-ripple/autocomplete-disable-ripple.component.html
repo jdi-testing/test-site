@@ -12,6 +12,7 @@
            [matAutocomplete]="auto"
     >
     <mat-autocomplete
+      id="autocomplete-disable-ripple"
       [disableRipple]="true" #auto="matAutocomplete"
     >
       <mat-option *ngFor="let option of options" [value]="option">
