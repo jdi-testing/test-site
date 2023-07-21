@@ -1,0 +1,17 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/autocomplete/api#MatAutocomplete" target="_blank">
+    plain input autocomplete
+  </a>
+</h2>
+<div class="example-form">
+  <input type="text"
+         placeholder="Search for a street"
+         [formControl]="control"
+         [matAutocomplete]="auto"
+         class="example-input">
+  <mat-autocomplete id="autocomplete-plain-input-option" #auto="matAutocomplete">
+    <mat-option *ngFor="let street of filteredStreets | async" [value]="street">
+      {{street}}
+    </mat-option>
+  </mat-autocomplete>
+</div>
