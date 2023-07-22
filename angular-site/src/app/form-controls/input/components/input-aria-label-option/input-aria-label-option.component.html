@@ -1,0 +1,11 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/autocomplete/api#MatInput" target="_blank">
+    aria-label
+  </a>
+</h2>
+<mat-form-field class="example-form-field">
+  <input matInput type="text" [(ngModel)]="value" aria-label="Clear">
+  <button *ngIf="value" matSuffix mat-icon-button (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>

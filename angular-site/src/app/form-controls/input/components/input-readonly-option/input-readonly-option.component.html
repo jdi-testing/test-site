@@ -1,0 +1,11 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/autocomplete/api#MatInput" target="_blank">
+    readonly: boolean
+  </a>
+</h2>
+<mat-form-field class="example-form-field">
+  <input id="input-readonly-option" matInput type="text" [(ngModel)]="value" readonly>
+  <button *ngIf="value" matSuffix mat-icon-button (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
