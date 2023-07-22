@@ -19,6 +19,9 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatInputModule} from "@angular/material/input";
 import {SelectOverviewExample} from "./components/select-overview-example";
+import { SelectAriaLabelOptionComponent } from './components/select-aria-label-option/select-aria-label-option.component';
+import { SelectHideSingleSelectionIndicatorOptionComponent } from './components/select-hide-single-selection-indicator-option/select-hide-single-selection-indicator-option.component';
+import { SelectPlaceholderOptionComponent } from './components/select-placeholder-option/select-placeholder-option.component';
 
 
 @NgModule({
@@ -36,6 +39,9 @@ import {SelectOverviewExample} from "./components/select-overview-example";
     SelectResetExample,
     SelectValueBindingExample,
     SelectOverviewExample,
+    SelectAriaLabelOptionComponent,
+    SelectHideSingleSelectionIndicatorOptionComponent,
+    SelectPlaceholderOptionComponent
   ],
   imports: [
     CommonModule,
