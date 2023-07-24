@@ -1,0 +1,17 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/select/api#MatSelect" target="_blank">
+    placeholder: string
+  </a>
+</h2>
+<h4>mat-select</h4>
+<mat-form-field>
+  <mat-select
+    id="select-placeholder-option"
+    [(ngModel)]="selectedValue"
+    placeholder="Hello"
+    name="food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
