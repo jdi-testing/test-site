@@ -19,6 +19,11 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatButtonModule} from "@angular/material/button";
+import { FormFieldDisabledComponent } from './components/form-field-disabled/form-field-disabled.component';
+import { FormFieldsubscriptSizingFixedComponent } from './components/form-field-subscript-sizing-fixed/form-field-subscript-sizing-fixed.component';
+import { FormFieldsubscriptSizingDynamicComponent } from './components/form-field-subscript-sizing-dynamic/form-field-subscript-sizing-dynamic.component';
+import { FormFieldAlignStartComponent } from './components/form-field-align-start/form-field-align-start.component';
+import { FormFieldAlignEndComponent } from './components/form-field-align-end/form-field-align-end.component';
 
 
 
@@ -34,6 +39,11 @@ import {MatButtonModule} from "@angular/material/button";
     FormFieldThemingExample,
     FormFieldCustomControlExample,
     MyTelInput,
+    FormFieldDisabledComponent,
+    FormFieldsubscriptSizingFixedComponent,
+    FormFieldsubscriptSizingDynamicComponent,
+    FormFieldAlignStartComponent,
+    FormFieldAlignEndComponent
   ],
   imports: [
     CommonModule,
