@@ -1,0 +1,9 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/checkbox/api#MatCheckbox" target="_blank">
+    required: boolean
+  </a>
+</h2>
+<section class="example-section">
+  <mat-checkbox id="checkbox-required-option" [formControl]="formControl" required>Required!</mat-checkbox>
+</section>
+<p class="error" *ngIf="formControl.invalid">Checkbox should be checked!</p>
