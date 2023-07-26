@@ -155,5 +155,5 @@ export class AppComponent {
       name: 'Tooltip',
       link: RoutingUrls.Tooltip,
     },
-  ];
+  ].sort((a, b) => a.name > b.name ? 1 : -1);
 }
