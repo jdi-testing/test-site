@@ -12,10 +12,17 @@ import {FormsModule} from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatInputModule} from "@angular/material/input";
+import { SliderRangeComponent } from './components/slider-range/slider-range.component';
 
 
 @NgModule({
-  declarations: [SliderComponent, SliderConfigurableExample, SliderFormattingExample, SliderOverviewExample],
+  declarations: [
+    SliderComponent,
+    SliderConfigurableExample,
+    SliderFormattingExample,
+    SliderOverviewExample,
+    SliderRangeComponent
+  ],
   imports: [
     CommonModule,
     SliderRoutingModule,
@@ -27,4 +34,4 @@ import {MatInputModule} from "@angular/material/input";
     MatInputModule
   ]
 })
-export class SliderModule { }
+export class SliderModule {}
