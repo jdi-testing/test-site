@@ -100,3 +100,24 @@
 </div>
 <br>
 <p id="minifab-buttons-label">You clicked: {{miniFabBtnClicked}}</p>
+<hr>
+<div class="example-wide-button-row" id="matfab-extended-buttons-row">
+  <button mat-fab extended (click)="matfabExtendedBtnClicked = 'Basic'" id="matfab-extended-basic-button">Basic</button>
+  <button mat-fab extended color="primary" (click)="matfabExtendedBtnClicked = 'Primary'" id="matfab-extended-primary-button">Primary</button>
+  <button mat-fab extended color="accent" (click)="matfabExtendedBtnClicked = 'Accent'" id="matfab-extended-accent-button">Accent</button>
+  <button mat-fab extended color="warn" (click)="matfabExtendedBtnClicked = 'Warn'" id="matfab-extended-warn-button">Warn</button>
+  <button mat-fab extended disabled id="matfab-extended-disabled-button">Disabled</button>
+  <button mat-fab extended aria-label="Example icon-button with a heart icon" (click)="matfabExtendedBtnClicked = 'Icon with a heart icon'" id="matfab-extended-icon-button">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <a mat-fab extended routerLink="." (click)="matfabExtendedBtnClicked = 'Link'" id="matfab-extended-link-button">Link</a>
+</div>
+<br>
+<p id="matfab-extended-buttons-label">You clicked: {{matfabExtendedBtnClicked}}</p>
+<hr>
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/button/api#MatButton" target="_blank">
+    defaultColor: ThemePalette
+  </a>
+</h2>
+<button id="default-color-theme-palette" mat-button defaultColor>Basic</button>
