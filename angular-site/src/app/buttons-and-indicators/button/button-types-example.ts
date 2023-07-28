@@ -16,4 +16,5 @@ export class ButtonTypesExample {
   iconBtnClicked?: string;
   fabBtnClicked?: string;
   miniFabBtnClicked?: string;
+  matfabExtendedBtnClicked?: string;
 }
