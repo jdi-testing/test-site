@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {PaginatorConfigurableExample} from './paginator-configurable-example';
+import { PaginationsComponent } from './paginations.component';
 
 
 const routes: Routes = [{
   path: '',
-  component: PaginatorConfigurableExample
+  component: PaginationsComponent
 }];
 
 @NgModule({
