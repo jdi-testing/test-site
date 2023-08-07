@@ -1,0 +1,15 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/table/examples#table-text-column">
+    Use of `mat-text-column` which can be used for simple columns that only need to display a text value for the header and cells.
+  </a>
+</h2>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <mat-text-column name="position"></mat-text-column>
+  <mat-text-column name="name"></mat-text-column>
+  <mat-text-column name="weight"></mat-text-column>
+  <mat-text-column name="symbol"></mat-text-column>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
