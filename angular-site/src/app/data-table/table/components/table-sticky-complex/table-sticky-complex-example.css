@@ -19,7 +19,6 @@
 }
 
 .mat-mdc-header-cell, .mat-mdc-footer-cell, .mat-mdc-cell {
-  min-width: 80px;
   box-sizing: border-box;
 }
 
