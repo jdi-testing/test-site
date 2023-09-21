@@ -11,6 +11,8 @@ import {ThemePalette} from '@angular/material/core';
 })
 export class SlideToggleConfigurableExample {
   color: ThemePalette = 'accent';
+  labelPosition: "before" | "after" = "after";
   checked = false;
   disabled = false;
+  disableRipple = false;
 }
