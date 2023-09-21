@@ -1,6 +1,7 @@
 .example-container {
   height: 400px;
   overflow: auto;
+  width: 100%;
 }
 
 .mat-mdc-table-sticky {
@@ -19,7 +20,6 @@
 }
 
 .mat-mdc-header-cell, .mat-mdc-footer-cell, .mat-mdc-cell {
-  min-width: 70px;
   box-sizing: border-box;
 }
 
