@@ -19,6 +19,18 @@
     </section>
 
     <section class="example-section">
+      <label class="example-margin">Label position:</label>
+      <mat-radio-group id="slide-toggles-position_radio_buttons" [(ngModel)]="labelPosition">
+        <mat-radio-button id="slide-toggles-set_before_position_radio" class="example-margin" value="before">
+          Before
+        </mat-radio-button>
+        <mat-radio-button id="slide-toggles-set_after_position_radio" class="example-margin" value="after">
+          After
+        </mat-radio-button>
+      </mat-radio-group>
+    </section>
+
+    <section class="example-section">
       <mat-checkbox id="slide-toggles-set_checked_checkbox" class="example-margin" [(ngModel)]="checked">
         Checked
       </mat-checkbox>
@@ -27,6 +39,12 @@
     <section class="example-section">
       <mat-checkbox id="slide-toggles-set_disabled_checkbox" class="example-margin" [(ngModel)]="disabled">
         Disabled
+      </mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <mat-checkbox id="slide-toggles-set_disable_ripple_checkbox" class="example-margin" [(ngModel)]="disableRipple">
+        Disable Ripple
       </mat-checkbox>
     </section>
   </mat-card-content>
@@ -42,7 +60,10 @@
         class="example-margin"
           [color]="color"
           [checked]="checked"
-          [disabled]="disabled">
+          [disabled]="disabled"
+          [disableRipple]="disableRipple"
+          [labelPosition]="labelPosition"
+          ariaLabel="Configurable slide-toggle">
         Slide me!
       </mat-slide-toggle>
     </section>
