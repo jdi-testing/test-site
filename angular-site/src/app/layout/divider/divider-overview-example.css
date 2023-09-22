@@ -1,1 +1,9 @@
-/** No CSS for this example */
+.inset-dividers {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-dividers {
+  display: flex;
+  height: 100px;
+}
