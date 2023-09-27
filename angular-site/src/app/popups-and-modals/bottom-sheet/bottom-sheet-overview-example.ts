@@ -1,5 +1,6 @@
+import { Direction } from '@angular/cdk/bidi';
 import {Component} from '@angular/core';
-import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
+import {AutoFocusTarget, MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
 
 /**
  * @title Bottom Sheet Overview
@@ -10,10 +11,29 @@ import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet'
   styleUrls: ['bottom-sheet-overview-example.css'],
 })
 export class BottomSheetOverviewExample {
+  autoFocus: AutoFocusTarget | string | boolean  = 'dialog';
+  customAutoFocus: string = '';
+  closeOnNavigation = false;
+  restoreFocus = false;
+  direction: Direction = 'ltr';
+
   constructor(private _bottomSheet: MatBottomSheet) {}
 
   openBottomSheet(): void {
-    this._bottomSheet.open(BottomSheetOverviewExampleSheet);
+    this._bottomSheet.open(BottomSheetOverviewExampleSheet, {
+      autoFocus: this.customAutoFocus || (this.autoFocus !== 'false' || this.autoFocus !== null ? this.autoFocus : false),
+      closeOnNavigation: this.closeOnNavigation,
+      restoreFocus: this.restoreFocus,
+      direction: this.direction
+    });
+  }
+
+  clearAutofocusRadio(): void {
+    this.autoFocus = null!;
+  }
+
+  clearCustomAutoFocus(): void {
+    this.customAutoFocus = '';
   }
 }
 

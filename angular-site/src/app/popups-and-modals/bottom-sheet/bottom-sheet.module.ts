@@ -6,6 +6,10 @@ import {BottomSheetOverviewExample, BottomSheetOverviewExampleSheet} from "./bot
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatListModule} from "@angular/material/list";
 import {MatButtonModule} from "@angular/material/button";
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 
 
 @NgModule({
@@ -13,6 +17,10 @@ import {MatButtonModule} from "@angular/material/button";
   imports: [
     CommonModule,
     BottomSheetRoutingModule,
+    MatCardModule,
+    FormsModule,
+    MatRadioModule,
+    MatCheckboxModule,
     MatButtonModule,
     MatListModule,
     MatBottomSheetModule,
