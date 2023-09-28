@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 
 /**
  * @title Radios with ngModel
@@ -9,6 +10,9 @@ import {Component} from '@angular/core';
   styleUrls: ['radio-ng-model-example.css'],
 })
 export class RadioNgModelExample {
+  @Input()
+  colorTheme: ThemePalette
+
   favoriteSeason = '';
   seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
 }

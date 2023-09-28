@@ -1,6 +1,21 @@
-<radio-ng-model-example></radio-ng-model-example>
-<radio-overview-example></radio-overview-example>
-<app-radio-buttons-disabled></app-radio-buttons-disabled>
-<app-radio-buttons-label-position></app-radio-buttons-label-position>
-<app-radio-buttons-ripple-disabled></app-radio-buttons-ripple-disabled>
-<app-radio-buttons-required></app-radio-buttons-required>
+<section class="example-section">
+  <label class="example-margin">Color:</label>
+  <mat-radio-group id="radio-buttons-position_radio_buttons" [(ngModel)]="colorTheme" [color]="colorTheme">
+    <mat-radio-button id="radio-buttons_dialog_autofocus_radio" class="example-margin" value="primary">
+      primary
+    </mat-radio-button>
+    <mat-radio-button id="radio-buttons_first-tabbable_autofocus_radio" class="example-margin" value="accent">
+      accent
+    </mat-radio-button>
+    <mat-radio-button id="radio-buttons_first-heading_autofocus_radio" class="example-margin" value="warn">
+      warn
+    </mat-radio-button>
+  </mat-radio-group>
+</section>
+
+<radio-ng-model-example [colorTheme]="colorTheme"></radio-ng-model-example>
+<radio-overview-example [colorTheme]="colorTheme"></radio-overview-example>
+<app-radio-buttons-disabled [colorTheme]="colorTheme"></app-radio-buttons-disabled>
+<app-radio-buttons-label-position [colorTheme]="colorTheme"></app-radio-buttons-label-position>
+<app-radio-buttons-ripple-disabled [colorTheme]="colorTheme"></app-radio-buttons-ripple-disabled>
+<app-radio-buttons-required [colorTheme]="colorTheme"></app-radio-buttons-required>

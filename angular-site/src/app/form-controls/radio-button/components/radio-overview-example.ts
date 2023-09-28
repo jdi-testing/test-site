@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
 
 /**
  * @title Basic radios
@@ -8,4 +9,7 @@ import {Component} from '@angular/core';
   templateUrl: 'radio-overview-example.html',
   styleUrls: ['radio-overview-example.css'],
 })
-export class RadioOverviewExample {}
+export class RadioOverviewExample {
+  @Input()
+  colorTheme: ThemePalette
+}
