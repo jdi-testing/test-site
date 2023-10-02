@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {FormControl} from "@angular/forms";
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'app-radio-buttons-required',
@@ -7,5 +8,8 @@ import {FormControl} from "@angular/forms";
   styleUrls: ['radio-buttons-required.component.css'],
 })
 export class RadioButtonsRequiredComponent {
+  @Input()
+  colorTheme: ThemePalette
+
   formControl = new FormControl();
 }
