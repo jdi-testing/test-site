@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { RadioButtonsRoutingModule } from './radio-buttons-routing.module';
 import { RadioButtonsComponent } from './radio-buttons.component';
-import {RadioNgModelExample} from "./components/radio-ng-model-example";
-import {RadioOverviewExample} from "./components/radio-overview-example";
+import {RadioNgModelExample} from "./components/radio-buttons-ng-model/radio-ng-model-example";
+import {RadioOverviewExample} from "./components/radio-buttons-overview/radio-overview-example";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatRadioModule} from "@angular/material/radio";
 import { RadioButtonsDisabledComponent } from './components/radio-buttons-disabled/radio-buttons-disabled.component';
