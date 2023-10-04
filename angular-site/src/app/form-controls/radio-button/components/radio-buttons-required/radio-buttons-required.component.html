@@ -3,7 +3,7 @@
     Basic radios required
   </a>
 </h2>
-<mat-radio-group [color]="colorTheme" [formControl]="formControl" required>
-  <mat-radio-button value="1">One</mat-radio-button>
+<mat-radio-group [formControl]="formControl" required>
+  <mat-radio-button [color]="colorTheme" value="1">One</mat-radio-button>
 </mat-radio-group>
 <p class="description">Is form control valid:  <span class="value">{{ formControl.valid }}</span> </p>

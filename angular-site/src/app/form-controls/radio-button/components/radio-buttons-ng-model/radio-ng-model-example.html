@@ -1,0 +1,8 @@
+<h2 class="example-h2">Radios with ngModel</h2>
+<label id="example-radio-group-label">Pick your favorite season</label>
+<mat-radio-group id="season-radio-group" aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="favoriteSeason">
+  <mat-radio-button [color]="colorTheme" id="{{'favorite-season-' + season.toLowerCase()}}" class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+<div id="your-favorite-season-text">Your favorite season is: {{favoriteSeason}}</div>
