@@ -1,0 +1,57 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/menu/overview#nested-menu">
+    Nested menu
+  </a>
+</h2>
+<button id="nested-menu-button" mat-button [matMenuTriggerFor]="animals">Animal index</button>
+<mat-menu #animals="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Vertebrates'" [matMenuTriggerFor]="vertebrates">Vertebrates
+  </button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Invertebrates'" [matMenuTriggerFor]="invertebrates">
+    Invertebrates
+  </button>
+</mat-menu>
+
+<mat-menu #vertebrates="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Fishes'" [matMenuTriggerFor]="fish">Fishes</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Amphibians'" [matMenuTriggerFor]="amphibians">Amphibians</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Reptiles'" [matMenuTriggerFor]="reptiles">Reptiles</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Birds'">Birds</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Mammals'">Mammals</button>
+</mat-menu>
+
+<mat-menu #invertebrates="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Insects'">Insects</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Molluscs'">Molluscs</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Crustaceans'">Crustaceans</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Corals'">Corals</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Arachnids'">Arachnids</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Velvet worms'">Velvet worms</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Horseshoe crabs'">Horseshoe crabs</button>
+</mat-menu>
+
+<mat-menu #fish="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Baikal oilfish'">Baikal oilfish</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Bala shark'">Bala shark</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Ballan wrasse'">Ballan wrasse</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Bamboo shark'">Bamboo shark</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Banded killifish'">Banded killifish</button>
+</mat-menu>
+
+<mat-menu #amphibians="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Sonoran desert toad'">Sonoran desert toad</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Western toad'">Western toad</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Arroyo toad'">Arroyo toad</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Yosemite toad'">Yosemite toad</button>
+</mat-menu>
+
+<mat-menu #reptiles="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Banded Day Gecko'">Banded Day Gecko</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Banded Gila Monster'">Banded Gila Monster</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Black Tree Monitor'">Black Tree Monitor</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Blue Spiny Lizard'">Blue Spiny Lizard</button>
+  <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Velociraptor'" disabled>Velociraptor</button>
+</mat-menu>
+<p>Selected:
+  <span id="nested-menu-selected-option">{{menuOptionSelected}}</span>
+</p>

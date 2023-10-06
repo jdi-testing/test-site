@@ -1,17 +1,23 @@
-<section class="example-section">
-  <label class="example-margin">Color:</label>
-  <mat-radio-group id="radio-buttons-color_buttons" [(ngModel)]="colorTheme">
-    <mat-radio-button [color]="colorTheme" id="radio-buttons_dialog_color_radio" class="example-margin" value="primary">
-      primary
-    </mat-radio-button>
-    <mat-radio-button [color]="colorTheme" id="radio-buttons_first-tabbable_color_radio" class="example-margin" value="accent">
-      accent
-    </mat-radio-button>
-    <mat-radio-button [color]="colorTheme" id="radio-buttons_first-heading_color_radio" class="example-margin" value="warn">
-      warn
-    </mat-radio-button>
-  </mat-radio-group>
-</section>
+<mat-card>
+  <mat-card-content>
+    <h4>Radio buttons configuration</h4>
+
+    <section class="example-section">
+      <label class="example-margin">Color:</label>
+      <mat-radio-group id="radio-buttons-color_buttons" [(ngModel)]="colorTheme">
+        <mat-radio-button [color]="colorTheme" id="radio-buttons_dialog_color_radio" class="example-margin" value="primary">
+          primary
+        </mat-radio-button>
+        <mat-radio-button [color]="colorTheme" id="radio-buttons_first-tabbable_color_radio" class="example-margin" value="accent">
+          accent
+        </mat-radio-button>
+        <mat-radio-button [color]="colorTheme" id="radio-buttons_first-heading_color_radio" class="example-margin" value="warn">
+          warn
+        </mat-radio-button>
+      </mat-radio-group>
+    </section>
+  </mat-card-content>
+</mat-card>
 
 <radio-ng-model-example [colorTheme]="colorTheme"></radio-ng-model-example>
 <radio-overview-example [colorTheme]="colorTheme"></radio-overview-example>

@@ -1,3 +1,33 @@
-<menu-icons-example></menu-icons-example>
-<menu-overview-example></menu-overview-example>
-<nested-menu-example></nested-menu-example>
+<mat-card>
+  <mat-card-content>
+    <h4>Menu configuration</h4>
+
+    <section class="example-section">
+      <mat-checkbox id="menu-disable-ripple-checkbox" class="example-margin" [(ngModel)]="disableRipple">
+        Disable Ripple
+      </mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <mat-checkbox id="menu-overlap-trigger-checkbox" class="example-margin" [(ngModel)]="overlapTrigger">
+        Overlap Trigger
+      </mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <mat-slide-toggle id="menu-position-x-toggle" [(ngModel)]="menuPositionX">
+        {{ menuPositionX ? 'before' : 'after'}}
+      </mat-slide-toggle>
+    </section>
+
+    <section class="example-section">
+      <mat-slide-toggle id="menu-position=y-toggle" [(ngModel)]="menuPositionY">
+        {{ menuPositionY ? 'above' : 'below'}}
+      </mat-slide-toggle>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<menu-icons-example [disableRipple]="disableRipple" [overlapTrigger]="overlapTrigger" [menuPositionX]="menuPositionX" [menuPositionY]="menuPositionY"></menu-icons-example>
+<menu-overview-example [disableRipple]="disableRipple" [overlapTrigger]="overlapTrigger" [menuPositionX]="menuPositionX" [menuPositionY]="menuPositionY"></menu-overview-example>
+<nested-menu-example [disableRipple]="disableRipple" [overlapTrigger]="overlapTrigger" [menuPositionX]="menuPositionX" [menuPositionY]="menuPositionY"></nested-menu-example>
