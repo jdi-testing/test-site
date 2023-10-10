@@ -12,6 +12,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { RadioButtonsLabelPositionComponent } from './components/radio-buttons-label-position/radio-buttons-label-position.component';
 import { RadioButtonsRippleDisabledComponent } from './components/radio-buttons-ripple-disabled/radio-buttons-ripple-disabled.component';
 import { RadioButtonsRequiredComponent } from './components/radio-buttons-required/radio-buttons-required.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { RadioButtonsRequiredComponent } from './components/radio-buttons-requir
     FormsModule,
     MatButtonModule,
     ReactiveFormsModule,
+    MatCardModule,
   ]
 })
 export class RadioButtonsModule { }

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 /**
  * @title Basic menu
@@ -9,5 +9,14 @@ import {Component} from '@angular/core';
   styleUrls: ['menu-overview-example.css'],
 })
 export class MenuOverviewExample {
+  @Input()
+  disableRipple: boolean = false;
+  @Input()
+  overlapTrigger: boolean = false;
+  @Input()
+  menuPositionX: boolean = false;
+  @Input()
+  menuPositionY: boolean = false;
+
   menuOptionSelected = '';
 }
