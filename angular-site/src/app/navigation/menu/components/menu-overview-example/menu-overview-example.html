@@ -3,7 +3,7 @@
     Basic menu
   </a>
 </h2>
-<button id="basic-menu-button" mat-button [matMenuTriggerFor]="menu">Menu</button>
+<button id="basic-menu-button" mat-button [matMenuTriggerFor]="menu" [disableRipple]="disableRipple">Menu</button>
 <mat-menu #menu="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
   <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Item 1'">Item 1</button>
   <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Item 2'">Item 2</button>

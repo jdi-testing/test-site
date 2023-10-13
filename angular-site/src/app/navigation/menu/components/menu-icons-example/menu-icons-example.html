@@ -1,5 +1,5 @@
 <h2 class="example-h2">Menu with icons</h2>
-<button id="menu-with-icons-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+<button id="menu-with-icons-button" mat-icon-button [matMenuTriggerFor]="menu" [disableRipple]="disableRipple" aria-label="Example icon-button with a menu">
   <mat-icon>more_vert</mat-icon>
 </button>
 <mat-menu #menu="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
