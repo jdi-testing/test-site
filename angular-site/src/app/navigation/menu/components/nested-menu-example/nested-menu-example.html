@@ -3,7 +3,7 @@
     Nested menu
   </a>
 </h2>
-<button id="nested-menu-button" mat-button [matMenuTriggerFor]="animals">Animal index</button>
+<button id="nested-menu-button" mat-button [matMenuTriggerFor]="animals" [disableRipple]="disableRipple">Animal index</button>
 <mat-menu #animals="matMenu" [overlapTrigger]="overlapTrigger" [xPosition]="menuPositionX ? 'before' : 'after'" [yPosition]="menuPositionY ? 'above' : 'below'">
   <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Vertebrates'" [matMenuTriggerFor]="vertebrates">Vertebrates
   </button>
@@ -52,6 +52,7 @@
   <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Blue Spiny Lizard'">Blue Spiny Lizard</button>
   <button mat-menu-item [disableRipple]="disableRipple" (click)="menuOptionSelected = 'Velociraptor'" disabled>Velociraptor</button>
 </mat-menu>
+
 <p>Selected:
   <span id="nested-menu-selected-option">{{menuOptionSelected}}</span>
 </p>
