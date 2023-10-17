@@ -11,8 +11,3 @@ export class MenuComponent {
   menuPositionX: boolean = false;
   menuPositionY: boolean = false;
 }
-
-
-export declare type MenuPositionX = 'before' | 'after';
-
-export declare type MenuPositionY = 'above' | 'below';

@@ -3,8 +3,45 @@
     Basic expansion panel
   </a>
 </h2>
-<mat-accordion id="basic-expansion-panel">
-  <mat-expansion-panel>
+
+<mat-card>
+  <mat-card-content>
+    <h4>Expansion panel configuration</h4>
+
+    <section class="example-section">
+      <mat-checkbox id="expansion-panel-multi-checkbox" class="example-margin" [(ngModel)]="multi" (ngModelChange)="accordion?.closeAll()">
+        Multi
+      </mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <mat-slide-toggle id="expansion-panel-position-toggle" [(ngModel)]="togglePosition">
+        {{ togglePosition ? 'after' : 'before'}}
+      </mat-slide-toggle>
+    </section>
+
+    <section class="example-section">
+      <mat-checkbox id="expansion-panel-disable-checkbox" class="example-margin" [(ngModel)]="disable" (ngModelChange)="accordion?.closeAll()">
+        Disable items
+      </mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <mat-checkbox id="expansion-panel-hide-toggle-checkbox" class="example-margin" [(ngModel)]="hideToggle">
+        Hide Toggle
+      </mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <mat-checkbox id="expansion-panel-individual-position-toggle-checkbox" class="example-margin" [(ngModel)]="individualTogglePosition" (ngModelChange)="onIndividualPositionChange()">
+        Individual Toggle Position
+      </mat-checkbox>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<mat-accordion [multi]="multi" id="basic-expansion-panel" [togglePosition]="togglePosition ? 'after' : 'before'">
+  <mat-expansion-panel [disabled]="disable" [hideToggle]="hideToggle">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Personal data
@@ -24,7 +61,8 @@
       <input matInput type="number" min="1" id="basic-age-input">
     </mat-form-field>
   </mat-expansion-panel>
-  <mat-expansion-panel (opened)="panelOpenState = true"
+  <mat-expansion-panel [disabled]="disable" [hideToggle]="hideToggle"
+                       (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
