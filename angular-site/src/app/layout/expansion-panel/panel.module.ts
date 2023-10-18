@@ -12,6 +12,10 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {MatNativeDateModule} from '@angular/material/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +29,12 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatDatepickerModule,
     MatButtonModule,
     MatInputModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatSlideToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
   ]
 })
 export class PanelModule { }
