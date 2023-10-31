@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {RoutingUrls} from './routing-urls.enum';
+import { MainPageComponent } from './layout/main-page/main-page.component';
 
 
 const routes: Routes = [
   {
     path: '',
     children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        component: MainPageComponent,
+      },
       {
         path: RoutingUrls.Badges,
         loadChildren: () =>

@@ -1,1 +1,11 @@
 /** No CSS for this example */
+.checkbox-wrapper{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+label{
+    margin: 0;
+}
