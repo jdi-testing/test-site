@@ -55,6 +55,7 @@ interface ExampleFlatNode {
   styleUrls: ['tree-flat-overview-example.css'],
 })
 export class TreeFlatOverviewExample {
+  isDisabled: boolean = true
   private _transformer = (node: FoodNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,

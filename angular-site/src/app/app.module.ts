@@ -8,6 +8,7 @@ import {AppComponent} from './app.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import {MatListModule} from '@angular/material/list';
+import { MainPageComponent } from './layout/main-page/main-page.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import {MatListModule} from '@angular/material/list';
     AppRoutingModule,
     MatListModule,
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, MainPageComponent],
   bootstrap:  [AppComponent],
   providers: [
      { provide: LocationStrategy, useClass: HashLocationStrategy }
