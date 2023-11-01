@@ -13,6 +13,25 @@
     [rowspan]="tile.rows"
     [style.background]="tile.color"
   >
-    {{tile.text}}
+    <mat-grid-tile-header
+      id="dynamic-grid-item-header"
+      *ngIf="tile.hasHeaderAndFooter"
+      >Mat Grid Header</mat-grid-tile-header
+    >
+    <div class="avatar-wrapper" *ngIf="tile.hasAvatar">
+      <img
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="avatar"
+        class="avatar-img"
+        id="dynamic-grid-item-avatar"
+      />
+      <span> Grid tile with avatar </span>      
+    </div>
+    <p class="mat-grid-tile-text" *ngIf="!tile.hasAvatar">{{tile.text}}</p>
+    <mat-grid-tile-footer
+      id="dynamic-grid-item-footer"
+      *ngIf="tile.hasHeaderAndFooter"
+      >Mat Grid Footer</mat-grid-tile-footer
+    >
   </mat-grid-tile>
 </mat-grid-list>
