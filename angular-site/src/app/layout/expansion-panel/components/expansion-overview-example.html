@@ -37,6 +37,12 @@
         Individual Toggle Position
       </mat-checkbox>
     </section>
+
+    <div class="example-action-buttons">
+      <button mat-button [disabled]="!multi" (click)="accordion?.openAll()">Expand All</button>
+      <button mat-button [disabled]="!multi" (click)="accordion?.closeAll()">Collapse All</button>
+      <span *ngIf="!multi"> Multi should be enabled!</span>
+    </div>
   </mat-card-content>
 </mat-card>
 
