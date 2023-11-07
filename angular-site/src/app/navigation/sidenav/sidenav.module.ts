@@ -23,6 +23,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatRadioModule} from "@angular/material/radio";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import {SidenavBackdropExampleComponent} from './components/sidenav-backdrop-example.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import {MatInputModule} from "@angular/material/input";
     SidenavOverviewExample,
     SidenavPositionExample,
     SidenavResponsiveExample,
+    SidenavBackdropExampleComponent,
   ],
   exports: [
     SidenavAutosizeExample,
@@ -62,7 +65,8 @@ import {MatInputModule} from "@angular/material/input";
     MatRadioModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ]
 })
 export class SidenavModule { }
