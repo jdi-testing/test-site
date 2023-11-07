@@ -1,0 +1,51 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/sidenav/examples">
+    Drawer with explicit backdrop setting
+  </a>
+</h2>
+
+<mat-drawer-container
+  class="example-container"
+  id="sidenav-backdrop-container"
+  [hasBackdrop]="hasBackdrop.value"
+>
+  <mat-drawer id="sidenav-backdrop-drawer" #drawer [mode]="mode.value" [autoFocus]="autoFocus.value" [position]="position.value ? 'start': 'end'">
+    <div class="buttons-wrapper">
+      <button mat-raised-button>First Element</button
+      ><button mat-raised-button>Second element</button>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content id="sidenav-backdrop-content" [scrollLeft]="true">
+    <mat-form-field>
+      <mat-label>Sidenav mode</mat-label>
+      <mat-select #mode value="side">
+        <mat-option value="side">Side</mat-option>
+        <mat-option value="over">Over</mat-option>
+        <mat-option value="push">Push</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Has backdrop</mat-label>
+      <mat-select #hasBackdrop>
+        <mat-option>Unset</mat-option>
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Focus the first item</mat-label>
+      <mat-select #autoFocus [value]="false" id="mat-select-focus-on-the-first-item">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Position</mat-label>
+      <mat-select #position [value]="true" id="mat-select-position">
+        <mat-option [value]="true">Start</mat-option>
+        <mat-option [value]="false">End</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+  </mat-drawer-content>
+</mat-drawer-container>
