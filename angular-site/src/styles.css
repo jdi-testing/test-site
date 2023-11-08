@@ -41,3 +41,7 @@ h2.example-h2 {
 .mdc-form-field>label {
   margin-bottom: 0;
 }
+
+.mat-sort-header-container{
+    place-content: start;
+}

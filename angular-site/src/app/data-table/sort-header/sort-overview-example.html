@@ -4,13 +4,36 @@
   </a>
 </h2>
 <br>
+<div class="control-panel">
+  <mat-form-field>
+    <mat-label>Arrow Position</mat-label>
+    <mat-select #arrowPosition value="after" id="mat-sort-header-arrow-position-select">
+      <mat-option value="after">After</mat-option>
+      <mat-option value="before">Before</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disable Sort</mat-label>
+    <mat-select #isDisabled [value]="false" id="mat-sort-header-disable-sort-select">
+      <mat-option [value]=false>False</mat-option>
+      <mat-option [value]=true>True</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disable Clear</mat-label>
+    <mat-select #isDisableClear [value]="false" id="mat-sort-header-disable-clear-select">
+      <mat-option [value]=false>False</mat-option>
+      <mat-option [value]=true>True</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
 <table matSort (matSortChange)="sortData($event)" id="sort-headers">
-  <tr>
-    <th mat-sort-header="name">Dessert (100g)</th>
-    <th mat-sort-header="calories">Calories</th>
-    <th mat-sort-header="fat">Fat (g)</th>
-    <th mat-sort-header="carbs">Carbs (g)</th>
-    <th mat-sort-header="protein">Protein (g)</th>
+  <tr >
+    <th mat-sort-header="name" [arrowPosition]="arrowPosition.value" [disabled]="isDisabled.value" [disableClear]="isDisableClear.value">Dessert (100g)</th>
+    <th mat-sort-header="calories" [arrowPosition]="arrowPosition.value" [disabled]="isDisabled.value" [disableClear]="isDisableClear.value">Calories</th>
+    <th mat-sort-header="fat" [arrowPosition]="arrowPosition.value" [disabled]="isDisabled.value" [disableClear]="isDisableClear.value">Fat (g)</th>
+    <th mat-sort-header="carbs" [arrowPosition]="arrowPosition.value" [disabled]="isDisabled.value" [disableClear]="isDisableClear.value">Carbs (g)</th>
+    <th mat-sort-header="protein" [arrowPosition]="arrowPosition.value" [disabled]="isDisabled.value" [disableClear]="isDisableClear.value">Protein (g)</th>
   </tr>
 
   <tr *ngFor="let dessert of sortedData">

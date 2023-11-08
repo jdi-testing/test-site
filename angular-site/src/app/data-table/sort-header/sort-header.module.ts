@@ -4,6 +4,10 @@ import { CommonModule } from '@angular/common';
 import { SortHeaderRoutingModule } from './sort-header-routing.module';
 import {SortOverviewExample} from './sort-overview-example';
 import {MatSortModule} from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+
+
 
 
 @NgModule({
@@ -11,7 +15,9 @@ import {MatSortModule} from '@angular/material/sort';
   imports: [
     CommonModule,
     SortHeaderRoutingModule,
-    MatSortModule
+    MatSortModule,
+    MatFormFieldModule,
+    MatSelectModule
   ]
 })
 export class SortHeaderModule { }
