@@ -28,22 +28,22 @@
       <mat-label>Has backdrop</mat-label>
       <mat-select #hasBackdrop>
         <mat-option>Unset</mat-option>
-        <mat-option [value]="true">True</mat-option>
-        <mat-option [value]="false">False</mat-option>
+        <mat-option value="true">True</mat-option>
+        <mat-option value="false">False</mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field>
       <mat-label>Focus the first item</mat-label>
-      <mat-select #autoFocus [value]="false" id="mat-select-focus-on-the-first-item">
-        <mat-option [value]="true">True</mat-option>
-        <mat-option [value]="false">False</mat-option>
+      <mat-select #autoFocus value="false" id="mat-select-focus-on-the-first-item">
+        <mat-option value="true">True</mat-option>
+        <mat-option value="false">False</mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field>
       <mat-label>Position</mat-label>
-      <mat-select #position [value]="true" id="mat-select-position">
-        <mat-option [value]="true">Start</mat-option>
-        <mat-option [value]="false">End</mat-option>
+      <mat-select #position value="true" id="mat-select-position">
+        <mat-option value="true">Start</mat-option>
+        <mat-option value="false">End</mat-option>
       </mat-select>
     </mat-form-field>
     <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
