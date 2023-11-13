@@ -6,6 +6,8 @@ import { IconsComponent } from './icons.component';
 import {IconOverviewExample} from './components/icon-overview-example';
 import {IconSvgExample} from './components/icon-svg-example';
 import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     CommonModule,
     IconsRoutingModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule
   ]
 })
 export class IconsModule { }

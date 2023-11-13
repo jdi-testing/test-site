@@ -3,4 +3,30 @@
     Basic icon
   </a>
 </h2>
-<mat-icon aria-hidden="false" id="basic_icon" aria-label="Example home icon">home</mat-icon>
+<div class="control-panel">
+  <mat-form-field>
+    <mat-label>Inline mode</mat-label>
+    <mat-select #isInline value="false" id="inline-mode-select">
+      <mat-option value="false">False</mat-option>
+      <mat-option value="true">True</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field style="margin-left: 20px;">
+    <mat-label>Font Icon</mat-label>
+    <mat-select #fontIcon value="home" id="font-icon-select">
+      <mat-option value="home">Home</mat-option>
+      <mat-option value="face">Face</mat-option>
+      <mat-option value="favorite">Favorite</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field style="margin-left: 20px;">
+    <mat-label>Icon Color</mat-label>
+    <mat-select #color value="none" id="color-select">
+      <mat-option value="none">Default</mat-option>
+      <mat-option value="warn">Warn</mat-option>
+      <mat-option value="primary">Primary</mat-option>
+      <mat-option value="accent">Accent</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<mat-icon aria-hidden="false" id="basic_icon" aria-label="Example home icon" [color]="color.value" [inline]="isInline.value" [fontIcon]="fontIcon.value"></mat-icon>
