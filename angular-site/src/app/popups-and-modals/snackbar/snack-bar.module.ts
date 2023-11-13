@@ -10,10 +10,12 @@ import {MatInputModule} from "@angular/material/input";
 import {SnackBarComponentExample} from "./components/snack-bar-component-example";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { SnackBarPositionExampleComponent } from './components/snack-bar-position-example.component';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
-  declarations: [SnackBarComponent, SnackBarOverviewExample, SnackBarComponentExample],
+  declarations: [SnackBarComponent, SnackBarOverviewExample, SnackBarComponentExample, SnackBarPositionExampleComponent],
   imports: [
     CommonModule,
     SnackBarRoutingModule,
@@ -21,7 +23,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSelectModule
   ]
 })
 export class SnackBarModule { }
