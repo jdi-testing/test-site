@@ -1,0 +1,13 @@
+<h2 class="example-h2">
+  <a href="https://material.angular.io/components/list/examples#list-selection">
+    List with selection
+  </a>
+</h2>
+
+<mat-selection-list #shoes id="list-with-selection">
+  <mat-list-option id="{{'list-with-selection-option-' + index}}" *ngFor="let shoe of typesOfShoes; let index = index">{{
+    shoe
+  }}</mat-list-option>
+</mat-selection-list>
+
+<p>Options selected: {{ shoes.selectedOptions.selected.length }}</p>

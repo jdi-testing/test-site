@@ -1,0 +1,74 @@
+<h2 class="example-h2">
+  <a
+    href="https://material.angular.io/components/list/examples#list-single-selection"
+  >
+    List with single selection
+  </a>
+</h2>
+
+<div class="control-panel">
+  <mat-form-field>
+    <mat-label>Disable Ripple</mat-label>
+    <mat-select #disableRipple value="false" id="mat-select-disable-ripple">
+      <mat-option value="true">True</mat-option>
+      <mat-option value="false">False</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disabled</mat-label>
+    <mat-select #disabled value="false" id="mat-select-disabled">
+      <mat-option value="true">True</mat-option>
+      <mat-option value="false">False</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Lines</mat-label>
+    <mat-select #lines value="1" id="mat-select-lines">
+      <mat-option value="1">1 Line</mat-option>
+      <mat-option value="2">2 Lines</mat-option>
+      <mat-option value="3">3 Lines</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Is Custom line selected</mat-label>
+    <mat-select #isSelected value="false" id="mat-select-is-last-selected">
+      <mat-option value="false">false</mat-option>
+      <mat-option value="true">true</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Hide indicator</mat-label>
+    <mat-select #hideIndicator value="false" id="mat-select-hide-indicator">
+      <mat-option value="false">false</mat-option>
+      <mat-option value="true">true</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<mat-selection-list
+  #shoes
+  [multiple]="false"
+  id="list-with-single-selection"
+  [disableRipple]="disableRipple.value"
+  [disabled]="disabled.value"
+  [hideSingleSelectionIndicator]="hideIndicator.value"
+>
+  <mat-list-option
+    *ngFor="let shoe of typesOfShoes; let index = index"
+    [value]="shoe"
+    >{{ shoe }}</mat-list-option
+  >
+  <mat-list-option [lines]="lines.value" [value]="'custom line'" [selected]="isSelected.value">
+    <span matListItemTitle>Option with the custom lines</span>
+    <span matListItemLine>Option for lines, selected</span>
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Option selected:
+  {{
+    shoes.selectedOptions.hasValue()
+      ? shoes.selectedOptions.selected[0].value
+      : "None"
+  }}
+</p>
