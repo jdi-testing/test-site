@@ -1,0 +1,23 @@
+<h2 class="example-h2">
+    <a
+      href="https://material.angular.io/components/tabs/examples#tab-group-animations"
+    >
+    Tab group animations
+    </a>
+  </h2>
+
+<h3>No animation</h3>
+<mat-tab-group animationDuration="0ms" id="tab-group-animations-without-duration">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<h3>Very slow animation</h3>
+<!-- #docregion slow-animation-duration -->
+<mat-tab-group animationDuration="2000ms" id="tab-group-animations-with-duration">
+<!-- #enddocregion slow-animation-duration -->
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>

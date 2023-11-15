@@ -1,0 +1,37 @@
+<h2 class="example-h2">
+  <a
+    href="https://material.angular.io/components/tabs/examples#tab-group-align"
+  >
+    Tab group with aligned labels
+  </a>
+</h2>
+
+<div class="control-panel">
+    <mat-form-field>
+      <mat-label>Mat Stretch to first tab</mat-label>
+      <mat-select #matStretch value="false" id="tab-group-align-select-mat-stretch">
+        <mat-option value="false">false</mat-option>
+        <mat-option value="true">true</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+<!-- #docregion align-start -->
+<mat-tab-group [mat-stretch-tabs]="matStretch.value" mat-align-tabs="start" id="tab-group-align-start">
+  <!-- #enddocregion align-start -->
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" id="tab-group-align-center">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="end" id="tab-group-align-end">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
