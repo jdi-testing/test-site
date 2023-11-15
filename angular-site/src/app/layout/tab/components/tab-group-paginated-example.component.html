@@ -1,0 +1,18 @@
+<div class="pagination-wrapper">
+  <h2 class="example-h2">
+    <a
+      href="https://material.angular.io/components/tabs/examples#tab-group-paginated"
+    >
+      Tab group with paginated tabs
+    </a>
+  </h2>
+
+  <mat-tab-group id="tab-group-paginated">
+    <mat-tab
+      [ariaLabel]="'tab-' + index"
+      *ngFor="let tab of lotsOfTabs; let index = index"
+      [label]="tab"
+      >Content (Tab with ariaLabel)</mat-tab
+    >
+  </mat-tab-group>
+</div>

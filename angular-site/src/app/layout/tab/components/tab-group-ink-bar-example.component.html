@@ -1,0 +1,31 @@
+<h2 class="example-h2">
+  <a
+    href="https://material.angular.io/components/tabs/examples#tab-group-ink-bar"
+  >
+  Tab group with ink bar fit to content
+  </a>
+</h2>
+
+<div class="control-panel">
+  <mat-form-field>
+    <mat-label>Fit Ink Bar To Content</mat-label>
+    <mat-select #fitInkBarToContent value="false" id="tab-group-ink-bar-select-fit-ink-bar-to-content">
+      <mat-option value="false">false</mat-option>
+      <mat-option value="true">true</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disable Ripple</mat-label>
+    <mat-select #disableRipple value="false" id="tab-group-ink-bar-select-hide-disable-ripple">
+      <mat-option value="false">false</mat-option>
+      <mat-option value="true">true</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<mat-tab-group [fitInkBarToContent]="fitInkBarToContent.value" [disableRipple]="disableRipple.value" id="tab-group-ink-bar">
+  <mat-tab [ariaLabel]="'aria-label-tab-group-ink-bar'" label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+  <mat-tab label="Fourth" disabled>Content 4</mat-tab>
+</mat-tab-group>

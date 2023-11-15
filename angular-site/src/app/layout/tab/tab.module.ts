@@ -21,6 +21,11 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatButtonModule} from "@angular/material/button";
 import {MatTableModule} from "@angular/material/table";
 import {MatInputModule} from "@angular/material/input";
+import { TabGroupPaginatedExampleComponent } from './components/tab-group-paginated-example.component';
+import { TabGroupInkBarExampleComponent } from './components/tab-group-ink-bar-example.component';
+import { TabGroupAnimationsExampleComponent } from './components/tab-group-animations-example.component';
+import { MatSelectModule } from '@angular/material/select';
+import { TabGroupAlignExampleComponent } from './components/tab-group-align-example.component';
 
 
 @NgModule({
@@ -35,6 +40,10 @@ import {MatInputModule} from "@angular/material/input";
     TabGroupLazyLoadedExample,
     TabGroupThemeExample,
     TabNavBarBasicExample,
+    TabGroupPaginatedExampleComponent,
+    TabGroupInkBarExampleComponent,
+    TabGroupAnimationsExampleComponent,
+    TabGroupAlignExampleComponent,
   ],
   imports: [
     CommonModule,
@@ -47,7 +56,8 @@ import {MatInputModule} from "@angular/material/input";
     MatButtonModule,
     MatTableModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ]
 })
 export class TabModule { }
