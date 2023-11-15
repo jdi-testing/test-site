@@ -1,0 +1,114 @@
+<h2 class="example-h2">
+    <a href="https://material.angular.io/components/dialog/examples#dialog-content">
+        Dialog with header, scrollable content and actions
+    </a>
+  </h2>
+
+  <div class="control-panel">
+    <mat-form-field>
+      <mat-label>Align actions</mat-label>
+      <mat-select [(ngModel)]="align" id="dialog-scrollable-content-align-select">
+        <mat-option value="center">Center</mat-option>
+        <mat-option value="start">Start</mat-option>
+        <mat-option value="end">End</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Auto Focus</mat-label>
+      <mat-select [(ngModel)]="autoFocus" id="dialog-scrollable-content-auto-focus-select">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Close on navigation</mat-label>
+      <mat-select [(ngModel)]="closeOnNavigation" id="dialog-scrollable-content-close-on-navigation-select">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Disable close</mat-label>
+      <mat-select [(ngModel)]="disableClose" id="dialog-scrollable-content-disable-close-select">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Animation duration</mat-label>
+      <mat-select [(ngModel)]="animationDuration" id="dialog-scrollable-content-animation-duration-select">
+        <mat-option [value]="0">0 ms</mat-option>
+        <mat-option [value]="1000">1000 ms</mat-option>
+        <mat-option [value]="3000">3000 ms</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Exit animation duration</mat-label>
+      <mat-select [(ngModel)]="exitAnimationDuration" id="dialog-scrollable-content-exit-animation-duration-select">
+        <mat-option [value]="0">0 ms</mat-option>
+        <mat-option [value]="1000">1000 ms</mat-option>
+        <mat-option [value]="3000">3000 ms</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Height</mat-label>
+      <mat-select [(ngModel)]="height" id="dialog-scrollable-content-height-select">
+        <mat-option [value]="'500px'">500px</mat-option>
+        <mat-option [value]="'1000px'">1000px</mat-option>
+        <mat-option [value]="'1500px'">1500px</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Max height</mat-label>
+      <mat-select [(ngModel)]="maxHeight" id="dialog-scrollable-content-max-height-select">
+        <mat-option [value]="500">500px</mat-option>
+        <mat-option [value]="1000">1000px</mat-option>
+        <mat-option [value]="1500">1500px</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Min height</mat-label>
+      <mat-select [(ngModel)]="minHeight" id="dialog-scrollable-content-min-height-select">
+        <mat-option [value]="500">500px</mat-option>
+        <mat-option [value]="1000">1000px</mat-option>
+        <mat-option [value]="1500">1500px</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Max width</mat-label>
+      <mat-select [(ngModel)]="maxWidth" id="dialog-scrollable-content-max-width-select">
+        <mat-option [value]="500">500px</mat-option>
+        <mat-option [value]="1000">1000px</mat-option>
+        <mat-option [value]="1500">1500px</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Min width</mat-label>
+      <mat-select [(ngModel)]="minWidth" id="dialog-scrollable-content-min-width-select">
+        <mat-option [value]="500">500px</mat-option>
+        <mat-option [value]="1000">1000px</mat-option>
+        <mat-option [value]="1500">1500px</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Restore focus</mat-label>
+      <mat-select [(ngModel)]="restoreFocus" id="dialog-scrollable-content-restore-focus-select">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+<button mat-raised-button (click)="openDialog()" id="dialog-scrollable-content-open-btn">Open dialog</button>
+

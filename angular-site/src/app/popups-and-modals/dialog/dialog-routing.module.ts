@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {DialogOverviewExample} from './dialog-overview-example';
+import { DialogComponent } from './dialog.component';
 
 
 const routes: Routes = [{
   path: '',
-  component: DialogOverviewExample,
+  component: DialogComponent,
 }];
 
 @NgModule({

@@ -1,0 +1,10 @@
+<h2 class="example-h2">
+    <a href="https://material.angular.io/components/dialog/examples#dialog-from-menu">
+        Dialog launched from a menu
+    </a>
+  </h2>
+
+<button mat-raised-button [matMenuTriggerFor]="menu" #menuTrigger id="dialog-from-menu-btn">Menu</button>
+<mat-menu #menu="matMenu" id="dialog-from-menu-mat-menu">
+  <button mat-menu-item (click)="openDialog()" id="dialog-from-menu-open-dialog-btn">Open dialog</button>
+</mat-menu>
