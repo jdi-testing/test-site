@@ -1,0 +1,126 @@
+<h2 class="example-h2">
+  <a
+    href="https://v15.material.angular.io/components/stepper/examples#stepper-header-position"
+  >
+    Stepper header position
+  </a>
+</h2>
+
+<div class="control-panel">
+  <mat-form-field>
+    <mat-label>Header Position</mat-label>
+    <mat-select
+      #headerPosition
+      value="bottom"
+      id="stepper-header-position-select"
+    >
+      <mat-option value="bottom">Bottom</mat-option>
+      <mat-option value="top">Top</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Label Position</mat-label>
+    <mat-select
+      #labelPosition
+      value="bottom"
+      id="stepper-header-lebel-position-select"
+    >
+      <mat-option value="bottom">Bottom</mat-option>
+      <mat-option value="end">End</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Is last step completed</mat-label>
+    <mat-select
+      #completedLast
+      value="false"
+      id="stepper-header-completed-select"
+    >
+      <mat-option value="false">False</mat-option>
+      <mat-option value="true">True</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Is first step editable</mat-label>
+    <mat-select
+      #editableFirst
+      value="false"
+      id="stepper-header-editable-select"
+    >
+      <mat-option value="false">False</mat-option>
+      <mat-option value="true">True</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Orientation</mat-label>
+    <mat-select
+      #orientation
+      value="horizontal"
+      id="stepper-header-orientation-select"
+    >
+      <mat-option value="horizontal">Horizontal</mat-option>
+      <mat-option value="vertical">Vertical</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="example-input-wrapper">
+    <label for="duration">Animation duration:</label>
+    <input id="stepper-header-animation-duration" value="0" type="number" min="0" step="100" #duration />
+  </div>
+
+</div>
+
+<mat-stepper
+  [headerPosition]="headerPosition.value"
+  [labelPosition]="labelPosition.value"
+  [animationDuration]="duration.value"
+  #stepper
+  [orientation]="orientation.value"
+  id="stepper-header-position"
+>
+  <mat-step [stepControl]="firstFormGroup" [editable]="editableFirst.value">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Last name, First name"
+          formControlName="firstCtrl"
+          required
+        />
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" optional>
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Address"
+          formControlName="secondCtrl"
+          required
+        />
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step  [completed]="completedLast.value">
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-stepper>
