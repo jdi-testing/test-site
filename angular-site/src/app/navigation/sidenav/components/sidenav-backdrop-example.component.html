@@ -9,7 +9,7 @@
   id="sidenav-backdrop-container"
   [hasBackdrop]="hasBackdrop.value"
 >
-  <mat-drawer id="sidenav-backdrop-drawer" #drawer [mode]="mode.value" [autoFocus]="autoFocus.value" [position]="position.value ? 'start': 'end'">
+  <mat-drawer id="sidenav-backdrop-drawer" #drawer [mode]="mode.value" [autoFocus]="autoFocus.value" [position]="position.value">
     <div class="buttons-wrapper">
       <button mat-raised-button>First Element</button
       ><button mat-raised-button>Second element</button>
@@ -41,9 +41,9 @@
     </mat-form-field>
     <mat-form-field>
       <mat-label>Position</mat-label>
-      <mat-select #position value="true" id="mat-select-position">
-        <mat-option value="true">Start</mat-option>
-        <mat-option value="false">End</mat-option>
+      <mat-select #position value="start" id="mat-select-position">
+        <mat-option value="start">Start</mat-option>
+        <mat-option value="end">End</mat-option>
       </mat-select>
     </mat-form-field>
     <button mat-raised-button (click)="drawer.toggle()" id="mat-drawer-open-button">Toggle drawer</button>
